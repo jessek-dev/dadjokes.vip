@@ -606,7 +606,7 @@
 
     if (!overlay && snarky && jokeText) {
       snarky.style.display = 'block';
-      jokeText.style.display = 'none';
+      jokeText.innerHTML = '';
       if (shareBtn) shareBtn.style.display = 'none';
     }
   });
