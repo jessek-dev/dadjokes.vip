@@ -380,17 +380,19 @@
               return;
             }
         
-            // Smarter backup pause: before the final sentence only
+            // Smarter backup pause: pause before final sentence
             if (
               !typeWriter.hasPaused &&
               i >= 2 &&
-              randomJoke.charAt(i - 1) === ' ' &&
-              /[A-Z]/.test(randomJoke.charAt(i))
+              randomJoke.charAt(i - 1) === '.' &&
+              randomJoke.charAt(i) === ' '
             ) {
-              const remaining = randomJoke.slice(i);
-              const hasAnotherSentence = /[.!?]/.test(remaining);
-              
-              if (!hasAnotherSentence) {
+              const remaining = randomJoke.slice(i + 1);
+              const nextWordMatch = remaining.match(/^[A-Z][^.?!]*[.?!]/); // find next sentence
+              const remainingAfterNextSentence = remaining.slice(nextWordMatch?.[0]?.length || 0);
+            
+              // If there are no more full sentences after this one, pause before the punchline
+              if (!/[.?!]/.test(remainingAfterNextSentence)) {
                 typeWriter.hasPaused = true;
                 setTimeout(typeWriter, 2000);
                 return;
