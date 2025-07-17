@@ -337,11 +337,14 @@
                 </div>
               </div>
             </div>
-              <div id="snarky-message" style="display:none; padding: 20px; text-align: center; font-style: italic; color: #888;">
-                Even clever people have to download the app.
-                <br><br>
-                <a href="/ios" class="appstore-link">iPhone</a> or <a href="/android" class="playstore-link">Android</a>
-              </div>
+              <div id="snarky-message" style="display:none; text-align: center;">
+                  <p style="font-family: 'Special Elite', monospace; font-size: 1.5rem; margin-bottom: 10px;">
+                    Even clever people have to download the app.
+                  </p>
+                  <p style="font-size: 1rem;">
+                    <a href="/ios" class="appstore-link">iPhone</a> or <a href="/android" class="playstore-link">Android</a>
+                  </p>
+                </div>
 
         </div>
 
@@ -592,6 +595,26 @@
   if (jokeCard) {
     jokeCardObserver.observe(jokeCard, { childList: true, subtree: true });
   }
+</script>
+
+<script>
+  const observer = new MutationObserver(() => {
+    const overlay = document.getElementById('install-overlay');
+    const snarky = document.getElementById('snarky-message');
+    const jokeText = document.querySelector('.joke-text');
+    const shareBtn = document.getElementById('share-joke');
+
+    if (!overlay && snarky && jokeText) {
+      snarky.style.display = 'block';
+      jokeText.style.display = 'none';
+      if (shareBtn) shareBtn.style.display = 'none';
+    }
+  });
+
+  observer.observe(document.querySelector('.joke-card'), {
+    childList: true,
+    subtree: true
+  });
 </script>
 
     
