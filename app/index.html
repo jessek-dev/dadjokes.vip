@@ -332,22 +332,36 @@
             p.textContent += char;
             i++;
         
-            // Check for a single pause after setup
+            const prev2 = randomJoke.charAt(i - 2);
+            const prev3 = randomJoke.charAt(i - 3);
+            const prev4 = randomJoke.charAt(i - 4);
+        
+            // Primary pause after "? " or "... "
             if (
               char === ' ' &&
+              !typeWriter.hasPaused &&
               (
-                randomJoke.charAt(i - 2) === '?' ||
-                (randomJoke.charAt(i - 4) === '.' &&
-                 randomJoke.charAt(i - 3) === '.' &&
-                 randomJoke.charAt(i - 2) === '.')
-              ) &&
-              !typeWriter.hasPaused
+                prev2 === '?' || // question
+                (prev4 === '.' && prev3 === '.' && prev2 === '.') // ellipsis
+              )
             ) {
               typeWriter.hasPaused = true;
-              setTimeout(typeWriter, 2000); // 2 sec pause after setup
-            } else {
-              setTimeout(typeWriter, speed);
+              setTimeout(typeWriter, 2000);
+              return;
             }
+        
+            // Backup pause before final sentence
+            if (
+              !typeWriter.hasPaused &&
+              char === '.' &&
+              i > randomJoke.length - 10 // near the end
+            ) {
+              typeWriter.hasPaused = true;
+              setTimeout(typeWriter, 2000);
+              return;
+            }
+        
+            setTimeout(typeWriter, speed);
           } else {
             p.classList.remove("joke-text");
             p.classList.add("joke-text", "no-cursor");
