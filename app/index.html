@@ -247,5 +247,51 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     </div>
+    
+<!-- Firebase Featured Joke Loader -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
+    authDomain: "dad-jokes-76c85.firebaseapp.com",
+    projectId: "dad-jokes-76c85",
+    storageBucket: "dad-jokes-76c85.firebasestorage.app",
+    messagingSenderId: "165634926020",
+    appId: "1:165634926020:web:3f8ad9f397da9c3574f091",
+    measurementId: "G-7DJD06WV2R"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  async function loadRandomFeaturedJoke() {
+    try {
+      const jokesRef = collection(db, "jokes", "all", "jokes");
+      const q = query(jokesRef, where("rating", "==", 5));
+      const snapshot = await getDocs(q);
+      const jokes = snapshot.docs.map(doc => doc.data().text);
+
+      if (jokes.length === 0) {
+        console.warn("No jokes found with rating 5.");
+        return;
+      }
+
+      const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+
+      const jokeCard = document.querySelector(".joke-card");
+      if (jokeCard) {
+        jokeCard.innerHTML = `<p class="joke-text">${randomJoke}</p>`;
+      }
+    } catch (error) {
+      console.error("Error loading joke:", error);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", loadRandomFeaturedJoke);
+</script>
+
+
 </body>
 </html>
