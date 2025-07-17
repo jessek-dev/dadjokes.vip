@@ -69,7 +69,7 @@
         }
         
         .joke-text {
-            font-size: 1.4em;
+            font-size: 1.6em;
             font-family: 'Special Elite', serif;
             color: #333;
             margin-bottom: 20px;
@@ -309,19 +309,31 @@
         jokeCard.appendChild(p);
         
         let i = 0;
-        const speed = 30; // milliseconds between letters
+        const speed = 50; // milliseconds between letters
         
         function typeWriter() {
           if (i < randomJoke.length) {
-              p.textContent += randomJoke.charAt(i);
-              i++;
-              setTimeout(typeWriter, speed);
+            const char = randomJoke.charAt(i);
+            p.textContent += char;
+            i++;
+        
+            // Check for a single pause after setup
+            if (
+              char === ' ' &&
+              randomJoke.charAt(i - 2) === '?' &&
+              !typeWriter.hasPaused
+            ) {
+              typeWriter.hasPaused = true;
+              setTimeout(typeWriter, 2000); // 2 sec pause after setup
             } else {
-              p.classList.remove("joke-text");
-              p.classList.add("joke-text", "no-cursor");
+              setTimeout(typeWriter, speed);
             }
-
+          } else {
+            p.classList.remove("joke-text");
+            p.classList.add("joke-text", "no-cursor");
+          }
         }
+        typeWriter.hasPaused = false; // flag to only pause once
         
         typeWriter();
 
