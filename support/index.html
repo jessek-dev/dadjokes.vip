@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Dad Jokes App</title>
+    <meta name="description" content="Get help with the Dad Jokes app. Find answers to common questions and contact support.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .nav {
+            margin-top: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            font-size: 1.1em;
+        }
+        
+        .nav a:hover {
+            opacity: 1;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #FF8C00;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #333;
+            margin: 20px 0 10px 0;
+            font-size: 1.3em;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #FF8C00;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .contact-info {
+            background: #fff8e1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .contact-info a {
+            color: #FF8C00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: #FF8C00;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .back-home:hover {
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dad Jokes Support</h1>
+        <p>We're here to help!</p>
+        <nav class="nav">
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#terms">Terms</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <section id="faq" class="section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I refresh my daily joke?</div>
+                <div class="faq-answer">
+                    Free users get 3 daily refreshes, while Premium users get 10. Simply tap the "Get me another!" button on the home screen. Your refresh count resets every day at midnight.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What's included in Premium?</div>
+                <div class="faq-answer">
+                    Premium subscribers enjoy:
+                    <ul>
+                        <li>10 daily joke refreshes (vs 3 for free users)</li>
+                        <li>Access to exclusive premium jokes</li>
+                        <li>Ad-free experience</li>
+                        <li>Early access to new features</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I share a joke?</div>
+                <div class="faq-answer">
+                    Tap the share icon (📤) at the top right of any joke card. You can share via text, social media, or save the joke as an image.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I submit my own dad jokes?</div>
+                <div class="faq-answer">
+                    We're always looking for new groan-worthy content! Email your best dad jokes to <a href="mailto:submit@dadjokes.vip">submit@dadjokes.vip</a>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I cancel my subscription?</div>
+                <div class="faq-answer">
+                    You can manage your subscription through your device's app store:
+                    <ul>
+                        <li><strong>iOS:</strong> Settings > [Your Name] > Subscriptions</li>
+                        <li><strong>Android:</strong> Google Play Store > Menu > Subscriptions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Support</h2>
+            <p>Can't find what you're looking for? We're here to help!</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:support@dadjokes.vip">support@dadjokes.vip</a></p>
+                <p><strong>Response Time:</strong> Within 24-48 hours</p>
+            </div>
+            
+            <p>When contacting support, please include:</p>
+            <ul>
+                <li>Your device type (iPhone/Android)</li>
+                <li>App version</li>
+                <li>Description of the issue</li>
+                <li>Screenshots if applicable</li>
+            </ul>
+        </section>
+        
+        <section id="privacy" class="section">
+            <h2>Privacy Policy</h2>
+            <p><em>Last updated: January 2025</em></p>
+            
+            <h3>Information We Collect</h3>
+            <p>Dad Jokes collects minimal information to provide you with the best experience:</p>
+            <ul>
+                <li>Anonymous usage data (joke views, ratings)</li>
+                <li>Device information for app optimization</li>
+                <li>Subscription status</li>
+            </ul>
+            
+            <h3>How We Use Your Information</h3>
+            <ul>
+                <li>To deliver personalized joke recommendations</li>
+                <li>To track your daily refresh count</li>
+                <li>To improve app performance</li>
+                <li>To manage premium subscriptions</li>
+            </ul>
+            
+            <h3>Data Storage</h3>
+            <p>Your joke ratings and preferences are stored locally on your device. We do not store personal information on our servers.</p>
+            
+            <h3>Third-Party Services</h3>
+            <p>We use Google Firebase for app functionality and AdMob for advertising (free users only). These services have their own privacy policies.</p>
+            
+            <h3>Contact</h3>
+            <p>Questions about privacy? Email us at <a href="mailto:privacy@dadjokes.vip">privacy@dadjokes.vip</a></p>
+        </section>
+        
+        <section id="terms" class
