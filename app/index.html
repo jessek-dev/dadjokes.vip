@@ -338,6 +338,12 @@
                 </div>
               </div>
             </div>
+              <div id="snarky-message" style="display:none; padding: 20px; text-align: center; font-style: italic; color: #888;">
+                Even clever people have to download the app.
+                <br><br>
+                <a href="/ios" class="appstore-link">iPhone</a> or <a href="/android" class="playstore-link">Android</a>
+              </div>
+
         </div>
 
         
@@ -578,6 +584,18 @@
   document.querySelectorAll(".playstore-link").forEach(el => {
     el.href = "https://dadjokes.vip/android";
   });
+</script>
+
+<script>
+  const observer = new MutationObserver(() => {
+    const overlay = document.getElementById('install-overlay');
+    const snarky = document.getElementById('snarky-message');
+    if (!overlay && snarky) {
+      snarky.style.display = 'block';
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
 </script>
 
     
