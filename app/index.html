@@ -354,35 +354,36 @@
               return;
             }
         
-            // Backup pause before final sentence
+            // Backup pause if no earlier pause was triggered
             if (
               !typeWriter.hasPaused &&
-              char === '.' &&
-              i > randomJoke.length - 10 // near the end
+              (char === '.' || char === '!') &&
+              i >= randomJoke.length - 1 // end of sentence
             ) {
               typeWriter.hasPaused = true;
               setTimeout(typeWriter, 2000);
               return;
             }
+
         
             setTimeout(typeWriter, speed);
           } else {
             p.classList.remove("joke-text");
             p.classList.add("joke-text", "no-cursor");
-            document.getElementById("share-joke").style.display = "block";
-              
             const shareBtn = document.getElementById("share-joke");
-            if (shareBtn && navigator.share) {
-              shareBtn.style.display = "inline-block"; // show the button
-              shareBtn.onclick = () => {
-                navigator.share({
-                  title: "Dad Joke of the Day",
-                  text: randomJoke,
-                  url: "https://dadjokes.vip/app"
-                }).catch((err) => {
-                  console.error("Share failed:", err);
-                });
-              };
+            if (shareBtn) {
+              shareBtn.style.display = "inline-block";
+              if (navigator.share) {
+                shareBtn.onclick = () => {
+                  navigator.share({
+                    title: "Dad Joke of the Day",
+                    text: randomJoke,
+                    url: "https://dadjokes.vip/app"
+                  }).catch((err) => {
+                    console.error("Share failed:", err);
+                  });
+                };
+              }
             }
           }
         }
