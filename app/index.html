@@ -161,6 +161,37 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
+
+        .cta-subtext {
+          font-size: 1.1rem;
+          margin: 10px 0 25px;
+          color: #333;
+        }
+        
+        .store-buttons-badges {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+        }
+        
+        .store-badge {
+          height: 50px;
+        }
+        
+        .screenshot-placeholder {
+          background-color: #f9f9f9;
+          padding: 30px;
+          border-radius: 10px;
+          border: 2px dashed #ccc;
+          color: #777;
+          font-style: italic;
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
         
         .coming-soon {
             font-size: 0.9em;
@@ -287,22 +318,25 @@
         </div>
         
         <div class="cta">
-            <h2>Ready to Groan?</h2>
-            <p>Download Dad Jokes now and never run out of eye-roll-worthy humor!</p>
-            
-            <div class="store-buttons">
-                <a href="#" class="store-button">
-                    <span>🍎</span>
-                    <span>Download on App Store</span>
-                </a>
-                <p class="coming-soon">Coming Soon!</p>
-                
-                <a href="#" class="store-button">
-                    <span>🤖</span>
-                    <span>Get it on Google Play</span>
-                </a>
-                <p class="coming-soon">Coming Soon!</p>
-            </div>
+          <h2>Ready to Groan?</h2>
+          <p class="cta-subtext">
+            The best dad jokes, groan-worthy puns, and eye-rolls — all in one app.
+            Available on iPhone and Android. Totally free.
+          </p>
+        
+          <div class="store-buttons-badges">
+            <a href="#">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge">
+            </a>
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge">
+            </a>
+          </div>
+        
+          <!-- Placeholder for screenshots -->
+          <div class="screenshot-placeholder">
+            <p>[ Screenshots Coming Soon ]</p>
+          </div>
         </div>
     </div>
         
