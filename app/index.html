@@ -67,38 +67,35 @@
           margin: 30px 0;
           box-shadow: 0 10px 30px rgba(0,0,0,0.1);
           min-height: 220px;
-        
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
-            
-        <button id="share-joke" style="display:none; margin-top: 20px; background: none; border: none; cursor: pointer;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Share_icon_iOS.svg" alt="Share" style="height: 24px;">
-        </button>
-            
+          flex-direction: column;            
         }
         
         .joke-text {
             font-size: 1.6em;
             font-family: 'Special Elite', serif;
             color: #333;
-            margin-bottom: 20px;
+            margin: 0;
             line-height: 1.6;
             white-space: pre-wrap;
         }
 
         .joke-text::after {
           content: '|';
+          visibility: visible;
           animation: blink 1s steps(1) infinite;
           margin-left: 5px;
           color: #555;
+          display: inline-block;
+          width: 0.6ch; /* reserves space equal to a character */
         }
-        
+
         @keyframes blink {
-          50% {
-            opacity: 0;
-          }
+          0%, 100% { visibility: visible; }
+          50% { visibility: hidden; }
         }
 
         .no-cursor::after {
@@ -211,6 +208,9 @@
         <p class="tagline">Your Daily Dose of Groan-Worthy Humor</p>
         
         <div class="joke-card">
+          <button id="share-joke" style="display:none; margin-top: 20px; background: none; border: none; cursor: pointer;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Share_icon_iOS.svg" alt="Share" style="height: 24px;">
+          </button>
 
         </div>
         
@@ -369,6 +369,7 @@
           } else {
             p.classList.remove("joke-text");
             p.classList.add("joke-text", "no-cursor");
+            document.getElementById("share-joke").style.display = "block";
               
             const shareBtn = document.getElementById("share-joke");
             if (shareBtn && navigator.share) {
