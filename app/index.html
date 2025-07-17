@@ -334,7 +334,6 @@
                     <a href="https://dadjokes.vip/android" class="playstore-link">
                       <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
                     </a>
-
                 </div>
               </div>
             </div>
@@ -577,15 +576,22 @@
 </script>
 
 <script>
-  const observer = new MutationObserver(() => {
-    const overlay = document.getElementById('install-overlay');
-    const snarky = document.getElementById('snarky-message');
-    if (!overlay && snarky) {
-      snarky.style.display = 'block';
+  const jokeCardObserver = new MutationObserver(() => {
+    const overlay = document.getElementById("install-overlay");
+    const snarky = document.getElementById("snarky-message");
+
+    if (!overlay || overlay.classList.contains("hidden")) return;
+
+    const isOverlayPresent = document.body.contains(overlay);
+    if (!isOverlayPresent) {
+      snarky.style.display = "block";
     }
   });
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  const jokeCard = document.querySelector(".joke-card");
+  if (jokeCard) {
+    jokeCardObserver.observe(jokeCard, { childList: true, subtree: true });
+  }
 </script>
 
     
