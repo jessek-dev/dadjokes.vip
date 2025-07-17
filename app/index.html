@@ -567,16 +567,6 @@
 </script>
 
 <script>
-  document.addEventListener("contextmenu", function (e) {
-    const overlay = document.getElementById("install-overlay");
-    if (overlay && !overlay.classList.contains("hidden")) {
-      alert("Nice try, clever human 🤓\n\nBut even YOU have to download the app.\n\niOS: dadjokes.vip/ios\nAndroid: dadjokes.vip/android");
-      e.preventDefault();
-    }
-  });
-</script>
-    
-<script>
   document.querySelectorAll(".appstore-link").forEach(el => {
     el.href = "https://dadjokes.vip/ios";
   });
