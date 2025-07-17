@@ -380,16 +380,23 @@
               return;
             }
         
-            // Backup pause if no earlier pause was triggered
+            // Smarter backup pause: before the final sentence only
             if (
               !typeWriter.hasPaused &&
-              (char === '.' || char === '!') &&
-              i >= randomJoke.length - 1 // end of sentence
+              i >= 2 &&
+              randomJoke.charAt(i - 1) === ' ' &&
+              /[A-Z]/.test(randomJoke.charAt(i))
             ) {
-              typeWriter.hasPaused = true;
-              setTimeout(typeWriter, 2000);
-              return;
+              const remaining = randomJoke.slice(i);
+              const hasAnotherSentence = /[.!?]/.test(remaining);
+              
+              if (!hasAnotherSentence) {
+                typeWriter.hasPaused = true;
+                setTimeout(typeWriter, 2000);
+                return;
+              }
             }
+
 
         
             setTimeout(typeWriter, speed);
