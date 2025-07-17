@@ -275,10 +275,25 @@
             <p style="text-align: center; color: #666;">© 2025 Dad Jokes. All rights reserved.</p>
         </div>
     </div>
-    <footer style="text-align: center; margin-top: 60px;">
-        <a href="/support" style="margin-right: 10px;">Support</a>
-        <a href="/privacy">Privacy Policy & Terms</a>
+    <footer style="text-align: center; padding: 40px 20px; background: rgba(0,0,0,0.05); margin-top: 60px;">
+        <div style="margin-bottom: 20px;">
+            <a href="/support" style="margin: 0 15px; text-decoration: none; color: #FF8C00;">Support</a>
+            <a href="/privacy" style="margin: 0 15px; text-decoration: none; color: #FF8C00;">Privacy & Terms</a>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <a href="#" target="_blank" rel="noopener"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height: 40px; margin: 0 10px;"></a>
+            <a href="#" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px; margin: 0 10px;"></a>
+        </div>
+        
+        <div style="font-size: 0.9em; color: #666;">
+            © <span id="year"></span> Dad Jokes. All rights reserved.
+        </div>
     </footer>
+    
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
