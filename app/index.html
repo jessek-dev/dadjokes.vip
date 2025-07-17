@@ -208,11 +208,12 @@
         <p class="tagline">Your Daily Dose of Groan-Worthy Humor</p>
         
         <div class="joke-card">
+          <p class="joke-text"></p>
           <button id="share-joke" style="display:none; margin-top: 20px; background: none; border: none; cursor: pointer;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Share_icon_iOS.svg" alt="Share" style="height: 24px;">
           </button>
-
         </div>
+
         
         <div class="features">
             <div class="feature">
@@ -322,9 +323,9 @@
 
       const jokeCard = document.querySelector(".joke-card");
       if (jokeCard) {
-        const p = document.createElement("p");
+        const p = jokeCard.querySelector(".joke-text");
+        p.textContent = "";
         p.className = "joke-text";
-        jokeCard.innerHTML = "";
         jokeCard.appendChild(p);
         
         let i = 0;
