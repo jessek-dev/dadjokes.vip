@@ -72,8 +72,12 @@
           justify-content: center;
           align-items: center;
           text-align: center;
+            
+        <button id="share-joke" style="display:none; margin-top: 20px; background: none; border: none; cursor: pointer;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Share_icon_iOS.svg" alt="Share" style="height: 24px;">
+        </button>
+            
         }
-
         
         .joke-text {
             font-size: 1.6em;
@@ -365,6 +369,20 @@
           } else {
             p.classList.remove("joke-text");
             p.classList.add("joke-text", "no-cursor");
+              
+            const shareBtn = document.getElementById("share-joke");
+            if (shareBtn && navigator.share) {
+              shareBtn.style.display = "inline-block"; // show the button
+              shareBtn.onclick = () => {
+                navigator.share({
+                  title: "Dad Joke of the Day",
+                  text: randomJoke,
+                  url: "https://dadjokes.vip/app"
+                }).catch((err) => {
+                  console.error("Share failed:", err);
+                });
+              };
+            }
           }
         }
         typeWriter.hasPaused = false; // flag to only pause once
