@@ -320,7 +320,12 @@
             // Check for a single pause after setup
             if (
               char === ' ' &&
-              randomJoke.charAt(i - 2) === '?' &&
+              (
+                randomJoke.charAt(i - 2) === '?' ||
+                (randomJoke.charAt(i - 4) === '.' &&
+                 randomJoke.charAt(i - 3) === '.' &&
+                 randomJoke.charAt(i - 2) === '.')
+              ) &&
               !typeWriter.hasPaused
             ) {
               typeWriter.hasPaused = true;
