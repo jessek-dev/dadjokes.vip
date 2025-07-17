@@ -45,10 +45,16 @@
         }
         
         .logo {
-            font-size: 80px;
             margin-bottom: 20px;
-            animation: bounce 2s infinite;
         }
+        
+        .logo-img {
+            height: 60px;
+            width: 60px;
+            animation: bounce 2s infinite;
+            border-radius: 12px; /* optional, adds soft corners */
+        }
+
         
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
@@ -320,7 +326,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">😂</div>
+        <div class="logo">
+          <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img">
+        </div>
         <h1>Dad Jokes</h1>
         <p class="tagline">Your Daily Dose of Groan-Worthy Humor</p>
         
