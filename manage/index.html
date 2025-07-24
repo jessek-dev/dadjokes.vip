@@ -778,64 +778,86 @@
       }
     }
 
-    async function saveJoke() {
-      const joke = jokes[currentIndex];
-      const finalCategory = document.getElementById('final-category').value;
-      const secondaryCategory = document.getElementById('secondary-category').value;
-      const reviewNotes = document.getElementById('review-notes').value;
+    // Updated saveJoke function for your index.html
+// Replace the existing saveJoke function with this one
 
-      // Validate required fields
-      if (!finalCategory) {
-        showStatus('Please select a primary category', 'error');
-        return;
-      }
+async function saveJoke() {
+  const joke = jokes[currentIndex];
+  const finalCategory = document.getElementById('final-category').value;
+  const secondaryCategory = document.getElementById('secondary-category').value;
+  const reviewNotes = document.getElementById('review-notes').value;
 
-      if (!currentApproval) {
-        showStatus('Please set an approval status', 'error');
-        return;
-      }
+  // NO validation required - allow saving with any combination of fields
+  // Just collect whatever the user has filled in
+  const updateData = {
+    jokeId: joke.id
+  };
+  
+  // Only include fields that have values
+  if (finalCategory) {
+    updateData.category = finalCategory;
+  }
+  
+  if (secondaryCategory) {
+    updateData.secondary = secondaryCategory;
+  }
+  
+  if (currentRating > 0) {
+    updateData.rating = currentRating;
+  }
+  
+  if (currentApproval) {
+    updateData.approval = currentApproval;
+  }
+  
+  if (currentQueue) {
+    updateData.queue = currentQueue;
+  }
+  
+  if (reviewNotes.trim()) {
+    updateData.notes = reviewNotes.trim();
+  }
 
-      // Show saving status
-      showStatus('💾 Saving...', 'success');
-      document.getElementById('save-btn').disabled = true;
+  // Show saving status
+  showStatus('💾 Saving...', 'success');
+  document.getElementById('save-btn').disabled = true;
 
-      try {
-        await jokeAPI.saveJokeManagement({
-          jokeId: joke.id,
-          category: finalCategory,
-          secondary: secondaryCategory,
-          rating: currentRating,
-          approval: currentApproval,
-          queue: currentQueue,
-          notes: reviewNotes
-        });
-        
-        showStatus('✅ Saved successfully!', 'success');
-        
-        // Update the current joke object
-        jokes[currentIndex].currentCategory = finalCategory;
-        jokes[currentIndex].currentSecondary = secondaryCategory;
-        jokes[currentIndex].currentRating = currentRating;
-        jokes[currentIndex].currentApproval = currentApproval;
-        jokes[currentIndex].currentQueue = currentQueue;
-        jokes[currentIndex].currentNotes = reviewNotes;
-        
-        // Auto-advance to next joke
-        setTimeout(function() {
-          if (currentIndex < jokes.length - 1) {
-            nextJoke();
-          } else {
-            showStatus('🎉 All jokes processed!', 'success');
-          }
-        }, 1000);
-        
-      } catch (error) {
-        console.error('Failed to save joke:', error);
-        showStatus('❌ Save failed: ' + error.message, 'error');
-      } finally {
-        document.getElementById('save-btn').disabled = false;
-      }
+  try {
+    const result = await jokeAPI.saveJokeManagement(updateData);
+    
+    if (result.updatedFields === 0) {
+      showStatus('ℹ️ No changes to save', 'success');
+    } else {
+      showStatus('✅ Saved ' + result.updatedFields + ' field(s)!', 'success');
     }
+    
+    // Update the current joke object with what we just saved
+    if (updateData.category) jokes[currentIndex].currentCategory = updateData.category;
+    if (updateData.secondary) jokes[currentIndex].currentSecondary = updateData.secondary;
+    if (updateData.rating) jokes[currentIndex].currentRating = updateData.rating;
+    if (updateData.approval) jokes[currentIndex].currentApproval = updateData.approval;
+    if (updateData.queue) jokes[currentIndex].currentQueue = updateData.queue;
+    if (updateData.notes) jokes[currentIndex].currentNotes = updateData.notes;
+    
+    // Auto-advance to next joke
+    setTimeout(function() {
+      if (currentIndex < jokes.length - 1) {
+        nextJoke();
+      } else {
+        showStatus('🎉 All jokes processed!', 'success');
+      }
+    }, 1000);
+    
+  } catch (error) {
+    console.error('Failed to save joke:', error);
+    showStatus('❌ Save failed: ' + error.message, 'error');
+  } finally {
+    document.getElementById('save-btn').disabled = false;
+  }
+}
+
+// Also update the button text to be clearer
+// In your HTML, you can change the save button text from "💾 Save & Next" to "💾 Save Changes & Next"
 
     function showStatus(message, type) {
       const statusEl = document.getElementById('status-message');
