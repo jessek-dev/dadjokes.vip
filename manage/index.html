@@ -476,24 +476,38 @@
             <div class="joke-text" id="joke-text"></div>
 
             <!-- Categorization Section -->
-           <div class="form-section">
-            <h3>📝 Categorization</h3>
-            <div class="form-group">
-              <label for="final-category">Primary Category:</label>
-              <select id="final-category">
-                <option value="">-- Select Category --</option>
-              </select>
+            <div class="form-section">
+              <h3>📝 Categorization</h3>
+              <div class="form-group">
+                <label for="final-category">Primary Category:</label>
+                <select id="final-category">
+                  <option value="">-- Select Category --</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="secondary-category">Content Tags:</label>
+                <select id="secondary-category">
+                  <option value="">-- Optional Tags --</option>
+                </select>
+                <small style="color: #5f6368; font-size: 12px;">
+                  This will be saved to the "Content Tags" column
+                </small>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="secondary-category">Content Tags:</label>
-              <select id="secondary-category">
-                <option value="">-- Optional Tags --</option>
-              </select>
-              <small style="color: #5f6368; font-size: 12px;">
-                This will be saved to the "Content Tags" column
-              </small>
+
+            <!-- Rating Section -->
+            <div class="form-section">
+              <h3>⭐ Rating</h3>
+              <div class="star-rating" id="star-rating">
+                <span class="star" data-rating="1">★</span>
+                <span class="star" data-rating="2">★</span>
+                <span class="star" data-rating="3">★</span>
+                <span class="star" data-rating="4">★</span>
+                <span class="star" data-rating="5">★</span>
+                <span class="rating-label" id="rating-label">Not rated</span>
+              </div>
             </div>
-          </div>
+
             <!-- Approval Section -->
             <div class="form-section">
               <h3>✅ Approval Status</h3>
@@ -771,86 +785,81 @@
       }
     }
 
-    // Updated saveJoke function for your index.html
-// Replace the existing saveJoke function with this one
-
-async function saveJoke() {
-  const joke = jokes[currentIndex];
-  const finalCategory = document.getElementById('final-category').value;
-  const secondaryCategory = document.getElementById('secondary-category').value;
-  const reviewNotes = document.getElementById('review-notes').value;
-
-  // NO validation required - allow saving with any combination of fields
-  // Just collect whatever the user has filled in
-  const updateData = {
-    jokeId: joke.id
-  };
-  
-  // Only include fields that have values
-  if (finalCategory) {
-    updateData.category = finalCategory;
-  }
-  
-  if (secondaryCategory) {
-    updateData.secondary = secondaryCategory;
-  }
-  
-  if (currentRating > 0) {
-    updateData.rating = currentRating;
-  }
-  
-  if (currentApproval) {
-    updateData.approval = currentApproval;
-  }
-  
-  if (currentQueue) {
-    updateData.queue = currentQueue;
-  }
-  
-  if (reviewNotes.trim()) {
-    updateData.notes = reviewNotes.trim();
-  }
-
-  // Show saving status
-  showStatus('💾 Saving...', 'success');
-  document.getElementById('save-btn').disabled = true;
-
-  try {
-    const result = await jokeAPI.saveJokeManagement(updateData);
+    async function saveJoke() {
+      const joke = jokes[currentIndex];
+      const finalCategory = document.getElementById('final-category').value;
+      const secondaryCategory = document.getElementById('secondary-category').value;
+      const reviewNotes = document.getElementById('review-notes').value;
     
-    if (result.updatedFields === 0) {
-      showStatus('ℹ️ No changes to save', 'success');
-    } else {
-      showStatus('✅ Saved ' + result.updatedFields + ' field(s)!', 'success');
-    }
-    
-    // Update the current joke object with what we just saved
-    if (updateData.category) jokes[currentIndex].currentCategory = updateData.category;
-    if (updateData.secondary) jokes[currentIndex].currentSecondary = updateData.secondary;
-    if (updateData.rating) jokes[currentIndex].currentRating = updateData.rating;
-    if (updateData.approval) jokes[currentIndex].currentApproval = updateData.approval;
-    if (updateData.queue) jokes[currentIndex].currentQueue = updateData.queue;
-    if (updateData.notes) jokes[currentIndex].currentNotes = updateData.notes;
-    
-    // Auto-advance to next joke
-    setTimeout(function() {
-      if (currentIndex < jokes.length - 1) {
-        nextJoke();
-      } else {
-        showStatus('🎉 All jokes processed!', 'success');
+      // NO validation required - allow saving with any combination of fields
+      // Just collect whatever the user has filled in
+      const updateData = {
+        jokeId: joke.id
+      };
+      
+      // Only include fields that have values
+      if (finalCategory) {
+        updateData.category = finalCategory;
       }
-    }, 1000);
+      
+      if (secondaryCategory) {
+        updateData.secondary = secondaryCategory;
+      }
+      
+      if (currentRating > 0) {
+        updateData.rating = currentRating;
+      }
+      
+      if (currentApproval) {
+        updateData.approval = currentApproval;
+      }
+      
+      if (currentQueue) {
+        updateData.queue = currentQueue;
+      }
+      
+      if (reviewNotes.trim()) {
+        updateData.notes = reviewNotes.trim();
+      }
     
-  } catch (error) {
-    console.error('Failed to save joke:', error);
-    showStatus('❌ Save failed: ' + error.message, 'error');
-  } finally {
-    document.getElementById('save-btn').disabled = false;
-  }
-}
+      // Show saving status
+      showStatus('💾 Saving...', 'success');
+      document.getElementById('save-btn').disabled = true;
+    
+      try {
+        const result = await jokeAPI.saveJokeManagement(updateData);
+        
+        if (result.updatedFields === 0) {
+          showStatus('ℹ️ No changes to save', 'success');
+        } else {
+          showStatus('✅ Saved ' + result.updatedFields + ' field(s)!', 'success');
+        }
+        
+        // Update the current joke object with what we just saved
+        if (updateData.category) jokes[currentIndex].currentCategory = updateData.category;
+        if (updateData.secondary) jokes[currentIndex].currentSecondary = updateData.secondary;
+        if (updateData.rating) jokes[currentIndex].currentRating = updateData.rating;
+        if (updateData.approval) jokes[currentIndex].currentApproval = updateData.approval;
+        if (updateData.queue) jokes[currentIndex].currentQueue = updateData.queue;
+        if (updateData.notes) jokes[currentIndex].currentNotes = updateData.notes;
+        
+        // Auto-advance to next joke
+        setTimeout(function() {
+          if (currentIndex < jokes.length - 1) {
+            nextJoke();
+          } else {
+            showStatus('🎉 All jokes processed!', 'success');
+          }
+        }, 1000);
+        
+      } catch (error) {
+        console.error('Failed to save joke:', error);
+        showStatus('❌ Save failed: ' + error.message, 'error');
+      } finally {
+        document.getElementById('save-btn').disabled = false;
+      }
+    }
 
-// Also update the button text to be clearer
-// In your HTML, you can change the save button text from "💾 Save & Next" to "💾 Save Changes & Next"
 
     function showStatus(message, type) {
       const statusEl = document.getElementById('status-message');
