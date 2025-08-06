@@ -152,7 +152,7 @@
         <div class="cta">
           <h2>Get More Dad Jokes</h2>
           <p class="cta-subtext">
-            Thousands of dad jokes available on the app!
+            Download the Best Dad Jokes app:
           </p>
         
           <div class="store-buttons-badges">
@@ -185,34 +185,80 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      async function loadRandomFeaturedJoke() {
-        try {
-          const jokesRef = collection(db, "jokes", "all", "jokes");
-          const q = query(jokesRef, where("rating", "==", 5));
-          const snapshot = await getDocs(q);
-          const jokes = snapshot.docs.map(doc => doc.data().text);
+      // Limited sample jokes for non-specific pages (max 5 options)
+      const sampleJokes = [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I invented a new word: Plagiarism!",
+        "Why don't skeletons fight each other? They don't have the guts.",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the coffee file a police report? It got mugged!"
+      ];
 
-          if (jokes.length === 0) {
-            console.warn("No jokes found with rating 5.");
-            showFallbackMessage();
-            return;
-          }
-
-          const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-          
-          // Show the actual joke text
-          document.getElementById('jokeText').textContent = randomJoke;
-          
-        } catch (error) {
-          console.error("Error loading joke:", error);
-          showFallbackMessage();
+      async function loadTargetedContent() {
+        const pathParts = window.location.pathname.split('/').filter(p => p.length > 0);
+        
+        // If this is a specific joke URL, try to get the actual joke
+        if (pathParts.length >= 2 && pathParts[0] === 'joke') {
+          const jokeId = pathParts[1];
+          await loadSpecificJoke(jokeId);
+        } else {
+          // For non-joke pages, show a limited sample
+          showLimitedSample();
         }
       }
 
-      function showFallbackMessage() {
+      async function loadSpecificJoke(jokeId) {
+        try {
+          // Try to find the specific joke by ID
+          const jokesRef = collection(db, "jokes", "all", "jokes");
+          const snapshot = await getDocs(jokesRef);
+          const targetJoke = snapshot.docs.find(doc => doc.id === jokeId);
+          
+          if (targetJoke && targetJoke.data().text) {
+            // Show the actual targeted joke
+            document.getElementById('jokeText').textContent = targetJoke.data().text;
+            return;
+          }
+          
+          // If specific joke not found, show teaser message
+          showSpecificJokeTeaser(jokeId);
+          
+        } catch (error) {
+          console.error("Error loading specific joke:", error);
+          showSpecificJokeTeaser(jokeId);
+        }
+      }
+
+      function showSpecificJokeTeaser(jokeId) {
         document.getElementById('jokeText').innerHTML = 
-          'Get unlimited access to thousands of dad jokes in our app!<br><br>' +
-          'Download the Dad Jokes app to see this joke and thousands more.';
+          `This joke is available in the Dad Jokes app!<br><br>` +
+          `Install the app to see this joke and thousands more.`;
+      }
+
+      function showLimitedSample() {
+        // Use session storage to track which sample jokes have been shown
+        const shownJokes = JSON.parse(sessionStorage.getItem('shownSampleJokes') || '[]');
+        const availableJokes = sampleJokes.filter((_, index) => !shownJokes.includes(index));
+        
+        if (availableJokes.length === 0) {
+          // All samples shown, reset and show teaser
+          sessionStorage.removeItem('shownSampleJokes');
+          document.getElementById('jokeText').innerHTML = 
+            `You've seen our sample jokes!<br><br>` +
+            `Download the app for thousands more dad jokes.`;
+          return;
+        }
+        
+        // Pick a random joke from remaining samples
+        const randomIndex = Math.floor(Math.random() * sampleJokes.length);
+        if (!shownJokes.includes(randomIndex)) {
+          shownJokes.push(randomIndex);
+          sessionStorage.setItem('shownSampleJokes', JSON.stringify(shownJokes));
+          document.getElementById('jokeText').textContent = sampleJokes[randomIndex];
+        } else {
+          // Fallback if something goes wrong
+          showLimitedSample();
+        }
       }
 
       // Universal links and app opening logic
@@ -256,13 +302,13 @@
           window.location.href = appUrl;
         }
         
-        // Show actual joke content after a delay
+        // Show targeted content after a delay
         setTimeout(() => {
-          loadRandomFeaturedJoke();
+          loadTargetedContent();
         }, 1500);
       } else {
-        // Desktop fallback - show joke content immediately
-        loadRandomFeaturedJoke();
+        // Desktop fallback - show targeted content immediately
+        loadTargetedContent();
       }
     </script>
 </body>
