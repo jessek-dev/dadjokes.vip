@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke - Dad Jokes App</title>
+    
+    <!-- Smart App Banner for iOS -->
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Check out this hilarious dad joke!">
+    <meta property="og:description" content="Get the Dad Jokes app to see more funny jokes like this one!">
+    <meta property="og:image" content="https://dadjokes.vip/assets/joke-share.png">
+    <meta property="og:type" content="article">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 500px;
+        }
+        
+        .joke-container {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .joke-text {
+            font-size: 1.4em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .get-app-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .get-app-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="joke-container">
+            <div class="joke-text" id="jokeText">
+                Loading joke...
+            </div>
+        </div>
+        
+        <a href="/" class="get-app-btn">
+            📱 Get the Dad Jokes App
+        </a>
+    </div>
+    
+    <script>
+        // Extract joke ID from URL and attempt app open
+        const pathParts = window.location.pathname.split('/');
+        const jokeId = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
+        
+        // Update meta tags with joke ID
+        document.title = `Dad Joke ${jokeId} - Dad Jokes App`;
+        
+        // Try to open the app immediately
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        const isAndroid = /Android/.test(navigator.userAgent);
+        
+        if (isIOS || isAndroid) {
+            // Store for deferred deep link
+            localStorage.setItem('pendingDeepLink', window.location.pathname);
+            
+            // Try to open the app
+            const appUrl = `dadjokesvip://joke/${jokeId}`;
+            const universalUrl = `https://dadjokes.vip/joke/${jokeId}`;
+            
+            // For iOS, try universal link first
+            if (isIOS) {
+                window.location.href = universalUrl;
+            } else {
+                // For Android, try app scheme first
+                window.location.href = appUrl;
+            }
+            
+            // If still here after 2 seconds, show fallback content
+            setTimeout(() => {
+                document.getElementById('jokeText').innerHTML = 
+                    `This joke is best viewed in the Dad Jokes app!<br><br>Joke ID: ${jokeId}`;
+            }, 2000);
+        } else {
+            // Desktop fallback
+            document.getElementById('jokeText').innerHTML = 
+                `Visit this link on your mobile device to see this joke in the Dad Jokes app!<br><br>Joke ID: ${jokeId}`;
+        }
+    </script>
+</body>
+</html>

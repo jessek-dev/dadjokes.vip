@@ -2,11 +2,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Refresh" content="0; url=/app" />
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad Jokes - Brighten Your Day</title>
+  
+  <!-- Universal Links Support -->
+  <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
+  
   <script>
-    window.location.href = "/app";
+    // Universal links handling for root path
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+    
+    if (isIOS || isAndroid) {
+      // Try to open the app first
+      const appScheme = 'dadjokesvip://home';
+      const universalLink = 'https://dadjokes.vip/';
+      
+      // Small delay to allow app opening attempt
+      setTimeout(() => {
+        if (isIOS) {
+          window.location.href = universalLink;
+        } else {
+          window.location.href = appScheme;
+        }
+        
+        // If still here after 2 seconds, redirect to app page
+        setTimeout(() => {
+          window.location.href = "/app";
+        }, 2000);
+      }, 100);
+    } else {
+      // Desktop - redirect to app page immediately
+      window.location.href = "/app";
+    }
   </script>
 </head>
 <body>

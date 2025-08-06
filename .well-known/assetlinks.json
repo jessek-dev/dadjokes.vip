@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kedy.dadJokes",
+    "sha256_cert_fingerprints": [
+      "REPLACE_WITH_YOUR_RELEASE_SHA256_FINGERPRINT",
+      "8D:75:1E:54:89:11:78:6D:48:40:1A:F4:72:51:2B:91:EA:72:8B:4B:79:0D:25:62:EE:50:10:47:0D:CD:28:13"
+    ]
+  }
+}]

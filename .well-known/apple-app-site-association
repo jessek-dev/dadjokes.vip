@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["NW4434C474.com.kedy.dadJokes"],
+        "paths": [
+          "/joke/*",
+          "/category/*",
+          "/featured",
+          "/home",
+          "*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["NW4434C474.com.kedy.dadJokes"]
+  }
+}
