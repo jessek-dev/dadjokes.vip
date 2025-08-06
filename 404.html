@@ -185,13 +185,18 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      // Limited sample jokes for non-specific pages (max 5 options)
+      // Limited sample jokes for fallback pages (max 10 options)
       const sampleJokes = [
         "Why don't scientists trust atoms? Because they make up everything!",
         "I invented a new word: Plagiarism!",
         "Why don't skeletons fight each other? They don't have the guts.",
         "What do you call a fake noodle? An impasta!",
-        "Why did the coffee file a police report? It got mugged!"
+        "Why did the coffee file a police report? It got mugged!",
+        "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+        "What's the best thing about Switzerland? I don't know, but the flag is a big plus.",
+        "I only know 25 letters of the alphabet. I don't know Y.",
+        "How do you organize a space party? You planet!",
+        "Why can't a bicycle stand up by itself? It's two tired!"
       ];
 
       async function loadTargetedContent() {
@@ -220,19 +225,14 @@
             return;
           }
           
-          // If specific joke not found, show teaser message
-          showSpecificJokeTeaser(jokeId);
+          // If specific joke not found, show one of the sample jokes instead
+          showLimitedSample();
           
         } catch (error) {
           console.error("Error loading specific joke:", error);
-          showSpecificJokeTeaser(jokeId);
+          // If Firebase fails, show one of the sample jokes
+          showLimitedSample();
         }
-      }
-
-      function showSpecificJokeTeaser(jokeId) {
-        document.getElementById('jokeText').innerHTML = 
-          `This joke is available in the Dad Jokes app!<br><br>` +
-          `Install the app to see this joke and thousands more.`;
       }
 
       function showLimitedSample() {
@@ -241,7 +241,7 @@
         const availableJokes = sampleJokes.filter((_, index) => !shownJokes.includes(index));
         
         if (availableJokes.length === 0) {
-          // All samples shown, reset and show teaser
+          // All 10 samples shown, reset and show teaser
           sessionStorage.removeItem('shownSampleJokes');
           document.getElementById('jokeText').innerHTML = 
             `You've seen our sample jokes!<br><br>` +
