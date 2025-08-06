@@ -113,80 +113,103 @@
         </div>
     </div>
     
-    <script>
-        // This 404.html handles all unmatched routes for GitHub Pages
-        // Extract the path from the current URL
-        const fullPath = window.location.pathname;
-        const pathParts = fullPath.split('/').filter(p => p.length > 0);
+    <!-- Firebase Featured Joke Loader -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
+        authDomain: "dad-jokes-76c85.firebaseapp.com",
+        projectId: "dad-jokes-76c85",
+        storageBucket: "dad-jokes-76c85.firebasestorage.app",
+        messagingSenderId: "165634926020",
+        appId: "1:165634926020:web:3f8ad9f397da9c3574f091",
+        measurementId: "G-7DJD06WV2R"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      async function loadRandomFeaturedJoke() {
+        try {
+          const jokesRef = collection(db, "jokes", "all", "jokes");
+          const q = query(jokesRef, where("rating", "==", 5));
+          const snapshot = await getDocs(q);
+          const jokes = snapshot.docs.map(doc => doc.data().text);
+
+          if (jokes.length === 0) {
+            console.warn("No jokes found with rating 5.");
+            showFallbackMessage();
+            return;
+          }
+
+          const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+          
+          // Show the actual joke text
+          document.getElementById('jokeText').textContent = randomJoke;
+          
+        } catch (error) {
+          console.error("Error loading joke:", error);
+          showFallbackMessage();
+        }
+      }
+
+      function showFallbackMessage() {
+        document.getElementById('jokeText').innerHTML = 
+          'Get unlimited access to thousands of dad jokes in our app!<br><br>' +
+          'Download the Dad Jokes app to see this joke and thousands more.';
+      }
+
+      // Universal links and app opening logic
+      const fullPath = window.location.pathname;
+      const pathParts = fullPath.split('/').filter(p => p.length > 0);
+      
+      // Update meta tags based on path
+      if (pathParts.length >= 2 && pathParts[0] === 'joke') {
+        document.title = `Dad Joke - Dad Jokes App`;
+        localStorage.setItem('pendingDeepLink', fullPath);
+        localStorage.setItem('pendingJokeId', pathParts[1]);
+      } else if (pathParts.length >= 1) {
+        const section = pathParts[0];
+        document.title = `${section.charAt(0).toUpperCase() + section.slice(1)} - Dad Jokes App`;
+        localStorage.setItem('pendingDeepLink', fullPath);
+      }
+      
+      // Try to open the app immediately
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+      const isAndroid = /Android/.test(navigator.userAgent);
+      
+      if (isIOS || isAndroid) {
+        // Try to open the app based on the path
+        let appUrl, universalUrl;
         
-        console.log('404 Handler - Full path:', fullPath);
-        console.log('404 Handler - Path parts:', pathParts);
-        
-        // Update meta tags based on path
         if (pathParts.length >= 2 && pathParts[0] === 'joke') {
-            const jokeId = pathParts[1];
-            document.title = `Dad Joke ${jokeId} - Dad Jokes App`;
-            
-            // Set up app deep link data
-            localStorage.setItem('pendingDeepLink', fullPath);
-            localStorage.setItem('pendingJokeId', jokeId);
+          const jokeId = pathParts[1];
+          appUrl = `dadjokesvip://joke/${jokeId}`;
+          universalUrl = `https://dadjokes.vip/joke/${jokeId}`;
         } else if (pathParts.length >= 1) {
-            const section = pathParts[0];
-            document.title = `${section.charAt(0).toUpperCase() + section.slice(1)} - Dad Jokes App`;
-            localStorage.setItem('pendingDeepLink', fullPath);
-        }
-        
-        // Try to open the app immediately
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-        const isAndroid = /Android/.test(navigator.userAgent);
-        
-        if (isIOS || isAndroid) {
-            // Try to open the app based on the path
-            let appUrl, universalUrl;
-            
-            if (pathParts.length >= 2 && pathParts[0] === 'joke') {
-                const jokeId = pathParts[1];
-                appUrl = `dadjokesvip://joke/${jokeId}`;
-                universalUrl = `https://dadjokes.vip/joke/${jokeId}`;
-            } else if (pathParts.length >= 1) {
-                const section = pathParts[0];
-                appUrl = `dadjokesvip://${section}`;
-                universalUrl = `https://dadjokes.vip/${section}`;
-            } else {
-                appUrl = 'dadjokesvip://home';
-                universalUrl = 'https://dadjokes.vip/';
-            }
-            
-            console.log('Attempting to open app:', { appUrl, universalUrl });
-            
-            // For iOS, universal links should work automatically
-            // For Android, try the app scheme
-            if (isAndroid) {
-                window.location.href = appUrl;
-            }
-            
-            // Show fallback content after a delay
-            setTimeout(() => {
-                let message = 'This link is best viewed in the Dad Jokes app!';
-                
-                if (pathParts.length >= 2 && pathParts[0] === 'joke') {
-                    message = `This joke is best viewed in the Dad Jokes app!<br><br>Joke ID: ${pathParts[1]}`;
-                } else if (pathParts.length >= 1) {
-                    message = `This ${pathParts[0]} content is best viewed in the Dad Jokes app!`;
-                }
-                
-                document.getElementById('jokeText').innerHTML = message;
-            }, 1500);
+          const section = pathParts[0];
+          appUrl = `dadjokesvip://${section}`;
+          universalUrl = `https://dadjokes.vip/${section}`;
         } else {
-            // Desktop fallback
-            let message = 'Visit this link on your mobile device to open it in the Dad Jokes app!';
-            
-            if (pathParts.length >= 2 && pathParts[0] === 'joke') {
-                message = `Visit this link on your mobile device to see this joke in the Dad Jokes app!<br><br>Joke ID: ${pathParts[1]}`;
-            }
-            
-            document.getElementById('jokeText').innerHTML = message;
+          appUrl = 'dadjokesvip://home';
+          universalUrl = 'https://dadjokes.vip/';
         }
+        
+        // For Android, try the app scheme
+        if (isAndroid) {
+          window.location.href = appUrl;
+        }
+        
+        // Show actual joke content after a delay
+        setTimeout(() => {
+          loadRandomFeaturedJoke();
+        }, 1500);
+      } else {
+        // Desktop fallback - show joke content immediately
+        loadRandomFeaturedJoke();
+      }
     </script>
 </body>
 </html>
