@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo Mama Jokes - Dad Jokes</title>
+    <meta name="description" content="Funny yo mama jokes that will make you laugh! Browse our collection of the best yo mama dad jokes.">
+    <link rel="canonical" href="https://dadjokes.vip/category/yo-mama">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <!-- Native iOS Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+
+    <!-- Android Intent -->
+    <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Yo Mama Jokes - Dad Jokes">
+    <meta property="og:description" content="Funny yo mama jokes that will make you laugh!">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:url" content="https://dadjokes.vip/category/yo-mama">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yo Mama Jokes - Dad Jokes">
+    <meta name="twitter:description" content="Funny yo mama jokes that will make you laugh!">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        /* Mobile App Install Banner */
+        .mobile-app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-app-banner.show {
+            transform: translateY(0);
+        }
+
+        .mobile-app-banner.hidden {
+            display: none;
+        }
+
+        .banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .banner-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .banner-subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .banner-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .banner-close {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        body.banner-active {
+            padding-top: 76px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .breadcrumbs {
+            background: rgba(255,255,255,0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .breadcrumbs a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs span {
+            color: #666;
+            margin: 0 8px;
+        }
+
+        .header-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .header-card h1 {
+            color: #FF8C00;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .header-card p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #999;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #FF8C00;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .joke-grid {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .joke-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .joke-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .joke-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: #FFF3E0;
+            color: #FF8C00;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .app-download h2 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+        }
+
+        .store-badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header-card h1 {
+                font-size: 2em;
+            }
+
+            .header-card {
+                padding: 30px 20px;
+            }
+
+            .header-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cross-Browser Mobile App Install Banner -->
+    <div id="mobile-app-banner" class="mobile-app-banner hidden">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <div class="banner-text">
+            <div class="banner-title">Dad Jokes</div>
+            <div class="banner-subtitle">20,000+ jokes in the app</div>
+        </div>
+        <button class="banner-button" onclick="openApp()">OPEN</button>
+        <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="/app">Home</a>
+            <span>›</span>
+            <span>Yo Mama Jokes</span>
+        </nav>
+
+        <div class="header-card">
+            <h1>😄 Yo Mama Jokes</h1>
+            <p>Funny yo mama jokes that will make you laugh!</p>
+            <div class="header-stats">
+                <span>20 jokes in this category</span>
+                <span>•</span>
+                <span>Updated daily</span>
+            </div>
+            <a href="#" onclick="openApp(); return false;" class="cta-button">Get More in the App</a>
+        </div>
+
+        <div class="joke-grid" id="joke-grid">
+            <!-- Jokes will be inserted here via template replacement -->
+            
+            <a href="/joke/MJ000838" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so old, she knew Burger King while he was still a prince.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001329" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so stupid that she got hit by a parked car.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001330" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that she looks like shes smuggling a Volkswagen.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001380" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that her bellybutton gets home 15 minutes before she does.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001381" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she was diagnosed with a flesh-eating disease, the doctor gave her ten years to live.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001383" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she wears a yellow raincoat, people yell "taxi!"</div>
+            </a>
+  
+
+            <a href="/joke/MJ001389" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she gets in an elevator, it has to go down.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001390" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when her beeper goes off, people think she's backing up.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001391" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that she has to iron her pants on the driveway.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001393" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that people jog around her for exercise.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001397" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that that when she sits on the beach, Greenpeace shows up and tries to tow her back into the ocean...</div>
+            </a>
+  
+
+            <a href="/joke/MJ001399" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she talks to herself, it's a long distance call.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001401" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that light bends around her.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001402" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that I took a picture of her last Christmas and it's still printing!</div>
+            </a>
+  
+
+            <a href="/joke/MJ001403" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she sat on Wal-Mart, she lowered the prices.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001406" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that she gets group insurance.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001410" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she climbed onto a diving board at the beach, the lifeguard told your dad "sorry, you can't park here".</div>
+            </a>
+  
+
+            <a href="/joke/MJ001412" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she got her shoes shined, she had to take the guy's word for it.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001414" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that when she ran away, they had to use all four sides of the milk carton to display her picture.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001416" class="joke-card">
+                <div class="category-badge">Yo Mama</div>
+                <div class="joke-text">Yo mama is so fat that she uses two buses for roller-blades.</div>
+            </a>
+  
+        </div>
+
+        <div class="app-download">
+            <h2>Get the Full Collection</h2>
+            <p>Download our app for 20,000+ dad jokes across 20+ categories. Save your favorites, get daily jokes, and more!</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6743726261">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kedy.dadJokes">
+                    <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile App Banner
+        (function() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const banner = document.getElementById('mobile-app-banner');
+            const bannerDismissed = localStorage.getItem('appBannerDismissed');
+
+            if (isMobile && !bannerDismissed) {
+                banner.classList.remove('hidden');
+                document.body.classList.add('banner-active');
+                setTimeout(() => banner.classList.add('show'), 300);
+            }
+        })();
+
+        function closeMobileBanner() {
+            const banner = document.getElementById('mobile-app-banner');
+            banner.classList.remove('show');
+            document.body.classList.remove('banner-active');
+            localStorage.setItem('appBannerDismissed', Date.now() + (7 * 24 * 60 * 60 * 1000));
+            setTimeout(() => banner.classList.add('hidden'), 300);
+        }
+
+        function openApp() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.href = 'dadjokesvip://category/yo-mama';
+                setTimeout(() => {
+                    window.location.href = 'https://apps.apple.com/app/id6743726261';
+                }, 1500);
+            } else if (isAndroid) {
+                window.location.href = 'dadjokesvip://category/yo-mama';
+                setTimeout(() => {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+                }, 1500);
+            } else {
+                window.location.href = '/app';
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q8LRBVBMRF');
+        gtag('event', 'category_view', {
+            'category': 'Yo Mama',
+            'joke_count': 20
+        });
+    </script>
+</body>
+</html>

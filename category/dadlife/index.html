@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#DadLife Jokes - Dad Jokes</title>
+    <meta name="description" content="Funny #dadlife jokes that will make you laugh! Browse our collection of the best #dadlife dad jokes.">
+    <link rel="canonical" href="https://dadjokes.vip/category/dadlife">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <!-- Native iOS Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+
+    <!-- Android Intent -->
+    <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="#DadLife Jokes - Dad Jokes">
+    <meta property="og:description" content="Funny #dadlife jokes that will make you laugh!">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:url" content="https://dadjokes.vip/category/dadlife">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#DadLife Jokes - Dad Jokes">
+    <meta name="twitter:description" content="Funny #dadlife jokes that will make you laugh!">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        /* Mobile App Install Banner */
+        .mobile-app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-app-banner.show {
+            transform: translateY(0);
+        }
+
+        .mobile-app-banner.hidden {
+            display: none;
+        }
+
+        .banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .banner-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .banner-subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .banner-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .banner-close {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        body.banner-active {
+            padding-top: 76px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .breadcrumbs {
+            background: rgba(255,255,255,0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .breadcrumbs a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs span {
+            color: #666;
+            margin: 0 8px;
+        }
+
+        .header-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .header-card h1 {
+            color: #FF8C00;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .header-card p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #999;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #FF8C00;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .joke-grid {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .joke-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .joke-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .joke-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: #FFF3E0;
+            color: #FF8C00;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .app-download h2 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+        }
+
+        .store-badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header-card h1 {
+                font-size: 2em;
+            }
+
+            .header-card {
+                padding: 30px 20px;
+            }
+
+            .header-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cross-Browser Mobile App Install Banner -->
+    <div id="mobile-app-banner" class="mobile-app-banner hidden">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <div class="banner-text">
+            <div class="banner-title">Dad Jokes</div>
+            <div class="banner-subtitle">20,000+ jokes in the app</div>
+        </div>
+        <button class="banner-button" onclick="openApp()">OPEN</button>
+        <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="/app">Home</a>
+            <span>›</span>
+            <span>#DadLife Jokes</span>
+        </nav>
+
+        <div class="header-card">
+            <h1>😄 #DadLife Jokes</h1>
+            <p>Funny #dadlife jokes that will make you laugh!</p>
+            <div class="header-stats">
+                <span>20 jokes in this category</span>
+                <span>•</span>
+                <span>Updated daily</span>
+            </div>
+            <a href="#" onclick="openApp(); return false;" class="cta-button">Get More in the App</a>
+        </div>
+
+        <div class="joke-grid" id="joke-grid">
+            <!-- Jokes will be inserted here via template replacement -->
+            
+            <a href="/joke/MJ000160" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">I’ve got this disease where I can’t stop making airport puns. The doctor says it's terminal.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000375" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">What did the pirate say on his 80th birthday? Aye Matey!</div>
+            </a>
+  
+
+            <a href="/joke/MJ000668" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Dad died because he couldn't remember his blood type. I will never forget his last words. Be positive.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001027" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">My kid called me an old man this morning. We laughed and laughed... then I changed the Wi-Fi password.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001069" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Not to brag, but I just got hired as a fitness model... They're using me as the "before" picture.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001210" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">I was in bed and said "Hey Siri, why am I so bad with women?" She said "This is Alexa!"</div>
+            </a>
+  
+
+            <a href="/joke/MJ000044" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Man, I really love my furniture... me and my recliner go way back.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000082" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">I have kleptomania, but when it gets bad, I take something for it.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000115" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">I used to be addicted to the hokey pokey, but I turned myself around.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000116" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Me: If humans lose the ability to hear high frequency volumes as they get older, can my 4 week old son hear a dog whistle?
+
+Doctor: No, humans can n...</div>
+            </a>
+  
+
+            <a href="/joke/MJ000128" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Did you hear that the police have a warrant out on a midget psychic ripping people off? It reads “Small medium at large.”</div>
+            </a>
+  
+
+            <a href="/joke/MJ000136" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">My wife said I was immature. So I told her to get out of my fort.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000177" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Child: Dad, make me a sandwich. Dad: Poof! You're a sandwich.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000317" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">I used to think I was indecisive, but now I'm not sure.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000500" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">A man is washing the car with his son. The son asks...... "Dad, can’t you just use a sponge?"</div>
+            </a>
+  
+
+            <a href="/joke/MJ000504" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Hostess: Do you have a preference of where you sit?
+Dad: Down.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000517" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">When does a joke become a dad joke? When it becomes apparent.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000868" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">My little daughter came to me all excited, saying "Daddy! Daddy! Guess how old I'll be in June!"
+"Oh I don't know princess, why don't you tell me?" I ...</div>
+            </a>
+  
+
+            <a href="/joke/MJ000957" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">Dads are like boomerangs.… I hope.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001021" class="joke-card">
+                <div class="category-badge">#DadLife</div>
+                <div class="joke-text">What do you call the sexuality where you're attracted to men and women, but they're not attracted to you? ... Bi-yourself!</div>
+            </a>
+  
+        </div>
+
+        <div class="app-download">
+            <h2>Get the Full Collection</h2>
+            <p>Download our app for 20,000+ dad jokes across 20+ categories. Save your favorites, get daily jokes, and more!</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6743726261">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kedy.dadJokes">
+                    <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile App Banner
+        (function() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const banner = document.getElementById('mobile-app-banner');
+            const bannerDismissed = localStorage.getItem('appBannerDismissed');
+
+            if (isMobile && !bannerDismissed) {
+                banner.classList.remove('hidden');
+                document.body.classList.add('banner-active');
+                setTimeout(() => banner.classList.add('show'), 300);
+            }
+        })();
+
+        function closeMobileBanner() {
+            const banner = document.getElementById('mobile-app-banner');
+            banner.classList.remove('show');
+            document.body.classList.remove('banner-active');
+            localStorage.setItem('appBannerDismissed', Date.now() + (7 * 24 * 60 * 60 * 1000));
+            setTimeout(() => banner.classList.add('hidden'), 300);
+        }
+
+        function openApp() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.href = 'dadjokesvip://category/dadlife';
+                setTimeout(() => {
+                    window.location.href = 'https://apps.apple.com/app/id6743726261';
+                }, 1500);
+            } else if (isAndroid) {
+                window.location.href = 'dadjokesvip://category/dadlife';
+                setTimeout(() => {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+                }, 1500);
+            } else {
+                window.location.href = '/app';
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q8LRBVBMRF');
+        gtag('event', 'category_view', {
+            'category': '#DadLife',
+            'joke_count': 20
+        });
+    </script>
+</body>
+</html>

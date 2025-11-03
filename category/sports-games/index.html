@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Games Jokes - Dad Jokes</title>
+    <meta name="description" content="Funny sports & games jokes that will make you laugh! Browse our collection of the best sports & games dad jokes.">
+    <link rel="canonical" href="https://dadjokes.vip/category/sports-games">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <!-- Native iOS Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+
+    <!-- Android Intent -->
+    <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sports & Games Jokes - Dad Jokes">
+    <meta property="og:description" content="Funny sports & games jokes that will make you laugh!">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:url" content="https://dadjokes.vip/category/sports-games">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sports & Games Jokes - Dad Jokes">
+    <meta name="twitter:description" content="Funny sports & games jokes that will make you laugh!">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        /* Mobile App Install Banner */
+        .mobile-app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-app-banner.show {
+            transform: translateY(0);
+        }
+
+        .mobile-app-banner.hidden {
+            display: none;
+        }
+
+        .banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .banner-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .banner-subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .banner-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .banner-close {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        body.banner-active {
+            padding-top: 76px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .breadcrumbs {
+            background: rgba(255,255,255,0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .breadcrumbs a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs span {
+            color: #666;
+            margin: 0 8px;
+        }
+
+        .header-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .header-card h1 {
+            color: #FF8C00;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .header-card p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #999;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #FF8C00;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .joke-grid {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .joke-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .joke-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .joke-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: #FFF3E0;
+            color: #FF8C00;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+        }
+
+        .app-download {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .app-download h2 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+        }
+
+        .store-badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header-card h1 {
+                font-size: 2em;
+            }
+
+            .header-card {
+                padding: 30px 20px;
+            }
+
+            .header-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cross-Browser Mobile App Install Banner -->
+    <div id="mobile-app-banner" class="mobile-app-banner hidden">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <div class="banner-text">
+            <div class="banner-title">Dad Jokes</div>
+            <div class="banner-subtitle">20,000+ jokes in the app</div>
+        </div>
+        <button class="banner-button" onclick="openApp()">OPEN</button>
+        <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="/app">Home</a>
+            <span>›</span>
+            <span>Sports & Games Jokes</span>
+        </nav>
+
+        <div class="header-card">
+            <h1>😄 Sports & Games Jokes</h1>
+            <p>Funny sports & games jokes that will make you laugh!</p>
+            <div class="header-stats">
+                <span>20 jokes in this category</span>
+                <span>•</span>
+                <span>Updated daily</span>
+            </div>
+            <a href="#" onclick="openApp(); return false;" class="cta-button">Get More in the App</a>
+        </div>
+
+        <div class="joke-grid" id="joke-grid">
+            <!-- Jokes will be inserted here via template replacement -->
+            
+            <a href="/joke/MJ000099" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Frankenstein enters a bodybuilding competition and finds he has seriously misunderstood the objective.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000106" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">What did the mountain climber name his son? Cliff.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000157" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">I was wondering why the frisbee was getting bigger, then it hit me.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000214" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">I asked my date to go to the gym the other day. They never showed up. That's when I knew we wouldn't work out.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000230" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">They say Dodger Stadium can hold up to fifty-six thousand people, but that is just a ballpark figure.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000392" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Someone broke into my house last night and stole my limbo trophy. How low can you go?</div>
+            </a>
+  
+
+            <a href="/joke/MJ000608" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">What do you call a boomerang that won't come back? A stick.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000119" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">What was the pumpkin’s favorite sport?
+
+Squash.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000167" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Bad at golf? Join the club.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000229" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Why couldn't the lifeguard save the hippie? He was too far out, man.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000295" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Why is it so windy inside an arena? All those fans.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000300" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000378" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Why did the opera singer go sailing? They wanted to hit the high Cs.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000394" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">I was going to learn how to juggle, but I didn't have the balls.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000400" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Why does it take longer to get from 1st to 2nd base, than it does to get from 2nd to 3rd base? Because there’s a Shortstop in between!</div>
+            </a>
+  
+
+            <a href="/joke/MJ000438" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">What is the hardest part about sky diving? The ground.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000495" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">I don’t play soccer because I enjoy the sport. I’m just doing it for kicks.</div>
+            </a>
+  
+
+            <a href="/joke/MJ000606" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">What do you call a nervous javelin thrower? Shakespeare.</div>
+            </a>
+  
+
+            <a href="/joke/MJ001038" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">Have you ever tried archery blindfolded? ... You don't know what you're missing!</div>
+            </a>
+  
+
+            <a href="/joke/MJ001046" class="joke-card">
+                <div class="category-badge">Sports & Games</div>
+                <div class="joke-text">I joined the gym and asked my trainer what machine I should use to get beautiful girls... He told me I should try the ATM machine outside.</div>
+            </a>
+  
+        </div>
+
+        <div class="app-download">
+            <h2>Get the Full Collection</h2>
+            <p>Download our app for 20,000+ dad jokes across 20+ categories. Save your favorites, get daily jokes, and more!</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6743726261">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kedy.dadJokes">
+                    <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile App Banner
+        (function() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const banner = document.getElementById('mobile-app-banner');
+            const bannerDismissed = localStorage.getItem('appBannerDismissed');
+
+            if (isMobile && !bannerDismissed) {
+                banner.classList.remove('hidden');
+                document.body.classList.add('banner-active');
+                setTimeout(() => banner.classList.add('show'), 300);
+            }
+        })();
+
+        function closeMobileBanner() {
+            const banner = document.getElementById('mobile-app-banner');
+            banner.classList.remove('show');
+            document.body.classList.remove('banner-active');
+            localStorage.setItem('appBannerDismissed', Date.now() + (7 * 24 * 60 * 60 * 1000));
+            setTimeout(() => banner.classList.add('hidden'), 300);
+        }
+
+        function openApp() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.href = 'dadjokesvip://category/sports-games';
+                setTimeout(() => {
+                    window.location.href = 'https://apps.apple.com/app/id6743726261';
+                }, 1500);
+            } else if (isAndroid) {
+                window.location.href = 'dadjokesvip://category/sports-games';
+                setTimeout(() => {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+                }, 1500);
+            } else {
+                window.location.href = '/app';
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q8LRBVBMRF');
+        gtag('event', 'category_view', {
+            'category': 'Sports & Games',
+            'joke_count': 20
+        });
+    </script>
+</body>
+</html>
