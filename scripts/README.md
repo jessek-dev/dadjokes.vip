@@ -21,7 +21,15 @@ npm run test
 npm run generate
 ```
 
+### Incremental Update (New jokes only)
+```bash
+npm run update
+```
+Checks for new jokes added to Firebase since last run and generates only new pages. Creates monthly incremental sitemaps.
+
 ## What It Does
+
+### Initial Generation (`npm run generate`)
 
 1. **Fetches jokes from Firebase:**
    - `/jokes/all/jokes` - Regular dad jokes
@@ -31,14 +39,19 @@ npm run generate
    - `/joke/{id}.html` - Individual joke pages
    - `/category/{slug}/index.html` - Category landing pages
 
-3. **Creates staged sitemaps:**
-   - `sitemap_priority.xml` - 5-star jokes (Week 1)
-   - `sitemap_week1.xml` - 4-star jokes (Week 2)
-   - `sitemap_week2.xml` - 3-star jokes (Week 3)
-   - `sitemap_week3.xml` - Lower rated (Week 4)
-   - `sitemap_week4.xml` - Remaining jokes
-   - `sitemap_name_jokes.xml` - All AI name jokes
+3. **Creates base sitemaps:**
+   - `sitemap_regular_jokes.xml` - All regular jokes (2,396 URLs)
+   - `sitemap_name_jokes_1.xml` - Name jokes batch 1 (4,000 URLs)
+   - `sitemap_name_jokes_2.xml` - Name jokes batch 2 (3,851 URLs)
    - `sitemap_index.xml` - Master index
+
+### Incremental Updates (`npm run update`)
+
+1. **Detects new jokes** added to Firebase since last run
+2. **Generates only new pages** (no regeneration of existing pages)
+3. **Creates monthly sitemaps** (e.g., `sitemap_updates_2025_11.xml`)
+4. **Updates sitemap index** automatically
+5. **Preserves lastmod dates** for unchanged pages (no wasted crawl budget)
 
 ## Configuration
 
@@ -48,33 +61,64 @@ Edit `config.js` to customize:
 - Category descriptions and emojis
 - Firebase collection paths
 
-## Rollout Schedule
+## Automated Monthly Updates
 
-**Week 1:** Submit `sitemap_priority.xml` (~1,000 top-rated jokes)
-**Week 2:** Submit `sitemap_week1.xml` (~2,000 4-star jokes)
-**Week 3:** Submit `sitemap_week2.xml` (~3,000 3-star jokes)
-**Week 4:** Submit remaining sitemaps
+The site automatically checks for new jokes **monthly on the 1st** via GitHub Actions:
+
+1. **Checks Firebase** for new jokes added since last run
+2. **Generates new pages** if jokes are found
+3. **Creates monthly sitemap** (e.g., `sitemap_updates_2025_11.xml`)
+4. **Commits and pushes** changes to GitHub Pages
+5. **Creates a GitHub Issue** with notification to submit the new sitemap
+
+### Manual Trigger
+
+You can trigger the update manually at any time:
+- Go to **Actions** tab in GitHub
+- Select **Monthly Joke Updates** workflow
+- Click **Run workflow**
+
+### GitHub Secrets Setup
+
+For automation to work, add this secret to your GitHub repository:
+
+1. Go to **Settings** → **Secrets and variables** → **Actions**
+2. Click **New repository secret**
+3. Name: `FIREBASE_SERVICE_ACCOUNT`
+4. Value: Contents of `firebase-service-account.json`
+
+## Initial Rollout Schedule
+
+**Week 1:** Submit `sitemap_regular_jokes.xml` (2,396 jokes)
+**Week 2:** Submit `sitemap_name_jokes_1.xml` (4,000 jokes)
+**Week 3:** Submit `sitemap_name_jokes_2.xml` (3,851 jokes)
 
 ## File Structure
 
 ```
 dadjokes.vip/
+├── .github/
+│   └── workflows/
+│       └── monthly-joke-updates.yml  # Automated monthly updates
 ├── scripts/
-│   ├── generate-pages.js   # Main generator
-│   ├── config.js           # Configuration
-│   ├── package.json        # Dependencies
-│   └── README.md           # This file
+│   ├── generate-pages.js       # Initial full generation
+│   ├── update-new-jokes.js     # Incremental updates
+│   ├── config.js               # Configuration
+│   ├── last-generated.json     # State tracking
+│   ├── package.json            # Dependencies
+│   └── README.md               # This file
 ├── joke/
-│   ├── template.html       # Joke page template
-│   └── {id}.html          # Generated pages
+│   ├── template.html           # Joke page template
+│   └── {id}.html              # Generated pages
 ├── category/
-│   ├── template.html       # Category template
-│   └── {slug}/index.html  # Generated categories
+│   ├── template.html           # Category template
+│   └── {slug}/index.html      # Generated categories
 ├── generated_sitemaps/
-│   ├── sitemap_priority.xml
-│   ├── sitemap_week1.xml
-│   └── ...
-└── sitemap_index.xml       # Master sitemap
+│   ├── sitemap_regular_jokes.xml
+│   ├── sitemap_name_jokes_1.xml
+│   ├── sitemap_name_jokes_2.xml
+│   └── sitemap_updates_YYYY_MM.xml  # Monthly incremental sitemaps
+└── sitemap_index.xml           # Master sitemap (auto-updated)
 
 ```
 
