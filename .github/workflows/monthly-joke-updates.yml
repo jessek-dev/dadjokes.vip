@@ -37,8 +37,15 @@ jobs:
         id: update
         run: |
           cd scripts
-          npm run update > update_output.txt 2>&1
-          cat update_output.txt
+          npm run update 2>&1 | tee update_output.txt
+          exit_code=${PIPESTATUS[0]}
+
+          if [ $exit_code -ne 0 ]; then
+            echo "Script failed with exit code $exit_code"
+            cat update_output.txt
+            exit $exit_code
+          fi
+
           if grep -q "No new jokes found" update_output.txt; then
             echo "has_new_jokes=false" >> $GITHUB_OUTPUT
           else
