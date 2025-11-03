@@ -20,11 +20,15 @@
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
 
-    <!-- Deep Linking: iOS Smart Banner -->
-    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=dadjokes://joke/example123">
+    <!-- Native iOS Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261">
 
-    <!-- Deep Linking: Android Intent -->
+    <!-- Android Intent for App Indexing -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <!-- Open Graph for Facebook/LinkedIn -->
     <meta property="og:title" content="Why did the scarecrow win an award?">
@@ -108,6 +112,91 @@
             min-height: 100vh;
         }
 
+        /* Mobile App Install Banner (Cross-Browser) */
+        .mobile-app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-app-banner.show {
+            transform: translateY(0);
+        }
+
+        .mobile-app-banner.hidden {
+            display: none;
+        }
+
+        .banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .banner-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .banner-subtitle {
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .banner-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .banner-close {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        /* Add top padding to body when banner is showing */
+        body.banner-active {
+            padding-top: 76px;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -161,11 +250,6 @@
             align-items: center;
         }
 
-        .rating {
-            font-size: 1.2em;
-            color: #FF8C00;
-        }
-
         .category-badge {
             background: #FFF3E0;
             color: #FF8C00;
@@ -180,45 +264,122 @@
             line-height: 1.8;
             color: #333;
             margin: 30px 0;
+            padding: 30px;
+            background: #FAFAFA;
+            border-radius: 15px;
+            border-left: 4px solid #FF8C00;
         }
 
         .joke-setup {
             font-weight: 600;
             margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1em;
         }
 
         .joke-punchline {
             color: #FF8C00;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+
+        /* Rating Buttons */
+        .rating-section {
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+            margin-top: 25px;
+        }
+
+        .rating-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .rating-btn {
+            background: #f5f5f5;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1.5em;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            min-width: 90px;
+        }
+
+        .rating-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .rating-btn.active {
+            border-color: #FF8C00;
+            background: #FFF3E0;
+        }
+
+        .rating-btn.thumbs-down.active {
+            border-color: #dc3545;
+            background: #ffe6e6;
+        }
+
+        .rating-btn.thumbs-up.active {
+            border-color: #28a745;
+            background: #e6ffe6;
+        }
+
+        .rating-btn.double-thumbs-up.active {
+            border-color: #FFD700;
+            background: #fffacd;
+        }
+
+        .rating-label {
+            font-size: 0.5em;
+            color: #666;
             font-weight: 500;
         }
 
         /* Share Buttons */
         .share-section {
-            border-top: 1px solid #eee;
             padding-top: 25px;
             margin-top: 25px;
         }
 
         .share-buttons {
             display: flex;
-            gap: 10px;
+            gap: 12px;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         .share-btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
-            font-size: 0.9em;
+            font-size: 0.95em;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 8px;
-            transition: transform 0.2s;
+            gap: 10px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .share-btn:hover {
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .share-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
         }
 
         .share-btn.twitter {
@@ -231,8 +392,13 @@
             color: white;
         }
 
+        .share-btn.native {
+            background: #FF8C00;
+            color: white;
+        }
+
         .share-btn.copy {
-            background: #666;
+            background: #6c757d;
             color: white;
         }
 
@@ -440,12 +606,23 @@
     </style>
 </head>
 <body>
+    <!-- Cross-Browser Mobile App Install Banner -->
+    <div id="mobile-app-banner" class="mobile-app-banner hidden">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <div class="banner-text">
+            <div class="banner-title">Dad Jokes</div>
+            <div class="banner-subtitle">20,000+ jokes in the app</div>
+        </div>
+        <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
+        <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
+    </div>
+
     <div class="container">
         <!-- Breadcrumbs for SEO & Navigation -->
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-            <a href="https://dadjokes.vip">Home</a>
+            <a href="/app">Home</a>
             <span>›</span>
-            <a href="https://dadjokes.vip/category/farm">Farm Jokes</a>
+            <a href="/category/farm">Farm Jokes</a>
             <span>›</span>
             <span>Why did the scarecrow win an award?</span>
         </nav>
@@ -457,14 +634,13 @@
                 <div class="banner-title">Get 20,000+ Jokes in the App</div>
                 <div class="banner-subtitle">Save favorites, get daily jokes, ad-free</div>
             </div>
-            <a href="dadjokes://joke/example123" class="banner-cta" id="banner-cta">Open App</a>
+            <a href="#" class="banner-cta" id="banner-cta" onclick="openApp(); return false;">Open App</a>
         </div>
 
         <!-- Main Joke Content (visible to Googlebot and users) -->
         <article class="joke-card">
             <div class="joke-header">
                 <div class="joke-meta">
-                    <span class="rating">⭐⭐⭐⭐⭐</span>
                     <span class="category-badge">Farm</span>
                 </div>
             </div>
@@ -474,18 +650,44 @@
                 <div class="joke-punchline">Because he was outstanding in his field!</div>
             </div>
 
+            <!-- Rating Section -->
+            <div class="rating-section">
+                <h3 style="margin-bottom: 15px; text-align: center; color: #666;">Rate This Joke</h3>
+                <div class="rating-buttons">
+                    <button class="rating-btn thumbs-down" onclick="rateJoke(1)" data-rating="1">
+                        <span>👎</span>
+                        <span class="rating-label">Not Funny</span>
+                    </button>
+                    <button class="rating-btn thumbs-up" onclick="rateJoke(2)" data-rating="2">
+                        <span>👍</span>
+                        <span class="rating-label">Funny</span>
+                    </button>
+                    <button class="rating-btn double-thumbs-up" onclick="rateJoke(3)" data-rating="3">
+                        <span>👍👍</span>
+                        <span class="rating-label">Hilarious</span>
+                    </button>
+                </div>
+            </div>
+
             <!-- Share Section -->
             <div class="share-section">
-                <h3>Share This Joke</h3>
+                <h3 style="margin-bottom: 15px; text-align: center; color: #666;">Share This Joke</h3>
                 <div class="share-buttons">
+                    <button class="share-btn native" onclick="shareNative()" id="native-share-btn" style="display: none;">
+                        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+                        Share
+                    </button>
                     <button class="share-btn twitter" onclick="shareTwitter()">
-                        🐦 Tweet
+                        <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        Tweet
                     </button>
                     <button class="share-btn facebook" onclick="shareFacebook()">
-                        📘 Share
+                        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        Share
                     </button>
                     <button class="share-btn copy" onclick="copyLink()">
-                        🔗 Copy Link
+                        <svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                        Copy Link
                     </button>
                 </div>
             </div>
@@ -493,7 +695,8 @@
 
         <!-- Related Jokes (Internal Linking for SEO) -->
         <section class="related-section">
-            <h2>More Farm Jokes You'll Love</h2>
+            <h2>Here are some more Farm jokes</h2>
+            <p style="color: #666; margin-bottom: 20px; text-align: center;">Perfect jokes about farming, animals, and country life. Whether you're a farmer or just appreciate good wholesome humor, these jokes will have you harvesting laughs!</p>
             <div class="related-jokes">
                 <a href="/joke/example456" class="related-joke-card">
                     <div class="related-joke-text">What do you call a sleeping bull? A bulldozer!</div>
@@ -534,8 +737,99 @@
         </div>
     </div>
 
+    <!-- Firebase Configuration -->
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
+            authDomain: "dad-jokes-76c85.firebaseapp.com",
+            projectId: "dad-jokes-76c85",
+            storageBucket: "dad-jokes-76c85.firebasestorage.app",
+            messagingSenderId: "165634926020",
+            appId: "1:165634926020:web:3f8ad9f397da9c3574f091"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
     <!-- Access Control Script (Client-Side Only - Googlebot doesn't execute) -->
     <script>
+        const jokeId = 'example123';
+        const jokeSetup = 'Why did the scarecrow win an award?';
+        const jokePunchline = 'Because he was outstanding in his field!';
+
+        // Mobile App Banner Management (Cross-Browser)
+        (function() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const banner = document.getElementById('mobile-app-banner');
+            const bannerDismissed = localStorage.getItem('appBannerDismissed');
+
+            // Only show on mobile devices and if not previously dismissed
+            if (isMobile && !bannerDismissed) {
+                banner.classList.remove('hidden');
+                document.body.classList.add('banner-active');
+
+                // Slide in after a brief delay
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 300);
+
+                // Track banner view
+                if (window.gtag) {
+                    gtag('event', 'mobile_banner_view', {
+                        'joke_id': jokeId
+                    });
+                }
+            }
+        })();
+
+        // Close mobile banner
+        function closeMobileBanner() {
+            const banner = document.getElementById('mobile-app-banner');
+            banner.classList.remove('show');
+            document.body.classList.remove('banner-active');
+
+            // Remember dismissal for 7 days
+            localStorage.setItem('appBannerDismissed', Date.now() + (7 * 24 * 60 * 60 * 1000));
+
+            setTimeout(() => {
+                banner.classList.add('hidden');
+            }, 300);
+
+            if (window.gtag) {
+                gtag('event', 'mobile_banner_dismiss', {
+                    'joke_id': jokeId
+                });
+            }
+        }
+
+        // Open app from banner
+        function openAppFromBanner() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.href = `https://dadjokes.vip/joke/${jokeId}`;
+            } else if (isAndroid) {
+                window.location.href = `dadjokes://joke/${jokeId}`;
+                setTimeout(() => {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+                }, 1500);
+            }
+
+            if (window.gtag) {
+                gtag('event', 'mobile_banner_click', {
+                    'joke_id': jokeId
+                });
+            }
+        }
+
+        // Show native share button if available
+        if (navigator.share) {
+            document.getElementById('native-share-btn').style.display = 'flex';
+        }
+
         // Metered Paywall Logic
         (function() {
             // Bots don't have localStorage - they see full content
@@ -550,7 +844,6 @@
 
             // Track this specific joke (prevent counting same joke multiple times)
             const viewedJokes = JSON.parse(localStorage.getItem('viewedJokes') || '[]');
-            const jokeId = 'example123';
 
             if (!viewedJokes.includes(jokeId)) {
                 viewedJokes.push(jokeId);
@@ -584,44 +877,143 @@
                     });
                 }
             }
-
-            // Track banner CTA clicks
-            document.getElementById('banner-cta')?.addEventListener('click', function() {
-                if (window.gtag) {
-                    gtag('event', 'banner_click', {
-                        'joke_id': jokeId
-                    });
-                }
-            });
         })();
+
+        // Load user's existing rating from localStorage
+        (function() {
+            const savedRating = localStorage.getItem(`rating_${jokeId}`);
+            if (savedRating) {
+                const btn = document.querySelector(`[data-rating="${savedRating}"]`);
+                if (btn) btn.classList.add('active');
+            }
+        })();
+
+        // App Opening Function
+        function openApp() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                // Try universal link first for iOS
+                window.location.href = `https://dadjokes.vip/joke/${jokeId}`;
+            } else if (isAndroid) {
+                // Try deep link for Android
+                window.location.href = `dadjokes://joke/${jokeId}`;
+                // Fallback to Play Store after delay
+                setTimeout(() => {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+                }, 1500);
+            } else {
+                // Desktop - redirect to app download page
+                window.location.href = '/app';
+            }
+
+            if (window.gtag) {
+                gtag('event', 'banner_click', { 'joke_id': jokeId });
+            }
+        }
+
+        // Rating Function
+        function rateJoke(rating) {
+            // Update UI
+            document.querySelectorAll('.rating-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+
+            // Save to localStorage
+            localStorage.setItem(`rating_${jokeId}`, rating);
+
+            // Save to Firebase (web ratings collection)
+            db.collection('web_joke_ratings').add({
+                jokeId: jokeId,
+                rating: rating,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                userAgent: navigator.userAgent,
+                source: 'web'
+            }).catch(error => {
+                console.error('Error saving rating:', error);
+            });
+
+            // Analytics
+            if (window.gtag) {
+                gtag('event', 'rate_joke', {
+                    'joke_id': jokeId,
+                    'rating': rating
+                });
+            }
+
+            // Show feedback
+            const feedbackTexts = {
+                1: "Thanks for the feedback!",
+                2: "Glad you enjoyed it!",
+                3: "We knew you'd love it! 😄"
+            };
+
+            const originalText = event.currentTarget.querySelector('.rating-label').textContent;
+            event.currentTarget.querySelector('.rating-label').textContent = feedbackTexts[rating];
+            setTimeout(() => {
+                event.currentTarget.querySelector('.rating-label').textContent = originalText;
+            }, 2000);
+        }
+
+        // Native Share Function
+        function shareNative() {
+            if (navigator.share) {
+                navigator.share({
+                    title: jokeSetup,
+                    text: `${jokeSetup} ${jokePunchline}`,
+                    url: window.location.href
+                }).then(() => {
+                    if (window.gtag) {
+                        gtag('event', 'share', { 'method': 'Native', 'content_id': jokeId });
+                    }
+                }).catch(err => {
+                    console.error('Share failed:', err);
+                });
+            }
+        }
 
         // Share Functions
         function shareTwitter() {
-            const text = encodeURIComponent('Why did the scarecrow win an award? Because he was outstanding in his field!');
+            const text = encodeURIComponent(`${jokeSetup} ${jokePunchline}`);
             const url = encodeURIComponent(window.location.href);
-            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'width=550,height=420');
 
             if (window.gtag) {
-                gtag('event', 'share', { 'method': 'Twitter', 'content_id': 'example123' });
+                gtag('event', 'share', { 'method': 'Twitter', 'content_id': jokeId });
             }
         }
 
         function shareFacebook() {
             const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=550,height=420');
 
             if (window.gtag) {
-                gtag('event', 'share', { 'method': 'Facebook', 'content_id': 'example123' });
+                gtag('event', 'share', { 'method': 'Facebook', 'content_id': jokeId });
             }
         }
 
         function copyLink() {
-            navigator.clipboard.writeText(window.location.href);
-            alert('Link copied to clipboard!');
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                // Show visual feedback
+                const btn = event.currentTarget;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Copied!';
+                btn.style.background = '#28a745';
 
-            if (window.gtag) {
-                gtag('event', 'share', { 'method': 'Copy Link', 'content_id': 'example123' });
-            }
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '#6c757d';
+                }, 2000);
+
+                if (window.gtag) {
+                    gtag('event', 'share', { 'method': 'Copy Link', 'content_id': jokeId });
+                }
+            }).catch(err => {
+                alert('Failed to copy link');
+                console.error('Copy failed:', err);
+            });
         }
     </script>
 
