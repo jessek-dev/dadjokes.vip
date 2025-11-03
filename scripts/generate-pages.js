@@ -210,7 +210,7 @@ async function generateJokePage(joke, template, allJokes) {
  */
 async function generateCategoryPage(category, jokes, template) {
   const categorySlug = slugify(category);
-  const categoryJokes = jokes.filter(j => j.category === category).slice(0, 20); // Top 20
+  const categoryJokes = jokes.filter(j => j.category === category).slice(0, 5); // Top 5 (gating strategy)
   const categoryDescription = CONFIG.CATEGORY_DESCRIPTIONS[category] ||
     `Funny ${category.toLowerCase()} jokes that will make you laugh!`;
   const categoryEmoji = CONFIG.CATEGORY_EMOJIS[category] || '😄';
