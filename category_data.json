@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "name": "#DadLife",
+      "slug": "dadlife",
+      "emoji": "🦸‍♂️",
+      "description": "The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father."
+    },
+    {
+      "name": "Wife",
+      "slug": "wife",
+      "emoji": "🐅",
+      "description": "Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun."
+    },
+    {
+      "name": "Family",
+      "slug": "family",
+      "emoji": "⚔️",
+      "description": "Wholesome jokes about family relationships, kids, siblings, and relatives that everyone can relate to and enjoy together."
+    },
+    {
+      "name": "Words & Puns",
+      "slug": "words-puns",
+      "emoji": "📝",
+      "description": "Clever wordplay, brilliant puns, and linguistic humor that will make you groan and laugh at the same time. Perfect for word nerds!"
+    },
+    {
+      "name": "Around the House",
+      "slug": "around-the-house",
+      "emoji": "🏠",
+      "description": "Hilarious jokes about home life, furniture, household chores, and all the funny situations that happen under your own roof."
+    },
+    {
+      "name": "Food",
+      "slug": "food",
+      "emoji": "🍔",
+      "description": "Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!"
+    },
+    {
+      "name": "Animals",
+      "slug": "animals",
+      "emoji": "🐕",
+      "description": "Hilarious animal jokes featuring dogs, cats, wildlife, and creatures of all kinds. Perfect for animal lovers and pet owners!"
+    },
+    {
+      "name": "Work & Money",
+      "slug": "work-money",
+      "emoji": "💼",
+      "description": "Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to."
+    },
+    {
+      "name": "Sports & Games",
+      "slug": "sports-games",
+      "emoji": "⚽",
+      "description": "Athletic humor and competition jokes covering football, baseball, basketball, golf, and all your favorite sports and games."
+    },
+    {
+      "name": "Transportation",
+      "slug": "transportation",
+      "emoji": "🚲",
+      "description": "Funny jokes about cars, planes, trains, bicycles, and all forms of travel. Great for road trips and family vacations!"
+    },
+    {
+      "name": "Movies",
+      "slug": "movies",
+      "emoji": "🎬",
+      "description": "Hollywood humor and cinema jokes for film buffs. References to classics, blockbusters, and everything about the movies."
+    },
+    {
+      "name": "Music & Arts",
+      "slug": "music-arts",
+      "emoji": "🪗",
+      "description": "Musical jokes and artistic humor for creative minds. From instruments to paintings, these jokes celebrate the arts."
+    },
+    {
+      "name": "Medical",
+      "slug": "medical",
+      "emoji": "🩺",
+      "description": "Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!"
+    },
+    {
+      "name": "Global",
+      "slug": "global",
+      "emoji": "🌍",
+      "description": "International humor from around the world. Geography jokes, travel humor, and jokes about different countries and cultures."
+    },
+    {
+      "name": "Clothing",
+      "slug": "clothing",
+      "emoji": "👞",
+      "description": "Fashion fails, wardrobe wisdom, and jokes about clothes, shoes, and style. Perfect for anyone who's ever gotten dressed!"
+    },
+    {
+      "name": "People",
+      "slug": "people",
+      "emoji": "🧑‍🤝‍🧑",
+      "description": "Jokes about personalities, characters, professions, and all types of people. Humor that celebrates our differences and similarities."
+    },
+    {
+      "name": "History",
+      "slug": "history",
+      "emoji": "📜",
+      "description": "Jokes about the past, historical figures, and events that shaped our world. History class was never this funny!"
+    },
+    {
+      "name": "Religion",
+      "slug": "religion",
+      "emoji": "⛪",
+      "description": "Lighthearted religious humor that's respectful and family-friendly. Jokes that celebrate faith with a smile."
+    },
+    {
+      "name": "Mother Nature",
+      "slug": "mother-nature",
+      "emoji": "🌪️",
+      "description": "Weather jokes, plant humor, and outdoor adventure jokes. Everything about nature, gardening, and the great outdoors!"
+    },
+    {
+      "name": "NSFW",
+      "slug": "nsfw",
+      "emoji": "🥷",
+      "description": "Jokes for mature audiences only. Adult humor that's not suitable for work or kids. You've been warned!"
+    },
+    {
+      "name": "Yo Mama",
+      "slug": "yo-mama",
+      "emoji": "🧌",
+      "description": "Classic yo mama jokes that are so funny, they'll make yo mama laugh! Traditional roasts delivered with comedic timing."
+    }
+  ]
+}
