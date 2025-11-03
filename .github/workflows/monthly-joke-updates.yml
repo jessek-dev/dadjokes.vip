@@ -30,8 +30,8 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
-          mkdir -p quotes_app
-          echo "$FIREBASE_SERVICE_ACCOUNT" > quotes_app/firebase-service-account.json
+          mkdir -p ../quotes_app
+          echo "$FIREBASE_SERVICE_ACCOUNT" > ../quotes_app/firebase-service-account.json
 
       - name: Run incremental update
         id: update
