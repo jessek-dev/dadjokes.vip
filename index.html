@@ -22,32 +22,9 @@
   </script>
 
   <script>
-    // Universal links handling for root path
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isAndroid = /Android/.test(navigator.userAgent);
-
-    if (isIOS || isAndroid) {
-      // Try to open the app first
-      const appScheme = 'dadjokesvip://home';
-      const universalLink = 'https://dadjokes.vip/';
-
-      // Small delay to allow app opening attempt
-      setTimeout(() => {
-        if (isIOS) {
-          window.location.href = universalLink;
-        } else {
-          window.location.href = appScheme;
-        }
-
-        // If still here after 2 seconds, redirect to app page
-        setTimeout(() => {
-          window.location.href = "/app";
-        }, 2000);
-      }, 100);
-    } else {
-      // Desktop - redirect to app page immediately
-      window.location.href = "/app";
-    }
+    // Redirect all traffic to /app page
+    // Universal links and app schemes are handled automatically by iOS/Android
+    window.location.href = "/app";
   </script>
 </head>
 <body>
