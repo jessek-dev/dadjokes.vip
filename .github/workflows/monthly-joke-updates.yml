@@ -1,0 +1,103 @@
+name: Monthly Joke Updates
+
+  on:
+    schedule:
+      - cron: '0 2 1 * *'
+    workflow_dispatch:
+
+  permissions:
+    contents: write
+    issues: write
+
+  jobs:
+    update-jokes:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '18'
+
+        - name: Install dependencies
+          run: |
+            cd scripts
+            npm install
+
+        - name: Setup Firebase credentials
+          env:
+            FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          run: |
+            echo "$FIREBASE_SERVICE_ACCOUNT" > quotes_app/firebase-service-account.json
+
+        - name: Run incremental update
+          id: update
+          run: |
+            cd scripts
+            npm run update > update_output.txt 2>&1
+            cat update_output.txt
+            if grep -q "No new jokes found" update_output.txt; then
+              echo "has_new_jokes=false" >> $GITHUB_OUTPUT
+              echo "new_joke_count=0" >> $GITHUB_OUTPUT
+            else
+              echo "has_new_jokes=true" >> $GITHUB_OUTPUT
+              new_count=$(grep "New jokes added:" update_output.txt | awk '{print $4}')
+              sitemap_name=$(grep "New sitemap:" update_output.txt | awk '{print $3}')
+              echo "new_joke_count=$new_count" >> $GITHUB_OUTPUT
+              echo "sitemap_name=$sitemap_name" >> $GITHUB_OUTPUT
+            fi
+
+        - name: Commit and push changes
+          if: steps.update.outputs.has_new_jokes == 'true'
+          run: |
+            git config user.name "GitHub Actions Bot"
+            git config user.email "actions@github.com"
+            git add -A
+            git commit -m "Monthly update: Add ${{ steps.update.outputs.new_joke_count }} new jokes"
+            git push
+
+        - name: Create notification issue
+          if: steps.update.outputs.has_new_jokes == 'true'
+          uses: actions/github-script@v7
+          with:
+            script: |
+              const newCount = '${{ steps.update.outputs.new_joke_count }}';
+              const sitemapName = '${{ steps.update.outputs.sitemap_name }}';
+              const sitemapUrl = 'https://dadjokes.vip/generated_sitemaps/' + sitemapName + '.xml';
+              const yearMonth = new Date().toISOString().slice(0, 7);
+
+              const issueBody = '## Monthly Joke Update Complete!\n\n' +
+                '**New jokes added:** ' + newCount + '\n' +
+                '**New sitemap:** `' + sitemapName + '`\n\n' +
+                '### Action Required: Submit to Google Search Console\n\n' +
+                '1. Go to [Google Search Console](https://search.google.com/search-console)\n' +
+                '2. Select the **dadjokes.vip** property\n' +
+                '3. Navigate to **Sitemaps** in the left sidebar\n' +
+                '4. Add this new sitemap URL:\n```\n' + sitemapUrl + '\n```\n' +
+                '5. Click **Submit**\n\n' +
+                '### Summary\n\n' +
+                '- **Sitemap location:** `generated_sitemaps/' + sitemapName + '`\n' +
+                '- **Generated:** ' + new Date().toISOString() + '\n\n' +
+                '### Changes Deployed\n\n' +
+                'All changes have been committed and pushed to GitHub Pages. The new sitemap is now live at:\n' +
+                sitemapUrl + '\n\n' +
+                '---\n' +
+                '*This issue was created automatically by the monthly joke update workflow.*';
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: 'New Sitemap Ready: ' + newCount + ' jokes added (' + yearMonth + ')',
+                body: issueBody,
+                labels: ['sitemap', 'automation', 'action-required']
+              });
+
+        - name: No new jokes found
+          if: steps.update.outputs.has_new_jokes == 'false'
+          run: |
+            echo "No new jokes found. No action needed."
