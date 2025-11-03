@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_priority.xml</loc>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_regular_jokes.xml</loc>
     <lastmod>2025-11-03</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_week1.xml</loc>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_name_jokes_1.xml</loc>
     <lastmod>2025-11-03</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_week2.xml</loc>
-    <lastmod>2025-11-03</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_week3.xml</loc>
-    <lastmod>2025-11-03</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_name_jokes.xml</loc>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_name_jokes_2.xml</loc>
     <lastmod>2025-11-03</lastmod>
   </sitemap>
 </sitemapindex>

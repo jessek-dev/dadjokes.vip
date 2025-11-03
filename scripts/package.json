@@ -1,0 +1,13 @@
+{
+  "name": "dadjokes-page-generator",
+  "version": "1.0.0",
+  "description": "Generate static joke pages from Firebase",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate-pages.js",
+    "test": "node generate-pages.js --test"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}
