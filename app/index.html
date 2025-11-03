@@ -120,27 +120,66 @@
           animation: none;
         }
         
-        .features {
-            display: grid;
-            gap: 20px;
-            margin: 40px 0;
+        .hero-screenshot {
+            margin: 30px 0;
+            text-align: center;
         }
-        
-        .feature {
-            background: rgba(255,255,255,0.9);
-            padding: 20px;
+
+        .hero-screenshot img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .feature-with-image {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-with-image.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-with-image img {
+            flex: 1;
+            max-width: 300px;
+            height: auto;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
+
         .feature-icon {
             font-size: 40px;
             margin-bottom: 10px;
         }
-        
-        .feature h3 {
+
+        .feature-with-image h3 {
             color: #FF8C00;
             margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .feature-with-image p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
         }
         
         .cta {
@@ -253,18 +292,51 @@
           color: #666;
         }
         
+        @media (max-width: 768px) {
+            .feature-with-image,
+            .feature-with-image.reverse {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .feature-with-image img {
+                max-width: 100%;
+            }
+
+            .hero-screenshot {
+                margin: 20px 0;
+            }
+
+            .features {
+                gap: 30px;
+                margin: 40px 0;
+            }
+
+            .feature-with-image h3 {
+                font-size: 1.3em;
+            }
+
+            .feature-with-image p {
+                font-size: 1em;
+            }
+        }
+
         @media (max-width: 480px) {
             h1 {
                 font-size: 2em;
             }
-            
+
             .joke-text {
                 font-size: 1.1em;
             }
-            
+
             .store-button {
                 width: 100%;
                 max-width: 250px;
+            }
+
+            .feature-with-image {
+                padding: 15px;
             }
         }
 
@@ -371,31 +443,65 @@
 
         </div>
 
-        
-        
+
+        <!-- Hero Screenshot -->
+        <div class="hero-screenshot">
+          <img src="/assets/screenshots/hero-one-app.png" alt="Dad Jokes App - One App to Rule Them All" loading="eager">
+        </div>
+
         <div class="features">
-            <div class="feature">
-                <div class="feature-icon">🎯</div>
-                <h3>Daily Featured Joke</h3>
-                <p>Get a hand-picked 5-star dad joke every single day</p>
+            <div class="feature-with-image">
+                <div class="feature-content">
+                    <div class="feature-icon">🤠</div>
+                    <h3>Get Roasted by AI</h3>
+                    <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
+                </div>
+                <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy">
             </div>
-            
-            <div class="feature">
-                <div class="feature-icon">📚</div>
-                <h3>Categorized Collection</h3>
-                <p>Browse jokes by category - find the perfect groan for any occasion</p>
+
+            <div class="feature-with-image reverse">
+                <div class="feature-content">
+                    <div class="feature-icon">📚</div>
+                    <h3>20+ Joke Categories</h3>
+                    <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation</p>
+                </div>
+                <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy">
             </div>
-            
-            <div class="feature">
-                <div class="feature-icon">⭐</div>
-                <h3>Rate & Save</h3>
-                <p>Rate jokes and build your personal collection of favorites</p>
+
+            <div class="feature-with-image">
+                <div class="feature-content">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Build Your Personal Collection</h3>
+                    <p>Save favorites in the Joke Vault and access them anytime. Your best material, always at your fingertips</p>
+                </div>
+                <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy">
             </div>
-            
-            <div class="feature">
-                <div class="feature-icon">🎉</div>
-                <h3>Premium Features</h3>
-                <p>Get 10 daily refreshes, exclusive jokes, and an ad-free experience</p>
+
+            <div class="feature-with-image reverse">
+                <div class="feature-content">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Submit Your Own Jokes</h3>
+                    <p>Got a killer dad joke? Submit it and see it featured in the app with your credit</p>
+                </div>
+                <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy">
+            </div>
+
+            <div class="feature-with-image">
+                <div class="feature-content">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Make It Your Own</h3>
+                    <p>Choose from 13 color themes, enable AI backgrounds, and customize your entire experience</p>
+                </div>
+                <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy">
+            </div>
+
+            <div class="feature-with-image reverse">
+                <div class="feature-content">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Rate & Share</h3>
+                    <p>Rate jokes and share your favorites. Build a collection that makes everyone laugh</p>
+                </div>
+                <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy">
             </div>
         </div>
         
@@ -415,11 +521,6 @@
               <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
             </a>
 
-          </div>
-        
-          <!-- Placeholder for screenshots -->
-          <div class="screenshot-placeholder">
-            <p>[ Screenshots Coming Soon ]</p>
           </div>
         </div>
     </div>
