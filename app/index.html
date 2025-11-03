@@ -417,15 +417,15 @@
 
         <div class="features">
             <div class="feature">
-                <h3>Get Roasted by AI</h3>
-                <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
-                <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy">
+                <h3><span id="joke-count">20,000+</span> Jokes Across 20+ Categories</h3>
+                <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation. Our collection grows every day.</p>
+                <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy">
             </div>
 
             <div class="feature">
-                <h3>20+ Joke Categories</h3>
-                <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation</p>
-                <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy">
+                <h3>Get Roasted by AI</h3>
+                <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
+                <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy">
             </div>
 
             <div class="feature">
@@ -504,7 +504,7 @@
 <!-- Firebase Featured Joke Loader -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, query, where, getCountFromServer } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
@@ -518,6 +518,35 @@
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+
+  // Load total joke count
+  async function loadJokeCount() {
+    try {
+      const jokesRef = collection(db, "jokes", "all", "jokes");
+      const jokesSnapshot = await getCountFromServer(jokesRef);
+      const jokesCount = jokesSnapshot.data().count;
+
+      // Try to get name jokes count
+      let nameJokesCount = 0;
+      try {
+        const nameJokesRef = collection(db, "name_jokes");
+        const nameJokesSnapshot = await getCountFromServer(nameJokesRef);
+        nameJokesCount = nameJokesSnapshot.data().count;
+      } catch (e) {
+        console.log("Name jokes collection not found or inaccessible");
+      }
+
+      const totalCount = jokesCount + nameJokesCount;
+      const formattedCount = totalCount.toLocaleString();
+
+      const countElement = document.getElementById("joke-count");
+      if (countElement) {
+        countElement.textContent = formattedCount;
+      }
+    } catch (error) {
+      console.error("Error loading joke count:", error);
+    }
+  }
 
   async function loadRandomFeaturedJoke() {
     try {
@@ -637,7 +666,10 @@
     }
   }
 
-  window.addEventListener("DOMContentLoaded", loadRandomFeaturedJoke);
+  window.addEventListener("DOMContentLoaded", () => {
+    loadRandomFeaturedJoke();
+    loadJokeCount();
+  });
 </script>
 
 <script>
