@@ -18,11 +18,27 @@
     <!-- Manifest -->
     <link rel="manifest" href="/assets/site.webmanifest">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dadjokes.vip/app">
+
     <!-- Open Graph tags -->
     <meta property="og:title" content="Dad Jokes - Daily Groan-Worthy Humor">
     <meta property="og:description" content="Get your daily dose of dad jokes! Premium dad humor delivered fresh every day.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
-    <meta property="og:url" content="https://dadjokes.vip">
+    <meta property="og:url" content="https://dadjokes.vip/app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dad Jokes - Daily Groan-Worthy Humor">
+    <meta name="twitter:description" content="Get your daily dose of dad jokes! Premium dad humor delivered fresh every day.">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+
+    <!-- Resource hints for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
 
     
     <style>
@@ -498,6 +514,43 @@
     
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Structured Data - Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dad Jokes",
+      "url": "https://dadjokes.vip",
+      "description": "The most jokes out there... by a lot. Made by dads, for dads.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dadjokes.vip/app?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Dad Jokes",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": ["iOS", "Android"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1000"
+      },
+      "description": "Get your daily dose of dad jokes! Over 20,000 jokes across 20+ categories. Rate, save, and share your favorites. Premium features include AI-generated personalized jokes, custom themes, and an ad-free experience."
+    }
     </script>
 
     

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin/management areas
+Disallow: /manage/
+
+# Sitemap location
+Sitemap: https://dadjokes.vip/sitemap.xml
