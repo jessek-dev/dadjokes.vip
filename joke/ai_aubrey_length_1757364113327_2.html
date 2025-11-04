@@ -8,7 +8,7 @@
     <title>Every time someone asks you to spell your name, you're stuck in that awkward zone where it's just long enough to be a hassle but not long enough to be impressive - like a 45-second microwave timer. - Dad Jokes</title>
 
     <!-- SEO: Description with first 150 chars -->
-    <meta name="description" content="Every time someone asks you to spell your name, you're stuck in that awkward zone where it's just long enough to be a hassle but not long enough to be impressive - like a 45-second microwave timer.  Read this 3-star rated Name Jokes dad joke and 20,000+ more funny dad jokes in our free app.">
+    <meta name="description" content="Every time someone asks you to spell your name, you're stuck in that awkward zone where it's just long enough to be a hassle but not long enough to be impressive - like a 45-second microwave timer.  Read this 3-star rated Name Jokes dad joke and thousands more funny dad jokes in our free app.">
 
     <!-- SEO: Keywords -->
     <meta name="keywords" content="dad jokes, Name Jokes jokes, funny jokes, clean jokes, name jokes, dad jokes">
@@ -83,15 +83,20 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://dadjokes.vip"
+        "item": "https://dadjokes.vip/app"
       }, {
         "@type": "ListItem",
         "position": 2,
-        "name": "Name Jokes Jokes",
-        "item": "https://dadjokes.vip/category/name-jokes"
+        "name": "Categories",
+        "item": "https://dadjokes.vip/jokes"
       }, {
         "@type": "ListItem",
         "position": 3,
+        "name": "Name Jokes",
+        "item": "https://dadjokes.vip/category/name-jokes"
+      }, {
+        "@type": "ListItem",
+        "position": 4,
         "name": "Every time someone asks you to spell your name, you're stuck in that awkward zone where it's just long enough to be a hassle but not long enough to be impressive - like a 45-second microwave timer."
       }]
     }
@@ -611,7 +616,7 @@
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">20,000+ jokes in the app</div>
+            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
         </div>
         <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
         <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
@@ -622,7 +627,9 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="/app">Home</a>
             <span>›</span>
-            <a href="/category/name-jokes">Name Jokes Jokes</a>
+            <a href="/jokes">Categories</a>
+            <span>›</span>
+            <a href="/category/name-jokes">Name Jokes</a>
             <span>›</span>
             <span>Every time someone asks you to spell your name, you're stuck in that awkward zone where it's just long enough to be a hassle but not long enough to be impressive - like a 45-second microwave timer.</span>
         </nav>
@@ -631,7 +638,7 @@
         <div id="app-banner" class="app-banner hidden">
             <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes App" class="banner-icon">
             <div class="banner-content">
-                <div class="banner-title">Get 20,000+ Jokes in the App</div>
+                <div class="banner-title">Get <span id="app-banner-count">20,000+</span> Jokes in the App</div>
                 <div class="banner-subtitle">Save favorites, get daily jokes, ad-free</div>
             </div>
             <a href="#" class="banner-cta" id="banner-cta" onclick="openApp(); return false;">Open App</a>
@@ -698,14 +705,14 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/joke/ai_ivy_famous_namesakes_v3_1757369171268_325" class="related-joke-card">
-                    <div class="related-joke-text">Ivy, just like Poison Ivy! Though they're famous for being Batman's enemy who controls plants, and you're famous for... having the same first name.</div>
+                <a href="/joke/ai_angel_cultural_origin_1757364152883_80" class="related-joke-card">
+                    <div class="related-joke-text">Angel appears in 3 cultures: English, Bulgarian, Macedonian. Multiple cultures, zero cultural awareness.</div>
                 </a>
-                <a href="/joke/ai_casey_cultural_origin_1757364189411_260" class="related-joke-card">
-                    <div class="related-joke-text">Casey appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/joke/ai_ava_famous_namesakes_v3_1757368937599_70" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Ava and Ava Gardner share the same name! Ava Gardner is remembered for being one of the most beautiful women who ever lived. Ava will be remembered for this joke.</div>
                 </a>
-                <a href="/joke/ai_angelica_name_meaning_1757364153586_83" class="related-joke-card">
-                    <div class="related-joke-text">Angelica comes from English meaning "strength." The name's promise wasn't quite delivered.</div>
+                <a href="/joke/ai_ayla_rhyme_1757347802012_2" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Ayla, make Kayla-nade - because at least that name people can actually pronounce!</div>
                 </a>
             </div>
         </section>
@@ -713,7 +720,7 @@
         <!-- CTA to Download App -->
         <section class="cta-section">
             <h2>Want More Jokes?</h2>
-            <p>Download our app and get access to 20,000+ dad jokes, daily featured jokes, and save your favorites!</p>
+            <p>Download our app and get access to <span id="cta-count-1">20,000+</span> dad jokes, daily featured jokes, and save your favorites!</p>
             <div class="store-badges">
                 <a href="https://dadjokes.vip/ios">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -729,7 +736,7 @@
     <div id="paywall-overlay" class="paywall-overlay">
         <div class="paywall-content">
             <h2>🎉 You've Read 5 Jokes!</h2>
-            <p>Want to keep laughing? Download our free app to access 20,000+ dad jokes, save your favorites, and get daily featured jokes!</p>
+            <p>Want to keep laughing? Download our free app to access <span id="cta-count-2">20,000+</span> dad jokes, save your favorites, and get daily featured jokes!</p>
             <div class="paywall-buttons">
                 <a href="dadjokes://joke/ai_aubrey_length_1757364113327_2" class="paywall-btn primary">Open App</a>
                 <a href="https://dadjokes.vip/app" class="paywall-btn secondary">Learn More</a>
@@ -896,6 +903,46 @@
                 if (btn) btn.classList.add('active');
             }
         })();
+
+        // Load total joke count dynamically
+        async function loadJokeCount() {
+            try {
+                const jokesRef = db.collection('jokes').doc('all').collection('jokes');
+                const jokesCount = await jokesRef.get().then(snapshot => snapshot.size);
+
+                // Try to get name jokes count
+                let nameJokesCount = 0;
+                try {
+                    const nameJokesRef = db.collection('name_jokes');
+                    nameJokesCount = await nameJokesRef.get().then(snapshot => snapshot.size);
+                } catch (e) {
+                    console.log("Name jokes collection not found or inaccessible");
+                }
+
+                const totalCount = jokesCount + nameJokesCount;
+                const formattedCount = totalCount.toLocaleString();
+
+                // Update all count elements
+                const countElements = [
+                    'mobile-banner-count',
+                    'app-banner-count',
+                    'cta-count-1',
+                    'cta-count-2'
+                ];
+
+                countElements.forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = formattedCount;
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading joke count:", error);
+            }
+        }
+
+        // Load joke count on page load
+        loadJokeCount();
 
         // App Opening Function
         function openApp() {

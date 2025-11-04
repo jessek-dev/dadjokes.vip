@@ -215,13 +215,23 @@ async function generateCategoryPage(category, jokes, template) {
     `Funny ${category.toLowerCase()} jokes that will make you laugh!`;
   const categoryEmoji = CONFIG.CATEGORY_EMOJIS[category] || '😄';
 
-  // Generate joke list HTML
-  const jokeListHtml = categoryJokes.map(joke => `
+  // Generate joke list HTML (show only setup, not full joke)
+  const jokeListHtml = categoryJokes.map(joke => {
+    // For setup/punchline jokes, show only setup. For one-liners, show beginning only
+    let displayText;
+    if (joke.setup && joke.setup.trim()) {
+      displayText = joke.setup;
+    } else {
+      // For one-liners, show just the first 100 characters
+      displayText = joke.text.substring(0, 100) + (joke.text.length > 100 ? '...' : '');
+    }
+
+    return `
             <a href="/joke/${joke.id}" class="joke-card">
                 <div class="category-badge">${category}</div>
-                <div class="joke-text">${joke.text.substring(0, 150)}${joke.text.length > 150 ? '...' : ''}</div>
-            </a>
-  `).join('\n');
+                <div class="joke-text">${displayText}</div>
+            </a>`;
+  }).join('\n');
 
   const replacements = {
     CATEGORY: category,

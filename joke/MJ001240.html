@@ -8,7 +8,7 @@
     <title>My wife asked "Why do you keep pushing all my buttons? - Dad Jokes</title>
 
     <!-- SEO: Description with first 150 chars -->
-    <meta name="description" content="My wife asked "Why do you keep pushing all my buttons? " I said "It's impossible to find the mute button!" Read this 4-star rated Wife dad joke and 20,000+ more funny dad jokes in our free app.">
+    <meta name="description" content="My wife asked "Why do you keep pushing all my buttons? " I said "It's impossible to find the mute button!" Read this 4-star rated Wife dad joke and thousands more funny dad jokes in our free app.">
 
     <!-- SEO: Keywords -->
     <meta name="keywords" content="dad jokes, Wife jokes, funny jokes, clean jokes, remote control, humor">
@@ -83,15 +83,20 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://dadjokes.vip"
+        "item": "https://dadjokes.vip/app"
       }, {
         "@type": "ListItem",
         "position": 2,
-        "name": "Wife Jokes",
-        "item": "https://dadjokes.vip/category/wife"
+        "name": "Categories",
+        "item": "https://dadjokes.vip/jokes"
       }, {
         "@type": "ListItem",
         "position": 3,
+        "name": "Wife",
+        "item": "https://dadjokes.vip/category/wife"
+      }, {
+        "@type": "ListItem",
+        "position": 4,
         "name": "My wife asked "Why do you keep pushing all my buttons?"
       }]
     }
@@ -611,7 +616,7 @@
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">20,000+ jokes in the app</div>
+            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
         </div>
         <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
         <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
@@ -622,7 +627,9 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="/app">Home</a>
             <span>›</span>
-            <a href="/category/wife">Wife Jokes</a>
+            <a href="/jokes">Categories</a>
+            <span>›</span>
+            <a href="/category/wife">Wife</a>
             <span>›</span>
             <span>My wife asked "Why do you keep pushing all my buttons?</span>
         </nav>
@@ -631,7 +638,7 @@
         <div id="app-banner" class="app-banner hidden">
             <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes App" class="banner-icon">
             <div class="banner-content">
-                <div class="banner-title">Get 20,000+ Jokes in the App</div>
+                <div class="banner-title">Get <span id="app-banner-count">20,000+</span> Jokes in the App</div>
                 <div class="banner-subtitle">Save favorites, get daily jokes, ad-free</div>
             </div>
             <a href="#" class="banner-cta" id="banner-cta" onclick="openApp(); return false;">Open App</a>
@@ -698,15 +705,20 @@
             <h2>Here are some more Wife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
-                <a href="/joke/MJ001200" class="related-joke-card">
-                    <div class="related-joke-text">My wife told me to take out the spider instead of killing it. So I did! We had a few drinks - pretty nice guy, and he's a web developer!</div>
+                <a href="/joke/MJ001056" class="related-joke-card">
+                    <div class="related-joke-text">My wife said she was fed up with me always getting my directions mixed up, so I packed my bags and right.</div>
                 </a>
-                <a href="/joke/MJ000966" class="related-joke-card">
-                    <div class="related-joke-text">My wife and I have reached the difficult decision that we do not want children.
-If anybody does, please just send me your contact details and we can drop them off tomorrow.</div>
+                <a href="/joke/MJ001132" class="related-joke-card">
+                    <div class="related-joke-text">My wife dropped the laundry basket. She's still mad at me because I just stood there and watched it unfold!</div>
                 </a>
-                <a href="/joke/MJ001137" class="related-joke-card">
-                    <div class="related-joke-text">I was going to propose to my girlfriend, but my dog ate the ring. Now it's just a diamond in the rough!</div>
+                <a href="/joke/MJ000001" class="related-joke-card">
+                    <div class="related-joke-text">Wife: Honey I’m pregnant.
+
+Me: Well…. what do we do now?
+
+Wife: Well, I guess we should go to a baby doctor.
+
+Me: Hm.. I think I’d be a lot more comfortable going to an adult doctor.</div>
                 </a>
             </div>
         </section>
@@ -714,7 +726,7 @@ If anybody does, please just send me your contact details and we can drop them o
         <!-- CTA to Download App -->
         <section class="cta-section">
             <h2>Want More Jokes?</h2>
-            <p>Download our app and get access to 20,000+ dad jokes, daily featured jokes, and save your favorites!</p>
+            <p>Download our app and get access to <span id="cta-count-1">20,000+</span> dad jokes, daily featured jokes, and save your favorites!</p>
             <div class="store-badges">
                 <a href="https://dadjokes.vip/ios">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -730,7 +742,7 @@ If anybody does, please just send me your contact details and we can drop them o
     <div id="paywall-overlay" class="paywall-overlay">
         <div class="paywall-content">
             <h2>🎉 You've Read 5 Jokes!</h2>
-            <p>Want to keep laughing? Download our free app to access 20,000+ dad jokes, save your favorites, and get daily featured jokes!</p>
+            <p>Want to keep laughing? Download our free app to access <span id="cta-count-2">20,000+</span> dad jokes, save your favorites, and get daily featured jokes!</p>
             <div class="paywall-buttons">
                 <a href="dadjokes://joke/MJ001240" class="paywall-btn primary">Open App</a>
                 <a href="https://dadjokes.vip/app" class="paywall-btn secondary">Learn More</a>
@@ -897,6 +909,46 @@ If anybody does, please just send me your contact details and we can drop them o
                 if (btn) btn.classList.add('active');
             }
         })();
+
+        // Load total joke count dynamically
+        async function loadJokeCount() {
+            try {
+                const jokesRef = db.collection('jokes').doc('all').collection('jokes');
+                const jokesCount = await jokesRef.get().then(snapshot => snapshot.size);
+
+                // Try to get name jokes count
+                let nameJokesCount = 0;
+                try {
+                    const nameJokesRef = db.collection('name_jokes');
+                    nameJokesCount = await nameJokesRef.get().then(snapshot => snapshot.size);
+                } catch (e) {
+                    console.log("Name jokes collection not found or inaccessible");
+                }
+
+                const totalCount = jokesCount + nameJokesCount;
+                const formattedCount = totalCount.toLocaleString();
+
+                // Update all count elements
+                const countElements = [
+                    'mobile-banner-count',
+                    'app-banner-count',
+                    'cta-count-1',
+                    'cta-count-2'
+                ];
+
+                countElements.forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = formattedCount;
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading joke count:", error);
+            }
+        }
+
+        // Load joke count on page load
+        loadJokeCount();
 
         // App Opening Function
         function openApp() {

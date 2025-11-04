@@ -12,7 +12,7 @@ I could have moved to another house or even ignore his question.… But the look
     <!-- SEO: Description with first 150 chars -->
     <meta name="description" content="My neighbor is a 90 year old with Alzheimer's, I see him every morning and he asks me If I've seen his wife.
 Every day I have to tell this poor man that his wife died 20 years ago.
-I could have moved to another house or even ignore his question.… But the look of joy in his eyes whenever I answer him is worth the world.  Read this 3-star rated Wife dad joke and 20,000+ more funny dad jokes in our free app.">
+I could have moved to another house or even ignore his question.… But the look of joy in his eyes whenever I answer him is worth the world.  Read this 3-star rated Wife dad joke and thousands more funny dad jokes in our free app.">
 
     <!-- SEO: Keywords -->
     <meta name="keywords" content="dad jokes, Wife jokes, funny jokes, clean jokes, elderly neighbor, humor">
@@ -99,15 +99,20 @@ I could have moved to another house or even ignore his question.… But the look
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://dadjokes.vip"
+        "item": "https://dadjokes.vip/app"
       }, {
         "@type": "ListItem",
         "position": 2,
-        "name": "Wife Jokes",
-        "item": "https://dadjokes.vip/category/wife"
+        "name": "Categories",
+        "item": "https://dadjokes.vip/jokes"
       }, {
         "@type": "ListItem",
         "position": 3,
+        "name": "Wife",
+        "item": "https://dadjokes.vip/category/wife"
+      }, {
+        "@type": "ListItem",
+        "position": 4,
         "name": "My neighbor is a 90 year old with Alzheimer's, I see him every morning and he asks me If I've seen his wife.
 Every day I have to tell this poor man that his wife died 20 years ago.
 I could have moved to another house or even ignore his question.… But the look of joy in his eyes whenever I answer him is worth the world."
@@ -629,7 +634,7 @@ I could have moved to another house or even ignore his question.… But the look
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">20,000+ jokes in the app</div>
+            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
         </div>
         <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
         <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
@@ -640,7 +645,9 @@ I could have moved to another house or even ignore his question.… But the look
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="/app">Home</a>
             <span>›</span>
-            <a href="/category/wife">Wife Jokes</a>
+            <a href="/jokes">Categories</a>
+            <span>›</span>
+            <a href="/category/wife">Wife</a>
             <span>›</span>
             <span>My neighbor is a 90 year old with Alzheimer's, I see him every morning and he asks me If I've seen his wife.
 Every day I have to tell this poor man that his wife died 20 years ago.
@@ -651,7 +658,7 @@ I could have moved to another house or even ignore his question.… But the look
         <div id="app-banner" class="app-banner hidden">
             <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes App" class="banner-icon">
             <div class="banner-content">
-                <div class="banner-title">Get 20,000+ Jokes in the App</div>
+                <div class="banner-title">Get <span id="app-banner-count">20,000+</span> Jokes in the App</div>
                 <div class="banner-subtitle">Save favorites, get daily jokes, ad-free</div>
             </div>
             <a href="#" class="banner-cta" id="banner-cta" onclick="openApp(); return false;">Open App</a>
@@ -720,15 +727,20 @@ I could have moved to another house or even ignore his question.… But the look
             <h2>Here are some more Wife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
-                <a href="/joke/MJ000778" class="related-joke-card">
-                    <div class="related-joke-text">My wife is really mad at the fact that I have no sense of direction.
-So I packed up my stuff and right.</div>
+                <a href="/joke/MJ000823" class="related-joke-card">
+                    <div class="related-joke-text">My husband and I were happy for 20 years. And then we met.</div>
                 </a>
-                <a href="/joke/MJ002103" class="related-joke-card">
-                    <div class="related-joke-text">My wife asked me to stop singing "Wonderwall" to her. I said, "Maybe..."</div>
+                <a href="/joke/MJ000001" class="related-joke-card">
+                    <div class="related-joke-text">Wife: Honey I’m pregnant.
+
+Me: Well…. what do we do now?
+
+Wife: Well, I guess we should go to a baby doctor.
+
+Me: Hm.. I think I’d be a lot more comfortable going to an adult doctor.</div>
                 </a>
-                <a href="/joke/MJ001248" class="related-joke-card">
-                    <div class="related-joke-text">My girlfriend said "You act like a detective too much, I want to split up." I said "That's a great idea, we can cover more ground that way!"</div>
+                <a href="/joke/MJ001014" class="related-joke-card">
+                    <div class="related-joke-text">Last night my wife asked me, "Is it just me or is the cat getting fat?" Apparently "It's just you" wasn't the right answer.</div>
                 </a>
             </div>
         </section>
@@ -736,7 +748,7 @@ So I packed up my stuff and right.</div>
         <!-- CTA to Download App -->
         <section class="cta-section">
             <h2>Want More Jokes?</h2>
-            <p>Download our app and get access to 20,000+ dad jokes, daily featured jokes, and save your favorites!</p>
+            <p>Download our app and get access to <span id="cta-count-1">20,000+</span> dad jokes, daily featured jokes, and save your favorites!</p>
             <div class="store-badges">
                 <a href="https://dadjokes.vip/ios">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -752,7 +764,7 @@ So I packed up my stuff and right.</div>
     <div id="paywall-overlay" class="paywall-overlay">
         <div class="paywall-content">
             <h2>🎉 You've Read 5 Jokes!</h2>
-            <p>Want to keep laughing? Download our free app to access 20,000+ dad jokes, save your favorites, and get daily featured jokes!</p>
+            <p>Want to keep laughing? Download our free app to access <span id="cta-count-2">20,000+</span> dad jokes, save your favorites, and get daily featured jokes!</p>
             <div class="paywall-buttons">
                 <a href="dadjokes://joke/MJ000796" class="paywall-btn primary">Open App</a>
                 <a href="https://dadjokes.vip/app" class="paywall-btn secondary">Learn More</a>
@@ -921,6 +933,46 @@ I could have moved to another house or even ignore his question.… But the look
                 if (btn) btn.classList.add('active');
             }
         })();
+
+        // Load total joke count dynamically
+        async function loadJokeCount() {
+            try {
+                const jokesRef = db.collection('jokes').doc('all').collection('jokes');
+                const jokesCount = await jokesRef.get().then(snapshot => snapshot.size);
+
+                // Try to get name jokes count
+                let nameJokesCount = 0;
+                try {
+                    const nameJokesRef = db.collection('name_jokes');
+                    nameJokesCount = await nameJokesRef.get().then(snapshot => snapshot.size);
+                } catch (e) {
+                    console.log("Name jokes collection not found or inaccessible");
+                }
+
+                const totalCount = jokesCount + nameJokesCount;
+                const formattedCount = totalCount.toLocaleString();
+
+                // Update all count elements
+                const countElements = [
+                    'mobile-banner-count',
+                    'app-banner-count',
+                    'cta-count-1',
+                    'cta-count-2'
+                ];
+
+                countElements.forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = formattedCount;
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading joke count:", error);
+            }
+        }
+
+        // Load joke count on page load
+        loadJokeCount();
 
         // App Opening Function
         function openApp() {

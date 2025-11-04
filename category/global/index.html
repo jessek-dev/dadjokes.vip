@@ -17,6 +17,10 @@
     <!-- Android Intent -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Global Jokes - Dad Jokes">
     <meta property="og:description" content="International humor from around the world. Geography jokes, travel humor, and jokes about different countries and cultures.">
@@ -289,7 +293,7 @@
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">20,000+ jokes in the app</div>
+            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
         </div>
         <button class="banner-button" onclick="openApp()">OPEN</button>
         <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
@@ -318,38 +322,33 @@
             
             <a href="/joke/MJ000389" class="joke-card">
                 <div class="category-badge">Global</div>
-                <div class="joke-text">Why does Norway have barcodes on their battleships? So when they get back to port, they can Scandinavian.</div>
+                <div class="joke-text">Why does Norway have barcodes on their battleships? So when they get back to port, they can Scandina...</div>
             </a>
-  
 
             <a href="/joke/MJ000767" class="joke-card">
                 <div class="category-badge">Global</div>
                 <div class="joke-text">What happens when you don't obey the KGB?… You get Putin jail.</div>
             </a>
-  
 
             <a href="/joke/MJ001036" class="joke-card">
                 <div class="category-badge">Global</div>
-                <div class="joke-text">You're American when you go into the bathroom and out of the bathroom, but what are you when you're in the bathroom? ... European!</div>
+                <div class="joke-text">You're American when you go into the bathroom and out of the bathroom, but what are you when you're ...</div>
             </a>
-  
 
             <a href="/joke/MJ000056" class="joke-card">
                 <div class="category-badge">Global</div>
                 <div class="joke-text">Which is the fastest growing city in the world? Dublin'</div>
             </a>
-  
 
             <a href="/joke/MJ000431" class="joke-card">
                 <div class="category-badge">Global</div>
                 <div class="joke-text">Pie is $2.50 in Jamaica and $3.00 in The Bahamas. These are the pie-rates of the Caribbean.</div>
             </a>
-  
         </div>
 
         <div class="app-download">
             <h2>Get the Full Collection</h2>
-            <p>Download our app for 20,000+ dad jokes across 20+ categories. Save your favorites, get daily jokes, and more!</p>
+            <p>Download our app for <span id="app-cta-count">20,000+</span> dad jokes across 20+ categories. Save your favorites, get daily jokes, and more!</p>
             <div class="store-badges">
                 <a href="https://apps.apple.com/app/id6743726261">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -362,6 +361,52 @@
     </div>
 
     <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyAm_Y_Nf9YlLl5E-t7Wx43w01KLo6DsMOU",
+            authDomain: "dad-jokes-76c85.firebaseapp.com",
+            projectId: "dad-jokes-76c85",
+            storageBucket: "dad-jokes-76c85.firebasestorage.app",
+            messagingSenderId: "824728064169",
+            appId: "1:824728064169:web:a7d0d699ac1d5ae6b1c1c5"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Load total joke count dynamically
+        async function loadJokeCount() {
+            try {
+                const jokesRef = db.collection('jokes').doc('all').collection('jokes');
+                const jokesCount = await jokesRef.get().then(snapshot => snapshot.size);
+
+                // Try to get name jokes count
+                let nameJokesCount = 0;
+                try {
+                    const nameJokesRef = db.collection('name_jokes');
+                    nameJokesCount = await nameJokesRef.get().then(snapshot => snapshot.size);
+                } catch (e) {
+                    console.log("Name jokes collection not found or inaccessible");
+                }
+
+                const totalCount = jokesCount + nameJokesCount;
+                const formattedCount = totalCount.toLocaleString();
+
+                // Update all count elements
+                const countElements = ['mobile-banner-count', 'app-cta-count'];
+                countElements.forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = formattedCount;
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading joke count:", error);
+            }
+        }
+
+        // Load joke count on page load
+        loadJokeCount();
+
         // Mobile App Banner
         (function() {
             const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);

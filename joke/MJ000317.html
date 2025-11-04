@@ -8,7 +8,7 @@
     <title>I used to think I was indecisive, but now I'm not sure. - Dad Jokes</title>
 
     <!-- SEO: Description with first 150 chars -->
-    <meta name="description" content="I used to think I was indecisive, but now I'm not sure.  Read this 4-star rated #DadLife dad joke and 20,000+ more funny dad jokes in our free app.">
+    <meta name="description" content="I used to think I was indecisive, but now I'm not sure.  Read this 4-star rated #DadLife dad joke and thousands more funny dad jokes in our free app.">
 
     <!-- SEO: Keywords -->
     <meta name="keywords" content="dad jokes, #DadLife jokes, funny jokes, clean jokes, crossroads, humor">
@@ -83,15 +83,20 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://dadjokes.vip"
+        "item": "https://dadjokes.vip/app"
       }, {
         "@type": "ListItem",
         "position": 2,
-        "name": "#DadLife Jokes",
-        "item": "https://dadjokes.vip/category/dadlife"
+        "name": "Categories",
+        "item": "https://dadjokes.vip/jokes"
       }, {
         "@type": "ListItem",
         "position": 3,
+        "name": "#DadLife",
+        "item": "https://dadjokes.vip/category/dadlife"
+      }, {
+        "@type": "ListItem",
+        "position": 4,
         "name": "I used to think I was indecisive, but now I'm not sure."
       }]
     }
@@ -611,7 +616,7 @@
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">20,000+ jokes in the app</div>
+            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
         </div>
         <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
         <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
@@ -622,7 +627,9 @@
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="/app">Home</a>
             <span>›</span>
-            <a href="/category/dadlife">#DadLife Jokes</a>
+            <a href="/jokes">Categories</a>
+            <span>›</span>
+            <a href="/category/dadlife">#DadLife</a>
             <span>›</span>
             <span>I used to think I was indecisive, but now I'm not sure.</span>
         </nav>
@@ -631,7 +638,7 @@
         <div id="app-banner" class="app-banner hidden">
             <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes App" class="banner-icon">
             <div class="banner-content">
-                <div class="banner-title">Get 20,000+ Jokes in the App</div>
+                <div class="banner-title">Get <span id="app-banner-count">20,000+</span> Jokes in the App</div>
                 <div class="banner-subtitle">Save favorites, get daily jokes, ad-free</div>
             </div>
             <a href="#" class="banner-cta" id="banner-cta" onclick="openApp(); return false;">Open App</a>
@@ -698,14 +705,15 @@
             <h2>Here are some more #DadLife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
-                <a href="/joke/MJ000160" class="related-joke-card">
-                    <div class="related-joke-text">I’ve got this disease where I can’t stop making airport puns. The doctor says it's terminal.</div>
+                <a href="/joke/MJ001021" class="related-joke-card">
+                    <div class="related-joke-text">What do you call the sexuality where you're attracted to men and women, but they're not attracted to you? ... Bi-yourself!</div>
                 </a>
-                <a href="/joke/MJ000033" class="related-joke-card">
-                    <div class="related-joke-text">Dad I’m hungry’ … ‘Hi hungry I’m dad</div>
+                <a href="/joke/MJ000176" class="related-joke-card">
+                    <div class="related-joke-text">"Dad, I'm cold."
+"Go stand in the corner, I hear it's 90 degrees."</div>
                 </a>
-                <a href="/joke/MJ000375" class="related-joke-card">
-                    <div class="related-joke-text">What did the pirate say on his 80th birthday? Aye Matey!</div>
+                <a href="/joke/MJ000002" class="related-joke-card">
+                    <div class="related-joke-text">I'm tired of following my dreams. I'm just going to ask them where they are going and meet up with them later.</div>
                 </a>
             </div>
         </section>
@@ -713,7 +721,7 @@
         <!-- CTA to Download App -->
         <section class="cta-section">
             <h2>Want More Jokes?</h2>
-            <p>Download our app and get access to 20,000+ dad jokes, daily featured jokes, and save your favorites!</p>
+            <p>Download our app and get access to <span id="cta-count-1">20,000+</span> dad jokes, daily featured jokes, and save your favorites!</p>
             <div class="store-badges">
                 <a href="https://dadjokes.vip/ios">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -729,7 +737,7 @@
     <div id="paywall-overlay" class="paywall-overlay">
         <div class="paywall-content">
             <h2>🎉 You've Read 5 Jokes!</h2>
-            <p>Want to keep laughing? Download our free app to access 20,000+ dad jokes, save your favorites, and get daily featured jokes!</p>
+            <p>Want to keep laughing? Download our free app to access <span id="cta-count-2">20,000+</span> dad jokes, save your favorites, and get daily featured jokes!</p>
             <div class="paywall-buttons">
                 <a href="dadjokes://joke/MJ000317" class="paywall-btn primary">Open App</a>
                 <a href="https://dadjokes.vip/app" class="paywall-btn secondary">Learn More</a>
@@ -896,6 +904,46 @@
                 if (btn) btn.classList.add('active');
             }
         })();
+
+        // Load total joke count dynamically
+        async function loadJokeCount() {
+            try {
+                const jokesRef = db.collection('jokes').doc('all').collection('jokes');
+                const jokesCount = await jokesRef.get().then(snapshot => snapshot.size);
+
+                // Try to get name jokes count
+                let nameJokesCount = 0;
+                try {
+                    const nameJokesRef = db.collection('name_jokes');
+                    nameJokesCount = await nameJokesRef.get().then(snapshot => snapshot.size);
+                } catch (e) {
+                    console.log("Name jokes collection not found or inaccessible");
+                }
+
+                const totalCount = jokesCount + nameJokesCount;
+                const formattedCount = totalCount.toLocaleString();
+
+                // Update all count elements
+                const countElements = [
+                    'mobile-banner-count',
+                    'app-banner-count',
+                    'cta-count-1',
+                    'cta-count-2'
+                ];
+
+                countElements.forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = formattedCount;
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading joke count:", error);
+            }
+        }
+
+        // Load joke count on page load
+        loadJokeCount();
 
         // App Opening Function
         function openApp() {
