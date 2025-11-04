@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Get 5 random failed jokes for the category page
 async function getRandomFailedJokes() {
-  const failedJokesDir = path.join(__dirname, '../joke/failed-ai-jokes');
+  const failedJokesDir = path.join(__dirname, '../jokes/failed-ai-jokes');
   const files = await fs.readdir(failedJokesDir);
 
   // Filter only HTML files, shuffle, take 5
@@ -26,7 +26,7 @@ async function getRandomFailedJokes() {
     const setupMatch = content.match(/<div class="joke-setup">(.*?)<\/div>/);
     const setup = setupMatch ? setupMatch[1] : '';
 
-    const url = `/joke/failed-ai-jokes/${file.replace('.html', '')}`;
+    const url = `/jokes/failed-ai-jokes/${file.replace('.html', '')}`;
 
     jokes.push({ setup, url });
   }
@@ -66,7 +66,7 @@ async function generateFailedAICategoryPage() {
   const relatedCategoriesHtml = relatedCategories.map(cat => {
     const slug = slugify(cat);
     const emoji = CONFIG.CATEGORY_EMOJIS[cat] || '😄';
-    return `                <a href="/category/${slug}" class="category-link">
+    return `                <a href="/jokes/${slug}" class="category-link">
                     <span class="category-emoji">${emoji}</span>
                     <span>${cat}</span>
                 </a>`;
@@ -90,11 +90,11 @@ async function generateFailedAICategoryPage() {
   }
 
   // Write to file
-  const outputDir = path.join(__dirname, '../category/failed-ai-jokes');
+  const outputDir = path.join(__dirname, '../jokes/failed-ai-jokes');
   await fs.mkdir(outputDir, { recursive: true });
   await fs.writeFile(path.join(outputDir, 'index.html'), html, 'utf8');
 
-  console.log('✅ Generated /category/failed-ai-jokes/index.html');
+  console.log('✅ Generated /jokes/failed-ai-jokes/index.html');
   console.log(`   Featured ${jokes.length} sample jokes`);
   console.log(`   Related categories: ${relatedCategories.join(', ')}`);
 }

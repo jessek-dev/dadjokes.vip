@@ -9,8 +9,8 @@ export const CONFIG = {
 
   // Output paths (relative to project root)
   OUTPUT_DIR: '..',
-  JOKE_OUTPUT_DIR: '../joke',
-  CATEGORY_OUTPUT_DIR: '../category',
+  JOKE_OUTPUT_DIR: '../jokes',
+  CATEGORY_OUTPUT_DIR: '../jokes',
   SITEMAP_OUTPUT_DIR: '../generated_sitemaps',
 
   // Sitemap configuration

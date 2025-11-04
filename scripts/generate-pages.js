@@ -227,7 +227,7 @@ async function generateJokePage(joke, template, allJokes) {
   const jokeSlug = generateJokeSlug(jokeSetup, joke.category);
 
   // Store URL mapping for internal links
-  const jokeUrl = `/joke/${categorySlug}/${jokeSlug}`;
+  const jokeUrl = `/jokes/${categorySlug}/${jokeSlug}`;
   jokeUrlMap[joke.id] = jokeUrl;
 
   // Get related joke URLs (may be empty if not yet generated)
@@ -334,7 +334,7 @@ async function generateCategoryPage(category, jokes, template) {
   const relatedCategoriesHtml = relatedCategories.map(cat => {
     const slug = slugify(cat);
     const emoji = CONFIG.CATEGORY_EMOJIS[cat] || '😄';
-    return `                <a href="/category/${slug}" class="category-link">
+    return `                <a href="/jokes/${slug}" class="category-link">
                     <span class="category-emoji">${emoji}</span>
                     <span>${cat}</span>
                 </a>`;

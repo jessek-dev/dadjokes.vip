@@ -200,7 +200,7 @@ async function generateFailedJokePage(joke, template, allJokes) {
   const jokeSlug = generateJokeSlug(jokeSetup);
 
   // Store URL mapping for sitemap
-  const jokeUrl = `/joke/${categorySlug}/${jokeSlug}`;
+  const jokeUrl = `/jokes/${categorySlug}/${jokeSlug}`;
   jokeUrlMap[joke.id] = jokeUrl;
 
   // Get related joke URLs (may be empty if not yet generated)
@@ -334,7 +334,7 @@ async function main() {
   console.log('='.repeat(60));
 
   console.log('\nNext steps:');
-  console.log('1. Review generated pages in /joke/failed-ai-jokes/ directory');
+  console.log('1. Review generated pages in /jokes/failed-ai-jokes/ directory');
   console.log('2. Test a few pages locally');
   console.log('3. Commit and push to GitHub');
   console.log('4. Submit sitemap_failed_ai_jokes.xml to Google Search Console');
