@@ -50,7 +50,8 @@ export const CONFIG = {
     'Religion': 'Lighthearted religious humor that\'s respectful and family-friendly. Jokes that celebrate faith with a smile.',
     'Mother Nature': 'Weather jokes, plant humor, and outdoor adventure jokes. Everything about nature, gardening, and the great outdoors!',
     'NSFW': 'Jokes for mature audiences only. Adult humor that\'s not suitable for work or kids. You\'ve been warned!',
-    'Yo Mama': 'Classic yo mama jokes that are so funny, they\'ll make yo mama laugh! Traditional roasts delivered with comedic timing.'
+    'Yo Mama': 'Classic yo mama jokes that are so funny, they\'ll make yo mama laugh! Traditional roasts delivered with comedic timing.',
+    'Failed AI Jokes': 'Pretty terrible attempts by AI to be funny. These jokes are so bad, they\'re almost good... almost. Pure comedy gold (or fool\'s gold).'
   },
 
   // Category emojis (matching app exactly)
@@ -78,6 +79,7 @@ export const CONFIG = {
     'People': '🧑‍🤝‍🧑',
     'NSFW': '🥷',
     'Yo Mama': '🧌',
-    'General': '🥸'
+    'General': '🥸',
+    'Failed AI Jokes': '🤖'
   }
 };

@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "node generate-pages.js",
     "test": "node generate-pages.js --test",
-    "update": "node update-new-jokes.js"
+    "update": "node update-new-jokes.js",
+    "import:failed": "node import-failed-jokes.js"
   },
   "dependencies": {
     "firebase-admin": "^12.0.0"
