@@ -39,6 +39,12 @@ const stats = {
   startTime: Date.now()
 };
 
+// Track used slugs per category to handle collisions
+const usedSlugs = {};
+
+// Track joke ID to URL mapping for internal links
+const jokeUrlMap = {};
+
 /**
  * Fetch all regular jokes from Firebase
  */
@@ -125,7 +131,7 @@ function replacePlaceholders(template, replacements) {
 }
 
 /**
- * Generate slug from text
+ * Generate slug from text (for categories)
  */
 function slugify(text) {
   return text
@@ -134,6 +140,45 @@ function slugify(text) {
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
     .substring(0, 60);
+}
+
+/**
+ * Generate SEO-friendly slug from joke setup
+ * Handles collisions by adding numeric suffix
+ */
+function generateJokeSlug(setup, category) {
+  // Clean the setup text
+  let slug = setup
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '') // Remove punctuation
+    .replace(/\s+/g, '-')      // Replace spaces with hyphens
+    .replace(/-+/g, '-')       // Remove duplicate hyphens
+    .trim();
+
+  // Truncate at word boundary around 50 chars
+  if (slug.length > 50) {
+    slug = slug.substring(0, 50);
+    const lastHyphen = slug.lastIndexOf('-');
+    if (lastHyphen > 30) {
+      slug = slug.substring(0, lastHyphen);
+    }
+  }
+
+  // Initialize category tracking if needed
+  if (!usedSlugs[category]) {
+    usedSlugs[category] = new Set();
+  }
+
+  // Handle collisions with numeric suffix
+  let finalSlug = slug;
+  let counter = 2;
+  while (usedSlugs[category].has(finalSlug)) {
+    finalSlug = `${slug}-${counter}`;
+    counter++;
+  }
+
+  usedSlugs[category].add(finalSlug);
+  return finalSlug;
 }
 
 /**
@@ -159,7 +204,7 @@ function getRelatedJokes(joke, allJokes) {
 }
 
 /**
- * Generate single joke page
+ * Generate single joke page with SEO-friendly URL
  */
 async function generateJokePage(joke, template, allJokes) {
   const relatedJokes = getRelatedJokes(joke, allJokes);
@@ -178,8 +223,22 @@ async function generateJokePage(joke, template, allJokes) {
     jokePunchline = parts.slice(1).join('?').trim();
   }
 
+  // Generate SEO-friendly slug from setup
+  const jokeSlug = generateJokeSlug(jokeSetup, joke.category);
+
+  // Store URL mapping for internal links
+  const jokeUrl = `/joke/${categorySlug}/${jokeSlug}`;
+  jokeUrlMap[joke.id] = jokeUrl;
+
+  // Get related joke URLs (may be empty if not yet generated)
+  const related1Url = jokeUrlMap[relatedJokes[0]?.id] || '';
+  const related2Url = jokeUrlMap[relatedJokes[1]?.id] || '';
+  const related3Url = jokeUrlMap[relatedJokes[2]?.id] || '';
+
   const replacements = {
     JOKE_ID: joke.id,
+    JOKE_SLUG: jokeSlug,
+    JOKE_URL: jokeUrl,
     JOKE_SETUP: jokeSetup,
     JOKE_PUNCHLINE: jokePunchline,
     CATEGORY: joke.category,
@@ -191,17 +250,26 @@ async function generateJokePage(joke, template, allJokes) {
     KEYWORD_1: joke.keywords ? joke.keywords.split(',')[0] : joke.category.toLowerCase(),
     KEYWORD_2: joke.keywords ? joke.keywords.split(',')[1] || 'humor' : 'dad jokes',
     RELATED_1_ID: relatedJokes[0]?.id || '',
+    RELATED_1_URL: related1Url,
     RELATED_1_TEXT: relatedJokes[0]?.text || '',
     RELATED_2_ID: relatedJokes[1]?.id || '',
+    RELATED_2_URL: related2Url,
     RELATED_2_TEXT: relatedJokes[1]?.text || '',
     RELATED_3_ID: relatedJokes[2]?.id || '',
+    RELATED_3_URL: related3Url,
     RELATED_3_TEXT: relatedJokes[2]?.text || ''
   };
 
   const html = replacePlaceholders(template, replacements);
-  const outputPath = path.join(__dirname, CONFIG.JOKE_OUTPUT_DIR, `${joke.id}.html`);
 
+  // Create category subdirectory
+  const categoryDir = path.join(__dirname, CONFIG.JOKE_OUTPUT_DIR, categorySlug);
+  await fs.mkdir(categoryDir, { recursive: true });
+
+  // Write to new SEO-friendly path
+  const outputPath = path.join(categoryDir, `${jokeSlug}.html`);
   await fs.writeFile(outputPath, html, 'utf8');
+
   stats.jokesGenerated++;
 }
 
@@ -244,8 +312,11 @@ async function generateCategoryPage(category, jokes, template) {
       }
     }
 
+    // Get SEO-friendly URL from jokeUrlMap (generated during joke page generation)
+    const jokeUrl = jokeUrlMap[joke.id] || `/joke/${joke.id}`; // Fallback to old format if not found
+
     return `
-            <a href="/joke/${joke.id}" class="joke-card">
+            <a href="${jokeUrl}" class="joke-card">
                 <div class="category-badge">${category}</div>
                 <div class="joke-text">${displayText}</div>
             </a>`;
@@ -293,12 +364,16 @@ async function generateCategoryPage(category, jokes, template) {
  * Generate sitemap for a batch
  */
 async function generateSitemap(batchName, urls, priority, changefreq) {
-  const urlElements = urls.map(url => `  <url>
-    <loc>${CONFIG.BASE_URL}/joke/${url.id}</loc>
+  const urlElements = urls.map(url => {
+    // Use SEO-friendly URL from jokeUrlMap
+    const jokeUrl = jokeUrlMap[url.id] || `/joke/${url.id}`;
+    return `  <url>
+    <loc>${CONFIG.BASE_URL}${jokeUrl}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <priority>${priority}</priority>
     <changefreq>${changefreq}</changefreq>
-  </url>`).join('\n');
+  </url>`;
+  }).join('\n');
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
