@@ -251,6 +251,24 @@ async function generateCategoryPage(category, jokes, template) {
             </a>`;
   }).join('\n');
 
+  // Generate related categories (5 random other categories)
+  const allCategories = Object.keys(CONFIG.CATEGORY_DESCRIPTIONS);
+  const otherCategories = allCategories.filter(cat => cat !== category);
+
+  // Shuffle and take 5
+  const shuffled = otherCategories.sort(() => 0.5 - Math.random());
+  const relatedCategories = shuffled.slice(0, 5);
+
+  // Generate HTML for related categories
+  const relatedCategoriesHtml = relatedCategories.map(cat => {
+    const slug = slugify(cat);
+    const emoji = CONFIG.CATEGORY_EMOJIS[cat] || '😄';
+    return `                <a href="/category/${slug}" class="category-link">
+                    <span class="category-emoji">${emoji}</span>
+                    <span>${cat}</span>
+                </a>`;
+  }).join('\n');
+
   const replacements = {
     CATEGORY: category,
     CATEGORY_SLUG: categorySlug,
@@ -258,7 +276,8 @@ async function generateCategoryPage(category, jokes, template) {
     CATEGORY_DESCRIPTION: categoryDescription,
     CATEGORY_LOWER: category.toLowerCase(),
     JOKE_COUNT: categoryJokes.length,
-    JOKE_LIST: jokeListHtml
+    JOKE_LIST: jokeListHtml,
+    RELATED_CATEGORIES: relatedCategoriesHtml
   };
 
   const html = replacePlaceholders(template, replacements);

@@ -240,6 +240,50 @@
             margin-bottom: 15px;
         }
 
+        .related-categories {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .related-categories h2 {
+            color: #FF8C00;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .category-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .category-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 20px;
+            background: #FFF3E0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .category-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2);
+            background: #FFE0B2;
+        }
+
+        .category-emoji {
+            font-size: 1.5em;
+        }
+
         .app-download {
             background: white;
             border-radius: 20px;
@@ -344,6 +388,32 @@
                 <div class="category-badge">Around the House</div>
                 <div class="joke-text">I'll tell you what often gets over looke...</div>
             </a>
+        </div>
+
+        <div class="related-categories">
+            <h2>A few other categories to check out</h2>
+            <div class="category-links">
+                                <a href="/category/transportation" class="category-link">
+                    <span class="category-emoji">🚲</span>
+                    <span>Transportation</span>
+                </a>
+                <a href="/category/family" class="category-link">
+                    <span class="category-emoji">⚔️</span>
+                    <span>Family</span>
+                </a>
+                <a href="/category/animals" class="category-link">
+                    <span class="category-emoji">🐕</span>
+                    <span>Animals</span>
+                </a>
+                <a href="/category/movies" class="category-link">
+                    <span class="category-emoji">🎬</span>
+                    <span>Movies</span>
+                </a>
+                <a href="/category/work-money" class="category-link">
+                    <span class="category-emoji">💼</span>
+                    <span>Work & Money</span>
+                </a>
+            </div>
         </div>
 
         <div class="app-download">
