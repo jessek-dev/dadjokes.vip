@@ -222,8 +222,26 @@ async function generateCategoryPage(category, jokes, template) {
     if (joke.setup && joke.setup.trim()) {
       displayText = joke.setup;
     } else {
-      // For one-liners, show just the first 100 characters
-      displayText = joke.text.substring(0, 100) + (joke.text.length > 100 ? '...' : '');
+      // For one-liners, try to find a natural break point
+      const text = joke.text;
+
+      // Try to cut at first question mark + space (common setup pattern)
+      const questionMarkIndex = text.indexOf('? ');
+      if (questionMarkIndex > 0 && questionMarkIndex < 120) {
+        displayText = text.substring(0, questionMarkIndex + 1) + '..';
+      }
+      // Otherwise, cut at 60 characters to avoid showing full punchline
+      else if (text.length > 60) {
+        displayText = text.substring(0, 60) + '...';
+      }
+      // If joke is very short (<=60 chars), show first 40 chars to create intrigue
+      else if (text.length > 40) {
+        displayText = text.substring(0, 40) + '...';
+      }
+      // Very short jokes - show first 30 chars
+      else {
+        displayText = text.substring(0, Math.min(30, text.length)) + '...';
+      }
     }
 
     return `
