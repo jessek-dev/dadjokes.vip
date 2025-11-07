@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dad Jokes - 20,000+ Best Dad Jokes App for iPhone & Android</title>
   <meta name="description" content="The ultimate dad jokes app with 20,000+ jokes. Get daily featured jokes, AI-generated personalized jokes, and browse 20+ categories. Free download for iOS & Android.">
-  <link rel="canonical" href="https://dadjokes.vip/">
-  
+
+  <!-- Canonical points to /app since this page redirects there -->
+  <link rel="canonical" href="https://dadjokes.vip/app">
+
+  <!-- Meta refresh for instant redirect (better for SEO than JS-only) -->
+  <meta http-equiv="refresh" content="0; url=/app">
+
   <!-- Universal Links Support -->
   <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
   <script>
@@ -22,8 +27,7 @@
   </script>
 
   <script>
-    // Redirect all traffic to /app page
-    // Universal links and app schemes are handled automatically by iOS/Android
+    // JavaScript redirect fallback
     window.location.href = "/app";
   </script>
 </head>
