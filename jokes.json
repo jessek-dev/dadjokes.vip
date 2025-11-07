@@ -1,0 +1,1712 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Dad Jokes",
+  "home_page_url": "https://dadjokes.vip",
+  "feed_url": "https://dadjokes.vip/jokes.json",
+  "description": "19,139+ dad jokes across 20+ categories. Daily featured jokes, AI-generated personalized name jokes. Free iOS & Android app available.",
+  "icon": "https://dadjokes.vip/assets/android-chrome-192x192.png",
+  "favicon": "https://dadjokes.vip/assets/favicon-32x32.png",
+  "language": "en-US",
+  "items": [
+    {
+      "id": "https://dadjokes.vip/joke/MJ000001",
+      "url": "https://dadjokes.vip/joke/MJ000001",
+      "title": "Wife: Honey I’m pregnant. Me: Well…. what do we do now? Wife: Well, I guess we should go to a baby doctor.",
+      "content_text": "Wife: Honey I’m pregnant. Me: Well…. what do we do now? Wife: Well, I guess we should go to a baby doctor. Me: Hm… I think I’d be a lot more comfortable going to an adult doctor.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Wife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000002",
+      "url": "https://dadjokes.vip/joke/MJ000002",
+      "title": "I'm tired of following my dreams.",
+      "content_text": "I'm tired of following my dreams. I'm just going to ask them where they are going and meet up with them later.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000003",
+      "url": "https://dadjokes.vip/joke/MJ000003",
+      "title": "Did you hear about the guy whose whole left side was cut off? He's all right now.",
+      "content_text": "Did you hear about the guy whose whole left side was cut off? He's all right now.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000004",
+      "url": "https://dadjokes.vip/joke/MJ000004",
+      "title": "Why didn’t the skeleton cross the road? Because he had no guts.",
+      "content_text": "Why didn’t the skeleton cross the road? Because he had no guts.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Seasonal",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000005",
+      "url": "https://dadjokes.vip/joke/MJ000005",
+      "title": "What did one nut say as he chased another nut?  I'm a cashew!",
+      "content_text": "What did one nut say as he chased another nut?  I'm a cashew!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000006",
+      "url": "https://dadjokes.vip/joke/MJ000006",
+      "title": "Where do fish keep their money? In the riverbank",
+      "content_text": "Where do fish keep their money? In the riverbank",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000007",
+      "url": "https://dadjokes.vip/joke/MJ000007",
+      "title": "Chances are if you' ve seen one shopping center, you've seen a mall.",
+      "content_text": "Chances are if you' ve seen one shopping center, you've seen a mall.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000008",
+      "url": "https://dadjokes.vip/joke/MJ000008",
+      "title": "Dermatologists are always in a hurry. They spend all day making rash decisions. ",
+      "content_text": "Dermatologists are always in a hurry. They spend all day making rash decisions. ",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Medical",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000009",
+      "url": "https://dadjokes.vip/joke/MJ000009",
+      "title": "I knew I shouldn't steal a mixer from work, but it was a whisk I was willing to take.",
+      "content_text": "I knew I shouldn't steal a mixer from work, but it was a whisk I was willing to take.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000010",
+      "url": "https://dadjokes.vip/joke/MJ000010",
+      "title": "I won an argument with a weather forecaster once. His logic was cloudy...",
+      "content_text": "I won an argument with a weather forecaster once. His logic was cloudy...",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Mother Nature",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000011",
+      "url": "https://dadjokes.vip/joke/MJ000011",
+      "title": "\"Why do seagulls fly over the ocean?\" \"Because if they flew over the bay, we'd call them bagels.\"",
+      "content_text": "\"Why do seagulls fly over the ocean?\" \"Because if they flew over the bay, we'd call them bagels.\"",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000012",
+      "url": "https://dadjokes.vip/joke/MJ000012",
+      "title": "Why was it called the dark ages? Because of all the knights. ",
+      "content_text": "Why was it called the dark ages? Because of all the knights. ",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "History",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000013",
+      "url": "https://dadjokes.vip/joke/MJ000013",
+      "title": "A steak pun is a rare medium well done.",
+      "content_text": "A steak pun is a rare medium well done.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000014",
+      "url": "https://dadjokes.vip/joke/MJ000014",
+      "title": "Why did the tomato blush? Because it saw the salad dressing.",
+      "content_text": "Why did the tomato blush? Because it saw the salad dressing.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000015",
+      "url": "https://dadjokes.vip/joke/MJ000015",
+      "title": "Did you hear the joke about the wandering nun? She was a roman catholic.",
+      "content_text": "Did you hear the joke about the wandering nun? She was a roman catholic.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Religion",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000016",
+      "url": "https://dadjokes.vip/joke/MJ000016",
+      "title": "What creature is smarter than a talking parrot? A spelling bee.",
+      "content_text": "What creature is smarter than a talking parrot? A spelling bee.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000017",
+      "url": "https://dadjokes.vip/joke/MJ000017",
+      "title": "I'll tell you what often gets over looked... garden fences.",
+      "content_text": "I'll tell you what often gets over looked... garden fences.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000018",
+      "url": "https://dadjokes.vip/joke/MJ000018",
+      "title": "Why did the kid cross the playground? To get to the other slide.",
+      "content_text": "Why did the kid cross the playground? To get to the other slide.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000019",
+      "url": "https://dadjokes.vip/joke/MJ000019",
+      "title": "Why do birds fly south for the winter? Because it's too far to walk.",
+      "content_text": "Why do birds fly south for the winter? Because it's too far to walk.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000020",
+      "url": "https://dadjokes.vip/joke/MJ000020",
+      "title": "What is a centipedes's favorite Beatle song?  I want to hold your hand, hand, hand, hand...",
+      "content_text": "What is a centipedes's favorite Beatle song?  I want to hold your hand, hand, hand, hand...",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000021",
+      "url": "https://dadjokes.vip/joke/MJ000021",
+      "title": "My first time using an elevator was an uplifting experience. The second time let me down.",
+      "content_text": "My first time using an elevator was an uplifting experience. The second time let me down.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Transportation",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000022",
+      "url": "https://dadjokes.vip/joke/MJ000022",
+      "title": "To be Frank, I'd have to change my name.",
+      "content_text": "To be Frank, I'd have to change my name.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000023",
+      "url": "https://dadjokes.vip/joke/MJ000023",
+      "title": "Slept like a log last night … woke up in the fireplace.",
+      "content_text": "Slept like a log last night … woke up in the fireplace.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000024",
+      "url": "https://dadjokes.vip/joke/MJ000024",
+      "title": "What do you call a female snake. misssssssss ",
+      "content_text": "What do you call a female snake. misssssssss ",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000025",
+      "url": "https://dadjokes.vip/joke/MJ000025",
+      "title": "Why does a Moon-rock taste better than an Earth-rock? Because it's a little meteor.",
+      "content_text": "Why does a Moon-rock taste better than an Earth-rock? Because it's a little meteor.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Mother Nature",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000026",
+      "url": "https://dadjokes.vip/joke/MJ000026",
+      "title": "I thought my wife was joking when she said she'd leave me if I didn't stop signing \"I'm A Believer\".",
+      "content_text": "I thought my wife was joking when she said she'd leave me if I didn't stop signing \"I'm A Believer\"... Then I saw her face.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Wife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000027",
+      "url": "https://dadjokes.vip/joke/MJ000027",
+      "title": "I’m only familiar with 25 letters in the English language. I don’t know why.",
+      "content_text": "I’m only familiar with 25 letters in the English language. I don’t know why.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000028",
+      "url": "https://dadjokes.vip/joke/MJ000028",
+      "title": "What do you call two barracuda fish?  A Pairacuda!",
+      "content_text": "What do you call two barracuda fish?  A Pairacuda!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000029",
+      "url": "https://dadjokes.vip/joke/MJ000029",
+      "title": "What did the father tomato say to the baby tomato whilst on a family walk?",
+      "content_text": "What did the father tomato say to the baby tomato whilst on a family walk? Ketchup.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000030",
+      "url": "https://dadjokes.vip/joke/MJ000030",
+      "title": "Why is Peter Pan always flying? Because he Neverlands.",
+      "content_text": "Why is Peter Pan always flying? Because he Neverlands.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000031",
+      "url": "https://dadjokes.vip/joke/MJ000031",
+      "title": "What do you do on a remote island?",
+      "content_text": "What do you do on a remote island? Try and find the TV island it belongs to.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000032",
+      "url": "https://dadjokes.vip/joke/MJ000032",
+      "title": "Did you know that protons have mass? I didn't even know they were catholic.",
+      "content_text": "Did you know that protons have mass? I didn't even know they were catholic.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Religion",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000033",
+      "url": "https://dadjokes.vip/joke/MJ000033",
+      "title": "Dad I’m hungry …",
+      "content_text": "Dad I’m hungry … Hi Hungry I'm dad.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000034",
+      "url": "https://dadjokes.vip/joke/MJ000034",
+      "title": "I was fired from the keyboard factory yesterday.  I wasn't putting in enough shifts.",
+      "content_text": "I was fired from the keyboard factory yesterday.  I wasn't putting in enough shifts.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Work & Money",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000035",
+      "url": "https://dadjokes.vip/joke/MJ000035",
+      "title": "Whoever invented the knock-knock joke should get a no bell prize.",
+      "content_text": "Whoever invented the knock-knock joke should get a no bell prize.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000036",
+      "url": "https://dadjokes.vip/joke/MJ000036",
+      "title": "Have you heard the story about the magic tractor? It drove down the road and turned into a field.",
+      "content_text": "Have you heard the story about the magic tractor? It drove down the road and turned into a field.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Transportation",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000037",
+      "url": "https://dadjokes.vip/joke/MJ000037",
+      "title": "When will the little snake arrive? I don't know but he won't be long...",
+      "content_text": "When will the little snake arrive? I don't know but he won't be long...",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000038",
+      "url": "https://dadjokes.vip/joke/MJ000038",
+      "title": "Why was Pavlov's beard so soft?  Because he conditioned it.",
+      "content_text": "Why was Pavlov's beard so soft?  Because he conditioned it.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000039",
+      "url": "https://dadjokes.vip/joke/MJ000039",
+      "title": "Do I enjoy making courthouse puns? Guilty",
+      "content_text": "Do I enjoy making courthouse puns? Guilty",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000040",
+      "url": "https://dadjokes.vip/joke/MJ000040",
+      "title": "Why did the kid throw the clock out the window? He wanted to see time fly!",
+      "content_text": "Why did the kid throw the clock out the window? He wanted to see time fly!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000041",
+      "url": "https://dadjokes.vip/joke/MJ000041",
+      "title": "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.",
+      "content_text": "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000042",
+      "url": "https://dadjokes.vip/joke/MJ000042",
+      "title": "Why couldn't the kid see the pirate movie? Because it was rated arrr!",
+      "content_text": "Why couldn't the kid see the pirate movie? Because it was rated arrr!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000043",
+      "url": "https://dadjokes.vip/joke/MJ000043",
+      "title": "It was so cold yesterday my computer froze. My own fault though, I left too many windows open.",
+      "content_text": "It was so cold yesterday my computer froze. My own fault though, I left too many windows open.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000044",
+      "url": "https://dadjokes.vip/joke/MJ000044",
+      "title": "Man, I really love my furniture... me and my recliner go way back.",
+      "content_text": "Man, I really love my furniture... me and my recliner go way back.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000045",
+      "url": "https://dadjokes.vip/joke/MJ000045",
+      "title": "What did the traffic light say to the car as it passed? \"Don't look I'm changing!\"",
+      "content_text": "What did the traffic light say to the car as it passed? \"Don't look I'm changing!\"",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Transportation",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000046",
+      "url": "https://dadjokes.vip/joke/MJ000046",
+      "title": "My son is studying to be a surgeon, I just hope he makes the cut.",
+      "content_text": "My son is studying to be a surgeon, I just hope he makes the cut.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000047",
+      "url": "https://dadjokes.vip/joke/MJ000047",
+      "title": "Why did the man run around his bed? Because he was trying to catch up on his sleep!",
+      "content_text": "Why did the man run around his bed? Because he was trying to catch up on his sleep!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000048",
+      "url": "https://dadjokes.vip/joke/MJ000048",
+      "title": "What did one wall say to the other wall? I'll meet you at the corner!",
+      "content_text": "What did one wall say to the other wall? I'll meet you at the corner!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000049",
+      "url": "https://dadjokes.vip/joke/MJ000049",
+      "title": "Sometimes I tuck my knees into my chest and lean forward.  That’s just how I roll.",
+      "content_text": "Sometimes I tuck my knees into my chest and lean forward.  That’s just how I roll.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000050",
+      "url": "https://dadjokes.vip/joke/MJ000050",
+      "title": "I once lost a banana at court but then I appealed. ",
+      "content_text": "I once lost a banana at court but then I appealed. ",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000051",
+      "url": "https://dadjokes.vip/joke/MJ000051",
+      "title": "Conjunctivitis.com – now that’s a site for sore eyes.",
+      "content_text": "Conjunctivitis.com – now that’s a site for sore eyes.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Medical",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000052",
+      "url": "https://dadjokes.vip/joke/MJ000052",
+      "title": "How many South Americans does it take to change a lightbulb? A Brazilian",
+      "content_text": "How many South Americans does it take to change a lightbulb? A Brazilian",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000053",
+      "url": "https://dadjokes.vip/joke/MJ000053",
+      "title": "I don't trust stairs. They're always up to something.",
+      "content_text": "I don't trust stairs. They're always up to something.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000054",
+      "url": "https://dadjokes.vip/joke/MJ000054",
+      "title": "What do you call two guys hanging out by your window? Kurt & Rod.",
+      "content_text": "What do you call two guys hanging out by your window? Kurt & Rod.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000055",
+      "url": "https://dadjokes.vip/joke/MJ000055",
+      "title": "Why was the robot angry? Because someone kept pressing his buttons!",
+      "content_text": "Why was the robot angry? Because someone kept pressing his buttons!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000056",
+      "url": "https://dadjokes.vip/joke/MJ000056",
+      "title": "Which is the fastest growing city in the world? Dublin'",
+      "content_text": "Which is the fastest growing city in the world? Dublin'",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Global",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000057",
+      "url": "https://dadjokes.vip/joke/MJ000057",
+      "title": "A police officer caught two kids playing with a firework and a car battery. He charged one and let t",
+      "content_text": "A police officer caught two kids playing with a firework and a car battery. He charged one and let the other one off.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000058",
+      "url": "https://dadjokes.vip/joke/MJ000058",
+      "title": "What do you call a snake who builds houses? A boa constructor!",
+      "content_text": "What do you call a snake who builds houses? A boa constructor!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000059",
+      "url": "https://dadjokes.vip/joke/MJ000059",
+      "title": "What is the difference between ignorance and apathy?\r\n\r\nI don't know and I don't care.",
+      "content_text": "What is the difference between ignorance and apathy?\r\n\r\nI don't know and I don't care.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000060",
+      "url": "https://dadjokes.vip/joke/MJ000060",
+      "title": "I went to a Foo Fighters Concert once... It was Everlong...",
+      "content_text": "I went to a Foo Fighters Concert once... It was Everlong...",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000061",
+      "url": "https://dadjokes.vip/joke/MJ000061",
+      "title": "Why did the sentence fail the driving test? It never came to a full stop.",
+      "content_text": "Why did the sentence fail the driving test? It never came to a full stop.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Transportation",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000062",
+      "url": "https://dadjokes.vip/joke/MJ000062",
+      "title": "Some people eat light bulbs. They say it's a nice light snack.",
+      "content_text": "Some people eat light bulbs. They say it's a nice light snack.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000063",
+      "url": "https://dadjokes.vip/joke/MJ000063",
+      "title": "What's the difference between a rooster and a crow? A rooster can crow but a crow cannot rooster.",
+      "content_text": "What's the difference between a rooster and a crow? A rooster can crow but a crow cannot rooster.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000064",
+      "url": "https://dadjokes.vip/joke/MJ000064",
+      "title": "I went to the store to pick up eight cans of sprite...",
+      "content_text": "I went to the store to pick up eight cans of sprite... when I got home I realized I'd only picked seven up",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000065",
+      "url": "https://dadjokes.vip/joke/MJ000065",
+      "title": "I cut my finger chopping cheese, but I think that I may have grater problems.",
+      "content_text": "I cut my finger chopping cheese, but I think that I may have grater problems.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000066",
+      "url": "https://dadjokes.vip/joke/MJ000066",
+      "title": "Yesterday, I accidentally swallowed some food coloring. The doctor says I’m okay, but I feel like I’",
+      "content_text": "Yesterday, I accidentally swallowed some food coloring. The doctor says I’m okay, but I feel like I’ve dyed a little inside.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Medical",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000067",
+      "url": "https://dadjokes.vip/joke/MJ000067",
+      "title": "When people are sad, I sometimes let them colour in my tattoos. Sometimes all they need is a shoulde",
+      "content_text": "When people are sad, I sometimes let them colour in my tattoos. Sometimes all they need is a shoulder to crayon.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000068",
+      "url": "https://dadjokes.vip/joke/MJ000068",
+      "title": "Last night me and my girlfriend watched three DVDs back to back. Luckily I was the one facing the TV",
+      "content_text": "Last night me and my girlfriend watched three DVDs back to back. Luckily I was the one facing the TV.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000069",
+      "url": "https://dadjokes.vip/joke/MJ000069",
+      "title": "I got a reversible jacket for Christmas, I can't wait to see how it turns out.",
+      "content_text": "I got a reversible jacket for Christmas, I can't wait to see how it turns out.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Seasonal",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000070",
+      "url": "https://dadjokes.vip/joke/MJ000070",
+      "title": "What do you get when you cross a pig and a pineapple? A porky pine",
+      "content_text": "What do you get when you cross a pig and a pineapple? A porky pine",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000071",
+      "url": "https://dadjokes.vip/joke/MJ000071",
+      "title": "What did Romans use to cut pizza before the rolling cutter was invented? Lil Caesars",
+      "content_text": "What did Romans use to cut pizza before the rolling cutter was invented? Lil Caesars",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000072",
+      "url": "https://dadjokes.vip/joke/MJ000072",
+      "title": "Why did the banana go to the doctor? He was not \"peeling\" well.",
+      "content_text": "Why did the banana go to the doctor? He was not \"peeling\" well.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Medical",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000073",
+      "url": "https://dadjokes.vip/joke/MJ000073",
+      "title": "My pet mouse 'Elvis' died last night. He was caught in a trap..",
+      "content_text": "My pet mouse 'Elvis' died last night. He was caught in a trap..",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000074",
+      "url": "https://dadjokes.vip/joke/MJ000074",
+      "title": "Never take advice from electrons. They are always negative.",
+      "content_text": "Never take advice from electrons. They are always negative.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000075",
+      "url": "https://dadjokes.vip/joke/MJ000075",
+      "title": "Why are oranges the smartest fruit?",
+      "content_text": "Why are oranges the smartest fruit? Because they are made to concentrate.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000076",
+      "url": "https://dadjokes.vip/joke/MJ000076",
+      "title": "A girl once asked me what my heart desired, apparently blood, oxygen and neural messages were all wr",
+      "content_text": "A girl once asked me what my heart desired, apparently blood, oxygen and neural messages were all wrong answers",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Science & Tech",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000077",
+      "url": "https://dadjokes.vip/joke/MJ000077",
+      "title": "Why is it always hot in the corner of a room? Because a corner is 90 degrees.",
+      "content_text": "Why is it always hot in the corner of a room? Because a corner is 90 degrees.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000078",
+      "url": "https://dadjokes.vip/joke/MJ000078",
+      "title": "What did the beaver say to the tree? It's been nice gnawing you.",
+      "content_text": "What did the beaver say to the tree? It's been nice gnawing you.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000079",
+      "url": "https://dadjokes.vip/joke/MJ000079",
+      "title": "How do you fix a damaged jack-o-lantern? You use a pumpkin patch.",
+      "content_text": "How do you fix a damaged jack-o-lantern? You use a pumpkin patch.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Seasonal",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000080",
+      "url": "https://dadjokes.vip/joke/MJ000080",
+      "title": "Why do cows not have toes? They lactose!",
+      "content_text": "Why do cows not have toes? They lactose!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000081",
+      "url": "https://dadjokes.vip/joke/MJ000081",
+      "title": "What did the late tomato say to the early tomato?",
+      "content_text": "What did the late tomato say to the early tomato? I’ll ketch up",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000082",
+      "url": "https://dadjokes.vip/joke/MJ000082",
+      "title": "I have kleptomania, but when it gets bad, I take something for it.",
+      "content_text": "I have kleptomania, but when it gets bad, I take something for it.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000083",
+      "url": "https://dadjokes.vip/joke/MJ000083",
+      "title": "I used to be addicted to soap, but I'm clean now.",
+      "content_text": "I used to be addicted to soap, but I'm clean now.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "#DadLife",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000084",
+      "url": "https://dadjokes.vip/joke/MJ000084",
+      "title": "When is a door not a door? When it's ajar.",
+      "content_text": "When is a door not a door? When it's ajar.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000085",
+      "url": "https://dadjokes.vip/joke/MJ000085",
+      "title": "I made a belt out of watches once... It was a waist of time.",
+      "content_text": "I made a belt out of watches once... It was a waist of time.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Clothing",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000086",
+      "url": "https://dadjokes.vip/joke/MJ000086",
+      "title": "Why did Mozart kill all his chickens?",
+      "content_text": "Why did Mozart kill all his chickens? Because when he asked them who the best composer was, they'd all say \"Bach bach bach!\"",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000087",
+      "url": "https://dadjokes.vip/joke/MJ000087",
+      "title": "This furniture store keeps emailing me, all I wanted was one night stand!",
+      "content_text": "This furniture store keeps emailing me, all I wanted was one night stand!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Work & Money",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000088",
+      "url": "https://dadjokes.vip/joke/MJ000088",
+      "title": "How do you find Will Smith in the snow?  Look for fresh prints.",
+      "content_text": "How do you find Will Smith in the snow?  Look for fresh prints.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Movies",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000089",
+      "url": "https://dadjokes.vip/joke/MJ000089",
+      "title": "My sister bet me $15 that I couldn't build a car out of spaghetti. You should have seen the look on ",
+      "content_text": "My sister bet me $15 that I couldn't build a car out of spaghetti. You should have seen the look on her face as I drove pasta.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000090",
+      "url": "https://dadjokes.vip/joke/MJ000090",
+      "title": "My boss told me to have a good day... so I went home.",
+      "content_text": "My boss told me to have a good day... so I went home.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Work & Money",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000091",
+      "url": "https://dadjokes.vip/joke/MJ000091",
+      "title": "I just read a book about Stockholm syndrome. It was pretty bad at first, but by the end I liked it.",
+      "content_text": "I just read a book about Stockholm syndrome. It was pretty bad at first, but by the end I liked it.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Words & Puns",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000092",
+      "url": "https://dadjokes.vip/joke/MJ000092",
+      "title": "Why do trees seem suspicious on sunny days? Dunno, they're just a bit shady.",
+      "content_text": "Why do trees seem suspicious on sunny days? Dunno, they're just a bit shady.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Mother Nature",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000093",
+      "url": "https://dadjokes.vip/joke/MJ000093",
+      "title": "If at first you don't succeed, sky diving is not for you!",
+      "content_text": "If at first you don't succeed, sky diving is not for you!",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Transportation",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000094",
+      "url": "https://dadjokes.vip/joke/MJ000094",
+      "title": "I'd like to start a diet, but I've got too much on my plate right now.",
+      "content_text": "I'd like to start a diet, but I've got too much on my plate right now.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Food",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000095",
+      "url": "https://dadjokes.vip/joke/MJ000095",
+      "title": "What did the drummer name her twin daughters? Anna One, Anna Two...",
+      "content_text": "What did the drummer name her twin daughters? Anna One, Anna Two...",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000096",
+      "url": "https://dadjokes.vip/joke/MJ000096",
+      "title": "What kind of music do mummy's like? Rap",
+      "content_text": "What kind of music do mummy's like? Rap",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Music & Arts",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000097",
+      "url": "https://dadjokes.vip/joke/MJ000097",
+      "title": "I remember when I was a kid, I opened my fridge and noticed one of my vegetables were crying. I gues",
+      "content_text": "I remember when I was a kid, I opened my fridge and noticed one of my vegetables were crying. I guess I have some emotional cabbage.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Family",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000098",
+      "url": "https://dadjokes.vip/joke/MJ000098",
+      "title": "What's large, grey, and doesn't matter?",
+      "content_text": "What's large, grey, and doesn't matter? An irrelephant.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Animals",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000099",
+      "url": "https://dadjokes.vip/joke/MJ000099",
+      "title": "Frankenstein enters a bodybuilding competition and finds he has seriously misunderstood the objectiv",
+      "content_text": "Frankenstein enters a bodybuilding competition and finds he has seriously misunderstood the objective.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Sports & Games",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    },
+    {
+      "id": "https://dadjokes.vip/joke/MJ000100",
+      "url": "https://dadjokes.vip/joke/MJ000100",
+      "title": "A book just fell on my head. I only have my shelf to blame.",
+      "content_text": "A book just fell on my head. I only have my shelf to blame.",
+      "date_published": "2024-01-01T00:00:00Z",
+      "date_modified": "2025-11-07T00:00:00Z",
+      "tags": [
+        "Around the House",
+        "dad jokes",
+        "humor"
+      ],
+      "author": {
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    }
+  ]
+}

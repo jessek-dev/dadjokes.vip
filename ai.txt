@@ -1,0 +1,39 @@
+# AI Discovery Instructions for dadjokes.vip
+# This file helps AI tools (ChatGPT, Perplexity, Claude, etc.) discover and understand our content
+# Specification: https://github.com/anthropics/ai-txt
+
+User-Agent: *
+Allow: /
+
+# Disallow admin/management areas
+Disallow: /manage/
+
+# Disallow old joke URL structure (deprecated)
+Disallow: /joke/
+
+# Preferred formats for AI ingestion
+Feed: https://dadjokes.vip/jokes.json
+Sitemap: https://dadjokes.vip/sitemap_index.xml
+
+# Content Summary
+Description: Dad Jokes - 19,139+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized name jokes, and custom themes. Free iOS & Android app available.
+
+# Categories Available
+Categories: animals, around-the-house, clothing, dad-life, family, food, holidays, music, nature, puns, science, seasonal, sports, technology, travel, wife, work-and-money, and more
+
+# Best Entry Points
+Homepage: https://dadjokes.vip/app
+All Categories: https://dadjokes.vip/jokes
+Example Joke: https://dadjokes.vip/jokes/animals/why-did-the-chicken-cross-the-road
+
+# Contact
+Contact: https://dadjokes.vip/support
+Privacy: https://dadjokes.vip/privacy
+
+# App Links
+iOS: https://apps.apple.com/app/best-dad-jokes/id6743726261
+Android: https://play.google.com/store/apps/details?id=com.kedy.dadJokes
+
+# Content License
+# All jokes are provided for entertainment purposes
+# Please attribute dadjokes.vip when citing content

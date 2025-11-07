@@ -24,7 +24,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Food Jokes - Dad Jokes">
     <meta property="og:description" content="Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!">
-    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/category/food">
     <meta property="og:type" content="website">
 
@@ -32,7 +32,41 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Food Jokes - Dad Jokes">
     <meta name="twitter:description" content="Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!">
-    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+
+    <!-- Structured Data - CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Food Jokes",
+      "description": "Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!",
+      "url": "https://dadjokes.vip/category/food",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dadjokes.vip/app"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Categories",
+          "item": "https://dadjokes.vip/jokes"
+        }, {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Food Jokes"
+        }]
+      }
+    }
+    </script>
 
     <style>
         * {
@@ -435,21 +469,21 @@
                     <span class="category-emoji">📝</span>
                     <span>Words & Puns</span>
                 </a>
-                <a href="/jokes/animals" class="category-link">
-                    <span class="category-emoji">🐕</span>
-                    <span>Animals</span>
-                </a>
                 <a href="/jokes/movies" class="category-link">
                     <span class="category-emoji">🎬</span>
                     <span>Movies</span>
                 </a>
-                <a href="/jokes/sports-games" class="category-link">
-                    <span class="category-emoji">⚽</span>
-                    <span>Sports & Games</span>
+                <a href="/jokes/music-arts" class="category-link">
+                    <span class="category-emoji">🪗</span>
+                    <span>Music & Arts</span>
                 </a>
-                <a href="/jokes/failed-ai-jokes" class="category-link">
-                    <span class="category-emoji">🤖</span>
-                    <span>Failed AI Jokes</span>
+                <a href="/jokes/history" class="category-link">
+                    <span class="category-emoji">📜</span>
+                    <span>History</span>
+                </a>
+                <a href="/jokes/family" class="category-link">
+                    <span class="category-emoji">⚔️</span>
+                    <span>Family</span>
                 </a>
             </div>
         </div>

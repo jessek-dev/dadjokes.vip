@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Dad Jokes App - 20,000+ Jokes Free on iPhone & Android</title>
-    <meta name="description" content="Download the best dad jokes app with 20,000+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS & Android.">
+    <title>Best Dad Jokes App - 19,139 Jokes Free on iPhone & Android</title>
+    <meta name="description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS & Android.">
     
     <!-- Universal Links Support -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
@@ -21,10 +21,13 @@
     <!-- Canonical URL (with trailing slash to match GitHub Pages redirect) -->
     <link rel="canonical" href="https://dadjokes.vip/app/">
 
+    <!-- JSON Feed for AI Discovery -->
+    <link rel="alternate" type="application/feed+json" title="Dad Jokes JSON Feed" href="https://dadjokes.vip/jokes.json">
+
     <!-- Open Graph tags -->
     <meta property="og:title" content="Dad Jokes - Daily Groan-Worthy Humor">
     <meta property="og:description" content="Get your daily dose of dad jokes! Premium dad humor delivered fresh every day.">
-    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/app/">
     <meta property="og:type" content="website">
 
@@ -32,7 +35,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dad Jokes - Daily Groan-Worthy Humor">
     <meta name="twitter:description" content="Get your daily dose of dad jokes! Premium dad humor delivered fresh every day.">
-    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
 
     <!-- Resource hints for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -657,7 +660,72 @@
     }
     </script>
 
-    
+    <!-- FAQ Schema for AI Tools and Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How many jokes are in the Dad Jokes app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We have 19,139 jokes and counting! Our collection includes 2,396 classic dad jokes and 16,743 AI-generated personalized name jokes across 20+ categories including animals, food, work & money, seasonal, and more."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is the Dad Jokes app free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Dad Jokes is completely free to download and use on both iOS and Android. You get access to all 19,139+ jokes, daily featured jokes, and the ability to save your favorites. We also offer premium features like AI-generated personalized name jokes, custom color themes, and an ad-free experience."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are dad jokes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dad jokes are wholesome, family-friendly jokes known for their puns, wordplay, and groan-worthy humor. They're the kind of jokes dads tell that make everyone roll their eyes but secretly smile. Think clean humor with clever punchlines that anyone can enjoy."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What platforms is the Dad Jokes app available on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dad Jokes is available on both iOS (iPhone and iPad) and Android devices. You can download it for free from the Apple App Store or Google Play Store."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can I submit my own dad jokes to the app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We welcome user-submitted jokes through the app. Simply tap the submit button in the app to share your best dad jokes with the community. All submissions are reviewed before being added to ensure they meet our family-friendly standards."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What categories of jokes are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We have 20+ joke categories including: Animals, Around the House, Clothing, Dad Life, Family, Food, Holidays, Music, Nature, Puns, Science, Seasonal, Sports, Technology, Travel, Wife, Work & Money, and more. Each category is curated with the best dad jokes in that theme."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do I need an internet connection to use the app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app works both online and offline! We cache thousands of jokes locally so you can enjoy dad jokes even without an internet connection. Daily featured jokes and AI-generated personalized jokes require internet access."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are AI-generated name jokes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI-generated name jokes are personalized jokes about your name created using artificial intelligence. Enter any name and get custom jokes that playfully roast or celebrate that person. It's a unique feature that makes sharing jokes even more fun and personal."
+        }
+      }]
+    }
+    </script>
+
+
 <!-- Firebase Featured Joke Loader -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";

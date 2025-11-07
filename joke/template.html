@@ -33,7 +33,7 @@
     <!-- Open Graph for Facebook/LinkedIn -->
     <meta property="og:title" content="{{JOKE_SETUP}}">
     <meta property="og:description" content="{{JOKE_SETUP}} {{JOKE_PUNCHLINE}}">
-    <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip{{JOKE_URL}}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Dad Jokes">
@@ -42,7 +42,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{JOKE_SETUP}}">
     <meta name="twitter:description" content="{{JOKE_SETUP}} {{JOKE_PUNCHLINE}}">
-    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image.png">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
 
     <!-- Performance: Preconnect -->
     <link rel="preconnect" href="https://www.gstatic.com">
@@ -51,16 +51,27 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
+      "@type": "Article",
       "headline": "{{JOKE_SETUP}}",
-      "text": "{{JOKE_SETUP}} {{JOKE_PUNCHLINE}}",
+      "articleBody": "{{JOKE_SETUP}} {{JOKE_PUNCHLINE}}",
       "genre": "humor",
       "keywords": "dad jokes, {{CATEGORY}} jokes, funny jokes",
       "inLanguage": "en-US",
+      "datePublished": "2024-01-01T00:00:00Z",
+      "dateModified": "2025-11-07T00:00:00Z",
       "author": {
         "@type": "Organization",
         "name": "Dad Jokes",
         "url": "https://dadjokes.vip"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dadjokes.vip/assets/android-chrome-192x192.png"
+        }
       },
       "isPartOf": {
         "@type": "WebSite",
