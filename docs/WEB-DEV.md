@@ -143,6 +143,14 @@ AI tools (ChatGPT, Perplexity, Claude, Gemini) increasingly drive traffic by:
   - Change: CreativeWork → Article with timestamps
   - Added: publisher, datePublished, dateModified fields
 
+- [x] **Add related categories cross-linking**
+  - Status: ✅ Complete
+  - Impact: High (SEO internal linking)
+  - Files: `/joke/template.html` lines 775-783, `/scripts/config.js` lines 87-111, `/scripts/generate-pages.js` lines 272-310
+  - Feature: Each joke page now shows 3 related category links
+  - Example: "Animals" joke shows links to "Mother Nature", "Family", "Food"
+  - Benefit: Improves site navigation and distributes link equity across category pages
+
 - [ ] **Add accessibility improvements**
   - Status: ⏳ Deferred to Phase 4
   - Impact: Medium (AI content understanding)

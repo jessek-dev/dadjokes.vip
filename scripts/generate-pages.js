@@ -269,6 +269,9 @@ async function generateJokePage(joke, template, allJokes) {
   const related4Url = jokeUrlMap[relatedJokes[3]?.id] || '';
   const related5Url = jokeUrlMap[relatedJokes[4]?.id] || '';
 
+  // Get related categories for cross-linking
+  const relatedCategories = CONFIG.RELATED_CATEGORIES[joke.category] || ['General', 'Family', 'Animals'];
+
   const replacements = {
     JOKE_ID: joke.id,
     JOKE_SLUG: jokeSlug,
@@ -297,7 +300,13 @@ async function generateJokePage(joke, template, allJokes) {
     RELATED_4_SETUP: relatedJokes[3] ? extractSetup(relatedJokes[3]) : '',
     RELATED_5_ID: relatedJokes[4]?.id || '',
     RELATED_5_URL: related5Url,
-    RELATED_5_SETUP: relatedJokes[4] ? extractSetup(relatedJokes[4]) : ''
+    RELATED_5_SETUP: relatedJokes[4] ? extractSetup(relatedJokes[4]) : '',
+    RELATED_CAT_1: relatedCategories[0],
+    RELATED_CAT_1_SLUG: slugify(relatedCategories[0]),
+    RELATED_CAT_2: relatedCategories[1],
+    RELATED_CAT_2_SLUG: slugify(relatedCategories[1]),
+    RELATED_CAT_3: relatedCategories[2],
+    RELATED_CAT_3_SLUG: slugify(relatedCategories[2])
   };
 
   const html = replacePlaceholders(template, replacements);

@@ -81,5 +81,32 @@ export const CONFIG = {
     'Yo Mama': '🧌',
     'General': '🥸',
     'Failed AI Jokes': '🤖'
+  },
+
+  // Related categories for cross-linking (SEO internal linking)
+  RELATED_CATEGORIES: {
+    '#DadLife': ['Family', 'Wife', 'Work & Money'],
+    'Wife': ['#DadLife', 'Family', 'People'],
+    'Family': ['#DadLife', 'Wife', 'Animals'],
+    'Words & Puns': ['General', 'People', 'Work & Money'],
+    'Around the House': ['Food', 'Clothing', 'Family'],
+    'Food': ['Around the House', 'Work & Money', 'Animals'],
+    'Animals': ['Mother Nature', 'Family', 'Food'],
+    'Work & Money': ['#DadLife', 'People', 'Transportation'],
+    'Sports & Games': ['Movies', 'Music & Arts', 'Transportation'],
+    'Transportation': ['Work & Money', 'Sports & Games', 'Around the House'],
+    'Movies': ['Music & Arts', 'Sports & Games', 'People'],
+    'Music & Arts': ['Movies', 'People', 'Words & Puns'],
+    'Medical': ['Work & Money', 'People', 'Animals'],
+    'Global': ['History', 'People', 'Transportation'],
+    'Clothing': ['Around the House', 'People', 'Work & Money'],
+    'People': ['Work & Money', 'Family', 'Global'],
+    'History': ['Global', 'Religion', 'People'],
+    'Religion': ['History', 'People', 'Family'],
+    'Mother Nature': ['Animals', 'Global', 'Transportation'],
+    'NSFW': ['Yo Mama', 'General', 'People'],
+    'Yo Mama': ['NSFW', 'People', 'General'],
+    'Failed AI Jokes': ['General', 'Words & Puns', 'Animals'],
+    'General': ['Words & Puns', 'People', 'Work & Money']
   }
 };
