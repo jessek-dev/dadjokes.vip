@@ -1,3 +1,7 @@
+# NOTE: Cloudflare injects AI bot restrictions above this section
+# The "Content-signal" directive is experimental (not standard robots.txt)
+# but is understood by AI crawlers. Validation tools will flag it as an error.
+
 User-agent: *
 Allow: /
 
