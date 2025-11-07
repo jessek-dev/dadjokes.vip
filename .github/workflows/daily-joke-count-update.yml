@@ -53,7 +53,7 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if git diff --quiet app/index.html; then
+          if git diff --quiet app/index.html joke/template.html; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No changes to joke count"
           else
@@ -61,16 +61,19 @@ jobs:
             echo "Joke count has changed"
           fi
 
+      - name: Regenerate joke pages
+        if: steps.check.outputs.has_changes == 'true'
+        run: |
+          cd scripts
+          npm run generate
+          echo "✅ Regenerated all joke pages with new count"
+
       - name: Commit and push changes
         if: steps.check.outputs.has_changes == 'true'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add app/index.html
-          git commit -m "Update joke count to ${{ steps.update.outputs.new_count }}"
+          git add -A
+          git commit -m "Update joke count to ${{ steps.update.outputs.new_count }} across all pages"
           git push
 
-      - name: Log no changes
-        if: steps.check.outputs.has_changes == 'false'
-        run: |
-          echo "✅ Joke count is already up to date. No changes needed."
