@@ -204,6 +204,38 @@ function getRelatedJokes(joke, allJokes) {
 }
 
 /**
+ * Extract setup from joke for display (used in related jokes)
+ */
+function extractSetup(joke) {
+  // If joke has explicit setup, use it
+  if (joke.setup && joke.setup.trim()) {
+    return joke.setup;
+  }
+
+  // For one-liners, extract setup portion
+  const text = joke.text || '';
+
+  // Try to cut at first question mark + space (common setup pattern)
+  const questionMarkIndex = text.indexOf('? ');
+  if (questionMarkIndex > 0 && questionMarkIndex < 120) {
+    return text.substring(0, questionMarkIndex + 1) + '..';
+  }
+
+  // Otherwise, cut at 60 characters to avoid showing full punchline
+  if (text.length > 60) {
+    return text.substring(0, 60) + '...';
+  }
+
+  // If joke is very short (<=60 chars), show first 40 chars to create intrigue
+  if (text.length > 40) {
+    return text.substring(0, 40) + '...';
+  }
+
+  // Very short jokes - show first 30 chars
+  return text.substring(0, Math.min(30, text.length)) + '...';
+}
+
+/**
  * Generate single joke page with SEO-friendly URL
  */
 async function generateJokePage(joke, template, allJokes) {
@@ -251,13 +283,13 @@ async function generateJokePage(joke, template, allJokes) {
     KEYWORD_2: joke.keywords ? joke.keywords.split(',')[1] || 'humor' : 'dad jokes',
     RELATED_1_ID: relatedJokes[0]?.id || '',
     RELATED_1_URL: related1Url,
-    RELATED_1_TEXT: relatedJokes[0]?.text || '',
+    RELATED_1_SETUP: relatedJokes[0] ? extractSetup(relatedJokes[0]) : '',
     RELATED_2_ID: relatedJokes[1]?.id || '',
     RELATED_2_URL: related2Url,
-    RELATED_2_TEXT: relatedJokes[1]?.text || '',
+    RELATED_2_SETUP: relatedJokes[1] ? extractSetup(relatedJokes[1]) : '',
     RELATED_3_ID: relatedJokes[2]?.id || '',
     RELATED_3_URL: related3Url,
-    RELATED_3_TEXT: relatedJokes[2]?.text || ''
+    RELATED_3_SETUP: relatedJokes[2] ? extractSetup(relatedJokes[2]) : ''
   };
 
   const html = replacePlaceholders(template, replacements);
