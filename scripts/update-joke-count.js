@@ -112,6 +112,55 @@ async function updateAppIndexHtml(count) {
 }
 
 /**
+ * Update joke count in joke template
+ */
+async function updateJokeTemplate(count) {
+  const templatePath = join(__dirname, '../joke/template.html');
+
+  try {
+    console.log(`\nUpdating ${templatePath}...`);
+
+    let html = readFileSync(templatePath, 'utf8');
+
+    // Format the count nicely
+    const formattedCount = formatNumber(count);
+
+    // Update all joke count instances in the template
+    const updates = [
+      { id: 'mobile-banner-count', description: 'Mobile banner' },
+      { id: 'app-banner-count', description: 'App download banner' },
+      { id: 'cta-count-1', description: 'CTA section' },
+      { id: 'cta-count-2', description: 'Paywall modal' }
+    ];
+
+    let updatedCount = 0;
+    for (const update of updates) {
+      const pattern = new RegExp(`<span id="${update.id}">[^<]+</span>`, 'g');
+      const newValue = `<span id="${update.id}">${formattedCount}</span>`;
+
+      if (pattern.test(html)) {
+        html = html.replace(pattern, newValue);
+        console.log(`  ✓ Updated ${update.description}`);
+        updatedCount++;
+      }
+    }
+
+    if (updatedCount === 0) {
+      console.error('Could not find any joke count spans in template');
+      return false;
+    }
+
+    writeFileSync(templatePath, html, 'utf8');
+    console.log(`✅ Updated ${updatedCount} count locations in template`);
+
+    return true;
+  } catch (error) {
+    console.error('Error updating joke template:', error);
+    throw error;
+  }
+}
+
+/**
  * Main execution
  */
 async function main() {
@@ -120,8 +169,10 @@ async function main() {
 
     const totalCount = await getTotalJokeCount();
     await updateAppIndexHtml(totalCount);
+    await updateJokeTemplate(totalCount);
 
     console.log('\n✨ Joke count update completed successfully!');
+    console.log('\n⚠️  IMPORTANT: Run "npm run generate" to regenerate all joke pages with the new count.');
     process.exit(0);
   } catch (error) {
     console.error('\n❌ Error updating joke count:', error);
