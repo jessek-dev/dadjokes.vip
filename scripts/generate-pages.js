@@ -189,18 +189,18 @@ function getRatingStars(rating) {
 }
 
 /**
- * Get 3 related jokes from same category
+ * Get 5 related jokes from same category
  */
 function getRelatedJokes(joke, allJokes) {
   const sameCategory = allJokes
     .filter(j => j.category === joke.category && j.id !== joke.id)
     .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
+    .slice(0, 5);
 
-  return sameCategory.length === 3 ? sameCategory : allJokes
+  return sameCategory.length === 5 ? sameCategory : allJokes
     .filter(j => j.id !== joke.id)
     .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
+    .slice(0, 5);
 }
 
 /**
@@ -266,6 +266,8 @@ async function generateJokePage(joke, template, allJokes) {
   const related1Url = jokeUrlMap[relatedJokes[0]?.id] || '';
   const related2Url = jokeUrlMap[relatedJokes[1]?.id] || '';
   const related3Url = jokeUrlMap[relatedJokes[2]?.id] || '';
+  const related4Url = jokeUrlMap[relatedJokes[3]?.id] || '';
+  const related5Url = jokeUrlMap[relatedJokes[4]?.id] || '';
 
   const replacements = {
     JOKE_ID: joke.id,
@@ -289,7 +291,13 @@ async function generateJokePage(joke, template, allJokes) {
     RELATED_2_SETUP: relatedJokes[1] ? extractSetup(relatedJokes[1]) : '',
     RELATED_3_ID: relatedJokes[2]?.id || '',
     RELATED_3_URL: related3Url,
-    RELATED_3_SETUP: relatedJokes[2] ? extractSetup(relatedJokes[2]) : ''
+    RELATED_3_SETUP: relatedJokes[2] ? extractSetup(relatedJokes[2]) : '',
+    RELATED_4_ID: relatedJokes[3]?.id || '',
+    RELATED_4_URL: related4Url,
+    RELATED_4_SETUP: relatedJokes[3] ? extractSetup(relatedJokes[3]) : '',
+    RELATED_5_ID: relatedJokes[4]?.id || '',
+    RELATED_5_URL: related5Url,
+    RELATED_5_SETUP: relatedJokes[4] ? extractSetup(relatedJokes[4]) : ''
   };
 
   const html = replacePlaceholders(template, replacements);
