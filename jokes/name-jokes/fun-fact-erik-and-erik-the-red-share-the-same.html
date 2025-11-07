@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Violet, I bet your parents were going for "wallflower" but didn't have the creativity to pull it off.</div>
+                    <div class="related-joke-text">Jakob?..</div>
                 </a>
-                <a href="/jokes/name-jokes/beckys-got-so-many-sharp-angles-when-written-down" class="related-joke-card">
-                    <div class="related-joke-text">Becky's got so many sharp angles when written down, it looks like someone tried to draw stairs while having hiccups.</div>
+                <a href="/jokes/name-jokes/benjamin" class="related-joke-card">
+                    <div class="related-joke-text">Benjamin?..</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-becky-claims-to-be-related-to-becky-with" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Becky claims to be related to Becky with the good hair. Becky with the good hair was known for being mentioned in Beyoncé's Lemonade. Becky is known for making things up.</div>
+                <a href="/jokes/name-jokes/bianca-your-name-is-so-long-its-a-wonder-you-dont" class="related-joke-card">
+                    <div class="related-joke-text">Bianca, your name is so long, it's a wonder you don't have y...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-commit-to-a-short-name-like-11" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't commit to a short name like "Brad" or ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-a-short-name-16" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Bia"...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_erik_famous_namesakes_v3_second_1757369684243_507',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

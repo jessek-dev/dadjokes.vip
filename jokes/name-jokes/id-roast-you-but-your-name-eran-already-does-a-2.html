@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-austin-too" class="related-joke-card">
-                    <div class="related-joke-text">You're living that medium-name life, Austin - too long for a quick signature but too short to dramatically yell when you're in trouble.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Nichole appears in 1 cultures: English. Somehow you managed ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-going-for" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been going for alphabetical order with "Abel" but gave up after the first four letters, leaving that lonely 'L' hanging at the end like an afterthought.</div>
+                <a href="/jokes/name-jokes/with-a-name-like-christy-i-bet-you-were-the-most" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Christy, I bet you were the most festive ki...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-arthur-i-hear-youre-quite-the-author-too-bad" class="related-joke-card">
-                    <div class="related-joke-text">Hey Arthur, I hear you're quite the author - too bad your life story's just a chapter of disaster.</div>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-a-short-name-20" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Cam"...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-amy-and" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between 'Amy' and 'Alexandria' ...</div>
+                </a>
+                <a href="/jokes/name-jokes/amy-with-three-letters-youre-the-tic-tac-toe-of" class="related-joke-card">
+                    <div class="related-joke-text">Amy, with three letters, you're the tic-tac-toe of names - a...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eran_1760911642769_2722',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

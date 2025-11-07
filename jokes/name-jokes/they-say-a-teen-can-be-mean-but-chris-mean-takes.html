@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/christie" class="related-joke-card">
-                    <div class="related-joke-text">Christie? Like Christie Brinkley, famous for being a supermodel married to Billy Joel. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/writing-your-full-name-addison-on-forms-must-be" class="related-joke-card">
+                    <div class="related-joke-text">Writing your full name "Addison" on forms must be exhausting...</div>
                 </a>
-                <a href="/jokes/name-jokes/brianna-comes-from-english-meaning-defender-that" class="related-joke-card">
-                    <div class="related-joke-text">Brianna comes from English meaning "defender." That meaning must have gotten lost in translation.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Miguel appears in 3 cultures: Spanish, Portuguese, Galician....</div>
                 </a>
-                <a href="/jokes/name-jokes/plot-twist-betty-isnt-betty-cooper-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Betty isn't Betty Cooper. One is famous for being the good girl next door in Riverdale. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/id-say-youre-living-la-vida-bella-but-your-names" class="related-joke-card">
+                    <div class="related-joke-text">I'd say you're living la vida Bella, but your name's more el...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-starts-with-all-but-ends-in-son-like" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with "ALL" but ends in "son" - like you beg...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-you-go-by-aubrey-because-ordinary-was-too" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Aubrey because "Ordinary" was too long to ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_christine_wordplay_1757354340967_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

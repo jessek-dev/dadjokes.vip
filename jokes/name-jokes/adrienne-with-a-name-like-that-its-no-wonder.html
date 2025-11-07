@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Charlie, your name is about as unique as a mass-produced greeting card.</div>
+                <a href="/jokes/name-jokes/hey-adeline-youre-so-unrefined-you-make-a" class="related-joke-card">
+                    <div class="related-joke-text">Hey Adeline, you're so unrefined, you make a borderline look...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Jody from Baby Boy - known for being Tyrese's character who needs to grow up." Also Wikipedia: "Jody - disambiguation: did you mean Jody from Baby Boy?"</div>
+                    <div class="related-joke-text">Breaking: Cathy claims to be related to Cathy from the comic...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Cheryl comes from English meaning "strength." Somehow the meaning got lost along the way.</div>
+                    <div class="related-joke-text">Alexis?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Crystal, did your parents name you after a Crystal ball?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cheyenne, you share a name with Cheyenne Jackson, who's ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_adrienne_wordplay_1757337228617_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

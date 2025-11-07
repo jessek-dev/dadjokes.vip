@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Joanna comes from English meaning "defender." Clearly your parents had high expectations that weren't met.</div>
+                    <div class="related-joke-text">Tim, your name has no repeated letters, just like you have n...</div>
                 </a>
-                <a href="/jokes/name-jokes/i-bet-your-parents-gave-you-a-long-name-because" class="related-joke-card">
-                    <div class="related-joke-text">I bet your parents gave you a long name because they paid by the letter and wanted to get their money's worth at the birth certificate office.</div>
+                <a href="/jokes/name-jokes/your-names-got-such-awkward-letter-spacing-that" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got such awkward letter spacing that even the B ...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-know-your-names-short-when-your-starbucks" class="related-joke-card">
-                    <div class="related-joke-text">You know your name's short when your Starbucks barista actually gets it right, but it still somehow takes up the entire cup.</div>
+                <a href="/jokes/name-jokes/annabelle-your-name-means-loving-in-french-no" class="related-joke-card">
+                    <div class="related-joke-text">Annabelle, your name means "loving" in French - no wonder yo...</div>
+                </a>
+                <a href="/jokes/name-jokes/adriana-with-your-name-i-cant-help-but-think" class="related-joke-card">
+                    <div class="related-joke-text">Adriana, with your name, I can't help but think you're in "a...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Caitlin comes from Irish meaning "noble warrior." Your ances...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brittney_rhyme_1757116252806_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

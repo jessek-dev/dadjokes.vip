@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/when-arnold-walks-in-folks-start-to-skedarnold" class="related-joke-card">
-                    <div class="related-joke-text">When Arnold walks in, folks start to skedarnold - guess that's why they nicknamed him "Gone-old."</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Will Ferrell is a comedy legend. This Will is more likely to...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-know-allen-your-name-is-just-long-enough-to" class="related-joke-card">
-                    <div class="related-joke-text">You know, Allen, your name is just long enough to be forgotten but not short enough to be remembered. It's the goldilocks of forgettable names.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Caitlyn and Caitlyn Jenner share the same name! Ca...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-say-aaliyahs-so-dramatic-she-turned-kumbaya" class="related-joke-card">
-                    <div class="related-joke-text">"They say Aaliyah's so dramatic, she turned 'Kumbaya' into 'Come-buy-a,' now she's selling peace and quiet for five bucks a minute."</div>
+                <a href="/jokes/name-jokes/alyssa-sounds-like-someone-sneezed-while-trying" class="related-joke-card">
+                    <div class="related-joke-text">"Alyssa" sounds like someone sneezed while trying to say "re...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-quite-thirsty-when" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been quite thirsty when naming you - th...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name takes so long to write that by the time you finish...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_briana_famous_namesakes_v3_1757369139315_105',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/care-o-lyn" class="related-joke-card">
-                    <div class="related-joke-text">Care-o-lyn? More like Scare-o-lyn, because that name's so old it belongs in a museum's rare-o-wing.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Lillian, huh?..</div>
                 </a>
-                <a href="/jokes/name-jokes/when-everyone-else-is-done-writing-their-names-on" class="related-joke-card">
-                    <div class="related-joke-text">When everyone else is done writing their names on forms, you're still halfway through yours - guess that's why they invented "Bray" as a nickname.</div>
+                <a href="/jokes/name-jokes/youre-stuck-in-name-purgatory-too-many-letters-to" class="related-joke-card">
+                    <div class="related-joke-text">You're stuck in name purgatory - too many letters to fit on ...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-asher-and-asher-angel-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Asher and Asher Angel share the same name! Asher Angel is remembered for being Shazam and a Disney Channel star. Asher will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/they-say-your-names-divine-but-youre-more-like-a" class="related-joke-card">
+                    <div class="related-joke-text">They say your name's divine, but you're more like a deadline...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-life-gives-you-adeline-you-get-something" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Adeline, you get something that's halfwa...</div>
+                </a>
+                <a href="/jokes/name-jokes/allen-comes-from-english-meaning-noble-warrior" class="related-joke-card">
+                    <div class="related-joke-text">Allen comes from English meaning "noble warrior." The name's...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kevin_cultural_origin_1757364296672_822',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

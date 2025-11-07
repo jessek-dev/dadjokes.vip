@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Tyrone appears in 2 cultures: English, African American. That's a lot of cultures to let down simultaneously.</div>
+                    <div class="related-joke-text">Santiago - the name that says "I couldn't decide between Sai...</div>
                 </a>
-                <a href="/jokes/name-jokes/alec-appears-in-1-cultures-english-youre-like-a" class="related-joke-card">
-                    <div class="related-joke-text">Alec appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-basic-its-literally-just-a-with" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so basic, it's literally just "A" with training...</div>
                 </a>
-                <a href="/jokes/name-jokes/when-everyone-else-is-done-writing-their-name-on" class="related-joke-card">
-                    <div class="related-joke-text">When everyone else is done writing their name on forms, you're still dotting that second 'i' and crossing that finish line with "son."</div>
+                <a href="/jokes/name-jokes/ashlee-appears-in-1-cultures-english-modern-thats" class="related-joke-card">
+                    <div class="related-joke-text">Ashlee appears in 1 cultures: English (Modern). That's a lot...</div>
+                </a>
+                <a href="/jokes/name-jokes/youve-got-me-right-in-the-middle-of-your-name" class="related-joke-card">
+                    <div class="related-joke-text">You've got "me" right in the middle of your name, which is i...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-brad-dont-be-sad-but-your-jokes-are-so-bad" class="related-joke-card">
+                    <div class="related-joke-text">Hey Brad, don't be sad, but your jokes are so bad, you're ma...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_katelyn_famous_namesakes_v3_1757369182327_401',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

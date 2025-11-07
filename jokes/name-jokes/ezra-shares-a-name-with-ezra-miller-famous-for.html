@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/ariana-like-the-pop-star-but-with-way-better" class="related-joke-card">
-                    <div class="related-joke-text">Ariana, like the pop star, but with way better dance moves (and fewer donut-licking scandals).</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Oh, Shane, it must be tough having a name that rhymes with "...</div>
                 </a>
-                <a href="/jokes/name-jokes/brody-comes-from-english-meaning-defender-somehow" class="related-joke-card">
-                    <div class="related-joke-text">Brody comes from English meaning "defender." Somehow the meaning got lost along the way.</div>
+                <a href="/jokes/name-jokes/hey-adeline-youre-so-unrefined-you-make-a" class="related-joke-card">
+                    <div class="related-joke-text">Hey Adeline, you're so unrefined, you make a borderline look...</div>
                 </a>
-                <a href="/jokes/name-jokes/brittney-hit-me-one-more-time" class="related-joke-card">
-                    <div class="related-joke-text">Brittney hit me one more time? Nah, these rhymes are so itty-bitty, even your spellcheck's taking pity.</div>
+                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-the-first" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really said "Let's take the first letter of the...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-ashlee-its-like-ashley-but-it-sounds" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Ashlee - it's like Ashley, but it sounds like y...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-gnarly-means-extreme-but-carly-just" class="related-joke-card">
+                    <div class="related-joke-text">They say "gnarly" means extreme, but Carly just means extrem...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ezra_famous_namesakes_v3_1757369162967_267',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

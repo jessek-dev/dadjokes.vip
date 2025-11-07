@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Rick Springfield had a hit song called "Jessie's Girl." This Rick can't even get a girl to talk to him.</div>
+                    <div class="related-joke-text">Stanley appears in 1 cultures: English. Somehow you managed ...</div>
                 </a>
-                <a href="/jokes/name-jokes/while-everyone-else-finishes-writing-their-names" class="related-joke-card">
-                    <div class="related-joke-text">While everyone else finishes writing their names on forms, you're still crossing that 'y' - bet you wish you were named "Ann" during final exams.</div>
+                <a href="/jokes/name-jokes/andrea-your-name-is-like-a-fancy-restaurant-six" class="related-joke-card">
+                    <div class="related-joke-text">Andrea, your name is like a fancy restaurant - six letters l...</div>
                 </a>
-                <a href="/jokes/name-jokes/andres-your-rhymes-are-a-mess-less-dr-seuss-more" class="related-joke-card">
-                    <div class="related-joke-text">Andres, your rhymes are a mess, less Dr. Seuss, more distress.</div>
+                <a href="/jokes/name-jokes/ben-just-like-ben-stiller-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Ben, just like Ben Stiller! Though they're famous for lookin...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-amber-you-walk-like-youre-stuck-in-chamber" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amber, you walk like you're stuck in Chamber - always mo...</div>
+                </a>
+                <a href="/jokes/name-jokes/ann-just-like-ann-coulter-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Ann, just like Ann Coulter! Though they're famous for saying...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eloise_famous_namesakes_v3_1757369159833_246',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

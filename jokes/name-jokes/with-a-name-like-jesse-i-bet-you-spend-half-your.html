@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/calvin" class="related-joke-card">
-                    <div class="related-joke-text">Calvin? Like Calvin Klein, famous for making underwear that makes everyone look good. You two have so much in common - you both have names.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Leonardo - named after Leonardo DiCaprio, who was finally winning an Oscar after wrestling bears. You inherited the name but none of the talent.</div>
+                    <div class="related-joke-text">Roberto comes from Italian meaning "joyful spirit." The name...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-iris-claims-to-be-related-to-iris-from" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Iris claims to be related to Iris from The Flash. Iris from The Flash was known for being a reporter who married a superhero. Iris is known for making things up.</div>
+                <a href="/jokes/name-jokes/youve-got-just-enough-letters-to-fill-out-a-2" class="related-joke-card">
+                    <div class="related-joke-text">You've got just enough letters to fill out a coffee cup, but...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-like-the-lukewarm-porridge-of-names" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like the lukewarm porridge of names - too long ...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-ariels-quite-the-material-girl-but-shes" class="related-joke-card">
+                    <div class="related-joke-text">They say Ariel's quite the material girl, but she's more lik...</div>
+                </a>
+                <a href="/jokes/name-jokes/courtney-appears-in-1-cultures-english-making" class="related-joke-card">
+                    <div class="related-joke-text">Courtney appears in 1 cultures: English. Making each culture...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1761504283227_eg7hgm',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

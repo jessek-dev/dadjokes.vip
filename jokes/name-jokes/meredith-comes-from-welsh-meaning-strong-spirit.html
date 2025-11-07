@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-cynthia-i-bet-you-were-the-queen" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Cynthia, I bet you were the queen of the "Name Spelling Bee" back in school.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">You're like Nicole Kidman, another famous Nicole being tall,...</div>
                 </a>
-                <a href="/jokes/name-jokes/those-m-e-r-o-n-letters-in-your-name-are-just-as" class="related-joke-card">
-                    <div class="related-joke-text">Those M-E-R-O-N letters in your name are just as disorganized as your life - they're not even trying to be in alphabetical order.</div>
+                <a href="/jokes/name-jokes/abigail-with-a-name-like-yours-you-must-have-a" class="related-joke-card">
+                    <div class="related-joke-text">Abigail, with a name like yours, you must have a secret hand...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-becky-claims-to-be-related-to-becky-with" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Becky claims to be related to Becky with the good hair. Becky with the good hair was known for being mentioned in Beyoncé's Lemonade. Becky is known for making things up.</div>
+                <a href="/jokes/name-jokes/hey-christian-you-share-a-name-with-christian" class="related-joke-card">
+                    <div class="related-joke-text">Hey Christian, you share a name with Christian Bale, who's k...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-abigail-did-you-notice-your-name-is-just-a" class="related-joke-card">
+                    <div class="related-joke-text">Hey Abigail, did you notice your name is just "a big" with a...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-alyssa-walks-into-a-mall-i-bet-she-cant-find" class="related-joke-card">
+                    <div class="related-joke-text">When Alyssa walks into a mall, I bet she can't find her name...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_meredith_name_meaning_1757364333719_1023',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Todd shares a name with Todd Howard, famous for making Bethesda games with 16 times the detail. What are the odds? About as good as Todd becoming equally famous.</div>
+                    <div class="related-joke-text">Brooklyn appears in 2 cultures: English (Modern), English (M...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Bellagrace, I bet you could've been a Victorian-era romance novel heroine... if it was the 1800s.</div>
+                    <div class="related-joke-text">Brandi, just like Brandi Chastain! Though they're famous for...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-allen-youre-always-ballin-too-bad-its-just" class="related-joke-card">
-                    <div class="related-joke-text">Hey Allen, you're always ballin' - too bad it's just from fallin' and crawlin' across the floor.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">You're such an Austin-tatious name - trying way too hard to ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jocelyn, your name sounds like a mix between jelly and gelat...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "saint" with a U trying desperately to cut...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_annabelle_length_1757347882662_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

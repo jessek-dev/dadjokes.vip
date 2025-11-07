@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nova appears in 3 cultures: English, Swedish (Modern), Dutch (Modern). Making each culture wonder what went wrong.</div>
+                    <div class="related-joke-text">Levi, your name sounds like a pair of jeans - common and wor...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jesse, your name is about as exciting as a bowl of plain oatmeal - it's no wonder you have to work so hard to stand out.</div>
+                <a href="/jokes/name-jokes/your-names-so-basic-andre-its-just-and-with-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so basic, Andre - it's just "And" with a random ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jameson, I bet you get carded at the cradle, huh?</div>
+                <a href="/jokes/name-jokes/cesar-comes-from-french-meaning-free-spirit" class="related-joke-card">
+                    <div class="related-joke-text">Cesar comes from French meaning "free spirit." Somehow the m...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-so-many-vowels-that-alexander-is" class="related-joke-card">
+                    <div class="related-joke-text">Your name has so many vowels that "Alexander" is basically j...</div>
+                </a>
+                <a href="/jokes/name-jokes/youve-got-me-right-in-the-middle-of-your-name" class="related-joke-card">
+                    <div class="related-joke-text">You've got "me" right in the middle of your name, which is i...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_dalton_wordplay_1757269670129_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

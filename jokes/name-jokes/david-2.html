@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Ulysses S. Grant - known for winning the Civil War and being on the $50 bill." Also Wikipedia: "Grant - disambiguation: did you mean Ulysses S. Grant?"</div>
+                    <div class="related-joke-text">Paris Berelc is an actress and model. This Paris can barely ...</div>
                 </a>
-                <a href="/jokes/name-jokes/the-double-n-in-your-name-is-just-like-you-taking" class="related-joke-card">
-                    <div class="related-joke-text">The double N in your name is just like you - taking up twice as much space as necessary but adding nothing new.</div>
+                <a href="/jokes/name-jokes/becky-not-to-be-confused-with-becky-with-the-good" class="related-joke-card">
+                    <div class="related-joke-text">Becky: Not to be confused with Becky with the good hair, who...</div>
                 </a>
-                <a href="/jokes/name-jokes/adeline-your-parents-must-have-been-big-fans-of" class="related-joke-card">
-                    <div class="related-joke-text">Adeline, your parents must have been big fans of the 1920s if they named you after that famous flapper.</div>
+                <a href="/jokes/name-jokes/your-names-so-short-i-save-more-time-writing-anne" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so short, I save more time writing "Anne" than I...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-paying-for-each-letter-2" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been paying for each letter - they clea...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-august-you-must-be-exhausted-i-hear-youre" class="related-joke-card">
+                    <div class="related-joke-text">Hey August, you must be exhausted - I hear you're always try...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_david_famous_namesakes_v2_1757366540787_26',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

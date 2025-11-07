@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/your-parents-mustve-really-wanted-to-get-their" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've really wanted to get their money's wort...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Valerie, your name sounds like a failed attempt at being regal - "Valerie, the Queen of...never mind, it's just Valerie."</div>
+                    <div class="related-joke-text">Pamela comes from English meaning "bright fame." Clearly you...</div>
                 </a>
-                <a href="/jokes/name-jokes/andres-inspired-by-andrs-iniestas-legacy-of-being" class="related-joke-card">
-                    <div class="related-joke-text">Andres, inspired by Andrés Iniesta's legacy of being a Spanish soccer magician. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/they-say-andres-is-spanish-for-manly-but-the-only" class="related-joke-card">
+                    <div class="related-joke-text">They say Andres is Spanish for "manly," but the only thing m...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-lazy-naming-you-they-stopped" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so lazy naming you, they stopped typing halfway through "Abeline" and hit save.</div>
+                <a href="/jokes/name-jokes/alex-youre-the-only-person-i-know-whose-name-is" class="related-joke-card">
+                    <div class="related-joke-text">"Alex, you're the only person I know whose name is almost en...</div>
+                </a>
+                <a href="/jokes/name-jokes/adrian-appears-in-8-cultures-english-romanian" class="related-joke-card">
+                    <div class="related-joke-text">Adrian appears in 8 cultures: English, Romanian, Polish, Ger...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cindy_rhyme_1757354542230_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

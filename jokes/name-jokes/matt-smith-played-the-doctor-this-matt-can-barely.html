@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/when-filling-out-forms-you-get-that-awkward" class="related-joke-card">
-                    <div class="related-joke-text">When filling out forms, you get that awkward moment where "Adrian" is too long for the nickname box but too short to justify the satisfaction of filling up the whole name field.</div>
-                </a>
-                <a href="/jokes/name-jokes/katie-the-name-that-says-im-too-cool-for-a-full" class="related-joke-card">
-                    <div class="related-joke-text">Katie - the name that says "I'm too cool for a full name like Katherine or Catherine, but not cool enough for a one-syllable name like Kate."</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Scott? More like "Snott" - your parents clearly didn't have high expectations when they named you.</div>
+                    <div class="related-joke-text">Sandra comes from Italian meaning "beloved." Clearly your pa...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-stuck-in-name-purgatory-arthur-too-long-for" class="related-joke-card">
+                    <div class="related-joke-text">You're stuck in name purgatory, Arthur - too long for a quic...</div>
+                </a>
+                <a href="/jokes/name-jokes/caitlin-where-did-your-parents-find-that-spelling" class="related-joke-card">
+                    <div class="related-joke-text">Caitlin - where did your parents find that spelling?..</div>
+                </a>
+                <a href="/jokes/name-jokes/bryce-not-to-be-confused-with-bryce-dallas-howard" class="related-joke-card">
+                    <div class="related-joke-text">Bryce: Not to be confused with Bryce Dallas Howard, who's fa...</div>
+                </a>
+                <a href="/jokes/name-jokes/alison-appears-in-2-cultures-english-french" class="related-joke-card">
+                    <div class="related-joke-text">Alison appears in 2 cultures: English, French. Somehow you m...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_matt_1760907856390_8414',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

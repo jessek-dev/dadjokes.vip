@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/andres-has-estonian-origins-meaning-ancient" class="related-joke-card">
-                    <div class="related-joke-text">Andres has Estonian origins meaning "ancient meaning." Somehow the meaning got lost along the way.</div>
+                <a href="/jokes/name-jokes/jesse-your-name-is-so-dated-im-surprised-your" class="related-joke-card">
+                    <div class="related-joke-text">Jesse, your name is so dated, I'm surprised your parents did...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-tried-calling-you-tina-but-youre-more-of-a" class="related-joke-card">
-                    <div class="related-joke-text">They tried calling you Tina, but you're more of a hyena - all laugh, no bite, and desperately trying to seem meaner.</div>
+                <a href="/jokes/name-jokes/they-call-him-harold-no-wait-its-arnold-the-guy" class="related-joke-card">
+                    <div class="related-joke-text">They call him Harold, no wait - it's Arnold, the guy who's s...</div>
                 </a>
-                <a href="/jokes/name-jokes/anne-comes-from-french-meaning-free-spirit" class="related-joke-card">
-                    <div class="related-joke-text">Anne comes from French meaning "free spirit." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/your-name-starts-with-ash-like-youre-incomplete" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with "ASH" like you're incomplete trash - t...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-need-a-break-from-hearing-your-name-its-like" class="related-joke-card">
+                    <div class="related-joke-text">"I need a" break from hearing your name - it's like everyone...</div>
+                </a>
+                <a href="/jokes/name-jokes/ann-with-your-name-so-short-youve-got-less" class="related-joke-card">
+                    <div class="related-joke-text">Ann, with your name so short, you've got less letters than a...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jody_cultural_origin_1757364277422_720',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

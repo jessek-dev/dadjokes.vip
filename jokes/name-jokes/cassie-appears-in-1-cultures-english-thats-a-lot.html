@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/bruce-even-in-the-alphabet-b-is-never-without-c" class="related-joke-card">
-                    <div class="related-joke-text">Bruce, even in the alphabet, 'B' is never without 'C'. Your name's a constant reminder of the 'C' you probably got in spelling.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jade comes from English meaning "bright fame." Somehow the meaning got lost along the way.</div>
+                    <div class="related-joke-text">Fun fact: Jerry and Jerry Seinfeld share the same name! Jerr...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-has-so-many-vowels-it-looks-like-2" class="related-joke-card">
-                    <div class="related-joke-text">Your name has so many vowels, it looks like someone played Wheel of Fortune and just kept buying them until they ran out of money.</div>
+                <a href="/jokes/name-jokes/alejandra-with-your-names-initial-spelling-it" class="related-joke-card">
+                    <div class="related-joke-text">Alejandra, with your name's initial spelling, it sounds like...</div>
+                </a>
+                <a href="/jokes/name-jokes/adriana-with-a-name-that-rolls-off-the-tongue" class="related-joke-card">
+                    <div class="related-joke-text">Adriana, with a name that rolls off the tongue like a Shakes...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-2" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="/jokes/name-jokes/like-your-namesake-the-biblical-adam-youre" class="related-joke-card">
+                    <div class="related-joke-text">Like your namesake the biblical Adam, you're getting kicked ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cassie_cultural_origin_1757364190455_266',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

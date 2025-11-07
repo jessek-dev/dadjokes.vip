@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/introducing-janice-following-in-the-footsteps-of" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Janice! Following in the footsteps of Janice from Friends, who was renowned for having the most annoying laugh ever. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/gabriela-your-name-sounds-like-a-fancy-cocktail" class="related-joke-card">
+                    <div class="related-joke-text">Gabriela, your name sounds like a fancy cocktail order - a m...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-must-be-exhausted-from-all-those-years-of" class="related-joke-card">
-                    <div class="related-joke-text">You must be exhausted from all those years of people writing "Ashley" instead - six letters was apparently too much effort for society to handle.</div>
+                <a href="/jokes/name-jokes/you-must-have-a-lot-of-sass-andra-stored-up-with" class="related-joke-card">
+                    <div class="related-joke-text">You must have a lot of sass-andra stored up with a name that...</div>
                 </a>
-                <a href="/jokes/name-jokes/bobby" class="related-joke-card">
-                    <div class="related-joke-text">Bobby? More like Wobble-y, you sound like a toddler's first attempt at walking.</div>
+                <a href="/jokes/name-jokes/must-be-rough-having-a-name-thats-just-a-lier" class="related-joke-card">
+                    <div class="related-joke-text">Must be rough having a name that's just "A LIER" with the le...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-you-finish-writing-anthony-on-a-form" class="related-joke-card">
+                    <div class="related-joke-text">By the time you finish writing "Anthony" on a form, everyone...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-a-grocery-store-line-not-short" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a grocery store line - not short enough to ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_linda_1760908523759_5551',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

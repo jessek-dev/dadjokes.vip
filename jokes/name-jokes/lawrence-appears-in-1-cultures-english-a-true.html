@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-call-you-wrecky-becky-cause-youre-always" class="related-joke-card">
-                    <div class="related-joke-text">They call you Wrecky-Becky 'cause you're always getting into sticky situations, but at least you're never dull like your cousin Speckly.</div>
+                <a href="/jokes/name-jokes/everyone-calls-you-angel-but-youre-really-just" class="related-joke-card">
+                    <div class="related-joke-text">Everyone calls you Angel but you're really just acute angle ...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-a-name-like-cindy-im-surprised-you-dont-have" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Cindy, I'm surprised you don't have a side hustle selling cans of "Cind-Cola" on the weekends.</div>
+                <a href="/jokes/name-jokes/youve-got-au-as-your-initials-which-is-the" class="related-joke-card">
+                    <div class="related-joke-text">You've got AU as your initials which is the chemical symbol ...</div>
                 </a>
-                <a href="/jokes/name-jokes/those-double-consonants-br-make-your-name-sound" class="related-joke-card">
-                    <div class="related-joke-text">Those double consonants "Br" make your name sound like someone hit the brakes halfway through saying it - like they realized their mistake but it was too late to stop.</div>
+                <a href="/jokes/name-jokes/you-must-be-far-from-a-lean-bro-cause-that-names" class="related-joke-card">
+                    <div class="related-joke-text">You must be far from a lean bro, 'cause that name's a mouthf...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-got-jam-in-it-but-youre-more-like" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got "jam" in it but you're more like plain toast...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-was-typing-aaa-for" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone was typing "AAA" for help but s...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lawrence_cultural_origin_1757364306855_878',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

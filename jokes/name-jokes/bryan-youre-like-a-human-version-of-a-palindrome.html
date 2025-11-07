@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Katelyn appears in 1 cultures: English (Modern). A true ambassador of mediocrity across cultures.</div>
+                    <div class="related-joke-text">Caleb appears in 2 cultures: English, Biblical. Making each ...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-know-your-name-is-just-bar-with-a-bonus-ry" class="related-joke-card">
-                    <div class="related-joke-text">You know your name is just "Bar" with a bonus "ry" tacked on - like someone started writing "bartender" and gave up halfway.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Liliana?..</div>
                 </a>
-                <a href="/jokes/name-jokes/alexander-appears-in-12-cultures-english-german" class="related-joke-card">
-                    <div class="related-joke-text">Alexander appears in 12 cultures: English, German, Dutch, Swedish, Norwegian, Danish, Icelandic, etc.. Making each culture wonder what went wrong.</div>
+                <a href="/jokes/name-jokes/youve-got-and-right-in-your-name-but-the-re-and-a" class="related-joke-card">
+                    <div class="related-joke-text">You've got "and" right in your name but the RE and A are hav...</div>
+                </a>
+                <a href="/jokes/name-jokes/youve-got-just-enough-letters-to-look-fancy-on-a" class="related-joke-card">
+                    <div class="related-joke-text">You've got just enough letters to look fancy on a resume but...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-picked-a-name-thats-basically-just" class="related-joke-card">
+                    <div class="related-joke-text">Your parents picked a name that's basically just the alphabe...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bryan_spelling_1757116257766_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/when-lifes-got-you-tearin-just-keep-on-bearin" class="related-joke-card">
-                    <div class="related-joke-text">When life's got you tearin', just keep on bearin' - that's what happens when your parents went comparin' and thought "Aaron" was worth sharin'.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Traci appears in 1 cultures: English. That's a lot of cultur...</div>
                 </a>
-                <a href="/jokes/name-jokes/like-prince-charles-youre-a-charles-known-for" class="related-joke-card">
-                    <div class="related-joke-text">Like Prince Charles, you're a Charles known for waiting decades for a job promotion. Except you're known for disappointing people instead.</div>
+                <a href="/jokes/name-jokes/andres-sounds-like-the-name-of-a-suave" class="related-joke-card">
+                    <div class="related-joke-text">Andres sounds like the name of a suave international spy - w...</div>
                 </a>
-                <a href="/jokes/name-jokes/arnold-sounds-like-a-rejected-pokemon-thats-half" class="related-joke-card">
-                    <div class="related-joke-text">"Arnold" sounds like a rejected Pokemon that's half armadillo, half being ignored.</div>
+                <a href="/jokes/name-jokes/ashlee" class="related-joke-card">
+                    <div class="related-joke-text">Ashlee?..</div>
+                </a>
+                <a href="/jokes/name-jokes/the-letters-in-angie-are-like-a-half-hearted" class="related-joke-card">
+                    <div class="related-joke-text">The letters in "Angie" are like a half-hearted alphabet atte...</div>
+                </a>
+                <a href="/jokes/name-jokes/wikipedia-april-ludgate-known-for-being-deadpan" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "April Ludgate - known for being deadpan sarcasti...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kaylee_name_meaning_1757364292417_799',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

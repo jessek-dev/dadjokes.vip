@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-must-have-been-stuck-on-the-first" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been stuck on the first letter of the alphabet when naming you, because "Ariana" is just "aria" with "na" tacked on like a lazy afterthought.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
-                <a href="/jokes/name-jokes/adeline-adeline-matches-with-medicine-said-with-a" class="related-joke-card">
-                    <div class="related-joke-text">"Adeline, Adeline, matches with medicine," said with a grin, "Are you the cure or the reason for my next of kin?"</div>
+                <a href="/jokes/name-jokes/breaking-cole-claims-to-be-related-to-cole" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Cole claims to be related to Cole Sprouse. Cole Sp...</div>
                 </a>
-                <a href="/jokes/name-jokes/aubrey-aubrey-quite-contrary-your-parents-mustve" class="related-joke-card">
-                    <div class="related-joke-text">"Aubrey, Aubrey, quite contrary - your parents must've been shopping at a floral dictionary, mixing 'audrey' with 'aubretia' until they got this botanical hysteria!"</div>
+                <a href="/jokes/name-jokes/chloe-looks-like-someone-tried-to-spell-chlorine" class="related-joke-card">
+                    <div class="related-joke-text">"Chloe" looks like someone tried to spell "chlorine" but gav...</div>
+                </a>
+                <a href="/jokes/name-jokes/aurora-appears-in-9-cultures-italian-spanish" class="related-joke-card">
+                    <div class="related-joke-text">Aurora appears in 9 cultures: Italian, Spanish, Portuguese, ...</div>
+                </a>
+                <a href="/jokes/name-jokes/anne-like-anne-hathaway-you-bring-hollywood" class="related-joke-card">
+                    <div class="related-joke-text">Anne, like Anne Hathaway, you bring Hollywood glamour to eve...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_dalton_famous_namesakes_v3_second_1757369666422_376',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

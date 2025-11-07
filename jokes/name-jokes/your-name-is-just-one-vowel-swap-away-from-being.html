@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Joshua, did your parents name you after the biblical figure because they hoped you'd part some seas of awkwardness wherever you go?</div>
+                    <div class="related-joke-text">Mercedes, your name sounds more like a luxury car than a per...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Tammy, your name sounds like it was picked by a parent who was halfway through shouting "Timothy" when they got distracted by a squirrel.</div>
+                    <div class="related-joke-text">With a name like Christie, I'm surprised your parents didn't...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kathy appears in 1 cultures: English. Making each culture wonder what went wrong.</div>
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents went for the Goldilocks of names - not short en...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Arthur, inspired by King Arthur's legacy of pulling swords f...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_abel_spelling_1757424077094_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

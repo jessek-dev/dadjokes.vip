@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Roy comes from Scottish meaning "strong." Your ancestors would be so disappointed.</div>
+                    <div class="related-joke-text">Meet Michael! Named after Michael Jackson, who was legendary...</div>
                 </a>
-                <a href="/jokes/name-jokes/google-autocomplete-erica-suggests-erica-kane" class="related-joke-card">
-                    <div class="related-joke-text">Google autocomplete: "Erica" suggests "Erica Kane", who's known for being the queen of soap opera drama. For you, it suggests "who?"</div>
+                <a href="/jokes/name-jokes/beth-any-chance-you-could-pick-a-name-that-doesnt" class="related-joke-card">
+                    <div class="related-joke-text">Beth-any chance you could pick a name that doesn't sound lik...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-a-name-like-jermaine-you-must-be-used-to" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jermaine, you must be used to people trying to spell it as "Germaine" - it's like they're one letter away from getting it right, but still so far off.</div>
+                <a href="/jokes/name-jokes/plot-twist-charlotte-isnt-charlotte-york-one-is" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Charlotte isn't Charlotte York. One is famous fo...</div>
+                </a>
+                <a href="/jokes/name-jokes/avery-your-name-is-like-a-vowel-sandwich" class="related-joke-card">
+                    <div class="related-joke-text">Avery, your name is like a vowel sandwich, smothered in A's ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-named-you-august-but-clearly-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents named you August but clearly they couldn't fore...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jerry_name_meaning_1757364273403_699',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

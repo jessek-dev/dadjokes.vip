@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Mother Nature jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Weather jokes, plant humor, and outdoor adventure jokes. Everything about nature, gardening, and the great outdoors!</p>
             <div class="related-jokes">
-                <a href="/jokes/mother-nature/did-you-hear-about-the-campsite-that-got-visited" class="related-joke-card">
-                    <div class="related-joke-text">Did you hear about the campsite that got visited by Bigfoot? It got in tents.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why was the sand wet?</div>
                 </a>
-                <a href="/jokes/mother-nature/rip-boiled-water-you-will-be-mist" class="related-joke-card">
-                    <div class="related-joke-text">R.I.P. boiled water. You will be mist.</div>
+                <a href="/jokes/mother-nature/i-won-an-argument-with-a-weather-forecaster-once" class="related-joke-card">
+                    <div class="related-joke-text">I won an argument with a weather forecaster once. His logic ...</div>
                 </a>
-                <a href="/jokes/mother-nature/the-rotation-of-earth-really-makes-my-day" class="related-joke-card">
-                    <div class="related-joke-text">The rotation of earth really makes my day.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Mountains aren't just funny, they are hi...</div>
+                </a>
+                <a href="/jokes/mother-nature/why-do-trees-seem-suspicious-on-sunny-days" class="related-joke-card">
+                    <div class="related-joke-text">Why do trees seem suspicious on sunny days?..</div>
+                </a>
+                <a href="/jokes/mother-nature/which-flower-is-most-fierce" class="related-joke-card">
+                    <div class="related-joke-text">which flower is most fierce?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002332',
             'category': 'Mother Nature'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

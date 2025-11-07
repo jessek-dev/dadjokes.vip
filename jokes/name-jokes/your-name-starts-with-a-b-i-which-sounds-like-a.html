@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Tracie, I bet you were the substitute teacher's worst nightmare on the first day of school.</div>
+                    <div class="related-joke-text">Anna, your name's so short, even your initials are wondering...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Brady, your name is like a bad scrabble draw: too many consonants, not enough vowels, and still somehow not worth many points.</div>
+                    <div class="related-joke-text">Your name starts with A but you're living proof that having ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-was-typing-allah-but" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone was typing "Allah" but their ha...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">They say Ava is a diva who'll leave ya, but really she's just a believer in taking fever breaks between achieva-ments!</div>
+                    <div class="related-joke-text">Adrienne's so hard to spell, even her name can't decide if i...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Dillon, I imagine your parents were going f...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_abigail_spelling_1757424075011_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

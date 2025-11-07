@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have really loved redundant N's - they gave you two of them just to spell one sound.</div>
+                    <div class="related-joke-text">By the time I finish writing "Annabelle" on forms, shorter-n...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Leah, your name sounds like a polite cough in a fancy restaurant - "Leah, are you okay, or just trying to get attention?"</div>
+                    <div class="related-joke-text">Kelsey appears in 1 cultures: English. Multiple cultures, ze...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Must be rough having a name that's just "A LIER" with the letters rearranged - at least you can't spell "RELIABLE" with those same letters.</div>
+                    <div class="related-joke-text">Six letters in Bonnie means you're stuck in nickname limbo -...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Clara appears in 11 cultures: German, Spanish, Portuguese, I...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Briana is the name equivalent of a half-marathon - not quite...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ann_famous_namesakes_v3_1757369129776_45',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

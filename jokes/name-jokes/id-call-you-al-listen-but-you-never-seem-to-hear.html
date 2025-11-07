@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-alishas-so-eager-to-pleasa-but-she-cant" class="related-joke-card">
-                    <div class="related-joke-text">They say Alisha's so eager to pleasa, but she can't make up her mind between pizza and visa!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like a frustrated game of alphabet Tetris - who...</div>
                 </a>
-                <a href="/jokes/name-jokes/abigail-when-you-were-named-did-your-parents-have" class="related-joke-card">
-                    <div class="related-joke-text">Abigail, when you were named, did your parents have a "Gail" of a time deciding, or did they just say, "A-bi will do?"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Shelley appears in 1 cultures: English. That's a lot of cult...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-abel" class="related-joke-card">
-                    <div class="related-joke-text">Your name's Abel? It's ironic because every time you say it, it sounds like a cry for help!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Blake?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Cesar, your name seems like it's always struggling to decide...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need more letters - what do people call you for short, "Ab"?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_allison_wordplay_1757379176291_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

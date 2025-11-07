@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Quinn appears in 1 cultures: English. Somehow you managed to disappoint all of them.</div>
+                    <div class="related-joke-text">Jon, your name is so short and simple, it's like your parent...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Clifford comes from English meaning "defender." Your ancestors would be so disappointed.</div>
+                    <div class="related-joke-text">Introducing Cathy! Following in the footsteps of Cathy from ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Caroline, you share a name with Caroline Kennedy, who's known for being JFK's daughter and American royalty. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/hey-alexandria-you-share-a-name-with-alexandria" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexandria, you share a name with Alexandria Ocasio-Cort...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-short-people-trying-to-make-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so short, people trying to make a nickname for y...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-takes-so-long-to-write-i-got-carpal" class="related-joke-card">
+                    <div class="related-joke-text">Your name takes so long to write, I got carpal tunnel fillin...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_arnold_famous_namesakes_v3_second_1757369629306_114',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

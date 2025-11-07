@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Rick - your parents clearly put as much thought into your name as you do into your life choices.</div>
+                    <div class="related-joke-text">Oprah Bates is a respected civil rights leader. This Oprah c...</div>
                 </a>
-                <a href="/jokes/name-jokes/ashley-not-to-be-confused-with-ashley-tisdale" class="related-joke-card">
-                    <div class="related-joke-text">Ashley: Not to be confused with Ashley Tisdale, who's famous for being blonde and fabulous in High School Musical. This one's famous for being confused with them.</div>
+                <a href="/jokes/name-jokes/antonio-oh-antonio-with-a-name-as-long-as-a-rodeo" class="related-joke-card">
+                    <div class="related-joke-text">Antonio, oh Antonio, with a name as long as a rodeo, you bet...</div>
                 </a>
-                <a href="/jokes/name-jokes/cathy-comes-from-english-meaning-defender-the" class="related-joke-card">
-                    <div class="related-joke-text">Cathy comes from English meaning "defender." The name's promise wasn't quite delivered.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jonah, your name has about as much personality as a piece of...</div>
+                </a>
+                <a href="/jokes/name-jokes/emma-rose-is-that-a-name-or-a-secret-code" class="related-joke-card">
+                    <div class="related-joke-text">Emma-rose, is that a name or a secret code?..</div>
+                </a>
+                <a href="/jokes/name-jokes/alans-so-plain-his-favorite-song-is-just-wailin" class="related-joke-card">
+                    <div class="related-joke-text">Alan's so plain, his favorite song is just wailin' and baili...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_erin_famous_namesakes_v3_second_1757369684836_511',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

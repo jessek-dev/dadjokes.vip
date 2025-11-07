@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Terry, your name sounds like a typo for "tired." I bet even your name is exhausted from trying to sound interesting.</div>
+                    <div class="related-joke-text">Kerry, the name that sounds like you couldn't decide between...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrian-appears-in-8-cultures-english-romanian" class="related-joke-card">
-                    <div class="related-joke-text">Adrian appears in 8 cultures: English, Romanian, Polish, German, Swedish, Norwegian, Danish, Russian. That's a lot of cultures to let down simultaneously.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Wilbur - six letters, just like the number of toes you were ...</div>
                 </a>
-                <a href="/jokes/name-jokes/every-time-avery-speaks-i-feel-like-im-getting" class="related-joke-card">
-                    <div class="related-joke-text">Every time Avery speaks, I feel like I'm getting charged A-ver-y expensive phone bill.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Kelsey, I bet you spent your entire childho...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-59" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Krystal, with a name like that, I bet your parents were hopi...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jenny_wordplay_1757274281800_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

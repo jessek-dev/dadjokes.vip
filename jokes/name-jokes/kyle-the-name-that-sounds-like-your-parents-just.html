@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Samantha, just like Samantha Jones! Though they're famous for being sex-positive and fabulous on Sex and the City, and you're famous for... having the same first name.</div>
+                <a href="/jokes/name-jokes/kennedy-your-name-sounds-like-a-failed-attempt-at" class="related-joke-card">
+                    <div class="related-joke-text">Kennedy, your name sounds like a failed attempt at being reg...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-really-wanted-a-girl-named" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have really wanted a girl named Madley, but couldn't figure out how to turn that M upside down into a B.</div>
+                <a href="/jokes/name-jokes/hey-arnold-you-share-a-name-with-arnold" class="related-joke-card">
+                    <div class="related-joke-text">Hey Arnold, you share a name with Arnold Schwarzenegger, who...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-a-name-thats-the-toyota-camry-of-names" class="related-joke-card">
-                    <div class="related-joke-text">You've got a name that's the Toyota Camry of names - reliable enough to get the job done, but nobody's ever gotten excited writing it on a coffee cup.</div>
+                <a href="/jokes/name-jokes/your-parents-really-said-lets-pick-a-name-that" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really said "Let's pick a name that starts with...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-like-a-road-trip-alejandrotwo-as-an" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like a road trip, Alejandro...two A's, an E bre...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aaron-you-share-a-name-with-aaron-burr-whos" class="related-joke-card">
+                    <div class="related-joke-text">Hey Aaron, you share a name with Aaron Burr, who's known for...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kyle_wordplay_1757277397998_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

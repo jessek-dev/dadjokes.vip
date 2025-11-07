@@ -617,6 +617,44 @@ Now you can talk about Botox and nobody raises an eyebrow."
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -716,16 +754,20 @@ Now you can talk about Botox and nobody raises an eyebrow.</div>
             <h2>Here are some more Medical jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!</p>
             <div class="related-jokes">
-                <a href="/jokes/medical/conjunctivitiscom-now-thats-a-site-for-sore-eyes" class="related-joke-card">
-                    <div class="related-joke-text">Conjunctivitis.com – now that’s a site for sore eyes.</div>
+                <a href="/jokes/medical/dermatologists-are-always-in-a-hurry-they-spend" class="related-joke-card">
+                    <div class="related-joke-text">Dermatologists are always in a hurry. They spend all day mak...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Doctor: "I have some news about your baby."
-Parents: "Don't tell us the gender, we want to keep it a surprise."
-Doctor: "Oh I get it, you're those type of people. Okay, well IT is not breathing."</div>
+                    <div class="related-joke-text">Why did the cookie go to the doctor?</div>
                 </a>
-                <a href="/jokes/medical/what-did-the-doctor-say-to-the-gingerbread-man" class="related-joke-card">
-                    <div class="related-joke-text">What did the doctor say to the gingerbread man who broke his leg? Try icing it.</div>
+                <a href="/jokes/medical/i-asked-the-surgeon-if-i-could-administer-my-own" class="related-joke-card">
+                    <div class="related-joke-text">I asked the surgeon if I could administer my own anesthetic,...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I told my doctor I heard buzzing, but he said it's just a bu...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Next week we start diarrhea awareness month. Runs until Frid...</div>
                 </a>
             </div>
         </section>
@@ -1107,6 +1149,34 @@ Now you can talk about Botox and nobody raises an eyebrow.';
             'joke_id': 'MJ000634',
             'category': 'Medical'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

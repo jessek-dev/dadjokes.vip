@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/meet-alejandra-named-after-alejandra-guzmn-who" class="related-joke-card">
-                    <div class="related-joke-text">Meet Alejandra! Named after Alejandra Guzmán, who was legendary for being the Queen of Mexican Rock. This Alejandra is legendary for... showing up.</div>
+                <a href="/jokes/name-jokes/colin-inspired-by-colin-firths-legacy-of-being-mr" class="related-joke-card">
+                    <div class="related-joke-text">Colin, inspired by Colin Firth's legacy of being Mr. Darcy a...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-couldnt-commit-to-a-short-name-like-14" class="related-joke-card">
-                    <div class="related-joke-text">Your parents couldn't commit to a short name like "Bo" or a fancy long one like "Bradford" - they just settled for "Brody" like picking the medium fries at McDonald's.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Jack, I bet you've been the butt of countle...</div>
                 </a>
-                <a href="/jokes/name-jokes/youre-just-anal-with-the-letters-rearranged-which" class="related-joke-card">
-                    <div class="related-joke-text">You're just "anal" with the letters rearranged, which explains why you're such a stickler for order.</div>
+                <a href="/jokes/name-jokes/by-the-time-you-finish-writing-anthony-on-a-form" class="related-joke-card">
+                    <div class="related-joke-text">By the time you finish writing "Anthony" on a form, everyone...</div>
+                </a>
+                <a href="/jokes/name-jokes/austin-even-your-name-is-in-alphabetical" class="related-joke-card">
+                    <div class="related-joke-text">Austin, even your name is in alphabetical confusion. It star...</div>
+                </a>
+                <a href="/jokes/name-jokes/id-make-a-better-joke-about-your-name-but-all-the" class="related-joke-card">
+                    <div class="related-joke-text">I'd make a better joke about your name, but all the good one...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_crystal_wordplay_1757269571563_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

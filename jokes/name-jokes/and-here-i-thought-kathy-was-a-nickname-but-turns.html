@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-tried-calling-you-tina-but-youre-more-of-a" class="related-joke-card">
-                    <div class="related-joke-text">They tried calling you Tina, but you're more of a hyena - all laugh, no bite, and desperately trying to seem meaner.</div>
+                <a href="/jokes/name-jokes/hey-asher-youre-quite-the-dasher-running-away" class="related-joke-card">
+                    <div class="related-joke-text">Hey Asher, you're quite the dasher - running away every time...</div>
                 </a>
-                <a href="/jokes/name-jokes/being-called-iftah-is-like-having-a-personal" class="related-joke-card">
-                    <div class="related-joke-text">Being called Iftah is like having a personal brand that's just "meh" in lowercase.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Larry, your name sounds like a lazy combination of "Lame" an...</div>
                 </a>
-                <a href="/jokes/name-jokes/people-hear-eran-and-think-wow-what-a-unique-and-2" class="related-joke-card">
-                    <div class="related-joke-text">People hear Eran and think "Wow, what a unique and distinctive name!" You, on the other hand, are anything but.</div>
+                <a href="/jokes/name-jokes/ashlee-2" class="related-joke-card">
+                    <div class="related-joke-text">Ashlee?..</div>
+                </a>
+                <a href="/jokes/name-jokes/annabelle-your-names-so-long-when-you-introduce" class="related-joke-card">
+                    <div class="related-joke-text">Annabelle, your name's so long, when you introduce yourself,...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alexandra-did-ya-wander-to-pandora" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexandra, did ya wander to Pandora?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kathy_wordplay_1757276300913_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

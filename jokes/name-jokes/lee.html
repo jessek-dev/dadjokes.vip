@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/meet-isaac-named-after-isaac-newton-who-was" class="related-joke-card">
-                    <div class="related-joke-text">Meet Isaac! Named after Isaac Newton, who was legendary for discovering gravity when an apple hit his head. This Isaac is legendary for... showing up.</div>
+                <a href="/jokes/name-jokes/gianna-comes-from-italian-meaning-passionate-soul" class="related-joke-card">
+                    <div class="related-joke-text">Gianna comes from Italian meaning "passionate soul." Somehow...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-like-a-grocery-store-line-not-short" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like a grocery store line - not short enough to zip through but not long enough to complain about.</div>
+                <a href="/jokes/name-jokes/youve-got-the-honda-civic-of-names-not-too-short-2" class="related-joke-card">
+                    <div class="related-joke-text">You've got the Honda Civic of names - not too short, not too...</div>
                 </a>
-                <a href="/jokes/name-jokes/charlie-sheen-was-a-notorious-hollywood-bad-boy" class="related-joke-card">
-                    <div class="related-joke-text">Charlie Sheen was a notorious Hollywood bad boy. This Charlie is more like a Charlie Sheen-nanigan.</div>
+                <a href="/jokes/name-jokes/your-names-like-a-goldilocks-story-not-short-2" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a Goldilocks story - not short enough to sa...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-so-many-as-even-your-vowels-are" class="related-joke-card">
+                    <div class="related-joke-text">Your name has so many A's, even your vowels are social dista...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-brief-people-spend-longer-saying-3" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so brief, people spend longer saying "nice to m...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lee_wordplay_1757277301654_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

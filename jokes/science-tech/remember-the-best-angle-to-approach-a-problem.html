@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why did the computer catch cold? It left a window open.</div>
-                </a>
-                <a href="/jokes/science-tech/it-was-so-cold-yesterday-my-computer-froze-my-own" class="related-joke-card">
-                    <div class="related-joke-text">It was so cold yesterday my computer froze. My own fault though, I left too many windows open.</div>
+                    <div class="related-joke-text">Did you hear about the mathematician who's afraid of negative numbers?</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">How do robots eat guacamole? With computer chips.</div>
+                    <div class="related-joke-text">Elon Musk bought Twitter for 44 billion dollars…</div>
+                </a>
+                <a href="/jokes/science-tech/new-atoms-frequently-lose-electrons-when-they" class="related-joke-card">
+                    <div class="related-joke-text">New atoms frequently lose electrons when they fail to keep a...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why did the computer cross the road?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How do you tell a scientist that they have bad breath?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000288',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

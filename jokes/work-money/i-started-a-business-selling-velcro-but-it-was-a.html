@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Work & Money jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to.</p>
             <div class="related-jokes">
-                <a href="/jokes/work-money/its-been-months-since-i-bought-the-book-how-to" class="related-joke-card">
-                    <div class="related-joke-text">It's been months since I bought the book "how to scam people online". It still hasn't turned up.</div>
+                <a href="/jokes/work-money/thank-you-student-loans-for-getting-me-through" class="related-joke-card">
+                    <div class="related-joke-text">Thank you student loans for getting me through college.… I d...</div>
                 </a>
-                <a href="/jokes/work-money/i-just-applied-for-a-job-at-the-diner" class="related-joke-card">
-                    <div class="related-joke-text">I just applied for a job at the diner... I said I'd bring a lot to the table.</div>
+                <a href="/jokes/work-money/i-hired-a-handyman-and-gave-him-a-to-do-list-when" class="related-joke-card">
+                    <div class="related-joke-text">I hired a handyman and gave him a to-do list. When I got home, only items 1, 3, and 5 got done.</div>
                 </a>
-                <a href="/jokes/work-money/remember-when-i-got-fired-from-the-keyboard" class="related-joke-card">
-                    <div class="related-joke-text">Remember when I got fired from the keyboard factory for not putting in enough shifts? ... They wouldn't even let me return or enter. They even changed the Caps Lock on me!</div>
+                <a href="/jokes/work-money/why-did-the-employee-bring-string-to-work" class="related-joke-card">
+                    <div class="related-joke-text">Why did the employee bring string to work?</div>
+                </a>
+                <a href="/jokes/work-money/i-went-to-a-book-store-and-asked-the-saleswoman" class="related-joke-card">
+                    <div class="related-joke-text">I went to a book store and asked the saleswoman where the Se...</div>
+                </a>
+                <a href="/jokes/work-money/i-wanted-to-be-a-tailor-but-i-didnt-suit-the-job" class="related-joke-card">
+                    <div class="related-joke-text">I wanted to be a tailor but I didn't sui...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ003140',
             'category': 'Work & Money'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -329,6 +329,44 @@
                 gap: 10px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -393,25 +431,25 @@
         <div class="related-categories">
             <h2>A few other categories to check out</h2>
             <div class="category-links">
-                                <a href="/jokes/clothing" class="category-link">
-                    <span class="category-emoji">👞</span>
-                    <span>Clothing</span>
+                                <a href="/jokes/movies" class="category-link">
+                    <span class="category-emoji">🎬</span>
+                    <span>Movies</span>
                 </a>
-                <a href="/jokes/transportation" class="category-link">
-                    <span class="category-emoji">🚲</span>
-                    <span>Transportation</span>
-                </a>
-                <a href="/jokes/medical" class="category-link">
-                    <span class="category-emoji">🩺</span>
-                    <span>Medical</span>
+                <a href="/jokes/family" class="category-link">
+                    <span class="category-emoji">⚔️</span>
+                    <span>Family</span>
                 </a>
                 <a href="/jokes/mother-nature" class="category-link">
                     <span class="category-emoji">🌪️</span>
                     <span>Mother Nature</span>
                 </a>
-                <a href="/jokes/work-money" class="category-link">
-                    <span class="category-emoji">💼</span>
-                    <span>Work & Money</span>
+                <a href="/jokes/clothing" class="category-link">
+                    <span class="category-emoji">👞</span>
+                    <span>Clothing</span>
+                </a>
+                <a href="/jokes/nsfw" class="category-link">
+                    <span class="category-emoji">🥷</span>
+                    <span>NSFW</span>
                 </a>
             </div>
         </div>
@@ -529,6 +567,34 @@
             'category': 'People',
             'joke_count': 5
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

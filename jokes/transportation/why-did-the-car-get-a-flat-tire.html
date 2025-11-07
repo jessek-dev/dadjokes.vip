@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Transportation jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny jokes about cars, planes, trains, bicycles, and all forms of travel. Great for road trips and family vacations!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why was the librarian kicked off the plane? Because it was overbooked.</div>
-                </a>
-                <a href="/jokes/transportation/have-you-heard-the-story-about-the-magic-tractor" class="related-joke-card">
-                    <div class="related-joke-text">Have you heard the story about the magic tractor? It drove down the road and turned into a field.</div>
+                <a href="/jokes/transportation/i-saw-a-documentary-on-tv-last-night-about-how" class="related-joke-card">
+                    <div class="related-joke-text">I saw a documentary on TV last night about how they put ship...</div>
                 </a>
                 <a href="/jokes/transportation/i-had-a-dream-that-i-was-a-muffler-last-night-i" class="related-joke-card">
-                    <div class="related-joke-text">I had a dream that I was a muffler last night. I woke up exhausted!</div>
+                    <div class="related-joke-text">I had a dream that I was a muffler last night. I woke up exh...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What happened when the blue ship and the red ship collided at sea?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How does a wiener go camping?..</div>
+                </a>
+                <a href="/jokes/transportation/i-have-a-fear-of-speed-bumps-but-im-slowly" class="related-joke-card">
+                    <div class="related-joke-text">I have a fear of speed bumps. But I'm slowly getting over it...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002392',
             'category': 'Transportation'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

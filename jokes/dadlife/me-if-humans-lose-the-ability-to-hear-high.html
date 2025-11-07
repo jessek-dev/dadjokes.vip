@@ -616,6 +616,44 @@ Me: Trick question... dogs can't whistle.",
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -716,13 +754,19 @@ Me: Trick question... dogs can't whistle.</div>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What's the difference between a man's wallet before and after kids? There are pictures where the money used to be.</div>
+                    <div class="related-joke-text">I didn't think I'd like this reality show about fishing accidents.</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why don't dads tell secrets on the lawn? Because the grass has ears.</div>
+                    <div class="related-joke-text">Why was the dad sitting on a pack of playing cards?</div>
+                </a>
+                <a href="/jokes/dadlife/not-to-brag-but-i-just-got-hired-as-a-fitness" class="related-joke-card">
+                    <div class="related-joke-text">Not to brag, but I just got hired as a fitness model... They...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why do some couples go to the gym? Because they want their relationship to work out.</div>
+                    <div class="related-joke-text">Child: Dad, make me a sandwich. Dad: Poof! You're a sandwich...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I used to be addicted to soap, but I'm c...</div>
                 </a>
             </div>
         </section>
@@ -1105,6 +1149,34 @@ Me: Trick question... dogs can't whistle.';
             'joke_id': 'MJ000116',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

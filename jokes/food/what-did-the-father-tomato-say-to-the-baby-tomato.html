@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/how-do-you-make-a-rabbit-stew" class="related-joke-card">
-                    <div class="related-joke-text">How do you make a rabbit stew? Keep it waiting.</div>
+                <a href="/jokes/food/should-you-have-your-whole-family-for" class="related-joke-card">
+                    <div class="related-joke-text">Should you have your whole family for Thanksgiving dinner?..</div>
                 </a>
-                <a href="/jokes/food/i-cut-my-finger-cutting-cheese-i-know-it-may-be-a" class="related-joke-card">
-                    <div class="related-joke-text">I cut my finger cutting cheese. I know it may be a cheesy story but I feel grate now.</div>
+                <a href="/jokes/food/what-kind-of-drink-can-be-bitter-and-sweet" class="related-joke-card">
+                    <div class="related-joke-text">What kind of drink can be bitter and sweet?</div>
                 </a>
-                <a href="/jokes/food/what-do-you-call-an-average-potato" class="related-joke-card">
-                    <div class="related-joke-text">What do you call an average potato? A commentater.</div>
+                <a href="/jokes/food/what-do-you-get-when-you-cross-a-hamburger-with-a" class="related-joke-card">
+                    <div class="related-joke-text">What do you get when you cross a hamburger with a computer?..</div>
+                </a>
+                <a href="/jokes/food/what-do-you-call-a-hot-dog-on-wheels" class="related-joke-card">
+                    <div class="related-joke-text">What do you call a hot dog on wheels?</div>
+                </a>
+                <a href="/jokes/food/why-do-mms-go-to-school" class="related-joke-card">
+                    <div class="related-joke-text">Why do M&Ms go to school?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000029',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

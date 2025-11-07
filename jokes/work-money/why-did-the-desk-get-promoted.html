@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Work & Money jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to.</p>
             <div class="related-jokes">
-                <a href="/jokes/work-money/what-do-you-call-it-when-a-group-of-apes-starts-a" class="related-joke-card">
-                    <div class="related-joke-text">What do you call it when a group of apes starts a company? Monkey business.</div>
+                <a href="/jokes/work-money/i-used-to-work-at-a-pepsi-cola-plant-but-i-left" class="related-joke-card">
+                    <div class="related-joke-text">I used to work at a Pepsi Cola plant but I left because it w...</div>
                 </a>
-                <a href="/jokes/work-money/i-wanted-to-be-a-tailor-but-i-didnt-suit-the-job" class="related-joke-card">
-                    <div class="related-joke-text">I wanted to be a tailor but I didn't suit the job</div>
+                <a href="/jokes/work-money/a-bartender-broke-up-with-her-boyfriend-but-he" class="related-joke-card">
+                    <div class="related-joke-text">A bartender broke up with her boyfriend, but he kept asking ...</div>
                 </a>
-                <a href="/jokes/work-money/what-do-you-call-a-fat-psychic" class="related-joke-card">
-                    <div class="related-joke-text">What do you call a fat psychic? A four-chin teller.</div>
+                <a href="/jokes/work-money/if-bill-gates-had-a-dime-for-every-time-windows" class="related-joke-card">
+                    <div class="related-joke-text">If Bill Gates had a dime for every time Windows crashed ... ...</div>
+                </a>
+                <a href="/jokes/work-money/what-kind-of-bird-works-on-a-construction-site" class="related-joke-card">
+                    <div class="related-joke-text">What kind of bird works on a construction site?</div>
+                </a>
+                <a href="/jokes/work-money/want-to-hear-a-joke-about-construction" class="related-joke-card">
+                    <div class="related-joke-text">Want to hear a joke about construction?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002766',
             'category': 'Work & Money'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

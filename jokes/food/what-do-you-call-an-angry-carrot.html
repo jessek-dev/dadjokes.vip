@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/what-happens-when-a-strawberry-gets-run-over" class="related-joke-card">
-                    <div class="related-joke-text">What happens when a strawberry gets run over crossing the street? It creates a traffic jam.</div>
+                <a href="/jokes/food/what-did-one-nut-say-as-he-chased-another-nut" class="related-joke-card">
+                    <div class="related-joke-text">What did one nut say as he chased another nut?..</div>
                 </a>
-                <a href="/jokes/food/ive-started-telling-everyone-about-the-benefits" class="related-joke-card">
-                    <div class="related-joke-text">I've started telling everyone about the benefits of eating dried grapes. It's all about raisin awareness.</div>
+                <a href="/jokes/food/whats-the-best-day-to-eat-bacon" class="related-joke-card">
+                    <div class="related-joke-text">What's the best day to eat bacon?</div>
                 </a>
-                <a href="/jokes/food/does-every-sentence-need-to-include-a-vegetable" class="related-joke-card">
-                    <div class="related-joke-text">Does every sentence need to include a vegetable? Not neces-celery!</div>
+                <a href="/jokes/food/this-morning-i-accidentally-made-my-coffee-with" class="related-joke-card">
+                    <div class="related-joke-text">This morning I accidentally made my coffee with Red Bull ins...</div>
+                </a>
+                <a href="/jokes/food/did-you-hear-about-the-new-restaurant-on-the-moon" class="related-joke-card">
+                    <div class="related-joke-text">Did you hear about the new restaurant on the moon?..</div>
+                </a>
+                <a href="/jokes/food/why-did-the-ranch-blush-" class="related-joke-card">
+                    <div class="related-joke-text">Why did the ranch blush? …</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002944',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

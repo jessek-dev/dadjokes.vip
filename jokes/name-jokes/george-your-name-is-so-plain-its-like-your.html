@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Oh, Kimberly, were your parents playing Scrabble when they named you? It's like they tried to use all their tiles at once and just settled for "Kimberly"!</div>
+                    <div class="related-joke-text">Woody Guthrie was a legendary folk singer. This Woody can ba...</div>
                 </a>
-                <a href="/jokes/name-jokes/claires-so-basic-she-makes-plain-air-look-rare-air" class="related-joke-card">
-                    <div class="related-joke-text">Claire's so basic, she makes plain air look rare-air.</div>
+                <a href="/jokes/name-jokes/andres-sounds-like-the-name-of-a-suave" class="related-joke-card">
+                    <div class="related-joke-text">Andres sounds like the name of a suave international spy - w...</div>
                 </a>
-                <a href="/jokes/name-jokes/barbaras-so-extra-extra-she-makes-sahara-look" class="related-joke-card">
-                    <div class="related-joke-text">Barbara's so extra-extra, she makes Sahara look like a moisture barrier-a.</div>
+                <a href="/jokes/name-jokes/arianna-a-name-so-long-even-autocorrect-suggested" class="related-joke-card">
+                    <div class="related-joke-text">Arianna - a name so long, even autocorrect suggested an abbr...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-basic-its-like-banana-without-the" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so basic, it's like "banana" without the fun par...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-a-prescription-drug-side-effect" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a prescription drug side effect - "Ask your...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_george_wordplay_1757272811290_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

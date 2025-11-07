@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/alisha-alisha-living-in-amnesia-cant-remember" class="related-joke-card">
-                    <div class="related-joke-text">"Alisha, Alisha, living in amnesia - can't remember where she parked her VISA!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Mia appears in 9 cultures: Swedish, Norwegian, Danish, Dutch...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-albert-and-albert-einstein-share-the" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Albert and Albert Einstein share the same name! Albert Einstein is remembered for having crazy hair and making E=mc². Albert will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/hey-axel-make-my-day-wont-you-play" class="related-joke-card">
+                    <div class="related-joke-text">Hey Axel, make my day, won't you play?..</div>
                 </a>
-                <a href="/jokes/name-jokes/heard-abigail-failed-to-get-her-mail-cause-she" class="related-joke-card">
-                    <div class="related-joke-text">Heard Abigail failed to get her mail 'cause she was chasing her own tail - now she's living life derailed!</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-quite-thirsty-when" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been quite thirsty when naming you - th...</div>
+                </a>
+                <a href="/jokes/name-jokes/bella-comes-from-english-meaning-defender-somehow" class="related-joke-card">
+                    <div class="related-joke-text">Bella comes from English meaning "defender." Somehow the mea...</div>
+                </a>
+                <a href="/jokes/name-jokes/cristina-your-name-sounds-like-its-trying-to-be" class="related-joke-card">
+                    <div class="related-joke-text">Cristina, your name sounds like it's trying to be "Christina...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_leonardo_1760908125158_3478',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

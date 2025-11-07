@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/introducing-austin-following-in-the-footsteps-of" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Austin! Following in the footsteps of Austin Powers, who was renowned for being shagadelic and fighting Dr. Evil. These are some big footsteps to trip over.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Chelsey! Following in the footsteps of Chelsey C...</div>
                 </a>
-                <a href="/jokes/name-jokes/annabelle-sounds-like-someone-rang-a-dinner-bell" class="related-joke-card">
-                    <div class="related-joke-text">Annabelle, sounds like someone rang a dinner bell in the middle of your name. Time to serve up some humor!</div>
+                <a href="/jokes/name-jokes/abigail-when-you-were-named-did-your-parents-have" class="related-joke-card">
+                    <div class="related-joke-text">Abigail, when you were named, did your parents have a "Gail"...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Mercedes, your name sounds more like a luxury car than a person - I bet you spend a lot of time in the fast lane.</div>
+                    <div class="related-joke-text">Bella's the Honda Civic of names - not too short, not too lo...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Bianca, your name is so long, it's a wonder you don't have y...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_axel_name_meaning_1757364166110_141',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

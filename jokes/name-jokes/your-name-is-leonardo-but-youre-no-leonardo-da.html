@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Shane Filan was in Westlife. This Shane can't even get a date, let alone be in a successful boy band.</div>
+                <a href="/jokes/name-jokes/latoya-your-name-sounds-like-a-mix-between-latte" class="related-joke-card">
+                    <div class="related-joke-text">Latoya, your name sounds like a mix between "latte" and "toy...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-mustve-been-paid-by-the-letter-they-10" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must've been paid by the letter - they could've saved time with "Brad" but decided to invest in those bonus syllables.</div>
+                <a href="/jokes/name-jokes/adrian-has-so-many-vowels-its-like-youre" class="related-joke-card">
+                    <div class="related-joke-text">Adrian has so many vowels, it's like you're auditioning for ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-mustve-paid-for-your-name-by-the-5" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must've paid for your name by the letter - they could've saved enough for your college fund if they'd gone with "Chy."</div>
+                <a href="/jokes/name-jokes/not-short-enough-to-be-quick-not-long-enough-to" class="related-joke-card">
+                    <div class="related-joke-text">Not short enough to be quick, not long enough to be impressi...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-just-one-vowel-swap-away-from-being" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just one vowel swap away from being "able" - to...</div>
+                </a>
+                <a href="/jokes/name-jokes/austin-because-lifes-too-short-for-a-full-length" class="related-joke-card">
+                    <div class="related-joke-text">Austin, because life's too short for a full-length name, but...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_leonardo_1760908453399_6393',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/julia-comes-from-english-meaning-noble-warrior" class="related-joke-card">
-                    <div class="related-joke-text">Julia comes from English meaning "noble warrior." That meaning must have gotten lost in translation.</div>
+                <a href="/jokes/name-jokes/they-say-abracadabra-but-when-you-walk-in-its" class="related-joke-card">
+                    <div class="related-joke-text">They say "abracadabra," but when you walk in it's more like ...</div>
                 </a>
-                <a href="/jokes/name-jokes/youre-less-angel-more-tangled-like-a-harp-player" class="related-joke-card">
-                    <div class="related-joke-text">You're less angel, more tangled - like a harp player who just mangled their last triangle.</div>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-fell-asleep-typing" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone fell asleep typing "alias" but ...</div>
                 </a>
-                <a href="/jokes/name-jokes/amanda-appears-in-12-cultures-english-spanish" class="related-joke-card">
-                    <div class="related-joke-text">Amanda appears in 12 cultures: English, Spanish, Portuguese, Italian, Dutch, Swedish, Norwegian, etc.. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/by-the-time-someone-finishes-saying-alexander" class="related-joke-card">
+                    <div class="related-joke-text">By the time someone finishes saying "Alexander," three Bobs ...</div>
+                </a>
+                <a href="/jokes/name-jokes/francisco" class="related-joke-card">
+                    <div class="related-joke-text">Francisco?..</div>
+                </a>
+                <a href="/jokes/name-jokes/ben-is-like-a-spelling-test-that-gave-up-halfway" class="related-joke-card">
+                    <div class="related-joke-text">"Ben" is like a spelling test that gave up halfway - starts ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_linda_1760908523758_6588',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

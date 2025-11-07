@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,21 @@
             <h2>Here are some more Science & Tech jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/science-tech/whoever-invented-the-knock-knock-joke-should-get" class="related-joke-card">
-                    <div class="related-joke-text">Whoever invented the knock-knock joke should get a no bell prize.</div>
+                <a href="/jokes/science-tech/why-did-the-computer-go-to-bed" class="related-joke-card">
+                    <div class="related-joke-text">Why did the computer go to bed?</div>
                 </a>
-                <a href="/jokes/science-tech/two-satellites-decided-to-get-married-the-wedding" class="related-joke-card">
-                    <div class="related-joke-text">Two satellites decided to get married. The wedding wasn't much, but the reception was incredible.</div>
+                <a href="/jokes/science-tech/i-just-wrote-a-book-on-reverse-psychology-do-not" class="related-joke-card">
+                    <div class="related-joke-text">I just wrote a book on reverse psycholog...</div>
                 </a>
-                <a href="/jokes/science-tech/what-do-you-call-a-group-of-8-hobbits" class="related-joke-card">
-                    <div class="related-joke-text">What do you call a group of 8 Hobbits?… A Hobbyte.</div>
+                <a href="/jokes/science-tech/how-do-astronomers-find-asteroids-headed-toward" class="related-joke-card">
+                    <div class="related-joke-text">How do astronomers find asteroids headed toward earth?</div>
+                </a>
+                <a href="/jokes/science-tech/the-gas-argon-walks-into-a-bar-the-barkeeper-says" class="related-joke-card">
+                    <div class="related-joke-text">The gas Argon walks into a bar.
+The barkeeper says "What wou...</div>
+                </a>
+                <a href="/jokes/science-tech/how-many-programmers-does-it-take-to-screw-in-a" class="related-joke-card">
+                    <div class="related-joke-text">How many programmers does it take to screw in a light bulb?…...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1138,34 @@
             'joke_id': 'MJ002737',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

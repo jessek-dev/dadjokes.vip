@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Gabriela, you share a name with Gabriela Sabatini, who's known for being an Argentine tennis legend. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Harry appears in 5 cultures: English, English, Dutch, Swedis...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-austin-youre-always-flossin-and-tossin-your" class="related-joke-card">
-                    <div class="related-joke-text">Hey Austin, you're always flossin' and tossin' your hair - too bad your dance moves look like you're lost in despair.</div>
+                <a href="/jokes/name-jokes/adrian-appears-in-8-cultures-english-romanian" class="related-joke-card">
+                    <div class="related-joke-text">Adrian appears in 8 cultures: English, Romanian, Polish, Ger...</div>
                 </a>
-                <a href="/jokes/name-jokes/alice-in-wonderland" class="related-joke-card">
-                    <div class="related-joke-text">"Alice in Wonderland?" More like Alice-can't-understand why every cat she meets has to make that same Cheshire grin and "what's the malice?" pun.</div>
+                <a href="/jokes/name-jokes/i-bet-brenda-gets-real-tired-of-people-asking-if" class="related-joke-card">
+                    <div class="related-joke-text">I bet Brenda gets real tired of people asking if she can ble...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-ariana-they-say-youre-high-drama-but-id-say" class="related-joke-card">
+                    <div class="related-joke-text">Hey Ariana, they say you're high-drama, but I'd say you're m...</div>
+                </a>
+                <a href="/jokes/name-jokes/living-with-a-medium-length-name-must-be-rough" class="related-joke-card">
+                    <div class="related-joke-text">Living with a medium-length name must be rough - too long to...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_edgar_name_meaning_1757364226308_451',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

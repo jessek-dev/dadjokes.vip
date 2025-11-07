@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-went-for-the-goldilocks-of-names-not-3" class="related-joke-card">
-                    <div class="related-joke-text">Your parents went for the Goldilocks of names - not short enough to save time writing it, not long enough to sound impressive on a business card.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I hear Brenda's been trending - just kidding, that would require something more bending than Brenda.</div>
+                    <div class="related-joke-text">Preston, your name sounds like it belongs to a butler who's ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">By the time I finish writing "Cheyenne" on forms, everyone else named Amy is already through security and boarding their flight.</div>
+                <a href="/jokes/name-jokes/hey-audrey-youre-so-laundry-always-going-through" class="related-joke-card">
+                    <div class="related-joke-text">Hey Audrey, you're so laundry - always going through the sam...</div>
+                </a>
+                <a href="/jokes/name-jokes/with-all-those-vowels-stuck-together-abigails" class="related-joke-card">
+                    <div class="related-joke-text">With all those vowels stuck together, Abigail's name looks l...</div>
+                </a>
+                <a href="/jokes/name-jokes/addison-means-son-of-adam-so-does-that-mean-youre" class="related-joke-card">
+                    <div class="related-joke-text">Addison means "son of Adam" - so does that mean you're the O...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bobby_spelling_1757424239759_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

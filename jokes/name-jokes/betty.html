@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jeff, I bet your parents couldn't even agree on how to spell it, let alone what to name you.</div>
+                <a href="/jokes/name-jokes/arianna-not-to-be-confused-with-ariana-grande" class="related-joke-card">
+                    <div class="related-joke-text">Arianna: Not to be confused with Ariana Grande, who's famous...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Curtis comes from English meaning "defender." Somehow the meaning got lost along the way.</div>
+                    <div class="related-joke-text">Peyton appears in 1 cultures: English. A true ambassador of ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With three "a's" in your name, Cassandra, you're like a walking, talking Sesame Street episode. Today's show is brought to you by the letter "A"...and again...and again.</div>
+                <a href="/jokes/name-jokes/avas-so-basic-even-her-name-is-just-half-of" class="related-joke-card">
+                    <div class="related-joke-text">Ava's so basic, even her name is just ha...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-annette-on-forms" class="related-joke-card">
+                    <div class="related-joke-text">By the time I finish writing "Annette" on forms, people with...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-addison-you-share-a-name-with-addison" class="related-joke-card">
+                    <div class="related-joke-text">Hey Addison, you share a name with Addison Montgomery, who's...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_betty_famous_namesakes_v3_second_1757369637200_167',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

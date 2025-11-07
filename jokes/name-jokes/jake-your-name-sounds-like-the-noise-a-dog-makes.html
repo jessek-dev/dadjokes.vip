@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/eran-moshe-is-a-renowned-composer-this-erans" class="related-joke-card">
-                    <div class="related-joke-text">Eran Moshe is a renowned composer. This Eran's musical skills are as flat as a single-note piano.</div>
+                <a href="/jokes/name-jokes/youre-stuck-in-name-purgatory-billy-too-long-to" class="related-joke-card">
+                    <div class="related-joke-text">You're stuck in name purgatory, Billy - too long to be a cut...</div>
                 </a>
-                <a href="/jokes/name-jokes/emma-rose-the-name-that-says-im-a-hopeless" class="related-joke-card">
-                    <div class="related-joke-text">Emma-rose, the name that says "I'm a hopeless romantic who listens to way too much indie folk music."</div>
+                <a href="/jokes/name-jokes/becky-not-to-be-confused-with-becky-with-the-good" class="related-joke-card">
+                    <div class="related-joke-text">Becky: Not to be confused with Becky with the good hair, who...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-hunter-you-share-a-name-with-hunter-s" class="related-joke-card">
-                    <div class="related-joke-text">Hey Hunter, you share a name with Hunter S. Thompson, who's known for doing gonzo journalism while heavily medicated. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/bellagrace-sounds-like-your-parents-were-trying" class="related-joke-card">
+                    <div class="related-joke-text">Bellagrace - sounds like your parents were trying to create ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-bella-between-umbrella-and-nutella-youre" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bella, between umbrella and Nutella, you're about as uni...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-barry-youre-so-contrary-when-people-ask-whats" class="related-joke-card">
+                    <div class="related-joke-text">Hey Barry, you're so contrary - when people ask what's up, y...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jake_wordplay_1757273901934_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

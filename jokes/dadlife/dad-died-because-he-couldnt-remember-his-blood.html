@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What's the difference between a bad joke and a dad joke? The first letter!</div>
+                    <div class="related-joke-text">My wife thinks it's weird that I stare at the window during a heavy down pour.</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Keep the dream alive, and hit the snooze button.</div>
+                    <div class="related-joke-text">Man, I really love my furniture... me and my recliner go way...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why don't dads tell secrets on the lawn? Because the grass has ears.</div>
+                    <div class="related-joke-text">What do you call the sexuality where you're attracted to men and women, but they're not attracted to you?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I always wanted to look into why I procrastinate, but I keep...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I didn't think I'd like this reality show about fishing accidents.</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000668',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

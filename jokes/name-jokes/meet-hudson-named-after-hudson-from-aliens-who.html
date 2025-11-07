@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/geoffrey-comes-from-english-meaning-strength-the" class="related-joke-card">
-                    <div class="related-joke-text">Geoffrey comes from English meaning "strength." The name's promise wasn't quite delivered.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Leonardo - a name that's as long as your resume, but not as ...</div>
                 </a>
-                <a href="/jokes/name-jokes/alexandrias-so-extra-i-hear-ya-any-more-drama-and" class="related-joke-card">
-                    <div class="related-joke-text">Alexandria's so extra, I hear ya - any more drama and we'd need a hysteria.</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-really-loved-alcoholic" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have really loved alcoholic drinks - they ...</div>
                 </a>
-                <a href="/jokes/name-jokes/chelsey-has-english-modern-origins-meaning" class="related-joke-card">
-                    <div class="related-joke-text">Chelsey has English (Modern) origins meaning "ancient meaning." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/your-names-like-store-brand-cereal-not-short-2" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like store-brand cereal - not short enough to be...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-a-goldilocks-compromise-too-long" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a goldilocks compromise - too long for a qu...</div>
+                </a>
+                <a href="/jokes/name-jokes/writing-your-full-name-on-forms-is-like-a" class="related-joke-card">
+                    <div class="related-joke-text">Writing your full name on forms is like a marathon while eve...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_hudson_famous_namesakes_v3_1757369169605_314',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

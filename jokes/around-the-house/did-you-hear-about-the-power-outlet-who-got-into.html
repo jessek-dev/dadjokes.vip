@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Around the House jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious jokes about home life, furniture, household chores, and all the funny situations that happen under your own roof.</p>
             <div class="related-jokes">
-                <a href="/jokes/around-the-house/a-boy-dug-three-holes-in-the-yard-when-his-mother" class="related-joke-card">
-                    <div class="related-joke-text">A boy dug three holes in the yard. When his mother saw, she exclaimed: "well, well, well"</div>
+                <a href="/jokes/around-the-house/is-the-pool-safe-for-diving" class="related-joke-card">
+                    <div class="related-joke-text">Is the pool safe for diving?..</div>
                 </a>
-                <a href="/jokes/around-the-house/i-dreamt-last-night-that-my-spirit-rose-from-a" class="related-joke-card">
-                    <div class="related-joke-text">I dreamt last night that my spirit rose from a toilet bowl... It was an out-of-potty experience!</div>
+                <a href="/jokes/around-the-house/you-cant-trust-a-ladder-it-will-always-let-you" class="related-joke-card">
+                    <div class="related-joke-text">You can't trust a ladder. It will always...</div>
                 </a>
-                <a href="/jokes/around-the-house/yesterday-i-called-my-landlord-and-said-ive-got-a" class="related-joke-card">
-                    <div class="related-joke-text">Yesterday I called my landlord and said "I've got a leak in my sink." ... He said "Go ahead, I'm not judging!"</div>
+                <a href="/jokes/around-the-house/this-is-my-step-ladder-i-never-knew-my-real-ladder" class="related-joke-card">
+                    <div class="related-joke-text">This is my step ladder. I never knew my ...</div>
+                </a>
+                <a href="/jokes/around-the-house/i-decided-to-sell-my-hoover-well-it-was-just" class="related-joke-card">
+                    <div class="related-joke-text">I decided to sell my Hoover… well it was just collecting dus...</div>
+                </a>
+                <a href="/jokes/around-the-house/how-many-south-americans-does-it-take-to-change-a" class="related-joke-card">
+                    <div class="related-joke-text">How many South Americans does it take to change a lightbulb?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002486',
             'category': 'Around the House'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

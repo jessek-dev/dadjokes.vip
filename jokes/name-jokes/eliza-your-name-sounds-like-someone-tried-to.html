@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Madonna - your name sounds like a superhero's secret identity, but your actual identity is more like a sidekick who gets captured a lot.</div>
+                    <div class="related-joke-text">With a name like Julie, I bet you get mistaken for a Julia m...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-like-lukewarm-coffee-ashley-not-short" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like lukewarm coffee, Ashley - not short enough to be quick and snappy, not long enough to be fancy and sophisticated.</div>
+                <a href="/jokes/name-jokes/your-double-ls-and-double-ss-make-your-name-look" class="related-joke-card">
+                    <div class="related-joke-text">Your double L's and double S's make your name look like a sp...</div>
                 </a>
-                <a href="/jokes/name-jokes/youd-think-with-such-a-short-name-youd-be-quick" class="related-joke-card">
-                    <div class="related-joke-text">You'd think with such a short name you'd be quick at everything, but it still takes you three tries to write your signature because you keep running out of letters halfway.</div>
+                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-colleen-on-forms" class="related-joke-card">
+                    <div class="related-joke-text">By the time I finish writing "Colleen" on forms, everyone na...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-a-short-name-21" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Cole...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-charged-you-by-the-letter" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've charged you by the letter - with seven ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eliza_wordplay_1757270542926_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/google-autocomplete-antonio-suggests-antonio" class="related-joke-card">
-                    <div class="related-joke-text">Google autocomplete: "Antonio" suggests "Antonio Banderas", who's known for being the sexy voice of Puss in Boots. For you, it suggests "who?"</div>
+                <a href="/jokes/name-jokes/hey-bianca-you-drink-so-much-fanta-they-should" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bianca, you drink so much Fanta, they should call you "S...</div>
+                </a>
+                <a href="/jokes/name-jokes/abigail-youve-got-a-big-ail-in-your-name-maybe" class="related-joke-card">
+                    <div class="related-joke-text">Abigail, you've got 'a big ail' in your name - maybe it's a ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Lawrence comes from English meaning "bright fame." Clearly your parents had high expectations that weren't met.</div>
+                    <div class="related-joke-text">Tommy, your name sounds like a mix between "tomfoolery" and ...</div>
                 </a>
-                <a href="/jokes/name-jokes/sure-asher-is-a-nice-name-if-you-want-people-to" class="related-joke-card">
-                    <div class="related-joke-text">Sure, Asher is a nice name... if you want people to think you're constantly asking permission. "Can I – Asher?"</div>
+                <a href="/jokes/name-jokes/introducing-angela-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Angela! Following in the footsteps of Angela Mer...</div>
+                </a>
+                <a href="/jokes/name-jokes/abigail-4" class="related-joke-card">
+                    <div class="related-joke-text">Abigail?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_josiah_name_meaning_1757364282936_749',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

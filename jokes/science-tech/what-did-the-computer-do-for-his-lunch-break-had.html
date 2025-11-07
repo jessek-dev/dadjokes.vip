@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,20 +743,21 @@
             <h2>Here are some more Science & Tech jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/science-tech/hey-girl-roses-are-ff0000-violets-are-0000ff-i" class="related-joke-card">
-                    <div class="related-joke-text">Hey Girl,
-Roses are #ff0000,
-Violets are #0000ff,
-I use hex codes,
-But I'd use RGB for you.</div>
+                <a href="/jokes/science-tech/why-was-the-robot-angry" class="related-joke-card">
+                    <div class="related-joke-text">Why was the robot angry?..</div>
                 </a>
-                <a href="/jokes/science-tech/what-are-bits" class="related-joke-card">
-                    <div class="related-joke-text">What are bits?… Tiny things left when you drop your computer down the stairs.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What happens when a microscope crashes into a telescope?</div>
                 </a>
-                <a href="/jokes/science-tech/never-trust-someone-with-graph-paper-theyre" class="related-joke-card">
-                    <div class="related-joke-text">Never Trust Someone With Graph Paper...
-
-They're always plotting something.</div>
+                <a href="/jokes/science-tech/i-wouldnt-worry-about-your-smartphone-or-your-tv" class="related-joke-card">
+                    <div class="related-joke-text">I wouldn't worry about your smartphone or your TV spying on you.</div>
+                </a>
+                <a href="/jokes/science-tech/a-neutron-walks-into-a-bar-and-asks-for-a-price" class="related-joke-card">
+                    <div class="related-joke-text">A neutron walks into a bar and asks for a price on a drink.
+...</div>
+                </a>
+                <a href="/jokes/science-tech/how-do-robots-eat-guacamole" class="related-joke-card">
+                    <div class="related-joke-text">How do robots eat guacamole?..</div>
                 </a>
             </div>
         </section>
@@ -1099,6 +1138,34 @@ They're always plotting something.</div>
             'joke_id': 'MJ002569',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

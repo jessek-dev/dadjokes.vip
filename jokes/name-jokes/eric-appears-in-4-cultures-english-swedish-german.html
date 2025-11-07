@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/adrian-has-so-many-vowels-its-like-youre" class="related-joke-card">
-                    <div class="related-joke-text">Adrian has so many vowels, it's like you're auditioning for a Scrabble tournament every time you introduce yourself!</div>
+                <a href="/jokes/name-jokes/angela-i-bet-you-get-envious-of-people-with-short" class="related-joke-card">
+                    <div class="related-joke-text">Angela, I bet you get envious of people with short names. Th...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-christina-claims-to-be-related-to" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Christina claims to be related to Christina Aguilera. Christina Aguilera was known for being a genie in a bottle with killer vocals. Christina is known for making things up.</div>
+                <a href="/jokes/name-jokes/i-hear-brendas-been-trending-just-kidding-that" class="related-joke-card">
+                    <div class="related-joke-text">I hear Brenda's been trending - just kidding, that would req...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-abigail-cause-when-you-try-to-dance" class="related-joke-card">
-                    <div class="related-joke-text">They call you Abigail 'cause when you try to dance, you move like a snail with a broken tail!</div>
+                <a href="/jokes/name-jokes/a-man-duh" class="related-joke-card">
+                    <div class="related-joke-text">A man, duh?..</div>
+                </a>
+                <a href="/jokes/name-jokes/alex-you-must-be-so-vexed-because-every-time-i" class="related-joke-card">
+                    <div class="related-joke-text">Alex, you must be so vexed, because every time I text, your ...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-amelias-always-late-because-shes-too-busy" class="related-joke-card">
+                    <div class="related-joke-text">I heard Amelia's always late because she's too busy getting ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eric_cultural_origin_1757364233684_490',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Rowan, inspired by Rowan Atkinson's legacy of being Mr. Bean and rarely speaking. The inspiration is there, the execution is... still loading.</div>
+                    <div class="related-joke-text">Sebastian appears in 9 cultures: German, English, Swedish, N...</div>
                 </a>
-                <a href="/jokes/name-jokes/avery-your-name-is-like-a-vowel-sandwich" class="related-joke-card">
-                    <div class="related-joke-text">Avery, your name is like a vowel sandwich, smothered in A's and E's but still missing the meaty substance of a U or an I.</div>
+                <a href="/jokes/name-jokes/your-parents-picked-andrea-too-long-for-a-quick" class="related-joke-card">
+                    <div class="related-joke-text">Your parents picked "Andrea" - too long for a quick hello bu...</div>
                 </a>
-                <a href="/jokes/name-jokes/ashley-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Ashley appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/they-say-youre-wise-like-the-goddess-athena-but" class="related-joke-card">
+                    <div class="related-joke-text">They say you're wise like the goddess Athena, but the only t...</div>
+                </a>
+                <a href="/jokes/name-jokes/breaking-ashlee-claims-to-be-related-to-ashlee" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Ashlee claims to be related to Ashlee Simpson. Ash...</div>
+                </a>
+                <a href="/jokes/name-jokes/brit-ney-sounds-like-a-dating-app-for-people-who" class="related-joke-card">
+                    <div class="related-joke-text">"Brit-ney" sounds like a dating app for people who really lo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_erin_name_meaning_1757364235135_497',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been big fans of Linda Lovelace, because this Linda is certainly no pornstar.</div>
+                <a href="/jokes/name-jokes/youve-got-gel-in-the-middle-of-your-name-probably" class="related-joke-card">
+                    <div class="related-joke-text">You've got "gel" in the middle of your name - probably becau...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-double-ls-in-your-name-but-clearly" class="related-joke-card">
-                    <div class="related-joke-text">You've got double L's in your name but clearly didn't get the memo that they're supposed to spell something cooLLer.</div>
+                <a href="/jokes/name-jokes/guess-being-named-aria-means-you-always-get" class="related-joke-card">
+                    <div class="related-joke-text">Guess being named Aria means you always get carried away wit...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-efficient-with-letters-they" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so efficient with letters, they probably wanted to name you "A" but felt generous enough to splurge on two extra consonants.</div>
+                <a href="/jokes/name-jokes/meet-andre-named-after-andre-the-giant-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Andre! Named after Andre the Giant, who was legendary f...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-arthur-i-hear-youre-quite-the-author-too-bad" class="related-joke-card">
+                    <div class="related-joke-text">Hey Arthur, I hear you're quite the author - too bad your li...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-starts-with-a-but-youre-a-d-list" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with A but you're a D-list version of Andre...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_douglas_wordplay_1757270253322_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

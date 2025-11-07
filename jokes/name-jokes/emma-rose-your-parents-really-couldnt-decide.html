@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Mercedes, I'm surprised your parents didn't just call you "Benz" and get it over with.</div>
+                    <div class="related-joke-text">George comes from English meaning "strength." Too bad that m...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-abigail-you-must-love-the-postal-service" class="related-joke-card">
-                    <div class="related-joke-text">Hey Abigail, you must love the postal service - you're always looking a bit mail-frail!</div>
+                <a href="/jokes/name-jokes/youre-so-caitlin-even-your-name-cant-make-up-its" class="related-joke-card">
+                    <div class="related-joke-text">You're so Caitlin, even your name can't make up its mind how...</div>
                 </a>
-                <a href="/jokes/name-jokes/so-aaron-did-your-parents-hit-the-a-key-twice-by" class="related-joke-card">
-                    <div class="related-joke-text">So, Aaron, did your parents hit the 'A' key twice by mistake, or were they just trying to get you at the top of every alphabetical list?</div>
+                <a href="/jokes/name-jokes/your-name-starts-with-a-but-youre-no-a-lister" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with A but you're no A-lister - just a bunc...</div>
+                </a>
+                <a href="/jokes/name-jokes/ashton" class="related-joke-card">
+                    <div class="related-joke-text">Ashton?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-starts-with-a-but-youre-clearly-a-z" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with A but you're clearly a Z-lister - even...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_emma-rose_1760907269130_4131',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

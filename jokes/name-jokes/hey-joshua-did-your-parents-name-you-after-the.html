@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/jose-appears-in-2-cultures-spanish-americanized" class="related-joke-card">
-                    <div class="related-joke-text">Jose appears in 2 cultures: Spanish (Americanized), Spanish (Filipinized). Somehow you managed to disappoint all of them.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Marilyn Monroe was a Hollywood icon. This Marilyn is just an iconic hot mess.</div>
+                    <div class="related-joke-text">Paula comes from German meaning "protector." Clearly your pa...</div>
                 </a>
-                <a href="/jokes/name-jokes/emma-rose-your-name-sounds-like-a-fancy-cocktail" class="related-joke-card">
-                    <div class="related-joke-text">Emma-rose, your name sounds like a fancy cocktail, but you're more like a lukewarm glass of tap water.</div>
+                <a href="/jokes/name-jokes/aria-has-english-modern-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Aria has English (Modern) origins meaning "ancient meaning."...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-hes-got-atom-sized-dreams-and-a-had-em" class="related-joke-card">
+                    <div class="related-joke-text">They say he's got atom-sized dreams and a had-'em-before sch...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-such-an-alison-that-even-your-name-cant" class="related-joke-card">
+                    <div class="related-joke-text">You're such an Alison that even your name can't decide if it...</div>
+                </a>
+                <a href="/jokes/name-jokes/if-i-had-a-penny-every-time-i-had-to-spell-out" class="related-joke-card">
+                    <div class="related-joke-text">If I had a penny every time I had to spell out "Alejandra", ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_joshua_wordplay_1757275884220_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

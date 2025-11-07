@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Sophia appears in 4 cultures: English, Greek, German, Ancient Greek. Somehow you managed to disappoint all of them.</div>
+                    <div class="related-joke-text">Roberto, the name that says "I want to be Italian, but can't...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jesse, I bet you've been mistaken for a country singer more times than you can count.</div>
+                    <div class="related-joke-text">Your name's got two L's because one wasn't enough to spell o...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Hailey and Hailey Bieber share the same name! Hailey Bieber is remembered for being married to Justin and being a model. Hailey will be remembered for this joke.</div>
+                    <div class="related-joke-text">Hey Audrey, more like "Laundry" - always hanging out to dry ...</div>
+                </a>
+                <a href="/jokes/name-jokes/albert-shares-a-name-with-albert-einstein-famous" class="related-joke-card">
+                    <div class="related-joke-text">Albert shares a name with Albert Einstein, famous for having crazy hair and making E=mc². What are the odds?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Ashlee - it's like Ashley, but it sounds like y...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alejandro_wordplay_1757338214853_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

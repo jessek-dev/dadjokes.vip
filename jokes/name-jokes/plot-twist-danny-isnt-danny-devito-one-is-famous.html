@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/aimee-shares-a-name-with-aimee-mann-famous-for" class="related-joke-card">
-                    <div class="related-joke-text">Aimee shares a name with Aimee Mann, famous for singing melancholy songs that make you feel feelings. What are the odds? About as good as Aimee becoming equally famous.</div>
+                <a href="/jokes/name-jokes/angel-plus-ica-means-youre-basically-a-heavenly" class="related-joke-card">
+                    <div class="related-joke-text">"Angel" plus "ica" means you're basically a heavenly Ikea pr...</div>
                 </a>
-                <a href="/jokes/name-jokes/the-b-in-benjamin-must-stand-for-backup-plan" class="related-joke-card">
-                    <div class="related-joke-text">The B in Benjamin must stand for "backup plan" since it's just jammin' some random letters between B and N.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Gloria appears in 4 cultures: English, Spanish, Italian, Ger...</div>
                 </a>
-                <a href="/jokes/name-jokes/dalton-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Dalton appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/a-l-i-c-i-a-is-just-alice-with-an-identity-crisis" class="related-joke-card">
+                    <div class="related-joke-text">"A-L-I-C-I-A" is just "ALICE" with an identity crisis trying...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-paid-by-the-letter-they-2" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've paid by the letter - they really got th...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-alexander-tries-to-meander-or-pander-he-ends" class="related-joke-card">
+                    <div class="related-joke-text">When Alexander tries to meander or pander, he ends up making...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_danny_famous_namesakes_v3_second_1757369668010_388',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Ann comes from English meaning "noble warrior." Too bad that meaning doesn't show in your personality.</div>
+                <a href="/jokes/name-jokes/when-life-gives-you-adeline-you-get-something" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Adeline, you get something that's halfwa...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Theodore and Theodore Roosevelt share the same name! Theodore Roosevelt is remembered for speaking softly but carrying a big stick. Theodore will be remembered for this joke.</div>
+                    <div class="related-joke-text">Iftah Gump - you may not be as smart as Forrest, but you def...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have really loved the letter "A" - they put one at the start, middle AND end, like linguistic guardrails keeping all those other letters from escaping.</div>
+                    <div class="related-joke-text">Your parents must have really wanted your initials "A.L." to...</div>
+                </a>
+                <a href="/jokes/name-jokes/wikipedia-aaliyah-known-for-being-rb-royalty-who" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "Aaliyah - known for being R&B royalty who was "O...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aaron-youre-carin-and-sharin-but-mostly-just" class="related-joke-card">
+                    <div class="related-joke-text">Hey Aaron, you're carin' and sharin' - but mostly just stari...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_aimee_wordplay_1757338192266_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

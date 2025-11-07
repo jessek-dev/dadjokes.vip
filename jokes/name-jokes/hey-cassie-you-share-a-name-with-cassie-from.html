@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/ready-or-not-bettys-not-shes-more-like-a-bowl-of" class="related-joke-card">
-                    <div class="related-joke-text">"Ready or not" Betty's not, she's more like a bowl of cold spaghetti that forgot to be hot.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Hector, I bet you've been the butt of many ...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-alicia-and-alicia-keys-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Alicia and Alicia Keys share the same name! Alicia Keys is remembered for being a girl on fire with killer piano skills. Alicia will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/brandon-brandon-quite-random-how-does-your-garden" class="related-joke-card">
+                    <div class="related-joke-text">Brandon, Brandon, quite random, how does your garden grow?..</div>
                 </a>
-                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-3" class="related-joke-card">
-                    <div class="related-joke-text">Parents really thought they were doing something naming you Adrienne after Adrienne Barbeau. They're famous for starring in horror movies and rocking the 70s, you're famous for disappointing expectations.</div>
+                <a href="/jokes/name-jokes/when-filling-out-forms-you-get-that-awkward" class="related-joke-card">
+                    <div class="related-joke-text">When filling out forms, you get that awkward moment where "A...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-someone-finishes-saying-your-name" class="related-joke-card">
+                    <div class="related-joke-text">By the time someone finishes saying your name, their coffee'...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexandra-comes-from-english-meaning-noble" class="related-joke-card">
+                    <div class="related-joke-text">Alexandra comes from English meaning "noble warrior." The na...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cassie_famous_namesakes_v3_1757369144093_138',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

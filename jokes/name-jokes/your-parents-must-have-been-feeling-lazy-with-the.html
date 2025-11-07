@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Ann" or a long name like "Alexandria," so they settled for Ashley - the lukewarm porridge of name lengths.</div>
+                    <div class="related-joke-text">Cassie, are you named after the sea?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Ruben? Like Ruben Studdard, famous for being the Velvet Teddy Bear on American Idol. You two have so much in common - you both have names.</div>
+                    <div class="related-joke-text">Woody Allen made classic films, but you're more like Woody H...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Ariel, when life gets surreal, do you make a deal with an eel for your next meal?</div>
+                    <div class="related-joke-text">Hey Bonnie, you think you're a honey?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">You must be exhausted from having a name that's too long to ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Billy! Following in the footsteps of Billy Joel,...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ana_spelling_1757424121302_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

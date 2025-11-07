@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-really-went-for-that-goldilocks-2" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really went for that Goldilocks approach with "Amber" - too lazy to write "Alexandria" but too proud to just put down "Ann."</div>
+                <a href="/jokes/name-jokes/claire-your-name-sounds-like-a-polite-request-to" class="related-joke-card">
+                    <div class="related-joke-text">Claire, your name sounds like a polite request to clear out ...</div>
                 </a>
-                <a href="/jokes/name-jokes/google-autocomplete-anthony-suggests-anthony" class="related-joke-card">
-                    <div class="related-joke-text">Google autocomplete: "Anthony" suggests "Anthony Hopkins", who's known for eating people's livers with fava beans and a nice Chianti. For you, it suggests "who?"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Kristopher?..</div>
                 </a>
-                <a href="/jokes/name-jokes/are-you-a-fan-of-romeo-antonio" class="related-joke-card">
-                    <div class="related-joke-text">Are you a fan of Romeo, Antonio? Or are you just the bologna in this Shakespearean sandwich scenario?</div>
+                <a href="/jokes/name-jokes/they-named-you-after-the-goddess-of-wisdom-but-it" class="related-joke-card">
+                    <div class="related-joke-text">They named you after the goddess of wisdom but it sounds mor...</div>
+                </a>
+                <a href="/jokes/name-jokes/bradleys-so-fadely-like-a-flower-thats-aging-just" class="related-joke-card">
+                    <div class="related-joke-text">Bradley's so fadely, like a flower that's aging - just call ...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-her-callous-son-allison-her" class="related-joke-card">
+                    <div class="related-joke-text">They call her Callous-son Allison - her personality's got mo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jocelyn_name_meaning_1757364276490_715',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

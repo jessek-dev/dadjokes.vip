@@ -14,7 +14,7 @@
     <meta name="keywords" content="dad jokes, Name Jokes jokes, funny jokes, clean jokes, name jokes, dad jokes">
 
     <!-- SEO: Canonical URL -->
-    <link rel="canonical" href="https://dadjokes.vip/joke/ai_victoria_famous_namesakes_v3_1757369230519_731">
+    <link rel="canonical" href="https://dadjokes.vip/jokes/name-jokes/victoria">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -34,7 +34,7 @@
     <meta property="og:title" content="Victoria?">
     <meta property="og:description" content="Victoria? Like Queen Victoria, famous for ruling the British Empire and not being amused. You two have so much in common - you both have names.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image.png">
-    <meta property="og:url" content="https://dadjokes.vip/joke/ai_victoria_famous_namesakes_v3_1757369230519_731">
+    <meta property="og:url" content="https://dadjokes.vip/jokes/name-jokes/victoria">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Dad Jokes">
 
@@ -69,7 +69,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dadjokes.vip/joke/ai_victoria_famous_namesakes_v3_1757369230519_731"
+        "@id": "https://dadjokes.vip/jokes/name-jokes/victoria"
       }
     }
     </script>
@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Xavier? More like Ex-avier, since you've probably been kicked out of a few schools in your time.</div>
+                <a href="/jokes/name-jokes/ben-ja-min-sounds-like-your-parents-were-typing" class="related-joke-card">
+                    <div class="related-joke-text">Ben-ja-min sounds like your parents were typing your name wi...</div>
                 </a>
-                <a href="/jokes/name-jokes/ann-with-your-name-so-short-youve-got-less" class="related-joke-card">
-                    <div class="related-joke-text">Ann, with your name so short, you've got less letters than a game of Hangman and just as much personality.</div>
+                <a href="/jokes/name-jokes/andy-doo-andy-doo-where-are-you" class="related-joke-card">
+                    <div class="related-joke-text">"Andy-doo, Andy-doo, where are you?" Just another bland Drew...</div>
                 </a>
-                <a href="/jokes/name-jokes/bellagrace-your-name-sounds-like-a-fancy-italian" class="related-joke-card">
-                    <div class="related-joke-text">Bellagrace, your name sounds like a fancy Italian pasta dish - and just as bland.</div>
+                <a href="/jokes/name-jokes/cassie-your-name-may-be-short-but-the-confusion" class="related-joke-card">
+                    <div class="related-joke-text">Cassie, your name may be short, but the confusion it causes ...</div>
+                </a>
+                <a href="/jokes/name-jokes/chris-comes-from-english-meaning-strength-clearly" class="related-joke-card">
+                    <div class="related-joke-text">Chris comes from English meaning "strength." Clearly your pa...</div>
+                </a>
+                <a href="/jokes/name-jokes/wikipedia-amber-heard-known-for-having-the-most" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "Amber Heard - known for having the most dramatic...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_victoria_famous_namesakes_v3_1757369230519_731',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

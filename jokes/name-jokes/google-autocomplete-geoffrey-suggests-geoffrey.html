@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/barbaras-so-extra-extra-she-makes-sahara-look" class="related-joke-card">
+                    <div class="related-joke-text">Barbara's so extra-extra, she makes Sahara look like a moist...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Winston, your name is so old-fashioned, I bet you spend your free time listening to vinyl records and drinking Earl Grey.</div>
+                    <div class="related-joke-text">With a name like Violet, I bet your parents were going for "...</div>
                 </a>
-                <a href="/jokes/name-jokes/alice-your-name-has-no-repeating-letters-just" class="related-joke-card">
-                    <div class="related-joke-text">Alice, your name has no repeating letters - just like your ability to make the same mistake twice.</div>
+                <a href="/jokes/name-jokes/while-the-rest-of-us-are-living-in-the-nickname" class="related-joke-card">
+                    <div class="related-joke-text">While the rest of us are living in the nickname era of Sam a...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-caroline-you-share-a-name-with-caroline" class="related-joke-card">
-                    <div class="related-joke-text">Hey Caroline, you share a name with Caroline Kennedy, who's known for being JFK's daughter and American royalty. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/they-call-you-breanna-but-youre-more-like-a-prima" class="related-joke-card">
+                    <div class="related-joke-text">They call you Breanna but you're more like a prima donna mix...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-you-go-by-manda-because-the-a-got-tired" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Manda because the 'A' got tired of being f...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_geoffrey_famous_namesakes_v3_second_1757369693636_568',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

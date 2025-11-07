@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/ashleys-parents-arranged-those-letters-like-they" class="related-joke-card">
+                    <div class="related-joke-text">Ashley's parents arranged those letters like they were playi...</div>
+                </a>
+                <a href="/jokes/name-jokes/cooper-sounds-like-youve-been-cooped-up-in-your" class="related-joke-card">
+                    <div class="related-joke-text">Cooper - sounds like you've been cooped up in your parents' ...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Rose appears in 2 cultures: English, French. A true ambassador of mediocrity across cultures.</div>
+                    <div class="related-joke-text">Marcus, your name sounds like a combination of "mar" (as in ...</div>
                 </a>
-                <a href="/jokes/name-jokes/caitlyn-has-english-modern-origins-meaning" class="related-joke-card">
-                    <div class="related-joke-text">Caitlyn has English (Modern) origins meaning "ancient meaning." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/your-names-got-back-to-back-rs-like-a-growling" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got back-to-back R's like a growling dog - too b...</div>
                 </a>
-                <a href="/jokes/name-jokes/aiden-shares-a-name-with-aiden-pearce-famous-for" class="related-joke-card">
-                    <div class="related-joke-text">Aiden shares a name with Aiden Pearce, famous for hacking everyone's phone in Watch Dogs video game. What are the odds? About as good as Aiden becoming equally famous.</div>
+                <a href="/jokes/name-jokes/anthony-shares-a-name-with-marc-anthony-legendary" class="related-joke-card">
+                    <div class="related-joke-text">Anthony shares a name with Marc Anthony, legendary for singi...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757609894121_bux183',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

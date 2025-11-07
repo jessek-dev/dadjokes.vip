@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/cassie-with-a-name-like-yours-its-no-wonder-you" class="related-joke-card">
-                    <div class="related-joke-text">Cassie, with a name like yours, it's no wonder you always seem to be the missing piece in every puzzle.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Lydia, your name sounds like it's stuck in a medieval time warp - did your parents own a castle or just wish they did?</div>
+                    <div class="related-joke-text">With a name like Jessica, I'm guessing your parents were goi...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-just-enough-letters-to-waste-everyones-2" class="related-joke-card">
-                    <div class="related-joke-text">You've got just enough letters to waste everyone's time writing it out, but not enough to justify a cool nickname - you're stuck in name-length limbo with every Kevin and Sarah.</div>
+                <a href="/jokes/name-jokes/they-call-her-alexandra-the-commander-a-always" class="related-joke-card">
+                    <div class="related-joke-text">"They call her Alexandra the Commander-a, always making gran...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-lukewarm-coffee-ashley-not-short" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like lukewarm coffee, Ashley - not short enough ...</div>
+                </a>
+                <a href="/jokes/name-jokes/if-alyssa-were-a-medicine-the-side-effects-would" class="related-joke-card">
+                    <div class="related-joke-text">If "Alyssa" were a medicine, the side effects would include ...</div>
+                </a>
+                <a href="/jokes/name-jokes/candace-appears-in-3-cultures-english-biblical" class="related-joke-card">
+                    <div class="related-joke-text">Candace appears in 3 cultures: English, Biblical, Biblical L...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_gavin_cultural_origin_1757364245762_550',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

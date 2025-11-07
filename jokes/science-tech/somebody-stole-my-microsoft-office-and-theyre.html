@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,22 @@
             <h2>Here are some more Science & Tech jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/science-tech/whats-the-most-terrifying-word-in-nuclear-physics" class="related-joke-card">
-                    <div class="related-joke-text">What's the most terrifying word in nuclear physics? "Oops!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why did the computer go to bed?</div>
+                </a>
+                <a href="/jokes/science-tech/whoever-invented-the-knock-knock-joke-should-get" class="related-joke-card">
+                    <div class="related-joke-text">Whoever invented the knock-knock joke should get a no bell p...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Elon Musk bought Twitter for 44 billion dollars... I bought it from the App Store for free!</div>
+                    <div class="related-joke-text">What does the MacBook have in common with Donald Trump?
+
+I w...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why did the computer cross the road? To get a byte to eat.</div>
+                    <div class="related-joke-text">Breaking news! Energizer Bunny arrested – charged with batte...</div>
+                </a>
+                <a href="/jokes/science-tech/a-girl-once-asked-me-what-my-heart-desired" class="related-joke-card">
+                    <div class="related-joke-text">A girl once asked me what my heart desired, apparently blood...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1139,34 @@
             'joke_id': 'MJ000161',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

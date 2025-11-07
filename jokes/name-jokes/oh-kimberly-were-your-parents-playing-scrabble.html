@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">There's Ryan Gosling, the Ryan famous for being a real human bean with abs, and then there's you - the Ryan famous for existing.</div>
+                <a href="/jokes/name-jokes/bella-grace-the-name-that-says-i-couldnt-decide-2" class="related-joke-card">
+                    <div class="related-joke-text">Bella-Grace - the name that says "I couldn't decide between ...</div>
                 </a>
-                <a href="/jokes/name-jokes/meet-ana-named-after-ana-de-armas-who-was" class="related-joke-card">
-                    <div class="related-joke-text">Meet Ana! Named after Ana de Armas, who was legendary for being the hottest Bond girl and Knives Out star. This Ana is legendary for... showing up.</div>
+                <a href="/jokes/name-jokes/your-name-is-like-the-medium-setting-on-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like the medium setting on a microwave - not qu...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-must-get-a-lot-of-typos-since-amelia-is-just" class="related-joke-card">
-                    <div class="related-joke-text">You must get a lot of typos since "Amelia" is just "I am ale" with the letters scrambled around.</div>
+                <a href="/jokes/name-jokes/angela-your-names-got-rhythm-like-a-salsa-in" class="related-joke-card">
+                    <div class="related-joke-text">Angela, your name's got rhythm, like a salsa in Havana. But ...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-people-finish-writing-your-name-on-2" class="related-joke-card">
+                    <div class="related-joke-text">By the time people finish writing your name on forms, shorte...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-got-two-ds-but-your-parents-couldnt" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got two D's but your parents couldn't even space...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kimberly_wordplay_1757276763657_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

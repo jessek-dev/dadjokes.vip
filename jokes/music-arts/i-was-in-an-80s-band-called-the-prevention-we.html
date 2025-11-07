@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Music & Arts jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Musical jokes and artistic humor for creative minds. From instruments to paintings, these jokes celebrate the arts.</p>
             <div class="related-jokes">
+                <a href="/jokes/music-arts/i-just-broke-my-guitar-its-okay-i-wont-fret" class="related-joke-card">
+                    <div class="related-joke-text">I just broke my guitar. It's okay, I won...</div>
+                </a>
                 <a href="/jokes/music-arts/why-is-peter-pan-always-flying" class="related-joke-card">
-                    <div class="related-joke-text">Why is Peter Pan always flying? Because he Neverlands.</div>
+                    <div class="related-joke-text">Why is Peter Pan always flying?..</div>
+                </a>
+                <a href="/jokes/music-arts/people-are-shocked-to-discover-i-have-a-police" class="related-joke-card">
+                    <div class="related-joke-text">People are shocked to discover I have a police record but I ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">The urge to sing the Lion King song is just a whim away.</div>
+                    <div class="related-joke-text">What did Captain Hook's sidekick say to Adele?..</div>
                 </a>
-                <a href="/jokes/music-arts/have-you-ever-heard-of-a-music-group-called" class="related-joke-card">
-                    <div class="related-joke-text">Have you ever heard of a music group called Cellophane? They mostly wrap.</div>
+                <a href="/jokes/music-arts/why-did-mozart-kill-all-his-chickens" class="related-joke-card">
+                    <div class="related-joke-text">Why did Mozart kill all his chickens?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000406',
             'category': 'Music & Arts'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

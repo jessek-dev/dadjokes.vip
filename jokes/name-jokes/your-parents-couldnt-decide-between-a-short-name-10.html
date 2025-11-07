@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/i-heard-your-parents-named-you-angelica-cause-you" class="related-joke-card">
-                    <div class="related-joke-text">I heard your parents named you Angelica 'cause you were heaven-sent, but with those dance moves you're more like Angel-awkward.</div>
+                <a href="/jokes/name-jokes/they-call-you-april-showers-but-the-only-thing" class="related-joke-card">
+                    <div class="related-joke-text">They call you April showers, but the only thing you're bring...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-must-have-really-loved-the-letter-e-3" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have really loved the letter 'e' but could...</div>
+                </a>
+                <a href="/jokes/name-jokes/addisons-so-rad-in-fashion-but-their-passion-for" class="related-joke-card">
+                    <div class="related-joke-text">Addison's so rad in fashion, but their passion for crashin' ...</div>
+                </a>
+                <a href="/jokes/name-jokes/with-a-name-like-aaron-i-bet-youre-always-in-a" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Aaron, I bet you're always in a rush. Alway...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nora: Not to be confused with Nora Ephron, who's famous for writing romantic comedies that make you cry. This one's famous for being confused with them.</div>
-                </a>
-                <a href="/jokes/name-jokes/adriana-youre-no-madonna-with-those-moves-youre" class="related-joke-card">
-                    <div class="related-joke-text">Adriana, you're no Madonna, with those moves you're more like a piranha out of water.</div>
+                    <div class="related-joke-text">Hey Cole, you're about as exciting as a fishing pole - even ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ariana_length_1757364106519_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

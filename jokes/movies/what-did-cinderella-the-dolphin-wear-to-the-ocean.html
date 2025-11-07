@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Movies jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hollywood humor and cinema jokes for film buffs. References to classics, blockbusters, and everything about the movies.</p>
             <div class="related-jokes">
-                <a href="/jokes/movies/i-got-carded-at-a-liquor-store-and-my-blockbuster" class="related-joke-card">
-                    <div class="related-joke-text">I got carded at a liquor store, and my Blockbuster card accidentally fell out. The cashier said never mind.</div>
+                <a href="/jokes/movies/how-do-you-find-will-smith-in-the-snow" class="related-joke-card">
+                    <div class="related-joke-text">How do you find Will Smith in the snow?..</div>
                 </a>
-                <a href="/jokes/movies/why-did-the-cow-pack-up-its-bags-and-move-to" class="related-joke-card">
-                    <div class="related-joke-text">Why did the cow pack up its bags and move to Hollywood? To be in the moo-vies.</div>
+                <a href="/jokes/movies/whats-the-grinchs-least-favorite-band" class="related-joke-card">
+                    <div class="related-joke-text">Whats the Grinchs least favorite band?… ...</div>
                 </a>
-                <a href="/jokes/movies/have-you-seen-the-movie-constipation" class="related-joke-card">
-                    <div class="related-joke-text">Have you seen the movie "Constipation"? No? It hasn't come out yet!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What do you call it when Batman skips church?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why did Mickey Mouse get hit with a snowball?..</div>
+                </a>
+                <a href="/jokes/movies/what-generation-does-forrest-gump-belong-to" class="related-joke-card">
+                    <div class="related-joke-text">What generation does Forrest Gump belong to?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002310',
             'category': 'Movies'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

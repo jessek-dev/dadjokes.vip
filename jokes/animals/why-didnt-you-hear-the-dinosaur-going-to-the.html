@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Animals jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious animal jokes featuring dogs, cats, wildlife, and creatures of all kinds. Perfect for animal lovers and pet owners!</p>
             <div class="related-jokes">
-                <a href="/jokes/animals/what-does-the-hawaiian-spider-do-in-his-free-time" class="related-joke-card">
-                    <div class="related-joke-text">What does the Hawaiian spider do in his free time? Surf the web.</div>
+                <a href="/jokes/animals/knock-knock-whos-there-baby-owl-baby-owl-who" class="related-joke-card">
+                    <div class="related-joke-text">Knock, knock. (Who's there?) … Baby owl. (Baby owl who?)</div>
                 </a>
-                <a href="/jokes/animals/what-do-you-call-a-cow-on-a-trampoline" class="related-joke-card">
-                    <div class="related-joke-text">What do you call a cow on a trampoline? A milk shake!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How do you keep an elephant from charging?</div>
                 </a>
-                <a href="/jokes/animals/my-pet-mouse-elvis-died-last-night-he-was-caught" class="related-joke-card">
-                    <div class="related-joke-text">My pet mouse 'Elvis' died last night. He was caught in a trap..</div>
+                <a href="/jokes/animals/what-do-you-call-a-cow-with-no-legs" class="related-joke-card">
+                    <div class="related-joke-text">What do you call a cow with no legs?</div>
+                </a>
+                <a href="/jokes/animals/why-dont-ducks-tell-jokes-when-flying" class="related-joke-card">
+                    <div class="related-joke-text">Why don’t ducks tell jokes when flying?</div>
+                </a>
+                <a href="/jokes/animals/i-asked-my-dog-whats-two-minus-two" class="related-joke-card">
+                    <div class="related-joke-text">I asked my dog what's two minus two.</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002966',
             'category': 'Animals'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

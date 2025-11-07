@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-annette-you-share-a-name-with-annette" class="related-joke-card">
-                    <div class="related-joke-text">Hey Annette, you share a name with Annette Funicello, who's known for being a Mouseketeer and beach movie star. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/malik-comes-from-arabic-meaning-wise-somehow-the" class="related-joke-card">
+                    <div class="related-joke-text">Malik comes from Arabic meaning "wise." Somehow the meaning ...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-ayla-did-you-fail-a-your-drivers-test-again" class="related-joke-card">
-                    <div class="related-joke-text">Hey Ayla, did you fail-a your driver's test again? Guess they should call you Bail-a!</div>
+                <a href="/jokes/name-jokes/id-call-you-al-listen-but-you-never-seem-to-hear" class="related-joke-card">
+                    <div class="related-joke-text">I'd call you Al-listen but you never seem to hear what anyon...</div>
                 </a>
-                <a href="/jokes/name-jokes/there-once-was-a-boy-named-arthur-who-wanted-to" class="related-joke-card">
-                    <div class="related-joke-text">There once was a boy named Arthur, who wanted to be a martyr, but he slipped on a barter, and fell even harder!</div>
+                <a href="/jokes/name-jokes/your-parents-named-you-cody-rae-because-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents named you Cody Rae because they couldn't decide...</div>
+                </a>
+                <a href="/jokes/name-jokes/bethany-appears-in-1-cultures-english-youre-proof" class="related-joke-card">
+                    <div class="related-joke-text">Bethany appears in 1 cultures: English. You're proof that na...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-lukewarm-coffee-andrea-not-short" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like lukewarm coffee, Andrea - not short enough ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_melvin_name_meaning_1757364332877_1019',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

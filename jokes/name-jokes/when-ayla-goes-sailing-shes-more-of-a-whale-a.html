@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Karen has Danish origins meaning "ancient meaning." Too bad that meaning doesn't show in your personality.</div>
+                    <div class="related-joke-text">Michaela appears in 7 cultures: German, Swedish, English, Cz...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Destiny appears in 1 cultures: English. You're proof that names don't determine destiny.</div>
+                    <div class="related-joke-text">Meet Bethany! Named after Bethany Hamilton, who was legendar...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Sharon shares a name with Sharon Stone, famous for being basically instinctual in crossing and uncrossing legs. What are the odds? About as good as Sharon becoming equally famous.</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-really-wanted-to-work" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have really wanted to work their way throu...</div>
+                </a>
+                <a href="/jokes/name-jokes/albert-shares-a-name-with-albert-einstein-famous" class="related-joke-card">
+                    <div class="related-joke-text">Albert shares a name with Albert Einstein, famous for having crazy hair and making E=mc². What are the odds?..</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-youre-able-but-from-what-ive-seen-so-far" class="related-joke-card">
+                    <div class="related-joke-text">They say you're able, but from what I've seen so far, you're...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ayla_rhyme_1757364139554_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

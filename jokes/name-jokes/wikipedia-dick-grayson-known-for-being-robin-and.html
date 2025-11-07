@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Jocelyn claims to be related to Jocelyn Wildenstein. Jocelyn Wildenstein was known for getting so much plastic surgery she looks like a cat. Jocelyn is known for making things up.</div>
+                    <div class="related-joke-text">Jerry comes from English meaning "bright fame." The name's p...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-mustve-been-quite-thirsty-when" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must've been quite thirsty when naming you - they ordered "water, please" but it came out as "Aud-rey, please."</div>
+                <a href="/jokes/name-jokes/alexa" class="related-joke-card">
+                    <div class="related-joke-text">Alexa?..</div>
                 </a>
-                <a href="/jokes/name-jokes/a-b-i-gail-sounds-like-a-failed-attempt-at" class="related-joke-card">
-                    <div class="related-joke-text">"A-B-I-GAIL" sounds like a failed attempt at reciting the alphabet that just gave up halfway through and started sobbing.</div>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-was-writing-angle" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone was writing "angle" but sneezed...</div>
+                </a>
+                <a href="/jokes/name-jokes/april-your-name-is-so-simple-even-the-calendar" class="related-joke-card">
+                    <div class="related-joke-text">April, your name is so simple even the calendar got it right...</div>
+                </a>
+                <a href="/jokes/name-jokes/introducing-annabelle-following-in-the-footsteps" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Annabelle! Following in the footsteps of Annabel...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_grayson_famous_namesakes_v3_second_1757369696812_588',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

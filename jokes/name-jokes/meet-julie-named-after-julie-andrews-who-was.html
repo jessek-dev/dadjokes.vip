@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/ella-2" class="related-joke-card">
-                    <div class="related-joke-text">Ella? More like Elle-a, because your name is just as forgettable as a minor character in a French film.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Woody Guthrie was a legendary folk singer. This Woody can ba...</div>
                 </a>
-                <a href="/jokes/name-jokes/brendan-comes-from-irish-meaning-noble-warrior" class="related-joke-card">
-                    <div class="related-joke-text">Brendan comes from Irish meaning "noble warrior." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/bryan-your-name-is-as-unique-as-your-fashion" class="related-joke-card">
+                    <div class="related-joke-text">Bryan, your name is as unique as your fashion sense - one sy...</div>
                 </a>
-                <a href="/jokes/name-jokes/id-make-a-joke-about-being-angie-ry-but-that-pun" class="related-joke-card">
-                    <div class="related-joke-text">I'd make a joke about being Angie-ry, but that pun is almost as painful as your name.</div>
+                <a href="/jokes/name-jokes/your-names-got-aid-in-it-but-those-vowels-need" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got "aid" in it but those vowels need some aid t...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-need-a-break-from-hearing-your-name-its-like" class="related-joke-card">
+                    <div class="related-joke-text">"I need a" break from hearing your name - it's like everyone...</div>
+                </a>
+                <a href="/jokes/name-jokes/yo-antonio-your-names-got-so-many-vowels-it-looks" class="related-joke-card">
+                    <div class="related-joke-text">Yo Antonio, your name's got so many vowels it looks like you...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_julie_famous_namesakes_v3_1757369180570_390',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

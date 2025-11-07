@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,16 +743,20 @@
             <h2>Here are some more Medical jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!</p>
             <div class="related-jokes">
-                <a href="/jokes/medical/doctor-do-you-want-to-hear-the-good-news-or-the" class="related-joke-card">
-                    <div class="related-joke-text">Doctor: Do you want to hear the good news or the bad news?
-Patient: Good news please.
-Doctor: we're naming a disease after you.</div>
+                <a href="/jokes/medical/somebody-just-called-my-phone-sneezed-coughed-and" class="related-joke-card">
+                    <div class="related-joke-text">Somebody just called my phone, sneezed, coughed, and hung up.</div>
                 </a>
-                <a href="/jokes/medical/yesterday-i-accidentally-swallowed-some-food" class="related-joke-card">
-                    <div class="related-joke-text">Yesterday, I accidentally swallowed some food coloring. The doctor says I’m okay, but I feel like I’ve dyed a little inside.</div>
+                <a href="/jokes/medical/i-went-to-the-doctor-today-and-he-told-me-i-had" class="related-joke-card">
+                    <div class="related-joke-text">I went to the doctor today and he told me I had type A blood...</div>
                 </a>
-                <a href="/jokes/medical/to-the-person-who-stole-my-anti-depressant-pills" class="related-joke-card">
-                    <div class="related-joke-text">To the person who stole my anti-depressant pills: I hope you're happy now.</div>
+                <a href="/jokes/medical/why-should-you-never-brush-your-teeth-with-your" class="related-joke-card">
+                    <div class="related-joke-text">Why should you never brush your teeth with your left hand?</div>
+                </a>
+                <a href="/jokes/medical/what-kind-of-glue-should-you-use-to-keep-your" class="related-joke-card">
+                    <div class="related-joke-text">What kind of glue should you use to keep your teeth together?</div>
+                </a>
+                <a href="/jokes/medical/i-accidentally-drank-a-bottle-of-invisible-ink" class="related-joke-card">
+                    <div class="related-joke-text">I accidentally drank a bottle of invisible ink. Now I’m in h...</div>
                 </a>
             </div>
         </section>
@@ -1095,6 +1137,34 @@ Doctor: we're naming a disease after you.</div>
             'joke_id': 'MJ003103',
             'category': 'Medical'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

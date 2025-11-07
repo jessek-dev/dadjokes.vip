@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jonah, I bet you spend a lot of time in the belly of the whale, trying to figure out how you ended up there.</div>
+                    <div class="related-joke-text">Alyssa, I mistook you for a sista - but on closer inspection...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Bentley, you're so gently - like a Prius at a monster truck rally.</div>
+                    <div class="related-joke-text">Madeline comes from English meaning "noble warrior." That me...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I'd make a cocktail joke, but your name's already mixed up enough with "Bay-lee" sounding like a confused mermaid's hideout.</div>
+                    <div class="related-joke-text">With a name like Alicia, you're kind of like the Goldilocks ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">You're such an Alison that even your name can't decide if it...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Caitlyn - the name that's as unique as the number of repeate...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alan_spelling_1757424095205_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

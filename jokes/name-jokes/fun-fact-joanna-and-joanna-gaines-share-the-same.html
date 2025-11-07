@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/brenda-appears-in-1-cultures-english-thats-a-lot" class="related-joke-card">
-                    <div class="related-joke-text">Brenda appears in 1 cultures: English. That's a lot of cultures to let down simultaneously.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Meghan - sounds like the name of a wannabe princess who thinks she's too good for everyone.</div>
+                    <div class="related-joke-text">People hear Polly and think "cute and quirky" - which is str...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-really-wanted-your-6" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have really wanted your initials to spell "AK" but chickened out halfway through and just filled in random letters to finish the job.</div>
+                <a href="/jokes/name-jokes/arthur-with-that-double-r-youre-like-a-spelling" class="related-joke-card">
+                    <div class="related-joke-text">Arthur, with that double 'R', you're like a spelling champio...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexandria-appears-in-1-cultures-english-thats-a" class="related-joke-card">
+                    <div class="related-joke-text">Alexandria appears in 1 cultures: English. That's a lot of c...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alexander-they-say-youre-a-pretender-expander" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexander, they say you're a "pretender expander" - alwa...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-lukewarm-porridge-claire-not" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like lukewarm porridge, Claire - not short enoug...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_joanna_famous_namesakes_v3_second_1757369716903_731',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

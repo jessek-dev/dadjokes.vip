@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Mike Wazowski from Monsters, Inc. This Mike can barely scare a kitten, let alone a child.</div>
+                    <div class="related-joke-text">Hey Brent, your name rhymes with rent... and that's about ho...</div>
                 </a>
-                <a href="/jokes/name-jokes/aimee-your-name-sounds-like-a-cry-for-attention-i" class="related-joke-card">
-                    <div class="related-joke-text">Aimee, your name sounds like a cry for attention! I guess that's why everyone always 'aims' to ignore you!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Mike, the name that's about as catchy as a bad case of the h...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-a-capital-b-followed-by-i-a-n-c-a-which" class="related-joke-card">
-                    <div class="related-joke-text">You've got a capital B followed by "i-a-n-c-a" - which is just "panic" rearranged with a spare B left over to spell "Be panic."</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">The fact that "Cars" is in your name but the only "S" comes ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-allen-youre-always-ballin-too-bad-its-just-2" class="related-joke-card">
+                    <div class="related-joke-text">Hey Allen, you're always ballin' - too bad it's just from fa...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-antonios-so-phony-o-hes-basically-a" class="related-joke-card">
+                    <div class="related-joke-text">They say Antonio's so phony-o, he's basically a bologna-o sa...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bobby_length_1757348058801_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

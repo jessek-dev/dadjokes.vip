@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/plot-twist-anne-isnt-anne-hathaway-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Anne isn't Anne Hathaway. One is famous for being a princess and Catwoman. The other is reading this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Sawyer appears in 1 cultures: English (Modern). A true ambas...</div>
                 </a>
-                <a href="/jokes/name-jokes/if-your-name-was-a-dance-move-adrienne-it-would" class="related-joke-card">
-                    <div class="related-joke-text">If your name was a dance move, Adrienne, it would be the "Adrienne Shuffle" - two steps forward, one step back, and a whole lot of confusion.</div>
+                <a href="/jokes/name-jokes/they-say-alishas-so-eager-to-pleasa-but-she-cant" class="related-joke-card">
+                    <div class="related-joke-text">They say Alisha's so eager to pleasa, but she can't make up ...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-alisha-the-feature-creature-half" class="related-joke-card">
-                    <div class="related-joke-text">They call you Alisha the Feature Creature - half teacher, half preacher, but mostly just someone who talks faster than a speed-reading creature!</div>
+                <a href="/jokes/name-jokes/google-autocomplete-axel-suggests-axel-foley-whos" class="related-joke-card">
+                    <div class="related-joke-text">Google autocomplete: "Axel" suggests "Axel Foley", who's kno...</div>
+                </a>
+                <a href="/jokes/name-jokes/austin-comes-from-english-meaning-defender-that" class="related-joke-card">
+                    <div class="related-joke-text">Austin comes from English meaning "defender." That meaning m...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aubrey-why-so-sob-rey" class="related-joke-card">
+                    <div class="related-joke-text">"Hey Aubrey, why so sob-rey?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_christian_length_1757354425582_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

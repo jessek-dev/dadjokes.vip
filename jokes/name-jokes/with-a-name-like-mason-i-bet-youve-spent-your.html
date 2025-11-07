@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-love-is-blind-but-spelling-aimee-makes" class="related-joke-card">
-                    <div class="related-joke-text">They say love is blind, but spelling "Aimee" makes me think your parents couldn't see-me, believe-me, or spell easy-peasy.</div>
+                <a href="/jokes/name-jokes/emma-rose-the-name-that-says-i-want-to-be-unique" class="related-joke-card">
+                    <div class="related-joke-text">Emma-rose, the name that says "I want to be unique, but not ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Wilbur Soot is a popular Twitch streamer. This Wilbur's streams are more like a Twitch of boredom.</div>
+                <a href="/jokes/name-jokes/alec" class="related-joke-card">
+                    <div class="related-joke-text">Alec?..</div>
                 </a>
-                <a href="/jokes/name-jokes/aim-y-amys-so-lame-y-she-couldnt-hit-the-broad" class="related-joke-card">
-                    <div class="related-joke-text">"Aim-y" Amy's so lame-y, she couldn't hit the broad side of a barn even with her name-y.</div>
+                <a href="/jokes/name-jokes/barbara-not-to-be-confused-with-barbara-walters" class="related-joke-card">
+                    <div class="related-joke-text">Barbara: Not to be confused with Barbara Walters, who's famo...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-tried-to-spell-4" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone tried to spell "Canada" but sne...</div>
+                </a>
+                <a href="/jokes/name-jokes/bella-your-name-has-more-vowels-than-a-choir" class="related-joke-card">
+                    <div class="related-joke-text">Bella, your name has more vowels than a choir practice - but...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_mason_wordplay_1757278177636_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

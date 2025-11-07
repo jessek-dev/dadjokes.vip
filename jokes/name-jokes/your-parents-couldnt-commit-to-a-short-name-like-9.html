@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got more unnecessary letters than a government form - you could've been "Karen" if your parents hadn't gotten fancy with that extra "ol" in the middle.</div>
+                    <div class="related-joke-text">Cynthia, your name sounds like a sneeze waiting to happen - ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Polly the parrot, Polly Pocket, Polly Purebred - you're the Polly no one wants to play with.</div>
+                    <div class="related-joke-text">Fun fact: Hailey and Hailey Bieber share the same name! Hail...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Layla appears in 2 cultures: Arabic, English. You're proof that names don't determine destiny.</div>
+                    <div class="related-joke-text">Gregory, the name that sounds like a fancy way of saying "Gr...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Ebony, your name sounds like a fancy wood, but we all know y...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Dwayne shares a name with The Rock, famous for cooking and b...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bella_length_1757424249748_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

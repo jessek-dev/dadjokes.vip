@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Wife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
-                <a href="/jokes/wife/my-wife-says-she-has-14-reasons-why-she-could" class="related-joke-card">
-                    <div class="related-joke-text">My wife says she has 14 reasons why she could leave me, including my obsession with tennis. I said "That's 15-love!"</div>
+                <a href="/jokes/wife/my-wife-is-so-negative-i-remembered-the-car-seat" class="related-joke-card">
+                    <div class="related-joke-text">My wife is so negative. I remembered the car seat, the strol...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My girlfriend keeps accusing me of cheating. She's starting to sound like my wife.</div>
+                    <div class="related-joke-text">My wife asked me to stop singing "Wonderwall" to her.</div>
                 </a>
-                <a href="/jokes/wife/my-wife-asked-why-do-you-keep-pushing-all-my" class="related-joke-card">
-                    <div class="related-joke-text">My wife asked "Why do you keep pushing all my buttons?" I said "It's impossible to find the mute button!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">My wife said I need to stop acting like a flamingo. I had to...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">My wife threatened to leave me for my obsession with wanting...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">A couple were snuggling and his wife said softly, …</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ001135',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

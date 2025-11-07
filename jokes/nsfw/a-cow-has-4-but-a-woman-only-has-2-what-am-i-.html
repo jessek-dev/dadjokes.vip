@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Jokes for mature audiences only. Adult humor that's not suitable for work or kids. You've been warned!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What kind of shoes does a kidnapper wear? White vans.</div>
+                    <div class="related-joke-text">How do you make a tissue dance at the office?..</div>
                 </a>
-                <a href="/jokes/nsfw/programming-is-like-sex-make-one-mistake-and-you" class="related-joke-card">
-                    <div class="related-joke-text">Programming is like sex.… Make one mistake and you end up supporting it for the rest of your life.</div>
+                <a href="/jokes/nsfw/how-did-the-police-catch-the-naked-man-breaking" class="related-joke-card">
+                    <div class="related-joke-text">How did the police catch the naked man breaking into Zales? …</div>
                 </a>
                 <a href="/jokes/nsfw/i-picked-up-a-hitchhiker-yesterday-he-said-how-do" class="related-joke-card">
-                    <div class="related-joke-text">I picked up a hitchhiker yesterday. He said "How do you know I'm not a serial killer?" I said "The chances of two serial killers in one car is astronomical!"</div>
+                    <div class="related-joke-text">I picked up a hitchhiker yesterday. He said "How do you know...</div>
+                </a>
+                <a href="/jokes/nsfw/why-couldnt-the-lizard-get-a-girlfriend-" class="related-joke-card">
+                    <div class="related-joke-text">Why couldn't the lizard get a girlfriend? …</div>
+                </a>
+                <a href="/jokes/nsfw/how-many-nice-guys-does-it-take-to-change-a" class="related-joke-card">
+                    <div class="related-joke-text">How many nice guys does it take to change a lightbulb?… None...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002653',
             'category': 'NSFW'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

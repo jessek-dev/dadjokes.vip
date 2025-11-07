@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Peyton appears in 1 cultures: English. A true ambassador of mediocrity across cultures.</div>
+                    <div class="related-joke-text">Wikipedia: "Billy Joel - known for being the Piano Man and s...</div>
                 </a>
-                <a href="/jokes/name-jokes/eran-zahavi-is-a-professional-soccer-player-this" class="related-joke-card">
-                    <div class="related-joke-text">Eran Zahavi is a professional soccer player. This Eran can't even score a goal in a game of FIFA.</div>
+                <a href="/jokes/name-jokes/they-say-banana-nirvana-and-breanna-all-end-the" class="related-joke-card">
+                    <div class="related-joke-text">They say banana, nirvana, and Breanna all end the same way -...</div>
                 </a>
-                <a href="/jokes/name-jokes/edward-your-name-sounds-like-a-fancy-butler-who" class="related-joke-card">
-                    <div class="related-joke-text">Edward, your name sounds like a fancy butler who brings disappointment instead of tea.</div>
+                <a href="/jokes/name-jokes/hey-alexa-youre-more-basic-than-a-cvs-flexa-card" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexa, you're more basic than a CVS Flexa card - all pla...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-ana-but-i-think-youre-missing-some-letters" class="related-joke-card">
+                    <div class="related-joke-text">You're Ana but I think you're missing some letters, because ...</div>
+                </a>
+                <a href="/jokes/name-jokes/arthur-sounds-like-a-sneeze-that-gave-up-halfway" class="related-joke-card">
+                    <div class="related-joke-text">"Arthur" sounds like a sneeze that gave up halfway through -...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_erika_wordplay_1757271279059_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/cassie-comes-from-english-meaning-noble-warrior" class="related-joke-card">
+                    <div class="related-joke-text">Cassie comes from English meaning "noble warrior." Somehow t...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jennifer? Like Jennifer Aniston, famous for having the haircut everyone wanted in the 90s. You two have so much in common - you both have names.</div>
+                    <div class="related-joke-text">Felicia comes from English meaning "noble warrior." The name...</div>
                 </a>
-                <a href="/jokes/name-jokes/anita-appears-in-14-cultures-spanish-portuguese" class="related-joke-card">
-                    <div class="related-joke-text">Anita appears in 14 cultures: Spanish, Portuguese, Croatian, Slovene, English, Dutch, German, etc.. You're proof that names don't determine destiny.</div>
+                <a href="/jokes/name-jokes/your-names-got-al-at-the-start-guess-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got A.L. at the start - guess your parents were ...</div>
                 </a>
-                <a href="/jokes/name-jokes/adeline-appears-in-2-cultures-french-english" class="related-joke-card">
-                    <div class="related-joke-text">Adeline appears in 2 cultures: French, English. Somehow you managed to disappoint all of them.</div>
+                <a href="/jokes/name-jokes/adrienne-your-name-is-so-long-even-dora-the" class="related-joke-card">
+                    <div class="related-joke-text">Adrienne, your name is so long, even Dora the Explorer would...</div>
+                </a>
+                <a href="/jokes/name-jokes/aaliyah-appears-in-3-cultures-arabic-english-2" class="related-joke-card">
+                    <div class="related-joke-text">Aaliyah appears in 3 cultures: Arabic, English (Modern), Afr...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_daisy_famous_namesakes_v3_second_1757369665269_369',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

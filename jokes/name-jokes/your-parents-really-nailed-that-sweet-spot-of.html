@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Kelsey, I bet you spent your entire childhood correcting people on the proper pronunciation - "It's Kel-SEE, not Kel-see!"</div>
-                </a>
-                <a href="/jokes/name-jokes/your-name-addison-makes-me-think-of-a-really" class="related-joke-card">
-                    <div class="related-joke-text">Your name, Addison, makes me think of a really enthusiastic realtor - always trying to add on rooms to sell you a bigger house!</div>
+                    <div class="related-joke-text">Your name is Brad-ly missing the mark - sounds like somethin...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really went for that Goldilocks approach with "Betty" - too lazy to write "Elizabeth" but too proper to just go with "Beth."</div>
+                    <div class="related-joke-text">Roberto, the name that says "I want to be Italian, but can't...</div>
+                </a>
+                <a href="/jokes/name-jokes/ann-comes-from-english-meaning-noble-warrior-too" class="related-joke-card">
+                    <div class="related-joke-text">Ann comes from English meaning "noble warrior." Too bad that...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-angel-youre-such-a-stranger-to-danger-the" class="related-joke-card">
+                    <div class="related-joke-text">Hey Angel, you're such a stranger to danger - the wildest th...</div>
+                </a>
+                <a href="/jokes/name-jokes/andrew-looks-like-someone-started-spelling" class="related-joke-card">
+                    <div class="related-joke-text">"Andrew" looks like someone started spelling "Android" but g...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bella_length_1757424190041_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

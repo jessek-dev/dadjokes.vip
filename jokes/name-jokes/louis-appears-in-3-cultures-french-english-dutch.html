@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/allison-comes-from-english-meaning-strength" class="related-joke-card">
-                    <div class="related-joke-text">Allison comes from English meaning "strength." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/youve-got-more-vowels-than-consonants-but-still" class="related-joke-card">
+                    <div class="related-joke-text">You've got more vowels than consonants but still managed to ...</div>
                 </a>
-                <a href="/jokes/name-jokes/johnathan" class="related-joke-card">
-                    <div class="related-joke-text">Johnathan? Like Jonathan Van Ness, famous for being fabulous on Queer Eye. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/with-a-name-like-douglas-i-bet-youre-the-one-who" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Douglas, I bet you're the one who gets to o...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-adriana-when-it-gets-hot-in-havana-you-turn" class="related-joke-card">
-                    <div class="related-joke-text">Hey Adriana, when it gets hot in Havana, you turn into a human cabana, complete with banana-leaf fan-a.</div>
+                <a href="/jokes/name-jokes/alexandra" class="related-joke-card">
+                    <div class="related-joke-text">Alexandra?..</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-bethany-on-a-form" class="related-joke-card">
+                    <div class="related-joke-text">By the time I finish writing "Bethany" on a form, shorter-na...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-big-fans-of-sunshine" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been big fans of sunshine, because they...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_louis_cultural_origin_1757364314164_918',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

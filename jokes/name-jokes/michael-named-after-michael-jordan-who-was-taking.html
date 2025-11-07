@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/plot-twist-frederick-isnt-frederick-douglass-one" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Frederick isn't Frederick Douglass. One is famous for escaping slavery and becoming a powerful speaker. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/your-parents-must-really-love-filling-out-forms" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must really love filling out forms - they gave ...</div>
                 </a>
-                <a href="/jokes/name-jokes/guess-your-parents-couldnt-decide-between-alive" class="related-joke-card">
-                    <div class="related-joke-text">Guess your parents couldn't decide between "Alive" and "Ice" so they just smooshed them together incompetently.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-basic-its-just-a-with-a-stutter" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so basic it's just "A" with...</div>
                 </a>
-                <a href="/jokes/name-jokes/being-called-cody-rae-means-youre-the-type-of" class="related-joke-card">
-                    <div class="related-joke-text">Being called Cody Rae means you're the type of person who brags about their ability to parallel park.</div>
+                <a href="/jokes/name-jokes/billys-so-chilly-and-hilly-dilly-even-his-pet" class="related-joke-card">
+                    <div class="related-joke-text">Billy's so chilly and hilly-dilly, even his pet fish is name...</div>
+                </a>
+                <a href="/jokes/name-jokes/allison-comes-from-english-meaning-strength" class="related-joke-card">
+                    <div class="related-joke-text">Allison comes from English meaning "strength." Clearly your ...</div>
+                </a>
+                <a href="/jokes/name-jokes/carolyn-appears-in-1-cultures-english-multiple" class="related-joke-card">
+                    <div class="related-joke-text">Carolyn appears in 1 cultures: English. Multiple cultures, z...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_michael_famous_namesakes_1757365245147_37',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

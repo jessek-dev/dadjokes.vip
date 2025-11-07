@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Transportation jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny jokes about cars, planes, trains, bicycles, and all forms of travel. Great for road trips and family vacations!</p>
             <div class="related-jokes">
+                <a href="/jokes/transportation/what-did-the-red-light-say-to-the-green-light" class="related-joke-card">
+                    <div class="related-joke-text">What did the Red light say to the Green light?..</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I sat next to a baby for a 10-hour flight. I didn't think it was possible for someone to scream for 10 hours straight... Even the baby was impressed!</div>
+                    <div class="related-joke-text">I sat next to a baby for a 10-hour flight. I didn't think it...</div>
                 </a>
-                <a href="/jokes/transportation/what-did-the-traffic-light-say-to-the-car-as-it" class="related-joke-card">
-                    <div class="related-joke-text">What did the traffic light say to the car as it passed? "Don't look I'm changing!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What does Dad call a flat tire?..</div>
                 </a>
-                <a href="/jokes/transportation/if-at-first-you-dont-succeed-sky-diving-is-not" class="related-joke-card">
-                    <div class="related-joke-text">If at first you don't succeed, sky diving is not for you!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why couldn't the bike stand up by itself?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I can't get my bicycle to stand up by itself. I think it's b...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000882',
             'category': 'Transportation'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

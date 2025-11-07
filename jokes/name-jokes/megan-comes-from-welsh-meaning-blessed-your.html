@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-must-have-been-going-for" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been going for alphabetical order with "Abel" but gave up after the first four letters, leaving that lonely 'L' hanging at the end like an afterthought.</div>
+                <a href="/jokes/name-jokes/your-parents-named-you-cody-rae-because-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents named you Cody Rae because they couldn't decide...</div>
                 </a>
-                <a href="/jokes/name-jokes/gabriela-has-portuguese-origins-meaning-ancient" class="related-joke-card">
-                    <div class="related-joke-text">Gabriela has Portuguese origins meaning "ancient meaning." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/hey-danny-you-share-a-name-with-danny-devito-whos" class="related-joke-card">
+                    <div class="related-joke-text">Hey Danny, you share a name with Danny DeVito, who's known f...</div>
                 </a>
-                <a href="/jokes/name-jokes/not-short-enough-for-a-quick-signature-but-not" class="related-joke-card">
-                    <div class="related-joke-text">Not short enough for a quick signature but not long enough to sound fancy - "Amelia" is like the lukewarm porridge of names.</div>
+                <a href="/jokes/name-jokes/those-double-consonants-br-make-your-name-sound" class="related-joke-card">
+                    <div class="related-joke-text">Those double consonants "Br" make your name sound like someo...</div>
+                </a>
+                <a href="/jokes/name-jokes/brandi-just-like-brandi-chastain-though-theyre" class="related-joke-card">
+                    <div class="related-joke-text">Brandi, just like Brandi Chastain! Though they're famous for...</div>
+                </a>
+                <a href="/jokes/name-jokes/cassandra-appears-in-3-cultures-english-french" class="related-joke-card">
+                    <div class="related-joke-text">Cassandra appears in 3 cultures: English, French, Greek Myth...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_megan_name_meaning_1757364330786_1007',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

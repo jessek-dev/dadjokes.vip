@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">It's no wonder you're always so merry, Mary - you probably have to overcompensate for the lack of excitement in your name.</div>
+                    <div class="related-joke-text">With a name like Jesse, I bet you always have to spell it ou...</div>
                 </a>
-                <a href="/jokes/name-jokes/people-with-four-letter-names-like-chad-are" class="related-joke-card">
-                    <div class="related-joke-text">People with four-letter names like Chad are living proof that parents sometimes run out of Scrabble tiles mid-naming.</div>
+                <a href="/jokes/name-jokes/addison-comes-from-english-meaning-bright-fame" class="related-joke-card">
+                    <div class="related-joke-text">Addison comes from English meaning "bright fame." That meani...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-arnold-whats-the-story" class="related-joke-card">
-                    <div class="related-joke-text">Hey Arnold, what's the story? Your parents must've named you after a corn mold or a barn old.</div>
+                <a href="/jokes/name-jokes/looking-at-those-rs-facing-each-other-in-aurora" class="related-joke-card">
+                    <div class="related-joke-text">Looking at those R's facing each other in "Aurora" is like w...</div>
+                </a>
+                <a href="/jokes/name-jokes/barbaras-so-extra-extra-she-makes-sahara-look" class="related-joke-card">
+                    <div class="related-joke-text">Barbara's so extra-extra, she makes Sahara look like a moist...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-lifes-got-problems-autumn-solves-em-said-not" class="related-joke-card">
+                    <div class="related-joke-text">When life's got problems, Autumn solves 'em... said not a so...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_harry_cultural_origin_1757364253609_592',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

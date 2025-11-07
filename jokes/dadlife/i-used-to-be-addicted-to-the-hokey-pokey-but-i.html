@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">A man is washing the car with his son. The son asks...... "Dad, can’t you just use a sponge?"</div>
+                    <div class="related-joke-text">Slept like a log last night … woke up in...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I think my kids might be spoiled. I accidentally left them out of the fridge for like four hours.</div>
+                    <div class="related-joke-text">How do dads exercise?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why are men like lawnmowers?… They are very hard to get started, they make yucky smells and half the time they don't even work.</div>
+                    <div class="related-joke-text">How do you know Dad’s driving?</div>
+                </a>
+                <a href="/jokes/dadlife/i-was-in-bed-and-said-hey-siri-why-am-i-so-bad" class="related-joke-card">
+                    <div class="related-joke-text">I was in bed and said "Hey Siri, why am I so bad with women?...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I have two unwritten rules: 1. [blank] 2...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000115',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

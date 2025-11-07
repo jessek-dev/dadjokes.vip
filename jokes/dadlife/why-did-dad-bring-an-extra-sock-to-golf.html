@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more #DadLife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
-                <a href="/jokes/dadlife/im-tired-of-following-my-dreams" class="related-joke-card">
-                    <div class="related-joke-text">I'm tired of following my dreams. I'm just going to ask them where they are going and meet up with them later.</div>
+                <a href="/jokes/dadlife/someone-told-me-the-other-day-i-had-a-bo-in-my" class="related-joke-card">
+                    <div class="related-joke-text">Someone told me the other day I had a BO in my nose. I said ...</div>
                 </a>
-                <a href="/jokes/dadlife/ive-been-thinking-about-taking-up-meditation" class="related-joke-card">
-                    <div class="related-joke-text">I've been thinking about taking up meditation. I figure it's better than sitting around doing nothing.</div>
+                <a href="/jokes/dadlife/me-if-humans-lose-the-ability-to-hear-high" class="related-joke-card">
+                    <div class="related-joke-text">Me: If humans lose the ability to hear high frequency volume...</div>
                 </a>
-                <a href="/jokes/dadlife/i-tell-dad-jokes-but-i-have-no-kids" class="related-joke-card">
-                    <div class="related-joke-text">I tell dad jokes but I have no kids. I’m a faux pa.</div>
+                <a href="/jokes/dadlife/dad-im-cold" class="related-joke-card">
+                    <div class="related-joke-text">"Dad, I'm cold."</div>
+                </a>
+                <a href="/jokes/dadlife/my-little-daughter-came-to-me-all-excited-saying" class="related-joke-card">
+                    <div class="related-joke-text">My little daughter came to me all excited, saying "Daddy! Daddy! Guess how old I'll be in June!" "Oh I don't know princess, why don't you tell me?" I said.</div>
+                </a>
+                <a href="/jokes/dadlife/dad-can-you-put-my-shoes-on" class="related-joke-card">
+                    <div class="related-joke-text">Dad, can you put my shoes on?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ003045',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

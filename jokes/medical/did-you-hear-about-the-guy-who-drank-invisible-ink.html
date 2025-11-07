@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Medical jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!</p>
             <div class="related-jokes">
-                <a href="/jokes/medical/my-ex-had-an-accident-i-told-the-paramedics-the" class="related-joke-card">
-                    <div class="related-joke-text">My ex had an accident. I told the paramedics the wrong blood type for her. She'll finally experience what rejection is really like.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Where do you take someone who's been injured in a peek-a-boo accident?</div>
                 </a>
-                <a href="/jokes/medical/have-you-heard-about-the-film-constipation-you" class="related-joke-card">
-                    <div class="related-joke-text">Have you heard about the film "Constipation", you probably haven't because it's not out yet.</div>
+                <a href="/jokes/medical/what-did-the-judge-say-to-the-dentist" class="related-joke-card">
+                    <div class="related-joke-text">What did the judge say to the dentist?..</div>
                 </a>
-                <a href="/jokes/medical/has-covid-19-forced-you-to-wear-glasses-and-a" class="related-joke-card">
-                    <div class="related-joke-text">Has COVID-19 forced you to wear glasses and a mask at the same time?… If so, you may be entitled to condensation.</div>
+                <a href="/jokes/medical/im-reading-a-horror-book-in-braille-something" class="related-joke-card">
+                    <div class="related-joke-text">I'm reading a horror book in Braille... Something bad's goin...</div>
+                </a>
+                <a href="/jokes/medical/doctor-ive-broken-my-arm-in-several-places-doctor" class="related-joke-card">
+                    <div class="related-joke-text">“Doctor, I’ve broken my arm in several places” Doctor “Well ...</div>
+                </a>
+                <a href="/jokes/medical/why-did-waldo-go-to-therapy" class="related-joke-card">
+                    <div class="related-joke-text">Why did Waldo go to therapy?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002282',
             'category': 'Medical'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

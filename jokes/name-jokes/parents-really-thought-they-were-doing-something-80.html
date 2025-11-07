@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/carson" class="related-joke-card">
-                    <div class="related-joke-text">Carson? More like Car-sin, 'cause that name's a traffic violation against good taste.</div>
+                <a href="/jokes/name-jokes/delilah-has-biblical-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Delilah has Biblical origins meaning "ancient meaning." That...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nova, inspired by Nova from Marvel's legacy of being a cosmic superhero. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/youre-stuck-with-that-awkward-middle-ground-where" class="related-joke-card">
+                    <div class="related-joke-text">You're stuck with that awkward middle ground where your name...</div>
                 </a>
-                <a href="/jokes/name-jokes/baileys-the-honda-civic-of-names-not-short-enough" class="related-joke-card">
-                    <div class="related-joke-text">Bailey's the Honda Civic of names - not short enough to zip through introductions, not long enough to be memorable, just sitting there in the middle of the name parking lot being completely average.</div>
+                <a href="/jokes/name-jokes/benjamin-an-8-letter-name-thats-longer-than-your" class="related-joke-card">
+                    <div class="related-joke-text">Benjamin - an 8-letter name that's longer than your list of ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alexis-if-youre-trying-to-win-at-tetris-you" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexis, if you're trying to win at Tetris, you move thos...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-must-really-love-vowels-they-managed" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must really love vowels - they managed to stuff...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jacob_famous_namesakes_v3_second_1757369707145_658',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Science & Tech jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/science-tech/two-sql-tables-sit-at-the-bar-a-query-approaches" class="related-joke-card">
-                    <div class="related-joke-text">Two SQL tables sit at the bar. A query approaches and asks "Can I join you?"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How does a computer get drunk?</div>
                 </a>
-                <a href="/jokes/science-tech/why-was-pavlovs-beard-so-soft" class="related-joke-card">
-                    <div class="related-joke-text">Why was Pavlov's beard so soft?  Because he conditioned it.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What happens when a microscope crashes into a telescope?</div>
                 </a>
-                <a href="/jokes/science-tech/guy-told-me-today-he-did-not-know-what-cloning-is" class="related-joke-card">
-                    <div class="related-joke-text">Guy told me today he did not know what cloning is. I told him, "that makes 2 of us."</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I bought a second-hand time machine last Sunday.</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I invented a pencil with an eraser on each end.</div>
+                </a>
+                <a href="/jokes/science-tech/dont-trust-atoms-they-make-up-everything" class="related-joke-card">
+                    <div class="related-joke-text">Don't trust atoms. They make up everythi...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000804',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

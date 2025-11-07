@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Wife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
-                <a href="/jokes/wife/my-wife-told-me-to-take-out-the-spider-instead-of" class="related-joke-card">
-                    <div class="related-joke-text">My wife told me to take out the spider instead of killing it. So I did! We had a few drinks - pretty nice guy, and he's a web developer!</div>
+                <a href="/jokes/wife/my-wife-told-me-to-pick-up-six-cans-of-sprite-at" class="related-joke-card">
+                    <div class="related-joke-text">My wife told me to pick up six cans of Sprite at the grocery...</div>
                 </a>
-                <a href="/jokes/wife/for-my-wifes-christmas-present-i-took-her-to-an" class="related-joke-card">
-                    <div class="related-joke-text">For my wife's Christmas present, I took her to an orchard. We stared at trees for like a half an hour. Not the Apple watch she was expecting!</div>
+                <a href="/jokes/wife/last-night-i-accidentally-handed-my-wife-a-glue" class="related-joke-card">
+                    <div class="related-joke-text">Last night I accidentally handed my wife a glue stick instea...</div>
                 </a>
-                <a href="/jokes/wife/my-wife-said-i-need-to-stop-acting-like-a" class="related-joke-card">
-                    <div class="related-joke-text">My wife said I need to stop acting like a flamingo. I had to put my foot down.</div>
+                <a href="/jokes/wife/wife-told-me-to-take-the-spider-out-instead-of" class="related-joke-card">
+                    <div class="related-joke-text">Wife told me to take the spider out instead of killing it......</div>
+                </a>
+                <a href="/jokes/wife/i-thought-my-wife-was-joking-when-she-said-shed" class="related-joke-card">
+                    <div class="related-joke-text">I thought my wife was joking when she said she'd leave me if...</div>
+                </a>
+                <a href="/jokes/wife/my-wife-still-thinks-im-sexy-every-time-i-walk-by" class="related-joke-card">
+                    <div class="related-joke-text">My wife still thinks I'm sexy... Every time I walk by her, s...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002975',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

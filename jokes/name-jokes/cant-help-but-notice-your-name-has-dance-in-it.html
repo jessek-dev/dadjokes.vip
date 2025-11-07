@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-name-starts-with-au-like-gold-but-ends-in" class="related-joke-card">
-                    <div class="related-joke-text">Your name starts with AU like gold but ends in TIN - false advertising at its finest.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Emma-rose - at least your parents gave you a unique name, even if it is a bit of a tongue-twister.</div>
+                    <div class="related-joke-text">Victor, your name sounds like you were destined to win, but ...</div>
                 </a>
-                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-albert-too-2" class="related-joke-card">
-                    <div class="related-joke-text">You're living that medium-name life, Albert - too long for a quick signature but too short to impressively fill out a name tag, perpetually caught in the identity equivalent of business casual.</div>
+                <a href="/jokes/name-jokes/anna-appears-in-30-cultures-english-italian" class="related-joke-card">
+                    <div class="related-joke-text">Anna appears in 30 cultures: English, Italian, German, Dutch...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-gave-you-such-a-long-name-even-your" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you such a long name, even your nickname "...</div>
+                </a>
+                <a href="/jokes/name-jokes/bryan-your-name-is-as-unique-as-your-fashion" class="related-joke-card">
+                    <div class="related-joke-text">Bryan, your name is as unique as your fashion sense - one sy...</div>
+                </a>
+                <a href="/jokes/name-jokes/abigail-id-write-you-a-letter-but-i-ran-out-of" class="related-joke-card">
+                    <div class="related-joke-text">Abigail, I'd write you a letter, but I ran out of ink halfwa...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_candace_spelling_1757346631787_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/fun-fact-colton-and-colton-underwood-share-the" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Colton and Colton Underwood share the same name! Colton Underwood is remembered for being the virgin Bachelor who came out as gay. Colton will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/with-a-name-like-eloise-its-no-wonder-youre" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Eloise, it's no wonder you're always the fi...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-annette-i-bet-youre-always-in-debt-your" class="related-joke-card">
-                    <div class="related-joke-text">Hey Annette, I bet you're always in debt - your parents couldn't even afford the full Janet.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-9" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need a nickname - what would we call you, "Ax"?..</div>
                 </a>
-                <a href="/jokes/name-jokes/jennifer-2" class="related-joke-card">
-                    <div class="related-joke-text">Jennifer? Like Jennifer Aniston, famous for having the haircut everyone wanted in the 90s. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/hate-to-break-it-to-you-but-barry-is-just-barr" class="related-joke-card">
+                    <div class="related-joke-text">Hate to break it to you, but "BARRY" is just "BARR" with a Y...</div>
+                </a>
+                <a href="/jokes/name-jokes/bailey-3" class="related-joke-card">
+                    <div class="related-joke-text">Bailey?..</div>
+                </a>
+                <a href="/jokes/name-jokes/google-autocomplete-bobby-suggests-bobby-brown" class="related-joke-card">
+                    <div class="related-joke-text">Google autocomplete: "Bobby" suggests "Bobby Brown", who's k...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jenny_name_meaning_1757364271334_689',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/hey-alex-you-share-a-name-with-alex-trebek-whos" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alex, you share a name with Alex Trebek, who's known for...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-youre-abigail-but-with-those-extra" class="related-joke-card">
+                    <div class="related-joke-text">They say you're Abigail, but with those extra syllables you'...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-you-allen-but-youre-always-ballin-too" class="related-joke-card">
+                    <div class="related-joke-text">They call you Allen but you're always ballin', too bad it's ...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hadley appears in 1 cultures: English. Making each culture wonder what went wrong.</div>
+                    <div class="related-joke-text">Introducing Kaylee! Following in the footsteps of Kaylee fro...</div>
                 </a>
-                <a href="/jokes/name-jokes/aaliyah" class="related-joke-card">
-                    <div class="related-joke-text">Aaliyah? Like Aaliyah (singer), famous for being a princess of R&B who died too young. You two have so much in common - you both have names.</div>
-                </a>
-                <a href="/jokes/name-jokes/carlys-so-gnarly-she-should-change-her-name-to" class="related-joke-card">
-                    <div class="related-joke-text">Carly's so gnarly, she should change her name to Knarly with a K - at least then it would look as awkward as it sounds.</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-broke-when-naming-you-2" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been broke when naming you, because the...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_christopher_cultural_origin_1757364196974_302',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

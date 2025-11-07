@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Wesley, you share a name with Wesley from The Princess Bride, who's known for saying "As you wish" and being the Dread Pirate Roberts. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Dalton, sounds like your parents were just throwing darts at...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been ordering their letters alphabetically when they named you - B.O.B. is literally just going down the list and giving up after three.</div>
+                    <div class="related-joke-text">Aubrey sounds like a name straight out of a fairy tale - you...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Ariana, did you spill some lasagna? Cause whenever I hear your name, I think of a cheesy pasta saga.</div>
+                    <div class="related-joke-text">Your name looks like someone started writing "Anna" but then...</div>
+                </a>
+                <a href="/jokes/name-jokes/fun-fact-amanda-and-amanda-bynes-share-the-same" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Amanda and Amanda Bynes share the same name! Amand...</div>
+                </a>
+                <a href="/jokes/name-jokes/alejandro-appears-in-1-cultures-spanish-multiple" class="related-joke-card">
+                    <div class="related-joke-text">Alejandro appears in 1 cultures: Spanish. Multiple cultures,...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_angelica_rhyme_1757424165834_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

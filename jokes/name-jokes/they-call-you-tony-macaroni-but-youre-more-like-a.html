@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-your-names-divine-but-youre-more-like-a" class="related-joke-card">
-                    <div class="related-joke-text">They say your name's divine, but you're more like a deadline - always running late and making people whine.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Dakota, you must be used to people expectin...</div>
                 </a>
-                <a href="/jokes/name-jokes/alexandra-alexandra-her-lifes-more-drama-than" class="related-joke-card">
-                    <div class="related-joke-text">"Alexandra, Alexandra - her life's more drama than Cleopatra, always extra with a dash of fracture!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name has "drey" at the end like you started writing "dr...</div>
                 </a>
-                <a href="/jokes/name-jokes/like-your-namesake-amy-winehouse-youre-saying-no" class="related-joke-card">
-                    <div class="related-joke-text">Like your namesake Amy Winehouse, you're saying no, no, no to rehab... is what I would say if I was lying.</div>
+                <a href="/jokes/name-jokes/when-they-ask-wheres-alexandria" class="related-joke-card">
+                    <div class="related-joke-text">When they ask "Where's Alexandria?" just say "Last I checked...</div>
+                </a>
+                <a href="/jokes/name-jokes/adelines-so-straight-and-clean-she-makes-a-ruler" class="related-joke-card">
+                    <div class="related-joke-text">Adeline's so straight and clean, she makes a ruler look like...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-gave-you-so-many-letters-to-work" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you so many letters to work with, you coul...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_anthony_rhyme_1757364101921_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

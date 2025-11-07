@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/wikipedia-anita-baker-known-for-having-the" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Anita Baker - known for having the smoothest R&B voice ever." Also Wikipedia: "Anita - disambiguation: did you mean Anita Baker?"</div>
+                <a href="/jokes/name-jokes/with-a-name-like-isabella-i-bet-you-spend-a-lot" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Isabella, I bet you spend a lot of time tel...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Tyler! Following in the footsteps of Tyler Durden, who was renowned for starting Fight Club and breaking all the rules. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/hey-cindy-you-share-a-name-with-cindy-crawford" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cindy, you share a name with Cindy Crawford, who's known...</div>
                 </a>
-                <a href="/jokes/name-jokes/while-everyone-else-finished-writing-their-names" class="related-joke-card">
-                    <div class="related-joke-text">While everyone else finished writing their names on kindergarten worksheets, you were still dotting your third 'a' - no wonder you developed early hand cramping.</div>
+                <a href="/jokes/name-jokes/your-names-like-the-lukewarm-porridge-of-names-10" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like the lukewarm porridge of names - not short ...</div>
+                </a>
+                <a href="/jokes/name-jokes/with-the-way-you-gossip-alisha-should-we-start" class="related-joke-card">
+                    <div class="related-joke-text">With the way you gossip, Alisha, should we start calling you...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-brayden-youre-always-raidin-the-fridge-guess" class="related-joke-card">
+                    <div class="related-joke-text">Hey Brayden, you're always raidin' the fridge - guess that's...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_janice_wordplay_1757274012621_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/adrian-sounds-like-a-name-straight-out-of-a" class="related-joke-card">
-                    <div class="related-joke-text">Adrian sounds like a name straight out of a Shakespeare play - to be or not to be, that is the question, Adrian!</div>
+                <a href="/jokes/name-jokes/wikipedia-daniel-craig-known-for-being-a-blonde" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "Daniel Craig - known for being a blonde James Bo...</div>
                 </a>
-                <a href="/jokes/name-jokes/arthur" class="related-joke-card">
-                    <div class="related-joke-text">"Arthur? More like Far-thur" - always keeping his distance when there's work to be done!</div>
+                <a href="/jokes/name-jokes/with-a-name-like-hayley-i-bet-you-spend-half-your" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Hayley, I bet you spend half your time corr...</div>
                 </a>
-                <a href="/jokes/name-jokes/alison-sounds-like-a-failed-medicine-i-guess" class="related-joke-card">
-                    <div class="related-joke-text">"Alison" sounds like a failed medicine - I guess that's why people take Tylenol-son instead.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jonah - the name that's one letter away from "Joker", which ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Tonya comes from English meaning "noble warrior." Somehow th...</div>
+                </a>
+                <a href="/jokes/name-jokes/erika-shares-a-name-with-erika-jayne-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Erika shares a name with Erika Jayne, famous for being expensive on Real Housewives. What are the odds?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_javier_wordplay_1757274090481_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

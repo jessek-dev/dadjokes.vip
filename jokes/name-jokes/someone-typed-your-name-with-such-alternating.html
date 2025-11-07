@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jessica, I'm guessing your parents were going for timeless classic, but you ended up more like a rerun of a forgotten sitcom no one really wants to watch.</div>
+                    <div class="related-joke-text">Leonardo the Teenage Mutant Ninja Turtle fights crime. This ...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-ariana-banana-bandana-did-your-parents-name" class="related-joke-card">
-                    <div class="related-joke-text">Hey Ariana, banana bandana - did your parents name you after their favorite fruit fashion accessory?</div>
+                <a href="/jokes/name-jokes/they-call-him-tony-oh-no-after-he-tried-to" class="related-joke-card">
+                    <div class="related-joke-text">They call him Tony-oh-no after he tried to serenade his crus...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Chris comes from English meaning "strength." Clearly your parents had high expectations that weren't met.</div>
+                    <div class="related-joke-text">Hey Brayden, you're always raidin' the fridge - guess that's...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-car-enthusiasts-because" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been car enthusiasts because they named...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">They call you Asher the Dasher 'cause you're always running ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_arianna_spelling_1757424194228_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

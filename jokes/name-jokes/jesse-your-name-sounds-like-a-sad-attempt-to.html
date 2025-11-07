@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-adrienne-when-life-gives-you-caffeine-youre" class="related-joke-card">
-                    <div class="related-joke-text">Hey Adrienne, when life gives you caffeine, you're still less wired than your name's routine.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-7" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need more le...</div>
                 </a>
-                <a href="/jokes/name-jokes/brad-is-just-bard-with-dyslexia-probably-why-your" class="related-joke-card">
-                    <div class="related-joke-text">Brad is just "bard" with dyslexia - probably why your life story is such a poorly written tale.</div>
+                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-angelica-on-forms" class="related-joke-card">
+                    <div class="related-joke-text">By the time I finish writing "Angelica" on forms, shorter-na...</div>
                 </a>
-                <a href="/jokes/name-jokes/google-autocomplete-abigail-suggests-abigail" class="related-joke-card">
-                    <div class="related-joke-text">Google autocomplete: "Abigail" suggests "Abigail Adams", who's known for telling John to "remember the ladies" while founding America. For you, it suggests "who?"</div>
+                <a href="/jokes/name-jokes/like-your-namesake-barbara-walters-youre-asking" class="related-joke-card">
+                    <div class="related-joke-text">Like your namesake Barbara Walters, you're asking the questi...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jimmy: Not to be confused with Jimmy Fallon, who's famous fo...</div>
+                </a>
+                <a href="/jokes/name-jokes/isabel-comes-from-spanish-meaning-strong-will" class="related-joke-card">
+                    <div class="related-joke-text">Isabel comes from Spanish meaning "strong will." Your ancest...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_pronunciation_humor_1761504283226_gddx44',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

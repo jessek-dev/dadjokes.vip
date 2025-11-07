@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Work & Money jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to.</p>
             <div class="related-jokes">
-                <a href="/jokes/work-money/i-used-to-work-for-a-soft-drink-can-crusher-it" class="related-joke-card">
-                    <div class="related-joke-text">I used to work for a soft drink can crusher. It was soda pressing.</div>
+                <a href="/jokes/work-money/my-boss-told-me-to-have-a-good-day-so-i-went-home" class="related-joke-card">
+                    <div class="related-joke-text">My boss told me to have a good day... so...</div>
                 </a>
-                <a href="/jokes/work-money/getting-paid-to-sleep-is-a-true-dream-job" class="related-joke-card">
-                    <div class="related-joke-text">Getting paid to sleep is a true dream job.</div>
+                <a href="/jokes/work-money/i-just-applied-for-a-job-at-the-diner" class="related-joke-card">
+                    <div class="related-joke-text">I just applied for a job at the diner…</div>
                 </a>
-                <a href="/jokes/work-money/its-been-months-since-i-bought-the-book-how-to" class="related-joke-card">
-                    <div class="related-joke-text">It's been months since I bought the book "how to scam people online". It still hasn't turned up.</div>
+                <a href="/jokes/work-money/a-man-tried-to-sell-me-a-coffin-today-i-told-him" class="related-joke-card">
+                    <div class="related-joke-text">A man tried to sell me a coffin today. I told him that's the...</div>
+                </a>
+                <a href="/jokes/work-money/just-seen-a-burglar-kicking-in-his-own-door" class="related-joke-card">
+                    <div class="related-joke-text">Just seen a burglar kicking in his own door…</div>
+                </a>
+                <a href="/jokes/work-money/i-once-worked-as-an-ice-delivery-driver" class="related-joke-card">
+                    <div class="related-joke-text">I once worked as an ice delivery driver.</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002897',
             'category': 'Work & Money'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

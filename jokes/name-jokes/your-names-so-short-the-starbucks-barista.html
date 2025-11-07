@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">"Cheyenne, your name sounds like a fancy perfume brand - too bad your personality doesn't have that luxury fragrance."</div>
+                    <div class="related-joke-text">Wilbur - the name of a famous children's book pig. Hopefully...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-feeling-lazy-with-the" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been feeling lazy with the alphabet since they only used letters from the first two spots - talk about not going the distance.</div>
+                <a href="/jokes/name-jokes/alice-your-name-has-no-repeating-letters-just" class="related-joke-card">
+                    <div class="related-joke-text">Alice, your name has no repeating letters - just like your a...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-so-lazy-its-just-an-with-a-copy" class="related-joke-card">
-                    <div class="related-joke-text">Your name is so lazy it's just "An" with a copy-paste job at the end - even a palindrome needs more creativity than that.</div>
+                <a href="/jokes/name-jokes/your-names-like-lukewarm-porridge-not-short" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like lukewarm porridge - not short enough to be ...</div>
+                </a>
+                <a href="/jokes/name-jokes/if-you-were-a-type-of-software-youd-be-and-reboot" class="related-joke-card">
+                    <div class="related-joke-text">If you were a type of software, you'd be 'And-reboot', becau...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-put-your-vowels-in-alphabetical" class="related-joke-card">
+                    <div class="related-joke-text">Your parents put your vowels in alphabetical order (A,E,I) l...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brad_length_1757364161448_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

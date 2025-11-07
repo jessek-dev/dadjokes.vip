@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/fun-fact-alison-and-alison-brie-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Alison and Alison Brie share the same name! Alison Brie is remembered for being adorable on Community and making people smile. Alison will be remembered for this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Ashley, you're like Ashley Olsen but without the being half ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Dillon, you share a name with Matt Dillon, who's known for being a marshal in Gunsmoke. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">I heard you go by Tony because "Ant" is the part that carrie...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-named-you-amy-because-aimless-was-too-obvious" class="related-joke-card">
+                    <div class="related-joke-text">They named you Amy because "Aimless" was...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name's so short on vowels, Beth - looks like someone put "breath" through a budget cut.</div>
+                    <div class="related-joke-text">Victor appears in 9 cultures: English, French, Portuguese, R...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-amelia-i-heard-youre-quite-the-dealer-in-bad" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amelia, I heard you're quite the dealer - in bad jokes a...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_andre_spelling_1757365564183_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

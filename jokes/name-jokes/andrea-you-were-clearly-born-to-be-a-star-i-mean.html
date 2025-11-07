@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Erika shares a name with Erika Jayne, famous for being expensive on Real Housewives. What are the odds? About as good as Erika becoming equally famous.</div>
+                    <div class="related-joke-text">You're like William Shakespeare, another famous William inve...</div>
                 </a>
-                <a href="/jokes/name-jokes/alex-looks-like-someone-tried-to-write-alert-but" class="related-joke-card">
-                    <div class="related-joke-text">"Alex" looks like someone tried to write "Alert" but fell asleep halfway through - at least you're consistent with those drowsy L's and E's.</div>
+                <a href="/jokes/name-jokes/remember-my-name-its-alejandro-he-said-but-when" class="related-joke-card">
+                    <div class="related-joke-text">"Remember my name, it's Alejandro" he said, but when he left...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">You went with "Billy" because you couldn't commit to the brevity of "Bob" or the grandeur of "William" - just coasting in the middle like a student aiming for a C+.</div>
+                    <div class="related-joke-text">You must get confused a lot since your name's just "a" follo...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alexis-youre-so-pretentious-like-a-lexus-with" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexis, you're so pretentious, like a Lexus with dental ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Ariana - your name has more vowels than a Wheel of Fortune b...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_andrea_wordplay_1757116178155_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

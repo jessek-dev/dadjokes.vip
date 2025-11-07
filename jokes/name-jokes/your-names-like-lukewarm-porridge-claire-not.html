@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Rylee has English (Modern) origins meaning "ancient meaning." Somehow the meaning got lost along the way.</div>
+                    <div class="related-joke-text">Kimberly comes from English meaning "strength." Somehow the ...</div>
                 </a>
-                <a href="/jokes/name-jokes/becky-the-only-name-where-the-first-half-says-be" class="related-joke-card">
-                    <div class="related-joke-text">Becky, the only name where the first half says "Be" but the second half is more "Eck, why?"</div>
+                <a href="/jokes/name-jokes/ana-comes-from-spanish-meaning-victorious-too-bad" class="related-joke-card">
+                    <div class="related-joke-text">Ana comes from Spanish meaning "victorious." Too bad that me...</div>
                 </a>
-                <a href="/jokes/name-jokes/plot-twist-amy-isnt-amy-winehouse-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Amy isn't Amy Winehouse. One is famous for saying "No, no, no" to rehab and winning Grammys. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/chloe" class="related-joke-card">
+                    <div class="related-joke-text">Chloe?..</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-angelica-youre-so-dramatic-a-every-time-you" class="related-joke-card">
+                    <div class="related-joke-text">Hey Angelica, you're so dramatic-a, every time you talk it's...</div>
+                </a>
+                <a href="/jokes/name-jokes/bridget-not-to-be-confused-with-bridget-jones" class="related-joke-card">
+                    <div class="related-joke-text">Bridget: Not to be confused with Bridget Jones, who's famous...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_claire_length_1757354460017_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

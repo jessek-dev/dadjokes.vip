@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Marvin! Following in the footsteps of Marvin Gaye, who was renowned for asking what's going on and getting it on. These are some big footsteps to trip over.</div>
+                    <div class="related-joke-text">Your parents must've paid for your name by the letter - they...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-april-more-like-stay-stable-youre-about-as" class="related-joke-card">
-                    <div class="related-joke-text">Hey April, more like "Stay Stable" - you're about as reliable as your namesake month's weather.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Kate Winslet won an Oscar. This Kate can barely win a game o...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-starts-with-a-but-with-those-double-ls" class="related-joke-card">
-                    <div class="related-joke-text">Your name starts with A but with those double L's in the middle, you're clearly settling for being average - even your letters are stuck in the middle of the alphabet.</div>
+                <a href="/jokes/name-jokes/bar-bara-sounds-like-a-tavern-thats-so-nice-they" class="related-joke-card">
+                    <div class="related-joke-text">"Bar-bara" sounds like a tavern that's so nice they named it...</div>
+                </a>
+                <a href="/jokes/name-jokes/aimee-your-name-sounds-like-aim-me-at-a-dartboard" class="related-joke-card">
+                    <div class="related-joke-text">Aimee, your name sounds like 'Aim me' at a dartboard, but I'...</div>
+                </a>
+                <a href="/jokes/name-jokes/addison-2" class="related-joke-card">
+                    <div class="related-joke-text">Addison?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cameron_length_1757354357815_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

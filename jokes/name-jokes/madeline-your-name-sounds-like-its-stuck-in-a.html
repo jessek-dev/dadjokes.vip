@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/fun-fact-dalton-and-dalton-from-road-house-share" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Dalton and Dalton from Road House share the same name! Dalton from Road House is remembered for being Patrick Swayze's bouncer character. Dalton will be remembered for this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Virginia comes from English meaning "bright fame." The name'...</div>
                 </a>
-                <a href="/jokes/name-jokes/andrea-your-name-is-like-a-binary-code" class="related-joke-card">
-                    <div class="related-joke-text">Andrea, your name is like a binary code - alternating between vowels and consonants. Are you sure you're not a secret message from the Matrix?</div>
+                <a href="/jokes/name-jokes/here-are-two-witty-roasts-about-the-name-connie" class="related-joke-card">
+                    <div class="related-joke-text">Here are two witty roasts about the name...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-say-alexandra-means-defender-of-mankind-but" class="related-joke-card">
-                    <div class="related-joke-text">They say Alexandra means "defender of mankind", but with that many vowels, I think you're really just defending your own ability to find keychains with your name on them.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-long-by-the-time-people-finish" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so long, by the time people finish saying "Alej...</div>
+                </a>
+                <a href="/jokes/name-jokes/amelia-your-name-sounds-like-a-fancy-term-for" class="related-joke-card">
+                    <div class="related-joke-text">Amelia, your name sounds like a fancy term for forgetting th...</div>
+                </a>
+                <a href="/jokes/name-jokes/alejandra-with-your-names-initial-spelling-it" class="related-joke-card">
+                    <div class="related-joke-text">Alejandra, with your name's initial spelling, it sounds like...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_madeline_wordplay_1757277800351_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

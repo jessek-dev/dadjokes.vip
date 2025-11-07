@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/brenda-brenda-on-a-bender-tried-to-use-a-blender" class="related-joke-card">
-                    <div class="related-joke-text">"Brenda, Brenda, on a bender, tried to use a blender, but instead of making dinner, you just ended up a lender!"</div>
+                <a href="/jokes/name-jokes/they-call-you-bianca-but-youre-more-like-a-drama" class="related-joke-card">
+                    <div class="related-joke-text">They call you Bianca but you're more like a drama llama in p...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-like-lukewarm-porridge-claire-not" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like lukewarm porridge, Claire - not short enough to be snappy, not long enough to be fancy, just stuck in name-length limbo.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Sara appears in 30 cultures: Hebrew, Greek, Spanish, Italian...</div>
                 </a>
-                <a href="/jokes/name-jokes/colin-your-name-sounds-like-a-mashup-of-cold-and" class="related-joke-card">
-                    <div class="related-joke-text">Colin, your name sounds like a mashup of "cold" and "linoleum" - must be tough walking around with a name that chilly and slippery.</div>
+                <a href="/jokes/name-jokes/a-l-i-c-e-looks-like-someone-started-writing" class="related-joke-card">
+                    <div class="related-joke-text">A-L-I-C-E looks like someone started writing "ALIENS" but go...</div>
+                </a>
+                <a href="/jokes/name-jokes/aiden-shares-a-name-with-aiden-pearce-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Aiden shares a name with Aiden Pearce, famous for hacking everyone's phone in Watch Dogs video game. What are the odds?..</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-angelica-youre-so-dramatic-a-when-you-walk-in" class="related-joke-card">
+                    <div class="related-joke-text">Hey Angelica, you're so dramatic-a, when you walk in the roo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_haley_famous_namesakes_v3_second_1757369698152_597',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

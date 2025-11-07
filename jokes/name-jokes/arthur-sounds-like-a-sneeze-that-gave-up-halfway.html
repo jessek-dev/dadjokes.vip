@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jonah, your name is as forgettable as your punch lines at an open mic night.</div>
+                <a href="/jokes/name-jokes/anita-isnt-a-terribly-long-name-but-why-waste" class="related-joke-card">
+                    <div class="related-joke-text">Anita isn't a terribly long name, but why waste energy on th...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Napoleon - a name that screams ambition, yet you've achieved about as much as a white crayon.</div>
+                    <div class="related-joke-text">Christian, more like Christmissed - your parents couldn't ev...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Katrina comes from Scottish meaning "warrior." That meaning must have gotten lost in translation.</div>
+                    <div class="related-joke-text">Bobby: Not to be confused with Bobby Brown, who's famous for...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I'd make a joke about your name, but I don't want to run up ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been cat-herin' for names when they cho...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_arthur_wordplay_1757354053473_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

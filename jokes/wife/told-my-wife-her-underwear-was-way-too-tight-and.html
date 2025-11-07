@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Wife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
-                <a href="/jokes/wife/my-wife-asked-why-dont-you-treat-me-like-you" class="related-joke-card">
-                    <div class="related-joke-text">My wife asked, "Why don't you treat me like you first treated me when we first started dating?" So I took her to dinner and a movie... and then dropped her off at her parents'!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I was going to propose to my girlfriend, but my dog ate the ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife said I should do lunges to stay in shape. That would be a big step forward.</div>
+                    <div class="related-joke-text">For Valentine's day, I decided to get my wife some beads for...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I lost my wife's audiobook last night... Now I'm never gonna hear the end of it!</div>
+                    <div class="related-joke-text">My wife is so negative. I remembered the car seat, the strol...</div>
+                </a>
+                <a href="/jokes/wife/my-husband-and-i-were-happy-for-20-years-and-then" class="related-joke-card">
+                    <div class="related-joke-text">My husband and I were happy for 20 years...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I told my wife to stop drawing her eyebrows so high. She loo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ001146',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

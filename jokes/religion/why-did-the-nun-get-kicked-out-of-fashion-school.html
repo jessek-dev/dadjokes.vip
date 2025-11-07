@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Religion jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted religious humor that's respectful and family-friendly. Jokes that celebrate faith with a smile.</p>
             <div class="related-jokes">
-                <a href="/jokes/religion/when-i-was-a-kid-i-used-to-pray-for-a-bicycle" class="related-joke-card">
-                    <div class="related-joke-text">When I was a kid I used to pray for a bicycle. Then as I grew older, I learned in Sunday school that's not how prayer works. So I stole a bike and then prayed for forgiveness!</div>
+                <a href="/jokes/religion/i-accidentally-drank-holy-water-with-laxatives-im" class="related-joke-card">
+                    <div class="related-joke-text">I accidentally drank holy water with laxatives. I'm about to...</div>
                 </a>
                 <a href="/jokes/religion/did-you-hear-the-joke-about-the-wandering-nun" class="related-joke-card">
-                    <div class="related-joke-text">Did you hear the joke about the wandering nun? She was a roman catholic.</div>
+                    <div class="related-joke-text">Did you hear the joke about the wandering nun?..</div>
                 </a>
-                <a href="/jokes/religion/did-you-know-that-protons-have-mass" class="related-joke-card">
-                    <div class="related-joke-text">Did you know that protons have mass? I didn't even know they were catholic.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What kind of car does a priest drive?</div>
+                </a>
+                <a href="/jokes/religion/i-only-believe-in-125-of-the-bible-i-guess-that" class="related-joke-card">
+                    <div class="related-joke-text">I only believe in 12.5% of the Bible. I guess that makes me ...</div>
+                </a>
+                <a href="/jokes/religion/i-never-knew-how-technologically-advanced-moses" class="related-joke-card">
+                    <div class="related-joke-text">I never knew how technologically advanced Moses was - he had...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002835',
             'category': 'Religion'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

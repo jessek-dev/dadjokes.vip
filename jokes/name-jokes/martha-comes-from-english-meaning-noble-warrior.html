@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-jackson-i-bet-youre-constantly" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jackson, I bet you're constantly being confused for the singer, the actor, or the US president - and none of them.</div>
+                <a href="/jokes/name-jokes/haley-your-name-sounds-like-a-mashup-between-hay" class="related-joke-card">
+                    <div class="related-joke-text">Haley, your name sounds like a mashup between "Hay" and "Whe...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-abigail-did-you-notice-your-name-is-just-a" class="related-joke-card">
-                    <div class="related-joke-text">Hey Abigail, did you notice your name is just "a big" with an "ail" tacked on - were your parents feeling under the weather when they named you?</div>
+                <a href="/jokes/name-jokes/introducing-cassandra-following-in-the-footsteps" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Cassandra! Following in the footsteps of Cassand...</div>
                 </a>
-                <a href="/jokes/name-jokes/caroline" class="related-joke-card">
-                    <div class="related-joke-text">Caroline? Like Caroline Kennedy, famous for being JFK's daughter and American royalty. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/your-parents-named-you-barry-were-they-feeling" class="related-joke-card">
+                    <div class="related-joke-text">Your parents named you Barry - were they feeling contrary, o...</div>
+                </a>
+                <a href="/jokes/name-jokes/alans-always-failin-and-wailin-guess-thats-why" class="related-joke-card">
+                    <div class="related-joke-text">Alan's always failin' and wailin' - guess that's why they ca...</div>
+                </a>
+                <a href="/jokes/name-jokes/angelica-youre-so-melodramatic-youre-like-the" class="related-joke-card">
+                    <div class="related-joke-text">Angelica, you're so melodramatic, you're like the Titanic, t...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_martha_name_meaning_1757364324600_975',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

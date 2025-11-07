@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/charlie-sheen-lived-life-in-the-fast-lane-this" class="related-joke-card">
-                    <div class="related-joke-text">Charlie Sheen lived life in the fast lane. This Charlie is lucky if he can keep up with a snail.</div>
+                <a href="/jokes/name-jokes/your-names-got-so-many-consecutive-consonants" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got so many consecutive consonants, "Anth" looks...</div>
                 </a>
-                <a href="/jokes/name-jokes/billys-so-chilly-and-hilly-dilly-even-his-pet" class="related-joke-card">
-                    <div class="related-joke-text">Billy's so chilly and hilly-dilly, even his pet fish is named Gilly and lives in Philly.</div>
+                <a href="/jokes/name-jokes/when-aria-gets-hysteria-its-like-a-cafeteria-of" class="related-joke-card">
+                    <div class="related-joke-text">When Aria gets hysteria, it's like a cafeteria of bacteria -...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-a-name-like-daisy-i-bet-you-spend-a-lot-of" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Daisy, I bet you spend a lot of time being the center of attention... like a dandelion.</div>
+                <a href="/jokes/name-jokes/your-parents-gave-you-a-name-so-long-even-your" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you a name so long, even your nickname nee...</div>
+                </a>
+                <a href="/jokes/name-jokes/clifford-not-to-be-confused-with-clifford-the-big" class="related-joke-card">
+                    <div class="related-joke-text">Clifford: Not to be confused with Clifford the Big Red Dog, ...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-her-hurricane-anne-not-because-shes" class="related-joke-card">
+                    <div class="related-joke-text">They call her Hurricane Anne - not because she's destructive...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_melody_famous_namesakes_v3_1757369200096_523',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

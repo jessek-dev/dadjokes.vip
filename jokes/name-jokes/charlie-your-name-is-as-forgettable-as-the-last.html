@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/imagine-being-named-bill-when-your-parents" class="related-joke-card">
-                    <div class="related-joke-text">Imagine being named Bill - when your parents clearly stopped typing halfway through "Billboard" and just hit save.</div>
+                <a href="/jokes/name-jokes/ariana-appears-in-2-cultures-portuguese-english" class="related-joke-card">
+                    <div class="related-joke-text">Ariana appears in 2 cultures: Portuguese, English (Modern). ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-just-one-e-away-from-being-a" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just one "e" away from being a disappointing spelling error, I mean, who spells "Alice" like that?</div>
+                <a href="/jokes/name-jokes/angel-youre-always-saying-youre-heaven-sent-but" class="related-joke-card">
+                    <div class="related-joke-text">Angel, you're always saying you're heaven-sent, but with tha...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-and-right-in-your-name-but-the-re-and-a" class="related-joke-card">
-                    <div class="related-joke-text">You've got "and" right in your name but the RE and A are having a real identity crisis about whether they belong at the start or end.</div>
+                <a href="/jokes/name-jokes/april-not-to-be-confused-with-april-ludgate-whos" class="related-joke-card">
+                    <div class="related-joke-text">April: Not to be confused with April Ludgate, who's famous f...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Dustin sounds like your parents couldn't decide between "Dus...</div>
+                </a>
+                <a href="/jokes/name-jokes/introducing-ariana-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Ariana! Following in the footsteps of Ariana Gra...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_charlie_1760908100255_7142',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

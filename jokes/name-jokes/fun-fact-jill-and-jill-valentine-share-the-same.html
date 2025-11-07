@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/meet-evelyn-named-after-evelyn-salt-who-was" class="related-joke-card">
-                    <div class="related-joke-text">Meet Evelyn! Named after Evelyn Salt, who was legendary for being Angelina Jolie's spy character who kicks ass. This Evelyn is legendary for... showing up.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jordan, inspired by Michael Jordan's legacy of being the GOA...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-18" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even make it to a fifth letter - I bet filling out forms is a breeze though!</div>
+                <a href="/jokes/name-jokes/hey-allen-youre-always-ballin-too-bad-its-just" class="related-joke-card">
+                    <div class="related-joke-text">Hey Allen, you're always ballin' - too bad it's just from fa...</div>
                 </a>
-                <a href="/jokes/name-jokes/those-double-consonants-br-make-your-name-sound" class="related-joke-card">
-                    <div class="related-joke-text">Those double consonants "Br" make your name sound like someone hit the brakes halfway through saying it - like they realized their mistake but it was too late to stop.</div>
+                <a href="/jokes/name-jokes/alexanders-so-grand-he-needs-a-commander-too-bad" class="related-joke-card">
+                    <div class="related-joke-text">Alexander's so grand, he needs a commander - too bad he's mo...</div>
+                </a>
+                <a href="/jokes/name-jokes/catherines-so-scatterin-every-time-she-speaks-her" class="related-joke-card">
+                    <div class="related-joke-text">Catherine's so scatterin', every time she speaks her thought...</div>
+                </a>
+                <a href="/jokes/name-jokes/like-your-namesake-barbara-walters-youre-asking" class="related-joke-card">
+                    <div class="related-joke-text">Like your namesake Barbara Walters, you're asking the questi...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jill_famous_namesakes_v3_second_1757369715735_723',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

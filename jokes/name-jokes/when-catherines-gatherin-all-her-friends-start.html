@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Liliana? More like "Lil-I-can't-decide-on-a-name-ana".</div>
+                    <div class="related-joke-text">Hey Jade, you share a name with Jade from Mortal Kombat, who...</div>
                 </a>
-                <a href="/jokes/name-jokes/cant-decide-if-you-want-a-long-name-or-a-short-one" class="related-joke-card">
-                    <div class="related-joke-text">Can't decide if you want a long name or a short one? Betty's just sitting there in no-man's-land like a speed bump between Ann and Elizabeth.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've paid by the letter - they really got th...</div>
                 </a>
-                <a href="/jokes/name-jokes/id-make-a-cocktail-joke-but-your-names-already" class="related-joke-card">
-                    <div class="related-joke-text">I'd make a cocktail joke, but your name's already mixed up enough with "Bay-lee" sounding like a confused mermaid's hideout.</div>
+                <a href="/jokes/name-jokes/they-say-youre-wise-like-the-goddess-athena-but" class="related-joke-card">
+                    <div class="related-joke-text">They say you're wise like the goddess Athena, but the only t...</div>
+                </a>
+                <a href="/jokes/name-jokes/you-must-be-exhausted-from-living-with-a-name-2" class="related-joke-card">
+                    <div class="related-joke-text">You must be exhausted from living with a name that takes exa...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-briana-you-share-a-name-with-briana-dejesus" class="related-joke-card">
+                    <div class="related-joke-text">Hey Briana, you share a name with Briana DeJesus, who's know...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_catherine_rhyme_1757354478257_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

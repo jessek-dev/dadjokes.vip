@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Tim - the name that's so outdated, it's a miracle your parents didn't just call you Timmy and be done with it.</div>
+                    <div class="related-joke-text">Leonardo Dicaprio starred in Titanic. You're more like the i...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Linda, I bet you spend half your time correcting people who think it's Lynda.</div>
+                <a href="/jokes/name-jokes/billy" class="related-joke-card">
+                    <div class="related-joke-text">Billy?..</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Paris - the name that's more indecisive than a politician trying to decide their stance on an issue.</div>
+                <a href="/jokes/name-jokes/your-names-like-a-cork-in-water-bob-up-bob-down" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a cork in water - Bob up, Bob down, but nev...</div>
+                </a>
+                <a href="/jokes/name-jokes/bonnie-inspired-by-bonnie-parkers-legacy-of" class="related-joke-card">
+                    <div class="related-joke-text">Bonnie, inspired by Bonnie Parker's legacy of robbing banks ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-athena-ive-seen-a-better-goddess-at-ikea-at" class="related-joke-card">
+                    <div class="related-joke-text">Hey Athena, I've seen-a better goddess at IKEA, at least the...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_hunter_famous_namesakes_v3_second_1757369703339_630',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

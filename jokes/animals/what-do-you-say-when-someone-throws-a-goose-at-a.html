@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Animals jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious animal jokes featuring dogs, cats, wildlife, and creatures of all kinds. Perfect for animal lovers and pet owners!</p>
             <div class="related-jokes">
-                <a href="/jokes/animals/how-do-you-catch-a-squirrel" class="related-joke-card">
-                    <div class="related-joke-text">How do you catch a squirrel? Climb a tree and act like a nut.</div>
+                <a href="/jokes/animals/why-do-birds-fly-south-for-the-winter" class="related-joke-card">
+                    <div class="related-joke-text">Why do birds fly south for the winter?..</div>
                 </a>
-                <a href="/jokes/animals/what-does-a-female-snake-use-for-support" class="related-joke-card">
-                    <div class="related-joke-text">What does a female snake use for support? A co-Bra!</div>
+                <a href="/jokes/animals/ive-got-two-dogs-i-named-rolex-and-timex" class="related-joke-card">
+                    <div class="related-joke-text">I've got two dogs I named Rolex and Timex.</div>
                 </a>
-                <a href="/jokes/animals/what-did-the-buffalo-say-to-his-little-boy-when" class="related-joke-card">
-                    <div class="related-joke-text">What did the Buffalo say to his little boy when he dropped him off at school? Bison.</div>
+                <a href="/jokes/animals/why-are-pigs-bad-drivers" class="related-joke-card">
+                    <div class="related-joke-text">Why are pigs bad drivers?..</div>
+                </a>
+                <a href="/jokes/animals/what-does-the-hawaiian-spider-do-in-his-free-time" class="related-joke-card">
+                    <div class="related-joke-text">What does the Hawaiian spider do in his free time?</div>
+                </a>
+                <a href="/jokes/animals/whats-the-best-smelling-insect" class="related-joke-card">
+                    <div class="related-joke-text">What's the best smelling insect?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ003106',
             'category': 'Animals'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

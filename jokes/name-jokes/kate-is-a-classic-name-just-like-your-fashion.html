@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Patricia, I bet you've spent your whole life correcting people who call you "Tricia".</div>
+                    <div class="related-joke-text">Oprah Humperdinck - the unholy union of a legendary diva and...</div>
                 </a>
-                <a href="/jokes/name-jokes/aimee-your-name-sounds-like-a-cry-for-attention-i" class="related-joke-card">
-                    <div class="related-joke-text">Aimee, your name sounds like a cry for attention! I guess that's why everyone always 'aims' to ignore you!</div>
+                <a href="/jokes/name-jokes/bailey-looks-like-someone-started-writing-bailout" class="related-joke-card">
+                    <div class="related-joke-text">"Bailey" looks like someone started writing "bailout" but ba...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-lisa-but-make" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really said "let's take 'Lisa' but make it more complicated" by adding that random 'y' and extra 's' - turning a simple name into a spellchecker's nemesis.</div>
+                <a href="/jokes/name-jokes/bonnie-looks-like-someone-started-writing-boring" class="related-joke-card">
+                    <div class="related-joke-text">"Bonnie" looks like someone started writing "boring" but got...</div>
+                </a>
+                <a href="/jokes/name-jokes/brady-just-like-tom-brady-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Brady, just like Tom Brady! Though they're famous for winnin...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-a-br-start-like-broken-fitting" class="related-joke-card">
+                    <div class="related-joke-text">Your name has a "Br" start like "broken" - fitting since you...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kate_1760907816170_3338',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

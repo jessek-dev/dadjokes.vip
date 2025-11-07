@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/by-the-time-someone-finishes-writing-your-name-on-3" class="related-joke-card">
-                    <div class="related-joke-text">By the time someone finishes writing your name on a coffee cup, your drink's already cold.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Paris - it's a shame your name doesn't come with a complimen...</div>
                 </a>
-                <a href="/jokes/name-jokes/mary-appears-in-2-cultures-english-biblical-thats" class="related-joke-card">
-                    <div class="related-joke-text">Mary appears in 2 cultures: English, Biblical. That's a lot of cultures to let down simultaneously.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-confused-about-vowel-placement-it" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so confused about vowel placement, it starts wi...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-takes-so-long-to-write-i-got-carpal" class="related-joke-card">
-                    <div class="related-joke-text">Your name takes so long to write, I got carpal tunnel filling out your birthday card - and that was just the first 'n'.</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-big-fans-of-sunshine" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been big fans of sunshine, because they...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-ava-is-like-a-palindrome-that-couldnt" class="related-joke-card">
+                    <div class="related-joke-text">Your name, Ava, is like a palindrome that couldn't quite com...</div>
+                </a>
+                <a href="/jokes/name-jokes/axel-are-you-a-wheel-part" class="related-joke-card">
+                    <div class="related-joke-text">Axel, are you a wheel part?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_michelle_cultural_origin_1757364336502_1038',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

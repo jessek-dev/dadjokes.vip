@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/breaking-cora-claims-to-be-related-to-cora-from" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Cora claims to be related to Cora from Once Upon a Time. Cora from Once Upon a Time was known for being the Queen of Hearts and Regina's mother. Cora is known for making things up.</div>
+                <a href="/jokes/name-jokes/brody-just-like-brody-jenner-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Brody, just like Brody Jenner! Though they're famous for bei...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-feeling-a-very" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been feeling a-very unoriginal when they picked your name - it's like they stopped at the first page of the baby book.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Marilyn Monroe was a Hollywood icon. This Marilyn is just an...</div>
                 </a>
-                <a href="/jokes/name-jokes/i-heard-you-go-by-aubrey-because-ordinary-was-too" class="related-joke-card">
-                    <div class="related-joke-text">I heard you go by Aubrey because "Ordinary" was too long to write on forms.</div>
+                <a href="/jokes/name-jokes/ready-or-not-here-comes-betty-though-shes-about" class="related-joke-card">
+                    <div class="related-joke-text">Ready or not, here comes Betty - though she's about as stead...</div>
+                </a>
+                <a href="/jokes/name-jokes/brandi-comes-from-english-meaning-defender-too" class="related-joke-card">
+                    <div class="related-joke-text">Brandi comes from English meaning "defender." Too bad that m...</div>
+                </a>
+                <a href="/jokes/name-jokes/ready-or-not-bettys-not-shes-more-like-a-bowl-of" class="related-joke-card">
+                    <div class="related-joke-text">"Ready or not" Betty's not, she's more like a bowl of cold s...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jonah_1760907463903_2110',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

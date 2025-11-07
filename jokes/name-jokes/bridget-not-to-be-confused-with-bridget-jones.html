@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Stefanie - a name that sounds like you're trying to fit two different names into one.</div>
+                    <div class="related-joke-text">Valentina, your name sounds like a fancy dessert, but let's ...</div>
                 </a>
-                <a href="/jokes/name-jokes/andre-appears-in-2-cultures-english-african" class="related-joke-card">
-                    <div class="related-joke-text">Andre appears in 2 cultures: English, African American. That's a lot of cultures to let down simultaneously.</div>
+                <a href="/jokes/name-jokes/your-names-like-lukewarm-porridge-not-short-5" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like lukewarm porridge - not short enough to be ...</div>
                 </a>
-                <a href="/jokes/name-jokes/angels-so-strange-l-even-their-guardian-angel" class="related-joke-card">
-                    <div class="related-joke-text">Angel's so strange-l, even their guardian angel filed for a name change-l.</div>
+                <a href="/jokes/name-jokes/hey-austin-did-you-lose-something" class="related-joke-card">
+                    <div class="related-joke-text">Hey Austin, did you lose something?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-just-big-with-an-a-tacked-on-each" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "big" with an "A" tacked on each end - you...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-ayla-did-you-fail-a-your-drivers-test-again" class="related-joke-card">
+                    <div class="related-joke-text">Hey Ayla, did you fail-a your driver's test again?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bridget_famous_namesakes_v3_second_1757369644372_213',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Xavier comes from English meaning "bright fame." That meaning must have gotten lost in translation.</div>
+                <a href="/jokes/name-jokes/hannah-the-name-that-sounds-like-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">Hannah, the name that sounds like your parents were trying t...</div>
                 </a>
-                <a href="/jokes/name-jokes/alyssa-looks-like-someone-tried-to-spell-always" class="related-joke-card">
-                    <div class="related-joke-text">Alyssa looks like someone tried to spell "Always" but got distracted by all those S's and forgot how words work.</div>
+                <a href="/jokes/name-jokes/jesus-has-theology-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Jesus has Theology origins meaning "ancient meaning." Clearl...</div>
                 </a>
-                <a href="/jokes/name-jokes/albert-youre-like-the-albert-einstein-of-being-an" class="related-joke-card">
-                    <div class="related-joke-text">Albert, you're like the Albert Einstein of being an absolute nerd. Though I doubt you're as smart or as handsome.</div>
+                <a href="/jokes/name-jokes/faith-not-to-be-confused-with-faith-hill-whos" class="related-joke-card">
+                    <div class="related-joke-text">Faith: Not to be confused with Faith Hill, who's famous for ...</div>
+                </a>
+                <a href="/jokes/name-jokes/johnny" class="related-joke-card">
+                    <div class="related-joke-text">Johnny?..</div>
+                </a>
+                <a href="/jokes/name-jokes/evelyn-comes-from-english-meaning-defender-your" class="related-joke-card">
+                    <div class="related-joke-text">Evelyn comes from English meaning "defender." Your ancestors...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kylie_wordplay_1757277091078_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

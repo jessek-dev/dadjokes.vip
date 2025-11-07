@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Athletic humor and competition jokes covering football, baseball, basketball, golf, and all your favorite sports and games.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">How do you get a good price on a sled? You have toboggan.</div>
-                </a>
-                <a href="/jokes/sports-games/frankenstein-enters-a-bodybuilding-competition" class="related-joke-card">
-                    <div class="related-joke-text">Frankenstein enters a bodybuilding competition and finds he has seriously misunderstood the objective.</div>
+                    <div class="related-joke-text">You know what the first rule of passive-aggressive club is?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I joined the gym and asked my trainer what machine I should use to get beautiful girls... He told me I should try the ATM machine outside.</div>
+                    <div class="related-joke-text">I signed up for a marathon, but how will I know if it's the ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why is a baseball stadium always cold?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I joined the gym and asked my trainer what machine I should ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why couldn't the lifeguard save the hippie?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000119',
             'category': 'Sports & Games'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

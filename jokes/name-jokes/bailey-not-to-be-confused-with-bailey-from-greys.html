@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/when-angelica-gets-hysterical-her-voice-goes-so" class="related-joke-card">
-                    <div class="related-joke-text">When Angelica gets hysterical, her voice goes so high it's almost spherical - guess that makes her less an angel and more a mathematical miracle-a.</div>
+                <a href="/jokes/name-jokes/they-call-him-san-antonio-cause-his-dance-moves" class="related-joke-card">
+                    <div class="related-joke-text">They call him San Antonio 'cause his dance moves are so phon...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Gabrielle appears in 2 cultures: French, English. Multiple cultures, zero cultural awareness.</div>
+                    <div class="related-joke-text">Ryan shares a name with Ryan Reynolds, who made history by b...</div>
                 </a>
-                <a href="/jokes/name-jokes/adam-the-only-name-thats-so-simple-it-could-be" class="related-joke-card">
-                    <div class="related-joke-text">Adam, the only name that's so simple it could be written on an abacus.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Bryan, you're like a human version of a palindrome - your na...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents went for the Goldilocks of names - not short en...</div>
+                </a>
+                <a href="/jokes/name-jokes/starting-with-add-makes-your-name-sound-like-a" class="related-joke-card">
+                    <div class="related-joke-text">Starting with "Add" makes your name sound like a mathematica...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bailey_famous_namesakes_v3_1757368938437_74',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

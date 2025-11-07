@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/meet-alejandra-named-after-alejandra-guzmn-who" class="related-joke-card">
-                    <div class="related-joke-text">Meet Alejandra! Named after Alejandra Guzmán, who was legendary for being the Queen of Mexican Rock. This Alejandra is legendary for... showing up.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Shannon, I bet you spent your whole childho...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-andre-did-you-pay" class="related-joke-card">
-                    <div class="related-joke-text">Hey Andre, did you pay? No way! You're always trying to get things for "Andre-free"!</div>
+                <a href="/jokes/name-jokes/did-you-hear-about-the-calendar-model-named-april" class="related-joke-card">
+                    <div class="related-joke-text">Did you hear about the calendar model named April?..</div>
                 </a>
-                <a href="/jokes/name-jokes/alexis-appears-in-5-cultures-french-english-greek" class="related-joke-card">
-                    <div class="related-joke-text">Alexis appears in 5 cultures: French, English, Greek, Spanish, Ancient Greek. Making each culture wonder what went wrong.</div>
+                <a href="/jokes/name-jokes/clara-appears-in-11-cultures-german-spanish" class="related-joke-card">
+                    <div class="related-joke-text">Clara appears in 11 cultures: German, Spanish, Portuguese, I...</div>
+                </a>
+                <a href="/jokes/name-jokes/oh-brian-youre-so-defiant-trying-to-act-like-a" class="related-joke-card">
+                    <div class="related-joke-text">Oh Brian, you're so defiant, trying to act like a giant, but...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-really-wanted-to-get-their-moneys-3" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really wanted to get their money's worth out of those birth certificate letter slots, huh Alexandria?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ellie_famous_namesakes_v3_second_1757369681597_489',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

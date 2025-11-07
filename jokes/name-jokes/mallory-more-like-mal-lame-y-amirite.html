@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-your-name-starting-and-ending-with-a-arianna" class="related-joke-card">
-                    <div class="related-joke-text">With your name starting and ending with 'A', Arianna, it's like you've sandwiched mediocrity between two attempts at starting something.</div>
+                <a href="/jokes/name-jokes/jon-your-name-is-so-short-and-simple-its-like" class="related-joke-card">
+                    <div class="related-joke-text">Jon, your name is so short and simple, it's like your parent...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nancy comes from English meaning "defender." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/alejandro-2" class="related-joke-card">
+                    <div class="related-joke-text">Alejandro?..</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-alison-claims-to-be-related-to-alison" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Alison claims to be related to Alison Brie. Alison Brie was known for being adorable on Community and making people smile. Alison is known for making things up.</div>
+                <a href="/jokes/name-jokes/ive-noticed-the-m-and-n-in-your-name-are-side-by" class="related-joke-card">
+                    <div class="related-joke-text">I've noticed the 'm and n' in your name are side by side, Am...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-alicia-is-derived-from-noble-but-with" class="related-joke-card">
+                    <div class="related-joke-text">They say Alicia is derived from "noble," but with those letters it's more like "A Lice?..</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alexa-id-tell-you-to-take-a-hike-but-youd" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexa, I'd tell you to take a hike, but you'd probably j...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_mallory_wordplay_1757277879666_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

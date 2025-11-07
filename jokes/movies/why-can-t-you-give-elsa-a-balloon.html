@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,15 +743,20 @@
             <h2>Here are some more Movies jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hollywood humor and cinema jokes for film buffs. References to classics, blockbusters, and everything about the movies.</p>
             <div class="related-jokes">
+                <a href="/jokes/movies/how-do-you-find-will-smith-in-the-snow" class="related-joke-card">
+                    <div class="related-joke-text">How do you find Will Smith in the snow?..</div>
+                </a>
                 <a href="/jokes/movies/whats-forrest-gumps-password" class="related-joke-card">
-                    <div class="related-joke-text">What's Forrest Gump's password? 1forrest1</div>
+                    <div class="related-joke-text">What's Forrest Gump's password?..</div>
                 </a>
-                <a href="/jokes/movies/how-did-harry-potter-get-down-the-hill" class="related-joke-card">
-                    <div class="related-joke-text">How did Harry Potter get down the hill?… Walking...
-JK, Rolling.</div>
+                <a href="/jokes/movies/i-had-to-kick-cinderella-off-the-softball-team" class="related-joke-card">
+                    <div class="related-joke-text">I had to kick Cinderella off the softball team. She just kep...</div>
                 </a>
-                <a href="/jokes/movies/why-cant-you-give-elsa-a-balloon-for-her-birthday" class="related-joke-card">
-                    <div class="related-joke-text">Why can't you give Elsa a balloon for her birthday? She'll "let it go, let it go..."</div>
+                <a href="/jokes/movies/what-did-batman-say-to-robin-before-they-got-in" class="related-joke-card">
+                    <div class="related-joke-text">What did Batman say to Robin before they got in the car?..</div>
+                </a>
+                <a href="/jokes/movies/whats-the-grinchs-least-favorite-band" class="related-joke-card">
+                    <div class="related-joke-text">Whats the Grinchs least favorite band?… ...</div>
                 </a>
             </div>
         </section>
@@ -1094,6 +1137,34 @@ JK, Rolling.</div>
             'joke_id': 'MJ003034',
             'category': 'Movies'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

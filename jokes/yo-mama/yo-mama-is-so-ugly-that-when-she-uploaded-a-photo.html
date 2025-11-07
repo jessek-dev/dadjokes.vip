@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Yo Mama jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Classic yo mama jokes that are so funny, they'll make yo mama laugh! Traditional roasts delivered with comedic timing.</p>
             <div class="related-jokes">
-                <a href="/jokes/yo-mama/yo-mama-is-so-fat-that-we-went-to-the-drive-in" class="related-joke-card">
-                    <div class="related-joke-text">Yo mama is so fat that we went to the drive-in and didn't have to pay for her because we dressed her up as a Toyota.</div>
+                <a href="/jokes/yo-mama/yo-mama-is-so-stupid-that-she-thinks-sexual" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so stupid that she thinks sexual battery is somet...</div>
                 </a>
-                <a href="/jokes/yo-mama/yo-mama-is-so-ugly-that-she-looked-out-the-window" class="related-joke-card">
-                    <div class="related-joke-text">Yo mama is so ugly that she looked out the window and got arrested for mooning.</div>
+                <a href="/jokes/yo-mama/yo-mama-is-so-fat-that-when-she-walked-in-front" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so fat that when she walked in front of the TV, I...</div>
                 </a>
-                <a href="/jokes/yo-mama/yo-mama-is-so-stupid-that-she-got-locked-in-a" class="related-joke-card">
-                    <div class="related-joke-text">Yo mama is so stupid that she got locked in a grocery store and starved!</div>
+                <a href="/jokes/yo-mama/yo-mama-is-so-old-that-she-drove-a-chariot-to" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so old that she drove a chari...</div>
+                </a>
+                <a href="/jokes/yo-mama/yo-mama-is-so-fat-that-she-stands-in-two-time" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so fat that she stands in two...</div>
+                </a>
+                <a href="/jokes/yo-mama/yo-mama-is-so-short-that-when-i-was-dissin-her" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so short that when I was dissin' her she tried to...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ001786',
             'category': 'Yo Mama'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

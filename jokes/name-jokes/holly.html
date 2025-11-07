@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Theodore appears in 1 cultures: English. That's a lot of cultures to let down simultaneously.</div>
+                    <div class="related-joke-text">Meet Wayne! Named after Bruce Wayne, who was legendary for b...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-say-ava-is-a-diva-wholl-leave-ya-but-really" class="related-joke-card">
-                    <div class="related-joke-text">They say Ava is a diva who'll leave ya, but really she's just a believer in taking fever breaks between achieva-ments!</div>
+                <a href="/jokes/name-jokes/finn-appears-in-6-cultures-irish-mythology-old" class="related-joke-card">
+                    <div class="related-joke-text">Finn appears in 6 cultures: Irish Mythology, Old Irish, Iris...</div>
                 </a>
-                <a href="/jokes/name-jokes/alexandria-comes-from-english-meaning-noble" class="related-joke-card">
-                    <div class="related-joke-text">Alexandria comes from English meaning "noble warrior." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/elena-your-name-sounds-like-a-high-end-brand-of" class="related-joke-card">
+                    <div class="related-joke-text">Elena, your name sounds like a high-end brand of pasta sauce...</div>
+                </a>
+                <a href="/jokes/name-jokes/geoffrey-your-name-sounds-like-a-fancy-english" class="related-joke-card">
+                    <div class="related-joke-text">Geoffrey, your name sounds like a fancy English butler who s...</div>
+                </a>
+                <a href="/jokes/name-jokes/eric-inspired-by-eric-cartmans-legacy-of-being" class="related-joke-card">
+                    <div class="related-joke-text">Eric, inspired by Eric Cartman's legacy of being fat and rac...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_holly_1760908551122_8934',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

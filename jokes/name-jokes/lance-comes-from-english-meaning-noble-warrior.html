@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nicolas, the name that says "I couldn't decide between Nick and Cole, so I just smooshed them together."</div>
+                    <div class="related-joke-text">Will, your name sounds like a greeting - "Will you do this?"...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-arthur-you-share-a-name-with-king-arthur-whos" class="related-joke-card">
-                    <div class="related-joke-text">Hey Arthur, you share a name with King Arthur, who's known for pulling swords from stones and leading knights. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/i-hear-you-go-by-allison-thats-a-relief-because" class="related-joke-card">
+                    <div class="related-joke-text">I hear you go by Allison - that's a relief, because "Some-of...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-the-number-of-letters-in-your-name-is" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, the number of letters in your name is just one shy of a full tic-tac-toe board.</div>
+                <a href="/jokes/name-jokes/arianna-comes-from-italian-meaning-joyful-spirit" class="related-joke-card">
+                    <div class="related-joke-text">Arianna comes from Italian meaning "joyful spirit." The name...</div>
+                </a>
+                <a href="/jokes/name-jokes/charlie-the-name-that-says-i-couldnt-decide" class="related-joke-card">
+                    <div class="related-joke-text">Charlie - the name that says "I couldn't decide between Char...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-16" class="related-joke-card">
+                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even ma...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lance_name_meaning_1757364304028_863',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

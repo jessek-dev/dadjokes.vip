@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/i-need-a-break-from-hearing-your-name-its-like-2" class="related-joke-card">
-                    <div class="related-joke-text">"I need a" break from hearing your name - it's like you're always making demands!</div>
+                <a href="/jokes/name-jokes/looks-like-your-parents-couldnt-even-commit-to" class="related-joke-card">
+                    <div class="related-joke-text">Looks like your parents couldn't even commit to Benjamin - t...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Tony, just like Tony Stark! Though they're famous for being Iron Man and a genius billionaire playboy philanthropist, and you're famous for... having the same first name.</div>
+                <a href="/jokes/name-jokes/amy-inspired-by-amy-winehouses-legacy-of-saying" class="related-joke-card">
+                    <div class="related-joke-text">Amy, inspired by Amy Winehouse's legacy of saying "No, no, n...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-so-short-the-starbucks-barista" class="related-joke-card">
-                    <div class="related-joke-text">Your name's so short, the Starbucks barista finished writing it before you finished ordering your coffee.</div>
+                <a href="/jokes/name-jokes/andres-sounds-like-the-name-of-a-suave" class="related-joke-card">
+                    <div class="related-joke-text">Andres sounds like the name of a suave international spy - w...</div>
+                </a>
+                <a href="/jokes/name-jokes/daniel-appears-in-24-cultures-english-hebrew" class="related-joke-card">
+                    <div class="related-joke-text">Daniel appears in 24 cultures: English, Hebrew, French, Germ...</div>
+                </a>
+                <a href="/jokes/name-jokes/april-your-name-is-so-simple-even-the-calendar" class="related-joke-card">
+                    <div class="related-joke-text">April, your name is so simple even the calendar got it right...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_devin_wordplay_1757270063225_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why did the computer go to bed? It needed to crash.</div>
+                    <div class="related-joke-text">How do you tell a scientist that they have bad breath?</div>
                 </a>
-                <a href="/jokes/science-tech/parallel-lines-have-so-much-in-common-its-a-shame" class="related-joke-card">
-                    <div class="related-joke-text">Parallel lines have so much in common. It’s a shame they’ll never meet.</div>
+                <a href="/jokes/science-tech/breaking-news-energizer-bunny-arrested-charged" class="related-joke-card">
+                    <div class="related-joke-text">Breaking news! Energizer Bunny arrested – charged with batte...</div>
                 </a>
-                <a href="/jokes/science-tech/new-atoms-frequently-lose-electrons-when-they" class="related-joke-card">
-                    <div class="related-joke-text">New atoms frequently lose electrons when they fail to keep an ion them.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What do you call an unpredictable camera?</div>
+                </a>
+                <a href="/jokes/science-tech/guy-told-me-today-he-did-not-know-what-cloning-is" class="related-joke-card">
+                    <div class="related-joke-text">Guy told me today he did not know what cloning is. I told hi...</div>
+                </a>
+                <a href="/jokes/science-tech/two-sql-tables-sit-at-the-bar-a-query-approaches" class="related-joke-card">
+                    <div class="related-joke-text">Two SQL tables sit at the bar. A query approaches and asks "...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000880',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

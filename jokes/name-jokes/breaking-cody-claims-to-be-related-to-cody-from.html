@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/adrian-named-after-adrian-from-rocky-legendary" class="related-joke-card">
+                    <div class="related-joke-text">Adrian - named after Adrian from Rocky, legendary for being ...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Google autocomplete: "Erica" suggests "Erica Kane", who's known for being the queen of soap opera drama. For you, it suggests "who?"</div>
+                    <div class="related-joke-text">Stella?..</div>
                 </a>
-                <a href="/jokes/name-jokes/angelica-appears-in-4-cultures-english-italian" class="related-joke-card">
-                    <div class="related-joke-text">Angelica appears in 4 cultures: English, Italian, Romanian, Carolingian Cycle. A true ambassador of mediocrity across cultures.</div>
+                <a href="/jokes/name-jokes/looks-like-your-parents-got-a-little-too-excited" class="related-joke-card">
+                    <div class="related-joke-text">Looks like your parents got a little too excited about the l...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-mustve-been-paid-by-the-letter-they-9" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must've been paid by the letter - they chose "Bethany" when "Beth" was right there for free.</div>
+                <a href="/jokes/name-jokes/your-name-is-just-air-with-an-extra-a-i-guess" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "air" with an extra "a" - I guess your par...</div>
+                </a>
+                <a href="/jokes/name-jokes/anna-comes-from-english-meaning-noble-warrior-the" class="related-joke-card">
+                    <div class="related-joke-text">Anna comes from English meaning "noble warrior." The name's ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cody_famous_namesakes_v3_second_1757369660493_332',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

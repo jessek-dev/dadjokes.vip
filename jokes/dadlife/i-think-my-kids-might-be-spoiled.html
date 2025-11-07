@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more #DadLife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
-                <a href="/jokes/dadlife/i-tell-dad-jokes-but-i-have-no-kids" class="related-joke-card">
-                    <div class="related-joke-text">I tell dad jokes but I have no kids. I’m a faux pa.</div>
+                <a href="/jokes/dadlife/ive-been-thinking-about-taking-up-meditation" class="related-joke-card">
+                    <div class="related-joke-text">I've been thinking about taking up meditation.</div>
                 </a>
-                <a href="/jokes/dadlife/dads-are-like-boomerangs-i-hope" class="related-joke-card">
-                    <div class="related-joke-text">Dads are like boomerangs.… I hope.</div>
+                <a href="/jokes/dadlife/dad-can-you-explain-to-me-what-a-solar-eclipse-is" class="related-joke-card">
+                    <div class="related-joke-text">Dad, can you explain to me what a solar eclipse is?</div>
                 </a>
                 <a href="/jokes/dadlife/man-i-really-love-my-furniture-me-and-my-recliner" class="related-joke-card">
-                    <div class="related-joke-text">Man, I really love my furniture... me and my recliner go way back.</div>
+                    <div class="related-joke-text">Man, I really love my furniture... me and my recliner go way...</div>
+                </a>
+                <a href="/jokes/dadlife/i-was-in-bed-and-said-hey-siri-why-am-i-so-bad" class="related-joke-card">
+                    <div class="related-joke-text">I was in bed and said "Hey Siri, why am I so bad with women?...</div>
+                </a>
+                <a href="/jokes/dadlife/i-have-two-unwritten-rules-1-blank-2-blank" class="related-joke-card">
+                    <div class="related-joke-text">I have two unwritten rules: 1. [blank] 2...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002907',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Marilyn the Merrier - that's what your parents must have been going for. Too bad the "Merrier" part got lost somewhere along the way.</div>
+                <a href="/jokes/name-jokes/they-call-you-bianca-but-youre-more-like-a-drama" class="related-joke-card">
+                    <div class="related-joke-text">They call you Bianca but you're more like a drama llama in p...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-nicknames-would-be" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even nicknames would be longer than t...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Duane appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                    <div class="related-joke-text">Leonardo Dicaprio starred in Titanic. You're more like the i...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Ebony isn't Ebony magazine. One is famous for being the magazine for African American culture. The other is reading this joke.</div>
+                    <div class="related-joke-text">Wikipedia: "Carly Rae Jepsen - known for calling you maybe a...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-10" class="related-joke-card">
+                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even ma...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brenda_wordplay_1757354174771_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

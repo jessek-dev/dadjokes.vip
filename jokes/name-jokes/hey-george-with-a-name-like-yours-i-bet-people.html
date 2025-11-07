@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/danny-appears-in-2-cultures-english-dutch-youre" class="related-joke-card">
-                    <div class="related-joke-text">Danny appears in 2 cultures: English, Dutch. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/your-parents-were-so-indecisive-they-started-with" class="related-joke-card">
+                    <div class="related-joke-text">Your parents were so indecisive they started with "A" and ju...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-indecisive-when-they" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been indecisive when they named you Cody Rae - maybe they should have just gone with "Can't Decide."</div>
+                <a href="/jokes/name-jokes/they-call-you-abigail-cause-when-you-try-to-dance" class="related-joke-card">
+                    <div class="related-joke-text">They call you Abigail 'cause when you try to dance, you move...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-christian-but-youre-missing-the-christ" class="related-joke-card">
-                    <div class="related-joke-text">Your name's Christian but you're missing the "Christ" part - you're just mostly ian-ing and complainin'.</div>
+                <a href="/jokes/name-jokes/your-name-is-just-rat-with-hur-thrown-in-the" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "rat" with "hur" thrown in the middle - li...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-starts-with-an-a-but-you-can-barely" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with an A but you can barely manage B-level...</div>
+                </a>
+                <a href="/jokes/name-jokes/everyone-with-a-medium-name-like-angie-lives-in" class="related-joke-card">
+                    <div class="related-joke-text">Everyone with a medium name like Angie lives in constant fea...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_george_wordplay_1757272811413_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

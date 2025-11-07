@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Bridget, just like Bridget Jones! Though they're famous for being a disaster with men but loveable anyway, and you're famous for... having the same first name.</div>
+                    <div class="related-joke-text">Fun fact: Jameson and Jameson Irish Whiskey share the same n...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Derrick, your name sounds like the result of someone trying to spell "Derek" with their mouth full of marbles.</div>
+                    <div class="related-joke-text">Here are two witty roasts about the name...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Charlie - the name that says "I couldn't decide, so I just went with the first thing that came to mind."</div>
+                <a href="/jokes/name-jokes/meet-andre-named-after-andre-the-giant-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Andre! Named after Andre the Giant, who was legendary f...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-such-basic-letter-patterns-its" class="related-joke-card">
+                    <div class="related-joke-text">Your name has such basic letter patterns, it's literally jus...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-dont-stop-believin-but-with-that-name" class="related-joke-card">
+                    <div class="related-joke-text">They say "Don't stop believin'" but with that name, all I he...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bailey_spelling_1757424183620_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/people-with-medium-names-like-dalton-must-have" class="related-joke-card">
-                    <div class="related-joke-text">People with medium names like Dalton must have the most average signature-practice sessions - three letters would be too easy, eight would be a workout, but you're just doing mandatory finger cardio.</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-been-too-lazy-to-reach" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have been too lazy to reach further into t...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Will, the name that's one letter away from "Wil," which is one letter away from "Wil-l-l-l never amount to much."</div>
+                    <div class="related-joke-text">Tracy appears in 2 cultures: English, English. Somehow you m...</div>
                 </a>
-                <a href="/jokes/name-jokes/plot-twist-donald-isnt-donald-trump-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Donald isn't Donald Trump. One is famous for having orange skin and tweeting constantly. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-been-indecisive-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have been indecisive - they started with "...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexandra-alexandra-her-lifes-more-drama-than" class="related-joke-card">
+                    <div class="related-joke-text">"Alexandra, Alexandra - her life's more drama than Cleopatra...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-abigails-got-tales-to-tell-but-with-that" class="related-joke-card">
+                    <div class="related-joke-text">They say Abigail's got tales to tell, but with that name she...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757609894119_k551fc',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

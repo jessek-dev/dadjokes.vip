@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Darius, your name sounds like a failed attempt at a royal title - more like a "Dare-ius" to be regal.</div>
+                    <div class="related-joke-text">Woody - a name that's as basic as your personality. I bet yo...</div>
+                </a>
+                <a href="/jokes/name-jokes/amelia-you-sound-less-like-a-name-and-more-like" class="related-joke-card">
+                    <div class="related-joke-text">Amelia, you sound less like a name and more like an exotic b...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-three-as-in-it-i-guess-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">Your name has three A's in it - I guess your parents really ...</div>
+                </a>
+                <a href="/jokes/name-jokes/anna-between-you-and-your-pet-iguana-i-cant-tell" class="related-joke-card">
+                    <div class="related-joke-text">Anna, between you and your pet iguana, I can't tell who's mo...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Yesenia - sounds like your parents were saying "Yes, finally a name!" after arguing for hours.</div>
-                </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Holly Hobbie, the sweet and innocent children's character - this Holly is anything but innocent, and certainly not sweet.</div>
+                    <div class="related-joke-text">Your parents must have really loved redundant N's - they gav...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_barbara_rhyme_1757424226693_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

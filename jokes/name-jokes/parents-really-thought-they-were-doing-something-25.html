@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Clayton and Clayton Kershaw share the same name! Clayton Kershaw is remembered for throwing curveballs for the Dodgers. Clayton will be remembered for this joke.</div>
+                    <div class="related-joke-text">Your parents went for the Goldilocks of names - not short en...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Isaiah claims to be related to Isaiah Thomas. Isaiah Thomas was known for being a short NBA player with a big heart. Isaiah is known for making things up.</div>
+                    <div class="related-joke-text">"Brett" is just "better" missing a letter - guess your paren...</div>
+                </a>
+                <a href="/jokes/name-jokes/amanda-your-name-is-so-medium-length-its-like-the" class="related-joke-card">
+                    <div class="related-joke-text">Amanda, your name is so medium-length, it's like the Goldilo...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Mike, the name so generic it's like the "John Doe" of the modern era.</div>
+                    <div class="related-joke-text">Kari appears in 1 cultures: Norwegian. Somehow you managed t...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-named-you-august-but-clearly-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents named you August but clearly they couldn't fore...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brandi_famous_namesakes_v3_second_1757369640841_190',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

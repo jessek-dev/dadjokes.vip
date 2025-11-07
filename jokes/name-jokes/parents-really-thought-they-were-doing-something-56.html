@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Winston Churchill led the British to victory, while you can barely lead your team to victory in Fortnite.</div>
+                <a href="/jokes/name-jokes/plot-twist-eliana-isnt-eliana-from-telenovelas" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Eliana isn't Eliana from telenovelas. One is fam...</div>
                 </a>
-                <a href="/jokes/name-jokes/barbaras-so-bland-even-her-names-a-mantra-blah" class="related-joke-card">
-                    <div class="related-joke-text">Barbara's so bland, even her name's a mantra - "Blah blah blah Barbara, blah blah Barbara-ra!"</div>
+                <a href="/jokes/name-jokes/baileys-always-acting-like-theyre-top-shelf-but" class="related-joke-card">
+                    <div class="related-joke-text">Baileys always acting like they're top-shelf, but we know th...</div>
                 </a>
-                <a href="/jokes/name-jokes/barb-ara" class="related-joke-card">
-                    <div class="related-joke-text">Barb-ara? More like Barb-horrible at picking baby names.</div>
+                <a href="/jokes/name-jokes/your-name-has-two-as-but-still-cant-get-an-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name has two A's but still can't get an A+ - they're to...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexander-appears-in-12-cultures-english-german" class="related-joke-card">
+                    <div class="related-joke-text">Alexander appears in 12 cultures: English, German, Dutch, Sw...</div>
+                </a>
+                <a href="/jokes/name-jokes/fun-fact-ashton-and-ashton-kutcher-share-the-same" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Ashton and Ashton Kutcher share the same name! Ash...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_emily_famous_namesakes_v3_second_1757369683121_500',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/your-parents-really-nailed-that-i-want-my-kids" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really nailed that "I want my kid's name to tak...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aaliyah-is-it-diarrhea-or-papaya-that-youre" class="related-joke-card">
+                    <div class="related-joke-text">"Hey Aaliyah, is it diarrhea or papaya that you're allergic to?..</div>
+                </a>
+                <a href="/jokes/name-jokes/emma-rose-your-parents-really-couldnt-decide" class="related-joke-card">
+                    <div class="related-joke-text">Emma-rose - your parents really couldn't decide between two names, huh?..</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Winston, your name is so posh, I bet you drink tea with your pinkies out and use words like "indubitably."</div>
+                    <div class="related-joke-text">With a name like Kathleen, I bet you spend half your time co...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-barry-claims-to-be-related-to-barry" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Barry claims to be related to Barry White. Barry White was known for having the deepest, sexiest voice in soul music. Barry is known for making things up.</div>
-                </a>
-                <a href="/jokes/name-jokes/by-the-time-someone-finishes-saying-alexandra-2" class="related-joke-card">
-                    <div class="related-joke-text">By the time someone finishes saying "Alexandra," their coffee's already cold and their parking meter's expired.</div>
+                <a href="/jokes/name-jokes/hey-cynthia-you-share-a-name-with-cynthia-nixon" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cynthia, you share a name with Cynthia Nixon, who's know...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kara_wordplay_1757276129935_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

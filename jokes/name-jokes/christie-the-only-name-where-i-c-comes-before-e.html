@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/ashton-your-name-is-like-a-wheres-waldo-puzzle" class="related-joke-card">
-                    <div class="related-joke-text">Ashton, your name is like a where's-waldo puzzle - finding the hidden A's and T's is half the fun of decoding you.</div>
-                </a>
-                <a href="/jokes/name-jokes/addison-appears-in-1-cultures-english-making-each" class="related-joke-card">
-                    <div class="related-joke-text">Addison appears in 1 cultures: English. Making each culture wonder what went wrong.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Natasha, with a name that fancy, I bet even your birth certificate wears a monocle.</div>
+                    <div class="related-joke-text">Hey Jocelyn, you share a name with Jocelyn Wildenstein, who'...</div>
+                </a>
+                <a href="/jokes/name-jokes/alyssa-the-barista-makes-coffee-with-a-twist-a" class="related-joke-card">
+                    <div class="related-joke-text">Alyssa, the barista, makes coffee with a twist-a, but it tas...</div>
+                </a>
+                <a href="/jokes/name-jokes/introducing-arianna-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Arianna! Following in the footsteps of Ariana Gr...</div>
+                </a>
+                <a href="/jokes/name-jokes/beckys-so-sketchy-with-directions-she-needs-three" class="related-joke-card">
+                    <div class="related-joke-text">Becky's so sketchy with directions, she needs three GPS apps...</div>
+                </a>
+                <a href="/jokes/name-jokes/arianna-if-you-were-a-fruit-youd-be-a-banana" class="related-joke-card">
+                    <div class="related-joke-text">Arianna, if you were a fruit, you'd be a banana. Because you...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_christie_spelling_1757346723475_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

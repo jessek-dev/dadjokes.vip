@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hazel-appears-in-1-cultures-english-thats-a-lot" class="related-joke-card">
-                    <div class="related-joke-text">Hazel appears in 1 cultures: English. That's a lot of cultures to let down simultaneously.</div>
+                <a href="/jokes/name-jokes/angie-even-your-name-cant-decide-if-its-a" class="related-joke-card">
+                    <div class="related-joke-text">Angie, even your name can't decide if it's a consonant or a ...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-carlos-claims-to-be-related-to-carlos" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Carlos claims to be related to Carlos Santana. Carlos Santana was known for making guitars cry with supernatural skill. Carlos is known for making things up.</div>
+                <a href="/jokes/name-jokes/bianca-appears-in-2-cultures-italian-romanian" class="related-joke-card">
+                    <div class="related-joke-text">Bianca appears in 2 cultures: Italian, Romanian. That's a lo...</div>
                 </a>
-                <a href="/jokes/name-jokes/did-you-hear-about-albert" class="related-joke-card">
-                    <div class="related-joke-text">Did you hear about Albert? When he was born, his parents didn't know whether to name him or describe him. Thus, he became "All-Blurt"!</div>
+                <a href="/jokes/name-jokes/blake-inspired-by-blake-livelys-legacy-of-being" class="related-joke-card">
+                    <div class="related-joke-text">Blake, inspired by Blake Lively's legacy of being Serena van...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-bethany-your-name-sounds-like-a-discount" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bethany, your name sounds like a discount perfume - "Bet...</div>
+                </a>
+                <a href="/jokes/name-jokes/brayden" class="related-joke-card">
+                    <div class="related-joke-text">Brayden?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757608626090_4f0ktx',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

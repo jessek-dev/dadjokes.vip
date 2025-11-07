@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/everleigh-were-your-parents-hoping-your-name" class="related-joke-card">
-                    <div class="related-joke-text">Everleigh, were your parents hoping your name would set you up for a lifetime of adventure and intrigue, or did they just really like theme park rides?</div>
+                <a href="/jokes/name-jokes/austin-comes-from-english-meaning-defender-that" class="related-joke-card">
+                    <div class="related-joke-text">Austin comes from English meaning "defender." That meaning m...</div>
                 </a>
-                <a href="/jokes/name-jokes/amy-not-to-be-confused-with-amy-winehouse-whos" class="related-joke-card">
-                    <div class="related-joke-text">Amy: Not to be confused with Amy Winehouse, who's famous for saying "No, no, no" to rehab and winning Grammys. This one's famous for being confused with them.</div>
+                <a href="/jokes/name-jokes/daisy-not-to-be-confused-with-daisy-buchanan-whos" class="related-joke-card">
+                    <div class="related-joke-text">Daisy: Not to be confused with Daisy Buchanan, who's famous ...</div>
                 </a>
-                <a href="/jokes/name-jokes/introducing-angela-following-in-the-footsteps-of" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Angela! Following in the footsteps of Angela Merkel, who was renowned for running Germany like a boss for 16 years. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/ashton" class="related-joke-card">
+                    <div class="related-joke-text">Ashton?..</div>
+                </a>
+                <a href="/jokes/name-jokes/yo-antonio-your-names-got-so-many-vowels-it-looks" class="related-joke-card">
+                    <div class="related-joke-text">Yo Antonio, your name's got so many vowels it looks like you...</div>
+                </a>
+                <a href="/jokes/name-jokes/anthonys-so-phony-he-makes-bologna-seem-authentic" class="related-joke-card">
+                    <div class="related-joke-text">Anthony's so phony, he makes bologna seem authentic and home...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_luke_name_meaning_1757364315513_925',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

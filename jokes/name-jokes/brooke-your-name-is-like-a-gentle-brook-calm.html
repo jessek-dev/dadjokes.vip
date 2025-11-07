@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/they-call-you-bradley-but-handle-life-badly" class="related-joke-card">
+                    <div class="related-joke-text">They call you Bradley but handle life badly, stumbling throu...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Daisy comes from English meaning "strength." Clearly your parents had high expectations that weren't met.</div>
+                    <div class="related-joke-text">Hey Julia, you share a name with Julia Roberts, who's known ...</div>
                 </a>
-                <a href="/jokes/name-jokes/bradley-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Bradley appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/imagine-being-named-bill-when-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">Imagine being named Bill - when your parents clearly stopped...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-amelia-i-heard-youre-quite-the-dealer-in-bad" class="related-joke-card">
-                    <div class="related-joke-text">Hey Amelia, I heard you're quite the dealer - in bad jokes and failed karaoke of "Cecilia."</div>
+                <a href="/jokes/name-jokes/youve-got-a-capital-b-followed-by-i-a-n-c-a-which" class="related-joke-card">
+                    <div class="related-joke-text">You've got a capital B followed by "i-a-n-c-a" - which is ju...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-gave-you-so-many-letters-to-work-3" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you so many letters to work with, you coul...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brooke_length_1757116254619_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

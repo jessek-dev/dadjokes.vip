@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Sherri, you share a name with Sherri and Terri, who's known for being Bart Simpson's twin classmates. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-benjamin-on-forms" class="related-joke-card">
+                    <div class="related-joke-text">By the time I finish writing "Benjamin" on forms, shorter-na...</div>
                 </a>
-                <a href="/jokes/name-jokes/not-sure-if-your-name-is-more-notable-for" class="related-joke-card">
-                    <div class="related-joke-text">Not sure if your name is more notable for starting with "Bra" or ending like someone was writing "Brandon" but ran out of letters halfway through.</div>
+                <a href="/jokes/name-jokes/id-make-a-joke-about-your-name-but-its-already-2" class="related-joke-card">
+                    <div class="related-joke-text">I'd make a joke about your name, but it's already been water...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-say-ariels-quite-the-material-girl-but-shes" class="related-joke-card">
-                    <div class="related-joke-text">They say Ariel's quite the material girl, but she's more like a cereal girl - always a bit too flaky in the morning.</div>
+                <a href="/jokes/name-jokes/derrick-comes-from-english-meaning-strength" class="related-joke-card">
+                    <div class="related-joke-text">Derrick comes from English meaning "strength." Clearly your ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-just-bell-with-an-a-tacked-on-even" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "Bell" with an "a" tacked on - even your p...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-bobby-more-like-slobby-youre-so-wobbly-you" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bobby, more like Slobby - you're so wobbly you make a ba...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_larry_cultural_origin_1757364304600_866',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

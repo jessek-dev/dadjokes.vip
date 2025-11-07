@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-names-got-so-many-consecutive-consonants" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got so many consecutive consonants, "Anth" looks like you fell asleep on the keyboard while typing.</div>
+                <a href="/jokes/name-jokes/your-names-like-a-palindrome-that-got-lazy" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a palindrome that got lazy halfway through ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Jimmy! Following in the footsteps of Jimmy Fallon, who was renowned for breaking character and hosting late night TV. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/youre-like-the-store-brand-version-of-alexandra" class="related-joke-card">
+                    <div class="related-joke-text">You're like the store-brand version of Alexandra - just enou...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-bianca-but-youre-more-like-a-sound" class="related-joke-card">
-                    <div class="related-joke-text">They call you Bianca but you're more like a sound anchor - every time you talk it's like a freight train clanker!</div>
+                <a href="/jokes/name-jokes/your-names-got-arn-in-the-middle-sounds-like-you" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got ARN in the middle - sounds like you were hal...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-just-air-with-an-extra-a-i-guess" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "air" with an extra "a" - I guess your par...</div>
+                </a>
+                <a href="/jokes/name-jokes/bruce-even-in-the-alphabet-b-is-never-without-c" class="related-joke-card">
+                    <div class="related-joke-text">Bruce, even in the alphabet, 'B' is never without 'C'. Your ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_charles_wordplay_1757268743744_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

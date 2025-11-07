@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Sean comes from Irish meaning "strong." Too bad that meaning doesn't show in your personality.</div>
+                <a href="/jokes/name-jokes/betty-starts-with-b-and-ends-in-y-because-its-bye" class="related-joke-card">
+                    <div class="related-joke-text">Betty starts with B and ends in Y because it's "Bye" with ex...</div>
                 </a>
-                <a href="/jokes/name-jokes/ayla-with-only-four-letters-in-your-name-i-bet" class="related-joke-card">
-                    <div class="related-joke-text">Ayla, with only four letters in your name, I bet you never get to experience the joy of messing up your own signature.</div>
+                <a href="/jokes/name-jokes/your-name-ava-is-like-a-palindrome-that-couldnt" class="related-joke-card">
+                    <div class="related-joke-text">Your name, Ava, is like a palindrome that couldn't quite com...</div>
                 </a>
-                <a href="/jokes/name-jokes/alexandria-3" class="related-joke-card">
-                    <div class="related-joke-text">Alexandria? More like All-ex-ain't-here-ia, since half your name sounds like it went missing.</div>
+                <a href="/jokes/name-jokes/they-call-you-colin-cause-youre-always-rollin-and" class="related-joke-card">
+                    <div class="related-joke-text">They call you Colin 'cause you're always rollin' and patroll...</div>
+                </a>
+                <a href="/jokes/name-jokes/ashton" class="related-joke-card">
+                    <div class="related-joke-text">Ashton?..</div>
+                </a>
+                <a href="/jokes/name-jokes/with-all-those-vowels-scattered-around-caitlin" class="related-joke-card">
+                    <div class="related-joke-text">With all those vowels scattered around, "Caitlin" looks like...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_gabriella_spelling_1757272696418_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

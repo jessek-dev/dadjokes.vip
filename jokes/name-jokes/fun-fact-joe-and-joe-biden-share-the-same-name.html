@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/wikipedia-bob-dylan-known-for-changing-folk-music-2" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Bob Dylan - known for changing folk music forever and mumbling lyrics." Also Wikipedia: "Dylan - disambiguation: did you mean Bob Dylan?"</div>
+                <a href="/jokes/name-jokes/hey-andres-has-anyone-ever-told-you-that-youre" class="related-joke-card">
+                    <div class="related-joke-text">Hey Andres, has anyone ever told you that you're just one "s...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-going-for" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been going for alphabetical order with "Abel" but gave up after the first four letters, leaving that lonely 'L' hanging at the end like an afterthought.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Napoleon Dynamite was an iconic character. This Napoleon is ...</div>
                 </a>
-                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-annette-on-forms" class="related-joke-card">
-                    <div class="related-joke-text">By the time I finish writing "Annette" on forms, people with names like "Ann" are already halfway home.</div>
+                <a href="/jokes/name-jokes/your-names-like-a-lukewarm-coffee-cassie-not" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like a lukewarm coffee, Cassie - not short enoug...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-you-go-by-bailey-thats-what-happens-when" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Bailey - that's what happens when your par...</div>
+                </a>
+                <a href="/jokes/name-jokes/introducing-billy-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Billy! Following in the footsteps of Billy Joel,...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_joe_famous_namesakes_v3_1757369177721_370',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife still thinks I'm sexy... Every time I walk by her, she says "What an ass!"</div>
+                    <div class="related-joke-text">My wife and I have reached the difficult decision that we do...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife asked "Why do you keep pushing all my buttons?" I said "It's impossible to find the mute button!"</div>
+                    <div class="related-joke-text">Sometimes I wake up grumpy, other times I just let her sleep...</div>
                 </a>
-                <a href="/jokes/wife/i-asked-my-wife-if-i-was-the-only-one-shes-been" class="related-joke-card">
-                    <div class="related-joke-text">I asked my wife if I was the only one she's been with.… She said, "Yes, the others were at least sevens or eights."</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I always keep a picture of my wife and kids in my wallet. Th...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">My wife and I laugh at how competitive we are, but I laugh m...</div>
+                </a>
+                <a href="/jokes/wife/i-thought-my-wife-was-joking-when-she-said-shed" class="related-joke-card">
+                    <div class="related-joke-text">I thought my wife was joking when she said she'd leave me if...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000823',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

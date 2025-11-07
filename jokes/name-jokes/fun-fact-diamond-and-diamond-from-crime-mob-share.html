@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Tom and Tom Cruise share the same name! Tom Cruise is remembered for running in every movie and doing his own stunts. Tom will be remembered for this joke.</div>
+                    <div class="related-joke-text">Emma-rose - your name sounds like a delicate flower, but you...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-letter-pattern-is-so-basic-one-vowel" class="related-joke-card">
-                    <div class="related-joke-text">Your name's letter pattern is so basic - one vowel sandwiched between four consonants like a lonely pickle in a very boring alphabet sandwich.</div>
+                <a href="/jokes/name-jokes/your-names-like-coral-without-the-authority-youre" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like coral without the authority - you're not th...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-abel-youre-not-quite-stable-more-like-a" class="related-joke-card">
-                    <div class="related-joke-text">Hey Abel, you're not quite stable - more like a wobbly kitchen table!</div>
+                <a href="/jokes/name-jokes/youre-living-proof-that-six-letters-is-the-exact" class="related-joke-card">
+                    <div class="related-joke-text">You're living proof that six letters is the exact amount nee...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-dont-stop-believin-but-with-that-name" class="related-joke-card">
+                    <div class="related-joke-text">They say "Don't stop believin'" but with that name, all I he...</div>
+                </a>
+                <a href="/jokes/name-jokes/aimee-shares-a-name-with-aimee-mann-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Aimee shares a name with Aimee Mann, famous for singing melancholy songs that make you feel feelings. What are the odds?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_diamond_famous_namesakes_v3_second_1757369673600_429',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

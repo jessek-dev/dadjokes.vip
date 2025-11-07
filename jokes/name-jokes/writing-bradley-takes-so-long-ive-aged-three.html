@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Connor, you share a name with Connor MacLeod, who's known for being immortal and yelling "There can be only one!". You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/autumn-comes-from-english-meaning-defender" class="related-joke-card">
+                    <div class="related-joke-text">Autumn comes from English meaning "defender." Somehow the me...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Martha appears in 11 cultures: English, Swedish, Norwegian, Danish, Dutch, German, Greek, etc.. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/when-life-gives-you-angelica-make-melodramatic-a" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Angelica, make melodramatic-a, 'cause ev...</div>
                 </a>
-                <a href="/jokes/name-jokes/the-letters-in-adrian-are-basically-just-drain" class="related-joke-card">
-                    <div class="related-joke-text">The letters in "Adrian" are basically just "drain" with an extra A - which explains why you're always draining the fun out of everything by being so extra.</div>
+                <a href="/jokes/name-jokes/allen-comes-from-english-meaning-noble-warrior" class="related-joke-card">
+                    <div class="related-joke-text">Allen comes from English meaning "noble warrior." The name's...</div>
+                </a>
+                <a href="/jokes/name-jokes/introducing-alisha-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Alisha! Following in the footsteps of Alisha Boe...</div>
+                </a>
+                <a href="/jokes/name-jokes/the-only-thing-more-all-over-the-place-than-your" class="related-joke-card">
+                    <div class="related-joke-text">The only thing more all over the place than your name's vowe...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bradley_length_1757354310094_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

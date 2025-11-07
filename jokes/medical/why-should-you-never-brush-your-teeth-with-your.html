@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,21 @@
             <h2>Here are some more Medical jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!</p>
             <div class="related-jokes">
-                <a href="/jokes/medical/dermatologists-are-always-in-a-hurry-they-spend" class="related-joke-card">
-                    <div class="related-joke-text">Dermatologists are always in a hurry. They spend all day making rash decisions. </div>
+                <a href="/jokes/medical/why-did-the-roofer-go-to-the-doctor" class="related-joke-card">
+                    <div class="related-joke-text">Why did the roofer go to the doctor?..</div>
                 </a>
-                <a href="/jokes/medical/what-did-the-doctor-say-to-the-gingerbread-man" class="related-joke-card">
-                    <div class="related-joke-text">What did the doctor say to the gingerbread man who broke his leg? Try icing it.</div>
+                <a href="/jokes/medical/i-never-understood-why-they-called-fake-teeth" class="related-joke-card">
+                    <div class="related-joke-text">I never understood why they called fake teeth "dentures." Mi...</div>
                 </a>
-                <a href="/jokes/medical/what-do-you-call-a-cheap-circumcision" class="related-joke-card">
-                    <div class="related-joke-text">What do you call a cheap circumcision?… A rip off.</div>
+                <a href="/jokes/medical/doctor-do-you-want-to-hear-the-good-news-or-the" class="related-joke-card">
+                    <div class="related-joke-text">Doctor: Do you want to hear the good news or the bad news?
+...</div>
+                </a>
+                <a href="/jokes/medical/why-did-the-banana-go-see-a-doctor" class="related-joke-card">
+                    <div class="related-joke-text">Why did the banana go see a doctor?… Because it wasn't peeli...</div>
+                </a>
+                <a href="/jokes/medical/i-was-shocked-when-i-was-diagnosed-as-colorblind" class="related-joke-card">
+                    <div class="related-joke-text">I was shocked when I was diagnosed as colorblind... It came ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1138,34 @@
             'joke_id': 'MJ002371',
             'category': 'Medical'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

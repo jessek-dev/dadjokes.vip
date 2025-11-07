@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/asher-appears-in-4-cultures-hebrew-english" class="related-joke-card">
-                    <div class="related-joke-text">Asher appears in 4 cultures: Hebrew, English, Biblical, Biblical Hebrew. Making each culture wonder what went wrong.</div>
+                <a href="/jokes/name-jokes/hey-ayla-every-time-you-fail-ya-you-just-wail-ya" class="related-joke-card">
+                    <div class="related-joke-text">Hey Ayla, every time you fail-ya, you just wail-ya like a sa...</div>
                 </a>
-                <a href="/jokes/name-jokes/wikipedia-eduardo-saverin-known-for-co-founding" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Eduardo Saverin - known for co-founding Facebook and getting screwed by Zuckerberg." Also Wikipedia: "Eduardo - disambiguation: did you mean Eduardo Saverin?"</div>
+                <a href="/jokes/name-jokes/fun-fact-albert-and-albert-einstein-share-the" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Albert and Albert Einstein share the same name! Al...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-iris-with-a-name-like-yours-i-bet-youre-used" class="related-joke-card">
-                    <div class="related-joke-text">Hey Iris, with a name like yours, I bet you're used to people saying, "Iris, I-RIS my case."</div>
+                <a href="/jokes/name-jokes/your-name-is-angel-but-youre-about-as-graceful-as" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Angel but you're about as graceful as a tangled...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-indecisive-it-cant-even-commit-to" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so indecisive it can't even commit to consistent...</div>
+                </a>
+                <a href="/jokes/name-jokes/while-everyone-else-finishes-writing-their-name-3" class="related-joke-card">
+                    <div class="related-joke-text">While everyone else finishes writing their name and moves on...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757609879365_qh6o01',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

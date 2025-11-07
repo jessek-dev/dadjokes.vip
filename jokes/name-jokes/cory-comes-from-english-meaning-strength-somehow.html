@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Gloria isn't Gloria Steinem. One is famous for fighting for women's rights and looking fabulous doing it. The other is reading this joke.</div>
+                    <div class="related-joke-text">Jonah - the name that sounds like you're always one step beh...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-corey-with-a-name-like-yours-its-no-wonder" class="related-joke-card">
-                    <div class="related-joke-text">Hey Corey, with a name like yours, it's no wonder you always end up as the forgotten character in group conversations.</div>
+                <a href="/jokes/name-jokes/breanna-inspired-by-breanna-stewarts-legacy-of" class="related-joke-card">
+                    <div class="related-joke-text">Breanna, inspired by Breanna Stewart's legacy of dominating ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-named-you-ashton-because-they" class="related-joke-card">
-                    <div class="related-joke-text">Your parents named you Ashton because they couldn't decide between "Ash" and "ton" - now you're just carrying around a heavy burden of both.</div>
+                <a href="/jokes/name-jokes/carolyn-not-to-be-confused-with-carolyn-bessette" class="related-joke-card">
+                    <div class="related-joke-text">Carolyn: Not to be confused with Carolyn Bessette Kennedy, w...</div>
+                </a>
+                <a href="/jokes/name-jokes/plot-twist-arthur-isnt-king-arthur-one-is-famous" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Arthur isn't King Arthur. One is famous for pull...</div>
+                </a>
+                <a href="/jokes/name-jokes/avery-just-like-avery-johnson-though-theyre" class="related-joke-card">
+                    <div class="related-joke-text">Avery, just like Avery Johnson! Though they're famous for co...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cory_name_meaning_1757364204717_341',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

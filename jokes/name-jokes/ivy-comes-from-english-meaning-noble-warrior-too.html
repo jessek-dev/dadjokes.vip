@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/alejandras-so-far-ahead-of-everyone-they-need-a" class="related-joke-card">
+                    <div class="related-joke-text">Alejandra's so far ahead of everyone, they need a GPS just t...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Leonard, the name that sounds like your parents couldn't decide between "Leo" and "Nard" and just threw their hands up in the end.</div>
+                    <div class="related-joke-text">Like your namesake Nancy Reagan, you're just saying no to dr...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-autumn-but-your-personalitys" class="related-joke-card">
-                    <div class="related-joke-text">Your name is Autumn but your personality's monotonous - like watching paint dry at the bottom of an office building in Boston.</div>
+                <a href="/jokes/name-jokes/they-call-you-bradley-but-handle-life-badly" class="related-joke-card">
+                    <div class="related-joke-text">They call you Bradley but handle life badly, stumbling throu...</div>
                 </a>
-                <a href="/jokes/name-jokes/must-be-exhausting-having-a-name-thats-too-long-2" class="related-joke-card">
-                    <div class="related-joke-text">Must be exhausting having a name that's too long for a quick nickname but too short to dramatically shorten - you're trapped in six-letter purgatory with Brandon and Martin.</div>
+                <a href="/jokes/name-jokes/adrienne-the-number-of-letters-in-your-name-is" class="related-joke-card">
+                    <div class="related-joke-text">Adrienne, the number of letters in your name is just one shy...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-someone-finishes-saying-addison-their" class="related-joke-card">
+                    <div class="related-joke-text">By the time someone finishes saying "Addison," their coffee'...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ivy_name_meaning_1757364261227_633',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

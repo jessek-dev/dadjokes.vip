@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/at-least-autumn-fits-on-standardized-test-forms" class="related-joke-card">
-                    <div class="related-joke-text">At least "Autumn" fits on standardized test forms, but it's still too long for Starbucks baristas who'll inevitably write "Atm" - making you sound like a walking cash machine.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hayley has English (Modern) origins meaning "ancient meaning...</div>
                 </a>
-                <a href="/jokes/name-jokes/you-know-your-parents-were-feeling-lazy-when-they" class="related-joke-card">
-                    <div class="related-joke-text">You know your parents were feeling lazy when they picked "Aimee" - just long enough to seem like they put in effort, but short enough to finish writing it before their coffee got cold.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you so many letters to work with, you coul...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-the-number-of-letters-in-your-name-is" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, the number of letters in your name is just one shy of a full tic-tac-toe board.</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-really-wanted-your-initials-2" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've really wanted your initials "A.L." to s...</div>
+                </a>
+                <a href="/jokes/name-jokes/anita-appears-in-14-cultures-spanish-portuguese" class="related-joke-card">
+                    <div class="related-joke-text">Anita appears in 14 cultures: Spanish, Portuguese, Croatian,...</div>
+                </a>
+                <a href="/jokes/name-jokes/aaliyah" class="related-joke-card">
+                    <div class="related-joke-text">Aaliyah?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ayla_wordplay_1757379249730_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

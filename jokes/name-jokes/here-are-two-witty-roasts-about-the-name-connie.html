@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-really-went-for-that-goldilocks-3" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really went for that Goldilocks approach with "Betty" - too lazy to write "Elizabeth" but too proper to just go with "Beth."</div>
+                <a href="/jokes/name-jokes/introducing-chelsey-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Chelsey! Following in the footsteps of Chelsey C...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-really-said-lets-make-sure-our-kid" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really said "let's make sure our kid spends their whole first-grade year learning how to spell their name" when they picked Adeline over Ava.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Will Rogers was a beloved American icon. This Will is an ico...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrian-sounds-like-a-name-straight-out-of-a" class="related-joke-card">
-                    <div class="related-joke-text">Adrian sounds like a name straight out of a Shakespeare play - to be or not to be, that is the question, Adrian!</div>
+                <a href="/jokes/name-jokes/angie-appears-in-1-cultures-english-a-true" class="related-joke-card">
+                    <div class="related-joke-text">Angie appears in 1 cultures: English. A true ambassador of m...</div>
+                </a>
+                <a href="/jokes/name-jokes/alejandro-just-like-alejandro-gonzlez-irritu" class="related-joke-card">
+                    <div class="related-joke-text">Alejandro, just like Alejandro González Iñárritu! Though the...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-allison-youre-such-a-malice-son-always-up-in" class="related-joke-card">
+                    <div class="related-joke-text">Hey Allison, you're such a malice-son, always up in everyone...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_connie_wordplay_1757269419323_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

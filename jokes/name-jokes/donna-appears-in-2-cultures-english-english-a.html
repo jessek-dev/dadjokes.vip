@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/charles-is-just-someone-rearranging-lashes-with-a" class="related-joke-card">
+                    <div class="related-joke-text">"Charles" is just someone rearranging "lashes" with a C, whi...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kate - the name of someone who thinks "Starbucks barista" is a personality trait.</div>
+                    <div class="related-joke-text">With a name like Jesse, I bet you spend your weekends listen...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-inspired-by-adrienne-barbeaus-legacy-of" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, inspired by Adrienne Barbeau's legacy of starring in horror movies and rocking the 70s. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/hey-alicia-youre-so-precioussa-like-a-knockoff" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alicia, you're so precioussa - like a knockoff Licosa tr...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-got-so-many-up-and-down-letters-bjmn" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got so many up-and-down letters (b,j,m,n) it looks like a heart monitor reading - probably from all the anxiety of being called "Ben" instead of your full name.</div>
+                <a href="/jokes/name-jokes/brittney-appears-in-1-cultures-english-modern" class="related-joke-card">
+                    <div class="related-joke-text">Brittney appears in 1 cultures: English (Modern). Multiple c...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alison-did-you-get-lost-in-the-comparison" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alison, did you get lost in the "comparison"?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_donna_cultural_origin_1757364222654_432',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

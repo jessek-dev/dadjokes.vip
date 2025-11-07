@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-eran-i-bet-you-spend-half-your" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Eran, I bet you spend half your time correcting people on the pronunciation.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Leslie, I bet you spend half your time corr...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-her-malaria-aria-not-because-shes-sick" class="related-joke-card">
-                    <div class="related-joke-text">They call her Malaria Aria - not because she's sick, but she keeps everyone scratching their heads with her off-key karaoke!</div>
+                <a href="/jokes/name-jokes/hey-amber-you-must-be-from-december-always-cold" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amber, you must be from December - always cold and never...</div>
                 </a>
-                <a href="/jokes/name-jokes/brittney-your-name-is-like-a-scrabble-jackpot" class="related-joke-card">
-                    <div class="related-joke-text">Brittney, your name is like a Scrabble jackpot - eight letters, two T's, and more vowels than a Wheel of Fortune bonus round.</div>
+                <a href="/jokes/name-jokes/clara-comes-from-german-meaning-mighty-clearly" class="related-joke-card">
+                    <div class="related-joke-text">Clara comes from German meaning "mighty." Clearly your paren...</div>
+                </a>
+                <a href="/jokes/name-jokes/anita-think-of-a-better-name-but-this-ones" class="related-joke-card">
+                    <div class="related-joke-text">Anita think of a better name, but this one's growing on me -...</div>
+                </a>
+                <a href="/jokes/name-jokes/clara-your-name-sounds-like-a-rejected-disney" class="related-joke-card">
+                    <div class="related-joke-text">Clara, your name sounds like a rejected Disney princess who ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jade_name_meaning_1757364263322_645',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

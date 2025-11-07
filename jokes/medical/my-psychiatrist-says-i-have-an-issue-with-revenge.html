@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,17 +743,20 @@
             <h2>Here are some more Medical jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Doctor jokes and medical humor that's healthy for your funny bone. Perfect for healthcare workers and patients alike!</p>
             <div class="related-jokes">
-                <a href="/jokes/medical/doctor-do-you-want-to-hear-the-good-news-or-the" class="related-joke-card">
-                    <div class="related-joke-text">Doctor: Do you want to hear the good news or the bad news?
-Patient: Good news please.
-Doctor: we're naming a disease after you.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">People say they pick their nose... I feel like I was just bo...</div>
                 </a>
-                <a href="/jokes/medical/i-was-shocked-when-i-was-diagnosed-as-colorblind" class="related-joke-card">
-                    <div class="related-joke-text">I was shocked when I was diagnosed as colorblind... It came out of the purple.</div>
+                <a href="/jokes/medical/nurse-doctor-theres-a-patient-that-says-hes" class="related-joke-card">
+                    <div class="related-joke-text">Nurse: Doctor, there's a patient that says he's invisible. D...</div>
                 </a>
-                <a href="/jokes/medical/cosmetic-surgery-used-to-be-such-a-taboo-subject" class="related-joke-card">
-                    <div class="related-joke-text">Cosmetic surgery used to be such a taboo subject.
-Now you can talk about Botox and nobody raises an eyebrow.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Want to know why nurses like red crayons?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Did you hear about the guy who drank invisible ink?</div>
+                </a>
+                <a href="/jokes/medical/dermatologists-are-always-in-a-hurry-they-spend" class="related-joke-card">
+                    <div class="related-joke-text">Dermatologists are always in a hurry. They spend all day mak...</div>
                 </a>
             </div>
         </section>
@@ -1096,6 +1137,34 @@ Now you can talk about Botox and nobody raises an eyebrow.</div>
             'joke_id': 'MJ001141',
             'category': 'Medical'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

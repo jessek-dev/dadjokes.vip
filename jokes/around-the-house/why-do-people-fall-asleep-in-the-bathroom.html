@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Around the House jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious jokes about home life, furniture, household chores, and all the funny situations that happen under your own roof.</p>
             <div class="related-jokes">
+                <a href="/jokes/around-the-house/i-saw-an-ad-in-a-shop-window-television-for-sale" class="related-joke-card">
+                    <div class="related-joke-text">I saw an ad in a shop window, "Television for sale, $1, volu...</div>
+                </a>
+                <a href="/jokes/around-the-house/i-saw-my-husband-trip-and-fall-while-carrying-a" class="related-joke-card">
+                    <div class="related-joke-text">I saw my husband trip and fall while carrying a laundry bask...</div>
+                </a>
                 <a href="/jokes/around-the-house/what-do-computers-and-air-conditioners-have-in" class="related-joke-card">
-                    <div class="related-joke-text">What do computers and air conditioners have in common? They both become useless when you open windows.</div>
+                    <div class="related-joke-text">What do computers and air conditioners have in common?..</div>
                 </a>
-                <a href="/jokes/around-the-house/what-did-one-wall-say-to-the-other-wall" class="related-joke-card">
-                    <div class="related-joke-text">What did one wall say to the other wall? I'll meet you at the corner!</div>
+                <a href="/jokes/around-the-house/what-gets-wetter-the-more-it-dries" class="related-joke-card">
+                    <div class="related-joke-text">What gets wetter the more it dries?</div>
                 </a>
-                <a href="/jokes/around-the-house/i-considered-building-the-patio-by-myself-but-i" class="related-joke-card">
-                    <div class="related-joke-text">I considered building the patio by myself. But I didn't have the stones.</div>
+                <a href="/jokes/around-the-house/you-cant-trust-a-ladder-it-will-always-let-you" class="related-joke-card">
+                    <div class="related-joke-text">You can't trust a ladder. It will always...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002836',
             'category': 'Around the House'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

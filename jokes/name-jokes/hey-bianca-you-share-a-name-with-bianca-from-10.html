@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jacqueline: Not to be confused with Jackie Kennedy, who's famous for being elegant in a pink suit during tragedy. This one's famous for being confused with them.</div>
+                    <div class="related-joke-text">Fun fact: Brielle and Brielle Biermann share the same name! ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like a palindrome that got lazy halfway through and took a nap.</div>
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
-                <a href="/jokes/name-jokes/alejandra-your-names-so-long-even-twitters-280" class="related-joke-card">
-                    <div class="related-joke-text">Alejandra, your name’s so long, even Twitter’s 280 character limit shakes in fear.</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-paid-by-the-letter-when-4" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been paid by the letter when they named...</div>
+                </a>
+                <a href="/jokes/name-jokes/wow-ann-with-a-name-thats-66-vowels-i-guess-the" class="related-joke-card">
+                    <div class="related-joke-text">Wow, Ann, with a name that's 66% vowels, I guess the consona...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-basically-just-a-flex-with-the-f" class="related-joke-card">
+                    <div class="related-joke-text">Your name is basically just a Flex with the F removed - gues...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bianca_famous_namesakes_v3_1757369136310_85',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

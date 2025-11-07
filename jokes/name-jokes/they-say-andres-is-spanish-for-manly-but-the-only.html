@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Malik appears in 5 cultures: Arabic, Arabic, Urdu, Indonesian, Malay. That's a lot of cultures to let down simultaneously.</div>
+                    <div class="related-joke-text">Preston?..</div>
                 </a>
-                <a href="/jokes/name-jokes/allen-2" class="related-joke-card">
-                    <div class="related-joke-text">Allen? More like Fall-in, 'cause that name dropped straight from the boring tree.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Bellagrace, the name that screams "My parents were trying wa...</div>
                 </a>
-                <a href="/jokes/name-jokes/when-andrea-goes-to-korea-she-needs-extra-ideas" class="related-joke-card">
-                    <div class="related-joke-text">When Andrea goes to Korea, she needs extra idea(s) to make her appear...uh...clearia? (Sorry, even rhyming couldn't save that one!)</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really nailed that "I want my kid's name to tak...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Carla, you're just a Clara who got her letters scrambled in ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Benjamin appears in 11 cultures: English, French, German, Du...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_andres_wordplay_1757338299198_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

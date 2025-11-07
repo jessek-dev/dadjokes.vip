@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Marilyn - your name sounds like a Hollywood starlet, but your life is more like a straight-to-DVD flop.</div>
+                    <div class="related-joke-text">Wallace Shawn acted in The Princess Bride. This Wallace coul...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-11" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even make it to a fifth letter - I guess they hit "Submit" halfway through "Annabelle."</div>
+                <a href="/jokes/name-jokes/google-autocomplete-alejandra-suggests-alejandra" class="related-joke-card">
+                    <div class="related-joke-text">Google autocomplete: "Alejandra" suggests "Alejandra Guzmán"...</div>
                 </a>
-                <a href="/jokes/name-jokes/benjamin-not-to-be-confused-with-benjamin" class="related-joke-card">
-                    <div class="related-joke-text">Benjamin: Not to be confused with Benjamin Franklin, who's famous for flying kites in thunderstorms like a maniac. This one's famous for being confused with them.</div>
+                <a href="/jokes/name-jokes/introducing-adam-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Adam! Following in the footsteps of Adam Sandler...</div>
+                </a>
+                <a href="/jokes/name-jokes/youve-got-just-enough-letters-to-feel-fancy-but" class="related-joke-card">
+                    <div class="related-joke-text">You've got just enough letters to feel fancy but not enough ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-trying-to-make-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even trying to make a nickname for it...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_louis_name_meaning_1757364313994_917',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

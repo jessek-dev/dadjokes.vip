@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-whats-in-a-name" class="related-joke-card">
-                    <div class="related-joke-text">They say "What's in a name?" - in your case Alice, just malice with a side of callous.</div>
+                <a href="/jokes/name-jokes/is-it-just-me-or-does-the-name-gabriel-sound-like" class="related-joke-card">
+                    <div class="related-joke-text">Is it just me, or does the name Gabriel sound like the title...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Spencer, huh? Sounds like your parents were trying to be fancy but got halfway through "Lancelot" and just said, "Eh, close enough."</div>
+                <a href="/jokes/name-jokes/alex-your-names-just-a-remix-an-off-brand-version" class="related-joke-card">
+                    <div class="related-joke-text">Alex, your name's just a remix, an off brand version of the ...</div>
                 </a>
-                <a href="/jokes/name-jokes/asher-are-you-a-fan-of-bashing-or-just-a-pro-at" class="related-joke-card">
-                    <div class="related-joke-text">Asher, are you a fan of bashing or just a pro at being a day crasher?</div>
+                <a href="/jokes/name-jokes/adrian-the-only-name-that-rhymes-with-radian" class="related-joke-card">
+                    <div class="related-joke-text">Adrian, the only name that rhymes with radian. Except your n...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-youre-adeline-but-i-bet-youre-just-a" class="related-joke-card">
+                    <div class="related-joke-text">They say you're Adeline, but I bet you're just A-decline-ing...</div>
+                </a>
+                <a href="/jokes/name-jokes/looks-like-someones-parents-were-malice-iously" class="related-joke-card">
+                    <div class="related-joke-text">Looks like someone's parents were malice-iously creative whe...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1761504281123_dems9k',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

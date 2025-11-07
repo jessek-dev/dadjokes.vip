@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/when-arnold-tries-to-warn-folks-about-anything-at" class="related-joke-card">
+                    <div class="related-joke-text">When Arnold tries to warn folks about anything at all, it ju...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Terry, your name sounds like a typo for "tired." I bet even your name is exhausted from trying to sound interesting.</div>
+                    <div class="related-joke-text">Tom and Jerry had more chemistry than you and your personali...</div>
                 </a>
-                <a href="/jokes/name-jokes/oh-allen-not-short-enough-to-be-a-nick-not-long" class="related-joke-card">
-                    <div class="related-joke-text">Oh, Allen. Not short enough to be a Nick, not long enough to be a Benjamin. Stuck right in the middle like a mediocre lasagna.</div>
+                <a href="/jokes/name-jokes/angie-appears-in-1-cultures-english-a-true" class="related-joke-card">
+                    <div class="related-joke-text">Angie appears in 1 cultures: English. A true ambassador of m...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-axel-did-you-get-those-wheels-at-auction" class="related-joke-card">
-                    <div class="related-joke-text">Hey Axel, did you get those wheels at auction? 'Cause you're looking like a discount axle!</div>
+                <a href="/jokes/name-jokes/ana-youre-like-the-alphabets-palindrome-it-doesnt" class="related-joke-card">
+                    <div class="related-joke-text">Ana, you're like the alphabet's palindrome - it doesn't matt...</div>
+                </a>
+                <a href="/jokes/name-jokes/ana" class="related-joke-card">
+                    <div class="related-joke-text">Ana?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eran_1760911637012_6338',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

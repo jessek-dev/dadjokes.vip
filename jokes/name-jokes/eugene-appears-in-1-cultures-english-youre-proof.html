@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/amanda-your-name-is-so-medium-length-its-like-the" class="related-joke-card">
-                    <div class="related-joke-text">Amanda, your name is so medium-length, it's like the Goldilocks of names - not too short, not too long, just enough to forget.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Meet Trevor! Named after Trevor Noah, who was legendary for ...</div>
                 </a>
-                <a href="/jokes/name-jokes/amelia-3" class="related-joke-card">
-                    <div class="related-joke-text">Amelia? More like A-meal-ya later, since you're always chewing people's ears off about your stories.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Felicia appears in 7 cultures: English, Italian, Spanish, Ro...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-april-showers-but-the-only-thing" class="related-joke-card">
-                    <div class="related-joke-text">They call you April showers, but the only thing you're bringing down is my faith in your brain powers.</div>
+                <a href="/jokes/name-jokes/eleanor-your-name-sounds-like-a-mashup-of" class="related-joke-card">
+                    <div class="related-joke-text">Eleanor, your name sounds like a mashup of elegance and... m...</div>
+                </a>
+                <a href="/jokes/name-jokes/people-hear-donald-and-think-of-donald-trump" class="related-joke-card">
+                    <div class="related-joke-text">People hear "Donald" and think of Donald Trump, known for ha...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Meet Julie! Named after Julie Andrews, who was legendary for...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eugene_cultural_origin_1757364236546_504',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

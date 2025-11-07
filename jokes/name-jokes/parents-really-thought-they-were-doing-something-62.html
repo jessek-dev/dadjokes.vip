@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/faith-appears-in-1-cultures-english-youre-like-a" class="related-joke-card">
-                    <div class="related-joke-text">Faith appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/your-parents-gave-you-so-many-letters-they" class="related-joke-card">
+                    <div class="related-joke-text">Your parents gave you so many letters, they could've named t...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-has-so-many-back-to-back-vowels" class="related-joke-card">
-                    <div class="related-joke-text">Your name has so many back-to-back vowels, "Adrienne" looks like a keyboard smash that accidentally made it onto a birth certificate.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-gave-you-so-many-letters-to-work-5" class="related-joke-card">
-                    <div class="related-joke-text">Your parents gave you so many letters to work with, you could probably rearrange them into three separate names - Cat, Erin, and He.</div>
+                <a href="/jokes/name-jokes/adrian-appears-in-8-cultures-english-romanian" class="related-joke-card">
+                    <div class="related-joke-text">Adrian appears in 8 cultures: English, Romanian, Polish, Ger...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-where" class="related-joke-card">
+                    <div class="related-joke-text">You're living that medium-name life where nicknames are poin...</div>
+                </a>
+                <a href="/jokes/name-jokes/wikipedia-april-ludgate-known-for-being-deadpan" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "April Ludgate - known for being deadpan sarcasti...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_faith_famous_namesakes_v3_second_1757369688756_536',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

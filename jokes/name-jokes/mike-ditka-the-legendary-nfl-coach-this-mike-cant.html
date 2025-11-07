@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-david-i-bet-your-parents-were" class="related-joke-card">
-                    <div class="related-joke-text">With a name like David, I bet your parents were hoping for a king but got a court jester instead.</div>
+                <a href="/jokes/name-jokes/breanna-your-parents-were-so-indecisive-they" class="related-joke-card">
+                    <div class="related-joke-text">Breanna, your parents were so indecisive they threw in an ex...</div>
                 </a>
-                <a href="/jokes/name-jokes/while-the-rest-of-us-are-living-in-the-nickname" class="related-joke-card">
-                    <div class="related-joke-text">While the rest of us are living in the nickname era of Sam and Max, you're out here making people burn extra calories just to call your name.</div>
+                <a href="/jokes/name-jokes/id-tell-you-to-go-by-alex-for-short-but-theres" class="related-joke-card">
+                    <div class="related-joke-text">"I'd tell you to go by Alex for short, but there's nothing s...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-like-a-cork-in-water-bob-up-bob-down" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like a cork in water - Bob up, Bob down, but never making any real waves.</div>
+                <a href="/jokes/name-jokes/they-say-alejandras-name-is-long-but-i-think-its" class="related-joke-card">
+                    <div class="related-joke-text">They say Alejandra's name is long, but I think it's just tak...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-long-they-had-to-alex-pand-it-but" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so long they had to Alex-pand it, but there's no...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexis-youre-like-a-car-model-everyone-recognizes" class="related-joke-card">
+                    <div class="related-joke-text">Alexis, you're like a car model - everyone recognizes the na...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_mike_1760907869932_5687',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/courtney-comes-from-english-meaning-defender-that" class="related-joke-card">
-                    <div class="related-joke-text">Courtney comes from English meaning "defender." That meaning must have gotten lost in translation.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kyle shares a name with Kyle Broflovski, famous for being the Jewish kid on South Park. What are the odds? About as good as Kyle becoming equally famous.</div>
+                    <div class="related-joke-text">Iftah sounds like a superhero name - explains why you spend ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-must-have-been-really-tired-after" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must have been really tired after choosing your first three letters because they gave up before reaching a full name like Bradley - guess "Brad" was the demo version.</div>
+                <a href="/jokes/name-jokes/aaliyah-appears-in-3-cultures-arabic-english-2" class="related-joke-card">
+                    <div class="related-joke-text">Aaliyah appears in 3 cultures: Arabic, English (Modern), Afr...</div>
+                </a>
+                <a href="/jokes/name-jokes/clara-your-name-sounds-like-a-rejected-disney" class="related-joke-card">
+                    <div class="related-joke-text">Clara, your name sounds like a rejected Disney princess who ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-cheyenne-did-you-get-that-name-at-walgreens" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cheyenne, did you get that name at Walgreens or Duane Re...</div>
+                </a>
+                <a href="/jokes/name-jokes/christie-appears-in-2-cultures-english-english" class="related-joke-card">
+                    <div class="related-joke-text">Christie appears in 2 cultures: English, English. That's a l...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ember_cultural_origin_1757364231702_480',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

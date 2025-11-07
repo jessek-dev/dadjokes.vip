@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Eric, you share a name with Eric Cartman, who's known for being fat and racist on South Park. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Fun fact: Anne and Anne Hathaway share the same name! Anne H...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">They say Bonnie means "pretty," but your parents must've been thinking of their tax re-BON-d when they picked it.</div>
+                    <div class="related-joke-text">Casey comes from English meaning "defender." Your ancestors ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Are you a fan of Romeo, Antonio? Or are you just the bologna in this Shakespearean sandwich scenario?</div>
+                    <div class="related-joke-text">Mandy, your name sounds like it belongs in a candy store - s...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so generic, I bet you've been mistaken for ever...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Cynthia, your name sounds like a sneeze waiting to happen - ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alyssa_wordplay_1757379172787_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

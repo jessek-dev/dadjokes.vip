@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Around the House jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious jokes about home life, furniture, household chores, and all the funny situations that happen under your own roof.</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What is the best thing to do if you find a gorilla in your bed? Sleep somewhere else.</div>
+                <a href="/jokes/around-the-house/what-do-you-call-two-guys-hanging-out-by-your" class="related-joke-card">
+                    <div class="related-joke-text">What do you call two guys hanging out by your window?..</div>
                 </a>
-                <a href="/jokes/around-the-house/what-do-you-call-a-fashionable-lawn-statue-with" class="related-joke-card">
-                    <div class="related-joke-text">What do you call a fashionable lawn statue with an excellent sense of rhythmn? A metro-gnome</div>
+                <a href="/jokes/around-the-house/what-did-the-air-conditioner-say-when-it-met-a" class="related-joke-card">
+                    <div class="related-joke-text">What did the air conditioner say when it met a celebrity?</div>
                 </a>
-                <a href="/jokes/around-the-house/i-was-just-looking-at-my-ceiling-not-sure-if-its" class="related-joke-card">
-                    <div class="related-joke-text">I was just looking at my ceiling. Not sure if it’s the best ceiling in the world, but it’s definitely up there.</div>
+                <a href="/jokes/around-the-house/how-much-did-your-chimney-cost" class="related-joke-card">
+                    <div class="related-joke-text">How much did your chimney cost?… Nothing, it was on the hous...</div>
+                </a>
+                <a href="/jokes/around-the-house/what-does-a-painter-do-when-he-gets-cold" class="related-joke-card">
+                    <div class="related-joke-text">What does a painter do when he gets cold?</div>
+                </a>
+                <a href="/jokes/around-the-house/what-did-the-roof-say-to-the-shingle" class="related-joke-card">
+                    <div class="related-joke-text">What did the roof say to the shingle?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002808',
             'category': 'Around the House'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Jenna claims to be related to Jenna Maroney. Jenna Maroney was known for being hilariously self-absorbed on 30 Rock. Jenna is known for making things up.</div>
+                <a href="/jokes/name-jokes/i-hear-brendas-been-trending-just-kidding-that" class="related-joke-card">
+                    <div class="related-joke-text">I hear Brenda's been trending - just kidding, that would req...</div>
                 </a>
-                <a href="/jokes/name-jokes/here-are-5-playful-friendly-roast-jokes-about" class="related-joke-card">
-                    <div class="related-joke-text">Here are 5 playful, friendly roast jokes about someone named Brad:</div>
+                <a href="/jokes/name-jokes/fun-fact-colton-and-colton-underwood-share-the" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Colton and Colton Underwood share the same name! C...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-albert-you-share-a-name-with-albert-einstein" class="related-joke-card">
-                    <div class="related-joke-text">Hey Albert, you share a name with Albert Einstein, who's known for having crazy hair and making E=mc². You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/ever-notice-how-your-name-has-three-es-but-zero" class="related-joke-card">
+                    <div class="related-joke-text">Ever notice how your name has three E's but zero A's, Catherine?..</div>
+                </a>
+                <a href="/jokes/name-jokes/carmen-comes-from-spanish-meaning-victorious-your" class="related-joke-card">
+                    <div class="related-joke-text">Carmen comes from Spanish meaning "victorious." Your ancesto...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-austin-youve-got-more-problems-than-boston" class="related-joke-card">
+                    <div class="related-joke-text">Hey Austin, you've got more problems than Boston - always lo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_emily_famous_namesakes_v3_1757369160521_250',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Around the House jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious jokes about home life, furniture, household chores, and all the funny situations that happen under your own roof.</p>
             <div class="related-jokes">
-                <a href="/jokes/around-the-house/how-many-south-americans-does-it-take-to-change-a" class="related-joke-card">
-                    <div class="related-joke-text">How many South Americans does it take to change a lightbulb? A Brazilian</div>
+                <a href="/jokes/around-the-house/ill-tell-you-what-often-gets-over-looked-garden" class="related-joke-card">
+                    <div class="related-joke-text">I'll tell you what often gets over looke...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why couldn't the toilet paper cross the road? Because it got stuck in a crack.</div>
+                    <div class="related-joke-text">Why couldn't the couple get married at the library?</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What did the tired toilet say to the plunger? I'm flushed.</div>
+                    <div class="related-joke-text">I visited my friend at his new house. He told me to make mys...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What does a painter do when he gets cold?</div>
+                </a>
+                <a href="/jokes/around-the-house/i-dreamt-last-night-that-my-spirit-rose-from-a" class="related-joke-card">
+                    <div class="related-joke-text">I dreamt last night that my spirit rose from a toilet bowl.....</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000143',
             'category': 'Around the House'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

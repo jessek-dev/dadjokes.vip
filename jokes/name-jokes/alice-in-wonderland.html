@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kristine has Norwegian origins meaning "ancient meaning." Your ancestors would be so disappointed.</div>
+                    <div class="related-joke-text">Paisley has English (Modern) origins meaning "ancient meanin...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name's like lukewarm porridge - too long to be snappy, too short to be fancy, just stuck in the middle being "Am...ber."</div>
+                    <div class="related-joke-text">Amanda, your name is so medium-length, it's like the Goldilo...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I need-a find Anita, but she's probably at Taqueria eating fajitas with Rita and Lupita.</div>
+                    <div class="related-joke-text">Amy, just like Amy Winehouse! Though they're famous for sayi...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Becky comes from English meaning "strength." Your ancestors ...</div>
+                </a>
+                <a href="/jokes/name-jokes/albert-youre-like-the-albert-einstein-of-being-an" class="related-joke-card">
+                    <div class="related-joke-text">Albert, you're like the Albert Einstein of being an absolute...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alice_rhyme_1757364052613_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

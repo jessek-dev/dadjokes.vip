@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Work & Money jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to.</p>
             <div class="related-jokes">
-                <a href="/jokes/work-money/i-once-worked-as-an-ice-delivery-driver" class="related-joke-card">
-                    <div class="related-joke-text">I once worked as an ice delivery driver. Coolest job I've ever had.</div>
+                <a href="/jokes/work-money/why-did-the-miner-get-fired-from-his-job" class="related-joke-card">
+                    <div class="related-joke-text">Why did the miner get fired from his job?..</div>
                 </a>
-                <a href="/jokes/work-money/of-all-the-inventions-of-the-last-100-years-the" class="related-joke-card">
-                    <div class="related-joke-text">Of all the inventions of the last 100 years, the dry erase board has got to be the most remarkable.</div>
+                <a href="/jokes/work-money/this-furniture-store-keeps-emailing-me-all-i" class="related-joke-card">
+                    <div class="related-joke-text">This furniture store keeps emailing me, all I wanted was one...</div>
                 </a>
-                <a href="/jokes/work-money/i-get-plenty-of-exercise-at-work-jumping-to" class="related-joke-card">
-                    <div class="related-joke-text">I get plenty of exercise at work: Jumping to conclusions, pushing my luck, and dodging deadlines.</div>
+                <a href="/jokes/work-money/in-my-career-as-a-lumberjack-i-cut-down-exactly" class="related-joke-card">
+                    <div class="related-joke-text">In my career as a lumberjack I cut down exactly 52,487 trees...</div>
+                </a>
+                <a href="/jokes/work-money/what-kind-of-bird-works-on-a-construction-site" class="related-joke-card">
+                    <div class="related-joke-text">What kind of bird works on a construction site?</div>
+                </a>
+                <a href="/jokes/work-money/today-i-had-the-nastiest-slowest-rudest-cashier" class="related-joke-card">
+                    <div class="related-joke-text">Today I had the nastiest, slowest, rudest cashier I've ever had…</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002844',
             'category': 'Work & Money'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-erica-you-share-a-name-with-erica-kane-whos" class="related-joke-card">
-                    <div class="related-joke-text">Hey Erica, you share a name with Erica Kane, who's known for being the queen of soap opera drama. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/jonah-the-name-that-screams-im-the-sidekick-not" class="related-joke-card">
+                    <div class="related-joke-text">Jonah - the name that screams "I'm the sidekick, not the sup...</div>
                 </a>
-                <a href="/jokes/name-jokes/brittany-appears-in-1-cultures-english-youre-like" class="related-joke-card">
-                    <div class="related-joke-text">Brittany appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/wikipedia-briana-dejesus-known-for-being-on-teen" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "Briana DeJesus - known for being on Teen Mom and...</div>
                 </a>
-                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-25" class="related-joke-card">
-                    <div class="related-joke-text">Parents really thought they were doing something naming you Brandi after Brandi Chastain. They're famous for scoring the World Cup winning goal and taking off her shirt, you're famous for disappointing expectations.</div>
+                <a href="/jokes/name-jokes/alexandria" class="related-joke-card">
+                    <div class="related-joke-text">Alexandria?..</div>
+                </a>
+                <a href="/jokes/name-jokes/alison-is-just-a-lies-on-paper-no-wonder-people" class="related-joke-card">
+                    <div class="related-joke-text">"Alison" is just "a LIES on" paper - no wonder people keep m...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-abel-youre-not-quite-stable-more-like-a" class="related-joke-card">
+                    <div class="related-joke-text">Hey Abel, you're not quite stable - more like a wobbly kitch...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lincoln_wordplay_1757277497796_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

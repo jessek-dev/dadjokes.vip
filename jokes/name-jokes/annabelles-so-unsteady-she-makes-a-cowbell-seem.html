@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Jude, you share a name with Jude Law, who's known for being handsome in period dramas. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Isabel appears in 6 cultures: Spanish, Portuguese, English, ...</div>
+                </a>
+                <a href="/jokes/name-jokes/breaking-angela-claims-to-be-related-to-angela" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Angela claims to be related to Angela Merkel. Ange...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Piper, your name sounds like a band-aid brand - because you're always trying to cover up the fact that you're a little bit of a bore.</div>
+                    <div class="related-joke-text">"Hey Aubrey, why so sob-rey?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Drew claims to be related to Drew Barrymore. Drew Barrymore was known for being adorable since she was a kid in E.T.. Drew is known for making things up.</div>
+                    <div class="related-joke-text">Betty?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Avery is just "very" with an A slapped on front - like someo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_annabelle_rhyme_1757364090950_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

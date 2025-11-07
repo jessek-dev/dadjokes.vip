@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/chelsea-comes-from-english-meaning-bright-fame" class="related-joke-card">
-                    <div class="related-joke-text">Chelsea comes from English meaning "bright fame." That meaning must have gotten lost in translation.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Kate Middleton married a prince. This Kate couldn't even get...</div>
                 </a>
-                <a href="/jokes/name-jokes/brayden-is-just-den-trying-to-bray-its-way-into" class="related-joke-card">
-                    <div class="related-joke-text">"Brayden" is just "den" trying to bray its way into becoming a name.</div>
+                <a href="/jokes/name-jokes/they-say-alexandra-means-defender-of-mankind-but" class="related-joke-card">
+                    <div class="related-joke-text">They say Alexandra means "defender of mankind", but with tha...</div>
                 </a>
-                <a href="/jokes/name-jokes/id-make-a-joke-about-brenda-but-i-dont-want-to" class="related-joke-card">
-                    <div class="related-joke-text">I'd make a joke about Brenda, but I don't want to offend her - she might go on a Brenda Bender and pretend da joke never happened.</div>
+                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-the-most-basic" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really said "Let's take the most basic consonan...</div>
+                </a>
+                <a href="/jokes/name-jokes/adrian-your-name-is-the-goldilocks-of-names-not" class="related-joke-card">
+                    <div class="related-joke-text">Adrian, your name is the Goldilocks of names, not too long, ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-so-many-back-to-back-vowels" class="related-joke-card">
+                    <div class="related-joke-text">Your name has so many back-to-back vowels, "Adrienne" looks ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_evan_famous_namesakes_v3_second_1757369686268_521',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents gave you three syllables when "Brad" was right there - guess they really wanted you to work for that attendance sheet signature.</div>
+                    <div class="related-joke-text">Catherine, with a name as long as a CVS receipt, I hope your...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Eran Creevy directed Welcome to the Punch. This Eran couldn't punch their way out of a wet paper bag.</div>
+                    <div class="related-joke-text">Introducing Sophia! Following in the footsteps of Sophia Lor...</div>
                 </a>
-                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-where-your" class="related-joke-card">
-                    <div class="related-joke-text">You're living that medium-name life, where your Starbucks barista has just enough time to mess up your name but not enough space to write it correctly.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Kerri, your name sounds like someone tried to spell "carry" ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Jesse, I bet you spend your weekends listen...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Jonathon, I bet you always have to clarify ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bill_famous_namesakes_1757365238749_9',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

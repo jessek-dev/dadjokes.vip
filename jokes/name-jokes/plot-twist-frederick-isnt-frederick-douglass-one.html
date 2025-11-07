@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Samuel, I bet you spend a lot of time correcting people who call you "Sammy" or "Samwell" - though at this point, you've probably just given up.</div>
+                <a href="/jokes/name-jokes/breaking-edwin-claims-to-be-related-to-edwin" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Edwin claims to be related to Edwin Hubble. Edwin ...</div>
                 </a>
-                <a href="/jokes/name-jokes/by-the-time-someone-finishes-writing-your-name-on-5" class="related-joke-card">
-                    <div class="related-joke-text">By the time someone finishes writing your name on a coffee cup, three Amys and two Jens have already finished their drinks.</div>
+                <a href="/jokes/name-jokes/your-name-takes-so-long-to-write-i-got-carpal" class="related-joke-card">
+                    <div class="related-joke-text">Your name takes so long to write, I got carpal tunnel fillin...</div>
                 </a>
-                <a href="/jokes/name-jokes/aidens-always-aid-in-everyone-else-but-cant-help" class="related-joke-card">
-                    <div class="related-joke-text">Aiden's always "aid-in'" everyone else, but can't help being last in alphabetical order.</div>
+                <a href="/jokes/name-jokes/your-names-so-short-people-trying-to-make-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so short, people trying to make a nickname for y...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-ad-and" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between "Ad" and "Adrianopoulos...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-amber-you-must-be-quite-the-rambler-youre" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amber, you must be quite the rambler - you're like a scr...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_frederick_famous_namesakes_v3_second_1757369690961_550',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

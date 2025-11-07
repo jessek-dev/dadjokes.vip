@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/bellagrace-the-name-that-says-i-was-born-in-a" class="related-joke-card">
-                    <div class="related-joke-text">Bellagrace - the name that says "I was born in a fairy tale, but I live in the real world, and I'm not handling it well."</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nick, the name that's so basic, it's practically the "John Smith" of the modern age.</div>
+                    <div class="related-joke-text">Samuel - named after Samuel L. Jackson, legendary for being ...</div>
                 </a>
-                <a href="/jokes/name-jokes/bruce-comes-from-scottish-meaning-noble-somehow" class="related-joke-card">
-                    <div class="related-joke-text">Bruce comes from Scottish meaning "noble." Somehow the meaning got lost along the way.</div>
+                <a href="/jokes/name-jokes/hey-calvin-you-share-a-name-with-calvin-klein" class="related-joke-card">
+                    <div class="related-joke-text">Hey Calvin, you share a name with Calvin Klein, who's known ...</div>
+                </a>
+                <a href="/jokes/name-jokes/ashton" class="related-joke-card">
+                    <div class="related-joke-text">Ashton?..</div>
+                </a>
+                <a href="/jokes/name-jokes/bella-grace-the-name-that-screams-i-want-my-child" class="related-joke-card">
+                    <div class="related-joke-text">Bella-Grace - the name that screams "I want my child to have...</div>
+                </a>
+                <a href="/jokes/name-jokes/id-say-youre-hell-a-basic-but-that-would-be" class="related-joke-card">
+                    <div class="related-joke-text">I'd say you're hell-a basic, but that would be giving your n...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_collin_wordplay_1757269201266_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

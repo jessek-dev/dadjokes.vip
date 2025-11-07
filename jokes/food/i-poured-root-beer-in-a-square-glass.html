@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/i-went-to-the-zoo-yesterday-and-saw-a-baguette-in" class="related-joke-card">
-                    <div class="related-joke-text">I went to the zoo yesterday and saw a baguette in a cage. It was bread in captivity.</div>
+                <a href="/jokes/food/what-pronouns-does-chocolate-use" class="related-joke-card">
+                    <div class="related-joke-text">What pronouns does chocolate use?</div>
                 </a>
-                <a href="/jokes/food/do-you-know-why-you-only-make-soup-with-239-beans" class="related-joke-card">
-                    <div class="related-joke-text">Do you know why you only make soup with 239 beans? Because one more would make it too farty!</div>
+                <a href="/jokes/food/have-you-ever-seen-fruit-preserves-being-made" class="related-joke-card">
+                    <div class="related-joke-text">Have you ever seen fruit preserves being made?..</div>
                 </a>
-                <a href="/jokes/food/today-a-girl-said-she-recognized-me-from" class="related-joke-card">
-                    <div class="related-joke-text">Today a girl said she recognized me from vegetarian club, but I’m sure I’ve never met herbivore.</div>
+                <a href="/jokes/food/my-friend-told-me-that-pepper-is-the-best" class="related-joke-card">
+                    <div class="related-joke-text">My friend told me that pepper is the best seasoning for a ro...</div>
+                </a>
+                <a href="/jokes/food/why-dont-eggs-tell-jokes" class="related-joke-card">
+                    <div class="related-joke-text">Why don't eggs tell jokes?..</div>
+                </a>
+                <a href="/jokes/food/why-dont-eggs-tell-each-other-jokes" class="related-joke-card">
+                    <div class="related-joke-text">Why don't eggs tell each other jokes?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002454',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

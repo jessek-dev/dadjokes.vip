@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Meet Walter! Named after Walter White, who was legendary for being the one who knocks and cooking meth. This Walter is legendary for... showing up.</div>
+                <a href="/jokes/name-jokes/alex-and-er-2" class="related-joke-card">
+                    <div class="related-joke-text">Alex-and-er?..</div>
                 </a>
-                <a href="/jokes/name-jokes/ann-youre-so-basic-you-make-the-word-bland-look" class="related-joke-card">
-                    <div class="related-joke-text">Ann, you're so basic you make the word "bland" look like it's showing off.</div>
+                <a href="/jokes/name-jokes/your-name-has-so-many-ths-that-even-mike-tyson" class="related-joke-card">
+                    <div class="related-joke-text">Your name has so many THs that even Mike Tyson would struggl...</div>
                 </a>
-                <a href="/jokes/name-jokes/amy-sounds-like-what-you-say-when-youre-aiming" class="related-joke-card">
-                    <div class="related-joke-text">"Amy" sounds like what you say when you're aiming badly - no wonder you always miss the point.</div>
+                <a href="/jokes/name-jokes/hey-aubrey-why-so-sob-rey" class="related-joke-card">
+                    <div class="related-joke-text">"Hey Aubrey, why so sob-rey?..</div>
+                </a>
+                <a href="/jokes/name-jokes/ava-is-just-three-letters-struggling-to-maintain" class="related-joke-card">
+                    <div class="related-joke-text">"Ava" is just three letters struggling to maintain social di...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-10" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need extra l...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_christina_famous_namesakes_v3_second_1757369657399_309',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

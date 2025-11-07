@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-calvin-you-share-a-name-with-calvin-klein" class="related-joke-card">
-                    <div class="related-joke-text">Hey Calvin, you share a name with Calvin Klein, who's known for making underwear that makes everyone look good. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/with-a-name-like-derrick-im-surprised-you-dont" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Derrick, I'm surprised you don't come with ...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Valerie and Valerie from V for Vendetta share the same name! Valerie from V for Vendetta is remembered for being imprisoned but never giving up hope. Valerie will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/your-names-the-toyota-camry-of-names-not-too-long" class="related-joke-card">
+                    <div class="related-joke-text">Your name's the Toyota Camry of names - not too long, not to...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Were your parents fans of Eric Clapton? Because naming you Layla seems like a subtle cry for help in having to deal with your dramatics.</div>
+                <a href="/jokes/name-jokes/your-name-is-like-a-frustrated-game-of-alphabet" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like a frustrated game of alphabet Tetris - who...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-lazy-it-couldnt-even-be-bothered-to-2" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so lazy it couldn't even be bothered to mix up t...</div>
+                </a>
+                <a href="/jokes/name-jokes/anita-just-like-anita-baker-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Anita, just like Anita Baker! Though they're famous for havi...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757609069695_k6jo8l',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/jocelyn-your-name-sounds-like-a-mix-between-jelly" class="related-joke-card">
-                    <div class="related-joke-text">Jocelyn, your name sounds like a mix between jelly and gelatin - a wobbly combination just like your decision-making skills.</div>
+                <a href="/jokes/name-jokes/plot-twist-candace-isnt-candace-cameron-one-is" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Candace isn't Candace Cameron. One is famous for...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-manages-to-use-three-vowels-but-still" class="related-joke-card">
-                    <div class="related-joke-text">Your name manages to use three vowels but still sounds clunky - it's like watching someone trip up stairs in alphabet form.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Tristan, I bet you spend more time correcti...</div>
                 </a>
-                <a href="/jokes/name-jokes/plot-twist-brad-isnt-brad-pitt-one-is-famous-for" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Brad isn't Brad Pitt. One is famous for being ridiculously good-looking and collecting Oscars. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/bentley" class="related-joke-card">
+                    <div class="related-joke-text">Bentley?..</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-axel-did-you-get-those-wheels-at-auction" class="related-joke-card">
+                    <div class="related-joke-text">Hey Axel, did you get those wheels at auction?..</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-all-that-glitters-is-not-gold-but-in" class="related-joke-card">
+                    <div class="related-joke-text">They say "all that glitters is not gold," but in Audrey's ca...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_mike_1760907875143_6342',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

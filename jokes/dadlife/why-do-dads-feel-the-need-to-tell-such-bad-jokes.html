@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more #DadLife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
-                <a href="/jokes/dadlife/i-used-to-be-addicted-to-soap-but-im-clean-now" class="related-joke-card">
-                    <div class="related-joke-text">I used to be addicted to soap, but I'm clean now.</div>
+                <a href="/jokes/dadlife/ive-been-trying-to-come-up-with-a-dad-joke-about" class="related-joke-card">
+                    <div class="related-joke-text">I've been trying to come up with a dad joke about momentum ....</div>
                 </a>
-                <a href="/jokes/dadlife/child-dad-make-me-a-sandwich-dad-poof-youre-a" class="related-joke-card">
-                    <div class="related-joke-text">Child: Dad, make me a sandwich. Dad: Poof! You're a sandwich.</div>
+                <a href="/jokes/dadlife/ive-got-this-disease-where-i-cant-stop-making" class="related-joke-card">
+                    <div class="related-joke-text">I’ve got this disease where I can’t stop making airport puns...</div>
                 </a>
-                <a href="/jokes/dadlife/dad-told-me-his-wi-fi-password-was-minnie-mickey" class="related-joke-card">
-                    <div class="related-joke-text">Dad told me his Wi-Fi password was "Minnie Mickey Donald Goofy Pluto Huey Dewey Louie and Dublin"... He said he needed eight characters and a capital.</div>
+                <a href="/jokes/dadlife/i-was-so-proud-when-i-finished-the-puzzle-in-six" class="related-joke-card">
+                    <div class="related-joke-text">I was so proud when I finished the puzzle in six months, whe...</div>
+                </a>
+                <a href="/jokes/dadlife/what-do-you-call-the-sexuality-where-youre" class="related-joke-card">
+                    <div class="related-joke-text">What do you call the sexuality where you're attracted to men and women, but they're not attracted to you?..</div>
+                </a>
+                <a href="/jokes/dadlife/most-dads-only-drink-on-days-that-start-with-t" class="related-joke-card">
+                    <div class="related-joke-text">Most dads only drink on days that start with T: Tuesday, Thu...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002177',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

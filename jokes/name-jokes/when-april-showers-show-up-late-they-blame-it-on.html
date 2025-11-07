@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-mustve-been-charged-by-the-letter-at" class="related-joke-card">
-                    <div class="related-joke-text">Your parents must've been charged by the letter at the hospital - they really got their money's worth with "Alexandra."</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Erik and Erik the Red share the same name! Erik the Red is remembered for discovering Greenland and being Viking. Erik will be remembered for this joke.</div>
+                    <div class="related-joke-text">Your parents must have been big fans of veal, because they o...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I'd tell you how average your name is, but I'm trying to Ava-id the obvious puns.</div>
+                <a href="/jokes/name-jokes/april-not-to-be-confused-with-april-ludgate-whos" class="related-joke-card">
+                    <div class="related-joke-text">April: Not to be confused with April Ludgate, who's famous f...</div>
+                </a>
+                <a href="/jokes/name-jokes/a-l-i-c-e-looks-like-someone-started-writing" class="related-joke-card">
+                    <div class="related-joke-text">A-L-I-C-E looks like someone started writing "ALIENS" but go...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-you-allen-the-pallin-but-the-only-thing" class="related-joke-card">
+                    <div class="related-joke-text">They call you Allen the pallin', but the only thing you're s...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-someone-asks-you-to-spell-alyssa-its-just" class="related-joke-card">
+                    <div class="related-joke-text">When someone asks you to spell "Alyssa," it's just long enou...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_april_wordplay_1757379186400_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

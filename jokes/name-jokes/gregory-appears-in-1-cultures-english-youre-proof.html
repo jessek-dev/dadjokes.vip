@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/alyssa" class="related-joke-card">
-                    <div class="related-joke-text">Alyssa? Like Alyssa Milano, famous for being a teen heartthrob who became an activist. You two have so much in common - you both have names.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hannah comes from English meaning "bright fame." Your ancest...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-just-drew-with-training-wheels-they" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just "drew" with training wheels - they added an A because you couldn't handle starting with a consonant cluster.</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-paid-by-the-letter-when-2" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been paid by the letter when they named...</div>
                 </a>
-                <a href="/jokes/name-jokes/bella-grace-your-name-is-so-long-your-parents" class="related-joke-card">
-                    <div class="related-joke-text">Bella-Grace, your name is so long, your parents must have had too much time on their hands.</div>
+                <a href="/jokes/name-jokes/writing-your-full-name-addison-on-forms-must-be" class="related-joke-card">
+                    <div class="related-joke-text">Writing your full name "Addison" on forms must be exhausting...</div>
+                </a>
+                <a href="/jokes/name-jokes/casey-comes-from-english-meaning-defender-your" class="related-joke-card">
+                    <div class="related-joke-text">Casey comes from English meaning "defender." Your ancestors ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-really-split-the-difference-with" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really split the difference with "Aaron" - too ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_gregory_cultural_origin_1757364250526_576',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/plot-twist-brent-isnt-brent-favre-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Brent isn't Brent Favre. One is famous for throwing footballs and retiring/unretiring constantly. The other is reading this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Meghan comes from English meaning "bright fame." Somehow the...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-allen-youre-always-ballin-too-bad-its-just-2" class="related-joke-card">
-                    <div class="related-joke-text">Hey Allen, you're always ballin' - too bad it's just from fallin' down all the time.</div>
+                <a href="/jokes/name-jokes/adam-youre-a-conundrum-they-say-youre-the-first" class="related-joke-card">
+                    <div class="related-joke-text">Adam, you're a conundrum. They say you're the first man, but...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-arianna-banana-rama-drama-always-making-life" class="related-joke-card">
-                    <div class="related-joke-text">Hey Arianna, banana-rama-drama, always making life harder than a soap opera panorama.</div>
+                <a href="/jokes/name-jokes/i-need-a-find-anita-but-shes-probably-at-taqueria" class="related-joke-card">
+                    <div class="related-joke-text">I need-a find Anita, but she's probably at Taqueria eating f...</div>
+                </a>
+                <a href="/jokes/name-jokes/brody-appears-in-1-cultures-english-somehow-you" class="related-joke-card">
+                    <div class="related-joke-text">Brody appears in 1 cultures: English. Somehow you managed to...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-basically-just-bell-with-an-ah" class="related-joke-card">
+                    <div class="related-joke-text">Your name is basically just "bell" with an "ah" tacked on, l...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cristina_famous_namesakes_v3_second_1757369664459_362',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

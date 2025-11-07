@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Krystal, with a name like that, I bet your parents were hoping for a diamond but ended up with cubic zirconia.</div>
+                    <div class="related-joke-text">With a name like Kristin, I bet you've been asked "Is that w...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-cassie-and-cassie-from-euphoria-share" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Cassie and Cassie from Euphoria share the same name! Cassie from Euphoria is remembered for being blonde, dramatic, and making bad choices. Cassie will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/meet-brandon-named-after-brandon-walsh-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Brandon! Named after Brandon Walsh, who was legendary f...</div>
                 </a>
-                <a href="/jokes/name-jokes/brooklyn-appears-in-2-cultures-english-modern" class="related-joke-card">
-                    <div class="related-joke-text">Brooklyn appears in 2 cultures: English (Modern), English (Modern). Somehow you managed to disappoint all of them.</div>
+                <a href="/jokes/name-jokes/hey-bobby-are-you-feeling-snobby" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bobby, are you feeling snobby?..</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-barry-are-you-part-canary" class="related-joke-card">
+                    <div class="related-joke-text">Hey Barry, are you part canary?..</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-you-go-by-bailey-thats-what-happens-when" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Bailey - that's what happens when your par...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_pronunciation_humor_1757608912395_z6yasc',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

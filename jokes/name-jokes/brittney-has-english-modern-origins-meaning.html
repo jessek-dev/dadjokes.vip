@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Josiah appears in 2 cultures: Biblical, English. Making each culture wonder what went wrong.</div>
+                    <div class="related-joke-text">With a name like Willow, I bet you spend a lot of time apolo...</div>
                 </a>
-                <a href="/jokes/name-jokes/meet-ana-named-after-ana-de-armas-who-was" class="related-joke-card">
-                    <div class="related-joke-text">Meet Ana! Named after Ana de Armas, who was legendary for being the hottest Bond girl and Knives Out star. This Ana is legendary for... showing up.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I heard Carly's favorite car is a Harley, which makes sense ...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-bianca-did-you-drink-too-much-fanta" class="related-joke-card">
-                    <div class="related-joke-text">Hey Bianca, did you drink too much Fanta? 'Cause you're acting like Santa after three energy drinks in Atlanta.</div>
+                <a href="/jokes/name-jokes/anne-the-only-name-that-can-mix-and-match-with" class="related-joke-card">
+                    <div class="related-joke-text">Anne, the only name that can mix and match with every plan a...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-you-bill-cause-youre-not-worth-the-full" class="related-joke-card">
+                    <div class="related-joke-text">They call you Bill 'cause you're not worth the full William ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-really-nailed-that-i-want-my-kids" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really nailed that "I want my kid's name to tak...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brittney_name_meaning_1757364179077_209',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

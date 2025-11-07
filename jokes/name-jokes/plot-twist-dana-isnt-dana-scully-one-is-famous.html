@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/some-folks-call-you-ariana-but-with-all-that" class="related-joke-card">
-                    <div class="related-joke-text">Some folks call you Ariana, but with all that spinning and twirling, I'm calling you Prima Ballerina Banana.</div>
+                <a href="/jokes/name-jokes/your-name-has-so-many-vowels-that-alexander-is" class="related-joke-card">
+                    <div class="related-joke-text">Your name has so many vowels that "Alexander" is basically j...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Madonna Louise Ciccone - that's a lot of names for someone who's only known for being a material girl.</div>
+                    <div class="related-joke-text">Meredith, is that supposed to be a name or a mouthful of alp...</div>
                 </a>
-                <a href="/jokes/name-jokes/addison" class="related-joke-card">
-                    <div class="related-joke-text">Addison? Like Addison Montgomery, famous for being the hot redhead surgeon on Grey's Anatomy. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/your-name-is-andre-but-youre-more-of-an-andr-eh" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Andre but you're more of an Andr-eh, nothing to...</div>
+                </a>
+                <a href="/jokes/name-jokes/anita-get-something-straight-your-parents-mustve" class="related-joke-card">
+                    <div class="related-joke-text">Anita get something straight - your parents must've been pre...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-bonnie-means-pretty-but-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">They say Bonnie means "pretty," but your parents must've bee...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_dana_famous_namesakes_v3_second_1757369667270_382',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

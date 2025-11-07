@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/adrienne-your-name-is-like-a-fancy-french-pastry" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, your name is like a fancy French pastry - delicate, flaky, and half the people can't pronounce it properly.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jasmin appears in 3 cultures: German, Finnish, English. That...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Oh, Lyla, your name sounds like a failed fusion between "Lily" and "Kayla" – almost like your name is as indecisive as your taste in fashion.</div>
+                    <div class="related-joke-text">Hey Anna banana, you're such a drama llama - always causing ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your parents arranged those letters like they were playing Scrabble drunk - who puts X and L together like that unless they're desperately trying to score triple points?</div>
+                    <div class="related-joke-text">Hey Andre, you share a name with Andre the Giant, who's know...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amber, they named a warning light after you - probably b...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Your parents went for the Goldilocks of names - too long for...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alyssa_wordplay_1757379152753_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

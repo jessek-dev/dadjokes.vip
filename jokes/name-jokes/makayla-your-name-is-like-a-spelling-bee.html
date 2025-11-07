@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Morgan? More like Meh-gan, because your name is as basic as a plain bagel.</div>
+                <a href="/jokes/name-jokes/chad-your-name-is-like-a-90s-sitcom-character-who" class="related-joke-card">
+                    <div class="related-joke-text">Chad, your name is like a 90s sitcom character who never qui...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-andre-but-your-dance-moves-are-so" class="related-joke-card">
-                    <div class="related-joke-text">They call you Andre but your dance moves are so cliché - you're more like "Can't-sway" on the parquet.</div>
+                <a href="/jokes/name-jokes/charlie-your-name-is-as-forgettable-as-the-last" class="related-joke-card">
+                    <div class="related-joke-text">Charlie, your name is as forgettable as the last time you di...</div>
                 </a>
-                <a href="/jokes/name-jokes/camila-appears-in-2-cultures-spanish-portuguese" class="related-joke-card">
-                    <div class="related-joke-text">Camila appears in 2 cultures: Spanish, Portuguese. You're proof that names don't determine destiny.</div>
+                <a href="/jokes/name-jokes/ann-just-like-ann-coulter-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Ann, just like Ann Coulter! Though they're famous for saying...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-charged-by-the-letter-at" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been charged by the letter at the hospi...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-brandon-youre-always-standin-and-demandin" class="related-joke-card">
+                    <div class="related-joke-text">Hey Brandon, you're always standin' and demandin' - more lik...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_makayla_wordplay_1757277848533_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

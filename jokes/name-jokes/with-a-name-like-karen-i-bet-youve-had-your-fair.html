@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/wikipedia-darren-from-bewitched-known-for-being" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Darren from Bewitched - known for being married to a witch and somehow being okay with it." Also Wikipedia: "Darren - disambiguation: did you mean Darren from Bewitched?"</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-been-arranging-letters" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have been arranging letters alphabetically...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-you-addison-cause-youre-always-adding" class="related-joke-card">
-                    <div class="related-joke-text">They call you Addison 'cause you're always adding some bad decisions - like that haircut that looks like static television!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Naomi, your name sounds like a combination of "no" and "me,"...</div>
                 </a>
-                <a href="/jokes/name-jokes/clara-appears-in-11-cultures-german-spanish" class="related-joke-card">
-                    <div class="related-joke-text">Clara appears in 11 cultures: German, Spanish, Portuguese, Italian, French, Catalan, Romanian, etc.. A true ambassador of mediocrity across cultures.</div>
+                <a href="/jokes/name-jokes/when-life-gives-you-problems-annette-you-just" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you problems, Annette, you just clean-sweep ...</div>
+                </a>
+                <a href="/jokes/name-jokes/ashton-appears-in-1-cultures-english-modern-youre" class="related-joke-card">
+                    <div class="related-joke-text">Ashton appears in 1 cultures: English (Modern). You're proof...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-arthurs-bark-is-worse-than-his-bite-but" class="related-joke-card">
+                    <div class="related-joke-text">They say Arthur's bark is worse than his bite, but his garth...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_karen_wordplay_1757276149707_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

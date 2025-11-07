@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/anna-not-to-be-confused-with-anna-wintour-whos" class="related-joke-card">
-                    <div class="related-joke-text">Anna: Not to be confused with Anna Wintour, who's famous for ruling fashion with an iron fist and killer bangs. This one's famous for being confused with them.</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kimberly shares a name with Kimberly from Power Rangers, famous for being the Pink Ranger. What are the odds? About as good as Kimberly becoming equally famous.</div>
+                    <div class="related-joke-text">Marilyn Vos Savant was a celebrated genius. This Marilyn has...</div>
                 </a>
-                <a href="/jokes/name-jokes/breaking-brady-claims-to-be-related-to-tom-brady" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Brady claims to be related to Tom Brady. Tom Brady was known for winning Super Bowls and kissing his son on the lips. Brady is known for making things up.</div>
+                <a href="/jokes/name-jokes/your-name-is-andre-but-youre-more-of-an-andr-eh" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Andre but you're more of an Andr-eh, nothing to...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-amanda-youre-like-a-panda-just-sitting-there" class="related-joke-card">
+                    <div class="related-joke-text">Hey Amanda, you're like a panda - just sitting there being a...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-you-amber-alert-cause-when-you-start" class="related-joke-card">
+                    <div class="related-joke-text">They call you Amber Alert 'cause when you start dancing, fol...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-brief-people-spend-longer-saying-4" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so brief, people spend longer saying "nice to m...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_edgar_wordplay_1757270396258_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

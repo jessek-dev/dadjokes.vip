@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,20 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hollywood humor and cinema jokes for film buffs. References to classics, blockbusters, and everything about the movies.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What did Winnie-the-Pooh say to his new love interest? ... Show me the honey.</div>
-                </a>
-                <a href="/jokes/movies/why-does-han-solo-like-gum" class="related-joke-card">
-                    <div class="related-joke-text">Why does Han Solo like gum? It's chewy!</div>
+                    <div class="related-joke-text">What do you call it when Batman skips church?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Clooney, DiCaprio, and McConaughey want to put a movie together. Clooney says "I'll direct," DiCaprio's like "I'll act," McConaughey's like "All right, all right, all right!"</div>
+                    <div class="related-joke-text">Have you seen the movie "Constipation"?..</div>
+                </a>
+                <a href="/jokes/movies/how-did-darth-vader-know-what-luke-was-getting" class="related-joke-card">
+                    <div class="related-joke-text">How did Darth Vader know what Luke was getting for Christmas?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What's Forrest Gump's password?..</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How did Harry Potter get down the hill?… Walking...
+JK, Roll...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1138,34 @@
             'joke_id': 'MJ000670',
             'category': 'Movies'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

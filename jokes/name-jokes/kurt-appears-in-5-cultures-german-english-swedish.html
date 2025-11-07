@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/amber" class="related-joke-card">
-                    <div class="related-joke-text">Amber? Like Amber Heard, famous for having the most dramatic court case on TV. You two have so much in common - you both have names.</div>
+                <a href="/jokes/name-jokes/hey-cesar-i-gotta-pleaser-youre-like-a-rusty-old" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cesar, I gotta pleaser - you're like a rusty old geezer ...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-candice-i-cant-handle-this-you-move-through" class="related-joke-card">
-                    <div class="related-joke-text">Hey Candice, I can't handle this, you move through life like a sandal miss - all flip and flop with no direction.</div>
+                <a href="/jokes/name-jokes/bethany-not-to-be-confused-with-bethany-hamilton" class="related-joke-card">
+                    <div class="related-joke-text">Bethany: Not to be confused with Bethany Hamilton, who's fam...</div>
                 </a>
-                <a href="/jokes/name-jokes/al-bert-sounds-like-what-a-medieval-doctor-would" class="related-joke-card">
-                    <div class="related-joke-text">"Al-bert" sounds like what a medieval doctor would say after burping into his elbow.</div>
+                <a href="/jokes/name-jokes/ever-notice-how-your-name-has-three-es-but-zero" class="related-joke-card">
+                    <div class="related-joke-text">Ever notice how your name has three E's but zero A's, Catherine?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-must-have-been-really-into" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have been really into palindromes because ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-ava-is-like-a-palindrome-that-couldnt" class="related-joke-card">
+                    <div class="related-joke-text">Your name, Ava, is like a palindrome that couldn't quite com...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kurt_cultural_origin_1757364302618_856',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

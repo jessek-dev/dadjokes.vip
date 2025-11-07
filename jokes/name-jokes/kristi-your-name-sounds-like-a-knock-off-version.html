@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-failing-alberts-class-is-tough-but-being" class="related-joke-card">
-                    <div class="related-joke-text">They say failing Albert's class is tough, but being named Albert must be even Einsteining.</div>
+                <a href="/jokes/name-jokes/hey-alice-with-a-name-so-malice-have-you-ever" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alice, with a name so malice, have you ever been to Dallas?..</div>
                 </a>
-                <a href="/jokes/name-jokes/bellagrace-the-name-that-screams-my-parents-were" class="related-joke-card">
-                    <div class="related-joke-text">Bellagrace, the name that screams "My parents were trying way too hard to be unique."</div>
+                <a href="/jokes/name-jokes/with-a-name-like-kiara-i-bet-you-spend-half-your" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Kiara, I bet you spend half your life corre...</div>
                 </a>
-                <a href="/jokes/name-jokes/beth-any-chance-you-could-pick-a-name-that-doesnt" class="related-joke-card">
-                    <div class="related-joke-text">Beth-any chance you could pick a name that doesn't sound like a discount furniture store?</div>
+                <a href="/jokes/name-jokes/christina" class="related-joke-card">
+                    <div class="related-joke-text">Christina?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-couldnt-commit-to-a-short-name-like-16" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't commit to a short name like "Cal" or a...</div>
+                </a>
+                <a href="/jokes/name-jokes/brendan-your-name-may-have-7-letters-but-thats-7" class="related-joke-card">
+                    <div class="related-joke-text">Brendan, your name may have 7 letters, but that's 7 more tha...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kristi_wordplay_1757276870581_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

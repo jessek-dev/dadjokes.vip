@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Courtney comes from English meaning "defender." That meaning must have gotten lost in translation.</div>
+                    <div class="related-joke-text">With a name like Chelsey, I'm surprised you're not constantl...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-got-jam-in-it-but-youre-more-like" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got "jam" in it but you're more like plain toast - even your nickname's just "Ben" there, done that.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Emery and Emery Huang share the same name! Emery H...</div>
                 </a>
-                <a href="/jokes/name-jokes/benjamin-named-after-ben-affleck-who-was-being" class="related-joke-card">
-                    <div class="related-joke-text">Benjamin - named after Ben Affleck, who was being Batman when no one asked. You inherited the name but none of the talent.</div>
+                <a href="/jokes/name-jokes/youve-got-au-as-your-initials-which-is-the" class="related-joke-card">
+                    <div class="related-joke-text">You've got AU as your initials which is the chemical symbol ...</div>
+                </a>
+                <a href="/jokes/name-jokes/bellas-the-honda-civic-of-names-not-too-short-not" class="related-joke-card">
+                    <div class="related-joke-text">Bella's the Honda Civic of names - not too short, not too lo...</div>
+                </a>
+                <a href="/jokes/name-jokes/brads-so-basic-he-makes-salad-look-rad-just" class="related-joke-card">
+                    <div class="related-joke-text">Brad's so basic he makes salad look rad - just another sad l...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brendan_name_meaning_1757364175637_191',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

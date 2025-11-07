@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/elias-has-portuguese-origins-meaning-ancient" class="related-joke-card">
-                    <div class="related-joke-text">Elias has Portuguese origins meaning "ancient meaning." Your ancestors would be so disappointed.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Mary, your name sounds like it should come with a side of ex...</div>
+                </a>
+                <a href="/jokes/name-jokes/eran-musk-the-tech-billionaire-who-specializes-in" class="related-joke-card">
+                    <div class="related-joke-text">Eran Musk - the tech billionaire who specializes in boring c...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Polly sounds like a name that got lost in translation - like your parents were trying to say "policy" but just gave up halfway.</div>
+                    <div class="related-joke-text">Your parents named you Iftah because they wanted you to stan...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-danny-and-danny-devito-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Danny and Danny DeVito share the same name! Danny DeVito is remembered for being short, funny, and the Trash Man. Danny will be remembered for this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Gianna, your name sounds like a fancy Italian coffee drink -...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Gina, you share a name with Gina Linetti, who's known fo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_frederick_famous_namesakes_v3_second_1757369690835_549',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

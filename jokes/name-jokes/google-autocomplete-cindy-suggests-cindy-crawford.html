@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/your-parents-mustve-paid-for-your-name-by-the-3" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've paid for your name by the letter - they...</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Vanessa, is that a first name or a bad attempt at a double-barreled surname?</div>
+                    <div class="related-joke-text">Wikipedia: "Colleen Ballinger - known for being Miranda Sing...</div>
                 </a>
-                <a href="/jokes/name-jokes/meet-alyssa-named-after-alyssa-milano-who-was" class="related-joke-card">
-                    <div class="related-joke-text">Meet Alyssa! Named after Alyssa Milano, who was legendary for being a teen heartthrob who became an activist. This Alyssa is legendary for... showing up.</div>
+                <a href="/jokes/name-jokes/hey-alisha-when-it-comes-to-pizza-youre-quite-the" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alisha, when it comes to pizza, you're quite the piece-a...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-the-first" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really said "Let's take the first letter of the alphabet and just add random filler" - at least they got the easy part right.</div>
+                <a href="/jokes/name-jokes/they-call-her-alexandra-the-commandah-cause-she" class="related-joke-card">
+                    <div class="related-joke-text">"They call her Alexandra the Commandah, 'cause she runs the ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-andres-is-like-the-lukewarm-coffee-of" class="related-joke-card">
+                    <div class="related-joke-text">Your name Andres is like the lukewarm coffee of names - not ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cindy_famous_namesakes_v3_second_1757369658591_318',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/candice-comes-from-english-meaning-noble-warrior" class="related-joke-card">
-                    <div class="related-joke-text">Candice comes from English meaning "noble warrior." That meaning must have gotten lost in translation.</div>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-7" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-a-name-like-janice-i-bet-youve-mastered-the" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Janice, I bet you've mastered the fake smile response to people saying, "Oh, like Janice Joplin?"</div>
+                <a href="/jokes/name-jokes/oh-youre-an-austin" class="related-joke-card">
+                    <div class="related-joke-text">Oh, you're an Austin?..</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-really-went-all-in-on-those-es-at-2" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really went all-in on those E's at the end, like they were afraid the name would run out of vowels if they didn't stock up.</div>
+                <a href="/jokes/name-jokes/amanda-your-names-pronunciation-is-like-a-secret" class="related-joke-card">
+                    <div class="related-joke-text">Amanda, your name's pronunciation is like a secret code only...</div>
+                </a>
+                <a href="/jokes/name-jokes/adriana-with-three-syllables-in-your-name-youre" class="related-joke-card">
+                    <div class="related-joke-text">Adriana, with three syllables in your name, you're like a ha...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-jude-you-share-a-name-with-jude-law-whos" class="related-joke-card">
+                    <div class="related-joke-text">Hey Jude, you share a name with Jude Law, who's known for be...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_mary_famous_namesakes_v2_1757366545375_53',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

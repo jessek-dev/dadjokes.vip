@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-name-starts-with-au-like-awkward-pretty" class="related-joke-card">
-                    <div class="related-joke-text">Your name starts with "Au" like "awkward" - pretty fitting since you probably get mistaken for "Justin" half the time.</div>
+                <a href="/jokes/name-jokes/abigail-when-you-were-named-did-your-parents-have" class="related-joke-card">
+                    <div class="related-joke-text">Abigail, when you were named, did your parents have a "Gail"...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Gregory, you share a name with Gregory Peck, who's known for being Atticus Finch and the most noble man in Hollywood. You're known for... well, we're still figuring that out.</div>
+                <a href="/jokes/name-jokes/allen-oh-allen-youre-no-stallion-with-a-name-that" class="related-joke-card">
+                    <div class="related-joke-text">Allen, oh Allen, you're no stallion. With a name that sounds...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Catherine? More like Gather-ine, since you collect syllables like they're going out of style.</div>
+                <a href="/jokes/name-jokes/i-think-your-parents-might-have-a-lisp-alisha" class="related-joke-card">
+                    <div class="related-joke-text">I think your parents might have a lisp, Alisha. They tried t...</div>
+                </a>
+                <a href="/jokes/name-jokes/alicia-sounds-like-what-happens-when-you-sneeze" class="related-joke-card">
+                    <div class="related-joke-text">"Alicia" sounds like what happens when you sneeze while sayi...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alison-you-must-be-failin-some-classes-you" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alison, you must be failin' some classes - you put the "...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bethany_length_1757424234941_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

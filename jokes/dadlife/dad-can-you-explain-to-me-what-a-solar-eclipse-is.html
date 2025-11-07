@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more #DadLife jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">The ultimate collection of classic dad humor about parenting, family life, and all things dad. These jokes capture what it means to be a father.</p>
             <div class="related-jokes">
-                <a href="/jokes/dadlife/someone-told-me-the-other-day-i-had-a-bo-in-my" class="related-joke-card">
-                    <div class="related-joke-text">Someone told me the other day I had a BO in my nose. I said it's not!</div>
+                <a href="/jokes/dadlife/me-if-humans-lose-the-ability-to-hear-high" class="related-joke-card">
+                    <div class="related-joke-text">Me: If humans lose the ability to hear high frequency volume...</div>
                 </a>
-                <a href="/jokes/dadlife/i-have-two-unwritten-rules-1-blank-2-blank" class="related-joke-card">
-                    <div class="related-joke-text">I have two unwritten rules: 1. [blank] 2. [blank]</div>
+                <a href="/jokes/dadlife/im-american-and-im-sick-of-people-telling-us-that" class="related-joke-card">
+                    <div class="related-joke-text">I'm American and I'm sick of people telling us that America ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">If math is mathematical and quizzes are quizzical, what are tests?</div>
+                    <div class="related-joke-text">I used to love to tell dad jokes.… Dad, ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What's the difference between a man's wallet before and after kids?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I'm tired of following my dreams.</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002369',
             'category': '#DadLife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

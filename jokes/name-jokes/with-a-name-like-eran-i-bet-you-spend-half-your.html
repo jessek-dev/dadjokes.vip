@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/youre-stuck-with-a-name-thats-too-long-for-a-cute" class="related-joke-card">
-                    <div class="related-joke-text">You're stuck with a name that's too long for a cute nickname but too short to command respect - it's the cargo shorts of names.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Tom - a name that's as unimpressive as your life achievement...</div>
                 </a>
-                <a href="/jokes/name-jokes/when-life-gives-you-aubrey-its-probably-because" class="related-joke-card">
-                    <div class="related-joke-text">When life gives you Aubrey, it's probably because it couldn't afford Audrey.</div>
+                <a href="/jokes/name-jokes/fun-fact-ashton-and-ashton-kutcher-share-the-same" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Ashton and Ashton Kutcher share the same name! Ash...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-angela-i-hear-youre-quite-the-stranger-la" class="related-joke-card">
-                    <div class="related-joke-text">Hey Angela, I hear you're quite the stranger-la, always trying to rearrange-a-la everything in sight.</div>
+                <a href="/jokes/name-jokes/billy-appears-in-1-cultures-english-somehow-you" class="related-joke-card">
+                    <div class="related-joke-text">Billy appears in 1 cultures: English. Somehow you managed to...</div>
+                </a>
+                <a href="/jokes/name-jokes/arnold-sounds-like-a-rejected-pokemon-thats-half" class="related-joke-card">
+                    <div class="related-joke-text">"Arnold" sounds like a rejected Pokemon that's half armadill...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-named-you-carson-cause-you-were-conceived-in" class="related-joke-card">
+                    <div class="related-joke-text">They named you Carson 'cause you were conceived in the back ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eran_1760911630809_7895',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

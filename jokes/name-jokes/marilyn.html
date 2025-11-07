@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-alison-did-you-get-lost-in-the-comparison" class="related-joke-card">
-                    <div class="related-joke-text">Hey Alison, did you get lost in the "comparison"? Because every time your name comes up, it feels like a "contrarian" conversation.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Paige, you must be used to people trying to...</div>
                 </a>
-                <a href="/jokes/name-jokes/brandy-shares-a-name-with-brandy-norwood-famous" class="related-joke-card">
-                    <div class="related-joke-text">Brandy shares a name with Brandy Norwood, famous for being a fine girl and Monica's rival. What are the odds? About as good as Brandy becoming equally famous.</div>
+                <a href="/jokes/name-jokes/albert-youre-like-the-albert-einstein-of-being-an" class="related-joke-card">
+                    <div class="related-joke-text">Albert, you're like the Albert Einstein of being an absolute...</div>
                 </a>
-                <a href="/jokes/name-jokes/plot-twist-alan-isnt-alan-turing-one-is-famous" class="related-joke-card">
-                    <div class="related-joke-text">Plot twist: Alan isn't Alan Turing. One is famous for cracking Nazi codes and inventing computers. The other is reading this joke.</div>
+                <a href="/jokes/name-jokes/hey-anthony-you-share-a-name-with-anthony-hopkins" class="related-joke-card">
+                    <div class="related-joke-text">Hey Anthony, you share a name with Anthony Hopkins, who's kn...</div>
+                </a>
+                <a href="/jokes/name-jokes/bettys-so-sweaty-her-spaghettis-not-ready-guess" class="related-joke-card">
+                    <div class="related-joke-text">Betty's so sweaty, her spaghetti's not ready - guess that's ...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-20" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_marilyn_1760908251848_5912',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

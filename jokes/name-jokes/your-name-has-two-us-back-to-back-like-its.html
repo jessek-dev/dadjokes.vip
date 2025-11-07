@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Leonardo? More like Leonard-NO, am I right?</div>
+                    <div class="related-joke-text">Your name is so short, even trying to make a nickname for it...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-amanda-and-amanda-bynes-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Amanda and Amanda Bynes share the same name! Amanda Bynes is remembered for asking "What a girl wants?" in early 2000s movies. Amanda will be remembered for this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Dale comes from English meaning "bright fame." Somehow the m...</div>
                 </a>
-                <a href="/jokes/name-jokes/when-angelica-gets-hysterical-her-voice-goes-so" class="related-joke-card">
-                    <div class="related-joke-text">When Angelica gets hysterical, her voice goes so high it's almost spherical - guess that makes her less an angel and more a mathematical miracle-a.</div>
+                <a href="/jokes/name-jokes/meet-abel-named-after-abel-biblical-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Abel! Named after Abel (Biblical), who was legendary fo...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-youre-angelic-but-lets-be-specific-a" class="related-joke-card">
+                    <div class="related-joke-text">They say you're angelic but let's be specific-a, you're more...</div>
+                </a>
+                <a href="/jokes/name-jokes/yo-allen-your-name-is-just-a-lean-with-an-extra-l" class="related-joke-card">
+                    <div class="related-joke-text">Yo Allen, your name is just "A lean" with an extra L - even ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_autumn_spelling_1757424203108_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

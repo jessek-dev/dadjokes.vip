@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/andrea-shares-a-name-with-andrea-from-the-walking" class="related-joke-card">
-                    <div class="related-joke-text">Andrea shares a name with Andrea from The Walking Dead, famous for being really bad at shooting zombies. What are the odds? About as good as Andrea becoming equally famous.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Larry comes from English meaning "strength." Clearly your pa...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-andres-has-anyone-ever-told-you-that-youre" class="related-joke-card">
-                    <div class="related-joke-text">Hey Andres, has anyone ever told you that you're just one "s" away from having a name full of dread?</div>
+                <a href="/jokes/name-jokes/plot-twist-cheyenne-isnt-cheyenne-jackson-one-is" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Cheyenne isn't Cheyenne Jackson. One is famous f...</div>
                 </a>
-                <a href="/jokes/name-jokes/annettes-so-upset-shes-breaking-out-in-a-cold" class="related-joke-card">
-                    <div class="related-joke-text">Annette's so upset, she's breaking out in a cold sweat - turns out her pet ferret ate her safety net.</div>
+                <a href="/jokes/name-jokes/bradley-2" class="related-joke-card">
+                    <div class="related-joke-text">Bradley?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-such-basic-letter-patterns-its" class="related-joke-card">
+                    <div class="related-joke-text">Your name has such basic letter patterns, it's literally jus...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aubrey-why-so-sob-rey" class="related-joke-card">
+                    <div class="related-joke-text">"Hey Aubrey, why so sob-rey?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_gerald_famous_namesakes_v3_1757369165561_286',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

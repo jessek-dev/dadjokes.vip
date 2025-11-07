@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-names-just-alex-with-autocorrect-giving-up" class="related-joke-card">
-                    <div class="related-joke-text">Your name's just "Alex" with autocorrect giving up halfway through - when even spellcheck gets lazy with your letters.</div>
+                <a href="/jokes/name-jokes/your-parents-must-have-been-too-lazy-to-reach" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have been too lazy to reach further into t...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Hannah, I bet you've spent your whole life correcting people on the proper pronunciation - "No, it's not HAN-nah, it's HANN-ah!"</div>
+                    <div class="related-joke-text">Melody appears in 1 cultures: English. That's a lot of cultu...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alice-did-you-fall-down-that-rabbit-hole-or" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alice, did you fall down that rabbit hole or were you ju...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Micah, your name sounds like a sneeze that just won't come out - we get it, you're a chronic congester.</div>
+                    <div class="related-joke-text">Chad appears in 1 cultures: English. Making each culture won...</div>
+                </a>
+                <a href="/jokes/name-jokes/austin-because-lifes-too-short-for-a-full-length" class="related-joke-card">
+                    <div class="related-joke-text">Austin, because life's too short for a full-length name, but...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bianca_length_1757364144694_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-jasmin-im-surprised-youre-not" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Jasmin, I'm surprised you're not always surrounded by bees looking for some sweetness in your personality.</div>
+                <a href="/jokes/name-jokes/easton-not-to-be-confused-with-easton-corbin-whos" class="related-joke-card">
+                    <div class="related-joke-text">Easton: Not to be confused with Easton Corbin, who's famous ...</div>
                 </a>
-                <a href="/jokes/name-jokes/bryce-comes-from-english-meaning-strength-the" class="related-joke-card">
-                    <div class="related-joke-text">Bryce comes from English meaning "strength." The name's promise wasn't quite delivered.</div>
+                <a href="/jokes/name-jokes/alyssas-the-honda-civic-of-names-not-too-short" class="related-joke-card">
+                    <div class="related-joke-text">Alyssa's the Honda Civic of names - not too short, not too l...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-her-callous-son-allison-her" class="related-joke-card">
-                    <div class="related-joke-text">They call her Callous-son Allison - her personality's got more valleys and peaks than a topographical map of Madison!</div>
+                <a href="/jokes/name-jokes/alexandra-your-name-is-like-a-choose-your-own" class="related-joke-card">
+                    <div class="related-joke-text">Alexandra, your name is like a choose-your-own-adventure book - do you pronounce it "Al-ex-an-dra" or "Uh-lex-an-dra"?..</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-charged-by-the-letter-5" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been charged by the letter, because the...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-you-finish-writing-christopher-on-a" class="related-joke-card">
+                    <div class="related-joke-text">By the time you finish writing "Christopher" on a form, shor...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_joe_famous_namesakes_v3_second_1757369718000_739',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

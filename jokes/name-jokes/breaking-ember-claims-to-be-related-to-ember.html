@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Valentina shares a name with Valentina Tereshkova, famous for being the first woman in space. What are the odds? About as good as Valentina becoming equally famous.</div>
+                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-author-and-jam" class="related-joke-card">
+                    <div class="related-joke-text">Your parents really said "Let's take 'author' and jam an R i...</div>
                 </a>
-                <a href="/jokes/name-jokes/the-letters-in-athena-are-like-your-failed" class="related-joke-card">
-                    <div class="related-joke-text">The letters in "Athena" are like your failed attempt at alphabetical order - you got the "A" right but then completely gave up and just threw "thena" together randomly.</div>
+                <a href="/jokes/name-jokes/the-letters-of-your-name-are-so-symmetrical-bobby" class="related-joke-card">
+                    <div class="related-joke-text">The letters of your name are so symmetrical, Bobby, even the...</div>
                 </a>
-                <a href="/jokes/name-jokes/cheyenne-your-name-sounds-like-a-fancy-perfume" class="related-joke-card">
-                    <div class="related-joke-text">"Cheyenne, your name sounds like a fancy perfume brand - too bad your personality doesn't have that luxury fragrance."</div>
+                <a href="/jokes/name-jokes/plot-twist-destiny-isnt-destinys-child-one-is" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Destiny isn't Destiny's Child. One is famous for...</div>
+                </a>
+                <a href="/jokes/name-jokes/alison-sounds-like-a-failed-medicine-i-guess" class="related-joke-card">
+                    <div class="related-joke-text">"Alison" sounds like a failed medicine - I guess that's why ...</div>
+                </a>
+                <a href="/jokes/name-jokes/by-the-time-you-finish-writing-cameron-on-a-form" class="related-joke-card">
+                    <div class="related-joke-text">By the time you finish writing "Cameron" on a form, shorter-...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ember_famous_namesakes_v3_second_1757369682427_494',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

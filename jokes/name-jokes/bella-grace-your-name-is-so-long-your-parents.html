@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Sebastian appears in 9 cultures: German, English, Swedish, Norwegian, Danish, Polish, Finnish, etc.. You're like a cultural exchange program gone wrong.</div>
+                    <div class="related-joke-text">Mike - the name that's as plain as a white wall. Fitting, si...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name has more "th" sounds than a Shakespeare monologue, but somehow ends up sounding like a sneeze that got interrupted.</div>
+                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Bia"...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Brooke, your name is basically a stream of water because it's all run together with no spaces. Maybe that's why your conversations always seem to flow in one direction - towards you!</div>
+                <a href="/jokes/name-jokes/hey-anthony-youre-so-phony-when-you-speak-it" class="related-joke-card">
+                    <div class="related-joke-text">Hey Anthony, you're so phony - when you speak it sounds like...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexa-alexa-stuck-in-the-wall-cant-even-fetch-me" class="related-joke-card">
+                    <div class="related-joke-text">Alexa, Alexa, stuck in the wall. Can't even fetch me a soda ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-allen-fallin-and-stallin-is-your-daily" class="related-joke-card">
+                    <div class="related-joke-text">Hey Allen, fallin' and stallin' is your daily routine - even...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bella-grace_1760908508527_0680',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

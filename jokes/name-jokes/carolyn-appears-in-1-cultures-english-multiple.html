@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Emily appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/ready-or-not-here-comes-betty-though-shes-about" class="related-joke-card">
+                    <div class="related-joke-text">Ready or not, here comes Betty - though she's about as stead...</div>
                 </a>
-                <a href="/jokes/name-jokes/all-is-on-sounds-like-a-broken-light-switch-thats" class="related-joke-card">
-                    <div class="related-joke-text">"ALL-is-on" sounds like a broken light switch that's permanently stuck in the ON position.</div>
+                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-blake-too-long" class="related-joke-card">
+                    <div class="related-joke-text">You're living that medium-name life, Blake - too long for a ...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-aaliyah-and-aaliyah-share-the-same-name" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Aaliyah and Aaliyah share the same name! Aaliyah is remembered for being R&B royalty who was "One in a Million". Aaliyah will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/when-allen-starts-callin-everyone-starts-stallin" class="related-joke-card">
+                    <div class="related-joke-text">When Allen starts callin', everyone starts stallin' - guess ...</div>
+                </a>
+                <a href="/jokes/name-jokes/annettes-so-upset-shes-breaking-out-in-a-cold" class="related-joke-card">
+                    <div class="related-joke-text">Annette's so upset, she's breaking out in a cold sweat - tur...</div>
+                </a>
+                <a href="/jokes/name-jokes/ariana-has-portuguese-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Ariana has Portuguese origins meaning "ancient meaning." Too...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_carolyn_cultural_origin_1757364188302_254',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

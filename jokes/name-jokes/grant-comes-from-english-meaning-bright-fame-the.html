@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/alisha-alisha-living-in-amnesia-cant-remember" class="related-joke-card">
-                    <div class="related-joke-text">"Alisha, Alisha, living in amnesia - can't remember where she parked her VISA!"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Napoleon Bona-PART-y - because you're clearly only half the ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-gave-you-so-many-letters-to-work-5" class="related-joke-card">
-                    <div class="related-joke-text">Your parents gave you so many letters to work with, you could probably rearrange them into three separate names - Cat, Erin, and He.</div>
+                <a href="/jokes/name-jokes/when-alyssas-making-pizza-she-thinks-shes-a" class="related-joke-card">
+                    <div class="related-joke-text">When Alyssa's making pizza, she thinks she's a master chef -...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-like-the-lukewarm-porridge-of-the" class="related-joke-card">
-                    <div class="related-joke-text">Your name is like the lukewarm porridge of the naming world - not too long, not too short, just bland enough that people won't bother giving you a nickname.</div>
+                <a href="/jokes/name-jokes/bella-grace-the-name-thats-fancier-than-your" class="related-joke-card">
+                    <div class="related-joke-text">Bella-Grace - the name that's fancier than your actual life ...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-living-that-medium-name-life-carmen-too" class="related-joke-card">
+                    <div class="related-joke-text">You're living that medium-name life, Carmen - too many lette...</div>
+                </a>
+                <a href="/jokes/name-jokes/angie-is-what-happens-when-you-try-to" class="related-joke-card">
+                    <div class="related-joke-text">"Angie" is what happens when you try to alphabetically sort ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_grant_name_meaning_1757364249694_571',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

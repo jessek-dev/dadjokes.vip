@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Jackie Kennedy - known for being elegant in a pink suit during tragedy." Also Wikipedia: "Jacqueline - disambiguation: did you mean Jackie Kennedy?"</div>
+                    <div class="related-joke-text">Mitchell comes from English meaning "noble warrior." That me...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-picked-asher-like-they-couldnt" class="related-joke-card">
-                    <div class="related-joke-text">Your parents picked "Asher" like they couldn't commit - too lazy for Alexandria but too fancy for Ann.</div>
+                <a href="/jokes/name-jokes/bianca-your-name-is-so-long-its-a-wonder-you-dont" class="related-joke-card">
+                    <div class="related-joke-text">Bianca, your name is so long, it's a wonder you don't have y...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-alisha-when-it-comes-to-pizza-youre-quite-the" class="related-joke-card">
-                    <div class="related-joke-text">Hey Alisha, when it comes to pizza, you're quite the piece-a, always asking for "just one more slice-a!"</div>
+                <a href="/jokes/name-jokes/aiden-shares-a-name-with-aiden-pearce-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Aiden shares a name with Aiden Pearce, famous for hacking everyone's phone in Watch Dogs video game. What are the odds?..</div>
+                </a>
+                <a href="/jokes/name-jokes/i-need-a-find-anita-but-shes-probably-at-taco" class="related-joke-card">
+                    <div class="related-joke-text">I need-a find Anita, but she's probably at Taco Bell eating ...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-adrienne-says-her-name-it-sounds-like-a" class="related-joke-card">
+                    <div class="related-joke-text">When Adrienne says her name, it sounds like a sneeze trying ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_cameron_famous_namesakes_v3_second_1757369648204_241',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/why-cant-eggs-have-love" class="related-joke-card">
-                    <div class="related-joke-text">Why can't eggs have love? They will break up too soon.</div>
+                <a href="/jokes/food/ill-tell-you-something-about-german-sausages" class="related-joke-card">
+                    <div class="related-joke-text">I’ll tell you something about German sausages, they’re the w...</div>
                 </a>
-                <a href="/jokes/food/why-did-the-melons-plan-a-big-wedding" class="related-joke-card">
-                    <div class="related-joke-text">Why did the melons plan a big wedding? Because they cantaloupe!</div>
+                <a href="/jokes/food/i-had-a-date-last-night-and-it-was-perfect" class="related-joke-card">
+                    <div class="related-joke-text">I had a date last night, and it was perfect.</div>
                 </a>
-                <a href="/jokes/food/why-cant-you-use-beef-stew-as-a-password" class="related-joke-card">
-                    <div class="related-joke-text">Why can't you use "Beef stew" as a password? Because it's not stroganoff.</div>
+                <a href="/jokes/food/where-did-you-learn-to-make-ice-cream" class="related-joke-card">
+                    <div class="related-joke-text">Where did you learn to make ice cream?..</div>
+                </a>
+                <a href="/jokes/food/ive-just-written-a-song-about-a-tortilla-well-it" class="related-joke-card">
+                    <div class="related-joke-text">I've just written a song about a tortilla. Well, it is more ...</div>
+                </a>
+                <a href="/jokes/food/i-burned-2000-calories-today-i-left-my-food-in" class="related-joke-card">
+                    <div class="related-joke-text">I burned 2000 calories today, I left my food in the oven for...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002960',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

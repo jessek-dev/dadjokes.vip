@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/adam-the-only-name-thats-so-simple-it-could-be" class="related-joke-card">
-                    <div class="related-joke-text">Adam, the only name that's so simple it could be written on an abacus.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Oprah Skywalker - using the force to find the remote is the ...</div>
+                </a>
+                <a href="/jokes/name-jokes/amy-inspired-by-amy-winehouses-legacy-of-saying" class="related-joke-card">
+                    <div class="related-joke-text">Amy, inspired by Amy Winehouse's legacy of saying "No, no, n...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Bethany's so plain and ordinary, her theme song is "Old MacDonald Had Some Bethany, Bethany, yo."</div>
+                    <div class="related-joke-text">Your parents couldn't decide between short and sweet or long...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Brad comes from English meaning "defender." The name's promise wasn't quite delivered.</div>
+                <a href="/jokes/name-jokes/if-your-name-were-a-math-problem-itd-be-algebra" class="related-joke-card">
+                    <div class="related-joke-text">If your name were a math problem, it'd be Algebra - you're j...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-aaron-gets-an-errand-its-like-a-parrot-got-a" class="related-joke-card">
+                    <div class="related-joke-text">When Aaron gets an errand, it's like a parrot got a carrot, ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_ariana_famous_namesakes_v3_second_1757369628230_107',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

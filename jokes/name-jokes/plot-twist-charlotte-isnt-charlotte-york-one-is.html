@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/introducing-alison-following-in-the-footsteps-of" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Alison! Following in the footsteps of Alison Brie, who was renowned for being adorable on Community and making people smile. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/charlie-brown-was-the-lovable-loser-this-charlie" class="related-joke-card">
+                    <div class="related-joke-text">Charlie Brown was the lovable loser. This Charlie is just th...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Nicholas comes from English meaning "noble warrior." Your ancestors would be so disappointed.</div>
+                    <div class="related-joke-text">Everett, is that the name your parents chose or the sound th...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jade appears in 2 cultures: English, French. That's a lot of cultures to let down simultaneously.</div>
+                <a href="/jokes/name-jokes/hey-carson-youre-such-an-arson-everywhere-you-go" class="related-joke-card">
+                    <div class="related-joke-text">Hey Carson, you're such an arson - everywhere you go, things...</div>
+                </a>
+                <a href="/jokes/name-jokes/brady-appears-in-1-cultures-english-somehow-you" class="related-joke-card">
+                    <div class="related-joke-text">Brady appears in 1 cultures: English. Somehow you managed to...</div>
+                </a>
+                <a href="/jokes/name-jokes/fun-fact-cassie-and-cassie-from-euphoria-share" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Cassie and Cassie from Euphoria share the same nam...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_charlotte_famous_namesakes_v3_second_1757369654685_290',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

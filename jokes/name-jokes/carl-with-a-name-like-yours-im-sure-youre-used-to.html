@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/wikipedia-adeline-virginia-woolf-known-for" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Adeline Virginia Woolf - known for writing "Mrs. Dalloway" and being a literary genius." Also Wikipedia: "Adeline - disambiguation: did you mean Adeline Virginia Woolf?"</div>
+                <a href="/jokes/name-jokes/you-must-get-tired-writing-those-double-letters" class="related-joke-card">
+                    <div class="related-joke-text">You must get tired writing those double letters - your name ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Eva, you share a name with Eva Longoria, who's known for being a desperate housewife on Wisteria Lane. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Sierra: Not to be confused with Sierra Nevada, who's famous ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-autumn-but-your-personalitys" class="related-joke-card">
-                    <div class="related-joke-text">Your name is Autumn but your personality's monotonous - like watching paint dry at the bottom of an office building in Boston.</div>
+                <a href="/jokes/name-jokes/alexanders-so-grand-yet-cant-understand-why-his" class="related-joke-card">
+                    <div class="related-joke-text">Alexander's so grand, yet can't understand why his friends c...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-just-mad-with-the-letters-rearranged" class="related-joke-card">
+                    <div class="related-joke-text">Your name's just "mad" with the letters rearranged - no wond...</div>
+                </a>
+                <a href="/jokes/name-jokes/aaliyah-appears-in-3-cultures-arabic-english-2" class="related-joke-card">
+                    <div class="related-joke-text">Aaliyah appears in 3 cultures: Arabic, English (Modern), Afr...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_carl_rhyme_1757116266935_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

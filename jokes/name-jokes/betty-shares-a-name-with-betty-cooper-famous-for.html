@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just "barley" with dyslexia - they switched some letters around and called it a day.</div>
+                    <div class="related-joke-text">Sawyer appears in 1 cultures: English (Modern). A true ambas...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Ivy, just like Poison Ivy! Though they're famous for being Batman's enemy who controls plants, and you're famous for... having the same first name.</div>
+                    <div class="related-joke-text">Brittany shares a name with Brittany Spears, famous for being a pop princess who shaved her head. What are the odds?..</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-alicia-and-alicia-keys-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Alicia and Alicia Keys share the same name! Alicia Keys is remembered for being a girl on fire with killer piano skills. Alicia will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/i-need-a-break-from-hearing-your-name-its-like" class="related-joke-card">
+                    <div class="related-joke-text">"I need a" break from hearing your name - it's like everyone...</div>
+                </a>
+                <a href="/jokes/name-jokes/if-aria-was-any-shorter-itd-be-a-subtle-cough-not" class="related-joke-card">
+                    <div class="related-joke-text">If Aria was any shorter, it'd be a subtl...</div>
+                </a>
+                <a href="/jokes/name-jokes/annette-must-have-been-a-novel-in-a-past-life" class="related-joke-card">
+                    <div class="related-joke-text">Annette must have been a novel in a past life, because it su...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_betty_famous_namesakes_v3_1757368940143_84',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

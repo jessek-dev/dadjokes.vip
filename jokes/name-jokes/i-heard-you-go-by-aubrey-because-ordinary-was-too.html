@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Rose, I bet you spent your entire childhood getting asked, "Is your middle name Petal?"</div>
+                    <div class="related-joke-text">Breaking: Benjamin claims to be related to Benjamin Franklin...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Avery time I hear your name, I wonder if you're just a-very average person trying too hard to stand out.</div>
+                    <div class="related-joke-text">Tonya, your name sounds like a failed attempt at spelling "T...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Aurora, your name sounds like you're in a chorus line at the North Pole. Do the polar bears clap in time or do they just snore-a?</div>
+                    <div class="related-joke-text">Emma-rose, your name is so pretty it's a shame your personal...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jade, inspired by Jade from Mortal Kombat's legacy of fighti...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Jesse, the name that's as common as a Walmart greeter, yet a...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_aubrey_wordplay_1757379227727_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-august-your-names-got-me-lost-youre-the-only" class="related-joke-card">
-                    <div class="related-joke-text">Hey August, your name's got me lost - you're the only month that leaves me frost.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Robert, you share a name with Robert Downey Jr., famous for ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-so-disorganized-andres-is-just-sanders" class="related-joke-card">
-                    <div class="related-joke-text">Your name's so disorganized - Andres is just "Sanders" with the S playing musical chairs to avoid being first in line.</div>
+                <a href="/jokes/name-jokes/finn-has-irish-mythology-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Finn has Irish Mythology origins meaning "ancient meaning." ...</div>
                 </a>
-                <a href="/jokes/name-jokes/by-the-time-i-finish-writing-colleen-on-forms" class="related-joke-card">
-                    <div class="related-joke-text">By the time I finish writing "Colleen" on forms, everyone named "Bob" is already halfway home.</div>
+                <a href="/jokes/name-jokes/jasmin-appears-in-3-cultures-german-finnish" class="related-joke-card">
+                    <div class="related-joke-text">Jasmin appears in 3 cultures: German, Finnish, English. That...</div>
+                </a>
+                <a href="/jokes/name-jokes/emma-rose-your-parents-must-have-really-wanted" class="related-joke-card">
+                    <div class="related-joke-text">Emma-rose, your parents must have really wanted you to stand...</div>
+                </a>
+                <a href="/jokes/name-jokes/jake-is-that-your-name-or-the-sound-you-make-when" class="related-joke-card">
+                    <div class="related-joke-text">Jake, is that your name or the sound you make when you're ch...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_linda_name_meaning_1757364311887_905',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

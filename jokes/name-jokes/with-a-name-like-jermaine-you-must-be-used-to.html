@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/glenn-your-name-sounds-like-the-generic-brand" class="related-joke-card">
-                    <div class="related-joke-text">Glenn, your name sounds like the generic brand version of "Glen," just a little off-brand in every way.</div>
+                <a href="/jokes/name-jokes/your-names-got-more-ys-than-a-desperate-chat-room" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got more Y's than a desperate chat room conversa...</div>
                 </a>
-                <a href="/jokes/name-jokes/bettys-so-sweaty-her-spaghettis-not-ready-guess" class="related-joke-card">
-                    <div class="related-joke-text">Betty's so sweaty, her spaghetti's not ready - guess that's why they call her Forgetti.</div>
+                <a href="/jokes/name-jokes/billy-appears-in-1-cultures-english-somehow-you" class="related-joke-card">
+                    <div class="related-joke-text">Billy appears in 1 cultures: English. Somehow you managed to...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-so-short-it-takes-longer-to-say-nice" class="related-joke-card">
-                    <div class="related-joke-text">Your name is so short, it takes longer to say "nice to meet you" than to write your entire signature.</div>
+                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-short-and-7" class="related-joke-card">
+                    <div class="related-joke-text">Your parents couldn't decide between short and sweet or long...</div>
+                </a>
+                <a href="/jokes/name-jokes/ernest-comes-from-english-meaning-defender-the" class="related-joke-card">
+                    <div class="related-joke-text">Ernest comes from English meaning "defender." The name's pro...</div>
+                </a>
+                <a href="/jokes/name-jokes/plot-twist-donald-isnt-donald-trump-one-is-famous" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Donald isn't Donald Trump. One is famous for hav...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jermaine_wordplay_1757275410380_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

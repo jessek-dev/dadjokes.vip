@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,17 +743,20 @@
             <h2>Here are some more Science & Tech jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/science-tech/what-does-the-macbook-have-in-common-with-donald" class="related-joke-card">
-                    <div class="related-joke-text">What does the MacBook have in common with Donald Trump?
-
-I would tell you....
-But I don't compare apples to oranges.</div>
+                <a href="/jokes/science-tech/parallel-lines-have-so-much-in-common-its-a-shame" class="related-joke-card">
+                    <div class="related-joke-text">Parallel lines have so much in common. It’s a shame they’ll ...</div>
                 </a>
-                <a href="/jokes/science-tech/how-many-programmers-does-it-take-to-screw-in-a" class="related-joke-card">
-                    <div class="related-joke-text">How many programmers does it take to screw in a light bulb?… None. It's a hardware problem.</div>
+                <a href="/jokes/science-tech/why-did-the-database-administrator-leave-his-wife" class="related-joke-card">
+                    <div class="related-joke-text">Why did the database administrator leave his wife?… She had ...</div>
                 </a>
-                <a href="/jokes/science-tech/how-do-you-make-a-robot-angry" class="related-joke-card">
-                    <div class="related-joke-text">How do you make a robot angry? Keep pushing its buttons.</div>
+                <a href="/jokes/science-tech/did-you-hear-that-our-government-is-working-on-a" class="related-joke-card">
+                    <div class="related-joke-text">Did you hear that our government is working on a weapon for submarines that contains two thousand pounds of Vietnam's famous pho soup?</div>
+                </a>
+                <a href="/jokes/science-tech/somebody-stole-my-microsoft-office-and-theyre" class="related-joke-card">
+                    <div class="related-joke-text">Somebody stole my Microsoft Office and they're going to pay ...</div>
+                </a>
+                <a href="/jokes/science-tech/why-did-the-python-data-scientist-get-arrested-at" class="related-joke-card">
+                    <div class="related-joke-text">Why did the Python data scientist get arrested at customs?… ...</div>
                 </a>
             </div>
         </section>
@@ -1096,6 +1137,34 @@ But I don't compare apples to oranges.</div>
             'joke_id': 'MJ002434',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

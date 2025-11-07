@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-youre-cesar-but-your-jokes-are-so-weak-i" class="related-joke-card">
-                    <div class="related-joke-text">They say you're Cesar but your jokes are so weak, I think you're more of a Sees-far from funny.</div>
+                <a href="/jokes/name-jokes/anns-so-bland-even-her-name-needs-a-fan-shes-like" class="related-joke-card">
+                    <div class="related-joke-text">Ann's so bland, even her name needs a fan - she's like plain...</div>
                 </a>
-                <a href="/jokes/name-jokes/ella-inspired-by-ella-fitzgeralds-legacy-of-being" class="related-joke-card">
-                    <div class="related-joke-text">Ella, inspired by Ella Fitzgerald's legacy of being the First Lady of Song. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/when-life-gives-you-allisons-they-always-sound" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Allisons, they always sound like they're...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jennifer - named after Jennifer Lawrence, who was tripping gracefully to Oscar wins. You inherited the name but none of the talent.</div>
+                <a href="/jokes/name-jokes/your-name-is-just-the-sound-of-someone-repeatedly" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just the sound of someone repeatedly hissing "s...</div>
+                </a>
+                <a href="/jokes/name-jokes/bradley-your-name-has-more-repeated-letters-than" class="related-joke-card">
+                    <div class="related-joke-text">Bradley, your name has more repeated letters than a stutteri...</div>
+                </a>
+                <a href="/jokes/name-jokes/i-heard-you-go-by-manda-sometimes-guess-you-lost" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Manda sometimes - guess you lost the 'A' g...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_haley_name_meaning_1757364251891_583',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Words & Puns jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Clever wordplay, brilliant puns, and linguistic humor that will make you groan and laugh at the same time. Perfect for word nerds!</p>
             <div class="related-jokes">
-                <a href="/jokes/words-puns/why-are-graveyards-so-noisy" class="related-joke-card">
-                    <div class="related-joke-text">Why are graveyards so noisy? Because of all the coffin.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What do you call a troublesome Canadian high schooler?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What does a librarian use to go fishing? A bookworm.</div>
+                    <div class="related-joke-text">So I pulled this guy over and I said "How high are you?" and...</div>
+                </a>
+                <a href="/jokes/words-puns/how-does-a-dyslexic-poet-write" class="related-joke-card">
+                    <div class="related-joke-text">How does a dyslexic poet write?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Is there a hole in your shoe? No… Then how’d you get your foot in it?</div>
+                    <div class="related-joke-text">What do you do on a remote island?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What do you call someone with no nose?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ000466',
             'category': 'Words & Puns'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

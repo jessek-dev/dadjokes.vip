@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious animal jokes featuring dogs, cats, wildlife, and creatures of all kinds. Perfect for animal lovers and pet owners!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My pet mouse 'Elvis' died last night. He was caught in a trap..</div>
+                    <div class="related-joke-text">What do you call a sheep with no legs?..</div>
                 </a>
-                <a href="/jokes/animals/a-guy-told-me-there-was-a-shark-attack-today-the" class="related-joke-card">
-                    <div class="related-joke-text">A guy told me there was a shark attack today. The shark took out his whole left side... I couldn't believe it when he told me he was all right!</div>
+                <a href="/jokes/animals/what-do-you-call-a-snake-who-builds-houses" class="related-joke-card">
+                    <div class="related-joke-text">What do you call a snake who builds houses?..</div>
                 </a>
-                <a href="/jokes/animals/so-a-duck-walks-into-a-pharmacy-and-says-give-me" class="related-joke-card">
-                    <div class="related-joke-text">So a duck walks into a pharmacy and says “Give me some chap-stick… and put it on my bill”</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Two parrots are sitting on a perch. One turns to the other a...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Which animal has the largest chest?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why didn’t the teddy bear eat dessert?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002361',
             'category': 'Animals'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

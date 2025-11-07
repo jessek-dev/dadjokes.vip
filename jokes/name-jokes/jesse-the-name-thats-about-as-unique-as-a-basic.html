@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/breaking-alicia-claims-to-be-related-to-alicia" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Alicia claims to be related to Alicia Keys. Alicia Keys was known for being a girl on fire with killer piano skills. Alicia is known for making things up.</div>
+                <a href="/jokes/name-jokes/the-letters-of-your-name-are-so-symmetrical-bobby" class="related-joke-card">
+                    <div class="related-joke-text">The letters of your name are so symmetrical, Bobby, even the...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-the-number-of-letters-in-your-name-is" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, the number of letters in your name is just one shy of a full tic-tac-toe board.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Kathleen, I bet you spend half your time co...</div>
                 </a>
-                <a href="/jokes/name-jokes/alexa-sounds-like-a-name-thats-always-listening" class="related-joke-card">
-                    <div class="related-joke-text">Alexa, sounds like a name that's always listening but still manages to misunderstand half of what you say.</div>
+                <a href="/jokes/name-jokes/your-parents-almost-named-you-always-off-because" class="related-joke-card">
+                    <div class="related-joke-text">Your parents almost named you "Always-off" because that's ho...</div>
+                </a>
+                <a href="/jokes/name-jokes/barbara-appears-in-13-cultures-english-italian" class="related-joke-card">
+                    <div class="related-joke-text">Barbara appears in 13 cultures: English, Italian, French, Ge...</div>
+                </a>
+                <a href="/jokes/name-jokes/alicia-2" class="related-joke-card">
+                    <div class="related-joke-text">Alicia?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jesse_name_analysis_1757608657521_suh3us',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

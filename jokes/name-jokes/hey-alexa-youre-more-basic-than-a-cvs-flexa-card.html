@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Breaking: Jimmy claims to be related to Jimmy Fallon. Jimmy Fallon was known for breaking character and hosting late night TV. Jimmy is known for making things up.</div>
+                    <div class="related-joke-text">Jocelyn appears in 3 cultures: English, English, French. Som...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just "I am" with some extra letters mixed in - way to make a simple statement of existence so unnecessarily complicated.</div>
+                    <div class="related-joke-text">Your parents spelled your name with a "C" at the beginning a...</div>
+                </a>
+                <a href="/jokes/name-jokes/adrian-has-so-many-vowels-its-like-youre" class="related-joke-card">
+                    <div class="related-joke-text">Adrian has so many vowels, it's like you're auditioning for ...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Too bad your parents couldn't commit to either a snappy three-letter name or a dramatic ten-letter one - they settled for "Autumn" like someone ordering the medium fries when they really wanted large.</div>
+                    <div class="related-joke-text">Hey Alexander, did you commander that awful fashion sense, o...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Brent, your name is like a poor game of Scrabble - low scori...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alexa_rhyme_1757424122046_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-name-is-just-drew-with-training-wheels-they" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just "drew" with training wheels - they added an A because you couldn't handle starting with a consonant cluster.</div>
+                <a href="/jokes/name-jokes/i-heard-andres-is-actually-three-kids-in-a-trench" class="related-joke-card">
+                    <div class="related-joke-text">I heard Andres is actually three kids in a trench coat becau...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-bailey-youre-so-flaily-like-a-wacky-waving" class="related-joke-card">
-                    <div class="related-joke-text">Hey Bailey, you're so flaily - like a wacky waving inflatable tube man at a used car daily.</div>
+                <a href="/jokes/name-jokes/meet-bobby-named-after-bobby-brown-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Bobby! Named after Bobby Brown, who was legendary for b...</div>
                 </a>
-                <a href="/jokes/name-jokes/wikipedia-andrs-iniesta-known-for-being-a-spanish" class="related-joke-card">
-                    <div class="related-joke-text">Wikipedia: "Andrés Iniesta - known for being a Spanish soccer magician." Also Wikipedia: "Andres - disambiguation: did you mean Andrés Iniesta?"</div>
+                <a href="/jokes/name-jokes/brittany-comes-from-english-meaning-bright-fame" class="related-joke-card">
+                    <div class="related-joke-text">Brittany comes from English meaning "bright fame." Too bad t...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-barbaras-at-the-bar-ah-all-the-guys-say-nah" class="related-joke-card">
+                    <div class="related-joke-text">When Barbara's at the bar-ah, all the gu...</div>
+                </a>
+                <a href="/jokes/name-jokes/christian-you-really-took-the-i-an-from-complain" class="related-joke-card">
+                    <div class="related-joke-text">"Christian, you really took the 'I an' from 'complain' didn't you?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lindsey_name_meaning_1757364312601_909',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

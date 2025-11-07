@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Animals jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Hilarious animal jokes featuring dogs, cats, wildlife, and creatures of all kinds. Perfect for animal lovers and pet owners!</p>
             <div class="related-jokes">
-                <a href="/jokes/animals/why-do-cows-have-hooves-instead-of-feet" class="related-joke-card">
-                    <div class="related-joke-text">Why do cows have hooves instead of feet? Because they lactose.</div>
+                <a href="/jokes/animals/how-do-you-know-if-theres-an-elephant-under-your" class="related-joke-card">
+                    <div class="related-joke-text">How do you know if there’s an elephant under your bed?..</div>
                 </a>
-                <a href="/jokes/animals/why-should-you-never-trust-a-pig-with-a-secret" class="related-joke-card">
-                    <div class="related-joke-text">Why should you never trust a pig with a secret? Because it's bound to squeal.</div>
+                <a href="/jokes/animals/the-police-just-knocked-at-my-door-to-tell-me" class="related-joke-card">
+                    <div class="related-joke-text">The police just knocked at my door to tell me that my dog was chasing a kid on his bike.</div>
                 </a>
-                <a href="/jokes/animals/why-does-a-chicken-coop-only-have-two-doors" class="related-joke-card">
-                    <div class="related-joke-text">Why does a chicken coop only have two doors? Because if it had four doors it would be a chicken sedan.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Why didn’t the teddy bear eat dessert?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What is a cat's favorite TV show?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What do sharks say when something cool happens?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002508',
             'category': 'Animals'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

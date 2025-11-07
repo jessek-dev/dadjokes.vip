@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Global jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">International humor from around the world. Geography jokes, travel humor, and jokes about different countries and cultures.</p>
             <div class="related-jokes">
-                <a href="/jokes/global/how-do-you-get-two-whales-in-a-car" class="related-joke-card">
-                    <div class="related-joke-text">How do you get two whales in a car? Start in England and drive West.</div>
+                <a href="/jokes/global/which-state-has-the-most-streets" class="related-joke-card">
+                    <div class="related-joke-text">Which state has the most streets?..</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why did the map always lose at poker? It always folded.</div>
+                <a href="/jokes/global/youre-american-when-you-go-into-the-bathroom-and" class="related-joke-card">
+                    <div class="related-joke-text">You're American when you go into the bathroom and out of the bathroom, but what are you when you're in the bathroom?..</div>
                 </a>
-                <a href="/jokes/global/what-is-the-difference-between-the-constitutions" class="related-joke-card">
-                    <div class="related-joke-text">What is the difference between the Constitutions of the USA and the USSR? Don't both of them guarantee freedom of speech?… Yes, but the Constitution of the USA also guarantees freedom after the speech.</div>
+                <a href="/jokes/global/i-dated-a-swiss-girl-back-in-the-day-and-broke-up" class="related-joke-card">
+                    <div class="related-joke-text">I dated a Swiss girl back in the day and broke up with her o...</div>
+                </a>
+                <a href="/jokes/global/my-geography-teacher-asked-me-if-i-could-name-a" class="related-joke-card">
+                    <div class="related-joke-text">My geography teacher asked me if I could name a country with...</div>
+                </a>
+                <a href="/jokes/global/why-dont-aliens-visit-earth" class="related-joke-card">
+                    <div class="related-joke-text">Why don't aliens visit Earth?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002847',
             'category': 'Global'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/david-appears-in-22-cultures-english-hebrew" class="related-joke-card">
-                    <div class="related-joke-text">David appears in 22 cultures: English, Hebrew, French, Scottish, Welsh, Spanish, Portuguese, etc.. You're proof that names don't determine destiny.</div>
+                <a href="/jokes/name-jokes/addison-comes-from-english-meaning-bright-fame" class="related-joke-card">
+                    <div class="related-joke-text">Addison comes from English meaning "bright fame." That meani...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-went-for-the-goldilocks-of-names-not-4" class="related-joke-card">
-                    <div class="related-joke-text">Your parents went for the Goldilocks of names - not short enough to save time writing it, not long enough to sound impressive on a business card.</div>
+                <a href="/jokes/name-jokes/six-letters-is-like-the-vanilla-ice-cream-of-name" class="related-joke-card">
+                    <div class="related-joke-text">Six letters is like the vanilla ice cream of name lengths - ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-brad-ly-missing-the-mark-sounds-like" class="related-joke-card">
-                    <div class="related-joke-text">Your name is Brad-ly missing the mark - sounds like something you'd call a discount Brad Pitt at a garage sale.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Skylar, your name sounds like something you'd name a fancy c...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-jesse-you-share-a-name-with-jesse-james-whos" class="related-joke-card">
+                    <div class="related-joke-text">Hey Jesse, you share a name with Jesse James, who's known fo...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-46" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_leonardo_1760908125158_6261',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

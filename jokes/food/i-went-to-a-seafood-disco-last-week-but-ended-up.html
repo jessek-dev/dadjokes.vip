@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/have-you-heard-about-the-restaurant-on-the-moon" class="related-joke-card">
-                    <div class="related-joke-text">Have you heard about the restaurant on the Moon? Great food, no atmosphere.</div>
+                <a href="/jokes/food/i-went-to-the-zoo-yesterday-and-saw-a-baguette-in" class="related-joke-card">
+                    <div class="related-joke-text">I went to the zoo yesterday and saw a baguette in a cage. It...</div>
                 </a>
-                <a href="/jokes/food/whats-orange-and-sounds-like-a-parrot" class="related-joke-card">
-                    <div class="related-joke-text">What's orange and sounds like a parrot? A Carrot.</div>
+                <a href="/jokes/food/my-wife-asked-me-to-go-get-6-cans-of-sprite-from" class="related-joke-card">
+                    <div class="related-joke-text">My wife asked me to go get 6 cans of Sprite from the grocery...</div>
                 </a>
-                <a href="/jokes/food/do-you-know-why-you-only-make-soup-with-239-beans" class="related-joke-card">
-                    <div class="related-joke-text">Do you know why you only make soup with 239 beans? Because one more would make it too farty!</div>
+                <a href="/jokes/food/what-does-a-pirate-pay-for-his-corn" class="related-joke-card">
+                    <div class="related-joke-text">What does a pirate pay for his corn?..</div>
+                </a>
+                <a href="/jokes/food/what-do-you-call-a-fake-pizza" class="related-joke-card">
+                    <div class="related-joke-text">What do you call a fake pizza?</div>
+                </a>
+                <a href="/jokes/food/why-are-oranges-the-smartest-fruit" class="related-joke-card">
+                    <div class="related-joke-text">Why are oranges the smartest fruit?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002496',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

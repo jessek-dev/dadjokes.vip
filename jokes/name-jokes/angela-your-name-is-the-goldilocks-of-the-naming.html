@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Shelby - sounds like a cheap motel where you'd find your ex-wife's car parked out front.</div>
+                    <div class="related-joke-text">"Brett" is just "better" missing a letter - guess your paren...</div>
                 </a>
-                <a href="/jokes/name-jokes/abigail-your-name-is-so-close-to-spelling-glib" class="related-joke-card">
-                    <div class="related-joke-text">Abigail, your name is so close to spelling 'glib' backwards, it's like your parents knew you'd have a knack for smooth talking!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Juan claims to be related to Don Juan. Don Juan wa...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-that-goldilocks-name-length-going-too" class="related-joke-card">
-                    <div class="related-joke-text">You've got that Goldilocks name length going - too lazy for a full "Angelica" but too proper for just "Ang," so you're stuck in the lukewarm middle.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Arianna, isn't it exhausting to have a name that sounds like...</div>
+                </a>
+                <a href="/jokes/name-jokes/you-managed-to-squeeze-add-right-into-your-name" class="related-joke-card">
+                    <div class="related-joke-text">You managed to squeeze ADD right into your name - bet your p...</div>
+                </a>
+                <a href="/jokes/name-jokes/calling-out-a-girl-named-abigail-in-a-crowd-feels" class="related-joke-card">
+                    <div class="related-joke-text">Calling out a girl named Abigail in a crowd feels like perfo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_angela_length_1757347844772_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

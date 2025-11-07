@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-name-is-just-one-vowel-swap-away-from-being" class="related-joke-card">
-                    <div class="related-joke-text">Your name is just one vowel swap away from being "able" - too bad that swap didn't give you any extra capabilities.</div>
+                <a href="/jokes/name-jokes/eduardo-appears-in-2-cultures-spanish-portuguese" class="related-joke-card">
+                    <div class="related-joke-text">Eduardo appears in 2 cultures: Spanish, Portuguese. You're p...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-adrienne-when-life-gives-you-caffeine-youre" class="related-joke-card">
-                    <div class="related-joke-text">Hey Adrienne, when life gives you caffeine, you're still less wired than your name's routine.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Marcus appears in 6 cultures: Ancient Roman, Biblical Latin,...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-just-mad-with-the-letters-rearranged" class="related-joke-card">
-                    <div class="related-joke-text">Your name's just "mad" with the letters rearranged - no wonder you're always scrambling to get it together.</div>
+                <a href="/jokes/name-jokes/harry-comes-from-english-meaning-strength-that" class="related-joke-card">
+                    <div class="related-joke-text">Harry comes from English meaning "strength." That meaning mu...</div>
+                </a>
+                <a href="/jokes/name-jokes/with-a-name-like-jesse-i-bet-you-have-a-closet" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Jesse, I bet you have a closet full of plai...</div>
+                </a>
+                <a href="/jokes/name-jokes/jocelyn-your-name-sounds-like-a-mix-between-jelly" class="related-joke-card">
+                    <div class="related-joke-text">Jocelyn, your name sounds like a mix between jelly and gelat...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_justin_wordplay_1757276035410_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

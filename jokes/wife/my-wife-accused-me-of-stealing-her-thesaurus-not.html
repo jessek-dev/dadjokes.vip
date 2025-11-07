@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,19 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife is so negative. I remembered the car seat, the stroller, and the diaper bags, yet all she can talk about is how I forgot the baby.</div>
+                    <div class="related-joke-text">My wife said "If you win the lottery would you still love me...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My girlfriend poked me in the eyes. I stopped seeing her for a while!</div>
+                    <div class="related-joke-text">Arguing with a woman is like reading a software's license ag...</div>
+                </a>
+                <a href="/jokes/wife/my-wife-got-pissed-at-me-because-i-accidentally" class="related-joke-card">
+                    <div class="related-joke-text">My wife got pissed at me because I accidentally overcooked t...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Wife: Honey I’m pregnant.
-
-Me: Well…. what do we do now?
-
-Wife: Well, I guess we should go to a baby doctor.
-
-Me: Hm.. I think I’d be a lot more comfortable going to an adult doctor.</div>
+                    <div class="related-joke-text">My wife dropped the laundry basket.</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">My wife just completed a 40-week bodybuilding program. It's ...</div>
                 </a>
             </div>
         </section>
@@ -1099,6 +1137,34 @@ Me: Hm.. I think I’d be a lot more comfortable going to an adult doctor.</div>
             'joke_id': 'MJ001320',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-parents-really-said-lets-take-all-the-most" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really said "let's take all the most basic letters from the first half of the alphabet" - B,I,A,N,C,A is like the sample text they use to demonstrate a font.</div>
+                <a href="/jokes/name-jokes/briana-comes-from-english-meaning-noble-warrior" class="related-joke-card">
+                    <div class="related-joke-text">Briana comes from English meaning "noble warrior." The name'...</div>
                 </a>
-                <a href="/jokes/name-jokes/christopher-the-name-that-sounds-like-your" class="related-joke-card">
-                    <div class="related-joke-text">Christopher, the name that sounds like your parents couldn't decide between "Chris" or "Topher" and just said, "Eh, let's put 'em both in there."</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Cynthia, you share a name with Cynthia Nixon, who's know...</div>
                 </a>
-                <a href="/jokes/name-jokes/blake-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Blake appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/amy-with-three-letters-youre-the-tic-tac-toe-of" class="related-joke-card">
+                    <div class="related-joke-text">Amy, with three letters, you're the tic-tac-toe of names - a...</div>
+                </a>
+                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-6" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="/jokes/name-jokes/addison-appears-in-1-cultures-english-making-each" class="related-joke-card">
+                    <div class="related-joke-text">Addison appears in 1 cultures: English. Making each culture ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_clinton_cultural_origin_1757364200132_318',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

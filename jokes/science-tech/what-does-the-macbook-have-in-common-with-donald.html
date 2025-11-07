@@ -612,6 +612,44 @@ But I don't compare apples to oranges.",
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -711,13 +749,20 @@ But I don't compare apples to oranges.</div>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny science & tech jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I'm reading a book on anti-gravity. It's impossible to put down.</div>
+                    <div class="related-joke-text">Why did the computer go to bed?</div>
                 </a>
-                <a href="/jokes/science-tech/did-you-hear-about-the-scientist-who-was-lab" class="related-joke-card">
-                    <div class="related-joke-text">Did you hear about the scientist who was lab partners with a pot of boiling water? He had a very esteemed colleague.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">A SQL statement walks into a bar and sees two tables.</div>
                 </a>
-                <a href="/jokes/science-tech/why-do-mathematicians-hate-the-us" class="related-joke-card">
-                    <div class="related-joke-text">Why do mathematicians hate the U.S.? Because it's indivisible.</div>
+                <a href="/jokes/science-tech/i-wouldnt-buy-anything-with-velcro-its-a-total" class="related-joke-card">
+                    <div class="related-joke-text">I wouldn't buy anything with velcro. It'...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How many programmers does it take to screw in a light bulb?…...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">The gas Argon walks into a bar.
+The barkeeper says "What wou...</div>
                 </a>
             </div>
         </section>
@@ -1099,6 +1144,34 @@ But I don't compare apples to oranges.';
             'joke_id': 'MJ000739',
             'category': 'Science & Tech'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

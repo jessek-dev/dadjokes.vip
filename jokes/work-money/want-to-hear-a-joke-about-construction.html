@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Work & Money jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Office humor, business jokes, and funny takes on finances that anyone who's ever had a job can appreciate and relate to.</p>
             <div class="related-jokes">
-                <a href="/jokes/work-money/i-dropped-a-bucket-of-paint-on-my-boss-on-the-job" class="related-joke-card">
-                    <div class="related-joke-text">I dropped a bucket of paint on my boss on the job site. Boy was he blue in the face!</div>
+                <a href="/jokes/work-money/why-did-the-programmer-quit-his-job" class="related-joke-card">
+                    <div class="related-joke-text">Why did the programmer quit his job?… Because he didn't get ...</div>
                 </a>
-                <a href="/jokes/work-money/in-the-news-a-courtroom-artist-was-arrested-today" class="related-joke-card">
-                    <div class="related-joke-text">In the news a courtroom artist was arrested today, I'm not surprised, he always seemed sketchy.</div>
+                <a href="/jokes/work-money/i-went-to-a-book-store-and-asked-the-saleswoman" class="related-joke-card">
+                    <div class="related-joke-text">I went to a book store and asked the saleswoman where the Se...</div>
                 </a>
-                <a href="/jokes/work-money/every-machine-in-the-coin-factory-broke-down-all" class="related-joke-card">
-                    <div class="related-joke-text">Every machine in the coin factory broke down all of a sudden without explanation. It just doesn’t make any cents.</div>
+                <a href="/jokes/work-money/i-was-fired-from-the-keyboard-factory-yesterday-i" class="related-joke-card">
+                    <div class="related-joke-text">I was fired from the keyboard factory yesterday.  I wasn't p...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What does a writer have in common with a football player?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Did you hear about that new Lego store that just opened up?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002168',
             'category': 'Work & Money'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,14 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Lighthearted marriage humor and spouse jokes that celebrate the ups and downs of married life with good-natured fun.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife called me at the bar last night. She said "If you're not home in 10 minutes, I'm giving the dinner I cooked for you to the dog." I was home in 5 minutes - I'd hate for anything to happen to that dog!</div>
+                    <div class="related-joke-text">Sometimes I wake up grumpy, other times I just let her sleep...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Last night my wife asked me, "Is it just me or is the cat getting fat?" Apparently "It's just you" wasn't the right answer.</div>
+                    <div class="related-joke-text">It's hard to tell what my wife does for a living - she sells...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">My wife and I have reached the difficult decision that we do not want children.
-If anybody does, please just send me your contact details and we can drop them off tomorrow.</div>
+                    <div class="related-joke-text">My wife is threatening to throw me out of the house because ...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I told my wife to stop drawing her eyebrows so high. She loo...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">My wife dropped the laundry basket.</div>
                 </a>
             </div>
         </section>
@@ -1094,6 +1137,34 @@ If anybody does, please just send me your contact details and we can drop them o
             'joke_id': 'MJ001099',
             'category': 'Wife'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

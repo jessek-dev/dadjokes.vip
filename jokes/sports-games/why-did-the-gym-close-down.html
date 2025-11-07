@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Athletic humor and competition jokes covering football, baseball, basketball, golf, and all your favorite sports and games.</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What does a sprinter eat before a race? Nothing, they fast!</div>
+                    <div class="related-joke-text">What do you call a surfer at the beach with no waves to catch?</div>
                 </a>
-                <a href="/jokes/sports-games/you-know-what-the-first-rule-of-passive" class="related-joke-card">
-                    <div class="related-joke-text">You know what the first rule of passive-aggressive club is? You know what, never mind, forget it, it's fine.</div>
+                <a href="/jokes/sports-games/i-was-at-the-gym-yesterday-and-there-was-some" class="related-joke-card">
+                    <div class="related-joke-text">I was at the gym yesterday and there was some cheese working...</div>
                 </a>
-                <a href="/jokes/sports-games/i-dont-play-soccer-because-i-enjoy-the-sport-im" class="related-joke-card">
-                    <div class="related-joke-text">I don’t play soccer because I enjoy the sport. I’m just doing it for kicks.</div>
+                <a href="/jokes/sports-games/why-do-pancakes-always-win-at-baseball" class="related-joke-card">
+                    <div class="related-joke-text">Why do pancakes always win at baseball?..</div>
+                </a>
+                <a href="/jokes/sports-games/one-thing-i-cant-deal-with-is-a-deck-of-cards" class="related-joke-card">
+                    <div class="related-joke-text">One thing I can't deal with is a deck of cards glued togethe...</div>
+                </a>
+                <a href="/jokes/sports-games/if-athletes-get-athletes-foot-what-do-astronauts" class="related-joke-card">
+                    <div class="related-joke-text">If athletes get athlete's foot, what do astronauts get?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002389',
             'category': 'Sports & Games'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

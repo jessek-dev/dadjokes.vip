@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/your-names-got-arn-in-the-middle-sounds-like-you" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got ARN in the middle - sounds like you were halfway through spelling "EARN" when someone gave up and just tossed in old leftover letters.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Winston, just like Winston Churchill! Though they're famous ...</div>
+                </a>
+                <a href="/jokes/name-jokes/gabriella-with-a-name-like-that-i-bet-even-your" class="related-joke-card">
+                    <div class="related-joke-text">"Gabriella, with a name like that, I bet even your birth cer...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Shelley, your name sounds like a cheap motel chain where the sheets are always a little damp.</div>
+                    <div class="related-joke-text">Kristie, your name sounds like a mashup of trying to say "cr...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-all-those-vowels-stuck-together-abigails" class="related-joke-card">
-                    <div class="related-joke-text">With all those vowels stuck together, Abigail's name looks like a failed attempt at pronouncing "abacus" while yawning.</div>
+                <a href="/jokes/name-jokes/introducing-james-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing James! Following in the footsteps of James Bond,...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Joe and Joe Biden share the same name! Joe Biden i...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jaxson_famous_namesakes_v3_1757369174034_345',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/parents-really-thought-they-were-doing-something-2" class="related-joke-card">
-                    <div class="related-joke-text">Parents really thought they were doing something naming you Abel after Abel (Biblical). They're famous for being the world's first murder victim thanks to his brother, you're famous for disappointing expectations.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Sherri, I bet you've been mistaken for a Sh...</div>
                 </a>
-                <a href="/jokes/name-jokes/is-it-just-me-or-does-the-name-courtney-sound" class="related-joke-card">
-                    <div class="related-joke-text">Is it just me, or does the name Courtney sound like it was created by a "Court" and "Knee" who couldn't agree on how to spell their names, so they just mashed them together?</div>
+                <a href="/jokes/name-jokes/youre-stuck-in-name-purgatory-too-many-letters-to" class="related-joke-card">
+                    <div class="related-joke-text">You're stuck in name purgatory - too many letters to fit on ...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-so-simple-its-like-your-parents-were" class="related-joke-card">
-                    <div class="related-joke-text">Your name's so simple, it's like your parents were playing Scrabble but only had two B's and a Y to work with.</div>
+                <a href="/jokes/name-jokes/i-once-knew-an-adrian-lets-just-say-his-name-was" class="related-joke-card">
+                    <div class="related-joke-text">I once knew an Adrian... let's just say his name was more li...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-just-drain-with-an-extra-a-which" class="related-joke-card">
+                    <div class="related-joke-text">Your name is just "drain" with an extra A, which explains wh...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-life-gives-you-alan-ade-its-just-bland-water" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Alan-ade, it's just bland water because ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_devin_famous_namesakes_v3_second_1757369673096_425',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

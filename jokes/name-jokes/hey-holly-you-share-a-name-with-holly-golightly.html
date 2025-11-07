@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Jesus, your name is so powerful, even water tried to walk on you.</div>
+                    <div class="related-joke-text">Russell, your name sounds like a mashup of "rusty" and "tuss...</div>
                 </a>
-                <a href="/jokes/name-jokes/carolyn-comes-from-english-meaning-noble-warrior" class="related-joke-card">
-                    <div class="related-joke-text">Carolyn comes from English meaning "noble warrior." Clearly your parents had high expectations that weren't met.</div>
+                <a href="/jokes/name-jokes/beth-comes-from-english-meaning-strength-too-bad" class="related-joke-card">
+                    <div class="related-joke-text">Beth comes from English meaning "strength." Too bad that mea...</div>
                 </a>
-                <a href="/jokes/name-jokes/when-someone-asks-you-to-spell-alyssa-its-just" class="related-joke-card">
-                    <div class="related-joke-text">When someone asks you to spell "Alyssa," it's just long enough to be annoying but not long enough to justify having a nickname - you're stuck in name-length limbo.</div>
+                <a href="/jokes/name-jokes/meet-adrian-named-after-adrian-peterson-who-was" class="related-joke-card">
+                    <div class="related-joke-text">Meet Adrian! Named after Adrian Peterson, who was legendary ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-must-have-really-wanted-a-girl-named" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have really wanted a girl named Madley, bu...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-7" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need more le...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_holly_famous_namesakes_v3_second_1757369702216_623',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

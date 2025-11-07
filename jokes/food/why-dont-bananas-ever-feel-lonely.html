@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Food jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Delicious jokes about cooking, eating, restaurants, and everything food-related. Perfect to share at the dinner table!</p>
             <div class="related-jokes">
-                <a href="/jokes/food/how-do-you-make-an-artichoke" class="related-joke-card">
-                    <div class="related-joke-text">How do you make an artichoke? You strangle it.</div>
+                <a href="/jokes/food/i-knew-i-shouldnt-steal-a-mixer-from-work-but-it" class="related-joke-card">
+                    <div class="related-joke-text">I knew I shouldn't steal a mixer from work, but it was a whi...</div>
                 </a>
-                <a href="/jokes/food/i-went-to-the-zoo-yesterday-and-saw-a-baguette-in" class="related-joke-card">
-                    <div class="related-joke-text">I went to the zoo yesterday and saw a baguette in a cage. It was bread in captivity.</div>
+                <a href="/jokes/food/what-did-romans-use-to-cut-pizza-before-the" class="related-joke-card">
+                    <div class="related-joke-text">What did Romans use to cut pizza before the rolling cutter was invented?..</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">I went to the store to pick up eight cans of sprite... when I got home I realized I'd only picked seven up</div>
+                    <div class="related-joke-text">Why do mushrooms get invited to all the parties?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">What did the mayonnaise say when the refrigerator door opened?</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">How do potato chips help people?</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002817',
             'category': 'Food'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

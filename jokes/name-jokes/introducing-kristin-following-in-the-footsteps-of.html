@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Michelle comes from French meaning "courageous heart." The name's promise wasn't quite delivered.</div>
+                <a href="/jokes/name-jokes/you-know-antonio-when-people-ask-me-your-name-i" class="related-joke-card">
+                    <div class="related-joke-text">You know Antonio, when people ask me your name, I have to pa...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-so-long-your-signature-takes-up" class="related-joke-card">
-                    <div class="related-joke-text">Your name is so long, your signature takes up three lines - and that's just the first name, you haven't even started on the last name yet.</div>
+                <a href="/jokes/name-jokes/hey-andre-you-share-a-name-with-andre-the-giant" class="related-joke-card">
+                    <div class="related-joke-text">Hey Andre, you share a name with Andre the Giant, who's know...</div>
                 </a>
-                <a href="/jokes/name-jokes/while-everyone-else-fits-their-name-comfortably" class="related-joke-card">
-                    <div class="related-joke-text">While everyone else fits their name comfortably on a Starbucks cup, you're over here using up half their Sharpie ink with "Benjamin" - at least you get time to check your phone while they write it out.</div>
+                <a href="/jokes/name-jokes/ana-2" class="related-joke-card">
+                    <div class="related-joke-text">Ana?..</div>
+                </a>
+                <a href="/jokes/name-jokes/aaliyah-comes-from-arabic-meaning-exalted-sublime-2" class="related-joke-card">
+                    <div class="related-joke-text">Aaliyah comes from Arabic meaning "exalted, sublime." Clearl...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-alyssa-did-you-miss-a-your-calling-as-nsyncs" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alyssa, did you miss-a your calling as NSYNC's long-lost...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kristin_famous_namesakes_v3_1757369186762_432',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

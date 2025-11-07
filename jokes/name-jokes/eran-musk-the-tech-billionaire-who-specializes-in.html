@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Zoe, your name sounds like a halfway point between "zoinks" and "whoa," which makes sense because people are either surprised or running away when they hear it.</div>
+                    <div class="related-joke-text">Gregory appears in 1 cultures: English. You're proof that na...</div>
                 </a>
-                <a href="/jokes/name-jokes/youre-so-shallow-brooke-i-guess-thats-why-they" class="related-joke-card">
-                    <div class="related-joke-text">You're so shallow, Brooke - I guess that's why they didn't make you a lake or an ocean.</div>
+                <a href="/jokes/name-jokes/looks-like-your-parents-couldnt-even-commit-to-a" class="related-joke-card">
+                    <div class="related-joke-text">Looks like your parents couldn't even commit to a full "Anne...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-4" class="related-joke-card">
-                    <div class="related-joke-text">Your name is so short, even your nickname would need more letters - what are people supposed to call you for short, "Al"? That's just removing 40% of your identity.</div>
+                <a href="/jokes/name-jokes/your-name-is-what-happens-when-you-take-christ" class="related-joke-card">
+                    <div class="related-joke-text">Your name is what happens when you take "Christ" and remove ...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-everyone-else-is-done-writing-their-name-on-4" class="related-joke-card">
+                    <div class="related-joke-text">When everyone else is done writing their name on forms, you'...</div>
+                </a>
+                <a href="/jokes/name-jokes/bob-bob-bob-along-like-a-cork-in-the-sea-no" class="related-joke-card">
+                    <div class="related-joke-text">Bob, bob, bob along, like a cork in the sea - no wonder they...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_eran_1760911630809_8846',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,15 +743,20 @@
             <h2>Here are some more Family jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Wholesome jokes about family relationships, kids, siblings, and relatives that everyone can relate to and enjoy together.</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">If I have twin daughters, I'm going to name one Kate and the other Duplicate!</div>
-                </a>
-                <a href="/jokes/family/my-grandfather-says-im-too-reliant-on-technology" class="related-joke-card">
-                    <div class="related-joke-text">My grandfather says I'm too reliant on technology.
-I called him a hypocrite and unplugged his life support.</div>
+                <a href="/jokes/family/no-matter-how-kind-you-are-german-children-are" class="related-joke-card">
+                    <div class="related-joke-text">No matter how kind you are, German child...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">John had a blind date to a fitness center. She didn’t show up, so I guess they won’t work out.</div>
+                    <div class="related-joke-text">I didn't vaccinate my 10 kids and the one that survived is f...</div>
+                </a>
+                <a href="/jokes/family/my-sister-bet-me-15-that-i-couldnt-build-a-car" class="related-joke-card">
+                    <div class="related-joke-text">My sister bet me $15 that I couldn't build a car out of spag...</div>
+                </a>
+                <a href="/jokes/family/my-son-is-studying-to-be-a-surgeon-i-just-hope-he" class="related-joke-card">
+                    <div class="related-joke-text">My son is studying to be a surgeon, I just hope he makes the...</div>
+                </a>
+                <a href="/jokes/family/shout-out-to-my-grandma-thats-the-only-way-she" class="related-joke-card">
+                    <div class="related-joke-text">Shout out to my grandma, that's the only...</div>
                 </a>
             </div>
         </section>
@@ -1094,6 +1137,34 @@ I called him a hypocrite and unplugged his life support.</div>
             'joke_id': 'MJ000525',
             'category': 'Family'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

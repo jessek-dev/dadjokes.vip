@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/even-though-bridget-has-a-d-and-a-g-in-it-the" class="related-joke-card">
-                    <div class="related-joke-text">Even though "Bridget" has a "d" and a "g" in it, the name somehow still manages to be as exciting as an '80s dial-up modem tone.</div>
+                <a href="/jokes/name-jokes/your-name-is-brandon-but-it-looks-like-you" class="related-joke-card">
+                    <div class="related-joke-text">Your name is Brandon, but it looks like you couldn't decide ...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-ivy-and-poison-ivy-share-the-same-name" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Ivy and Poison Ivy share the same name! Poison Ivy is remembered for being Batman's enemy who controls plants. Ivy will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/people-with-medium-names-like-dalton-must-have" class="related-joke-card">
+                    <div class="related-joke-text">People with medium names like Dalton must have the most aver...</div>
                 </a>
-                <a href="/jokes/name-jokes/colin-inspired-by-colin-firths-legacy-of-being-mr" class="related-joke-card">
-                    <div class="related-joke-text">Colin, inspired by Colin Firth's legacy of being Mr. Darcy and making women swoon. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/emma-rose-with-a-name-like-that-i-bet-you-spend" class="related-joke-card">
+                    <div class="related-joke-text">Emma-rose, with a name like that I bet you spend half your t...</div>
+                </a>
+                <a href="/jokes/name-jokes/dominic-comes-from-english-meaning-defender-that" class="related-joke-card">
+                    <div class="related-joke-text">Dominic comes from English meaning "defender." That meaning ...</div>
+                </a>
+                <a href="/jokes/name-jokes/kinsley-appears-in-1-cultures-english-modern" class="related-joke-card">
+                    <div class="related-joke-text">Kinsley appears in 1 cultures: English (Modern). Somehow you...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kristine_name_meaning_1757364301062_847',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

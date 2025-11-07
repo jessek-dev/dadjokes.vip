@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Parents really thought they were doing something naming you Haley after Haley Joel Osment. They're famous for seeing dead people in The Sixth Sense, you're famous for disappointing expectations.</div>
+                    <div class="related-joke-text">Dustin sounds like your parents couldn't decide between "Dus...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Looking at the letters in your name, I see you're so into "broke" you spelled it twice - you just switched the 'r' and 'o'. Budgeting tips might be a good next read for you!</div>
+                    <div class="related-joke-text">Brandon - named after Brandon Sanderson, who was writing fan...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Ashton, your name is like a where's-waldo puzzle - finding the hidden A's and T's is half the fun of decoding you.</div>
+                    <div class="related-joke-text">Hey Bradley, sadly you're about as memorable as a badly sung...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Ariel appears in 7 cultures: Hebrew, English, French, Spanis...</div>
+                </a>
+                <a href="/jokes/name-jokes/adeline-your-parents-must-have-been-big-fans-of" class="related-joke-card">
+                    <div class="related-joke-text">Adeline, your parents must have been big fans of the 1920s i...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_alyssa_wordplay_1757338265578_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

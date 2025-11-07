@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/you-probably-spent-more-time-learning-to-write" class="related-joke-card">
-                    <div class="related-joke-text">You probably spent more time learning to write your signature than it takes everyone else to write your entire name.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">With a name like Serenity, I bet you spend most of your time...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-alicia-youre-so-high-maintenance-ia-even-ikea" class="related-joke-card">
-                    <div class="related-joke-text">Hey Alicia, you're so high-maintenance-ia, even IKEA has less pieces to put together than your daily routine.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-11" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need more le...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-couldnt-decide-between-a-short-name-4" class="related-joke-card">
-                    <div class="related-joke-text">Your parents couldn't decide between a short name like "Alex" or a long name like "Alexandria," so they just got lazy and stopped typing halfway through.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Parents really thought they were doing something naming you ...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-austin-you-share-a-name-with-austin-powers" class="related-joke-card">
+                    <div class="related-joke-text">Hey Austin, you share a name with Austin Powers, who's known...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-like-store-brand-vanilla-not-short" class="related-joke-card">
+                    <div class="related-joke-text">Your name's like store-brand vanilla - not short enough to b...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_bryan_spelling_1757346610227_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

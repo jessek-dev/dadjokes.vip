@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/introducing-dakota-following-in-the-footsteps-of" class="related-joke-card">
-                    <div class="related-joke-text">Introducing Dakota! Following in the footsteps of Dakota Fanning, who was renowned for being wise beyond her years in creepy movies. These are some big footsteps to trip over.</div>
+                <a href="/jokes/name-jokes/youve-got-just-enough-letters-to-be-forgettable-3" class="related-joke-card">
+                    <div class="related-joke-text">You've got just enough letters to be forgettable but not eno...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-name-has-a-br-start-like-broken-fitting" class="related-joke-card">
-                    <div class="related-joke-text">Your name has a "Br" start like "broken" - fitting since your parents' spelling broke down halfway through and just gave up with "ady".</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Victor appears in 9 cultures: English, French, Portuguese, R...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-anna-banana-youre-such-a-drama-llama-always" class="related-joke-card">
-                    <div class="related-joke-text">Hey Anna banana, you're such a drama llama - always causing panorama wherever you go!</div>
+                <a href="/jokes/name-jokes/adrian-just-like-adrian-peterson-though-theyre" class="related-joke-card">
+                    <div class="related-joke-text">Adrian, just like Adrian Peterson! Though they're famous for...</div>
+                </a>
+                <a href="/jokes/name-jokes/alexandria-oh-the-hysteria-your-names-longer-than" class="related-joke-card">
+                    <div class="related-joke-text">Alexandria, oh, the hysteria! Your name's longer than my gra...</div>
+                </a>
+                <a href="/jokes/name-jokes/when-life-gives-you-angie-dont-get-clangy-and" class="related-joke-card">
+                    <div class="related-joke-text">When life gives you Angie, don't get clangy and angsty - jus...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jerry_cultural_origin_1757364273594_700',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

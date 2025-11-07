@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/youre-like-the-season-youre-named-after-people" class="related-joke-card">
-                    <div class="related-joke-text">You're like the season you're named after - people only remember you exist four months out of the year.</div>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-13" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would just be "B" ...</div>
                 </a>
-                <a href="/jokes/name-jokes/amanda-comes-from-english-meaning-noble-warrior" class="related-joke-card">
-                    <div class="related-joke-text">Amanda comes from English meaning "noble warrior." The name's promise wasn't quite delivered.</div>
+                <a href="/jokes/name-jokes/hey-alexis-youre-so-extra-flexis-always-doing" class="related-joke-card">
+                    <div class="related-joke-text">Hey Alexis, you're so extra-flexis, always doing yoga stretc...</div>
                 </a>
-                <a href="/jokes/name-jokes/they-call-her-hurricane-anne-not-because-shes-2" class="related-joke-card">
-                    <div class="related-joke-text">"They call her 'Hurricane Anne' - not because she's fierce, but because her plans always get banned, scan, or ran into the sand."</div>
+                <a href="/jokes/name-jokes/hey-jacob-with-a-name-like-yours-i-bet-youve-been" class="related-joke-card">
+                    <div class="related-joke-text">Hey Jacob, with a name like yours, I bet you've been trying ...</div>
+                </a>
+                <a href="/jokes/name-jokes/ashton-your-name-is-so-heavy-on-consonants-it" class="related-joke-card">
+                    <div class="related-joke-text">Ashton, your name is so heavy on consonants, it feels like I...</div>
+                </a>
+                <a href="/jokes/name-jokes/wikipedia-ayla-from-chrono-trigger-known-for" class="related-joke-card">
+                    <div class="related-joke-text">Wikipedia: "Ayla from Chrono Trigger - known for being a cav...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jaxson_famous_namesakes_v3_second_1757369711280_689',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

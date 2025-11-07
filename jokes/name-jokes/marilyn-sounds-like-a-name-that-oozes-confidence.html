@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/they-say-youre-angelic-but-lets-be-specific-a" class="related-joke-card">
-                    <div class="related-joke-text">They say you're angelic but let's be specific-a, you're more like a walking encyclopedia mechanic-a!</div>
+                <a href="/jokes/name-jokes/hailey-has-english-modern-origins-meaning-ancient" class="related-joke-card">
+                    <div class="related-joke-text">Hailey has English (Modern) origins meaning "ancient meaning...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-18" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even make it to a fifth letter - I bet filling out forms is a breeze though!</div>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-paid-by-the-letter-when-3" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been paid by the letter when naming you...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-comes-from-french-meaning-graceful" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne comes from French meaning "graceful." Somehow the meaning got lost along the way.</div>
+                <a href="/jokes/name-jokes/chad-not-to-be-confused-with-chad-from-snl-whos" class="related-joke-card">
+                    <div class="related-joke-text">Chad: Not to be confused with Chad from SNL, who's famous fo...</div>
+                </a>
+                <a href="/jokes/name-jokes/adriana-comes-from-italian-meaning-joyful-spirit" class="related-joke-card">
+                    <div class="related-joke-text">Adriana comes from Italian meaning "joyful spirit." The name...</div>
+                </a>
+                <a href="/jokes/name-jokes/alison-is-just-a-lion-with-an-extra-s-no-wonder" class="related-joke-card">
+                    <div class="related-joke-text">"Alison" is just "a lion" with an extra S - no wonder you're...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_marilyn_1760907831122_8263',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

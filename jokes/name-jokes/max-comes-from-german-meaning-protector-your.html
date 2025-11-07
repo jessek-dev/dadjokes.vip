@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-haley-with-a-name-like-yours-i-bet-youre-used" class="related-joke-card">
-                    <div class="related-joke-text">Hey, Haley, with a name like yours, I bet you're used to being called "Hey-ley, where's the nearest hayride?"</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Taylor appears in 1 cultures: English. A true ambassador of ...</div>
                 </a>
-                <a href="/jokes/name-jokes/bethany-youve-got-than-in-your-name-yet-you" class="related-joke-card">
-                    <div class="related-joke-text">Bethany, you've got 'than' in your name, yet you always seem to be the 'then.'</div>
+                <a href="/jokes/name-jokes/albert-shares-a-name-with-albert-einstein-famous" class="related-joke-card">
+                    <div class="related-joke-text">Albert shares a name with Albert Einstein, famous for having crazy hair and making E=mc². What are the odds?..</div>
                 </a>
-                <a href="/jokes/name-jokes/by-the-time-someone-finishes-writing-your-name-on-5" class="related-joke-card">
-                    <div class="related-joke-text">By the time someone finishes writing your name on a coffee cup, three Amys and two Jens have already finished their drinks.</div>
+                <a href="/jokes/name-jokes/your-name-has-a-br-start-like-broken-fitting" class="related-joke-card">
+                    <div class="related-joke-text">Your name has a "Br" start like "broken" - fitting since you...</div>
+                </a>
+                <a href="/jokes/name-jokes/colin-inspired-by-colin-firths-legacy-of-being-mr" class="related-joke-card">
+                    <div class="related-joke-text">Colin, inspired by Colin Firth's legacy of being Mr. Darcy a...</div>
+                </a>
+                <a href="/jokes/name-jokes/youre-such-an-all-in-kind-of-guy-all-in" class="related-joke-card">
+                    <div class="related-joke-text">You're such an All-in kind of guy - all in-significant when ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_max_name_meaning_1757364328880_997',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

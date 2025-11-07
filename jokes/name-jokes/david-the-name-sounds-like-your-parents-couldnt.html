@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/five-letters-in-bobby-means-youre-taking-up" class="related-joke-card">
-                    <div class="related-joke-text">Five letters in Bobby means you're taking up exactly average space in the phone book - not efficient like "Bob" or memorable like "Roberto," just eternally middle-management material.</div>
+                <a href="/jokes/name-jokes/brody-just-like-brody-jenner-though-theyre-famous" class="related-joke-card">
+                    <div class="related-joke-text">Brody, just like Brody Jenner! Though they're famous for bei...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-adeline-youre-so-unrefined-you-make-a" class="related-joke-card">
-                    <div class="related-joke-text">Hey Adeline, you're so unrefined, you make a borderline look like a straight design.</div>
+                <a href="/jokes/name-jokes/youve-got-a-name-thats-the-toyota-camry-of-names" class="related-joke-card">
+                    <div class="related-joke-text">You've got a name that's the Toyota Camry of names - reliabl...</div>
                 </a>
-                <a href="/jokes/name-jokes/andres-sounds-like-the-name-of-a-suave" class="related-joke-card">
-                    <div class="related-joke-text">Andres sounds like the name of a suave international spy - watch out, James Bond, there's a new Andres in town!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Stefanie - a name that sounds like you're trying to fit two ...</div>
+                </a>
+                <a href="/jokes/name-jokes/like-your-namesake-barbara-walters-youre-asking" class="related-joke-card">
+                    <div class="related-joke-text">Like your namesake Barbara Walters, you're asking the questi...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-names-so-basic-its-just-the-letter-b-doing-a" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so basic it's just the letter B doing a trust fa...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_david_1760908594929_2033',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

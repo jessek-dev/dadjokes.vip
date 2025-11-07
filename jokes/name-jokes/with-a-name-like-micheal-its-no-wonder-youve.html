@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/those-alternating-vowels-and-consonants-in-aubrey" class="related-joke-card">
-                    <div class="related-joke-text">Those alternating vowels and consonants in Aubrey make your name look like a rejected keyboard smash that somehow made it into the baby name books.</div>
+                <a href="/jokes/name-jokes/google-autocomplete-geoffrey-suggests-geoffrey" class="related-joke-card">
+                    <div class="related-joke-text">Google autocomplete: "Geoffrey" suggests "Geoffrey the Butle...</div>
                 </a>
-                <a href="/jokes/name-jokes/bonnie-inspired-by-bonnie-parkers-legacy-of" class="related-joke-card">
-                    <div class="related-joke-text">Bonnie, inspired by Bonnie Parker's legacy of robbing banks with Clyde and dying in a hail of bullets. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/your-name-is-like-lukewarm-coffee-cassie-not" class="related-joke-card">
+                    <div class="related-joke-text">Your name is like lukewarm coffee, Cassie - not short enough...</div>
                 </a>
-                <a href="/jokes/name-jokes/bianca-your-name-is-so-long-its-a-wonder-you-dont" class="related-joke-card">
-                    <div class="related-joke-text">Bianca, your name is so long, it's a wonder you don't have your own personal logo and marketing team to help people remember it.</div>
+                <a href="/jokes/name-jokes/ayla-has-the-same-vowel-consonant-pattern-as-area" class="related-joke-card">
+                    <div class="related-joke-text">"Ayla" has the same vowel-consonant pattern as "area" - whic...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-they-16" class="related-joke-card">
+                    <div class="related-joke-text">Your parents were so lazy with naming, they couldn't even ma...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-ariana-banana-bandana-did-your-parents-name" class="related-joke-card">
+                    <div class="related-joke-text">Hey Ariana, banana bandana - did your parents name you after...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_micheal_wordplay_1757278642249_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

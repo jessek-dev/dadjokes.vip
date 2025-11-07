@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/brad-with-no-repeated-letters-in-your-name-youre" class="related-joke-card">
-                    <div class="related-joke-text">Brad, with no repeated letters in your name, you're one of a kind - just like that questionable tattoo we all know you have.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Wilbur Wright tried to fly. This Wilbur can barely get off t...</div>
                 </a>
-                <a href="/jokes/name-jokes/devon-appears-in-1-cultures-english-youre-like-a" class="related-joke-card">
-                    <div class="related-joke-text">Devon appears in 1 cultures: English. You're like a cultural exchange program gone wrong.</div>
+                <a href="/jokes/name-jokes/ayla-just-like-ayla-from-chrono-trigger-though" class="related-joke-card">
+                    <div class="related-joke-text">Ayla, just like Ayla from Chrono Trigger! Though they're fam...</div>
                 </a>
-                <a href="/jokes/name-jokes/bonnie-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Bonnie appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/brielle-with-your-name-having-not-one-but-two-ls" class="related-joke-card">
+                    <div class="related-joke-text">Brielle, with your name having not one, but two L's, you're ...</div>
+                </a>
+                <a href="/jokes/name-jokes/writing-your-full-name-must-be-exhausting-no" class="related-joke-card">
+                    <div class="related-joke-text">Writing your full name must be exhausting - no wonder everyo...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-is-so-short-even-your-nickname-would-7" class="related-joke-card">
+                    <div class="related-joke-text">Your name is so short, even your nickname would need more le...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_maxwell_famous_namesakes_v3_1757369198692_514',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

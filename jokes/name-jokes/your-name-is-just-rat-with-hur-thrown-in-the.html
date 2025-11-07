@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Kurt appears in 5 cultures: German, English, Swedish, Danish, Norwegian. You're proof that names don't determine destiny.</div>
+                    <div class="related-joke-text">Breaking: Audrey claims to be related to Audrey Hepburn. Aud...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">It's amusing that the initials of your name are C.A.D., because you're about as exciting as a Computer-Aided Design.</div>
+                    <div class="related-joke-text">Skylar, your name sounds like something you'd name a fancy c...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Bella-Grace - your parents must have been big Twilight fans. Thankfully, your personality is more human and less sparkly vampire.</div>
+                    <div class="related-joke-text">Hey Beth, did you lose your breath trying to keep up with De...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">I heard you go by Bailey - that's what happens when your par...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-looks-like-someone-was-playing-scrabble" class="related-joke-card">
+                    <div class="related-joke-text">Your name looks like someone was playing Scrabble and got st...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_arthur_spelling_1757346434427_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

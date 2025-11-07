@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more NSFW jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Jokes for mature audiences only. Adult humor that's not suitable for work or kids. You've been warned!</p>
             <div class="related-jokes">
-                <a href="/jokes/nsfw/why-did-the-sperm-cross-the-road-" class="related-joke-card">
-                    <div class="related-joke-text">Why did the sperm cross the road? ... Because I put on the wrong sock this morning.</div>
+                <a href="/jokes/nsfw/are-you-little-caesars-" class="related-joke-card">
+                    <div class="related-joke-text">Are you Little Caesars? …</div>
                 </a>
-                <a href="/jokes/nsfw/my-wife-divorced-me-so-i-stole-her-wheelchair" class="related-joke-card">
-                    <div class="related-joke-text">My wife divorced me so I stole her wheelchair.… Guess who came crawling back.</div>
+                <a href="/jokes/nsfw/i-picked-up-a-hitchhiker-yesterday-he-said-how-do" class="related-joke-card">
+                    <div class="related-joke-text">I picked up a hitchhiker yesterday. He said "How do you know...</div>
                 </a>
-                <a href="/jokes/nsfw/what-did-nala-say-to-simba-" class="related-joke-card">
-                    <div class="related-joke-text">What did Nala say to Simba? ... Hakuna my tatas.</div>
+                <a href="/jokes/nsfw/how-did-burger-king-get-dairy-queen-pregnant-" class="related-joke-card">
+                    <div class="related-joke-text">How did Burger King get Dairy Queen pregnant? …</div>
+                </a>
+                <a href="/jokes/nsfw/yo-mama-is-so-short-that-she-uses-a-condom-for-a" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so short that she uses a condom for a sleeping ba...</div>
+                </a>
+                <a href="/jokes/nsfw/yo-mama-is-so-ugly-that-even-bill-clinton-wouldnt" class="related-joke-card">
+                    <div class="related-joke-text">Yo mama is so ugly that even Bill Clinton wouldn't sleep wit...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'MJ002704',
             'category': 'NSFW'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Wallace, you must be the distant cousin of William Wallace - except without the bravery, intelligence, or ability to lead a rebellion.</div>
+                    <div class="related-joke-text">Wyatt comes from English meaning "strength." Clearly your pa...</div>
                 </a>
-                <a href="/jokes/name-jokes/if-you-say-aaliyah-three-times-fast-it-sounds" class="related-joke-card">
-                    <div class="related-joke-text">If you say "Aaliyah" three times fast, it sounds like you're having a panic attack at a luau.</div>
+                <a href="/jokes/name-jokes/your-names-so-medium-forms-dont-know-whether-to" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so medium, forms don't know whether to give you ...</div>
                 </a>
-                <a href="/jokes/name-jokes/aimee-like-the-famous-aimee-semple-mcpherson-but" class="related-joke-card">
-                    <div class="related-joke-text">Aimee, like the famous Aimee Semple McPherson, but I have a feeling your miracles involve making cake disappear faster than Houdini.</div>
+                <a href="/jokes/name-jokes/ariel" class="related-joke-card">
+                    <div class="related-joke-text">Ariel?..</div>
+                </a>
+                <a href="/jokes/name-jokes/alyssas-the-honda-civic-of-names-not-too-short" class="related-joke-card">
+                    <div class="related-joke-text">Alyssa's the Honda Civic of names - not too short, not too l...</div>
+                </a>
+                <a href="/jokes/name-jokes/alejandros-name-has-so-many-letters-he-once" class="related-joke-card">
+                    <div class="related-joke-text">Alejandro's name has so many letters, he once missed an appo...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brittany_famous_namesakes_v3_second_1757369645027_218',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

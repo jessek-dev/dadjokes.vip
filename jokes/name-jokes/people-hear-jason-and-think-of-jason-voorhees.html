@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Tim - the name that's so common, your parents couldn't even be bothered to put in the effort to make you unique.</div>
+                <a href="/jokes/name-jokes/iftah-nguyen-the-acclaimed-novelist" class="related-joke-card">
+                    <div class="related-joke-text">Iftah Nguyen, the acclaimed novelist?..</div>
                 </a>
-                <a href="/jokes/name-jokes/austin-appears-in-1-cultures-english-multiple" class="related-joke-card">
-                    <div class="related-joke-text">Austin appears in 1 cultures: English. Multiple cultures, zero cultural awareness.</div>
+                <a href="/jokes/name-jokes/they-say-ambers-a-gem-of-a-name-but-its-really" class="related-joke-card">
+                    <div class="related-joke-text">They say Amber's a gem of a name, but it's really just tree ...</div>
                 </a>
-                <a href="/jokes/name-jokes/adrienne-inspired-by-adrienne-barbeaus-legacy-of" class="related-joke-card">
-                    <div class="related-joke-text">Adrienne, inspired by Adrienne Barbeau's legacy of starring in horror movies and rocking the 70s. The inspiration is there, the execution is... still loading.</div>
+                <a href="/jokes/name-jokes/your-names-so-short-i-save-more-time-writing-anne" class="related-joke-card">
+                    <div class="related-joke-text">Your name's so short, I save more time writing "Anne" than I...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-really-wanted-your-name-to-be" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've really wanted your name to be asymmetri...</div>
+                </a>
+                <a href="/jokes/name-jokes/fun-fact-anne-and-anne-hathaway-share-the-same" class="related-joke-card">
+                    <div class="related-joke-text">Fun fact: Anne and Anne Hathaway share the same name! Anne H...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_jason_famous_namesakes_v2_1757366543184_41',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

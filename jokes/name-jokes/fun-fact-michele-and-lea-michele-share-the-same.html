@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/leonardo-a-name-so-italian-your-pasta-probably" class="related-joke-card">
-                    <div class="related-joke-text">Leonardo - a name so Italian, your pasta probably cooks faster than you.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Meet Wayne! Named after Bruce Wayne, who was legendary for b...</div>
                 </a>
-                <a href="/jokes/name-jokes/with-a-name-like-kerry-i-bet-you-spent-your-whole" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Kerry, I bet you spent your whole childhood correcting people who thought your name was "Carrie."</div>
+                <a href="/jokes/name-jokes/ayla-just-like-ayla-from-chrono-trigger-though" class="related-joke-card">
+                    <div class="related-joke-text">Ayla, just like Ayla from Chrono Trigger! Though they're fam...</div>
                 </a>
-                <a href="/jokes/name-jokes/fun-fact-latoya-and-latoya-jackson-share-the-same" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Latoya and LaToya Jackson share the same name! LaToya Jackson is remembered for being Michael's sister who posed for Playboy. Latoya will be remembered for this joke.</div>
+                <a href="/jokes/name-jokes/your-names-got-such-weird-letter-spacing-that" class="related-joke-card">
+                    <div class="related-joke-text">Your name's got such weird letter spacing that "Char" looks ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-name-has-two-ns-back-to-back-like-theyre" class="related-joke-card">
+                    <div class="related-joke-text">Your name has two N's back-to-back like they're gossiping ab...</div>
+                </a>
+                <a href="/jokes/name-jokes/bob-inspired-by-bob-rosss-legacy-of-painting" class="related-joke-card">
+                    <div class="related-joke-text">Bob, inspired by Bob Ross's legacy of painting happy little ...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_michele_famous_namesakes_v3_1757369201366_532',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

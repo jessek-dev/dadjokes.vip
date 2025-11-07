@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/fun-fact-emma-and-emma-stone-share-the-same-name" class="related-joke-card">
-                    <div class="related-joke-text">Fun fact: Emma and Emma Stone share the same name! Emma Stone is remembered for having red hair and winning Oscars. Emma will be remembered for this joke.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Marissa appears in 2 cultures: English, Dutch. Multiple cult...</div>
                 </a>
-                <a href="/jokes/name-jokes/the-name-amanda-is-like-a-broken-keyboard-starts" class="related-joke-card">
-                    <div class="related-joke-text">The name Amanda is like a broken keyboard - starts with A and somehow ends with A, but everything in the middle is just random mashing.</div>
+                <a href="/jokes/name-jokes/dylan-your-name-sounds-like-a-failed-attempt-at" class="related-joke-card">
+                    <div class="related-joke-text">Dylan, your name sounds like a failed attempt at spelling "D...</div>
                 </a>
-                <a href="/jokes/name-jokes/must-be-exhausting-having-a-name-that-takes-up" class="related-joke-card">
-                    <div class="related-joke-text">Must be exhausting having a name that takes up half your kindergarten nametag - bet you went by "Ben" until you had the lung capacity for all those syllables.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Glenn, your name sounds like the generic brand version of "G...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-aria-i-hear-ya-but-i-wish-i-didnt-cause-your" class="related-joke-card">
+                    <div class="related-joke-text">Hey Aria, I hear ya - but I wish I didn't, 'cause your voice...</div>
+                </a>
+                <a href="/jokes/name-jokes/id-rather-face-a-barbed-wire-fence-than-hear" class="related-joke-card">
+                    <div class="related-joke-text">I'd rather face a barbed-wire fence than hear someone yell "...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_frank_famous_namesakes_v3_second_1757369690412_547',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

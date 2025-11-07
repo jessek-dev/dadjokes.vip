@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/isla-comes-from-scottish-meaning-noble-that" class="related-joke-card">
-                    <div class="related-joke-text">Isla comes from Scottish meaning "noble." That meaning must have gotten lost in translation.</div>
+                <a href="/jokes/name-jokes/austin-when-life-gets-tough-just-remember-at" class="related-joke-card">
+                    <div class="related-joke-text">Austin, when life gets tough, just remember, at least you're...</div>
                 </a>
-                <a href="/jokes/name-jokes/i-heard-you-go-by-alice-because-always-landing-in" class="related-joke-card">
-                    <div class="related-joke-text">I heard you go by Alice because "Always Landing In Clumsy Episodes" was too long to fit on a nametag.</div>
+                <a href="/jokes/name-jokes/plot-twist-brad-isnt-brad-pitt-one-is-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Plot twist: Brad isn't Brad Pitt. One is famous for being ri...</div>
                 </a>
-                <a href="/jokes/name-jokes/care-o-lyn" class="related-joke-card">
-                    <div class="related-joke-text">Care-o-lyn? More like Scare-o-lyn, because that name's so old it belongs in a museum's rare-o-wing.</div>
+                <a href="/jokes/name-jokes/they-call-you-alisha-the-feature-creature-half" class="related-joke-card">
+                    <div class="related-joke-text">They call you Alisha the Feature Creature - half teacher, ha...</div>
+                </a>
+                <a href="/jokes/name-jokes/anita-appears-in-14-cultures-spanish-portuguese" class="related-joke-card">
+                    <div class="related-joke-text">Anita appears in 14 cultures: Spanish, Portuguese, Croatian,...</div>
+                </a>
+                <a href="/jokes/name-jokes/id-make-a-pun-about-your-name-but-im-afraid-it" class="related-joke-card">
+                    <div class="related-joke-text">I'd make a pun about your name, but I'm afraid it would be t...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_lori_wordplay_1757277614849_0',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

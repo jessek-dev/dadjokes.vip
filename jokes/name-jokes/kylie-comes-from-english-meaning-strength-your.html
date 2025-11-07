@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Linda Hamilton in Terminator? This Linda couldn't terminate her way out of a paper bag.</div>
+                    <div class="related-joke-text">Zoey: Not to be confused with Zoey Deschanel, who's famous f...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-really-aimed-for-originality-but" class="related-joke-card">
-                    <div class="related-joke-text">Your parents really aimed for originality but just ended up with a name that's 80% vowels and 100% trying too hard.</div>
+                <a href="/jokes/name-jokes/alicia-your-name-is-like-a-tv-series-with-just" class="related-joke-card">
+                    <div class="related-joke-text">Alicia, your name is like a TV series with just enough seaso...</div>
                 </a>
-                <a href="/jokes/name-jokes/not-short-enough-for-a-quick-intro-not-long" class="related-joke-card">
-                    <div class="related-joke-text">Not short enough for a quick intro, not long enough to be memorable - you're the lukewarm coffee of names, Adrian.</div>
+                <a href="/jokes/name-jokes/antonio-oh-antonio-with-a-name-as-long-as-a-rodeo" class="related-joke-card">
+                    <div class="related-joke-text">Antonio, oh Antonio, with a name as long as a rodeo, you bet...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-say-ariels-quite-the-material-girl-but-shes" class="related-joke-card">
+                    <div class="related-joke-text">They say Ariel's quite the material girl, but she's more lik...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-must-have-really-loved-the-letter-a-4" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must have really loved the letter A, since they...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kylie_name_meaning_1757364303175_859',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

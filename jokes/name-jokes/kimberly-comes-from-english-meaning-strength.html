@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/hey-alicia-youre-so-preciosa-too-bad-your-dance" class="related-joke-card">
-                    <div class="related-joke-text">Hey Alicia, you're so preciosa - too bad your dance moves look more like amnesia!</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Ah, Veronica, your name gives off an air of sophistication, ...</div>
                 </a>
-                <a href="/jokes/name-jokes/google" class="related-joke-card">
-                    <div class="related-joke-text">Google? More like Goo-gle, because your name sounds like it was made up on the spot.</div>
+                <a href="/jokes/name-jokes/christian-appears-in-6-cultures-english-french" class="related-joke-card">
+                    <div class="related-joke-text">Christian appears in 6 cultures: English, French, German, Sw...</div>
                 </a>
-                <a href="/jokes/name-jokes/youve-got-au-as-your-initials-which-is-the" class="related-joke-card">
-                    <div class="related-joke-text">You've got AU as your initials which is the chemical symbol for gold, but the "brey" part sounds more like the noise a disappointed donkey makes.</div>
+                <a href="/jokes/name-jokes/breaking-alex-claims-to-be-related-to-alex-trebek" class="related-joke-card">
+                    <div class="related-joke-text">Breaking: Alex claims to be related to Alex Trebek. Alex Tre...</div>
+                </a>
+                <a href="/jokes/name-jokes/aiden-is-just-aid-with-an-en-i-guess-your-parents" class="related-joke-card">
+                    <div class="related-joke-text">"Aiden" is just "aid" with an "en" - I guess your parents ne...</div>
+                </a>
+                <a href="/jokes/name-jokes/adeline-looks-like-someone-tried-to-spell" class="related-joke-card">
+                    <div class="related-joke-text">Adeline looks like someone tried to spell "deadline" but got...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_kimberly_name_meaning_1757364297585_827',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

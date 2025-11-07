@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Bob, your name's so boring it makes a light switch sound exciting - at least that goes "off" sometimes.</div>
+                    <div class="related-joke-text">Breaking: Cole claims to be related to Cole Sprouse. Cole Sp...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Marilyn the name has a melodic flow, but your life is more like a broken record.</div>
+                    <div class="related-joke-text">Jessica comes from English meaning "noble warrior." Your anc...</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Kristopher, I bet you spend half your time just spelling it out for people - "Yes, with a K, not a C, and an ER at the end, not an OR."</div>
+                    <div class="related-joke-text">They call you August 'cause you're always acting raw-gust, l...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">They call you Austin 'cause you're always exhaustin' - guess...</div>
+                </a>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bobby, your love life's so quiet, it's like a lobby. A p...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_andres_wordplay_1757379184030_2',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/you-know-your-parents-were-feeling-lazy-when-they" class="related-joke-card">
-                    <div class="related-joke-text">You know your parents were feeling lazy when they picked "Aimee" - just long enough to seem like they put in effort, but short enough to finish writing it before their coffee got cold.</div>
+                <a href="/jokes/name-jokes/your-double-rs-are-as-redundant-as-your" class="related-joke-card">
+                    <div class="related-joke-text">Your double R's are as redundant as your personality - one B...</div>
                 </a>
-                <a href="/jokes/name-jokes/karen-appears-in-5-cultures-danish-norwegian" class="related-joke-card">
-                    <div class="related-joke-text">Karen appears in 5 cultures: Danish, Norwegian, Icelandic, English, German. Making each culture wonder what went wrong.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Mila appears in 7 cultures: Serbian, Croatian, Bulgarian, Ma...</div>
                 </a>
-                <a href="/jokes/name-jokes/bianca-your-name-has-two-as-which-is-two-more" class="related-joke-card">
-                    <div class="related-joke-text">Bianca, your name has two A's, which is two more than the average person can handle before they start feeling dizzy.</div>
+                <a href="/jokes/name-jokes/when-andrew-tries-to-dance-he-looks-like-a-broken" class="related-joke-card">
+                    <div class="related-joke-text">When Andrew tries to dance, he looks like a broken windmill ...</div>
+                </a>
+                <a href="/jokes/name-jokes/your-parents-mustve-been-quite-thirsty-when" class="related-joke-card">
+                    <div class="related-joke-text">Your parents must've been quite thirsty when naming you - th...</div>
+                </a>
+                <a href="/jokes/name-jokes/they-call-you-august-but-youre-more-like-aw-gust" class="related-joke-card">
+                    <div class="related-joke-text">They call you August, but you're more like "Aw, gust" - just...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_marvin_cultural_origin_1757364325790_980',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

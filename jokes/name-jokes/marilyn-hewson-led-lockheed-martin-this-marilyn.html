@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
+                <a href="/jokes/name-jokes/ariel" class="related-joke-card">
+                    <div class="related-joke-text">Ariel?..</div>
+                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Oliver shares a name with Oliver Twist, famous for asking "Please sir, can I have some more?". What are the odds? About as good as Oliver becoming equally famous.</div>
+                    <div class="related-joke-text">Nancy appears in 1 cultures: English. That's a lot of cultur...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-got-more-unnecessary-letters-than-a" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got more unnecessary letters than a government form - you could've been "Karen" if your parents hadn't gotten fancy with that extra "ol" in the middle.</div>
+                <a href="/jokes/name-jokes/you-must-get-a-lot-of-typos-since-amelia-is-just" class="related-joke-card">
+                    <div class="related-joke-text">You must get a lot of typos since "Amelia" is just "I am ale...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-parents-were-so-lazy-with-naming-you-they" class="related-joke-card">
-                    <div class="related-joke-text">Your parents were so lazy with naming you, they couldn't even make it to a fifth letter - I guess "Bradley" was too much of a commitment.</div>
+                <a href="/jokes/name-jokes/aimee-shares-a-name-with-aimee-mann-famous-for" class="related-joke-card">
+                    <div class="related-joke-text">Aimee shares a name with Aimee Mann, famous for singing melancholy songs that make you feel feelings. What are the odds?..</div>
+                </a>
+                <a href="/jokes/name-jokes/amy-not-to-be-confused-with-amy-winehouse-whos" class="related-joke-card">
+                    <div class="related-joke-text">Amy: Not to be confused with Amy Winehouse, who's famous for...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_marilyn_1760908251852_5764',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

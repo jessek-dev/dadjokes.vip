@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/when-ayla-tries-to-bust-a-move-she-looks-like-a" class="related-joke-card">
-                    <div class="related-joke-text">When Ayla tries to bust a move, she looks like a broken tape player on skip-repeat - just call her DJ Fail-a!</div>
-                </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Madison comes from English meaning "bright fame." Somehow the meaning got lost along the way.</div>
+                    <div class="related-joke-text">Mariah, your name sounds like a mashup of "Maria" and "Messi...</div>
                 </a>
-                <a href="/jokes/name-jokes/your-names-got-back-to-back-ds-even-your-letters" class="related-joke-card">
-                    <div class="related-joke-text">Your name's got back-to-back D's - even your letters can't maintain social distancing.</div>
+                <a href="/jokes/name-jokes/annabelle-appears-in-2-cultures-english-french" class="related-joke-card">
+                    <div class="related-joke-text">Annabelle appears in 2 cultures: English, French. Making eac...</div>
+                </a>
+                <a href="/jokes/name-jokes/angie-your-name-may-mean-grace-in-greek-but-your" class="related-joke-card">
+                    <div class="related-joke-text">Angie, your name may mean "grace" in Greek, but your sense o...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-bethany-you-share-a-name-with-bethany" class="related-joke-card">
+                    <div class="related-joke-text">Hey Bethany, you share a name with Bethany Hamilton, who's k...</div>
+                </a>
+                <a href="/jokes/name-jokes/amelia" class="related-joke-card">
+                    <div class="related-joke-text">Amelia?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_dean_name_meaning_1757364214067_387',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -706,13 +744,19 @@
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Hey Jocelyn, you share a name with Jocelyn Wildenstein, who's known for getting so much plastic surgery she looks like a cat. You're known for... well, we're still figuring that out.</div>
+                    <div class="related-joke-text">Destiny - your name sounds like a failed attempt at naming a...</div>
                 </a>
-                <a href="/jokes/name-jokes/i-heard-you-got-lost-trying-to-find-your-last" class="related-joke-card">
-                    <div class="related-joke-text">I heard you got lost trying to find your last name - I guess that's why they call you A-missing-a.</div>
+                <a href="/jokes/name-jokes/your-name-has-two-ls-back-to-back-like-youre" class="related-joke-card">
+                    <div class="related-joke-text">Your name has two L's back-to-back like you're stuttering in...</div>
                 </a>
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Carlos, your name is like an underachieving alphabet with only six out of 26 letters - I guess you didn't want to overdo it.</div>
+                <a href="/jokes/name-jokes/your-name-starts-with-au-like-gold-but-ends-in" class="related-joke-card">
+                    <div class="related-joke-text">Your name starts with AU like gold but ends in TIN - false a...</div>
+                </a>
+                <a href="/jokes/name-jokes/hey-ariel-youre-so-ethereal-floating-around-like" class="related-joke-card">
+                    <div class="related-joke-text">Hey Ariel, you're so ethereal - floating around like a cerea...</div>
+                </a>
+                <a href="/jokes/name-jokes/an-advantage-of-having-a-medium-length-name-like" class="related-joke-card">
+                    <div class="related-joke-text">"An advantage of having a medium-length name like Aimee?..</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_brandon_length_1757424262890_1',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

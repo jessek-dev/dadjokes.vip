@@ -608,6 +608,44 @@
                 padding: 30px 20px;
             }
         }
+
+        /* Footer Styles */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -705,14 +743,20 @@
             <h2>Here are some more Name Jokes jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Funny name jokes jokes that will make you laugh!</p>
             <div class="related-jokes">
-                <a href="/jokes/name-jokes/with-a-name-like-cheryl-i-bet-youve-spent-your" class="related-joke-card">
-                    <div class="related-joke-text">With a name like Cheryl, I bet you've spent your whole life correcting people who think it's "Cherie" or "Sheryl." Doesn't exactly scream confidence, does it?</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Hey Jaime, you share a name with Jaime Lannister, who's know...</div>
                 </a>
-                <a href="/jokes/name-jokes/hey-carson-youre-such-an-arson-everywhere-you-go" class="related-joke-card">
-                    <div class="related-joke-text">Hey Carson, you're such an arson - everywhere you go, things get heated and fall apart-son.</div>
+                <a href="/jokes/name-jokes/introducing-arianna-following-in-the-footsteps-of" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Arianna! Following in the footsteps of Ariana Gr...</div>
                 </a>
-                <a href="/jokes/name-jokes/april-youre-named-after-a-month-thats-known-for" class="related-joke-card">
-                    <div class="related-joke-text">April, you're named after a month that's known for rain. I guess that's why whenever you talk, it's like a constant drizzle of mundane.</div>
+                <a href="" class="related-joke-card">
+                    <div class="related-joke-text">Introducing Omar! Following in the footsteps of Omar from Th...</div>
+                </a>
+                <a href="/jokes/name-jokes/anne-like-anne-hathaway-you-bring-hollywood" class="related-joke-card">
+                    <div class="related-joke-text">Anne, like Anne Hathaway, you bring Hollywood glamour to eve...</div>
+                </a>
+                <a href="/jokes/name-jokes/grayson-your-name-sounds-like-a-color-and-a-son" class="related-joke-card">
+                    <div class="related-joke-text">Grayson, your name sounds like a color and a son mashed toge...</div>
                 </a>
             </div>
         </section>
@@ -1093,6 +1137,34 @@
             'joke_id': 'ai_heather_name_meaning_1757364255059_599',
             'category': 'Name Jokes'
         });
+    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/app">App</a>
+        <a href="/jokes">Jokes</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="footer-stores">
+        <a href="https://dadjokes.vip/ios">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <a href="https://dadjokes.vip/android">
+          <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
