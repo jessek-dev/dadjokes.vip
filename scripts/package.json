@@ -7,6 +7,7 @@
     "generate": "node generate-pages.js",
     "test": "node generate-pages.js --test",
     "update": "node update-new-jokes.js",
+    "update-count": "node update-joke-count.js",
     "import:failed": "node import-failed-jokes.js"
   },
   "dependencies": {
