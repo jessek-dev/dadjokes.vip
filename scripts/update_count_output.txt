@@ -1,0 +1,24 @@
+
+> dadjokes-page-generator@1.0.0 update-count
+> node update-joke-count.js
+
+🎯 Updating joke count...
+
+Fetching joke counts from Firebase...
+Regular jokes: 2,396
+Name jokes: 16,747
+Total jokes: 19,143
+
+Updating /home/runner/work/dadjokes.vip/dadjokes.vip/app/index.html...
+✅ Updated joke count to: 19,143
+
+Updating /home/runner/work/dadjokes.vip/dadjokes.vip/joke/template.html...
+  ✓ Updated Mobile banner
+  ✓ Updated App download banner
+  ✓ Updated CTA section
+  ✓ Updated Paywall modal
+✅ Updated 4 count locations in template
+
+✨ Joke count update completed successfully!
+
+⚠️  IMPORTANT: Run "npm run generate" to regenerate all joke pages with the new count.
