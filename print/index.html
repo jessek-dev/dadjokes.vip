@@ -886,11 +886,11 @@
             });
 
             // Use native share if available (iOS/mobile)
+            // Only share URL (not text) so "Copy" gives a clean URL
             if (navigator.share) {
                 try {
                     await navigator.share({
                         title: 'Dad Jokes - Print Edition',
-                        text: currentJokeText,
                         url: shareUrl.toString()
                     });
                 } catch (err) {
