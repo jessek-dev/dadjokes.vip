@@ -203,27 +203,24 @@
             font-weight: 700;
             line-height: 1.25;
             color: var(--text-white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
+        }
+
+        /* Cursor element - inserted via JS */
+        .cursor {
+            display: inline;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
 
         /* Bottom section - controls */
         .bottom-section {
             width: 100%;
             padding-bottom: env(safe-area-inset-bottom, 0);
-        }
-
-        .joke-text.typing::after {
-            content: '|';
-            animation: blink 0.8s infinite;
-            margin-left: 2px;
-        }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
         }
 
         /* Progress Indicator */
@@ -595,10 +592,9 @@
             return availableJokes[randomIndex];
         }
 
-        // Typewriter effect
+        // Typewriter effect with inline cursor
         function typewriterEffect(text, element, callback) {
-            element.textContent = '';
-            element.classList.add('typing');
+            element.innerHTML = '<span class="cursor">|</span>';
 
             let i = 0;
             const speed = 40;
@@ -606,7 +602,9 @@
 
             function type() {
                 if (i < text.length) {
-                    element.textContent += text.charAt(i);
+                    // Update text + cursor
+                    const displayText = text.substring(0, i + 1);
+                    element.innerHTML = displayText + '<span class="cursor">|</span>';
                     i++;
 
                     // Pause after question mark + space (setup → punchline)
@@ -626,7 +624,8 @@
 
                     setTimeout(type, speed);
                 } else {
-                    element.classList.remove('typing');
+                    // Remove cursor when done
+                    element.textContent = text;
                     if (callback) callback();
                 }
             }
@@ -863,12 +862,10 @@
         function updateBannerForPlatform() {
             const isAndroid = /Android/.test(navigator.userAgent);
             const btn = document.getElementById('app-banner-btn');
-            const subtitle = document.getElementById('final-cta').querySelector('.final-cta-subtitle');
 
             if (isAndroid) {
                 btn.textContent = 'SOON';
                 btn.classList.add('coming-soon');
-                if (subtitle) subtitle.textContent = 'Coming soon to Android';
             }
         }
 
