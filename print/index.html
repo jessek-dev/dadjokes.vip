@@ -583,17 +583,22 @@
             }
         }
 
-        // Fetch all featured jokes (rating >= 4)
+        // Categories to exclude from print experience
+        const EXCLUDED_CATEGORIES = ['Yo Mama', 'NSFW'];
+
+        // Fetch all featured jokes (rating >= 4, excluding Yo Mama and NSFW)
         async function loadFeaturedJokes() {
             try {
                 const jokesRef = collection(db, "jokes", "all", "jokes");
                 const q = query(jokesRef, where("rating", ">=", 4));
                 const snapshot = await getDocs(q);
 
-                allFeaturedJokes = snapshot.docs.map(doc => ({
-                    id: doc.id,
-                    ...doc.data()
-                }));
+                allFeaturedJokes = snapshot.docs
+                    .map(doc => ({
+                        id: doc.id,
+                        ...doc.data()
+                    }))
+                    .filter(joke => !EXCLUDED_CATEGORIES.includes(joke.category));
 
                 if (allFeaturedJokes.length === 0) {
                     throw new Error('No featured jokes found');
@@ -606,14 +611,19 @@
             }
         }
 
-        // Fetch specific joke by ID
+        // Fetch specific joke by ID (also filters excluded categories)
         async function fetchJokeById(jokeId) {
             try {
                 const docRef = doc(db, "jokes", "all", "jokes", jokeId);
                 const docSnap = await getDoc(docRef);
 
                 if (docSnap.exists()) {
-                    return { id: docSnap.id, ...docSnap.data() };
+                    const joke = { id: docSnap.id, ...docSnap.data() };
+                    // Don't return excluded categories even via direct link
+                    if (EXCLUDED_CATEGORIES.includes(joke.category)) {
+                        return null;
+                    }
+                    return joke;
                 }
                 return null;
             } catch (error) {
