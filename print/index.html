@@ -816,6 +816,12 @@
             const sessionCount = getSessionCount();
             if (sessionCount >= MAX_JOKES) return;
 
+            // Track next joke click
+            gtag('event', 'next_joke_click', {
+                source: sourceParam,
+                joke_number: sessionCount + 1
+            });
+
             const btn = document.getElementById('next-btn');
             btn.disabled = true;
             btn.textContent = 'Loading...';
