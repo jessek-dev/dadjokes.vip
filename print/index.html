@@ -33,9 +33,6 @@
     <meta name="apple-mobile-web-app-title" content="Dad Jokes">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
-    <!-- Disable Safari Smart App Banner (we have our own) -->
-    <meta name="apple-itunes-app" content="">
-
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -971,10 +968,16 @@
 
         // Check platform for banner
         function updateBannerForPlatform() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
             const isAndroid = /Android/.test(navigator.userAgent);
+            const banner = document.querySelector('.app-banner');
             const btn = document.getElementById('app-banner-btn');
 
-            if (isAndroid) {
+            // Hide custom banner on iOS - Safari shows its own Smart App Banner
+            if (isIOS) {
+                banner.style.display = 'none';
+                document.body.style.paddingTop = '0';
+            } else if (isAndroid) {
                 btn.textContent = 'SOON';
                 btn.classList.add('coming-soon');
             }
