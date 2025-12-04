@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dad Jokes - Print Edition</title>
+
+    <!-- noindex for hidden experience -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="Dad Jokes - Print Edition">
+    <meta property="og:description" content="Scan, laugh, repeat. Premium dad jokes from your favorite prints.">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+    <meta property="og:url" content="https://dadjokes.vip/print/">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+
+    <!-- Rustic print-style font -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:wght@400;600&display=swap" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:wght@400;600&display=swap"></noscript>
+
+    <style>
+        :root {
+            --bg-slate: #2C3E50;
+            --bg-forest: #1E3A2F;
+            --bg-wine: #4A1C2A;
+            --bg-navy: #1A2F4A;
+            --bg-charcoal: #2D2D2D;
+            --bg-olive: #3D4F2F;
+            --text-cream: #F5F0E6;
+            --text-white: #FFFFFF;
+            --accent-gold: #D4AF37;
+            --accent-copper: #B87333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Playfair Display', Georgia, serif;
+            background: var(--bg-slate);
+            color: var(--text-cream);
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Theme variations */
+        body.theme-forest { background: var(--bg-forest); }
+        body.theme-wine { background: var(--bg-wine); }
+        body.theme-navy { background: var(--bg-navy); }
+        body.theme-charcoal { background: var(--bg-charcoal); }
+        body.theme-olive { background: var(--bg-olive); }
+
+        /* Sticky App Banner */
+        .app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .app-banner-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .app-banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .app-banner-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            color: #000;
+        }
+
+        .app-banner-subtitle {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 11px;
+            color: #666;
+        }
+
+        .app-banner-btn {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 7px 16px;
+            border-radius: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+        .app-banner-btn.coming-soon {
+            background: #999;
+            cursor: default;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+
+        /* Main Container */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        /* Print Edition Badge */
+        .edition-badge {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        /* Joke Display */
+        .joke-container {
+            max-width: 360px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .joke-text {
+            font-family: 'Amatic SC', cursive;
+            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--text-white);
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .joke-text.typing::after {
+            content: '|';
+            animation: blink 0.8s infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Progress Indicator */
+        .progress {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+
+        /* Another Joke Button */
+        .next-btn {
+            margin-top: 30px;
+            background: transparent;
+            border: 2px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 14px 40px;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            min-height: 52px;
+        }
+
+        .next-btn:hover, .next-btn:active {
+            background: var(--accent-gold);
+            color: var(--bg-slate);
+        }
+
+        body.theme-forest .next-btn:hover { color: var(--bg-forest); }
+        body.theme-wine .next-btn:hover { color: var(--bg-wine); }
+        body.theme-navy .next-btn:hover { color: var(--bg-navy); }
+        body.theme-charcoal .next-btn:hover { color: var(--bg-charcoal); }
+        body.theme-olive .next-btn:hover { color: var(--bg-olive); }
+
+        /* Final CTA (replaces button after 5 jokes) */
+        .final-cta {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .final-cta-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--text-cream);
+        }
+
+        .final-cta-btn {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: #1a1a1a;
+            padding: 16px 32px;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            min-width: 200px;
+        }
+
+        .final-cta-btn:hover, .final-cta-btn:active {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .final-cta-subtitle {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 10px;
+        }
+
+        /* Shop CTA */
+        .shop-link {
+            margin-top: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 13px;
+        }
+
+        .shop-link a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .shop-link a:hover {
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+
+        /* Loading State */
+        .loading {
+            opacity: 0.6;
+        }
+
+        .loading .joke-text::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--text-cream);
+            border-radius: 50%;
+            animation: pulse 1s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Hidden utility */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Error state */
+        .error-message {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky App Banner -->
+    <div class="app-banner">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="app-banner-icon">
+        <div class="app-banner-text">
+            <div class="app-banner-title">Dad Jokes</div>
+            <div class="app-banner-subtitle" id="banner-subtitle">2,500+ jokes in the app</div>
+        </div>
+        <a href="#" id="app-banner-btn" class="app-banner-btn" onclick="handleAppClick(event)">GET</a>
+    </div>
+
+    <div class="container">
+        <div class="edition-badge">Print Edition</div>
+
+        <div class="joke-container">
+            <div class="joke-text typing" id="joke-text"></div>
+        </div>
+
+        <div class="progress" id="progress">1 of 5</div>
+
+        <button class="next-btn" id="next-btn" onclick="loadNextJoke()">Another Joke</button>
+
+        <div class="final-cta hidden" id="final-cta">
+            <div class="final-cta-title">Want more?</div>
+            <a href="#" id="final-cta-btn" class="final-cta-btn" onclick="handleFinalCTA(event)">
+                Get the App (2,500+ jokes)
+            </a>
+            <div class="final-cta-subtitle">Free on iPhone</div>
+        </div>
+
+        <div class="shop-link">
+            <a href="#" id="shop-link" onclick="handleShopClick(event)">Want your own print?</a>
+        </div>
+    </div>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q8LRBVBMRF');
+    </script>
+
+    <!-- Firebase & Main Logic -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getFirestore, collection, getDocs, query, where, doc, getDoc, getCountFromServer } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
+            authDomain: "dad-jokes-76c85.firebaseapp.com",
+            projectId: "dad-jokes-76c85",
+            storageBucket: "dad-jokes-76c85.firebasestorage.app",
+            messagingSenderId: "165634926020",
+            appId: "1:165634926020:web:3f8ad9f397da9c3574f091",
+            measurementId: "G-7DJD06WV2R"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // State
+        let allFeaturedJokes = [];
+        let currentJokeIndex = 0;
+        let sessionJokes = [];
+        const MAX_JOKES = 5;
+
+        // Parse URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const specificJokeId = urlParams.get('joke');
+        const sourceParam = urlParams.get('src') || 'unknown';
+
+        // Get pre-specified joke IDs (joke1 through joke5)
+        const preSpecifiedJokes = [];
+        for (let i = 1; i <= 5; i++) {
+            const jokeParam = urlParams.get(`joke${i}`);
+            if (jokeParam) preSpecifiedJokes.push(jokeParam);
+        }
+
+        // Get seen jokes from localStorage (persistent across sessions)
+        function getSeenJokes() {
+            try {
+                return JSON.parse(localStorage.getItem('printSeenJokes') || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function addSeenJoke(jokeId) {
+            const seen = getSeenJokes();
+            if (!seen.includes(jokeId)) {
+                seen.push(jokeId);
+                // Keep only last 500 to prevent storage bloat
+                if (seen.length > 500) seen.shift();
+                localStorage.setItem('printSeenJokes', JSON.stringify(seen));
+            }
+        }
+
+        // Session tracking (for the 5-joke limit)
+        function getSessionJokes() {
+            try {
+                return JSON.parse(sessionStorage.getItem('printSessionJokes') || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function addSessionJoke(jokeId) {
+            const session = getSessionJokes();
+            if (!session.includes(jokeId)) {
+                session.push(jokeId);
+                sessionStorage.setItem('printSessionJokes', JSON.stringify(session));
+            }
+            return session.length;
+        }
+
+        function getSessionCount() {
+            return getSessionJokes().length;
+        }
+
+        // Random theme on load
+        function setRandomTheme() {
+            const themes = ['', 'theme-forest', 'theme-wine', 'theme-navy', 'theme-charcoal', 'theme-olive'];
+            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+            if (randomTheme) {
+                document.body.classList.add(randomTheme);
+            }
+        }
+
+        // Load joke count for display
+        async function loadJokeCount() {
+            try {
+                const jokesRef = collection(db, "jokes", "all", "jokes");
+                const snapshot = await getCountFromServer(jokesRef);
+                const count = snapshot.data().count;
+                const formattedCount = count.toLocaleString();
+
+                document.getElementById('banner-subtitle').textContent = `${formattedCount}+ jokes in the app`;
+                document.getElementById('final-cta-btn').textContent = `Get the App (${formattedCount}+ jokes)`;
+            } catch (e) {
+                console.log('Could not load joke count');
+            }
+        }
+
+        // Fetch all featured jokes (rating >= 4)
+        async function loadFeaturedJokes() {
+            try {
+                const jokesRef = collection(db, "jokes", "all", "jokes");
+                const q = query(jokesRef, where("rating", ">=", 4));
+                const snapshot = await getDocs(q);
+
+                allFeaturedJokes = snapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+
+                if (allFeaturedJokes.length === 0) {
+                    throw new Error('No featured jokes found');
+                }
+
+                return true;
+            } catch (error) {
+                console.error('Error loading jokes:', error);
+                return false;
+            }
+        }
+
+        // Fetch specific joke by ID
+        async function fetchJokeById(jokeId) {
+            try {
+                const docRef = doc(db, "jokes", "all", "jokes", jokeId);
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists()) {
+                    return { id: docSnap.id, ...docSnap.data() };
+                }
+                return null;
+            } catch (error) {
+                console.error('Error fetching joke:', error);
+                return null;
+            }
+        }
+
+        // Get next joke (prioritizing unseen, pre-specified, or specific)
+        function getNextJoke() {
+            const seenJokes = getSeenJokes();
+            const sessionCount = getSessionCount();
+
+            // Check if we have pre-specified jokes to show
+            if (preSpecifiedJokes.length > sessionCount) {
+                const nextPreSpecified = preSpecifiedJokes[sessionCount];
+                const found = allFeaturedJokes.find(j => j.id === nextPreSpecified);
+                if (found) return found;
+            }
+
+            // Filter to unseen jokes
+            let availableJokes = allFeaturedJokes.filter(j => !seenJokes.includes(j.id));
+
+            // If all jokes seen, reset and use all
+            if (availableJokes.length === 0) {
+                localStorage.removeItem('printSeenJokes');
+                availableJokes = allFeaturedJokes;
+            }
+
+            // Pick random from available
+            const randomIndex = Math.floor(Math.random() * availableJokes.length);
+            return availableJokes[randomIndex];
+        }
+
+        // Typewriter effect
+        function typewriterEffect(text, element, callback) {
+            element.textContent = '';
+            element.classList.add('typing');
+
+            let i = 0;
+            const speed = 40;
+            let hasPaused = false;
+
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+
+                    // Pause after question mark + space (setup → punchline)
+                    const lastTwo = text.substring(i - 2, i);
+                    if (!hasPaused && lastTwo === '? ') {
+                        hasPaused = true;
+                        setTimeout(type, 1200);
+                        return;
+                    }
+
+                    // Pause after ellipsis
+                    if (!hasPaused && text.substring(i - 4, i) === '... ') {
+                        hasPaused = true;
+                        setTimeout(type, 1000);
+                        return;
+                    }
+
+                    setTimeout(type, speed);
+                } else {
+                    element.classList.remove('typing');
+                    if (callback) callback();
+                }
+            }
+
+            type();
+        }
+
+        // Display joke
+        function displayJoke(joke) {
+            const jokeText = document.getElementById('joke-text');
+            const text = joke.text || `${joke.setup} ${joke.punchline}`;
+
+            // Track in session
+            const count = addSessionJoke(joke.id);
+            addSeenJoke(joke.id);
+
+            // Update progress
+            document.getElementById('progress').textContent = `${count} of ${MAX_JOKES}`;
+
+            // Track GA event
+            gtag('event', 'joke_viewed', {
+                joke_id: joke.id,
+                category: joke.category || 'unknown',
+                source: sourceParam,
+                joke_number: count
+            });
+
+            // Typewriter the joke
+            typewriterEffect(text, jokeText, () => {
+                // After animation, check if we should show final CTA
+                if (count >= MAX_JOKES) {
+                    document.getElementById('next-btn').classList.add('hidden');
+                    document.getElementById('final-cta').classList.remove('hidden');
+                    document.getElementById('progress').textContent = 'That\'s all for now!';
+                }
+            });
+        }
+
+        // Load next joke
+        window.loadNextJoke = async function() {
+            const sessionCount = getSessionCount();
+            if (sessionCount >= MAX_JOKES) return;
+
+            const btn = document.getElementById('next-btn');
+            btn.disabled = true;
+            btn.textContent = 'Loading...';
+
+            const joke = getNextJoke();
+            if (joke) {
+                displayJoke(joke);
+            }
+
+            btn.disabled = false;
+            btn.textContent = 'Another Joke';
+        };
+
+        // Handle app banner/CTA clicks
+        window.handleAppClick = function(e) {
+            e.preventDefault();
+            gtag('event', 'app_download_click', {
+                location: 'banner',
+                source: sourceParam
+            });
+            openApp();
+        };
+
+        window.handleFinalCTA = function(e) {
+            e.preventDefault();
+            gtag('event', 'app_download_click', {
+                location: 'final_cta',
+                source: sourceParam
+            });
+            openApp();
+        };
+
+        function openApp() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.href = 'dadjokesvip://print';
+                setTimeout(() => {
+                    window.location.href = 'https://apps.apple.com/app/id6743726261';
+                }, 1500);
+            } else if (isAndroid) {
+                // Android coming soon - go to Play Store listing (or placeholder)
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
+            } else {
+                window.location.href = 'https://apps.apple.com/app/id6743726261';
+            }
+        }
+
+        // Handle shop link click
+        window.handleShopClick = function(e) {
+            e.preventDefault();
+            gtag('event', 'shop_prints_click', {
+                source: sourceParam
+            });
+            // Placeholder - update with actual shop URL when available
+            alert('Shop coming soon! Stay tuned for Dad Jokes prints.');
+        };
+
+        // Initialize
+        async function init() {
+            setRandomTheme();
+            loadJokeCount();
+
+            const jokeText = document.getElementById('joke-text');
+            jokeText.innerHTML = '<span class="loading">Loading...</span>';
+
+            // Check for existing session
+            const existingSession = getSessionJokes();
+            if (existingSession.length >= MAX_JOKES) {
+                // Already hit limit in this session
+                jokeText.textContent = 'You\'ve seen all 5 jokes!';
+                jokeText.classList.remove('typing');
+                document.getElementById('next-btn').classList.add('hidden');
+                document.getElementById('final-cta').classList.remove('hidden');
+                document.getElementById('progress').textContent = 'That\'s all for now!';
+                return;
+            }
+
+            // Load jokes from Firebase
+            const loaded = await loadFeaturedJokes();
+            if (!loaded) {
+                jokeText.innerHTML = '<span class="error-message">Couldn\'t load jokes. Please try again.</span>';
+                jokeText.classList.remove('typing');
+                return;
+            }
+
+            // If specific joke ID provided, load that first
+            if (specificJokeId) {
+                const specificJoke = await fetchJokeById(specificJokeId);
+                if (specificJoke) {
+                    displayJoke(specificJoke);
+                    return;
+                }
+            }
+
+            // Otherwise load random featured joke
+            const joke = getNextJoke();
+            if (joke) {
+                displayJoke(joke);
+            } else {
+                jokeText.innerHTML = '<span class="error-message">No jokes available</span>';
+                jokeText.classList.remove('typing');
+            }
+        }
+
+        // Check platform for banner
+        function updateBannerForPlatform() {
+            const isAndroid = /Android/.test(navigator.userAgent);
+            const btn = document.getElementById('app-banner-btn');
+            const subtitle = document.getElementById('final-cta').querySelector('.final-cta-subtitle');
+
+            if (isAndroid) {
+                btn.textContent = 'SOON';
+                btn.classList.add('coming-soon');
+                if (subtitle) subtitle.textContent = 'Coming soon to Android';
+            }
+        }
+
+        // Run on DOM ready
+        document.addEventListener('DOMContentLoaded', () => {
+            updateBannerForPlatform();
+            init();
+        });
+    </script>
+</body>
+</html>
