@@ -33,6 +33,9 @@
     <meta name="apple-mobile-web-app-title" content="Dad Jokes">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
+    <!-- Disable Safari Smart App Banner (we have our own) -->
+    <meta name="apple-itunes-app" content="">
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -345,7 +348,43 @@
             padding: 20px;
         }
 
-        /* Share button - icon only, under joke */
+        /* Navigation controls container */
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation buttons (prev/next) */
+        .nav-btn {
+            background: transparent;
+            border: none;
+            color: rgba(255,255,255,0.4);
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover:not(:disabled), .nav-btn:active:not(:disabled) {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .nav-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Share button - icon only */
         .share-btn {
             background: transparent;
             border: none;
@@ -356,7 +395,6 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px;
         }
 
         .share-btn:hover, .share-btn:active {
@@ -392,6 +430,17 @@
         <div class="middle-section">
             <div class="joke-container">
                 <div class="joke-text typing" id="joke-text"></div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <!-- Navigation and share controls -->
+            <div class="nav-controls">
+                <button class="nav-btn" id="prev-btn" onclick="navigatePrev()" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
                 <button class="share-btn" id="share-btn" onclick="handleShare()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
@@ -399,10 +448,13 @@
                         <line x1="12" y1="2" x2="12" y2="15"></line>
                     </svg>
                 </button>
+                <button class="nav-btn" id="next-nav-btn" onclick="navigateNext()" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
             </div>
-        </div>
 
-        <div class="bottom-section">
             <div class="progress" id="progress">1 of 5</div>
             <div class="final-subtitle" id="final-subtitle">Want all the jokes?</div>
 
@@ -449,6 +501,10 @@
         let currentJokeId = null;
         let currentJokeText = '';
         const MAX_JOKES = 5;
+
+        // Joke history for navigation (array of joke objects)
+        let jokeHistory = [];
+        let historyIndex = -1;
 
         // Parse URL parameters
         const urlParams = new URLSearchParams(window.location.search);
@@ -633,8 +689,8 @@
             type();
         }
 
-        // Display joke
-        function displayJoke(joke) {
+        // Display joke (with optional skip for navigation - no typewriter, no session tracking)
+        function displayJoke(joke, isNavigation = false) {
             const jokeText = document.getElementById('joke-text');
             const text = joke.text || `${joke.setup} ${joke.punchline}`;
 
@@ -642,29 +698,74 @@
             currentJokeId = joke.id;
             currentJokeText = text;
 
-            // Track in session
-            const count = addSessionJoke(joke.id);
-            addSeenJoke(joke.id);
+            // Only track session/seen for new jokes (not when navigating back)
+            if (!isNavigation) {
+                // Add to history and update index
+                jokeHistory.push(joke);
+                historyIndex = jokeHistory.length - 1;
 
-            // Update progress
-            document.getElementById('progress').textContent = `${count} of ${MAX_JOKES}`;
+                // Track in session
+                const count = addSessionJoke(joke.id);
+                addSeenJoke(joke.id);
 
-            // Track GA event
-            gtag('event', 'joke_viewed', {
-                joke_id: joke.id,
-                category: joke.category || 'unknown',
-                source: sourceParam,
-                joke_number: count
-            });
+                // Update progress
+                document.getElementById('progress').textContent = `${count} of ${MAX_JOKES}`;
 
-            // Typewriter the joke
-            typewriterEffect(text, jokeText, () => {
-                // After animation, check if we should show final state
-                if (count >= MAX_JOKES) {
-                    showFinalState();
-                }
-            });
+                // Track GA event
+                gtag('event', 'joke_viewed', {
+                    joke_id: joke.id,
+                    category: joke.category || 'unknown',
+                    source: sourceParam,
+                    joke_number: count
+                });
+
+                // Typewriter the joke
+                typewriterEffect(text, jokeText, () => {
+                    // After animation, check if we should show final state
+                    if (count >= MAX_JOKES) {
+                        showFinalState();
+                    }
+                    updateNavButtons();
+                });
+            } else {
+                // Navigation: show instantly, update progress display
+                jokeText.textContent = text;
+                const sessionJokesList = getSessionJokes();
+                const jokePosition = sessionJokesList.indexOf(joke.id) + 1;
+                document.getElementById('progress').textContent = `${jokePosition} of ${MAX_JOKES}`;
+                updateNavButtons();
+            }
         }
+
+        // Update navigation button states
+        function updateNavButtons() {
+            const prevBtn = document.getElementById('prev-btn');
+            const nextNavBtn = document.getElementById('next-nav-btn');
+
+            // Can go back if not at beginning of history
+            prevBtn.disabled = historyIndex <= 0;
+
+            // Can go forward if not at end of history
+            nextNavBtn.disabled = historyIndex >= jokeHistory.length - 1;
+        }
+
+        // Navigate to previous joke
+        window.navigatePrev = function() {
+            if (historyIndex > 0) {
+                historyIndex--;
+                const joke = jokeHistory[historyIndex];
+                displayJoke(joke, true);
+            }
+        };
+
+        // Navigate to next joke in history
+        window.navigateNext = function() {
+            if (historyIndex < jokeHistory.length - 1) {
+                historyIndex++;
+                const joke = jokeHistory[historyIndex];
+                displayJoke(joke, true);
+            }
+        };
 
         // Transform UI to final state (button becomes Get the App)
         function showFinalState() {
