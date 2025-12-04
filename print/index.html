@@ -234,7 +234,6 @@
 
         /* Another Joke Button */
         .next-btn {
-            margin-top: 50px;
             background: transparent;
             border: 2px solid var(--accent-gold);
             color: var(--accent-gold);
@@ -345,13 +344,13 @@
             padding: 20px;
         }
 
-        /* Navigation controls container */
-        .nav-controls {
+        /* Button row with nav + main button */
+        .button-row {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
-            margin-bottom: 15px;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         /* Navigation buttons (prev/next) */
@@ -431,31 +430,32 @@
         </div>
 
         <div class="bottom-section">
-            <!-- Navigation and share controls -->
-            <div class="nav-controls">
+            <!-- Share button -->
+            <button class="share-btn" id="share-btn" onclick="handleShare()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                    <polyline points="16 6 12 2 8 6"></polyline>
+                    <line x1="12" y1="2" x2="12" y2="15"></line>
+                </svg>
+            </button>
+
+            <div class="progress" id="progress">1 of 5</div>
+            <div class="final-subtitle" id="final-subtitle">Want all the jokes?</div>
+
+            <!-- Navigation and main button -->
+            <div class="button-row">
                 <button class="nav-btn" id="prev-btn" onclick="navigatePrev()" disabled>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                 </button>
-                <button class="share-btn" id="share-btn" onclick="handleShare()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                        <polyline points="16 6 12 2 8 6"></polyline>
-                        <line x1="12" y1="2" x2="12" y2="15"></line>
-                    </svg>
-                </button>
+                <button class="next-btn" id="next-btn" onclick="loadNextJoke()">Another Joke</button>
                 <button class="nav-btn" id="next-nav-btn" onclick="navigateNext()" disabled>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
                 </button>
             </div>
-
-            <div class="progress" id="progress">1 of 5</div>
-            <div class="final-subtitle" id="final-subtitle">Want all the jokes?</div>
-
-            <button class="next-btn" id="next-btn" onclick="loadNextJoke()">Another Joke</button>
             <div class="platform-note hidden" id="platform-note">Free on iPhone</div>
 
             <div class="shop-link">
@@ -929,21 +929,29 @@
             const jokeText = document.getElementById('joke-text');
             jokeText.innerHTML = '<span class="loading">Loading...</span>';
 
-            // Check for existing session
-            const existingSession = getSessionJokes();
-            if (existingSession.length >= MAX_JOKES) {
-                // Already hit limit in this session
-                jokeText.textContent = 'You\'ve seen all 5 jokes!';
-                jokeText.classList.remove('typing');
-                showFinalState();
-                return;
-            }
-
-            // Load jokes from Firebase
+            // Load jokes from Firebase first (needed for all paths)
             const loaded = await loadFeaturedJokes();
             if (!loaded) {
                 jokeText.innerHTML = '<span class="error-message">Couldn\'t load jokes. Please try again.</span>';
                 jokeText.classList.remove('typing');
+                return;
+            }
+
+            // Check for existing session
+            const existingSession = getSessionJokes();
+            if (existingSession.length >= MAX_JOKES) {
+                // Already hit limit - rebuild history and show last joke
+                await rebuildHistoryFromSession(existingSession);
+                const lastJoke = jokeHistory[jokeHistory.length - 1];
+                if (lastJoke) {
+                    const text = lastJoke.text || `${lastJoke.setup} ${lastJoke.punchline}`;
+                    jokeText.textContent = text;
+                    currentJokeId = lastJoke.id;
+                    currentJokeText = text;
+                    historyIndex = jokeHistory.length - 1;
+                    updateNavButtons();
+                }
+                showFinalState();
                 return;
             }
 
@@ -964,6 +972,23 @@
                 jokeText.innerHTML = '<span class="error-message">No jokes available</span>';
                 jokeText.classList.remove('typing');
             }
+        }
+
+        // Rebuild joke history from session storage
+        async function rebuildHistoryFromSession(sessionJokeIds) {
+            jokeHistory = [];
+            for (const jokeId of sessionJokeIds) {
+                // Try to find in already loaded featured jokes first
+                let joke = allFeaturedJokes.find(j => j.id === jokeId);
+                // If not found (maybe it was a specific shared joke), fetch it
+                if (!joke) {
+                    joke = await fetchJokeById(jokeId);
+                }
+                if (joke) {
+                    jokeHistory.push(joke);
+                }
+            }
+            historyIndex = jokeHistory.length - 1;
         }
 
         // Check platform for banner
