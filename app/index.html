@@ -9,8 +9,6 @@
     <!-- Universal Links Support -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
 
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -42,6 +40,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.gstatic.com">
     <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+
+    <!-- Async load Google Fonts (non-blocking) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"></noscript>
 
     
     <style>
@@ -188,7 +191,7 @@
         
         .joke-text {
             font-size: 1.6em;
-            font-family: 'Special Elite', serif;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
             color: #333;
             margin: 0;
             line-height: 1.6;
@@ -505,7 +508,7 @@
                 <p>Want more sweet dad jokes?</p>
                 <p><strong>Install our app to unlock limitless laughs!</strong></p>
                 <div class="store-buttons-badges">
-                  <a href="https://dadjokes.vip/ios" class="appstore-link">
+                  <a href="https://dadjokes.vip/ios/" class="appstore-link">
                       <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                     </a>
 
@@ -516,11 +519,11 @@
               </div>
             </div>
               <div id="snarky-message" style="display:none; text-align: center;">
-                  <p style="font-family: 'Special Elite', monospace; font-size: 1.5rem; margin-bottom: 10px;">
+                  <p style="font-family: 'Special Elite', 'Courier New', Courier, monospace; font-size: 1.5rem; margin-bottom: 10px;">
                     Even clever people have to download the app.
                   </p>
                   <p style="font-size: 1rem;">
-                    <a href="/ios" class="appstore-link">iPhone</a> or <span style="color: #999; cursor: not-allowed;" title="Coming soon to Android">Android (coming soon)</span>
+                    <a href="/ios/" class="appstore-link">iPhone</a> or <span style="color: #999; cursor: not-allowed;" title="Coming soon to Android">Android (coming soon)</span>
                   </p>
                 </div>
 
@@ -531,37 +534,67 @@
             <div class="feature">
                 <h3><span id="joke-count">19,139</span> Jokes Across 20+ Categories</h3>
                 <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation. Our collection grows every day.</p>
-                <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/categories-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/categories.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/categories.png" type="image/png">
+                    <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
 
             <div class="feature">
                 <h3>Get Roasted by AI</h3>
                 <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
-                <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/ai-roasts-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/ai-roasts.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/ai-roasts.png" type="image/png">
+                    <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
 
             <div class="feature">
                 <h3>Build Your Personal Collection</h3>
                 <p>Save favorites in the Joke Vault and access them anytime. Your best material, always at your fingertips</p>
-                <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/joke-vault-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/joke-vault.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/joke-vault.png" type="image/png">
+                    <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
 
             <div class="feature">
                 <h3>Submit Your Own Jokes</h3>
                 <p>Got a killer dad joke? Submit it and see it featured in the app with your credit</p>
-                <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/submit-jokes-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/submit-jokes.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/submit-jokes.png" type="image/png">
+                    <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
 
             <div class="feature">
                 <h3>Make It Your Own</h3>
                 <p>Choose from 13 color themes, enable AI backgrounds, and customize your entire experience</p>
-                <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/customize-theme-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/customize-theme.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/customize-theme.png" type="image/png">
+                    <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
 
             <div class="feature">
                 <h3>Rate & Share</h3>
                 <p>Rate jokes and share your favorites. Build a collection that makes everyone laugh</p>
-                <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/rate-and-save-small.webp" type="image/webp" media="(max-width: 1024px)">
+                    <source srcset="/assets/screenshots/rate-and-save.webp" type="image/webp">
+                    <source srcset="/assets/screenshots/rate-and-save.png" type="image/png">
+                    <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy" width="600" height="1301">
+                </picture>
             </div>
         </div>
         
@@ -573,7 +606,7 @@
           </p>
         
           <div class="store-buttons-badges">
-            <a href="https://dadjokes.vip/ios" class="appstore-link">
+            <a href="https://dadjokes.vip/ios/" class="appstore-link">
               <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
             </a>
 
@@ -587,14 +620,14 @@
         
     <footer class="site-footer">
       <div class="footer-links">
-        <a href="/app">App</a>
-        <a href="/jokes">Jokes</a>
-        <a href="/support">Support</a>
-        <a href="/privacy">Privacy</a>
+        <a href="/app/">App</a>
+        <a href="/jokes/">Jokes</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
       </div>
     
       <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios" class="appstore-link">
+        <a href="https://dadjokes.vip/ios/" class="appstore-link">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
 
