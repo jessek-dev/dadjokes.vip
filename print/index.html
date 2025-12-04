@@ -17,8 +17,21 @@
     <meta property="og:title" content="Dad Jokes - Print Edition">
     <meta property="og:description" content="Scan, laugh, repeat. Premium dad jokes from your favorite prints.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://dadjokes.vip/print/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dad Jokes">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dad Jokes - Print Edition">
+    <meta name="twitter:description" content="Scan, laugh, repeat. Premium dad jokes from your favorite prints.">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+
+    <!-- iMessage / Link Preview -->
+    <meta name="apple-mobile-web-app-title" content="Dad Jokes">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -340,6 +353,42 @@
             color: rgba(255,255,255,0.7);
             padding: 20px;
         }
+
+        /* Share button */
+        .share-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: rgba(255,255,255,0.7);
+            padding: 10px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 15px;
+        }
+
+        .share-btn:hover, .share-btn:active {
+            border-color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.9);
+        }
+
+        .share-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Button row */
+        .button-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -367,7 +416,18 @@
         <div class="bottom-section">
             <div class="progress" id="progress">1 of 5</div>
 
-            <button class="next-btn" id="next-btn" onclick="loadNextJoke()">Another Joke</button>
+            <div class="button-row">
+                <button class="next-btn" id="next-btn" onclick="loadNextJoke()">Another Joke</button>
+
+                <button class="share-btn" id="share-btn" onclick="handleShare()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                        <polyline points="16 6 12 2 8 6"></polyline>
+                        <line x1="12" y1="2" x2="12" y2="15"></line>
+                    </svg>
+                    Share
+                </button>
+            </div>
 
             <div class="final-cta hidden" id="final-cta">
                 <div class="final-cta-title">Want more?</div>
@@ -414,6 +474,8 @@
         let allFeaturedJokes = [];
         let currentJokeIndex = 0;
         let sessionJokes = [];
+        let currentJokeId = null;
+        let currentJokeText = '';
         const MAX_JOKES = 5;
 
         // Parse URL parameters
@@ -603,6 +665,10 @@
             const jokeText = document.getElementById('joke-text');
             const text = joke.text || `${joke.setup} ${joke.punchline}`;
 
+            // Store current joke for sharing
+            currentJokeId = joke.id;
+            currentJokeText = text;
+
             // Track in session
             const count = addSessionJoke(joke.id);
             addSeenJoke(joke.id);
@@ -692,6 +758,59 @@
             // Placeholder - update with actual shop URL when available
             alert('Shop coming soon! Stay tuned for Dad Jokes prints.');
         };
+
+        // Handle share button click
+        window.handleShare = async function() {
+            if (!currentJokeId) return;
+
+            // Build share URL with current joke ID
+            const shareUrl = new URL(window.location.origin + '/print/');
+            shareUrl.searchParams.set('joke', currentJokeId);
+            if (sourceParam !== 'unknown') {
+                shareUrl.searchParams.set('src', sourceParam);
+            }
+
+            // Track GA event
+            gtag('event', 'share', {
+                method: navigator.share ? 'native' : 'clipboard',
+                content_type: 'joke',
+                item_id: currentJokeId,
+                source: sourceParam
+            });
+
+            // Use native share if available (iOS/mobile)
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'Dad Jokes - Print Edition',
+                        text: currentJokeText,
+                        url: shareUrl.toString()
+                    });
+                } catch (err) {
+                    // User cancelled or error - fall back to clipboard
+                    if (err.name !== 'AbortError') {
+                        copyToClipboard(shareUrl.toString());
+                    }
+                }
+            } else {
+                // Fallback: copy to clipboard
+                copyToClipboard(shareUrl.toString());
+            }
+        };
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Brief visual feedback
+                const btn = document.getElementById('share-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            }).catch(() => {
+                alert('Link: ' + text);
+            });
+        }
 
         // Initialize
         async function init() {
