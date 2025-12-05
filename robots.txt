@@ -8,9 +8,8 @@ Allow: /
 # Disallow admin/management areas
 Disallow: /manage/
 
-# Disallow old joke URL structure (deprecated)
+# Disallow old joke URL structure (deprecated, directory removed Dec 2025)
 Disallow: /joke/
 
-# Sitemap locations
-Sitemap: https://dadjokes.vip/sitemap.xml
+# Primary sitemap index (contains all sitemaps)
 Sitemap: https://dadjokes.vip/sitemap_index.xml
