@@ -505,8 +505,23 @@
 
         // Parse URL parameters
         const urlParams = new URLSearchParams(window.location.search);
+
+        // REDIRECT: QR codes that should show random jokes instead of specific ones
+        // Add src values here for any printed QR codes that need redirecting
+        const redirectSources = ['coaster-forest'];
+        const srcParam = urlParams.get('src');
+        const bgParam = urlParams.get('bg');
+        if (srcParam && redirectSources.includes(srcParam) && urlParams.has('joke1')) {
+            // Redirect to clean print URL (preserves src and bg for tracking/theming, removes joke1)
+            let redirectUrl = '/print/?src=' + encodeURIComponent(srcParam);
+            if (bgParam) redirectUrl += '&bg=' + encodeURIComponent(bgParam);
+            window.location.replace(redirectUrl);
+            // Stop execution while redirecting
+            throw new Error('Redirecting...');
+        }
+
         const specificJokeId = urlParams.get('joke');
-        const sourceParam = urlParams.get('src') || 'unknown';
+        const sourceParam = srcParam || 'unknown';
 
         // Get pre-specified joke IDs (joke1 through joke5)
         const preSpecifiedJokes = [];
