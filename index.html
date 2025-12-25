@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dad Jokes - 20,000+ Best Dad Jokes App for iPhone & Android</title>
@@ -22,6 +30,53 @@
   </script>
 </head>
 <body>
-  <p>If you are not redirected, <a href="/app/">click here</a>.</p>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <p>If you are not redirected, <a href="/app/">click here</a>.
+
+  <!-- Analytics for redirect page -->
+  <script>
+    // Initialize Mixpanel for tracking redirects
+    (function(c,a){if(!a.__SV){var b,d,h,e;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(a,b){var d=b.split(".");2==d.length&&(a=a[d[0]],b=d[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var f=a;"undefined"!==typeof g?f=a[g]=[]:g="mixpanel";f.people=f.people||[];f.toString=function(a){var b="mixpanel";"mixpanel"!==g&&(b+="."+g);a||(b+=" (stub)");return b};f.people.toString=function(){return f.toString(1)+".people (stub)"};h="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");for(e=0;e<h.length;e++)c(f,h[e]);a._i.push([b,d,g])};a.__SV=1.2;}})(document,window.mixpanel||[]);
+
+    mixpanel.init('62127065033cd52e52a7437836f57514', {
+      debug: true,
+      track_pageview: true,
+      persistence: 'localStorage'
+    });
+
+    // Track landing page visit
+    mixpanel.track('Landing Page Visit', {
+      page_title: document.title,
+      page_url: window.location.href,
+      referrer: document.referrer,
+      user_agent: navigator.userAgent,
+      is_mobile: /iPad|iPhone|iPod|Android/.test(navigator.userAgent),
+      timestamp: new Date().toISOString()
+    });
+
+    // Track device type detection
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+    
+    mixpanel.track('Device Detection', {
+      is_ios: isIOS,
+      is_android: isAndroid,
+      is_mobile: isIOS || isAndroid,
+      user_agent: navigator.userAgent
+    });
+
+    // GTM dataLayer push for device detection
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
+        event: 'device_detection',
+        device_type: isIOS ? 'ios' : (isAndroid ? 'android' : 'desktop'),
+        is_mobile: isIOS || isAndroid
+      });
+    }
+  </script></p>
 </body>
 </html>

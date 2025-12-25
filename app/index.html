@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRRXTJP94X');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Dad Jokes App - 19,139 Jokes Free on iPhone & Android</title>
@@ -476,6 +493,11 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Cross-Browser Mobile App Install Banner -->
     <div id="mobile-app-banner" class="mobile-app-banner hidden">
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
@@ -992,6 +1014,201 @@
   }
 </script>
 
+<!-- Analytics Implementation -->
+<script>
+  // Analytics Configuration
+  const ANALYTICS_CONFIG = {
+    mixpanel: {
+      token: '62127065033cd52e52a7437836f57514',
+      debug: true
+    },
+    ga4: {
+      measurementId: 'G-JRRXTJP94X'
+    }
+  };
 
+  // Initialize Mixpanel
+  (function(c,a){if(!a.__SV){var b,d,h,e;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(a,b){var d=b.split(".");2==d.length&&(a=a[d[0]],b=d[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var f=a;"undefined"!==typeof g?f=a[g]=[]:g="mixpanel";f.people=f.people||[];f.toString=function(a){var b="mixpanel";"mixpanel"!==g&&(b+="."+g);a||(b+=" (stub)");return b};f.people.toString=function(){return f.toString(1)+".people (stub)"};h="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");for(e=0;e<h.length;e++)c(f,h[e]);a._i.push([b,d,g])};a.__SV=1.2;}})(document,window.mixpanel||[]);
+
+  // Initialize Mixpanel with config
+  mixpanel.init(ANALYTICS_CONFIG.mixpanel.token, {
+    debug: ANALYTICS_CONFIG.mixpanel.debug,
+    track_pageview: true,
+    persistence: 'localStorage'
+  });
+
+  // Track page view
+  mixpanel.track('Page View', {
+    page_title: document.title,
+    page_url: window.location.href,
+    referrer: document.referrer,
+    user_agent: navigator.userAgent,
+    timestamp: new Date().toISOString()
+  });
+
+  // App Store Button Tracking Function
+  function trackAppStoreClick(platform, placement) {
+    // Mixpanel tracking
+    mixpanel.track('App Store Button Clicked', {
+      platform: platform,
+      placement: placement,
+      page_url: window.location.href,
+      timestamp: new Date().toISOString()
+    });
+
+    // GA4 direct tracking
+    if (typeof gtag === 'function') {
+      gtag('event', 'app_store_click', {
+        platform: platform,
+        placement: placement,
+        event_category: 'App Install',
+        event_label: platform + '_' + placement,
+        custom_parameter_1: 'app_install_funnel'
+      });
+    }
+
+    // GTM dataLayer push
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
+        event: 'app_store_click',
+        platform: platform,
+        placement: placement,
+        event_category: 'App Install'
+      });
+    }
+  }
+
+  // Joke Share Tracking Function
+  function trackJokeShare(jokeText, method) {
+    mixpanel.track('Joke Shared from Web', {
+      joke_length: jokeText ? jokeText.length : 0,
+      share_method: method,
+      page_url: window.location.href,
+      timestamp: new Date().toISOString()
+    });
+
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
+        event: 'joke_share',
+        share_method: method,
+        event_category: 'Engagement'
+      });
+    }
+  }
+
+  // Install Overlay Shown Tracking
+  function trackInstallOverlayShown() {
+    mixpanel.track('Install Overlay Shown', {
+      page_url: window.location.href,
+      timestamp: new Date().toISOString()
+    });
+
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
+        event: 'install_overlay_shown',
+        event_category: 'App Install Funnel'
+      });
+    }
+  }
+
+  // Scroll Depth Tracking
+  let maxScrollDepth = 0;
+  function trackScrollDepth() {
+    const scrolled = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    
+    if (scrolled > maxScrollDepth) {
+      maxScrollDepth = scrolled;
+      
+      // Track at 25%, 50%, 75%, 90% milestones
+      if ([25, 50, 75, 90].includes(scrolled)) {
+        mixpanel.track('Scroll Depth', {
+          depth_percentage: scrolled,
+          page_url: window.location.href
+        });
+
+        if (typeof window.dataLayer !== 'undefined') {
+          window.dataLayer.push({
+            event: 'scroll_depth',
+            depth_percentage: scrolled,
+            event_category: 'Engagement'
+          });
+        }
+      }
+    }
+  }
+
+  // Add event listeners when DOM is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track app store button clicks
+    document.querySelectorAll('.appstore-link').forEach(function(link, index) {
+      link.addEventListener('click', function() {
+        trackAppStoreClick('ios', 'button_' + (index + 1));
+      });
+    });
+
+    document.querySelectorAll('.playstore-link').forEach(function(link, index) {
+      link.addEventListener('click', function() {
+        trackAppStoreClick('android', 'button_' + (index + 1));
+      });
+    });
+
+    // Track joke sharing
+    const shareBtn = document.getElementById('share-joke');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function() {
+        const jokeText = document.querySelector('.joke-text')?.textContent || '';
+        trackJokeShare(jokeText, 'native_share');
+      });
+    }
+
+    // Track scroll depth
+    window.addEventListener('scroll', trackScrollDepth);
+
+    // Track install overlay when shown
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const target = mutation.target;
+          if (target.id === 'install-overlay' && !target.classList.contains('hidden')) {
+            trackInstallOverlayShown();
+          }
+        }
+      });
+    });
+
+    const installOverlay = document.getElementById('install-overlay');
+    if (installOverlay) {
+      observer.observe(installOverlay, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    }
+
+    console.log('🔍 Dad Jokes Analytics initialized');
+    console.log('   Mixpanel token:', ANALYTICS_CONFIG.mixpanel.token.substring(0, 8) + '...');
+    console.log('   Page:', document.title);
+  });
+
+  // Track time on page
+  let startTime = Date.now();
+  window.addEventListener('beforeunload', function() {
+    const timeSpent = Math.round((Date.now() - startTime) / 1000);
+    mixpanel.track('Page Exit', {
+      time_spent_seconds: timeSpent,
+      page_url: window.location.href
+    });
+  });
+
+  // Set user properties
+  mixpanel.people.set({
+    '$browser': navigator.userAgent,
+    '$current_url': window.location.href,
+    'Page Title': document.title,
+    'Visit Date': new Date().toISOString().split('T')[0]
+  });
+
+</script>
+
+    
 </body>
 </html>
