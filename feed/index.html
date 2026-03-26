@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRRXTJP94X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke of the Day RSS Feed</title>
+    <meta name="description" content="Subscribe to the Dad Joke of the Day RSS feed. Get a fresh dad joke delivered to your RSS reader every day. Free, no sign-up required.">
+
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/feed/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <!-- RSS Feed autodiscovery -->
+    <link rel="alternate" type="application/rss+xml" title="Dad Joke of the Day" href="https://dadjokes.vip/feed.xml">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dadjokes.vip/feed/">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Dad Joke of the Day RSS Feed">
+    <meta property="og:description" content="Subscribe to get a fresh dad joke delivered to your RSS reader every day.">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+    <meta property="og:url" content="https://dadjokes.vip/feed/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dad Joke of the Day RSS Feed">
+    <meta name="twitter:description" content="Subscribe to get a fresh dad joke in your RSS reader every day.">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: 60px;
+            border-radius: 6px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-card h2 {
+            color: #FF8C00;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .content-card p {
+            font-size: 1em;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .content-card a {
+            color: #FF8C00;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .content-card a:hover {
+            text-decoration: underline;
+        }
+
+        .content-card ul {
+            margin: 10px 0 15px 20px;
+            color: #555;
+        }
+
+        .content-card li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        /* Feed URL highlight */
+        .feed-url-box {
+            background: #FFF3E0;
+            border: 2px solid #FF8C00;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .feed-url-box .label {
+            font-size: 0.85em;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .feed-url-box .url {
+            font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+            font-size: 1.1em;
+            color: #333;
+            word-break: break-all;
+        }
+
+        .feed-url-box .url a {
+            color: #FF8C00;
+            text-decoration: none;
+        }
+
+        .feed-url-box .url a:hover {
+            text-decoration: underline;
+        }
+
+        .copy-btn {
+            display: inline-block;
+            margin-top: 12px;
+            background: #FF8C00;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #e67e00;
+        }
+
+        /* RSS reader cards */
+        .reader-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .reader-item {
+            background: #FFFAF5;
+            border: 1px solid #FFE0B2;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 0.95em;
+        }
+
+        .reader-item strong {
+            color: #FF8C00;
+        }
+
+        /* CTA */
+        .cta {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: #FF8C00;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin: 10px 0 25px;
+            color: #333;
+        }
+
+        .store-buttons-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        .store-badge.disabled {
+            opacity: 0.4;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+        }
+
+        /* Footer */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .content-card {
+                padding: 20px;
+            }
+
+            .reader-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img"></a>
+        </div>
+
+        <h1>Subscribe to the Dad Joke of the Day</h1>
+        <p class="tagline">A fresh dad joke delivered to your RSS reader every day</p>
+
+        <!-- Feed URL -->
+        <div class="content-card">
+            <h2>RSS Feed</h2>
+            <p>Get a new dad joke every day in your favorite RSS reader. Just copy the feed URL below and paste it into any RSS app.</p>
+
+            <div class="feed-url-box">
+                <div class="label">Feed URL</div>
+                <div class="url"><a href="https://dadjokes.vip/feed.xml" id="feed-url">https://dadjokes.vip/feed.xml</a></div>
+                <button class="copy-btn" onclick="copyFeedUrl()">Copy URL</button>
+            </div>
+        </div>
+
+        <!-- How to Subscribe -->
+        <div class="content-card">
+            <h2>How to Subscribe</h2>
+            <p>RSS is one of the simplest ways to follow content. Most RSS readers let you paste in a URL and you are done. Here are some popular options:</p>
+
+            <div class="reader-list">
+                <div class="reader-item">
+                    <strong>Feedly</strong><br>
+                    Web &amp; mobile
+                </div>
+                <div class="reader-item">
+                    <strong>NetNewsWire</strong><br>
+                    Mac &amp; iPhone (free)
+                </div>
+                <div class="reader-item">
+                    <strong>Reeder</strong><br>
+                    Mac &amp; iPhone
+                </div>
+                <div class="reader-item">
+                    <strong>Inoreader</strong><br>
+                    Web &amp; mobile
+                </div>
+            </div>
+
+            <p>Simply open your RSS reader, look for an "Add Feed" or "Subscribe" option, and paste in:<br>
+            <code>https://dadjokes.vip/feed.xml</code></p>
+        </div>
+
+        <!-- Other Ways -->
+        <div class="content-card">
+            <h2>Other Ways to Get Daily Dad Jokes</h2>
+            <ul>
+                <li><strong>Push notifications:</strong> Download the <a href="/app/">Dad Jokes app</a> and enable daily notifications. A new joke lands on your phone every day.</li>
+                <li><strong>JSON feed:</strong> If you are a developer, check out the <a href="/api/">Dad Jokes API</a> to build your own integrations.</li>
+                <li><strong>Browse online:</strong> Visit the <a href="/daily/">Dad Joke of the Day</a> page any time for today's featured joke.</li>
+            </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta">
+            <h2>Prefer Push Notifications?</h2>
+            <p>Download the app and get a dad joke delivered straight to your phone every day. Plus 5,000+ more jokes to browse.</p>
+            <div class="store-buttons-badges">
+                <a href="https://dadjokes.vip/ios" class="appstore-link">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <span style="cursor: not-allowed;" title="Coming soon to Android">
+                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/app">App</a>
+            <a href="/jokes">Jokes</a>
+            <a href="/api/">API</a>
+            <a href="/compare/">Compare</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+        </div>
+        <div class="footer-stores">
+            <a href="https://dadjokes.vip/ios" class="appstore-link">
+                <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <span style="cursor: not-allowed;" title="Coming soon to Android">
+                <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+            </span>
+        </div>
+        <div class="footer-copy">
+            &copy; <span id="year"></span> Dad Jokes. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        function copyFeedUrl() {
+            const url = 'https://dadjokes.vip/feed.xml';
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function() {
+                    var btn = document.querySelector('.copy-btn');
+                    btn.textContent = 'Copied!';
+                    setTimeout(function() { btn.textContent = 'Copy URL'; }, 2000);
+                });
+            } else {
+                // Fallback
+                var input = document.createElement('input');
+                input.value = url;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand('copy');
+                document.body.removeChild(input);
+                var btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Copied!';
+                setTimeout(function() { btn.textContent = 'Copy URL'; }, 2000);
+            }
+        }
+    </script>
+
+    <!-- Structured Data - DataFeed -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DataFeed",
+      "name": "Dad Joke of the Day RSS Feed",
+      "description": "A fresh dad joke delivered every day via RSS",
+      "url": "https://dadjokes.vip/feed.xml",
+      "encodingFormat": "application/rss+xml",
+      "provider": {
+        "@type": "Organization",
+        "name": "Best Dad Jokes",
+        "url": "https://dadjokes.vip"
+      },
+      "dataFeedElement": {
+        "@type": "DataFeedItem",
+        "dateCreated": "2026-03-26",
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Dad Joke of the Day",
+          "url": "https://dadjokes.vip/daily/"
+        }
+      }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dadjokes.vip"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "RSS Feed",
+          "item": "https://dadjokes.vip/feed/"
+        }
+      ]
+    }
+    </script>
+</body>
+</html>

@@ -239,6 +239,359 @@ export const COLLECTIONS_CONFIG = {
           answer: "Yes! Use a scheduled messaging feature on your phone to send a dad joke at the same time each day. Or download the Dad Jokes app to get daily joke notifications you can share instantly."
         }
       ]
+    },
+
+    // --- Holidays ---
+    {
+      slug: "halloween-dad-jokes",
+      title: "Halloween Dad Jokes",
+      description: "Spooky-funny dad jokes about ghosts, pumpkins, skeletons, and witches — perfect for trick-or-treating, Halloween parties, and costume contests.",
+      context: "Halloween parties, trick-or-treating, and spooky season",
+      keywords: ["halloween jokes", "spooky dad jokes", "pumpkin jokes", "ghost puns"],
+      jokeFilter: {
+        categories: ["Words & Puns", "#DadLife"],
+        keywords: ["halloween", "spooky", "pumpkin", "ghost", "candy", "witch", "skeleton", "costume"]
+      },
+      faqs: [
+        {
+          question: "What are the best dad jokes for Halloween?",
+          answer: "The best Halloween dad jokes play on spooky themes with classic puns — think skeleton, ghost, and pumpkin wordplay. They're silly enough to make kids laugh and groan-worthy enough for adults."
+        },
+        {
+          question: "Are Halloween dad jokes appropriate for trick-or-treaters?",
+          answer: "Absolutely! Halloween dad jokes are clean and family-friendly. Many families tape a joke to their candy bowl or have kids tell a joke before getting a treat — it's a fun twist on the tradition."
+        },
+        {
+          question: "How can I use dad jokes at a Halloween party?",
+          answer: "Print jokes on cards and scatter them around the party, include them in a costume contest as bonus rounds, or use them as ice-breakers. A spooky dad joke contest is always a hit."
+        },
+        {
+          question: "Why do skeleton and ghost jokes work so well as dad jokes?",
+          answer: "Skeleton and ghost jokes are natural fits for dad humor because they lend themselves to endless puns — 'no body' jokes, 'boo' jokes, and bone-related wordplay practically write themselves."
+        }
+      ]
+    },
+    {
+      slug: "thanksgiving-dad-jokes",
+      title: "Thanksgiving Dad Jokes",
+      description: "Hilarious turkey-themed dad jokes for the Thanksgiving table — guaranteed to get groans between helpings of stuffing and pie.",
+      context: "Thanksgiving dinner, family gatherings, and holiday meals",
+      keywords: ["thanksgiving jokes", "turkey dad jokes", "holiday dinner jokes", "family gathering humor"],
+      jokeFilter: {
+        categories: ["Food", "#DadLife", "Family"],
+        keywords: ["thanksgiving", "turkey", "pilgrim", "grateful", "feast", "family dinner"]
+      },
+      faqs: [
+        {
+          question: "What are the best dad jokes for the Thanksgiving table?",
+          answer: "Turkey puns and food wordplay dominate Thanksgiving dad jokes. Jokes about stuffing, gravy, and pie are crowd favorites because everyone at the table can relate to the subject matter."
+        },
+        {
+          question: "How many jokes should I tell at Thanksgiving dinner?",
+          answer: "Space them out — one before the meal, one during, and one at dessert. Rapid-fire jokes can overwhelm, but a well-timed dad joke between courses keeps the mood light and festive."
+        },
+        {
+          question: "Are Thanksgiving dad jokes good for all ages?",
+          answer: "Yes! Thanksgiving dad jokes are inherently wholesome. They revolve around food, family, and gratitude — topics that everyone from grandkids to grandparents can enjoy and laugh about together."
+        },
+        {
+          question: "Can I use Thanksgiving dad jokes in a toast or grace?",
+          answer: "A single well-placed dad joke can make a Thanksgiving toast memorable. Start with something heartfelt, drop the joke in the middle, and close with gratitude — it's the perfect formula."
+        }
+      ]
+    },
+    {
+      slug: "new-years-dad-jokes",
+      title: "New Year's Dad Jokes",
+      description: "Ring in the new year with groan-worthy dad jokes about resolutions, countdowns, champagne, and fresh starts.",
+      context: "New Year's Eve parties, midnight celebrations, and resolution talk",
+      keywords: ["new years jokes", "new year dad jokes", "resolution jokes", "midnight humor"],
+      jokeFilter: {
+        categories: ["Words & Puns", "#DadLife"],
+        keywords: ["new year", "resolution", "midnight", "champagne", "countdown", "party"]
+      },
+      faqs: [
+        {
+          question: "What are the best dad jokes for New Year's Eve?",
+          answer: "The best New Year's dad jokes play on resolutions, countdowns, and the passage of time. Jokes about broken resolutions and staying up past bedtime are especially relatable for the dad crowd."
+        },
+        {
+          question: "When should I tell a New Year's dad joke at a party?",
+          answer: "Right before or after midnight is prime dad joke time. The champagne has been flowing, everyone's in a good mood, and a well-timed groan is the perfect way to kick off the new year."
+        },
+        {
+          question: "Are resolution jokes good for social media?",
+          answer: "Resolution dad jokes are perfect for January social media posts. They're timely, universally relatable, and get great engagement because everyone has a resolution story to share."
+        },
+        {
+          question: "Can I use these jokes in a New Year's card or message?",
+          answer: "Definitely! A dad joke in a New Year's text or card is a fun way to wish someone well. It's more memorable than a generic 'Happy New Year' and shows you put thought into it."
+        }
+      ]
+    },
+    {
+      slug: "valentines-day-dad-jokes",
+      title: "Valentine's Day Dad Jokes",
+      description: "Cheesy, heartfelt dad jokes about love, romance, and chocolate — perfect for Valentine's cards, date nights, and making your partner groan.",
+      context: "Valentine's Day cards, date nights, and romantic moments",
+      keywords: ["valentine jokes", "love dad jokes", "romantic puns", "valentine card jokes"],
+      jokeFilter: {
+        categories: ["Words & Puns", "Family"],
+        keywords: ["valentine", "love", "heart", "romantic", "date", "chocolate", "cupid"]
+      },
+      faqs: [
+        {
+          question: "Are dad jokes appropriate for Valentine's Day?",
+          answer: "Dad jokes and Valentine's Day are a match made in heaven. Cheesy puns about love and hearts are peak dad humor, and they're a sweet, lighthearted way to show affection."
+        },
+        {
+          question: "Can I put a dad joke in a Valentine's Day card?",
+          answer: "Absolutely! A dad joke in a Valentine's card is endearing and memorable. It shows personality and humor, which many partners appreciate more than generic romantic sentiments."
+        },
+        {
+          question: "What makes a good Valentine's Day dad joke?",
+          answer: "The best Valentine's dad jokes use love-related wordplay — heart puns, candy references, and cupid jokes. They should be sweet enough to charm and corny enough to earn a proper groan."
+        },
+        {
+          question: "How can I use dad jokes on a Valentine's date?",
+          answer: "Drop one over dinner, hide a joke in a gift box, or text a series of love puns throughout the day. It turns Valentine's Day into a fun, playful experience rather than just another holiday."
+        }
+      ]
+    },
+    {
+      slug: "back-to-school-dad-jokes",
+      title: "Back-to-School Dad Jokes",
+      description: "Funny dad jokes about school, teachers, homework, and the school bus — perfect for lunchbox notes and first-day laughs.",
+      context: "back-to-school season, lunchbox notes, and school drop-offs",
+      keywords: ["back to school jokes", "school dad jokes", "teacher jokes", "homework humor"],
+      jokeFilter: {
+        categories: ["Words & Puns", "Science & Tech"],
+        keywords: ["school", "teacher", "homework", "class", "student", "pencil", "math", "bus"]
+      },
+      faqs: [
+        {
+          question: "How can I use dad jokes for back-to-school season?",
+          answer: "Write a dad joke on a sticky note and slip it into your kid's lunchbox. It's a small gesture that makes their day, and kids love sharing the jokes with friends at the lunch table."
+        },
+        {
+          question: "Are school-themed dad jokes good for kids of all ages?",
+          answer: "Yes! School dad jokes work for elementary through high school. Younger kids love simple puns about pencils and math, while older kids appreciate more clever wordplay about homework and tests."
+        },
+        {
+          question: "Can teachers use these jokes in the classroom?",
+          answer: "Teachers love using dad jokes to start class or transition between lessons. A quick joke lightens the mood, grabs attention, and makes the classroom feel more welcoming and fun."
+        },
+        {
+          question: "What subjects make the best school dad jokes?",
+          answer: "Math and science jokes are the most popular because numbers, equations, and scientific terms are natural fodder for puns. But history, English, and even gym class all have great dad joke potential."
+        }
+      ]
+    },
+
+    // --- Audiences ---
+    {
+      slug: "dad-jokes-for-teachers",
+      title: "Dad Jokes for Teachers",
+      description: "Classroom-ready dad jokes that teachers can use to engage students, lighten the mood, and make learning fun.",
+      context: "classrooms, teacher lounges, and school events",
+      keywords: ["teacher jokes", "classroom humor", "school jokes for teachers", "educational dad jokes"],
+      jokeFilter: {
+        categories: ["Science & Tech", "Words & Puns"],
+        keywords: ["school", "teacher", "class", "student", "homework", "grade", "lesson", "principal"]
+      },
+      faqs: [
+        {
+          question: "Why should teachers use dad jokes in the classroom?",
+          answer: "Dad jokes are a low-risk way to build rapport with students. They're always clean, they break tension before tests, and research shows that humor in education improves retention and engagement."
+        },
+        {
+          question: "When is the best time to tell a dad joke in class?",
+          answer: "The start of class, during transitions between activities, or right before a tough lesson are ideal moments. A well-timed joke resets attention spans and signals that learning can be fun."
+        },
+        {
+          question: "Can dad jokes actually help students learn?",
+          answer: "Yes! Jokes that incorporate subject matter help students remember key concepts. A chemistry pun about elements or a math joke about pi creates a memorable hook that sticks with students."
+        },
+        {
+          question: "What if students groan at my dad jokes?",
+          answer: "That's the whole point! The groan is a sign of success in dad joke territory. Students secretly love the predictability, and it becomes a bonding ritual between teacher and class."
+        }
+      ]
+    },
+    {
+      slug: "dad-jokes-for-nurses",
+      title: "Dad Jokes for Nurses",
+      description: "Clean, funny dad jokes for nurses, healthcare workers, and anyone who needs a laugh between shifts at the hospital.",
+      context: "hospitals, nursing stations, and healthcare break rooms",
+      keywords: ["nurse jokes", "hospital humor", "healthcare dad jokes", "medical puns"],
+      jokeFilter: {
+        categories: ["Science & Tech", "Work & Money"],
+        keywords: ["hospital", "nurse", "doctor", "patient", "medicine", "health", "sick"]
+      },
+      faqs: [
+        {
+          question: "Why are dad jokes popular with nurses?",
+          answer: "Nurses deal with high-stress situations daily, and dad jokes provide quick, clean comic relief. They're easy to share between patients, require zero setup, and lighten the mood on tough shifts."
+        },
+        {
+          question: "Can I share medical dad jokes with patients?",
+          answer: "Absolutely! A lighthearted dad joke can put nervous patients at ease. Stick to gentle, non-clinical humor — patients appreciate the human connection and the distraction from medical anxiety."
+        },
+        {
+          question: "Are hospital-themed dad jokes appropriate for the workplace?",
+          answer: "Yes, as long as they stay clean and general. Jokes about band-aids, waiting rooms, and general health are perfect. Avoid anything that could be insensitive about specific conditions."
+        },
+        {
+          question: "How can healthcare teams use dad jokes for morale?",
+          answer: "Post a joke of the day at the nursing station, start shift handoffs with a quick pun, or create a joke board in the break room. Small moments of humor go a long way in healthcare settings."
+        }
+      ]
+    },
+    {
+      slug: "dad-jokes-for-gamers",
+      title: "Dad Jokes for Gamers",
+      description: "Level up your humor with gaming dad jokes about video games, controllers, high scores, and respawning — perfect for streamers and game night.",
+      context: "gaming sessions, Twitch streams, and game night with friends",
+      keywords: ["gamer jokes", "video game dad jokes", "gaming puns", "streamer humor"],
+      jokeFilter: {
+        categories: ["Science & Tech", "Words & Puns"],
+        keywords: ["game", "video", "controller", "level", "player", "score", "console", "computer"]
+      },
+      faqs: [
+        {
+          question: "What makes gaming dad jokes funny?",
+          answer: "Gaming dad jokes work because they combine universally known gaming concepts — extra lives, respawning, lag, and boss fights — with classic dad joke wordplay. Gamers and non-gamers alike can appreciate the puns."
+        },
+        {
+          question: "Can I use gaming dad jokes on my stream?",
+          answer: "Gaming dad jokes are perfect for streams! They're clean enough for any audience, fill downtime naturally, and chat loves reacting to a well-timed groan. Many streamers use them as subscriber alerts too."
+        },
+        {
+          question: "Are these jokes good for game night?",
+          answer: "Absolutely! Drop a dad joke between rounds or when someone loses. It keeps the mood light, prevents salt, and adds an extra layer of entertainment to board games and video game sessions alike."
+        },
+        {
+          question: "Do gaming dad jokes appeal to non-gamers?",
+          answer: "Many gaming dad jokes use concepts that have entered mainstream culture — like 'leveling up' or 'game over.' The best ones work on multiple levels so both gamers and casual listeners get the joke."
+        }
+      ]
+    },
+    {
+      slug: "dad-jokes-for-road-trips",
+      title: "Dad Jokes for Road Trips",
+      description: "Keep the whole car laughing with road trip dad jokes about driving, getting lost, gas stations, and backseat adventures.",
+      context: "long drives, family road trips, and car rides",
+      keywords: ["road trip jokes", "car ride jokes", "driving dad jokes", "travel humor"],
+      jokeFilter: {
+        categories: ["Words & Puns", "#DadLife"],
+        keywords: ["car", "drive", "road", "trip", "travel", "highway", "gas", "map", "lost"]
+      },
+      faqs: [
+        {
+          question: "Why are dad jokes perfect for road trips?",
+          answer: "Road trips and dad jokes are a classic combo. You have a captive audience, plenty of downtime, and the car setting naturally inspires jokes about driving, navigation, and 'are we there yet?' moments."
+        },
+        {
+          question: "How many dad jokes should I bring on a road trip?",
+          answer: "Load up at least 20-30 jokes for a long drive. Space them out every 15-20 minutes for maximum impact. Pro tip: let the kids take turns reading jokes aloud to keep everyone involved."
+        },
+        {
+          question: "Can road trip dad jokes keep kids entertained?",
+          answer: "Definitely! Dad jokes are a screen-free way to keep kids engaged in the car. They spark conversation, inspire kids to make up their own jokes, and create memories that outlast any tablet game."
+        },
+        {
+          question: "What's the best way to deliver dad jokes while driving?",
+          answer: "Deadpan delivery with eyes on the road is peak dad comedy. Set up the joke casually, pause for effect, then deliver the punchline. The collective groan from the whole car is the ultimate reward."
+        }
+      ]
+    },
+    {
+      slug: "dad-jokes-for-instagram",
+      title: "Dad Jokes for Instagram",
+      description: "Ultra-short, caption-ready dad jokes designed for Instagram posts, Stories, and Reels — puns that fit perfectly in a social media caption.",
+      context: "Instagram captions, Stories, Reels, and social media posts",
+      keywords: ["instagram jokes", "caption jokes", "short jokes for social media", "instagram puns"],
+      jokeFilter: {
+        maxLength: 80
+      },
+      faqs: [
+        {
+          question: "What makes a dad joke good for Instagram?",
+          answer: "The best Instagram dad jokes are ultra-short (under 80 characters), visually punchy, and immediately funny without any context. They need to work as standalone captions that stop the scroll."
+        },
+        {
+          question: "How do I use dad jokes as Instagram captions?",
+          answer: "Pair a short dad joke with a relevant photo or selfie. The contrast between a serious photo and a corny caption is what makes it shareable. Add relevant hashtags like #dadjokes for discoverability."
+        },
+        {
+          question: "Do dad jokes perform well on social media?",
+          answer: "Dad jokes consistently get high engagement on Instagram because they're shareable, tag-worthy, and save-worthy. People love sending them to friends, which naturally boosts your reach and interactions."
+        },
+        {
+          question: "Can I use these jokes for Instagram Reels or Stories?",
+          answer: "Absolutely! Put the setup as text on screen, then reveal the punchline with a swipe or cut. The short format of these jokes is tailor-made for Stories and Reels where attention spans are short."
+        }
+      ]
+    },
+
+    // --- Food & Animals ---
+    {
+      slug: "best-food-dad-jokes",
+      title: "Best Food Dad Jokes",
+      description: "Deliciously funny dad jokes about pizza, tacos, burgers, cooking, and everything in the kitchen — guaranteed to leave you hungry for more puns.",
+      context: "dinner time, cooking, restaurants, and food lovers",
+      keywords: ["food jokes", "cooking dad jokes", "pizza puns", "kitchen humor"],
+      jokeFilter: {
+        categories: ["Food", "Words & Puns"],
+        keywords: ["food", "eat", "cook", "kitchen", "restaurant", "chef", "pizza", "burger", "taco"]
+      },
+      faqs: [
+        {
+          question: "Why are food dad jokes so popular?",
+          answer: "Everyone eats, so food jokes are universally relatable. Food words lend themselves naturally to puns — 'lettuce' sounds like 'let us,' 'thyme' sounds like 'time' — making them easy to create and enjoy."
+        },
+        {
+          question: "When is the best time to tell a food dad joke?",
+          answer: "Dinner time is the classic moment, but food dad jokes also work great at restaurants, barbecues, potlucks, and while cooking. Basically any time food is involved, there's an opening for a pun."
+        },
+        {
+          question: "Can I use food dad jokes at a restaurant?",
+          answer: "Absolutely! Drop one when the menu arrives, while waiting for food, or when the check comes. Servers often appreciate the humor too — many have heard them all and will play along."
+        },
+        {
+          question: "What foods make the best dad jokes?",
+          answer: "Pizza, tacos, and breakfast foods tend to produce the most jokes because their ingredient names double as great pun material. Cheese jokes are also a staple — they're always extra 'gouda.'"
+        }
+      ]
+    },
+    {
+      slug: "best-animal-dad-jokes",
+      title: "Best Animal Dad Jokes",
+      description: "Wildly funny dad jokes about dogs, cats, chickens, bears, and every creature in between — perfect for animal lovers and zoo trips.",
+      context: "zoo visits, pet owners, animal lovers, and nature outings",
+      keywords: ["animal jokes", "dog dad jokes", "cat puns", "zoo jokes", "animal humor"],
+      jokeFilter: {
+        categories: ["Animals", "Words & Puns"],
+        keywords: ["animal", "dog", "cat", "fish", "chicken", "bear", "horse", "cow", "bird", "zoo"]
+      },
+      faqs: [
+        {
+          question: "Why are animal dad jokes so popular with kids?",
+          answer: "Kids love animals, and animal dad jokes combine two things children enjoy — silly humor and creatures they can picture. The visual nature of animal jokes makes them especially memorable and retellable."
+        },
+        {
+          question: "What animals make the best dad jokes?",
+          answer: "Chickens, fish, and dogs are the holy trinity of animal dad jokes. 'Why did the chicken cross the road?' is the original dad joke, and fish and dog puns are endlessly versatile."
+        },
+        {
+          question: "Can I use animal dad jokes at the zoo?",
+          answer: "The zoo is prime dad joke territory! Tell a relevant joke at each animal exhibit. It turns a regular zoo trip into an interactive comedy tour that kids (and reluctant teenagers) will actually remember."
+        },
+        {
+          question: "Are animal dad jokes good for pet owners?",
+          answer: "Pet owners especially love animal dad jokes because they can relate to the humor on a personal level. Dog and cat jokes hit different when you have one curled up on the couch next to you."
+        }
+      ]
     }
   ]
 };

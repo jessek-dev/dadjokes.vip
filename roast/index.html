@@ -632,12 +632,68 @@
                 padding: 25px 15px;
             }
         }
+        /* Site Navigation */
+        .site-nav {
+            background: rgba(22,33,62,0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .site-nav-inner::-webkit-scrollbar { display: none; }
+        .site-nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            padding: 10px 10px;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .site-nav a:hover, .site-nav a.active { color: #e94560; }
+        .site-nav .nav-sep { color: #444; font-size: 0.7em; user-select: none; }
+        @media (max-width: 768px) {
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
+        }
+
     </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- Site Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/app/">Home</a>
+            <span class="nav-sep">|</span>
+            <a href="/jokes/">Dad Jokes</a>
+            <span class="nav-sep">|</span>
+            <a href="/roast/" class="active">Roast Your Friends</a>
+            <span class="nav-sep">|</span>
+            <a href="/daily/">Joke of the Day</a>
+            <span class="nav-sep">|</span>
+            <a href="/collection/">Collections</a>
+            <span class="nav-sep">|</span>
+            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+        </div>
+    </nav>
 
     <div class="container">
         <!-- Breadcrumb -->
@@ -751,6 +807,17 @@
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false">How do I share a roast with my friend?</div>
                 <div class="faq-answer">Each roast has a Share button that lets you send it directly via text, social media, or any app on your phone. You can also copy the roast text to paste it anywhere. Share the link to their name's roast page so they can see all their roasts.</div>
+            </div>
+        </section>
+
+        <!-- Cross-link: Wholesome humor -->
+        <section style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; text-align: center; margin-bottom: 30px;">
+            <h2 style="color: #fff; font-size: 1.4em; margin-bottom: 10px;">Want Wholesome Humor Instead?</h2>
+            <p style="color: #999; margin-bottom: 20px;">Not everyone deserves a roast. Sometimes you just need a good groan-worthy dad joke.</p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <a href="/app/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Dad Jokes App</a>
+                <a href="/daily/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Joke of the Day</a>
+                <a href="/collection/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Joke Collections</a>
             </div>
         </section>
 

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRRXTJP94X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dad Joke Generator - Get a Random Joke Instantly</title>
+    <meta name="description" content="Need a random dad joke? Our generator picks from 5,000+ jokes instantly. Tap to reveal the punchline, share with friends, and never run out of groan-worthy humor.">
+
+    <!-- Universal Links Support -->
+    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/random/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dadjokes.vip/random/">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Random Dad Joke Generator - Tell Me a Joke!">
+    <meta property="og:description" content="Need a random dad joke? Our generator picks from 5,000+ jokes instantly. Tap to reveal the punchline and share the laughs.">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+    <meta property="og:url" content="https://dadjokes.vip/random/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Random Dad Joke Generator - Tell Me a Joke!">
+    <meta name="twitter:description" content="Need a random dad joke? Our generator picks from 5,000+ jokes instantly. Tap to reveal the punchline and share the laughs.">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        /* Mobile App Install Banner */
+        .mobile-app-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-app-banner.show {
+            transform: translateY(0);
+        }
+
+        .mobile-app-banner.hidden {
+            display: none;
+        }
+
+        .banner-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .banner-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .banner-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .banner-subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .banner-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .banner-close {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        body.banner-active {
+            padding-top: 76px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: 80px;
+            animation: bounce 2s infinite;
+            border-radius: 6px;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+
+        /* Joke Card */
+        .joke-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .joke-card.flipping {
+            animation: flipCard 0.5s ease;
+        }
+
+        @keyframes flipCard {
+            0% { transform: perspective(600px) rotateY(0); }
+            50% { transform: perspective(600px) rotateY(90deg); opacity: 0.5; }
+            100% { transform: perspective(600px) rotateY(0); opacity: 1; }
+        }
+
+        .joke-setup {
+            font-size: 1.6em;
+            font-family: 'Special Elite', serif;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .joke-punchline {
+            font-size: 1.4em;
+            font-family: 'Special Elite', serif;
+            color: #FF8C00;
+            line-height: 1.6;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .joke-punchline.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #FF8C00;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            margin: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255,140,0,0.4);
+            background: #e07b00;
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-reveal {
+            background: #333;
+        }
+
+        .btn-reveal:hover {
+            background: #555;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-reveal.hidden {
+            display: none;
+        }
+
+        .button-row {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Share Buttons */
+        .share-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 18px;
+            border: 2px solid #eee;
+            border-radius: 25px;
+            background: white;
+            color: #555;
+            font-size: 0.9em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            border-color: #FF8C00;
+            color: #FF8C00;
+            transform: translateY(-1px);
+        }
+
+        .share-btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .share-btn.copied {
+            border-color: #4CAF50;
+            color: #4CAF50;
+        }
+
+        /* Stats line */
+        .stats-line {
+            margin-top: 30px;
+            font-size: 1em;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .stats-line strong {
+            color: white;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .cta h2 {
+            color: #FF8C00;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .cta-subtext {
+            font-size: 1.1rem;
+            margin: 10px 0 25px;
+            color: #333;
+        }
+
+        .store-buttons-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        .store-badge.disabled {
+            opacity: 0.4;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .faq-section h2 {
+            color: #FF8C00;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-section details {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .faq-section details:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-section summary {
+            font-weight: 600;
+            font-size: 1.05em;
+            cursor: pointer;
+            color: #333;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-section summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-section summary::after {
+            content: '+';
+            font-size: 1.3em;
+            color: #FF8C00;
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+
+        .faq-section details[open] summary::after {
+            content: '-';
+        }
+
+        .faq-section details p {
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            opacity: 1;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Loading spinner */
+        .loading {
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 3px solid #eee;
+            border-top-color: #FF8C00;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .joke-setup {
+                font-size: 1.2em;
+            }
+
+            .joke-punchline {
+                font-size: 1.1em;
+            }
+
+            .joke-card {
+                padding: 30px 20px;
+            }
+
+            .share-btn {
+                padding: 8px 14px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Cross-Browser Mobile App Install Banner -->
+    <div id="mobile-app-banner" class="mobile-app-banner hidden">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <div class="banner-text">
+            <div class="banner-title">Dad Jokes</div>
+            <div class="banner-subtitle">Get all the jokes in the app</div>
+        </div>
+        <button class="banner-button" onclick="window.location.href='https://dadjokes.vip/ios'">OPEN</button>
+        <button class="banner-close" onclick="document.getElementById('mobile-app-banner').classList.add('hidden');document.body.classList.remove('banner-active');">&times;</button>
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img">
+            </a>
+        </div>
+        <h1>Random Dad Joke</h1>
+        <p class="tagline">Tap to reveal. Tap again to groan.</p>
+
+        <div class="joke-card" id="joke-card">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <div>Loading jokes...</div>
+            </div>
+            <p class="joke-setup" id="joke-setup" style="display:none;"></p>
+            <p class="joke-punchline" id="joke-punchline"></p>
+        </div>
+
+        <div class="button-row">
+            <button class="btn-primary btn-reveal" id="btn-reveal" onclick="revealPunchline()">Reveal Punchline</button>
+            <button class="btn-primary" id="btn-next" onclick="nextJoke()">Another One!</button>
+        </div>
+
+        <div class="share-row" id="share-row" style="display:none;">
+            <button class="share-btn" id="btn-copy" onclick="copyJoke()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+            </button>
+            <button class="share-btn" id="btn-share" onclick="shareJoke()" style="display:none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
+            </button>
+            <a class="share-btn" id="btn-twitter" href="#" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Post
+            </a>
+        </div>
+
+        <p class="stats-line" id="stats-line" style="display:none;">
+            This is <strong>1 of <span id="joke-count">5,000+</span></strong> dad jokes. Get them all in the app.
+        </p>
+
+        <div class="cta">
+            <h2>Want Unlimited Dad Jokes?</h2>
+            <p class="cta-subtext">
+                19,000+ jokes, daily picks, AI roasts, and custom themes. Totally free.
+            </p>
+            <div class="store-buttons-badges">
+                <a href="https://dadjokes.vip/ios">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <span style="cursor: not-allowed;" title="Coming soon to Android">
+                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+                </span>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>How does the random dad joke generator work?</summary>
+                <p>Our generator picks from a library of thousands of hand-curated dad jokes. Each joke is loaded right in your browser -- no server calls needed. Just tap "Another One!" to get a fresh joke instantly, and "Reveal Punchline" to see the answer. You can also share any joke directly via link, and the recipient will see that exact joke.</p>
+            </details>
+
+            <details>
+                <summary>Can I share a specific joke with someone?</summary>
+                <p>Yes! Every joke has a unique shareable link. Use the Copy, Share, or Post buttons to send a joke to friends. When they open the link, they will see the exact same joke you saw -- setup first, with the punchline ready to reveal.</p>
+            </details>
+
+            <details>
+                <summary>How many random dad jokes are available?</summary>
+                <p>The web generator features thousands of our best jokes. The full Dad Jokes app has over 19,000 jokes across 20+ categories, plus AI-generated personalized name jokes. Download the free app to access the complete collection.</p>
+            </details>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/app">App</a>
+            <a href="/jokes">Jokes</a>
+            <a href="/random/">Random</a>
+            <a href="/battle/">Battle</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+        </div>
+
+        <div class="footer-stores">
+            <a href="https://dadjokes.vip/ios">
+                <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <span style="cursor: not-allowed;" title="Coming soon to Android">
+                <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+            </span>
+        </div>
+
+        <div class="footer-copy">
+            &copy; <span id="year"></span> Dad Jokes. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Show mobile banner on mobile devices
+        (function() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var banner = document.getElementById('mobile-app-banner');
+            if (isMobile && banner) {
+                banner.classList.remove('hidden');
+                banner.classList.add('show');
+                document.body.classList.add('banner-active');
+            }
+        })();
+    </script>
+
+    <script>
+        var jokes = [];
+        var currentJoke = null;
+        var punchlineRevealed = false;
+
+        // Load jokes
+        fetch('/jokes.json')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                jokes = data.items;
+                document.getElementById('joke-count', jokes.length.toLocaleString());
+
+                // Check for hash — load specific joke
+                var hash = window.location.hash.replace('#', '');
+                if (hash) {
+                    var found = jokes.find(function(j) {
+                        return j.id.endsWith('/' + hash);
+                    });
+                    if (found) {
+                        showJoke(found);
+                        return;
+                    }
+                }
+                // Otherwise random
+                nextJoke();
+            })
+            .catch(function() {
+                document.getElementById('loading').innerHTML = 'Failed to load jokes. Please refresh.';
+            });
+
+        function getJokeId(joke) {
+            // Extract ID like "MJ000123" from the URL id
+            var parts = joke.id.split('/');
+            return parts[parts.length - 1];
+        }
+
+        function splitJoke(joke) {
+            var full = joke.content_text;
+            var setup = joke.title;
+
+            // The punchline is the part of content_text after the title/setup
+            var punchline = full;
+            if (full.length > setup.length) {
+                // Find where setup ends in the full text
+                // Sometimes title is a truncated version, so find the best split
+                var setupClean = setup.replace(/[^\w\s]/g, '');
+                var fullClean = full.replace(/[^\w\s]/g, '');
+
+                if (fullClean.indexOf(setupClean) === 0 && full.length > setup.length) {
+                    punchline = full.substring(setup.length).trim();
+                } else {
+                    // Fallback: split at last sentence break in first half
+                    var midpoint = Math.floor(full.length * 0.6);
+                    var splitPoints = [];
+                    var re = /[.?!]\s/g;
+                    var match;
+                    while ((match = re.exec(full)) !== null) {
+                        if (match.index < midpoint) {
+                            splitPoints.push(match.index + match[0].length);
+                        }
+                    }
+                    if (splitPoints.length > 0) {
+                        var splitAt = splitPoints[splitPoints.length - 1];
+                        setup = full.substring(0, splitAt).trim();
+                        punchline = full.substring(splitAt).trim();
+                    } else {
+                        // No good split point — show full text as setup, no punchline
+                        setup = full;
+                        punchline = '';
+                    }
+                }
+            } else {
+                // Title and content are the same — try to split
+                var mid = Math.floor(full.length * 0.6);
+                var splits = [];
+                var regex = /[.?!]\s/g;
+                var m;
+                while ((m = regex.exec(full)) !== null) {
+                    if (m.index < mid) {
+                        splits.push(m.index + m[0].length);
+                    }
+                }
+                if (splits.length > 0) {
+                    var at = splits[splits.length - 1];
+                    setup = full.substring(0, at).trim();
+                    punchline = full.substring(at).trim();
+                } else {
+                    setup = full;
+                    punchline = '';
+                }
+            }
+
+            return { setup: setup, punchline: punchline };
+        }
+
+        function showJoke(joke) {
+            currentJoke = joke;
+            punchlineRevealed = false;
+
+            var parts = splitJoke(joke);
+            var setupEl = document.getElementById('joke-setup');
+            var punchlineEl = document.getElementById('joke-punchline');
+            var loadingEl = document.getElementById('loading');
+            var revealBtn = document.getElementById('btn-reveal');
+            var shareRow = document.getElementById('share-row');
+            var statsLine = document.getElementById('stats-line');
+
+            loadingEl.style.display = 'none';
+            setupEl.style.display = 'block';
+            setupEl.textContent = parts.setup;
+
+            punchlineEl.textContent = parts.punchline;
+            punchlineEl.classList.remove('revealed');
+
+            if (parts.punchline) {
+                revealBtn.classList.remove('hidden');
+                revealBtn.style.display = '';
+            } else {
+                revealBtn.classList.add('hidden');
+                revealBtn.style.display = 'none';
+                punchlineRevealed = true;
+            }
+
+            shareRow.style.display = 'flex';
+            statsLine.style.display = 'block';
+
+            // Update hash
+            var jokeId = getJokeId(joke);
+            history.replaceState(null, '', '#' + jokeId);
+
+            // Update Twitter link
+            updateTwitterLink();
+
+            // Show share button if Web Share API is available
+            if (navigator.share) {
+                document.getElementById('btn-share').style.display = '';
+            }
+        }
+
+        function revealPunchline() {
+            if (punchlineRevealed) return;
+            punchlineRevealed = true;
+            document.getElementById('joke-punchline').classList.add('revealed');
+            document.getElementById('btn-reveal').classList.add('hidden');
+            document.getElementById('btn-reveal').style.display = 'none';
+        }
+
+        function nextJoke() {
+            if (jokes.length === 0) return;
+
+            // Flip animation
+            var card = document.getElementById('joke-card');
+            card.classList.add('flipping');
+            setTimeout(function() {
+                card.classList.remove('flipping');
+            }, 500);
+
+            // Pick a random joke (different from current)
+            var newJoke;
+            if (jokes.length === 1) {
+                newJoke = jokes[0];
+            } else {
+                do {
+                    newJoke = jokes[Math.floor(Math.random() * jokes.length)];
+                } while (currentJoke && newJoke.id === currentJoke.id);
+            }
+
+            // Slight delay so animation starts before content changes
+            setTimeout(function() {
+                showJoke(newJoke);
+            }, 200);
+        }
+
+        function getJokeText() {
+            if (!currentJoke) return '';
+            var parts = splitJoke(currentJoke);
+            if (parts.punchline) {
+                return parts.setup + '\n\n' + parts.punchline;
+            }
+            return parts.setup;
+        }
+
+        function getShareUrl() {
+            if (!currentJoke) return window.location.href;
+            return 'https://dadjokes.vip/random/#' + getJokeId(currentJoke);
+        }
+
+        function copyJoke() {
+            var text = getJokeText() + '\n\n' + getShareUrl();
+            navigator.clipboard.writeText(text).then(function() {
+                var btn = document.getElementById('btn-copy');
+                btn.classList.add('copied');
+                btn.querySelector('svg').nextSibling.textContent = ' Copied!';
+                setTimeout(function() {
+                    btn.classList.remove('copied');
+                    btn.querySelector('svg').nextSibling.textContent = ' Copy';
+                }, 2000);
+            });
+        }
+
+        function shareJoke() {
+            if (!navigator.share) return;
+            navigator.share({
+                title: 'Dad Joke',
+                text: getJokeText(),
+                url: getShareUrl()
+            }).catch(function() {});
+        }
+
+        function updateTwitterLink() {
+            var text = getJokeText();
+            var url = getShareUrl();
+            var tweetText = encodeURIComponent(text + '\n\n');
+            var tweetUrl = encodeURIComponent(url);
+            document.getElementById('btn-twitter').href = 'https://x.com/intent/tweet?text=' + tweetText + '&url=' + tweetUrl;
+        }
+    </script>
+
+    <!-- Structured Data - WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Random Dad Joke Generator",
+        "url": "https://dadjokes.vip/random/",
+        "description": "A free random dad joke generator. Get a new joke instantly, reveal the punchline, and share with friends.",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Dad Jokes",
+            "url": "https://dadjokes.vip"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dadjokes.vip"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Random Joke",
+            "item": "https://dadjokes.vip/random/"
+        }]
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "How does the random dad joke generator work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our generator picks from a library of thousands of hand-curated dad jokes. Each joke is loaded right in your browser -- no server calls needed. Just tap Another One to get a fresh joke instantly, and Reveal Punchline to see the answer. You can also share any joke directly via link."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Can I share a specific joke with someone?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Every joke has a unique shareable link. Use the Copy, Share, or Post buttons to send a joke to friends. When they open the link, they will see the exact same joke you saw."
+            }
+        }, {
+            "@type": "Question",
+            "name": "How many random dad jokes are available?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The web generator features thousands of our best jokes. The full Dad Jokes app has over 19,000 jokes across 20+ categories, plus AI-generated personalized name jokes. Download the free app to access the complete collection."
+            }
+        }]
+    }
+    </script>
+</body>
+</html>

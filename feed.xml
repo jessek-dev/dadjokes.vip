@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dad Joke of the Day — Best Dad Jokes</title>
+    <link>https://dadjokes.vip/daily/</link>
+    <description>A fresh dad joke delivered every day</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Mar 2026 08:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
+      <title>Dad Joke of the Day — Best Dad Jokes</title>
+      <link>https://dadjokes.vip/daily/</link>
+    </image>
+
+    <item>
+      <title>I told my wife she was drawing her eyebrows too high...</title>
+      <description>I told my wife she was drawing her eyebrows too high. She looked surprised.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-26</guid>
+      <pubDate>Wed, 26 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Why don't scientists trust atoms?</title>
+      <description>Why don't scientists trust atoms? Because they make up everything.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-25</guid>
+      <pubDate>Tue, 25 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>I'm reading a book about anti-gravity...</title>
+      <description>I'm reading a book about anti-gravity. It's impossible to put down.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-24</guid>
+      <pubDate>Mon, 24 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>What do you call a fake noodle?</title>
+      <description>What do you call a fake noodle? An impasta.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-23</guid>
+      <pubDate>Sun, 23 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>I used to hate facial hair...</title>
+      <description>I used to hate facial hair, but then it grew on me.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-22</guid>
+      <pubDate>Sat, 22 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>What did the ocean say to the beach?</title>
+      <description>What did the ocean say to the beach? Nothing, it just waved.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-21</guid>
+      <pubDate>Fri, 21 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>I'm afraid for the calendar...</title>
+      <description>I'm afraid for the calendar. Its days are numbered.</description>
+      <link>https://dadjokes.vip/daily/</link>
+      <guid isPermaLink="false">dadjokes-2026-03-20</guid>
+      <pubDate>Thu, 20 Mar 2026 08:00:00 +0000</pubDate>
+    </item>
+
+  </channel>
+</rss>

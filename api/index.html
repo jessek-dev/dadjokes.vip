@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRRXTJP94X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Dad Jokes API — JSON Feed with 5,000+ Jokes</title>
+    <meta name="description" content="Free dad jokes API and JSON feed with 5,000+ jokes. Get random dad jokes in JSON format for your apps, bots, and websites. No API key required.">
+
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/api/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dadjokes.vip/api/">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Free Dad Jokes API — JSON Feed with 5,000+ Jokes">
+    <meta property="og:description" content="Free dad jokes JSON feed for developers. Build Slack bots, joke widgets, and more with 5,000+ dad jokes.">
+    <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+    <meta property="og:url" content="https://dadjokes.vip/api/">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Dad Jokes API — JSON Feed with 5,000+ Jokes">
+    <meta name="twitter:description" content="Free dad jokes JSON feed for developers. No API key required.">
+    <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: 60px;
+            border-radius: 6px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-card h2 {
+            color: #FF8C00;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .content-card h3 {
+            color: #333;
+            font-size: 1.15em;
+            margin: 20px 0 8px;
+        }
+
+        .content-card p {
+            font-size: 1em;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .content-card ul {
+            margin: 10px 0 15px 20px;
+            color: #555;
+        }
+
+        .content-card li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        .content-card a {
+            color: #FF8C00;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .content-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .code-block .comment {
+            color: #6a9955;
+        }
+
+        .code-block .string {
+            color: #ce9178;
+        }
+
+        .code-block .key {
+            color: #9cdcfe;
+        }
+
+        .code-block .keyword {
+            color: #569cd6;
+        }
+
+        .code-block .number {
+            color: #b5cea8;
+        }
+
+        .endpoint-url {
+            display: inline-block;
+            background: #FFF3E0;
+            border: 2px solid #FF8C00;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+            font-size: 0.95em;
+            color: #333;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+
+        .endpoint-label {
+            display: inline-block;
+            background: #FF8C00;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-right: 8px;
+            font-family: 'SF Mono', Consolas, monospace;
+        }
+
+        /* Use case cards */
+        .use-case {
+            background: #FFFAF5;
+            border-left: 4px solid #FF8C00;
+            border-radius: 0 10px 10px 0;
+            padding: 15px 20px;
+            margin: 12px 0;
+        }
+
+        .use-case strong {
+            color: #FF8C00;
+        }
+
+        /* CTA */
+        .cta {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: #FF8C00;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin: 10px 0 25px;
+            color: #333;
+        }
+
+        .store-buttons-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .store-badge {
+            height: 50px;
+        }
+
+        .store-badge.disabled {
+            opacity: 0.4;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+        }
+
+        /* Footer */
+        .site-footer {
+            width: 100%;
+            background: #eee;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .site-footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores {
+            margin-bottom: 20px;
+        }
+
+        .site-footer .footer-stores img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .site-footer .footer-copy {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .content-card {
+                padding: 20px;
+            }
+
+            .code-block {
+                font-size: 0.8em;
+                padding: 15px;
+            }
+
+            .endpoint-url {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img"></a>
+        </div>
+
+        <h1>Dad Jokes API</h1>
+        <p class="tagline">Free JSON feed with 5,000+ dad jokes. No API key required.</p>
+
+        <!-- Overview -->
+        <div class="content-card">
+            <h2>Get Dad Jokes as JSON</h2>
+            <p>dadjokes.vip provides a free, publicly accessible JSON feed of dad jokes. Use it to build bots, add jokes to your website, or just make your coworkers groan on Slack. No authentication, no rate-limit keys, no sign-up.</p>
+            <p>The feed follows the <a href="https://www.jsonfeed.org/version/1.1/" target="_blank" rel="noopener">JSON Feed 1.1</a> specification, so it works out of the box with any feed reader or HTTP client.</p>
+        </div>
+
+        <!-- Endpoints -->
+        <div class="content-card">
+            <h2>Endpoints</h2>
+
+            <h3>Curated Jokes Feed</h3>
+            <p><span class="endpoint-label">GET</span></p>
+            <div class="endpoint-url">https://dadjokes.vip/jokes.json</div>
+            <p>Returns the curated joke collection in JSON Feed format. Each joke includes a unique ID, the joke text, categories, and timestamps.</p>
+
+            <h3>Full Dataset</h3>
+            <p><span class="endpoint-label">GET</span></p>
+            <div class="endpoint-url">https://dadjokes.vip/jokes-full.json</div>
+            <p>The complete dataset including all jokes. Larger file size — best for bulk downloads or one-time imports rather than repeated fetching.</p>
+        </div>
+
+        <!-- Response Format -->
+        <div class="content-card">
+            <h2>Response Format</h2>
+            <p>Each joke item in the feed looks like this:</p>
+            <div class="code-block">
+{<br>
+&nbsp;&nbsp;<span class="key">"id"</span>: <span class="string">"https://dadjokes.vip/joke/MJ000001"</span>,<br>
+&nbsp;&nbsp;<span class="key">"url"</span>: <span class="string">"https://dadjokes.vip/joke/MJ000001"</span>,<br>
+&nbsp;&nbsp;<span class="key">"title"</span>: <span class="string">"Wife: Honey I'm pregnant..."</span>,<br>
+&nbsp;&nbsp;<span class="key">"content_text"</span>: <span class="string">"Wife: Honey I'm pregnant. Me: Well... what do we do now? Wife: Well, I guess we should go to a baby doctor. Me: Hm... I think I'd be a lot more comfortable going to an adult doctor."</span>,<br>
+&nbsp;&nbsp;<span class="key">"date_published"</span>: <span class="string">"2024-01-01T00:00:00Z"</span>,<br>
+&nbsp;&nbsp;<span class="key">"tags"</span>: [<span class="string">"Wife"</span>, <span class="string">"dad jokes"</span>, <span class="string">"humor"</span>],<br>
+&nbsp;&nbsp;<span class="key">"author"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Dad Jokes"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"url"</span>: <span class="string">"https://dadjokes.vip"</span><br>
+&nbsp;&nbsp;}<br>
+}
+            </div>
+
+            <h3>Key Fields</h3>
+            <ul>
+                <li><code>id</code> / <code>url</code> — Unique permalink for the joke</li>
+                <li><code>title</code> — The joke setup (or short version)</li>
+                <li><code>content_text</code> — The full joke including the punchline</li>
+                <li><code>tags</code> — Categories the joke belongs to</li>
+                <li><code>date_published</code> — When the joke was added</li>
+            </ul>
+        </div>
+
+        <!-- Usage Examples -->
+        <div class="content-card">
+            <h2>What Can You Build?</h2>
+
+            <div class="use-case">
+                <strong>Slack Bot</strong> — Fetch a random joke from the feed and post it to a channel on a schedule. A few lines of code and your team gets a daily groan.
+            </div>
+
+            <div class="use-case">
+                <strong>Website Widget</strong> — Add a "Dad Joke of the Day" block to your site. Fetch the feed, pick a joke, display it. Works great in a sidebar or footer.
+            </div>
+
+            <div class="use-case">
+                <strong>Daily Email</strong> — Pull a random joke and send it as a daily email digest. Perfect for newsletters that need a lighter touch.
+            </div>
+
+            <div class="use-case">
+                <strong>Discord Bot</strong> — Slash command that responds with a random dad joke. Your server members will love (or hate) you for it.
+            </div>
+
+            <div class="use-case">
+                <strong>CLI Tool</strong> — A terminal command that prints a dad joke. Because even developers need to laugh while deploying.
+            </div>
+        </div>
+
+        <!-- Quick Start -->
+        <div class="content-card">
+            <h2>Quick Start</h2>
+            <p>Fetch a random joke with curl and jq:</p>
+            <div class="code-block">
+<span class="comment"># Fetch the feed and pick a random joke</span><br>
+curl -s https://dadjokes.vip/jokes.json \<br>
+&nbsp;&nbsp;| jq '.items | .[<span class="keyword">length</span> * <span class="keyword">random</span> | floor] | .content_text'
+            </div>
+
+            <p>Or in JavaScript:</p>
+            <div class="code-block">
+<span class="keyword">const</span> res = <span class="keyword">await</span> fetch(<span class="string">'https://dadjokes.vip/jokes.json'</span>);<br>
+<span class="keyword">const</span> feed = <span class="keyword">await</span> res.json();<br>
+<span class="keyword">const</span> joke = feed.items[Math.floor(Math.random() * feed.items.length)];<br>
+console.log(joke.content_text);
+            </div>
+
+            <p>In Python:</p>
+            <div class="code-block">
+<span class="keyword">import</span> requests, random<br>
+<br>
+feed = requests.get(<span class="string">"https://dadjokes.vip/jokes.json"</span>).json()<br>
+joke = random.choice(feed[<span class="string">"items"</span>])<br>
+print(joke[<span class="string">"content_text"</span>])
+            </div>
+        </div>
+
+        <!-- Rate Limits & Attribution -->
+        <div class="content-card">
+            <h2>Rate Limits &amp; Attribution</h2>
+            <p>The JSON feed is a static file served from a CDN. There are no formal rate limits, but please be a good citizen:</p>
+            <ul>
+                <li><strong>Cache responses locally.</strong> The feed does not change every minute. Fetching once per day (or even once per hour) is more than enough.</li>
+                <li><strong>Do not hammer the endpoint.</strong> Since it is a static file, aggressive polling just wastes bandwidth for everyone.</li>
+            </ul>
+
+            <h3>Attribution</h3>
+            <p>The data is free to use. All we ask is that you include a link back to <a href="https://dadjokes.vip">dadjokes.vip</a> or the <a href="https://dadjokes.vip/ios">App Store listing</a> somewhere visible. A small "Jokes from dadjokes.vip" credit is perfect.</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta">
+            <h2>Want the Full Experience?</h2>
+            <p>The API is great for developers. But for browsing, saving favorites, and getting daily notifications — grab the app.</p>
+            <div class="store-buttons-badges">
+                <a href="https://dadjokes.vip/ios" class="appstore-link">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+                <span style="cursor: not-allowed;" title="Coming soon to Android">
+                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/app">App</a>
+            <a href="/jokes">Jokes</a>
+            <a href="/compare/">Compare</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+        </div>
+        <div class="footer-stores">
+            <a href="https://dadjokes.vip/ios" class="appstore-link">
+                <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <span style="cursor: not-allowed;" title="Coming soon to Android">
+                <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+            </span>
+        </div>
+        <div class="footer-copy">
+            &copy; <span id="year"></span> Dad Jokes. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Structured Data - Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Free Dad Jokes API — JSON Feed with 5,000+ Jokes",
+      "description": "Free dad jokes API and JSON feed with 5,000+ jokes. Get random dad jokes in JSON format for your apps, bots, and websites.",
+      "author": {
+        "@type": "Organization",
+        "name": "Best Dad Jokes",
+        "url": "https://dadjokes.vip"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Best Dad Jokes",
+        "url": "https://dadjokes.vip",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dadjokes.vip/assets/android-chrome-192x192.png"
+        }
+      },
+      "datePublished": "2026-03-26",
+      "dateModified": "2026-03-26",
+      "url": "https://dadjokes.vip/api/",
+      "image": "https://dadjokes.vip/assets/og-image-optimized.jpg"
+    }
+    </script>
+
+    <!-- Structured Data - WebAPI -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebAPI",
+      "name": "Dad Jokes JSON Feed",
+      "description": "Free JSON feed of 5,000+ dad jokes following the JSON Feed 1.1 specification. No authentication required.",
+      "url": "https://dadjokes.vip/api/",
+      "documentation": "https://dadjokes.vip/api/",
+      "provider": {
+        "@type": "Organization",
+        "name": "Best Dad Jokes",
+        "url": "https://dadjokes.vip"
+      },
+      "termsOfService": "https://dadjokes.vip/api/#attribution",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://dadjokes.vip/jokes.json",
+        "serviceType": "REST"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dadjokes.vip"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "API",
+          "item": "https://dadjokes.vip/api/"
+        }
+      ]
+    }
+    </script>
+</body>
+</html>

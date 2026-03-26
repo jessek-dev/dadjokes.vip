@@ -13,7 +13,7 @@
     <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
 
     <!-- Native iOS Smart Banner -->
-    <meta name="apple-itunes-app" content="app-id=6743726261">
+    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/collection/dad-jokes-for-work/">
 
     <!-- Android Intent -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
@@ -842,9 +842,65 @@
             font-size: 0.9em;
             color: #666;
         }
+        /* Site Navigation */
+        .site-nav {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .site-nav-inner::-webkit-scrollbar { display: none; }
+        .site-nav a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            padding: 10px 10px;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
+        .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
+        @media (max-width: 768px) {
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
+        }
+
     </style>
 </head>
 <body>
+    <!-- Site Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/app/">Home</a>
+            <span class="nav-sep">|</span>
+            <a href="/jokes/">Dad Jokes</a>
+            <span class="nav-sep">|</span>
+            <a href="/roast/">Roast Your Friends</a>
+            <span class="nav-sep">|</span>
+            <a href="/daily/">Joke of the Day</a>
+            <span class="nav-sep">|</span>
+            <a href="/collection/" class="active">Collections</a>
+            <span class="nav-sep">|</span>
+            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+        </div>
+    </nav>
+
     <!-- Cross-Browser Mobile App Install Banner -->
     <div id="mobile-app-banner" class="mobile-app-banner hidden">
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
@@ -1472,19 +1528,24 @@
         <div class="related-collections">
             <h2>More Joke Collections</h2>
             <div class="collection-links">
-                                <a href="/collection/science-dad-jokes" class="collection-link">
-                    <span>Science Dad Jokes</span>
+                                <a href="/collection/dad-jokes-for-weddings" class="collection-link">
+                    <span>Dad Jokes for Weddings</span>
+                </a>
+                <a href="/collection/halloween-dad-jokes" class="collection-link">
+                    <span>Halloween Dad Jokes</span>
+                </a>
+                <a href="/collection/back-to-school-dad-jokes" class="collection-link">
+                    <span>Back-to-School Dad Jokes</span>
                 </a>
                 <a href="/collection/one-liner-dad-jokes" class="collection-link">
                     <span>Best One-Liner Dad Jokes</span>
                 </a>
-                <a href="/collection/christmas-dad-jokes" class="collection-link">
-                    <span>Christmas Dad Jokes</span>
-                </a>
-                <a href="/collection/dad-jokes-for-weddings" class="collection-link">
-                    <span>Dad Jokes for Weddings</span>
-                </a>
             </div>
+        </div>
+
+        <!-- Cross-link: Roast generator -->
+        <div style="background: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+            <p style="color: #666; font-size: 1em; margin: 0;">Want something edgier? <a href="/roast/" style="color: #e94560; font-weight: 600; text-decoration: none;">Try our name roast generator</a> &mdash; enter any name and get personalized burns.</p>
         </div>
 
         <!-- CTA Section -->

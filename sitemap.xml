@@ -121,7 +121,35 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dadjokes.vip/daily/</loc>
+    <loc>https://dadjokes.vip/random/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dadjokes.vip/battle/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dadjokes.vip/compare/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dadjokes.vip/api/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dadjokes.vip/feed/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
     <lastmod>2026-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
