@@ -548,6 +548,59 @@
           margin-bottom: 25px; /* or more/less as desired */
         }
 
+        /* Browse Jokes Section */
+        .browse-jokes {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .browse-jokes h2 {
+            color: #FF8C00;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .browse-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .browse-pill {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #FFF3E0;
+            color: #333;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: all 0.2s;
+        }
+
+        .browse-pill:hover {
+            background: #FFE0B2;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(255,140,0,0.2);
+        }
+
+        .browse-all {
+            display: inline-block;
+            color: #FF8C00;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        .browse-all:hover {
+            text-decoration: underline;
+        }
 
     </style>
 </head>
@@ -663,6 +716,21 @@
             </span>
 
           </div>
+        </div>
+
+        <div class="browse-jokes">
+            <h2>Browse Dad Jokes By Topic</h2>
+            <div class="browse-pills">
+                <a href="/collection/dad-jokes-for-weddings" class="browse-pill">Weddings</a>
+                <a href="/collection/dad-jokes-for-work" class="browse-pill">Work</a>
+                <a href="/collection/dad-jokes-for-kids" class="browse-pill">Kids</a>
+                <a href="/collection/dad-jokes-for-texting" class="browse-pill">Texting</a>
+                <a href="/collection/one-liner-dad-jokes" class="browse-pill">One-Liners</a>
+                <a href="/collection/christmas-dad-jokes" class="browse-pill">Christmas</a>
+                <a href="/collection/science-dad-jokes" class="browse-pill">Science</a>
+                <a href="/collection/fathers-day-dad-jokes" class="browse-pill">Father's Day</a>
+            </div>
+            <a href="/jokes/" class="browse-all">Browse all categories &rarr;</a>
         </div>
 
         <div class="faq-section">

@@ -9,7 +9,8 @@
     "update": "node update-new-jokes.js",
     "update-count": "node update-joke-count.js",
     "generate-feed": "node generate-json-feed.js",
-    "import:failed": "node import-failed-jokes.js"
+    "import:failed": "node import-failed-jokes.js",
+    "update-daily": "node update-daily-joke.js"
   },
   "dependencies": {
     "firebase-admin": "^12.0.0"
