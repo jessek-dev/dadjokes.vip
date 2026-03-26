@@ -24,4 +24,12 @@
     <loc>https://dadjokes.vip/generated_sitemaps/sitemap_ai_jokes.xml</loc>
     <lastmod>2026-03-26</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_collections.xml</loc>
+    <lastmod>2026-03-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_roasts.xml</loc>
+    <lastmod>2026-03-26</lastmod>
+  </sitemap>
 </sitemapindex>
