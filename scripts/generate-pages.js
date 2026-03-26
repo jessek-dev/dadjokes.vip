@@ -389,6 +389,18 @@ async function generateCategoryPage(category, jokes, template) {
                 </a>`;
   }).join('\n');
 
+  // Generate ItemList JSON for structured data
+  const jokeItemListJson = JSON.stringify(categoryJokes.map((joke, index) => {
+    const jokeUrl = jokeUrlMap[joke.id] || `/joke/${joke.id}`;
+    const setupText = joke.setup || joke.text.split('?')[0] + (joke.text.includes('?') ? '?' : '');
+    return {
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://dadjokes.vip${jokeUrl}`,
+      "name": setupText.substring(0, 100)
+    };
+  }), null, 6);
+
   const replacements = {
     CATEGORY: category,
     CATEGORY_SLUG: categorySlug,
@@ -397,6 +409,7 @@ async function generateCategoryPage(category, jokes, template) {
     CATEGORY_LOWER: category.toLowerCase(),
     JOKE_COUNT: categoryJokes.length,
     JOKE_LIST: jokeListHtml,
+    JOKE_ITEM_LIST_JSON: jokeItemListJson,
     RELATED_CATEGORIES: relatedCategoriesHtml
   };
 

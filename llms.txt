@@ -1,0 +1,41 @@
+# Best Dad Jokes
+
+> Best Dad Jokes is a free iOS app with 5,000+ dad jokes across 20+ categories. Features daily featured jokes, AI-generated personalized jokes using your name, custom themes, and push notifications. Available at dadjokes.vip and on the iOS App Store.
+
+## App
+- [Download on iOS](https://apps.apple.com/app/best-dad-jokes/id6743726261): Free on the App Store
+- [About](https://dadjokes.vip/app/): Features, screenshots, and download links
+
+## Joke Categories
+- [All Categories](https://dadjokes.vip/jokes/): Browse 20+ joke categories
+- [#DadLife](https://dadjokes.vip/jokes/dadlife/): Parenting and family life humor
+- [Wife](https://dadjokes.vip/jokes/wife/): Lighthearted marriage humor
+- [Family](https://dadjokes.vip/jokes/family/): Wholesome family relationship jokes
+- [Words & Puns](https://dadjokes.vip/jokes/words-puns/): Clever wordplay and puns
+- [Around the House](https://dadjokes.vip/jokes/around-the-house/): Home life and household humor
+- [Food](https://dadjokes.vip/jokes/food/): Food and cooking puns
+- [Animals](https://dadjokes.vip/jokes/animals/): Animal dad jokes
+- [Work & Money](https://dadjokes.vip/jokes/work-money/): Office and workplace humor
+- [Sports & Games](https://dadjokes.vip/jokes/sports-games/): Athletic humor and competition jokes
+- [Transportation](https://dadjokes.vip/jokes/transportation/): Cars, planes, trains, and travel jokes
+- [Movies](https://dadjokes.vip/jokes/movies/): Hollywood and cinema humor
+- [Music & Arts](https://dadjokes.vip/jokes/music-arts/): Musical and artistic humor
+- [Medical](https://dadjokes.vip/jokes/medical/): Doctor jokes and medical humor
+- [Science & Tech](https://dadjokes.vip/jokes/science-tech/): Science and technology humor
+- [Global](https://dadjokes.vip/jokes/global/): International and geography humor
+- [Clothing](https://dadjokes.vip/jokes/clothing/): Fashion and wardrobe jokes
+- [People](https://dadjokes.vip/jokes/people/): Personality and profession jokes
+- [History](https://dadjokes.vip/jokes/history/): Historical humor
+- [Religion](https://dadjokes.vip/jokes/religion/): Lighthearted religious humor
+- [Mother Nature](https://dadjokes.vip/jokes/mother-nature/): Weather, plants, and outdoor jokes
+- [Seasonal](https://dadjokes.vip/jokes/seasonal/): Holiday and seasonal jokes
+- [Name Jokes](https://dadjokes.vip/jokes/name-jokes/): AI-generated personalized name jokes
+
+## Data
+- [Jokes JSON Feed](https://dadjokes.vip/jokes.json): Structured joke data
+- [Category Data](https://dadjokes.vip/category_data.json): Category metadata
+
+## Support
+- [Privacy Policy](https://dadjokes.vip/privacy/): How we handle your data
+- [Support](https://dadjokes.vip/support/): Contact and help
+- [FAQ](https://dadjokes.vip/app/#faq): Frequently asked questions

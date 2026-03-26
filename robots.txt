@@ -1,9 +1,29 @@
-# NOTE: Cloudflare injects AI bot restrictions above this section
-# The "Content-signal" directive is experimental (not standard robots.txt)
-# but is understood by AI crawlers. Validation tools will flag it as an error.
+# robots.txt for dadjokes.vip
+# NOTE: Cloudflare may inject additional AI bot restrictions at the edge.
+# The Allow rules below explicitly permit AI search crawlers we want indexing our content.
 
 User-agent: *
 Allow: /
+
+# Explicitly allow AI search crawlers (override any Cloudflare bot blocking)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block spam/scraper bots
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
 
 # Disallow admin/management areas
 Disallow: /manage/
