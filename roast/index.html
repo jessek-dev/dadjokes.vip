@@ -239,11 +239,12 @@
         .name-input {
             flex: 1;
             padding: 16px 20px;
-            font-size: 1.2em;
+            font-size: max(16px, 1.2em);
             border: 3px solid #eee;
             border-radius: 12px;
             outline: none;
             transition: border-color 0.3s;
+            min-height: 48px;
         }
 
         .name-input:focus {
@@ -266,6 +267,7 @@
             transition: transform 0.2s, box-shadow 0.2s;
             white-space: nowrap;
             letter-spacing: 0.5px;
+            min-height: 48px;
         }
 
         .roast-btn:hover {
@@ -295,6 +297,10 @@
             border-bottom: 2px dotted rgba(255,255,255,0.4);
             cursor: pointer;
             transition: border-color 0.2s;
+            display: inline-block;
+            padding: 8px 4px;
+            min-height: 44px;
+            line-height: 28px;
         }
 
         .suggest-link:hover {
@@ -554,7 +560,7 @@
         }
 
         .popular-names a {
-            padding: 8px 16px;
+            padding: 10px 16px;
             background: #fff5f0;
             color: #FF6B35;
             border-radius: 20px;
@@ -563,6 +569,9 @@
             font-size: 0.95em;
             transition: all 0.2s;
             border: 1px solid #ffe0d0;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
         }
 
         .popular-names a:hover {
@@ -644,6 +653,9 @@
         .footer a {
             color: white;
             text-decoration: none;
+            display: inline-block;
+            padding: 10px 4px;
+            min-height: 44px;
         }
 
         .footer a:hover {
@@ -684,7 +696,7 @@
             }
 
             .container {
-                padding: 25px 15px;
+                padding: 25px 16px;
             }
         }
         /* Site Navigation */
@@ -715,9 +727,12 @@
             text-decoration: none;
             font-size: 0.85em;
             font-weight: 500;
-            padding: 10px 10px;
+            padding: 12px 10px;
             white-space: nowrap;
             transition: color 0.2s;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
         }
         .site-nav a:hover, .site-nav a.active { color: #e94560; }
         .site-nav .nav-sep { color: #444; font-size: 0.7em; user-select: none; }
@@ -778,6 +793,7 @@
                     required
                     autofocus
                     autocapitalize="words"
+                    autocorrect="off"
                 >
                 <button type="submit" class="roast-btn" id="roastBtn">🔥 ROAST THEM</button>
             </form>

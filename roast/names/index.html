@@ -111,7 +111,7 @@
         .banner-title { font-weight: 600; font-size: 14px; color: #fff; margin-bottom: 2px; }
         .banner-subtitle { font-size: 12px; color: #999; }
         .banner-button { background: #e74c3c; color: white; border: none; padding: 8px 20px; border-radius: 16px; font-weight: 600; font-size: 14px; cursor: pointer; white-space: nowrap; }
-        .banner-close { background: none; border: none; color: #999; font-size: 24px; cursor: pointer; padding: 0 4px; line-height: 1; }
+        .banner-close { background: none; border: none; color: #999; font-size: 24px; cursor: pointer; padding: 8px; line-height: 1; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
         body.banner-active { padding-top: 76px; }
 
         .container {
@@ -170,7 +170,7 @@
             border: 2px solid rgba(231,76,60,0.3);
             background: rgba(0,0,0,0.3);
             color: #e0e0e0;
-            font-size: 1.1em;
+            font-size: 16px;
             outline: none;
             transition: border-color 0.3s;
         }
@@ -216,8 +216,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 38px;
-            height: 38px;
+            width: 44px;
+            height: 44px;
             border-radius: 8px;
             background: rgba(231,76,60,0.15);
             color: #e74c3c;
@@ -259,8 +259,11 @@
         }
 
         .name-link {
-            display: block;
-            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            min-height: 44px;
             background: rgba(0,0,0,0.2);
             border: 1px solid rgba(255,255,255,0.08);
             border-radius: 8px;
@@ -368,7 +371,7 @@
             .header-card h1 { font-size: 1.8em; }
             .header-card { padding: 30px 20px; }
             .names-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
-            .alpha-nav a { width: 32px; height: 32px; font-size: 0.85em; }
+            .alpha-nav a { width: 40px; height: 40px; font-size: 0.85em; }
             .cta-section { padding: 30px 20px; }
         }
         /* Site Navigation */

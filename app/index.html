@@ -20,6 +20,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFA500">
     <title>Best Dad Jokes App - 19,139 Jokes Free on iPhone</title>
     <meta name="description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS.">
     
@@ -138,6 +139,8 @@
             font-size: 14px;
             cursor: pointer;
             white-space: nowrap;
+            min-height: 44px;
+            min-width: 44px;
         }
 
         .banner-close {
@@ -146,8 +149,13 @@
             color: #666;
             font-size: 24px;
             cursor: pointer;
-            padding: 0 4px;
+            padding: 8px;
             line-height: 1;
+            min-width: 44px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         body.banner-active {
@@ -321,6 +329,8 @@
         
         .store-badge {
           height: 50px;
+          min-width: 120px;
+          max-width: 100%;
         }
 
         .store-badge.disabled {
@@ -361,6 +371,9 @@
           text-decoration: none;
           margin: 0 15px;
           font-weight: 500;
+          display: inline-block;
+          padding: 10px 0;
+          min-height: 44px;
         }
         
         .site-footer a:hover {
@@ -429,6 +442,22 @@
             .feature h2 {
                 font-size: 1.2em;
             }
+
+            .container {
+                padding: 20px 16px;
+            }
+
+            .logo-img {
+                height: 60px;
+                width: 60px;
+            }
+
+            .logo {
+                margin-bottom: 12px;
+            }
+
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 12px 8px; }
         }
 
         .faq-section {
@@ -492,12 +521,17 @@
 
         .share-btn {
           position: absolute;
-          bottom: 20px;
-          right: 20px;
+          bottom: 12px;
+          right: 12px;
           background: none;
           border: none;
           cursor: pointer;
-          padding: 4px;
+          padding: 10px;
+          min-width: 44px;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         
         .share-btn img {
@@ -575,8 +609,10 @@
         }
 
         .browse-pill {
-            display: inline-block;
-            padding: 8px 18px;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 18px;
+            min-height: 44px;
             background: #FFF3E0;
             color: #333;
             border-radius: 20px;
@@ -756,9 +792,12 @@
             text-decoration: none;
             font-size: 0.85em;
             font-weight: 500;
-            padding: 10px 10px;
+            padding: 12px 10px;
             white-space: nowrap;
             transition: color 0.2s;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
         }
         .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
         .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
@@ -796,7 +835,7 @@
 
     <!-- Cross-Browser Mobile App Install Banner -->
     <div id="mobile-app-banner" class="mobile-app-banner hidden">
-        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
+        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon" width="48" height="48">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
             <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
@@ -851,11 +890,11 @@
                 <p><strong>Install our app to unlock limitless laughs!</strong></p>
                 <div class="store-buttons-badges">
                   <a href="https://dadjokes.vip/ios" class="appstore-link">
-                      <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                      <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
                     </a>
 
                     <span style="cursor: not-allowed;" title="Coming soon to Android">
-                      <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+                      <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
                     </span>
                 </div>
               </div>
@@ -937,11 +976,11 @@
         
           <div class="store-buttons-badges">
             <a href="https://dadjokes.vip/ios" class="appstore-link">
-              <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+              <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
             </a>
 
             <span style="cursor: not-allowed;" title="Coming soon to Android">
-              <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+              <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
             </span>
 
           </div>
@@ -1047,11 +1086,11 @@
     
       <div class="footer-stores">
         <a href="https://dadjokes.vip/ios" class="appstore-link">
-          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
         </a>
 
         <span style="cursor: not-allowed;" title="Coming soon to Android">
-          <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon">
+          <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
         </span>
       </div>
     
