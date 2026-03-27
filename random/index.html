@@ -26,6 +26,9 @@
     <!-- Universal Links Support -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/random/">
 
+    <!-- Resource hints - MUST be before font request -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
@@ -50,10 +53,6 @@
     <meta name="twitter:title" content="Random Dad Joke Generator - Tell Me a Joke!">
     <meta name="twitter:description" content="Need a random dad joke? Our generator picks from 5,000+ jokes instantly. Tap to reveal the punchline and share the laughs.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
-
-    <!-- Resource hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <style>
         * {
@@ -146,50 +145,82 @@
             padding-top: 76px;
         }
 
+        /* Site Navigation */
+        .site-nav {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .site-nav-inner::-webkit-scrollbar { display: none; }
+        .site-nav a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            padding: 12px 10px;
+            white-space: nowrap;
+            transition: color 0.2s;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+        .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
+        .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px 20px;
             text-align: center;
         }
 
         .logo {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .logo-img {
-            height: 80px;
-            width: 80px;
-            animation: bounce 2s infinite;
+            height: 56px;
+            width: 56px;
             border-radius: 6px;
         }
 
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 8px;
+            font-size: 2em;
+            margin-bottom: 4px;
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .tagline {
-            font-size: 1.2em;
+            font-size: 1.05em;
             color: rgba(255,255,255,0.9);
-            margin-bottom: 30px;
+            margin-bottom: 16px;
         }
 
         /* Joke Card */
         .joke-card {
             background: white;
             border-radius: 20px;
-            padding: 40px 30px;
-            margin: 30px 0;
+            padding: 30px 24px;
+            margin: 16px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            min-height: 200px;
+            min-height: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -246,6 +277,7 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
             margin: 8px;
+            min-height: 48px;
         }
 
         .btn-primary:hover {
@@ -292,16 +324,17 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 10px 18px;
+            padding: 12px 20px;
             border: 2px solid #eee;
             border-radius: 25px;
             background: white;
             color: #555;
-            font-size: 0.9em;
+            font-size: 0.95em;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s;
             text-decoration: none;
+            min-height: 44px;
         }
 
         .share-btn:hover {
@@ -369,7 +402,7 @@
             background: white;
             border-radius: 20px;
             padding: 30px;
-            margin: 40px 0;
+            margin: 30px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
@@ -381,8 +414,25 @@
 
         .cta-subtext {
             font-size: 1.1rem;
-            margin: 10px 0 25px;
+            margin: 10px 0 20px;
             color: #333;
+        }
+
+        .cta-features {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .cta-features span {
+            background: #FFF3E0;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: 500;
         }
 
         .store-buttons-badges {
@@ -526,11 +576,12 @@
         /* Responsive */
         @media (max-width: 480px) {
             h1 {
-                font-size: 1.8em;
+                font-size: 1.6em;
             }
 
             .tagline {
-                font-size: 1em;
+                font-size: 0.95em;
+                margin-bottom: 10px;
             }
 
             .joke-setup {
@@ -542,13 +593,21 @@
             }
 
             .joke-card {
-                padding: 30px 20px;
+                padding: 24px 18px;
+                margin: 10px 0;
             }
 
-            .share-btn {
-                padding: 12px 18px;
-                font-size: 0.95em;
-                min-height: 44px;
+            .container {
+                padding: 12px 16px;
+            }
+
+            .logo {
+                margin-bottom: 6px;
+            }
+
+            .logo-img {
+                height: 44px;
+                width: 44px;
             }
 
             .share-row {
@@ -559,6 +618,9 @@
             .share-btn {
                 justify-content: center;
             }
+
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 12px 8px; }
         }
     </style>
 </head>
@@ -568,12 +630,29 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Site Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/app/">Home</a>
+            <span class="nav-sep">|</span>
+            <a href="/jokes/">Dad Jokes</a>
+            <span class="nav-sep">|</span>
+            <a href="/random/" class="active">Random</a>
+            <span class="nav-sep">|</span>
+            <a href="/battle/">Battle</a>
+            <span class="nav-sep">|</span>
+            <a href="/daily/">Daily</a>
+            <span class="nav-sep">|</span>
+            <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'header'});}">Get the App</a>
+        </div>
+    </nav>
+
     <!-- Cross-Browser Mobile App Install Banner -->
     <div id="mobile-app-banner" class="mobile-app-banner hidden">
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
         <div class="banner-text">
             <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">Get all the jokes in the app</div>
+            <div class="banner-subtitle">5,000+ jokes, totally free</div>
         </div>
         <button class="banner-button" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'banner'});}window.location.href='https://dadjokes.vip/ios'">OPEN</button>
         <button class="banner-close" onclick="document.getElementById('mobile-app-banner').classList.add('hidden');document.body.classList.remove('banner-active');">&times;</button>
@@ -586,7 +665,7 @@
             </a>
         </div>
         <h1>Random Dad Joke</h1>
-        <p class="tagline">Tap to reveal. Tap again to groan.</p>
+        <p class="tagline">Tap to reveal the punchline. Try not to groan.</p>
 
         <div class="joke-card" id="joke-card">
             <div class="loading" id="loading">
@@ -598,8 +677,8 @@
         </div>
 
         <div class="button-row">
-            <button class="btn-primary btn-reveal" id="btn-reveal" onclick="revealPunchline()">Tap to Reveal Punchline</button>
-            <button class="btn-primary" id="btn-next" onclick="nextJoke()">Another One! 🎲</button>
+            <button class="btn-primary btn-reveal" id="btn-reveal" onclick="revealPunchline()" style="display:none;">Reveal the Punchline</button>
+            <button class="btn-primary" id="btn-next" onclick="nextJoke()" style="display:none;">Another One! 🎲</button>
         </div>
 
         <div class="share-row" id="share-row" style="display:none;">
@@ -626,10 +705,15 @@
         </p>
 
         <div class="cta">
-            <h2>Want Unlimited Dad Jokes?</h2>
+            <h2>Loving These Jokes?</h2>
             <p class="cta-subtext">
-                19,000+ jokes, daily picks, AI roasts, and custom themes. Totally free.
+                Get a fresh dad joke delivered to your phone every morning. Completely free.
             </p>
+            <div class="cta-features">
+                <span>19,000+ jokes</span>
+                <span>Daily notifications</span>
+                <span>AI roasts</span>
+            </div>
             <div class="store-buttons-badges">
                 <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -804,6 +888,7 @@
             var punchlineEl = document.getElementById('joke-punchline');
             var loadingEl = document.getElementById('loading');
             var revealBtn = document.getElementById('btn-reveal');
+            var nextBtn = document.getElementById('btn-next');
             var shareRow = document.getElementById('share-row');
             var statsLine = document.getElementById('stats-line');
 
@@ -812,7 +897,10 @@
             setupEl.textContent = parts.setup;
 
             punchlineEl.textContent = parts.punchline;
-            punchlineEl.classList.remove('revealed');
+            punchlineEl.classList.remove('revealed', 'pop');
+
+            // Always show the "Another One!" button once first joke loads
+            nextBtn.style.display = '';
 
             if (parts.punchline) {
                 revealBtn.classList.remove('hidden');
@@ -823,7 +911,12 @@
                 punchlineRevealed = true;
             }
 
-            shareRow.style.display = 'flex';
+            // Show share row only after punchline is revealed (or no punchline)
+            if (punchlineRevealed) {
+                shareRow.style.display = 'flex';
+            } else {
+                shareRow.style.display = 'none';
+            }
             statsLine.style.display = 'block';
 
             // Update hash
@@ -846,6 +939,8 @@
             punchlineEl.classList.add('revealed', 'pop');
             document.getElementById('btn-reveal').classList.add('hidden');
             document.getElementById('btn-reveal').style.display = 'none';
+            // Show share buttons after punchline reveal
+            document.getElementById('share-row').style.display = 'flex';
             // Remove pop class after animation so it can re-trigger
             setTimeout(function() { punchlineEl.classList.remove('pop'); }, 500);
 

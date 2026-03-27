@@ -21,12 +21,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roast Your Friends By Name — Free AI Roast Generator</title>
-    <meta name="description" content="Enter your friend's name and get personalized roasts instantly. 600+ names, thousands of savage burns. Share the best ones.">
+    <meta name="description" content="Enter your friend's name and get personalized roasts instantly. 773 names, 7,880+ savage burns. Share the best ones.">
     <meta name="keywords" content="roast generator, roast your friends, name roast, insult generator, funny roasts, good roasts for friends, how to roast your friends">
+
+    <meta name="theme-color" content="#FF6B35">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/roast/">
 
+    <!-- Resource hints (must come before font link) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
@@ -39,7 +44,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Roast Your Friends By Name — Free AI Roast Generator">
-    <meta property="og:description" content="Enter your friend's name and get personalized roasts instantly. 600+ names, thousands of savage burns.">
+    <meta property="og:description" content="Enter your friend's name and get personalized roasts instantly. 773+ names, 7,880+ savage burns.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/roast/">
     <meta property="og:type" content="website">
@@ -47,12 +52,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Roast Your Friends By Name — Free AI Roast Generator">
-    <meta name="twitter:description" content="Enter your friend's name and get personalized roasts instantly. 600+ names, thousands of savage burns.">
+    <meta name="twitter:description" content="Enter your friend's name and get personalized roasts instantly. 773+ names, 7,880+ savage burns.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
-
-    <!-- Resource hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Schema: WebApplication -->
     <script type="application/ld+json">
@@ -87,7 +88,7 @@
           "name": "How does the name roast generator work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes thousands of AI-generated roasts for over 600 popular names. Each roast is crafted to be funny and shareable."
+            "text": "Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes 7,880+ AI-generated roasts for over 773 names. Each roast is crafted to be funny and shareable."
           }
         },
         {
@@ -103,7 +104,7 @@
           "name": "Can I get roasts for any name?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We have roasts for 600+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI."
+            "text": "We have roasts for 773+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI."
           }
         },
         {
@@ -287,10 +288,24 @@
             color: white;
         }
 
+        .suggest-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px dotted rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .suggest-link:hover {
+            border-color: white;
+        }
+
         .social-proof {
             text-align: center;
-            color: rgba(255,255,255,0.65);
-            font-size: 0.85em;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9em;
+            font-weight: 600;
             margin-bottom: 40px;
         }
 
@@ -352,7 +367,7 @@
         }
 
         .action-btn {
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 0.95em;
             font-weight: 600;
             border: 2px solid #eee;
@@ -361,7 +376,10 @@
             transition: all 0.2s;
             background: white;
             color: #555;
-            min-height: 44px;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .action-btn:hover {
@@ -395,6 +413,29 @@
         .results-footer {
             text-align: center;
             margin-top: 30px;
+        }
+
+        .share-page-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 15px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #FF6B35, #e84118);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 15px rgba(232,65,24,0.3);
+            min-height: 48px;
+        }
+
+        .share-page-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(232,65,24,0.4);
         }
 
         .see-all-link {
@@ -721,7 +762,7 @@
         <section class="hero">
             <span class="hero-emoji" aria-hidden="true">🔥</span>
             <h1>Roast Your Friends By Name</h1>
-            <p class="subhead">Got friends? Prove it. Give us their name and we'll roast them.</p>
+            <p class="subhead">Enter their name. We'll destroy them. You send it.</p>
         </section>
 
         <!-- Input -->
@@ -731,16 +772,18 @@
                     type="text"
                     id="nameInput"
                     class="name-input"
-                    placeholder="Enter a name..."
+                    placeholder="Type your friend's name..."
                     aria-label="Friend's name"
                     maxlength="30"
                     required
+                    autofocus
+                    autocapitalize="words"
                 >
                 <button type="submit" class="roast-btn" id="roastBtn">🔥 ROAST THEM</button>
             </form>
         </div>
-        <p class="suggestions">Try: <strong>Jessica</strong>, <strong>Michael</strong>, <strong>Brandon</strong>, <strong>Karen</strong>, <strong>Chad</strong>...</p>
-        <p class="social-proof">600+ names available &middot; Thousands of savage burns</p>
+        <p class="suggestions">Try: <a href="#" class="suggest-link" data-name="Jessica">Jessica</a>, <a href="#" class="suggest-link" data-name="Michael">Michael</a>, <a href="#" class="suggest-link" data-name="Brandon">Brandon</a>, <a href="#" class="suggest-link" data-name="Karen">Karen</a>, <a href="#" class="suggest-link" data-name="Chad">Chad</a></p>
+        <p class="social-proof">773 names &middot; 7,880+ savage burns &middot; 100% free</p>
 
         <!-- Results (hidden by default) -->
         <section class="results-section" id="resultsSection">
@@ -752,7 +795,8 @@
 
             <div class="results-footer">
                 <a href="#" class="see-all-link" id="seeAllLink"></a>
-                <button class="reset-btn" id="resetBtn">🔁 Roast Another Friend</button>
+                <button class="share-page-btn" id="sharePageBtn">📤 Send All Roasts to Your Friend</button>
+                <button class="reset-btn" id="resetBtn">🔥 Roast Someone Else</button>
             </div>
         </section>
 
@@ -760,11 +804,10 @@
         <section class="results-section" id="notFoundSection">
             <div class="not-found">
                 <h3 id="notFoundName"></h3>
-                <p>We don't have roasts for that name yet — but the app can generate AI roasts for <strong>ANY</strong> name!</p>
-                <a href="https://apps.apple.com/app/id6743726261" class="download-btn" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'not_found_cta'});}">Download Free App</a>
-            </div>
-            <div class="results-footer">
-                <button class="reset-btn" id="resetBtn2">🔁 Try Another Name</button>
+                <p>That name isn't in our collection yet. Try one of these or get the app for AI roasts of <strong>ANY</strong> name!</p>
+                <button class="reset-btn" id="resetBtn2" style="margin-bottom: 16px;">🔥 Try Another Name</button>
+                <br>
+                <a href="https://apps.apple.com/app/id6743726261" class="download-btn" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'not_found_cta'});}">Get the App — Roast ANY Name</a>
             </div>
         </section>
 
@@ -772,7 +815,7 @@
         <section class="seo-content">
             <h2>The Art of the Perfect Name Roast</h2>
 
-            <p>There's something uniquely hilarious about a roast that uses someone's actual name. It's personal, it's unexpected, and it hits different than a generic burn. The best friend roasts walk the line between savage and silly — they make the whole group laugh, including the person getting roasted.</p>
+            <p>There's something uniquely hilarious about a roast that uses someone's actual name. It's personal, it's unexpected, and it hits different than a generic burn. We've generated <strong>7,880+ personalized burns</strong> across <strong>773 names</strong> — and counting. The best friend roasts walk the line between savage and silly — they make the whole group laugh, including the person getting roasted.</p>
 
             <p>Roasting has deep roots in comedy. From the Friars Club celebrity roasts of the 1950s to Comedy Central specials, the format works because it's built on affection. You only roast people you actually like. When you add someone's name into the mix, it transforms a general joke into a personalized experience that feels tailor-made for your friend group.</p>
 
@@ -806,7 +849,7 @@
 
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false">How does the name roast generator work?</div>
-                <div class="faq-answer">Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes thousands of AI-generated roasts for over 600 popular names. Each roast is crafted to be funny and shareable.</div>
+                <div class="faq-answer">Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes 7,880+ AI-generated roasts for over 773 names. Each roast is crafted to be funny and shareable.</div>
             </div>
 
             <div class="faq-item">
@@ -816,7 +859,7 @@
 
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Can I get roasts for any name?</div>
-                <div class="faq-answer">We have roasts for 600+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI.</div>
+                <div class="faq-answer">We have roasts for 773+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI.</div>
             </div>
 
             <div class="faq-item">
@@ -859,18 +902,30 @@
         const seeAllLink = document.getElementById('seeAllLink');
         const notFoundName = document.getElementById('notFoundName');
 
-        // Load roast data
-        fetch('/roast/roast-data.json')
-            .then(r => r.json())
-            .then(data => {
-                roastData = data;
-                dataLoaded = true;
-                // Check if name is in URL hash
-                checkUrlForName();
-            })
-            .catch(err => {
-                console.error('Failed to load roast data:', err);
-            });
+        // Lazy-load roast data: start fetch on first interaction or after idle
+        let dataLoadPromise = null;
+        function ensureDataLoaded() {
+            if (!dataLoadPromise) {
+                dataLoadPromise = fetch('/roast/roast-data.json')
+                    .then(r => r.json())
+                    .then(data => {
+                        roastData = data;
+                        dataLoaded = true;
+                    })
+                    .catch(err => {
+                        console.error('Failed to load roast data:', err);
+                        dataLoadPromise = null;
+                    });
+            }
+            return dataLoadPromise;
+        }
+
+        // Start loading when user focuses input or after 2s idle
+        nameInput.addEventListener('focus', ensureDataLoaded, { once: true });
+        setTimeout(ensureDataLoaded, 2000);
+
+        // Check URL for pre-filled name on load
+        ensureDataLoaded().then(checkUrlForName);
 
         // Check URL for pre-filled name (e.g., /roast/#jessica or ?name=jessica)
         function checkUrlForName() {
@@ -1072,6 +1127,47 @@
 
         function escapeAttr(str) {
             return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        // Clickable suggestion names
+        document.querySelectorAll('.suggest-link').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var name = this.getAttribute('data-name');
+                nameInput.value = name;
+                ensureDataLoaded().then(function() {
+                    performRoast(name);
+                });
+            });
+        });
+
+        // Share full page button
+        var sharePageBtn = document.getElementById('sharePageBtn');
+        if (sharePageBtn) {
+            sharePageBtn.addEventListener('click', function() {
+                var currentName = document.getElementById('resultsTitle').textContent.replace('🔥 Roasts for ', '');
+                var pageUrl = 'https://dadjokes.vip/roast/' + currentName.toLowerCase() + '/';
+                var shareText = 'Check out these roasts for ' + currentName + '! 🔥';
+
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Roasts for ' + currentName,
+                        text: shareText,
+                        url: pageUrl
+                    }).catch(function() {});
+                } else {
+                    navigator.clipboard.writeText(shareText + '\n' + pageUrl).then(function() {
+                        sharePageBtn.textContent = '✅ Link Copied!';
+                        setTimeout(function() {
+                            sharePageBtn.textContent = '📤 Send All Roasts to Your Friend';
+                        }, 2000);
+                    });
+                }
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'roast_page_shared', { name: currentName, method: navigator.share ? 'native' : 'copy' });
+                }
+            });
         }
 
         // FAQ toggle

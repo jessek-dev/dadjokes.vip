@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JRRXTJP94X');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13 Best Science Dad Jokes | Dad Jokes</title>
@@ -18,9 +35,13 @@
     <!-- Android Intent -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+
+    <!-- Firebase SDK (deferred - not needed for initial render) -->
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="13 Best Science Dad Jokes | Dad Jokes">
@@ -122,8 +143,8 @@
       "headline": "13 Best Science Dad Jokes",
       "description": "Nerdy dad jokes about chemistry, physics, biology, and more — for the scientifically inclined.",
       "url": "https://dadjokes.vip/collection/science-dad-jokes",
-      "datePublished": "2026-03-26",
-      "dateModified": "2026-03-26",
+      "datePublished": "2026-03-27",
+      "dateModified": "2026-03-27",
       "author": {
         "@type": "Organization",
         "name": "Dad Jokes",
@@ -620,6 +641,38 @@
             }
         }
 
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: #FF8C00;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.4em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+        }
+
         /* Footer Styles */
         .site-footer {
             width: 100%;
@@ -741,7 +794,7 @@
             <p class="collection-intro">Nerdy dad jokes about chemistry, physics, biology, and more — for the scientifically inclined. Browse 13 hand-picked dad jokes perfect for science class, lab partners, and nerdy friends.</p>
             <div class="collection-meta">
                 <span>13 jokes</span>
-                <span>Updated 2026-03-26</span>
+                <span>Updated 2026-03-27</span>
             </div>
         </div>
 
@@ -897,6 +950,17 @@
             </div>
         </div>
 
+        <!-- Mid-content CTA (appears after jokes, before FAQ) -->
+        <div class="app-download" style="margin-bottom: 30px;">
+            <h2>Enjoying These Jokes?</h2>
+            <p>Get <span id="mid-cta-count">20,000+</span> more in the free Dad Jokes app. Daily notifications, favorites, and AI roasts.</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'collection',location:'mid_content'});}">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
+
         <!-- FAQ Section -->
         <div class="faq-section">
             <h2>Frequently Asked Questions</h2>
@@ -926,17 +990,17 @@
         <div class="related-collections">
             <h2>More Joke Collections</h2>
             <div class="collection-links">
-                                <a href="/collection/thanksgiving-dad-jokes" class="collection-link">
-                    <span>Thanksgiving Dad Jokes</span>
-                </a>
-                <a href="/collection/dad-jokes-for-weddings" class="collection-link">
+                                <a href="/collection/dad-jokes-for-weddings" class="collection-link">
                     <span>Dad Jokes for Weddings</span>
                 </a>
-                <a href="/collection/easter-dad-jokes" class="collection-link">
-                    <span>Easter Dad Jokes</span>
+                <a href="/collection/best-animal-dad-jokes" class="collection-link">
+                    <span>Best Animal Dad Jokes</span>
                 </a>
-                <a href="/collection/4th-of-july-dad-jokes" class="collection-link">
-                    <span>4th of July Dad Jokes</span>
+                <a href="/collection/valentines-day-dad-jokes" class="collection-link">
+                    <span>Valentine's Day Dad Jokes</span>
+                </a>
+                <a href="/collection/fathers-day-dad-jokes" class="collection-link">
+                    <span>Father's Day Dad Jokes</span>
                 </a>
             </div>
         </div>
@@ -992,7 +1056,7 @@
                 const totalCount = jokesCount + nameJokesCount;
                 const formattedCount = totalCount.toLocaleString();
 
-                const countElements = ['mobile-banner-count', 'app-cta-count'];
+                const countElements = ['mobile-banner-count', 'app-cta-count', 'mid-cta-count'];
                 countElements.forEach(id => {
                     const element = document.getElementById(id);
                     if (element) {
@@ -1102,32 +1166,31 @@
         }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Q8LRBVBMRF');
-        gtag('event', 'collection_view', {
-            'collection': 'Science Dad Jokes',
+        gtag('event', 'collection_viewed', {
             'collection_slug': 'science-dad-jokes',
             'joke_count': 13
         });
     </script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
 
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-links">
         <a href="/app">App</a>
         <a href="/jokes">Jokes</a>
+        <a href="/roast/">Roast</a>
+        <a href="/daily/">Daily</a>
         <a href="/collection">Collections</a>
+        <a href="/compare/">Compare</a>
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
       </div>
 
       <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios">
+        <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'collection',location:'footer'});}">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
 
@@ -1143,6 +1206,18 @@
 
     <script>
       document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+      // Back to top button
+      var backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 600) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+        });
+      }
     </script>
 </body>
 </html>

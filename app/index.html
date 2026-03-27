@@ -26,15 +26,23 @@
     <!-- Universal Links Support -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
 
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    
+    <!-- Resource hints FIRST (before any external requests) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+
+    <!-- Google Fonts: non-blocking preload -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"></noscript>
+
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
-    
+
     <!-- Manifest -->
     <link rel="manifest" href="/assets/site.webmanifest">
-    
+
     <!-- Canonical URL (with trailing slash to match GitHub Pages redirect) -->
     <link rel="canonical" href="https://dadjokes.vip/app/">
 
@@ -53,12 +61,6 @@
     <meta name="twitter:title" content="Best Dad Jokes App - 19,139 Jokes Free on iPhone">
     <meta name="twitter:description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
-
-    <!-- Resource hints for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.gstatic.com">
-    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
 
     
     <style>
@@ -602,6 +604,130 @@
             text-decoration: underline;
         }
 
+        /* Social Proof Bar */
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .proof-item {
+            background: rgba(255,255,255,0.25);
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+
+        /* Hero CTA (above the fold) */
+        .hero-cta {
+            margin: 25px 0 10px;
+        }
+
+        .hero-cta .store-buttons-badges {
+            margin-bottom: 0;
+        }
+
+        /* Hero screenshot */
+        .hero-screenshot {
+            max-width: 280px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+
+        .hero-screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: #FF8C00;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.4em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Cross-link cards */
+        .cross-links {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .cross-links h2 {
+            color: #FF8C00;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cross-link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .cross-link-card {
+            display: block;
+            padding: 16px 20px;
+            background: #FFF3E0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .cross-link-card:hover {
+            background: #FFE0B2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,140,0,0.2);
+        }
+
+        .cross-link-card .card-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .cross-link-card .card-desc {
+            font-size: 0.85em;
+            color: #666;
+        }
+
         /* Site Navigation */
         .site-nav {
             background: rgba(255,255,255,0.95);
@@ -652,7 +778,7 @@
     <!-- Site Navigation -->
     <nav class="site-nav" aria-label="Main navigation">
         <div class="site-nav-inner">
-            <a href="/app/">Home</a>
+            <a href="/app/" class="active">Home</a>
             <span class="nav-sep">|</span>
             <a href="/jokes/">Dad Jokes</a>
             <span class="nav-sep">|</span>
@@ -661,6 +787,8 @@
             <a href="/daily/">Joke of the Day</a>
             <span class="nav-sep">|</span>
             <a href="/collection/">Collections</a>
+            <span class="nav-sep">|</span>
+            <a href="/compare/">Compare Apps</a>
             <span class="nav-sep">|</span>
             <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
         </div>
@@ -679,10 +807,37 @@
 
     <div class="container">
         <div class="logo">
-          <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img">
+          <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img" width="80" height="80">
         </div>
-        <h1>One Dad Jokes App to Rule Them All</h1>
-        <p class="tagline">The most jokes out there... by a lot. Made by dads, for dads.</p>
+        <h1>Best Dad Jokes App for iPhone</h1>
+        <p class="tagline"><span id="hero-joke-count">19,139</span> jokes across 20+ categories. Free.</p>
+
+        <!-- Social proof - above the fold -->
+        <div class="social-proof">
+            <span class="proof-item">4.9 App Store Rating</span>
+            <span class="proof-item">100% Free</span>
+            <span class="proof-item">Works Offline</span>
+        </div>
+
+        <!-- Hero CTA - above the fold -->
+        <div class="hero-cta">
+            <div class="store-buttons-badges">
+                <a href="https://dadjokes.vip/ios" class="appstore-link" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'hero'});}">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
+                </a>
+                <span style="cursor: not-allowed;" title="Coming soon to Android">
+                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
+                </span>
+            </div>
+        </div>
+
+        <!-- Hero screenshot -->
+        <div class="hero-screenshot">
+            <picture>
+                <source srcset="/assets/screenshots/hero-one-app-small.webp" type="image/webp">
+                <img src="/assets/screenshots/hero-one-app.png" alt="Best Dad Jokes app screenshot showing joke categories" width="280" height="560" loading="eager">
+            </picture>
+        </div>
         
         <div class="joke-card">
           <p class="joke-text"></p>
@@ -721,37 +876,55 @@
             <div class="feature">
                 <h2><span id="joke-count">19,143</span> Jokes Across 20+ Categories</h2>
                 <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation. Our collection grows every day.</p>
-                <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/categories-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
 
             <div class="feature">
                 <h2>Get Roasted by AI</h2>
                 <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
-                <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/ai-roasts-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
 
             <div class="feature">
                 <h2>Build Your Personal Collection</h2>
                 <p>Save favorites in the Joke Vault and access them anytime. Your best material, always at your fingertips</p>
-                <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/joke-vault-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
 
             <div class="feature">
                 <h2>Submit Your Own Jokes</h2>
                 <p>Got a killer dad joke? Submit it and see it featured in the app with your credit</p>
-                <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/submit-jokes-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
 
             <div class="feature">
                 <h2>Make It Your Own</h2>
                 <p>Choose from 13 color themes, enable AI backgrounds, and customize your entire experience</p>
-                <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/customize-theme-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
 
             <div class="feature">
                 <h2>Rate & Share</h2>
                 <p>Rate jokes and share your favorites. Build a collection that makes everyone laugh</p>
-                <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy">
+                <picture>
+                    <source srcset="/assets/screenshots/rate-and-save-small.webp" type="image/webp">
+                    <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy" width="540" height="1080">
+                </picture>
             </div>
         </div>
         
@@ -787,6 +960,29 @@
                 <a href="/collection/fathers-day-dad-jokes" class="browse-pill">Father's Day</a>
             </div>
             <a href="/jokes/" class="browse-all">Browse all categories &rarr;</a>
+        </div>
+
+        <!-- Cross-link section for discovery -->
+        <div class="cross-links">
+            <h2>Explore More</h2>
+            <div class="cross-link-grid">
+                <a href="/roast/" class="cross-link-card">
+                    <div class="card-title">Roast Your Friends</div>
+                    <div class="card-desc">AI-powered personalized name roasts</div>
+                </a>
+                <a href="/daily/" class="cross-link-card">
+                    <div class="card-title">Joke of the Day</div>
+                    <div class="card-desc">A fresh dad joke delivered daily</div>
+                </a>
+                <a href="/collection/" class="cross-link-card">
+                    <div class="card-title">Joke Collections</div>
+                    <div class="card-desc">Browse curated joke lists by topic</div>
+                </a>
+                <a href="/compare/" class="cross-link-card">
+                    <div class="card-title">App Comparison</div>
+                    <div class="card-desc">See how we stack up vs other apps</div>
+                </a>
+            </div>
         </div>
 
         <div class="faq-section">
@@ -834,10 +1030,17 @@
         </div>
     </div>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+
     <footer class="site-footer">
       <div class="footer-links">
         <a href="/app">App</a>
         <a href="/jokes">Jokes</a>
+        <a href="/roast/">Roast</a>
+        <a href="/daily/">Daily</a>
+        <a href="/collection/">Collections</a>
+        <a href="/compare/">Compare</a>
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
       </div>
@@ -860,16 +1063,6 @@
     
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-Q8LRBVBMRF');
     </script>
 
     <!-- Structured Data - Schema.org JSON-LD -->
@@ -1054,7 +1247,7 @@
       const formattedCount = totalCount.toLocaleString();
 
       // Update all count elements
-      const countElements = ['joke-count', 'mobile-banner-count'];
+      const countElements = ['joke-count', 'mobile-banner-count', 'hero-joke-count'];
       countElements.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
@@ -1287,7 +1480,7 @@
   const ANALYTICS_CONFIG = {
     mixpanel: {
       token: '62127065033cd52e52a7437836f57514',
-      debug: true
+      debug: false
     },
     ga4: {
       measurementId: 'G-JRRXTJP94X'
@@ -1451,9 +1644,17 @@
       });
     }
 
-    console.log('🔍 Dad Jokes Analytics initialized');
-    console.log('   Mixpanel token:', ANALYTICS_CONFIG.mixpanel.token.substring(0, 8) + '...');
-    console.log('   Page:', document.title);
+    // Back to top button visibility
+    var backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 600) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+    }
   });
 
   // Track time on page

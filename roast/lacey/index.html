@@ -20,6 +20,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a2e">
     <title>Best Roasts for Lacey — 4 Savage Burns</title>
     <meta name="description" content="Looking for the perfect roast for someone named Lacey? We've got 4 personalized burns ready to go. Send one to a Lacey you know.">
     <meta name="keywords" content="Lacey roast, roast Lacey, insults for Lacey, funny Lacey jokes, Lacey burns, Lacey comebacks, roast someone named Lacey">
@@ -242,10 +243,10 @@
 
         .breadcrumbs {
             background: rgba(255,255,255,0.05);
-            padding: 15px 20px;
+            padding: 10px 16px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-size: 0.85em;
             border: 1px solid rgba(255,255,255,0.08);
         }
 
@@ -311,6 +312,27 @@
             margin-top: 15px;
             font-size: 0.95em;
             color: #666;
+        }
+
+        .share-page-cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #e94560;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.05em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-height: 48px;
+        }
+
+        .share-page-cta:hover {
+            background: #d63851;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
         }
 
         /* Name Origin Section */
@@ -380,15 +402,16 @@
         .roast-btn {
             background: rgba(255,255,255,0.06);
             border: 1px solid rgba(255,255,255,0.12);
-            padding: 8px 16px;
+            padding: 12px 18px;
             border-radius: 8px;
-            font-size: 0.85em;
+            font-size: 0.9em;
             cursor: pointer;
             transition: all 0.2s;
             color: #aaa;
             display: flex;
             align-items: center;
             gap: 6px;
+            min-height: 48px;
         }
 
         .roast-btn:hover {
@@ -404,14 +427,20 @@
         }
 
         .roast-btn-send {
-            background: rgba(233, 69, 96, 0.12);
-            border: 1px solid rgba(233, 69, 96, 0.3);
-            color: #e94560;
+            background: #e94560;
+            border: 1px solid #e94560;
+            color: #fff;
+            font-weight: 600;
+            flex: 1;
+            justify-content: center;
         }
 
         .roast-btn-send:hover {
-            background: #e94560;
+            background: #d63851;
+            border-color: #d63851;
             color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
         }
 
         /* CTA Section */
@@ -534,6 +563,7 @@
             cursor: pointer;
             transition: background 0.2s, transform 0.2s;
             white-space: nowrap;
+            min-height: 48px;
         }
 
         .search-btn:hover {
@@ -673,7 +703,13 @@
             }
 
             .header-card {
-                padding: 30px 20px;
+                padding: 25px 16px;
+            }
+
+            .share-page-cta {
+                font-size: 0.95em;
+                padding: 12px 20px;
+                width: 100%;
             }
 
             .header-card .collection-meta {
@@ -797,6 +833,7 @@
                 <span>4 burns</span>
                 <span>Updated 2026-03-27</span>
             </div>
+            <button class="share-page-cta" onclick="shareThisPage()">📤 Send This Page to a Lacey You Know</button>
         </div>
 
         
@@ -840,11 +877,21 @@
             </div>
         </div>
 
+        <!-- Roast Someone Else (BEFORE app CTA to prioritize viral loop) -->
+        <div class="roast-search">
+            <h2>🔥 Roast Someone Else</h2>
+            <p>Got another victim in mind? We've got 773 names ready to burn.</p>
+            <form class="search-form" onsubmit="goToRoast(event)">
+                <input type="text" class="search-input" id="name-input" placeholder="Type their name..." autocomplete="off" autocapitalize="words" required>
+                <button type="submit" class="search-btn">Roast Them</button>
+            </form>
+        </div>
+
         <!-- CTA Section -->
         <div class="cta-section">
             <h2>Want Personalized Roasts Daily?</h2>
             <p>The app has AI-powered roasts that use YOUR name. Fresh burns delivered straight to your phone.</p>
-            <a href="#" onclick="openApp(); return false;" class="cta-button">Get the App</a>
+            <a href="#" onclick="openApp(); return false;" class="cta-button">Get the App — It's Free</a>
             <div class="store-badges">
                 <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast_name',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
@@ -855,43 +902,33 @@
             </div>
         </div>
 
-        <!-- Roast Someone Else -->
-        <div class="roast-search">
-            <h2>Roast Someone Else</h2>
-            <p>Got another victim in mind?</p>
-            <form class="search-form" onsubmit="goToRoast(event)">
-                <input type="text" class="search-input" id="name-input" placeholder="Enter a name..." autocomplete="off" required>
-                <button type="submit" class="search-btn">Roast Them</button>
-            </form>
-        </div>
-
         <!-- Related Names -->
         <div class="related-names">
             <h2>More Names to Roast</h2>
             <div class="name-links">
-                                <a href="/roast/elias/" class="name-link">
+                                <a href="/roast/autumn/" class="name-link">
                     <span class="name-link-icon">🔥</span>
-                    <span>Roast Elias</span>
+                    <span>Roast Autumn</span>
                 </a>
-                <a href="/roast/mila/" class="name-link">
+                <a href="/roast/adeline/" class="name-link">
                     <span class="name-link-icon">💀</span>
-                    <span>Roast Mila</span>
+                    <span>Roast Adeline</span>
                 </a>
-                <a href="/roast/jaclyn/" class="name-link">
+                <a href="/roast/abigail/" class="name-link">
                     <span class="name-link-icon">😈</span>
-                    <span>Roast Jaclyn</span>
+                    <span>Roast Abigail</span>
                 </a>
-                <a href="/roast/eric/" class="name-link">
+                <a href="/roast/julia/" class="name-link">
                     <span class="name-link-icon">🎯</span>
-                    <span>Roast Eric</span>
+                    <span>Roast Julia</span>
                 </a>
-                <a href="/roast/curtis/" class="name-link">
+                <a href="/roast/gregory/" class="name-link">
                     <span class="name-link-icon">💣</span>
-                    <span>Roast Curtis</span>
+                    <span>Roast Gregory</span>
                 </a>
-                <a href="/roast/alejandra/" class="name-link">
+                <a href="/roast/devin/" class="name-link">
                     <span class="name-link-icon">⚡</span>
-                    <span>Roast Alejandra</span>
+                    <span>Roast Devin</span>
                 </a>
             </div>
         </div>
@@ -915,6 +952,31 @@
     </div>
 
     <script>
+        // Share this whole page
+        function shareThisPage() {
+            var shareData = {
+                title: '4 Roasts for Lacey',
+                text: 'Check out these savage roasts for Lacey! 🔥',
+                url: window.location.href
+            };
+            var btn = document.querySelector('.share-page-cta');
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(function() {});
+            } else {
+                navigator.clipboard.writeText(shareData.text + '\n' + window.location.href).then(function() {
+                    if (btn) {
+                        btn.textContent = '✅ Link Copied!';
+                        setTimeout(function() { btn.textContent = '📤 Send This Page to a Lacey You Know'; }, 2000);
+                    }
+                });
+            }
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'roast_page_shared', { name: 'Lacey', method: navigator.share ? 'native' : 'copy' });
+            }
+        }
+
         // Roast Someone Else - redirect
         function goToRoast(e) {
             e.preventDefault();

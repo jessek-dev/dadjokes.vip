@@ -35,9 +35,13 @@
     <!-- Android Intent -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+
+    <!-- Firebase SDK (deferred - not needed for initial render) -->
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="{{COLLECTION_COUNT}} Best {{COLLECTION_TITLE}} | Dad Jokes">
@@ -542,6 +546,38 @@
             }
         }
 
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: #FF8C00;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.4em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+        }
+
         /* Footer Styles */
         .site-footer {
             width: 100%;
@@ -671,6 +707,17 @@
             {{COLLECTION_JOKES}}
         </div>
 
+        <!-- Mid-content CTA (appears after jokes, before FAQ) -->
+        <div class="app-download" style="margin-bottom: 30px;">
+            <h2>Enjoying These Jokes?</h2>
+            <p>Get <span id="mid-cta-count">20,000+</span> more in the free Dad Jokes app. Daily notifications, favorites, and AI roasts.</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'collection',location:'mid_content'});}">
+                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
+
         <!-- FAQ Section -->
         <div class="faq-section">
             <h2>Frequently Asked Questions</h2>
@@ -736,7 +783,7 @@
                 const totalCount = jokesCount + nameJokesCount;
                 const formattedCount = totalCount.toLocaleString();
 
-                const countElements = ['mobile-banner-count', 'app-cta-count'];
+                const countElements = ['mobile-banner-count', 'app-cta-count', 'mid-cta-count'];
                 countElements.forEach(id => {
                     const element = document.getElementById(id);
                     if (element) {
@@ -853,12 +900,18 @@
         });
     </script>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-links">
         <a href="/app">App</a>
         <a href="/jokes">Jokes</a>
+        <a href="/roast/">Roast</a>
+        <a href="/daily/">Daily</a>
         <a href="/collection">Collections</a>
+        <a href="/compare/">Compare</a>
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
       </div>
@@ -880,6 +933,18 @@
 
     <script>
       document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+      // Back to top button
+      var backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 600) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+        });
+      }
     </script>
 </body>
 </html>

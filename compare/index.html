@@ -26,7 +26,13 @@
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/compare/">
 
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Resource hints FIRST -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: non-blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"></noscript>
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -48,10 +54,6 @@
     <meta name="twitter:title" content="Best Dad Jokes Apps for iPhone Compared (2026)">
     <meta name="twitter:description" content="Honest comparison of the best dad jokes apps for iPhone in 2026.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
-
-    <!-- Resource hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <style>
         * {
@@ -363,8 +365,66 @@
             color: #666;
         }
 
+        /* Site Navigation */
+        .site-nav {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .site-nav-inner::-webkit-scrollbar { display: none; }
+        .site-nav a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            padding: 10px 10px;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
+        .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
+
+        /* Cross-links */
+        .cross-links {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 25px 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .cross-links p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        .cross-links a {
+            color: #FF8C00;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .cross-links a:hover { text-decoration: underline; }
+
         /* Responsive */
         @media (max-width: 768px) {
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
             .comparison-table {
                 font-size: 0.82em;
             }
@@ -399,6 +459,25 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Site Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/app/">Home</a>
+            <span class="nav-sep">|</span>
+            <a href="/jokes/">Dad Jokes</a>
+            <span class="nav-sep">|</span>
+            <a href="/roast/">Roast Your Friends</a>
+            <span class="nav-sep">|</span>
+            <a href="/daily/">Joke of the Day</a>
+            <span class="nav-sep">|</span>
+            <a href="/collection/">Collections</a>
+            <span class="nav-sep">|</span>
+            <a href="/compare/" class="active">Compare Apps</a>
+            <span class="nav-sep">|</span>
+            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="logo">
@@ -605,12 +684,19 @@
                 </span>
             </div>
         </div>
+        <!-- Cross-links -->
+        <div class="cross-links">
+            <p>Want to try our jokes before downloading? <a href="/roast/">Roast your friends with AI</a>, browse <a href="/collection/">curated joke collections</a>, or get the <a href="/daily/">joke of the day</a>.</p>
+        </div>
     </div>
 
     <footer class="site-footer">
         <div class="footer-links">
             <a href="/app">App</a>
             <a href="/jokes">Jokes</a>
+            <a href="/roast/">Roast</a>
+            <a href="/daily/">Daily</a>
+            <a href="/collection/">Collections</a>
             <a href="/api/">API</a>
             <a href="/support">Support</a>
             <a href="/privacy">Privacy</a>
