@@ -92,6 +92,16 @@
 
         .header-nav a:hover { color: var(--navy); }
 
+        .header-app-link {
+            background: var(--navy);
+            color: #fff !important;
+            padding: 6px 14px !important;
+            border-radius: var(--radius-pill);
+            font-size: 0.8125rem !important;
+        }
+
+        .header-app-link:hover { color: #fff !important; opacity: 0.9; }
+
         /* ---- PAGE CONTENT ---- */
         .page { padding: 8px 20px 40px; max-width: 480px; margin: 0 auto; }
 
@@ -464,6 +474,7 @@
         <nav class="header-nav">
             <a href="/random/">Random</a>
             <a href="/roast/">Roast</a>
+            <a href="https://apps.apple.com/app/id6743726261" class="header-app-link" id="header-app-link">Get the App</a>
         </nav>
     </header>
 
@@ -656,7 +667,12 @@
             setTimeout(() => t.classList.remove('show'), 2000);
         }
 
-        // Share button always visible — falls back to copy if Web Share API unavailable
+        // Hide "Get the App" in header on Safari (Smart App Banner handles it)
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        if (isSafari) {
+            var appLink = document.getElementById('header-app-link');
+            if (appLink) appLink.style.display = 'none';
+        }
     </script>
 
 </body>
