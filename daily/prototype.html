@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAF7F2">
+    <title>Dad Joke of the Day — March 27, 2026</title>
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ================================================
+           DESIGN PROTOTYPE — Daily Joke
+           Direction: Wordle + Brilliant + Headspace
+           Warm, premium, mobile-native
+           ================================================ */
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --surface: #FAF7F2;
+            --card: #FFFFFF;
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
+            --card-shadow-hover: 0 2px 6px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.10);
+            --navy: #1E3A5F;
+            --coral: #FF6B6B;
+            --coral-soft: #FFF0F0;
+            --text: #1A1A2E;
+            --text-dim: #8E8E9A;
+            --text-light: #B4B4BE;
+            --border: #ECEAE6;
+            --radius: 20px;
+            --radius-sm: 12px;
+            --radius-pill: 100px;
+            --font: 'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;
+            --transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+        body {
+            font-family: var(--font);
+            background: var(--surface);
+            color: var(--text);
+            min-height: 100dvh;
+            min-height: 100vh;
+        }
+
+        /* ---- HEADER (minimal, not a nav bar) ---- */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--surface);
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 0.9375rem;
+            color: var(--navy);
+            text-decoration: none;
+        }
+
+        .header-brand img { width: 28px; height: 28px; border-radius: 7px; }
+
+        .header-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--navy);
+            color: #fff;
+            font-family: var(--font);
+            font-size: 0.8125rem;
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+
+        .header-action:active { transform: scale(0.96) translateY(1px); }
+
+        .header-action svg { width: 16px; height: 16px; }
+
+        /* ---- PAGE CONTENT ---- */
+        .page { padding: 8px 20px 40px; max-width: 480px; margin: 0 auto; }
+
+        /* ---- DATE LABEL ---- */
+        .date-label {
+            text-align: center;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        /* ---- JOKE CARD ---- */
+        .joke-card {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+            transition: box-shadow var(--transition);
+        }
+
+        .joke-card:hover { box-shadow: var(--card-shadow-hover); }
+
+        .joke-badge {
+            display: inline-block;
+            background: var(--coral-soft);
+            color: var(--coral);
+            font-size: 0.6875rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 20px;
+        }
+
+        .joke-setup {
+            font-size: 1.375rem;
+            font-weight: 700;
+            line-height: 1.45;
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+
+        /* ---- REVEAL BUTTON ---- */
+        .reveal-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--navy);
+            color: #fff;
+            font-family: var(--font);
+            font-size: 0.9375rem;
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: var(--radius-pill);
+            border: none;
+            cursor: pointer;
+            transition: transform var(--transition), box-shadow var(--transition);
+            min-height: 48px;
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .reveal-btn:active {
+            transform: scale(0.96) translateY(2px);
+        }
+
+        .reveal-btn:hover {
+            box-shadow: 0 4px 16px rgba(30, 58, 95, 0.3);
+        }
+
+        .reveal-btn svg { width: 18px; height: 18px; }
+
+        .reveal-btn.hidden { display: none; }
+
+        /* ---- PUNCHLINE (hidden, then revealed) ---- */
+        .joke-punchline {
+            font-size: 1.25rem;
+            font-weight: 800;
+            line-height: 1.4;
+            color: var(--coral);
+            opacity: 0;
+            transform: translateY(8px) scale(0.97);
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), max-height 0.4s ease;
+        }
+
+        .joke-punchline.revealed {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            max-height: 200px;
+            margin-bottom: 8px;
+        }
+
+        /* ---- SHARE ROW (appears after reveal) ---- */
+        .share-row {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(6px);
+            transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+            pointer-events: none;
+        }
+
+        .share-row.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: var(--surface);
+            color: var(--text);
+            font-family: var(--font);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            padding: 10px 16px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            min-height: 44px;
+            transition: all var(--transition);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .share-btn:active { transform: scale(0.96) translateY(1px); }
+        .share-btn:hover { border-color: var(--navy); color: var(--navy); }
+
+        .share-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+        .share-btn--primary {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy);
+        }
+
+        .share-btn--primary:hover { box-shadow: 0 4px 12px rgba(30, 58, 95, 0.25); }
+
+        /* Copied state */
+        .share-btn.copied {
+            background: #E8F8EE;
+            border-color: #48BB78;
+            color: #2D7A4F;
+        }
+
+        /* ---- CATEGORY TAG (below card, not inside) ---- */
+        .joke-meta {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-light);
+            letter-spacing: 0.03em;
+        }
+
+        /* ---- DIVIDER ---- */
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 32px 0;
+        }
+
+        /* ---- PREVIOUS JOKES ---- */
+        .section-label {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .prev-card {
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-bottom: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            cursor: pointer;
+            transition: box-shadow var(--transition);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .prev-card:active { box-shadow: var(--card-shadow); }
+
+        .prev-date {
+            font-size: 0.6875rem;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .prev-setup {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--text);
+        }
+
+        .prev-punchline {
+            font-size: 0.9375rem;
+            font-weight: 700;
+            color: var(--coral);
+            line-height: 1.4;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            display: none;
+        }
+
+        .prev-punchline.revealed { display: block; }
+
+        .prev-hint {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-top: 6px;
+            transition: opacity var(--transition);
+        }
+
+        .prev-hint.hidden { opacity: 0; pointer-events: none; }
+
+        /* ---- APP CTA ---- */
+        .cta-card {
+            background: var(--navy);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .cta-title {
+            font-size: 1.125rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .cta-sub {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .cta-badge {
+            display: inline-block;
+            transition: transform var(--transition);
+        }
+
+        .cta-badge:active { transform: scale(0.96); }
+        .cta-badge img { height: 44px; width: auto; }
+
+        .cta-features {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cta-feature {
+            font-size: 0.6875rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        /* ---- FOOTER (minimal) ---- */
+        .footer {
+            text-align: center;
+            padding: 24px 20px 32px;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .footer a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .footer-links { margin-bottom: 8px; }
+
+        /* ---- TOAST ---- */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--text);
+            color: #fff;
+            font-family: var(--font);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: var(--radius-pill);
+            opacity: 0;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 380px) {
+            .joke-setup { font-size: 1.25rem; }
+            .joke-punchline { font-size: 1.125rem; }
+            .joke-card { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="/app/" class="header-brand">
+            <img src="/assets/android-chrome-192x192.png" alt="" width="28" height="28">
+            Dad Jokes
+        </a>
+        <a href="https://apps.apple.com/app/id6743726261" class="header-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16"/><path d="M14 14l1.586-1.586a2 2 0 012.828 0L20 14"/><path d="M14 8h.01"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
+            Get the App
+        </a>
+    </header>
+
+    <!-- Page -->
+    <main class="page">
+
+        <!-- Date -->
+        <p class="date-label">March 27, 2026</p>
+
+        <!-- Today's Joke -->
+        <div class="joke-card" id="joke-card">
+            <div class="joke-badge">Joke of the Day</div>
+
+            <p class="joke-setup">How do you catch a unique rabbit?</p>
+
+            <p class="joke-punchline" id="punchline">Unique up on it.</p>
+
+            <button class="reveal-btn" id="reveal-btn" onclick="reveal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                Reveal Punchline
+            </button>
+
+            <div class="share-row" id="share-row">
+                <button class="share-btn share-btn--primary" id="btn-share" onclick="shareNative()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                    Share
+                </button>
+                <button class="share-btn" id="btn-copy" onclick="copyJoke(this)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                    Copy
+                </button>
+            </div>
+        </div>
+
+        <p class="joke-meta">Animals</p>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Previous Days -->
+        <p class="section-label">Previous Days</p>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 26</p>
+            <p class="prev-setup">Did you hear that our government is working on a weapon for submarines that contains two thousand pounds of Vietnam's famous pho soup?</p>
+            <p class="prev-punchline">It's called a photon torpedo.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 25</p>
+            <p class="prev-setup">I've started telling everyone about the benefits of eating dried grapes.</p>
+            <p class="prev-punchline">It's all about raisin awareness.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 24</p>
+            <p class="prev-setup">I accidentally took my cat's meds last night.</p>
+            <p class="prev-punchline">Don't ask meow.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 23</p>
+            <p class="prev-setup">My wife thinks it's weird that I stare at the window during a heavy downpour.</p>
+            <p class="prev-punchline">It'd be a lot less weird if she just let me inside.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 22</p>
+            <p class="prev-setup">What's the best thing about living in Switzerland?</p>
+            <p class="prev-punchline">I don't know, but the flag is a big plus.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 21</p>
+            <p class="prev-setup">Dad, can you explain to me what a solar eclipse is?</p>
+            <p class="prev-punchline">No sun.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <div class="prev-card" onclick="revealPrev(this)">
+            <p class="prev-date">Mar 20</p>
+            <p class="prev-setup">Why do cows have hooves instead of feet?</p>
+            <p class="prev-punchline">Because they lactose.</p>
+            <p class="prev-hint">Tap to reveal</p>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-card">
+            <p class="cta-title">Never miss the joke of the day</p>
+            <p class="cta-sub">Get a fresh dad joke every morning. 19,000+ jokes inside. Free.</p>
+            <a href="https://apps.apple.com/app/id6743726261" class="cta-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="44">
+            </a>
+            <div class="cta-features">
+                <span class="cta-feature">Daily notifications</span>
+                <span class="cta-feature">20+ categories</span>
+                <span class="cta-feature">AI roasts</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="/daily/">Daily</a>
+            <a href="/random/">Random</a>
+            <a href="/roast/">Roast</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/support/">Support</a>
+        </div>
+        <p>&copy; 2026 Dad Jokes</p>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // Reveal featured punchline
+        function reveal() {
+            document.getElementById('punchline').classList.add('revealed');
+            document.getElementById('reveal-btn').classList.add('hidden');
+            document.getElementById('share-row').classList.add('visible');
+        }
+
+        // Reveal previous joke (tap the card)
+        function revealPrev(card) {
+            const pl = card.querySelector('.prev-punchline');
+            const hint = card.querySelector('.prev-hint');
+            if (pl.classList.contains('revealed')) return;
+            pl.classList.add('revealed');
+            if (hint) hint.classList.add('hidden');
+        }
+
+        // Copy joke
+        function copyJoke(btn) {
+            const setup = document.querySelector('.joke-setup').textContent;
+            const punch = document.getElementById('punchline').textContent;
+            const text = setup + '\n' + punch + '\n\ndadjokes.vip/daily';
+
+            navigator.clipboard.writeText(text).then(() => {
+                btn.classList.add('copied');
+                btn.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
+                showToast('Joke copied!');
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy';
+                }, 2000);
+            });
+        }
+
+        // Native share
+        function shareNative() {
+            const setup = document.querySelector('.joke-setup').textContent;
+            const punch = document.getElementById('punchline').textContent;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Dad Joke of the Day',
+                    text: setup + '\n' + punch,
+                    url: 'https://dadjokes.vip/daily/'
+                });
+            } else {
+                copyJoke(document.getElementById('btn-copy'));
+            }
+        }
+
+        // Toast
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 2000);
+        }
+
+        // Hide share btn on mobile if no Web Share API
+        if (!navigator.share) {
+            const shareBtn = document.getElementById('btn-share');
+            if (shareBtn) shareBtn.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
