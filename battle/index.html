@@ -20,17 +20,20 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFA500">
+    <meta name="theme-color" content="#1E3A5F">
     <title>Dad Joke Battle - Vote for the Funniest Joke</title>
     <meta name="description" content="Two dad jokes enter. One reigns supreme. Vote for the funniest joke in our head-to-head battle game. Track your stats and find the best dad jokes ever.">
 
-    <!-- Universal Links Support -->
+    <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/battle/">
 
-    <!-- Resource hints - MUST be before font request -->
+    <!-- Resource hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts: DM Sans -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -39,1218 +42,21 @@
     <!-- Manifest -->
     <link rel="manifest" href="/assets/site.webmanifest">
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://dadjokes.vip/battle/">
 
-    <!-- Open Graph tags -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Dad Joke Battle - Which Joke Is Funnier?">
     <meta property="og:description" content="Two dad jokes enter. One reigns supreme. Vote for the funniest joke in our head-to-head battle game.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/battle/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card tags -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dad Joke Battle - Which Joke Is Funnier?">
     <meta name="twitter:description" content="Two dad jokes enter. One reigns supreme. Vote for the funniest joke in our head-to-head battle game.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
-            min-height: 100vh;
-        }
-
-        /* Mobile App Install Banner */
-        .mobile-app-banner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transform: translateY(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-app-banner.show {
-            transform: translateY(0);
-        }
-
-        .mobile-app-banner.hidden {
-            display: none;
-        }
-
-        .banner-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 10px;
-            flex-shrink: 0;
-        }
-
-        .banner-text {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .banner-title {
-            font-weight: 600;
-            font-size: 14px;
-            color: #000;
-            margin-bottom: 2px;
-        }
-
-        .banner-subtitle {
-            font-size: 12px;
-            color: #666;
-        }
-
-        .banner-button {
-            background: #007AFF;
-            color: white;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 16px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            white-space: nowrap;
-            min-height: 44px;
-            min-width: 44px;
-        }
-
-        .banner-close {
-            background: none;
-            border: none;
-            color: #666;
-            font-size: 24px;
-            cursor: pointer;
-            padding: 8px;
-            line-height: 1;
-            min-width: 44px;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body.banner-active {
-            padding-top: 76px;
-        }
-
-        /* Site Navigation */
-        .site-nav {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.08);
-            padding: 0 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .site-nav-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        .site-nav-inner::-webkit-scrollbar { display: none; }
-        .site-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.85em;
-            font-weight: 500;
-            padding: 12px 10px;
-            white-space: nowrap;
-            transition: color 0.2s;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-        }
-        .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
-        .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px 20px;
-            text-align: center;
-        }
-
-        .logo {
-            margin-bottom: 8px;
-        }
-
-        .logo-img {
-            height: 56px;
-            width: 56px;
-            border-radius: 6px;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 4px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .tagline {
-            font-size: 1.05em;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 12px;
-        }
-
-        /* Battle Arena */
-        .battle-arena {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            gap: 16px;
-            align-items: stretch;
-            margin: 16px 0;
-        }
-
-        .vs-divider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8em;
-            font-weight: 800;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .battle-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s;
-            border: 3px solid transparent;
-            position: relative;
-            min-height: 220px;
-        }
-
-        .battle-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            border-color: #FFD700;
-        }
-
-        .battle-card.voted {
-            cursor: default;
-        }
-
-        .battle-card.voted:hover {
-            transform: none;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .battle-card.winner {
-            border-color: #FFD700;
-            background: linear-gradient(135deg, #FFFDE7 0%, #FFF8E1 100%);
-            transform: scale(1.03);
-            box-shadow: 0 15px 40px rgba(255,215,0,0.3);
-            animation: winnerPop 0.4s ease;
-        }
-
-        @keyframes winnerPop {
-            0% { transform: scale(1); }
-            40% { transform: scale(1.06); }
-            100% { transform: scale(1.03); }
-        }
-
-        .battle-card.loser {
-            opacity: 0.55;
-            transform: scale(0.95);
-            transition: all 0.4s ease;
-        }
-
-        /* Share winner button */
-        .share-winner-row {
-            display: none;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 16px;
-            flex-wrap: wrap;
-        }
-
-        .share-winner-row.visible {
-            display: flex;
-        }
-
-        .share-winner-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 10px 20px;
-            border: 2px solid #FFD700;
-            border-radius: 25px;
-            background: white;
-            color: #FF8C00;
-            font-size: 0.95em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            min-height: 44px;
-        }
-
-        .share-winner-btn:hover {
-            background: #FF8C00;
-            color: white;
-            border-color: #FF8C00;
-        }
-
-        .share-winner-btn.copied {
-            border-color: #4CAF50;
-            color: #4CAF50;
-        }
-
-        .crown {
-            position: absolute;
-            top: -18px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2em;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .battle-card.winner .crown {
-            opacity: 1;
-            animation: crownDrop 0.5s ease;
-        }
-
-        @keyframes crownDrop {
-            0% { transform: translateX(-50%) translateY(-20px); opacity: 0; }
-            60% { transform: translateX(-50%) translateY(3px); opacity: 1; }
-            100% { transform: translateX(-50%) translateY(0); opacity: 1; }
-        }
-
-        .card-label {
-            font-size: 0.75em;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ccc;
-            margin-bottom: 12px;
-        }
-
-        .battle-joke-text {
-            font-size: 1.15em;
-            font-family: 'Special Elite', serif;
-            color: #333;
-            line-height: 1.6;
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-        }
-
-        .vote-result {
-            margin-top: 16px;
-            font-size: 0.95em;
-            font-weight: 600;
-            color: #999;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .vote-result.visible {
-            opacity: 1;
-        }
-
-        .vote-result .pct {
-            font-size: 1.6em;
-            display: block;
-            margin-bottom: 2px;
-        }
-
-        .battle-card.winner .vote-result .pct {
-            color: #FF8C00;
-        }
-
-        .tap-hint {
-            font-size: 0.85em;
-            color: rgba(255,255,255,0.7);
-            margin-top: 8px;
-        }
-
-        .tap-hint.hidden {
-            display: none;
-        }
-
-        /* Next Battle Button */
-        .btn-primary {
-            display: inline-block;
-            padding: 14px 32px;
-            background: #FF8C00;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-            margin: 8px;
-            min-height: 48px;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(255,140,0,0.4);
-            background: #e07b00;
-        }
-
-        .btn-primary:active {
-            transform: translateY(0);
-        }
-
-        .btn-next {
-            margin-top: 24px;
-            display: none;
-        }
-
-        .btn-next.visible {
-            display: inline-block;
-        }
-
-        /* Stats Bar */
-        .stats-bar {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 24px 0;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 30px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.95em;
-        }
-
-        .stat-item span {
-            font-size: 1.2em;
-        }
-
-        /* Leaderboard */
-        .leaderboard {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: left;
-        }
-
-        .leaderboard h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .leaderboard-empty {
-            text-align: center;
-            color: #999;
-            font-style: italic;
-            padding: 20px 0;
-        }
-
-        .leaderboard-list {
-            list-style: none;
-        }
-
-        .leaderboard-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 14px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .leaderboard-item:last-child {
-            border-bottom: none;
-        }
-
-        .leaderboard-rank {
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #FF8C00;
-            width: 36px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-
-        .leaderboard-joke {
-            flex: 1;
-            font-size: 0.95em;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        .leaderboard-wins {
-            font-size: 0.85em;
-            font-weight: 600;
-            color: #4CAF50;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .leaderboard-winrate {
-            display: block;
-            font-size: 0.8em;
-            color: #999;
-            font-weight: 400;
-        }
-
-        /* CTA Section */
-        .cta {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .cta h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .cta-subtext {
-            font-size: 1.1rem;
-            margin: 10px 0 20px;
-            color: #333;
-        }
-
-        .cta-features {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .cta-features span {
-            background: #FFF3E0;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-weight: 500;
-        }
-
-        .store-buttons-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-
-        .store-badge {
-            height: 50px;
-            max-width: 100%;
-        }
-
-        .store-badge.disabled {
-            opacity: 0.4;
-            filter: grayscale(100%);
-            cursor: not-allowed;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: left;
-        }
-
-        .faq-section h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .faq-section details {
-            border-bottom: 1px solid #eee;
-            padding: 15px 0;
-        }
-
-        .faq-section details:last-of-type {
-            border-bottom: none;
-        }
-
-        .faq-section summary {
-            font-weight: 600;
-            font-size: 1.05em;
-            cursor: pointer;
-            color: #333;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-section summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-section summary::after {
-            content: '+';
-            font-size: 1.3em;
-            color: #FF8C00;
-            flex-shrink: 0;
-            margin-left: 10px;
-        }
-
-        .faq-section details[open] summary::after {
-            content: '-';
-        }
-
-        .faq-section details p {
-            margin-top: 10px;
-            font-size: 1em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        /* Footer */
-        .site-footer {
-            width: 100%;
-            background: #eee;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-
-        .site-footer a {
-            color: #FF8C00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            display: inline-block;
-            padding: 10px 0;
-            min-height: 44px;
-        }
-
-        .site-footer a:hover {
-            opacity: 1;
-        }
-
-        .site-footer .footer-links {
-            margin-bottom: 20px;
-        }
-
-        .site-footer .footer-stores {
-            margin-bottom: 20px;
-        }
-
-        .site-footer .footer-stores img {
-            height: 40px;
-            margin: 0 10px;
-        }
-
-        .site-footer .footer-copy {
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        /* Loading spinner */
-        .loading {
-            color: #999;
-            font-size: 1.2em;
-            text-align: center;
-            padding: 60px 0;
-        }
-
-        .spinner {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 3px solid #eee;
-            border-top-color: #FF8C00;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-bottom: 10px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Responsive */
-        @media (max-width: 640px) {
-            .battle-arena {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            .vs-divider {
-                font-size: 1.4em;
-                padding: 4px 0;
-            }
-
-            h1 {
-                font-size: 1.6em;
-            }
-
-            .tagline {
-                font-size: 0.95em;
-                margin-bottom: 8px;
-            }
-
-            .battle-joke-text {
-                font-size: 1.05em;
-            }
-
-            .battle-card {
-                padding: 24px 20px;
-                min-height: 120px;
-            }
-
-            .share-winner-btn {
-                flex: 1;
-                justify-content: center;
-            }
-
-            .stat-item {
-                padding: 8px 16px;
-                font-size: 0.85em;
-            }
-
-            .container {
-                padding: 12px 16px;
-            }
-
-            .logo {
-                margin-bottom: 4px;
-            }
-
-            .logo-img {
-                height: 44px;
-                width: 44px;
-            }
-
-            .site-nav { padding: 0 10px; }
-            .site-nav a { font-size: 0.8em; padding: 12px 8px; }
-        }
-    </style>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Site Navigation -->
-    <nav class="site-nav" aria-label="Main navigation">
-        <div class="site-nav-inner">
-            <a href="/app/">Home</a>
-            <span class="nav-sep">|</span>
-            <a href="/jokes/">Dad Jokes</a>
-            <span class="nav-sep">|</span>
-            <a href="/random/">Random</a>
-            <span class="nav-sep">|</span>
-            <a href="/battle/" class="active">Battle</a>
-            <span class="nav-sep">|</span>
-            <a href="/daily/">Daily</a>
-            <span class="nav-sep">|</span>
-            <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'header'});}">Get the App</a>
-        </div>
-    </nav>
-
-    <!-- Cross-Browser Mobile App Install Banner -->
-    <div id="mobile-app-banner" class="mobile-app-banner hidden">
-        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon" width="48" height="48">
-        <div class="banner-text">
-            <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle">Rate jokes in the app</div>
-        </div>
-        <button class="banner-button" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'banner'});}window.location.href='https://dadjokes.vip/ios'">OPEN</button>
-        <button class="banner-close" onclick="document.getElementById('mobile-app-banner').classList.add('hidden');document.body.classList.remove('banner-active');">&times;</button>
-    </div>
-
-    <div class="container">
-        <div class="logo">
-            <a href="/">
-                <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img" width="56" height="56">
-            </a>
-        </div>
-        <h1>Dad Joke Battle</h1>
-        <p class="tagline">Two jokes enter. You pick the winner.</p>
-
-        <div class="stats-bar" id="stats-bar" style="display:none;">
-            <div class="stat-item">Battles Judged: <span id="battle-count">0</span></div>
-            <div class="stat-item">Jokes Rated: <span id="jokes-rated">0</span></div>
-        </div>
-
-        <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <div>Loading jokes...</div>
-        </div>
-
-        <div class="battle-arena" id="battle-arena" style="display:none;">
-            <div class="battle-card" id="card-left" onclick="vote('left')">
-                <div class="crown">&#128081;</div>
-                <div class="card-label">Joke A</div>
-                <div class="battle-joke-text" id="joke-left"></div>
-                <div class="vote-result" id="result-left">
-                    <span class="pct" id="pct-left"></span>
-                    votes
-                </div>
-            </div>
-
-            <div class="vs-divider">VS</div>
-
-            <div class="battle-card" id="card-right" onclick="vote('right')">
-                <div class="crown">&#128081;</div>
-                <div class="card-label">Joke B</div>
-                <div class="battle-joke-text" id="joke-right"></div>
-                <div class="vote-result" id="result-right">
-                    <span class="pct" id="pct-right"></span>
-                    votes
-                </div>
-            </div>
-        </div>
-
-        <p class="tap-hint" id="tap-hint">Tap the funnier joke to vote!</p>
-
-        <div class="share-winner-row" id="share-winner-row">
-            <button class="share-winner-btn" id="btn-copy-winner" onclick="copyWinner()">📋 Copy Winner</button>
-            <button class="share-winner-btn" id="btn-share-winner" onclick="shareWinner()" style="display:none;">📤 Share</button>
-        </div>
-
-        <button class="btn-primary btn-next" id="btn-next" onclick="nextBattle()">Next Battle!</button>
-
-        <div class="leaderboard" id="leaderboard">
-            <h2>Top 5 Dad Jokes</h2>
-            <p class="leaderboard-empty" id="leaderboard-empty">Vote in a few battles to see your top jokes appear here!</p>
-            <ul class="leaderboard-list" id="leaderboard-list"></ul>
-        </div>
-
-        <div class="cta">
-            <h2>Want More Battles?</h2>
-            <p class="cta-subtext">
-                Get a daily dad joke notification, rate thousands more jokes, and unlock AI roasts. Totally free.
-            </p>
-            <div class="cta-features">
-                <span>19,000+ jokes</span>
-                <span>Daily notifications</span>
-                <span>Rate & save favorites</span>
-            </div>
-            <div class="store-buttons-badges">
-                <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'cta'});}">
-                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
-                </a>
-                <span style="cursor: not-allowed;" title="Coming soon to Android">
-                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-                </span>
-            </div>
-        </div>
-
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-
-            <details>
-                <summary>How does Dad Joke Battle work?</summary>
-                <p>Two random dad jokes face off head-to-head. Read both jokes and tap the one you think is funnier. After voting, you will see the vote percentages from your own battle history. Keep battling to build up your personal leaderboard of the funniest dad jokes!</p>
-            </details>
-
-            <details>
-                <summary>Are the vote results saved?</summary>
-                <p>Your votes are stored locally on your device using your browser's storage. This means your battle history and leaderboard are personal to you. There is no global leaderboard yet, but every vote helps you discover your own favorite dad jokes.</p>
-            </details>
-
-            <details>
-                <summary>How many jokes are in the battle pool?</summary>
-                <p>The battle draws from thousands of curated dad jokes. For the full collection of 19,000+ jokes across 20+ categories, download the free Dad Jokes app. You can rate jokes there too!</p>
-            </details>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="footer-links">
-            <a href="/app">App</a>
-            <a href="/jokes">Jokes</a>
-            <a href="/random/">Random</a>
-            <a href="/battle/">Battle</a>
-            <a href="/support">Support</a>
-            <a href="/privacy">Privacy</a>
-        </div>
-
-        <div class="footer-stores">
-            <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'footer'});}">
-                <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
-            </a>
-            <span style="cursor: not-allowed;" title="Coming soon to Android">
-                <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-            </span>
-        </div>
-
-        <div class="footer-copy">
-            &copy; <span id="year"></span> Dad Jokes. All rights reserved.
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        // Show mobile banner on mobile devices
-        (function() {
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            var banner = document.getElementById('mobile-app-banner');
-            if (isMobile && banner) {
-                banner.classList.remove('hidden');
-                banner.classList.add('show');
-                document.body.classList.add('banner-active');
-            }
-        })();
-    </script>
-
-    <script>
-        var jokes = [];
-        var jokeLeft = null;
-        var jokeRight = null;
-        var hasVoted = false;
-        var STORAGE_KEY = 'dadjokes_battle_votes';
-        var BATTLE_COUNT_KEY = 'dadjokes_battle_count';
-
-        // LocalStorage helpers
-        function getVotes() {
-            try {
-                var data = localStorage.getItem(STORAGE_KEY);
-                return data ? JSON.parse(data) : {};
-            } catch (e) {
-                return {};
-            }
-        }
-
-        function saveVote(winnerId, loserId) {
-            var votes = getVotes();
-            if (!votes[winnerId]) votes[winnerId] = { wins: 0, losses: 0 };
-            if (!votes[loserId]) votes[loserId] = { wins: 0, losses: 0 };
-            votes[winnerId].wins++;
-            votes[loserId].losses++;
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(votes));
-
-            // Increment battle count
-            var count = parseInt(localStorage.getItem(BATTLE_COUNT_KEY) || '0', 10);
-            localStorage.setItem(BATTLE_COUNT_KEY, String(count + 1));
-        }
-
-        function getBattleCount() {
-            return parseInt(localStorage.getItem(BATTLE_COUNT_KEY) || '0', 10);
-        }
-
-        function getJokesRatedCount() {
-            var votes = getVotes();
-            return Object.keys(votes).length;
-        }
-
-        function getJokeId(joke) {
-            var parts = joke.id.split('/');
-            return parts[parts.length - 1];
-        }
-
-        function getWinRate(jokeId) {
-            var votes = getVotes();
-            var record = votes[jokeId];
-            if (!record) return null;
-            var total = record.wins + record.losses;
-            if (total === 0) return null;
-            return { wins: record.wins, losses: record.losses, total: total, rate: record.wins / total };
-        }
-
-        // Update stats display
-        function updateStats() {
-            var count = getBattleCount();
-            var rated = getJokesRatedCount();
-            document.getElementById('battle-count').textContent = count;
-            document.getElementById('jokes-rated').textContent = rated;
-
-            if (count > 0) {
-                document.getElementById('stats-bar').style.display = 'flex';
-            }
-        }
-
-        // Update leaderboard
-        function updateLeaderboard() {
-            var votes = getVotes();
-            var entries = [];
-
-            for (var jokeId in votes) {
-                var record = votes[jokeId];
-                var total = record.wins + record.losses;
-                if (total >= 2) { // Only show jokes with at least 2 battles
-                    entries.push({
-                        id: jokeId,
-                        wins: record.wins,
-                        losses: record.losses,
-                        total: total,
-                        rate: record.wins / total
-                    });
-                }
-            }
-
-            // Sort by win rate, then by total battles
-            entries.sort(function(a, b) {
-                if (b.rate !== a.rate) return b.rate - a.rate;
-                return b.total - a.total;
-            });
-
-            var top5 = entries.slice(0, 5);
-            var listEl = document.getElementById('leaderboard-list');
-            var emptyEl = document.getElementById('leaderboard-empty');
-
-            if (top5.length === 0) {
-                emptyEl.style.display = 'block';
-                listEl.innerHTML = '';
-                return;
-            }
-
-            emptyEl.style.display = 'none';
-            var html = '';
-            var medals = ['&#129351;', '&#129352;', '&#129353;', '4', '5'];
-
-            for (var i = 0; i < top5.length; i++) {
-                var entry = top5[i];
-                // Find joke text
-                var joke = jokes.find(function(j) { return getJokeId(j) === entry.id; });
-                var text = joke ? truncateText(joke.content_text, 100) : entry.id;
-                var ratePct = Math.round(entry.rate * 100);
-
-                html += '<li class="leaderboard-item">' +
-                    '<div class="leaderboard-rank">' + medals[i] + '</div>' +
-                    '<div class="leaderboard-joke">' + escapeHtml(text) + '</div>' +
-                    '<div class="leaderboard-wins">' + entry.wins + 'W - ' + entry.losses + 'L' +
-                    '<span class="leaderboard-winrate">' + ratePct + '% win rate</span></div>' +
-                    '</li>';
-            }
-
-            listEl.innerHTML = html;
-        }
-
-        function truncateText(text, max) {
-            if (text.length <= max) return text;
-            return text.substring(0, max).trim() + '...';
-        }
-
-        function escapeHtml(text) {
-            var div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // Pick two random distinct jokes
-        function pickTwo() {
-            if (jokes.length < 2) return null;
-            var idx1 = Math.floor(Math.random() * jokes.length);
-            var idx2;
-            do {
-                idx2 = Math.floor(Math.random() * jokes.length);
-            } while (idx2 === idx1);
-            return [jokes[idx1], jokes[idx2]];
-        }
-
-        function showBattle(pair) {
-            jokeLeft = pair[0];
-            jokeRight = pair[1];
-            hasVoted = false;
-
-            document.getElementById('joke-left').textContent = jokeLeft.content_text;
-            document.getElementById('joke-right').textContent = jokeRight.content_text;
-
-            // Reset card states
-            var cardL = document.getElementById('card-left');
-            var cardR = document.getElementById('card-right');
-            cardL.className = 'battle-card';
-            cardR.className = 'battle-card';
-
-            // Hide vote results
-            document.getElementById('result-left').classList.remove('visible');
-            document.getElementById('result-right').classList.remove('visible');
-
-            // Show tap hint, hide next button
-            document.getElementById('tap-hint').classList.remove('hidden');
-            document.getElementById('btn-next').classList.remove('visible');
-        }
-
-        function vote(side) {
-            if (hasVoted || !jokeLeft || !jokeRight) return;
-            hasVoted = true;
-
-            var winnerId, loserId;
-            var winnerCard, loserCard;
-
-            if (side === 'left') {
-                winnerId = getJokeId(jokeLeft);
-                loserId = getJokeId(jokeRight);
-                winnerCard = document.getElementById('card-left');
-                loserCard = document.getElementById('card-right');
-                winnerJoke = jokeLeft;
-            } else {
-                winnerId = getJokeId(jokeRight);
-                loserId = getJokeId(jokeLeft);
-                winnerCard = document.getElementById('card-right');
-                loserCard = document.getElementById('card-left');
-                winnerJoke = jokeRight;
-            }
-
-            // Save vote
-            saveVote(winnerId, loserId);
-
-            // Track battle vote
-            if (typeof gtag === 'function') {
-                gtag('event', 'battle_vote_cast', {
-                    winner_id: winnerId,
-                    loser_id: loserId
-                });
-            }
-
-            // Mark cards
-            winnerCard.classList.add('voted', 'winner');
-            loserCard.classList.add('voted', 'loser');
-
-            // Calculate and show vote percentages from history
-            var leftId = getJokeId(jokeLeft);
-            var rightId = getJokeId(jokeRight);
-            var leftStats = getWinRate(leftId);
-            var rightStats = getWinRate(rightId);
-
-            var leftPct = leftStats ? Math.round(leftStats.rate * 100) : 0;
-            var rightPct = rightStats ? Math.round(rightStats.rate * 100) : 0;
-
-            document.getElementById('pct-left').textContent = leftPct + '%';
-            document.getElementById('pct-right').textContent = rightPct + '%';
-
-            // Show results with a slight delay
-            setTimeout(function() {
-                document.getElementById('result-left').classList.add('visible');
-                document.getElementById('result-right').classList.add('visible');
-            }, 300);
-
-            // Hide tap hint, show next button and share row
-            document.getElementById('tap-hint').classList.add('hidden');
-            document.getElementById('btn-next').classList.add('visible');
-            document.getElementById('share-winner-row').classList.add('visible');
-
-            // Show native share if available
-            if (navigator.share) {
-                document.getElementById('btn-share-winner').style.display = '';
-            }
-
-            // Update stats and leaderboard
-            updateStats();
-            updateLeaderboard();
-        }
-
-        var winnerJoke = null;
-
-        function copyWinner() {
-            if (!winnerJoke) return;
-            var text = winnerJoke.content_text + '\n\nhttps://dadjokes.vip/battle/';
-            navigator.clipboard.writeText(text).then(function() {
-                var btn = document.getElementById('btn-copy-winner');
-                btn.classList.add('copied');
-                btn.textContent = 'Copied!';
-                setTimeout(function() {
-                    btn.classList.remove('copied');
-                    btn.textContent = '📋 Copy Winner';
-                }, 2000);
-            });
-
-            // Track battle share
-            if (typeof gtag === 'function') {
-                gtag('event', 'battle_joke_shared', {
-                    joke_id: getJokeId(winnerJoke),
-                    method: 'copy'
-                });
-            }
-        }
-
-        function shareWinner() {
-            if (!winnerJoke || !navigator.share) return;
-            navigator.share({
-                title: 'This dad joke won!',
-                text: winnerJoke.content_text,
-                url: 'https://dadjokes.vip/battle/'
-            }).catch(function() {});
-
-            // Track battle share
-            if (typeof gtag === 'function') {
-                gtag('event', 'battle_joke_shared', {
-                    joke_id: getJokeId(winnerJoke),
-                    method: 'native'
-                });
-            }
-        }
-
-        function nextBattle() {
-            var pair = pickTwo();
-            if (!pair) return;
-            // Hide share row for new battle
-            document.getElementById('share-winner-row').classList.remove('visible');
-            winnerJoke = null;
-            showBattle(pair);
-        }
-
-        // Load jokes and start
-        fetch('/jokes.json')
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                jokes = data.items;
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('battle-arena').style.display = 'grid';
-
-                updateStats();
-                updateLeaderboard();
-
-                var pair = pickTwo();
-                if (pair) {
-                    showBattle(pair);
-                }
-            })
-            .catch(function() {
-                document.getElementById('loading').innerHTML = 'Failed to load jokes. Please refresh.';
-            });
-    </script>
 
     <!-- Structured Data - WebApplication -->
     <script type="application/ld+json">
@@ -1262,16 +68,8 @@
         "description": "Two dad jokes face off head-to-head. Vote for the funniest joke, track your stats, and discover the best dad jokes.",
         "applicationCategory": "GameApplication",
         "operatingSystem": "Any",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Dad Jokes",
-            "url": "https://dadjokes.vip"
-        }
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "Dad Jokes", "url": "https://dadjokes.vip" }
     }
     </script>
 
@@ -1280,17 +78,10 @@
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://dadjokes.vip"
-        }, {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Dad Joke Battle",
-            "item": "https://dadjokes.vip/battle/"
-        }]
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dadjokes.vip" },
+            { "@type": "ListItem", "position": 2, "name": "Dad Joke Battle", "item": "https://dadjokes.vip/battle/" }
+        ]
     }
     </script>
 
@@ -1299,29 +90,878 @@
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [{
-            "@type": "Question",
-            "name": "How does Dad Joke Battle work?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Two random dad jokes face off head-to-head. Read both jokes and tap the one you think is funnier. After voting, you will see the vote percentages from your own battle history. Keep battling to build up your personal leaderboard of the funniest dad jokes."
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does Dad Joke Battle work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Two random dad jokes face off head-to-head. Read both jokes and tap the one you think is funnier. After voting, you'll see the vote percentages from your own battle history. Keep battling to build up your personal leaderboard of the funniest dad jokes!" }
+            },
+            {
+                "@type": "Question",
+                "name": "Are the vote results saved?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Your votes are stored locally on your device using your browser's storage. This means your battle history and leaderboard are personal to you. There is no global leaderboard yet, but every vote helps you discover your own favorite dad jokes." }
+            },
+            {
+                "@type": "Question",
+                "name": "How many jokes are in the battle pool?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The battle draws from thousands of curated dad jokes. For the full collection of 19,000+ jokes across 20+ categories, download the free Dad Jokes app. You can rate jokes there too!" }
             }
-        }, {
-            "@type": "Question",
-            "name": "Are the vote results saved?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Your votes are stored locally on your device using your browser's storage. This means your battle history and leaderboard are personal to you. There is no global leaderboard yet, but every vote helps you discover your own favorite dad jokes."
-            }
-        }, {
-            "@type": "Question",
-            "name": "How many jokes are in the battle pool?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The battle draws from thousands of curated dad jokes. For the full collection of 19,000+ jokes across 20+ categories, download the free Dad Jokes app. You can rate jokes there too!"
-            }
-        }]
+        ]
     }
+    </script>
+
+    <!-- Brand Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/brand.css">
+
+    <!-- Firebase SDK (deferred) -->
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <style>
+      /* ---- Battle page hero ---- */
+      .battle-hero {
+        text-align: center;
+        padding: var(--sp-3xl) 0 var(--sp-xl);
+      }
+
+      .battle-hero .display-heading {
+        color: var(--brand-navy);
+      }
+
+      .battle-hero p {
+        color: var(--brand-text-dim);
+        font-size: 1.125rem;
+        margin-top: var(--sp-sm);
+      }
+
+      /* ---- Stats bar ---- */
+      .stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: var(--sp-lg);
+        flex-wrap: wrap;
+        margin-bottom: var(--sp-2xl);
+      }
+
+      .stats-bar[hidden] { display: none; }
+
+      .stat-pill {
+        background: var(--brand-surface);
+        border: 1px solid var(--brand-border);
+        border-radius: var(--radius-full);
+        padding: var(--sp-sm) var(--sp-xl);
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: var(--brand-text);
+      }
+
+      .stat-pill strong {
+        color: var(--brand-navy);
+        font-weight: 700;
+      }
+
+      /* ---- Battle arena ---- */
+      .battle-arena {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: var(--sp-lg);
+        align-items: stretch;
+        margin-bottom: var(--sp-xl);
+      }
+
+      .vs-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: var(--brand-coral);
+      }
+
+      /* ---- Battle cards ---- */
+      .battle-card {
+        background: #FFFFFF;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        padding: var(--sp-3xl) var(--sp-2xl);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+        border: 3px solid transparent;
+        position: relative;
+        min-height: 220px;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .battle-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--brand-coral-light);
+      }
+
+      .battle-card.voted {
+        cursor: default;
+      }
+
+      .battle-card.voted:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .battle-card.winner {
+        border-color: var(--brand-coral);
+        background: var(--brand-surface);
+        transform: scale(1.03);
+        box-shadow: var(--shadow-lg);
+        animation: winnerPop 0.4s ease;
+      }
+
+      @keyframes winnerPop {
+        0%  { transform: scale(1); }
+        40% { transform: scale(1.06); }
+        100%{ transform: scale(1.03); }
+      }
+
+      .battle-card.loser {
+        opacity: 0.5;
+        transform: scale(0.95);
+        transition: all 0.4s ease;
+      }
+
+      .card-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--brand-text-dim);
+        margin-bottom: var(--sp-md);
+      }
+
+      .battle-joke-text {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: var(--brand-text);
+        line-height: 1.6;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Crown */
+      .crown {
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        line-height: 1;
+      }
+
+      .battle-card.winner .crown {
+        opacity: 1;
+        animation: crownDrop 0.5s ease;
+      }
+
+      @keyframes crownDrop {
+        0%   { transform: translateX(-50%) translateY(-20px); opacity: 0; }
+        60%  { transform: translateX(-50%) translateY(3px); opacity: 1; }
+        100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+      }
+
+      /* Vote result */
+      .vote-result {
+        margin-top: var(--sp-lg);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--brand-text-dim);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .vote-result.visible { opacity: 1; }
+
+      .vote-result .pct {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 2px;
+        color: var(--brand-text-dim);
+      }
+
+      .battle-card.winner .vote-result .pct {
+        color: var(--brand-coral);
+      }
+
+      /* Tap hint */
+      .tap-hint {
+        text-align: center;
+        font-size: 0.9375rem;
+        color: var(--brand-text-dim);
+        margin-bottom: var(--sp-lg);
+      }
+
+      .tap-hint[hidden] { display: none; }
+
+      /* ---- Share winner row ---- */
+      .share-winner-row {
+        display: none;
+        justify-content: center;
+        gap: var(--sp-sm);
+        flex-wrap: wrap;
+        margin-bottom: var(--sp-lg);
+      }
+
+      .share-winner-row.visible { display: flex; }
+
+      /* ---- Next battle button ---- */
+      .btn-next {
+        display: none;
+        margin: 0 auto var(--sp-3xl);
+      }
+
+      .btn-next.visible { display: inline-flex; }
+
+      /* ---- Loading ---- */
+      .battle-loading {
+        text-align: center;
+        padding: var(--sp-5xl) 0;
+        color: var(--brand-text-dim);
+        font-size: 1.125rem;
+      }
+
+      .spinner {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border: 3px solid var(--brand-border);
+        border-top-color: var(--brand-coral);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin-bottom: var(--sp-md);
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* ---- Leaderboard ---- */
+      .leaderboard {
+        margin-bottom: var(--sp-3xl);
+      }
+
+      .leaderboard h2 {
+        text-align: center;
+        margin-bottom: var(--sp-xl);
+      }
+
+      .leaderboard-empty {
+        text-align: center;
+        color: var(--brand-text-dim);
+        font-style: italic;
+        padding: var(--sp-xl) 0;
+      }
+
+      .leaderboard-list {
+        list-style: none;
+      }
+
+      .leaderboard-item {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-md);
+        padding: var(--sp-md) 0;
+        border-bottom: 1px solid var(--brand-border);
+      }
+
+      .leaderboard-item:last-child {
+        border-bottom: none;
+      }
+
+      .leaderboard-rank {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: var(--brand-coral);
+        width: 36px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+
+      .leaderboard-joke {
+        flex: 1;
+        font-size: 0.9375rem;
+        color: var(--brand-text);
+        line-height: 1.4;
+      }
+
+      .leaderboard-wins {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--brand-success);
+        white-space: nowrap;
+        flex-shrink: 0;
+        text-align: right;
+      }
+
+      .leaderboard-winrate {
+        display: block;
+        font-size: 0.8125rem;
+        color: var(--brand-text-dim);
+        font-weight: 400;
+      }
+
+      /* ---- FAQ section ---- */
+      .faq-section {
+        margin-bottom: var(--sp-3xl);
+      }
+
+      .faq-section h2 {
+        text-align: center;
+        margin-bottom: var(--sp-xl);
+      }
+
+      .faq-section details {
+        border-bottom: 1px solid var(--brand-border);
+        padding: var(--sp-lg) 0;
+      }
+
+      .faq-section details:last-of-type {
+        border-bottom: none;
+      }
+
+      .faq-section summary {
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        color: var(--brand-text);
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 48px;
+      }
+
+      .faq-section summary::-webkit-details-marker { display: none; }
+
+      .faq-section summary::after {
+        content: '+';
+        font-size: 1.25rem;
+        color: var(--brand-coral);
+        flex-shrink: 0;
+        margin-left: var(--sp-md);
+      }
+
+      .faq-section details[open] summary::after {
+        content: '-';
+      }
+
+      .faq-section details p {
+        margin-top: var(--sp-sm);
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: var(--brand-text-dim);
+      }
+
+      /* ---- Responsive ---- */
+      @media (max-width: 640px) {
+        .battle-arena {
+          grid-template-columns: 1fr;
+          gap: var(--sp-md);
+        }
+
+        .vs-divider {
+          font-size: 1.375rem;
+          padding: var(--sp-xs) 0;
+        }
+
+        .battle-card {
+          padding: var(--sp-2xl) var(--sp-xl);
+          min-height: 140px;
+        }
+
+        .battle-joke-text {
+          font-size: 1rem;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- ===== Brand Nav ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-emoji" aria-hidden="true">&#128514;</span>
+          Dad Jokes
+        </a>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/jokes/">Jokes</a></li>
+          <li><a href="/random/">Random</a></li>
+          <li><a href="/battle/" class="active">Battle</a></li>
+          <li><a href="/roast/">Roast</a></li>
+          <li><a href="/collection/">Collections</a></li>
+          <li><a href="https://apps.apple.com/app/id6743726261" class="nav-cta">Get the App</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== Page Content ===== -->
+    <main class="page-content">
+      <div class="container container--narrow">
+
+        <!-- Hero -->
+        <section class="battle-hero">
+          <h1 class="display-heading">Dad Joke Battle</h1>
+          <p>Two jokes. You pick the winner.</p>
+        </section>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar" id="stats-bar" hidden>
+          <div class="stat-pill">Battles Judged: <strong id="battle-count">0</strong></div>
+          <div class="stat-pill">Jokes Rated: <strong id="jokes-rated">0</strong></div>
+        </div>
+
+        <!-- Loading -->
+        <div class="battle-loading" id="loading">
+          <div class="spinner"></div>
+          <div>Loading jokes...</div>
+        </div>
+
+        <!-- Battle Arena -->
+        <div class="battle-arena" id="battle-arena" style="display:none;">
+          <div class="battle-card" id="card-left" role="button" tabindex="0" aria-label="Vote for Joke A">
+            <div class="crown" aria-hidden="true">&#128081;</div>
+            <div class="card-label">Joke A</div>
+            <div class="battle-joke-text" id="joke-left"></div>
+            <div class="vote-result" id="result-left">
+              <span class="pct" id="pct-left"></span>
+              votes
+            </div>
+          </div>
+
+          <div class="vs-divider" aria-hidden="true">VS</div>
+
+          <div class="battle-card" id="card-right" role="button" tabindex="0" aria-label="Vote for Joke B">
+            <div class="crown" aria-hidden="true">&#128081;</div>
+            <div class="card-label">Joke B</div>
+            <div class="battle-joke-text" id="joke-right"></div>
+            <div class="vote-result" id="result-right">
+              <span class="pct" id="pct-right"></span>
+              votes
+            </div>
+          </div>
+        </div>
+
+        <p class="tap-hint" id="tap-hint">Tap the funnier joke to vote!</p>
+
+        <!-- Share winner -->
+        <div class="share-winner-row" id="share-winner-row">
+          <div class="share-bar" id="winner-share-bar"></div>
+        </div>
+
+        <!-- Next Battle -->
+        <div class="text-center">
+          <button class="btn btn-cta btn-next" id="btn-next">Next Battle!</button>
+        </div>
+
+        <!-- Leaderboard -->
+        <section class="card leaderboard" id="leaderboard">
+          <h2>Top 5 Dad Jokes</h2>
+          <p class="leaderboard-empty" id="leaderboard-empty">Vote in a few battles to see your top jokes appear here!</p>
+          <ul class="leaderboard-list" id="leaderboard-list"></ul>
+        </section>
+
+        <!-- App CTA -->
+        <div class="app-cta">
+          <div class="app-cta-content">
+            <div class="app-cta-title">Want More Battles?</div>
+            <p class="app-cta-text">Get 19,000+ jokes, daily notifications, rate & save favorites, and AI-powered roasts. Totally free.</p>
+            <a href="https://apps.apple.com/app/id6743726261" class="app-cta-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'cta'});}">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
+            </a>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <section class="card faq-section">
+          <h2>Frequently Asked Questions</h2>
+
+          <details>
+            <summary>How does Dad Joke Battle work?</summary>
+            <p>Two random dad jokes face off head-to-head. Read both jokes and tap the one you think is funnier. After voting, you will see the vote percentages from your own battle history. Keep battling to build up your personal leaderboard of the funniest dad jokes!</p>
+          </details>
+
+          <details>
+            <summary>Are the vote results saved?</summary>
+            <p>Your votes are stored locally on your device using your browser's storage. This means your battle history and leaderboard are personal to you. There is no global leaderboard yet, but every vote helps you discover your own favorite dad jokes.</p>
+          </details>
+
+          <details>
+            <summary>How many jokes are in the battle pool?</summary>
+            <p>The battle draws from thousands of curated dad jokes. For the full collection of 19,000+ jokes across 20+ categories, download the free Dad Jokes app. You can rate jokes there too!</p>
+          </details>
+        </section>
+
+      </div><!-- /.container -->
+    </main>
+
+    <!-- ===== Brand Footer ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-brand-name">Dad Jokes</div>
+            <div class="footer-brand-tagline">Making the world groan, one joke at a time.</div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Explore</h4>
+              <ul>
+                <li><a href="/jokes/">All Jokes</a></li>
+                <li><a href="/random/">Random</a></li>
+                <li><a href="/battle/">Battle</a></li>
+                <li><a href="/collection/">Collections</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>More</h4>
+              <ul>
+                <li><a href="/roast/">Roast</a></li>
+                <li><a href="/daily/">Daily</a></li>
+                <li><a href="/support/">Support</a></li>
+                <li><a href="/privacy/">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">&copy; <span id="footer-year"></span> Dad Jokes. All rights reserved.</div>
+          <a href="https://apps.apple.com/app/id6743726261" class="footer-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'footer'});}">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Auth + Share Scripts ===== -->
+    <script src="/assets/js/auth.js"></script>
+    <script src="/assets/js/share.js"></script>
+
+    <script>
+      /* ---- Nav toggle ---- */
+      (function () {
+        var toggle = document.getElementById('nav-toggle');
+        var links = document.getElementById('nav-links');
+        if (toggle && links) {
+          toggle.addEventListener('click', function () {
+            var open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          });
+        }
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+      })();
+    </script>
+
+    <script>
+      /* ===================================================================
+         Battle Logic
+         =================================================================== */
+      var jokes = [];
+      var jokeLeft = null;
+      var jokeRight = null;
+      var hasVoted = false;
+      var winnerJoke = null;
+      var STORAGE_KEY = 'dadjokes_battle_votes';
+      var BATTLE_COUNT_KEY = 'dadjokes_battle_count';
+      var FREE_BATTLES = 3;
+
+      /* ---- LocalStorage helpers ---- */
+      function getVotes() {
+        try {
+          var data = localStorage.getItem(STORAGE_KEY);
+          return data ? JSON.parse(data) : {};
+        } catch (e) { return {}; }
+      }
+
+      function saveVote(winnerId, loserId) {
+        var votes = getVotes();
+        if (!votes[winnerId]) votes[winnerId] = { wins: 0, losses: 0 };
+        if (!votes[loserId])  votes[loserId]  = { wins: 0, losses: 0 };
+        votes[winnerId].wins++;
+        votes[loserId].losses++;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(votes));
+
+        var count = parseInt(localStorage.getItem(BATTLE_COUNT_KEY) || '0', 10);
+        localStorage.setItem(BATTLE_COUNT_KEY, String(count + 1));
+      }
+
+      function getBattleCount() {
+        return parseInt(localStorage.getItem(BATTLE_COUNT_KEY) || '0', 10);
+      }
+
+      function getJokesRatedCount() {
+        return Object.keys(getVotes()).length;
+      }
+
+      function getJokeId(joke) {
+        var parts = joke.id.split('/');
+        return parts[parts.length - 1];
+      }
+
+      function getWinRate(jokeId) {
+        var record = getVotes()[jokeId];
+        if (!record) return null;
+        var total = record.wins + record.losses;
+        if (total === 0) return null;
+        return { wins: record.wins, losses: record.losses, total: total, rate: record.wins / total };
+      }
+
+      /* ---- Stats ---- */
+      function updateStats() {
+        var count = getBattleCount();
+        var rated = getJokesRatedCount();
+        document.getElementById('battle-count').textContent = count;
+        document.getElementById('jokes-rated').textContent = rated;
+        if (count > 0) {
+          document.getElementById('stats-bar').removeAttribute('hidden');
+        }
+      }
+
+      /* ---- Leaderboard ---- */
+      function updateLeaderboard() {
+        var votes = getVotes();
+        var entries = [];
+
+        for (var jokeId in votes) {
+          var record = votes[jokeId];
+          var total = record.wins + record.losses;
+          if (total >= 2) {
+            entries.push({ id: jokeId, wins: record.wins, losses: record.losses, total: total, rate: record.wins / total });
+          }
+        }
+
+        entries.sort(function (a, b) {
+          if (b.rate !== a.rate) return b.rate - a.rate;
+          return b.total - a.total;
+        });
+
+        var top5 = entries.slice(0, 5);
+        var listEl = document.getElementById('leaderboard-list');
+        var emptyEl = document.getElementById('leaderboard-empty');
+
+        if (top5.length === 0) {
+          emptyEl.style.display = 'block';
+          listEl.innerHTML = '';
+          return;
+        }
+
+        emptyEl.style.display = 'none';
+        var medals = ['&#129351;', '&#129352;', '&#129353;', '4', '5'];
+        var html = '';
+
+        for (var i = 0; i < top5.length; i++) {
+          var entry = top5[i];
+          var joke = jokes.find(function (j) { return getJokeId(j) === entry.id; });
+          var text = joke ? truncateText(joke.content_text, 100) : entry.id;
+          var ratePct = Math.round(entry.rate * 100);
+
+          html += '<li class="leaderboard-item">' +
+            '<div class="leaderboard-rank">' + medals[i] + '</div>' +
+            '<div class="leaderboard-joke">' + escapeHtml(text) + '</div>' +
+            '<div class="leaderboard-wins">' + entry.wins + 'W - ' + entry.losses + 'L' +
+            '<span class="leaderboard-winrate">' + ratePct + '% win rate</span></div></li>';
+        }
+        listEl.innerHTML = html;
+      }
+
+      function truncateText(text, max) {
+        return text.length <= max ? text : text.substring(0, max).trim() + '...';
+      }
+
+      function escapeHtml(text) {
+        var d = document.createElement('div');
+        d.textContent = text;
+        return d.innerHTML;
+      }
+
+      /* ---- Battle flow ---- */
+      function pickTwo() {
+        if (jokes.length < 2) return null;
+        var i1 = Math.floor(Math.random() * jokes.length);
+        var i2;
+        do { i2 = Math.floor(Math.random() * jokes.length); } while (i2 === i1);
+        return [jokes[i1], jokes[i2]];
+      }
+
+      function showBattle(pair) {
+        jokeLeft = pair[0];
+        jokeRight = pair[1];
+        hasVoted = false;
+        winnerJoke = null;
+
+        document.getElementById('joke-left').textContent = jokeLeft.content_text;
+        document.getElementById('joke-right').textContent = jokeRight.content_text;
+
+        var cardL = document.getElementById('card-left');
+        var cardR = document.getElementById('card-right');
+        cardL.className = 'battle-card';
+        cardR.className = 'battle-card';
+
+        document.getElementById('result-left').classList.remove('visible');
+        document.getElementById('result-right').classList.remove('visible');
+        document.getElementById('tap-hint').removeAttribute('hidden');
+        document.getElementById('btn-next').classList.remove('visible');
+        document.getElementById('share-winner-row').classList.remove('visible');
+      }
+
+      function vote(side) {
+        if (hasVoted || !jokeLeft || !jokeRight) return;
+
+        // Content gating: after FREE_BATTLES, require auth
+        var battlesSoFar = getBattleCount();
+        if (battlesSoFar >= FREE_BATTLES && window.DadJokesAuth && !DadJokesAuth.isSignedIn()) {
+          DadJokesAuth.gateContent({
+            totalItems: 'thousands of',
+            itemLabel: 'joke battles',
+            freeViews: FREE_BATTLES
+          });
+          return;
+        }
+
+        hasVoted = true;
+
+        var winnerId, loserId, winnerCard, loserCard;
+        if (side === 'left') {
+          winnerId = getJokeId(jokeLeft);
+          loserId = getJokeId(jokeRight);
+          winnerCard = document.getElementById('card-left');
+          loserCard = document.getElementById('card-right');
+          winnerJoke = jokeLeft;
+        } else {
+          winnerId = getJokeId(jokeRight);
+          loserId = getJokeId(jokeLeft);
+          winnerCard = document.getElementById('card-right');
+          loserCard = document.getElementById('card-left');
+          winnerJoke = jokeRight;
+        }
+
+        saveVote(winnerId, loserId);
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'battle_vote_cast', { winner_id: winnerId, loser_id: loserId });
+        }
+
+        winnerCard.classList.add('voted', 'winner');
+        loserCard.classList.add('voted', 'loser');
+
+        var leftStats = getWinRate(getJokeId(jokeLeft));
+        var rightStats = getWinRate(getJokeId(jokeRight));
+        document.getElementById('pct-left').textContent = (leftStats ? Math.round(leftStats.rate * 100) : 0) + '%';
+        document.getElementById('pct-right').textContent = (rightStats ? Math.round(rightStats.rate * 100) : 0) + '%';
+
+        setTimeout(function () {
+          document.getElementById('result-left').classList.add('visible');
+          document.getElementById('result-right').classList.add('visible');
+        }, 300);
+
+        document.getElementById('tap-hint').setAttribute('hidden', '');
+        document.getElementById('btn-next').classList.add('visible');
+
+        // Build share bar for winner
+        buildWinnerShareBar();
+        document.getElementById('share-winner-row').classList.add('visible');
+
+        updateStats();
+        updateLeaderboard();
+      }
+
+      function buildWinnerShareBar() {
+        if (!winnerJoke) return;
+        var bar = document.getElementById('winner-share-bar');
+        var jokeText = winnerJoke.content_text;
+        var shareUrl = 'https://dadjokes.vip/battle/';
+
+        bar.innerHTML =
+          '<button class="share-btn share-btn--copy" id="btn-copy-winner" aria-label="Copy winning joke">' +
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>' +
+            ' Copy Winner' +
+          '</button>' +
+          '<button class="share-btn share-btn--twitter" id="btn-tweet-winner" aria-label="Share on Twitter">' +
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>' +
+            ' Post' +
+          '</button>' +
+          '<button class="share-btn share-btn--native" id="btn-share-winner" aria-label="Share">' +
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>' +
+            ' Share' +
+          '</button>';
+
+        // Bind events
+        document.getElementById('btn-copy-winner').addEventListener('click', function () {
+          DadJokesShare.copyText(jokeText + '\n\n' + shareUrl, this);
+          if (typeof gtag === 'function') {
+            gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'copy' });
+          }
+        });
+
+        document.getElementById('btn-tweet-winner').addEventListener('click', function () {
+          DadJokesShare.shareTwitter(jokeText, shareUrl);
+          if (typeof gtag === 'function') {
+            gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'twitter' });
+          }
+        });
+
+        document.getElementById('btn-share-winner').addEventListener('click', function () {
+          DadJokesShare.shareNative('This dad joke won!', jokeText, shareUrl);
+          if (typeof gtag === 'function') {
+            gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'native' });
+          }
+        });
+
+        DadJokesShare.initNativeShareButtons();
+      }
+
+      function nextBattle() {
+        var pair = pickTwo();
+        if (!pair) return;
+        showBattle(pair);
+      }
+
+      /* ---- Card click / keyboard ---- */
+      document.getElementById('card-left').addEventListener('click', function () { vote('left'); });
+      document.getElementById('card-right').addEventListener('click', function () { vote('right'); });
+      document.getElementById('card-left').addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); vote('left'); } });
+      document.getElementById('card-right').addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); vote('right'); } });
+      document.getElementById('btn-next').addEventListener('click', nextBattle);
+
+      /* ---- Load jokes ---- */
+      fetch('/jokes.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          jokes = data.items;
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('battle-arena').style.display = 'grid';
+
+          updateStats();
+          updateLeaderboard();
+
+          var pair = pickTwo();
+          if (pair) showBattle(pair);
+        })
+        .catch(function () {
+          document.getElementById('loading').innerHTML = 'Failed to load jokes. Please refresh.';
+        });
     </script>
 </body>
 </html>

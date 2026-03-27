@@ -20,22 +20,22 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFA500">
-    <title>Best Dad Jokes App - 19,139 Jokes Free on iPhone</title>
-    <meta name="description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS.">
-    
-    <!-- Universal Links Support -->
+    <meta name="theme-color" content="#1E3A5F">
+    <title>Best Dad Jokes App - 19,000+ Jokes Free on iPhone</title>
+    <meta name="description" content="Download the best dad jokes app with 19,000+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized roasts, and custom themes. Free on iOS.">
+
+    <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/">
 
-    <!-- Resource hints FIRST (before any external requests) -->
+    <!-- Resource hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="preconnect" href="https://developer.apple.com">
     <link rel="dns-prefetch" href="https://firestore.googleapis.com">
 
-    <!-- Google Fonts: non-blocking preload -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"></noscript>
+    <!-- Google Fonts: DM Sans -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -44,768 +44,220 @@
     <!-- Manifest -->
     <link rel="manifest" href="/assets/site.webmanifest">
 
-    <!-- Canonical URL (with trailing slash to match GitHub Pages redirect) -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://dadjokes.vip/app/">
 
-    <!-- JSON Feed for AI Discovery -->
+    <!-- JSON Feed -->
     <link rel="alternate" type="application/feed+json" title="Dad Jokes JSON Feed" href="https://dadjokes.vip/jokes.json">
 
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Best Dad Jokes App - 19,139 Jokes Free on iPhone">
-    <meta property="og:description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Best Dad Jokes App - 19,000+ Jokes Free on iPhone">
+    <meta property="og:description" content="Download the best dad jokes app with 19,000+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized roasts, and custom themes. Free on iOS.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/app/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card tags -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Best Dad Jokes App - 19,139 Jokes Free on iPhone">
-    <meta name="twitter:description" content="Download the best dad jokes app with 19,139 jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and custom themes. Free on iOS.">
+    <meta name="twitter:title" content="Best Dad Jokes App - 19,000+ Jokes Free on iPhone">
+    <meta name="twitter:description" content="Download the best dad jokes app with 19,000+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized roasts, and custom themes. Free on iOS.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
 
-    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Best Dad Jokes",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EntertainmentApplication",
+      "url": "https://dadjokes.vip/app/",
+      "description": "19,000+ dad jokes across 20+ categories. Daily featured jokes, AI-generated personalized roasts, and custom themes.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "50",
+        "bestRating": "5"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dad Jokes",
+        "url": "https://dadjokes.vip"
+      }
+    }
+    </script>
+
+    <!-- Brand Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/brand.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
-            min-height: 100vh;
-        }
-
-        /* Mobile App Install Banner */
-        .mobile-app-banner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transform: translateY(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-app-banner.show {
-            transform: translateY(0);
-        }
-
-        .mobile-app-banner.hidden {
-            display: none;
-        }
-
-        .banner-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 10px;
-            flex-shrink: 0;
-        }
-
-        .banner-text {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .banner-title {
-            font-weight: 600;
-            font-size: 14px;
-            color: #000;
-            margin-bottom: 2px;
-        }
-
-        .banner-subtitle {
-            font-size: 12px;
-            color: #666;
-        }
-
-        .banner-button {
-            background: #007AFF;
-            color: white;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 16px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            white-space: nowrap;
-            min-height: 44px;
-            min-width: 44px;
-        }
-
-        .banner-close {
-            background: none;
-            border: none;
-            color: #666;
-            font-size: 24px;
-            cursor: pointer;
-            padding: 8px;
-            line-height: 1;
-            min-width: 44px;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body.banner-active {
-            padding-top: 76px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .logo {
-            margin-bottom: 20px;
-        }
-        
-        .logo-img {
-            height: 80px;
-            width: 80px;
-            animation: bounce 2s infinite;
-            border-radius: 6px; /* optional, adds soft corners */
-        }
-
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 8px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .tagline {
-            font-size: 1.2em;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 30px;
-        }
-        
-        .joke-card {
-          background: white;
-          border-radius: 20px;
-          padding: 20px;
-          margin: 30px 0;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-          min-height: 220px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          flex-direction: column;            
-        }
-        
-        .joke-text {
-            font-size: 1.6em;
-            font-family: 'Special Elite', serif;
-            color: #333;
-            margin: 0;
-            line-height: 1.6;
-            white-space: pre-wrap;
-        }
-
-        .joke-text::after {
-          content: '|';
-          visibility: visible;
-          animation: blink 1s steps(1) infinite;
-          margin-left: 5px;
-          color: #555;
-          display: inline-block;
-          width: 0.6ch; /* reserves space equal to a character */
-        }
-
-        @keyframes blink {
-          0%, 100% { visibility: visible; }
-          50% { visibility: hidden; }
-        }
-
-        .no-cursor::after {
-          content: '';
-          animation: none;
-        }
-        
-        .features {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin: 40px 0;
-        }
-
-        .feature {
-            background: rgba(255,255,255,0.95);
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .feature h2 {
-            color: #FF8C00;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        .feature p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .feature img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .cta {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .store-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-            margin-top: 20px;
-        }
-        
-        .store-button {
-            display: inline-flex;
-            align-items: center;
-            padding: 15px 30px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            transition: transform 0.2s, box-shadow 0.2s;
-            width: 250px;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .store-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .cta-subtext {
-          font-size: 1.1rem;
-          margin: 10px 0 25px;
-          color: #333;
-        }
-        
-        .store-buttons-badges {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          flex-wrap: wrap;
-          margin-bottom: 30px;
-        }
-        
-        .store-badge {
-          height: 50px;
-          min-width: 120px;
-          max-width: 100%;
-        }
-
-        .store-badge.disabled {
-          opacity: 0.4;
-          filter: grayscale(100%);
-          cursor: not-allowed;
-        }
-        
-        .screenshot-placeholder {
-          background-color: #f9f9f9;
-          padding: 30px;
-          border-radius: 10px;
-          border: 2px dashed #ccc;
-          color: #777;
-          font-style: italic;
-          max-width: 600px;
-          margin: 0 auto;
-          text-align: center;
-        }
-
-        
-        .coming-soon {
-            font-size: 0.9em;
-            color: #666;
-            font-style: italic;
-        }
-        
-        .site-footer {
-          width: 100%;
-          background: #eee;
-          text-align: center;
-          padding: 40px 20px;
-          margin-top: 60px;
-        }
-        
-        .site-footer a {
-          color: #FF8C00;
-          text-decoration: none;
-          margin: 0 15px;
-          font-weight: 500;
-          display: inline-block;
-          padding: 10px 0;
-          min-height: 44px;
-        }
-        
-        .site-footer a:hover {
-          opacity: 1;
-        }
-
-        .site-footer .footer-links {
-          margin-bottom: 20px;
-        }
-        
-        .site-footer .footer-stores {
-          margin-bottom: 20px;
-        }
-        
-        .site-footer .footer-stores img {
-          height: 40px;
-          margin: 0 10px;
-        }
-        
-        .site-footer .footer-copy {
-          font-size: 0.9em;
-          color: #666;
-        }
-        
-        @media (max-width: 768px) {
-            .features {
-                gap: 30px;
-                margin: 30px 0;
-            }
-
-            .feature {
-                padding: 25px;
-            }
-
-            .feature h2 {
-                font-size: 1.3em;
-            }
-
-            .feature p {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em;
-            }
-
-            .tagline {
-                font-size: 1em;
-            }
-
-            .joke-text {
-                font-size: 1.1em;
-            }
-
-            .store-button {
-                width: 100%;
-                max-width: 250px;
-            }
-
-            .feature {
-                padding: 20px;
-            }
-
-            .feature h2 {
-                font-size: 1.2em;
-            }
-
-            .container {
-                padding: 20px 16px;
-            }
-
-            .logo-img {
-                height: 60px;
-                width: 60px;
-            }
-
-            .logo {
-                margin-bottom: 12px;
-            }
-
-            .site-nav { padding: 0 10px; }
-            .site-nav a { font-size: 0.8em; padding: 12px 8px; }
-        }
-
-        .faq-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: left;
-        }
-
-        .faq-section h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .faq-section details {
-            border-bottom: 1px solid #eee;
-            padding: 15px 0;
-        }
-
-        .faq-section details:last-of-type {
-            border-bottom: none;
-        }
-
-        .faq-section summary {
-            font-weight: 600;
-            font-size: 1.05em;
-            cursor: pointer;
-            color: #333;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-section summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-section summary::after {
-            content: '+';
-            font-size: 1.3em;
-            color: #FF8C00;
-            flex-shrink: 0;
-            margin-left: 10px;
-        }
-
-        .faq-section details[open] summary::after {
-            content: '-';
-        }
-
-        .faq-section details p {
-            margin-top: 10px;
-            font-size: 1em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .share-btn {
-          position: absolute;
-          bottom: 12px;
-          right: 12px;
-          background: none;
-          border: none;
-          cursor: pointer;
-          padding: 10px;
-          min-width: 44px;
-          min-height: 44px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        
-        .share-btn img {
-          height: 24px;
-          width: 24px;
-          opacity: 0.6;
-          transition: opacity 0.2s;
-        }
-        
-        .share-btn:hover img {
-          opacity: 1;
-        }
-        
-        .joke-card {
-          position: relative; /* required for absolute positioning inside */
-        }
-
-        .install-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(255, 255, 255, 0.95);
-          border-radius: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 2;
-          text-align: center;
-          padding: 20px;
-        }
-
-        
-        .install-overlay.hidden {
-          display: none;
-        }
-        
-        .install-message {
-          text-align: center;
-          color: #333;
-        }
-        
-        .install-message p {
-          font-size: 1.2em;
-          margin-bottom: 10px;
-        }
-       
-        .install-message p:last-of-type {
-          margin-bottom: 25px; /* or more/less as desired */
-        }
-
-        /* Browse Jokes Section */
-        .browse-jokes {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .browse-jokes h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .browse-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 18px;
-        }
-
-        .browse-pill {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 18px;
-            min-height: 44px;
-            background: #FFF3E0;
-            color: #333;
-            border-radius: 20px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95em;
-            transition: all 0.2s;
-        }
-
-        .browse-pill:hover {
-            background: #FFE0B2;
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(255,140,0,0.2);
-        }
-
-        .browse-all {
-            display: inline-block;
-            color: #FF8C00;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95em;
-        }
-
-        .browse-all:hover {
-            text-decoration: underline;
-        }
-
-        /* Social Proof Bar */
-        .social-proof {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-        }
-
-        .proof-item {
-            background: rgba(255,255,255,0.25);
-            padding: 6px 16px;
-            border-radius: 20px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.9em;
-            white-space: nowrap;
-        }
-
-        /* Hero CTA (above the fold) */
-        .hero-cta {
-            margin: 25px 0 10px;
-        }
-
-        .hero-cta .store-buttons-badges {
-            margin-bottom: 0;
-        }
-
-        /* Hero screenshot */
-        .hero-screenshot {
-            max-width: 280px;
-            margin: 0 auto 10px;
-            display: block;
-        }
-
-        .hero-screenshot img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-
-        /* Back to top button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 48px;
-            height: 48px;
-            background: #FF8C00;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.4em;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-2px);
-        }
-
-        /* Cross-link cards */
-        .cross-links {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .cross-links h2 {
-            color: #FF8C00;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .cross-link-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-        }
-
-        .cross-link-card {
-            display: block;
-            padding: 16px 20px;
-            background: #FFF3E0;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.2s;
-            text-align: center;
-        }
-
-        .cross-link-card:hover {
-            background: #FFE0B2;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255,140,0,0.2);
-        }
-
-        .cross-link-card .card-title {
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        .cross-link-card .card-desc {
-            font-size: 0.85em;
-            color: #666;
-        }
-
-        /* Site Navigation */
-        .site-nav {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.08);
-            padding: 0 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .site-nav-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        .site-nav-inner::-webkit-scrollbar { display: none; }
-        .site-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.85em;
-            font-weight: 500;
-            padding: 12px 10px;
-            white-space: nowrap;
-            transition: color 0.2s;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-        }
-        .site-nav a:hover, .site-nav a.active { color: #FF8C00; }
-        .site-nav .nav-sep { color: #ddd; font-size: 0.7em; user-select: none; }
-        @media (max-width: 768px) {
-            .site-nav { padding: 0 10px; }
-            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
-        }
-
+      /* ---- Landing page layout ---- */
+      .hero {
+        text-align: center;
+        padding: var(--sp-5xl) 0 var(--sp-4xl);
+      }
+
+      .hero-subtitle {
+        font-size: 1.125rem;
+        color: var(--brand-text-dim);
+        max-width: 480px;
+        margin: var(--sp-lg) auto var(--sp-2xl);
+        line-height: 1.5;
+      }
+
+      .hero-proof {
+        font-size: 0.875rem;
+        color: var(--brand-text-dim);
+        margin-top: var(--sp-lg);
+      }
+
+      .hero-proof strong {
+        color: var(--brand-text);
+      }
+
+      .hero-badge {
+        display: inline-block;
+        transition: transform 0.2s ease;
+      }
+
+      .hero-badge:hover {
+        transform: translateY(-2px);
+      }
+
+      .hero-badge img {
+        height: 52px;
+        width: auto;
+      }
+
+      /* Features grid */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--sp-xl);
+        margin-top: var(--sp-3xl);
+      }
+
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: var(--sp-md);
+      }
+
+      .feature-title {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 1.0625rem;
+        color: var(--brand-navy);
+        margin-bottom: var(--sp-xs);
+      }
+
+      .feature-desc {
+        font-size: 0.9375rem;
+        color: var(--brand-text-dim);
+        line-height: 1.5;
+      }
+
+      /* Screenshot section */
+      .screenshots {
+        margin-top: var(--sp-4xl);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .screenshots::-webkit-scrollbar { display: none; }
+
+      .screenshots-inner {
+        display: flex;
+        gap: var(--sp-lg);
+        padding: var(--sp-sm) 0;
+        width: max-content;
+      }
+
+      .screenshots-inner img {
+        height: 480px;
+        width: auto;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        flex-shrink: 0;
+      }
+
+      /* Explore section */
+      .explore-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--sp-lg);
+        margin-top: var(--sp-2xl);
+      }
+
+      .explore-link {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-md);
+        padding: var(--sp-lg);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        color: var(--brand-navy);
+        transition: box-shadow 0.2s ease, transform 0.1s ease;
+      }
+
+      .explore-link:hover {
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-2px);
+        color: var(--brand-navy);
+      }
+
+      .explore-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      /* Section spacing */
+      .section {
+        margin-top: var(--sp-5xl);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: var(--sp-sm);
+      }
+
+      .section-subtitle {
+        text-align: center;
+        color: var(--brand-text-dim);
+        font-size: 1rem;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+
+      /* Final CTA */
+      .final-cta {
+        text-align: center;
+        padding: var(--sp-4xl) var(--sp-lg);
+        margin-top: var(--sp-5xl);
+      }
+
+      .final-cta-text {
+        font-size: 1rem;
+        color: var(--brand-text-on-dark-dim);
+        margin-top: var(--sp-sm);
+        margin-bottom: var(--sp-2xl);
+      }
+
+      @media (max-width: 480px) {
+        .screenshots-inner img {
+          height: 380px;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
 </head>
 <body>
@@ -814,908 +266,177 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Site Navigation -->
+    <!-- Nav -->
     <nav class="site-nav" aria-label="Main navigation">
-        <div class="site-nav-inner">
-            <a href="/app/" class="active">Home</a>
-            <span class="nav-sep">|</span>
-            <a href="/jokes/">Dad Jokes</a>
-            <span class="nav-sep">|</span>
-            <a href="/roast/">Roast Your Friends</a>
-            <span class="nav-sep">|</span>
-            <a href="/daily/">Joke of the Day</a>
-            <span class="nav-sep">|</span>
-            <a href="/collection/">Collections</a>
-            <span class="nav-sep">|</span>
-            <a href="/compare/">Compare Apps</a>
-            <span class="nav-sep">|</span>
-            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
-        </div>
+      <div class="container">
+        <a href="/app/" class="nav-logo">
+          <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" width="36" height="36">
+          Dad Jokes
+        </a>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/daily/" >Daily Joke</a></li>
+          <li><a href="/random/">Random</a></li>
+          <li><a href="/jokes/">Browse</a></li>
+          <li><a href="/roast/">Roast</a></li>
+          <li><a href="https://apps.apple.com/app/id6743726261" class="nav-cta" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'nav'});}">Get the App</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Cross-Browser Mobile App Install Banner -->
-    <div id="mobile-app-banner" class="mobile-app-banner hidden">
-        <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon" width="48" height="48">
-        <div class="banner-text">
-            <div class="banner-title">Dad Jokes</div>
-            <div class="banner-subtitle"><span id="mobile-banner-count">20,000+</span> jokes in the app</div>
-        </div>
-        <button class="banner-button" onclick="openAppFromBanner()">OPEN</button>
-        <button class="banner-close" onclick="closeMobileBanner()">&times;</button>
-    </div>
+    <main class="page-content">
+      <div class="container container--narrow">
 
-    <div class="container">
-        <div class="logo">
-          <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes Logo" class="logo-img" width="80" height="80">
-        </div>
-        <h1>Best Dad Jokes App for iPhone</h1>
-        <p class="tagline"><span id="hero-joke-count">19,139</span> jokes across 20+ categories. Free.</p>
+        <!-- Hero -->
+        <section class="hero">
+          <h1 class="display-heading">The Best Dad Jokes App</h1>
+          <p class="hero-subtitle">19,000+ jokes. Daily notifications. AI-powered roasts. Free.</p>
+          <a href="https://apps.apple.com/app/id6743726261" class="hero-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'hero'});}">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="52">
+          </a>
+          <p class="hero-proof">Rated <strong>5.0</strong> on the App Store</p>
+        </section>
 
-        <!-- Social proof - above the fold -->
-        <div class="social-proof">
-            <span class="proof-item">4.9 App Store Rating</span>
-            <span class="proof-item">100% Free</span>
-            <span class="proof-item">Works Offline</span>
-        </div>
+        <!-- Features -->
+        <section class="section">
+          <h2 class="section-title">Everything a dad joke fan needs</h2>
+          <p class="section-subtitle">Curated by humans, enhanced by AI, delivered daily.</p>
 
-        <!-- Hero CTA - above the fold -->
-        <div class="hero-cta">
-            <div class="store-buttons-badges">
-                <a href="https://dadjokes.vip/ios" class="appstore-link" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'hero'});}">
-                    <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
-                </a>
-                <span style="cursor: not-allowed;" title="Coming soon to Android">
-                    <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-                </span>
+          <div class="features-grid">
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#128197;</div>
+              <div class="feature-title">Daily Jokes</div>
+              <p class="feature-desc">A hand-picked joke every morning, delivered straight to your lock screen.</p>
             </div>
-        </div>
-
-        <!-- Hero screenshot -->
-        <div class="hero-screenshot">
-            <picture>
-                <source srcset="/assets/screenshots/hero-one-app-small.webp" type="image/webp">
-                <img src="/assets/screenshots/hero-one-app.png" alt="Best Dad Jokes app screenshot showing joke categories" width="280" height="560" loading="eager">
-            </picture>
-        </div>
-        
-        <div class="joke-card">
-          <p class="joke-text"></p>
-          <button id="share-joke" class="share-btn">
-            <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/share.svg" alt="Share">
-          </button>
-            
-            <div id="install-overlay" class="install-overlay hidden">
-              <div class="install-message">
-                <p>Want more sweet dad jokes?</p>
-                <p><strong>Install our app to unlock limitless laughs!</strong></p>
-                <div class="store-buttons-badges">
-                  <a href="https://dadjokes.vip/ios" class="appstore-link">
-                      <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
-                    </a>
-
-                    <span style="cursor: not-allowed;" title="Coming soon to Android">
-                      <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-                    </span>
-                </div>
-              </div>
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#128193;</div>
+              <div class="feature-title">20+ Categories</div>
+              <p class="feature-desc">From classic puns to tech jokes, science, food, animals, and more.</p>
             </div>
-              <div id="snarky-message" style="display:none; text-align: center;">
-                  <p style="font-family: 'Special Elite', monospace; font-size: 1.5rem; margin-bottom: 10px;">
-                    Even clever people have to download the app.
-                  </p>
-                  <p style="font-size: 1rem;">
-                    <a href="/ios" class="appstore-link">iPhone</a> or <span style="color: #999; cursor: not-allowed;" title="Coming soon to Android">Android (coming soon)</span>
-                  </p>
-                </div>
-
-        </div>
-
-
-        <div class="features">
-            <div class="feature">
-                <h2><span id="joke-count">19,143</span> Jokes Across 20+ Categories</h2>
-                <p>From #DadLife to Animals to Work & Money - find the perfect joke for any situation. Our collection grows every day.</p>
-                <picture>
-                    <source srcset="/assets/screenshots/categories-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/categories.png" alt="Browse Joke Categories" loading="lazy" width="540" height="1080">
-                </picture>
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#128293;</div>
+              <div class="feature-title">Name Roasts</div>
+              <p class="feature-desc">AI-generated personalized roast jokes. Enter a name, get savage.</p>
             </div>
-
-            <div class="feature">
-                <h2>Get Roasted by AI</h2>
-                <p>Our AI creates personalized jokes about your name. Can you handle a little roasting?</p>
-                <picture>
-                    <source srcset="/assets/screenshots/ai-roasts-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/ai-roasts.png" alt="AI Name Jokes Feature" loading="lazy" width="540" height="1080">
-                </picture>
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#11088;</div>
+              <div class="feature-title">Rate &amp; Save</div>
+              <p class="feature-desc">Rate jokes to improve your feed. Save favorites for later.</p>
             </div>
-
-            <div class="feature">
-                <h2>Build Your Personal Collection</h2>
-                <p>Save favorites in the Joke Vault and access them anytime. Your best material, always at your fingertips</p>
-                <picture>
-                    <source srcset="/assets/screenshots/joke-vault-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/joke-vault.png" alt="Joke Vault - Save Your Favorites" loading="lazy" width="540" height="1080">
-                </picture>
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#128228;</div>
+              <div class="feature-title">Share Instantly</div>
+              <p class="feature-desc">One tap to share any joke to iMessage, WhatsApp, or social media.</p>
             </div>
-
-            <div class="feature">
-                <h2>Submit Your Own Jokes</h2>
-                <p>Got a killer dad joke? Submit it and see it featured in the app with your credit</p>
-                <picture>
-                    <source srcset="/assets/screenshots/submit-jokes-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/submit-jokes.png" alt="Submit Your Own Jokes" loading="lazy" width="540" height="1080">
-                </picture>
+            <div class="card">
+              <div class="feature-icon" aria-hidden="true">&#128276;</div>
+              <div class="feature-title">Notifications</div>
+              <p class="feature-desc">Choose your time. Get a dad joke notification every single day.</p>
             </div>
+          </div>
+        </section>
 
-            <div class="feature">
-                <h2>Make It Your Own</h2>
-                <p>Choose from 13 color themes, enable AI backgrounds, and customize your entire experience</p>
-                <picture>
-                    <source srcset="/assets/screenshots/customize-theme-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/customize-theme.png" alt="Customize App Theme" loading="lazy" width="540" height="1080">
-                </picture>
+        <!-- Screenshots -->
+        <section class="section">
+          <h2 class="section-title">See it in action</h2>
+          <div class="screenshots">
+            <div class="screenshots-inner">
+              <img src="/assets/screenshots/hero-one-app-small.webp" alt="Dad Jokes app home screen" width="240" height="480" loading="lazy">
+              <img src="/assets/screenshots/categories-small.webp" alt="Browse jokes by category" width="240" height="480" loading="lazy">
+              <img src="/assets/screenshots/ai-roasts-small.webp" alt="AI-powered name roasts" width="240" height="480" loading="lazy">
             </div>
+          </div>
+        </section>
 
-            <div class="feature">
-                <h2>Rate & Share</h2>
-                <p>Rate jokes and share your favorites. Build a collection that makes everyone laugh</p>
-                <picture>
-                    <source srcset="/assets/screenshots/rate-and-save-small.webp" type="image/webp">
-                    <img src="/assets/screenshots/rate-and-save.png" alt="Rate and Save Jokes" loading="lazy" width="540" height="1080">
-                </picture>
-            </div>
-        </div>
-        
-        <div class="cta">
-          <h2>Ready to Groan?</h2>
-          <p class="cta-subtext">
-            The best dad jokes, groan-worthy puns, and eye-rolls — all in one app.
-            Available on iPhone. Totally free.
-          </p>
-        
-          <div class="store-buttons-badges">
-            <a href="https://dadjokes.vip/ios" class="appstore-link">
-              <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
+        <!-- Explore -->
+        <section class="section">
+          <h2 class="section-title">Explore on the web</h2>
+          <p class="section-subtitle">Try before you download. Jokes are free on the web too.</p>
+
+          <div class="explore-grid">
+            <a href="/daily/" class="card explore-link">
+              <span class="explore-icon" aria-hidden="true">&#128197;</span>
+              Daily Joke
             </a>
+            <a href="/roast/" class="card explore-link">
+              <span class="explore-icon" aria-hidden="true">&#128293;</span>
+              Roast Tool
+            </a>
+            <a href="/random/" class="card explore-link">
+              <span class="explore-icon" aria-hidden="true">&#127922;</span>
+              Random Joke
+            </a>
+            <a href="/collection/" class="card explore-link">
+              <span class="explore-icon" aria-hidden="true">&#128218;</span>
+              Collections
+            </a>
+          </div>
+        </section>
 
-            <span style="cursor: not-allowed;" title="Coming soon to Android">
-              <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-            </span>
+      </div>
 
+      <!-- Final CTA -->
+      <section class="final-cta card-dark">
+        <div class="container container--narrow" style="text-align:center;">
+          <h2 class="text-on-dark">Get a dad joke every morning</h2>
+          <p class="final-cta-text">19,000+ jokes. Totally free. No ads.</p>
+          <a href="https://apps.apple.com/app/id6743726261" class="btn btn-cta" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'final_cta'});}">
+            Download Free
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-brand-name">Dad Jokes</div>
+            <p class="footer-brand-tagline">19,000+ jokes. Daily laughs. Free forever.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Content</h4>
+              <ul>
+                <li><a href="/daily/">Daily Joke</a></li>
+                <li><a href="/random/">Random Joke</a></li>
+                <li><a href="/jokes/">Browse Jokes</a></li>
+                <li><a href="/collection/">Collections</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>App</h4>
+              <ul>
+                <li><a href="https://apps.apple.com/app/id6743726261">App Store</a></li>
+                <li><a href="/support">Support</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="browse-jokes">
-            <h2>Browse Dad Jokes By Topic</h2>
-            <div class="browse-pills">
-                <a href="/collection/dad-jokes-for-weddings" class="browse-pill">Weddings</a>
-                <a href="/collection/dad-jokes-for-work" class="browse-pill">Work</a>
-                <a href="/collection/dad-jokes-for-kids" class="browse-pill">Kids</a>
-                <a href="/collection/dad-jokes-for-texting" class="browse-pill">Texting</a>
-                <a href="/collection/one-liner-dad-jokes" class="browse-pill">One-Liners</a>
-                <a href="/collection/christmas-dad-jokes" class="browse-pill">Christmas</a>
-                <a href="/collection/science-dad-jokes" class="browse-pill">Science</a>
-                <a href="/collection/fathers-day-dad-jokes" class="browse-pill">Father's Day</a>
-            </div>
-            <a href="/jokes/" class="browse-all">Browse all categories &rarr;</a>
+        <div class="footer-bottom">
+          <span class="footer-copyright">&copy; <span id="footer-year"></span> Dad Jokes. All rights reserved.</span>
+          <a href="https://apps.apple.com/app/id6743726261" class="footer-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'app',location:'footer'});}">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="120" height="40">
+          </a>
         </div>
-
-        <!-- Cross-link section for discovery -->
-        <div class="cross-links">
-            <h2>Explore More</h2>
-            <div class="cross-link-grid">
-                <a href="/roast/" class="cross-link-card">
-                    <div class="card-title">Roast Your Friends</div>
-                    <div class="card-desc">AI-powered personalized name roasts</div>
-                </a>
-                <a href="/daily/" class="cross-link-card">
-                    <div class="card-title">Joke of the Day</div>
-                    <div class="card-desc">A fresh dad joke delivered daily</div>
-                </a>
-                <a href="/collection/" class="cross-link-card">
-                    <div class="card-title">Joke Collections</div>
-                    <div class="card-desc">Browse curated joke lists by topic</div>
-                </a>
-                <a href="/compare/" class="cross-link-card">
-                    <div class="card-title">App Comparison</div>
-                    <div class="card-desc">See how we stack up vs other apps</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-
-            <details>
-                <summary>How many jokes are in the Dad Jokes app?</summary>
-                <p>We have 19,139 jokes and counting! Our collection includes 2,396 classic dad jokes and 16,743 AI-generated personalized name jokes across 20+ categories including animals, food, work & money, seasonal, and more.</p>
-            </details>
-
-            <details>
-                <summary>Is the Dad Jokes app free?</summary>
-                <p>Yes! Dad Jokes is completely free to download and use on iOS. You get access to all 19,139+ jokes, daily featured jokes, and the ability to save your favorites. We also offer premium features like AI-generated personalized name jokes, custom color themes, and an ad-free experience.</p>
-            </details>
-
-            <details>
-                <summary>What are dad jokes?</summary>
-                <p>Dad jokes are wholesome, family-friendly jokes known for their puns, wordplay, and groan-worthy humor. They're the kind of jokes dads tell that make everyone roll their eyes but secretly smile. Think clean humor with clever punchlines that anyone can enjoy.</p>
-            </details>
-
-            <details>
-                <summary>What platforms is the Dad Jokes app available on?</summary>
-                <p>Dad Jokes is currently available on iOS (iPhone and iPad). You can download it for free from the Apple App Store. An Android version is planned for the future.</p>
-            </details>
-
-            <details>
-                <summary>Can I submit my own dad jokes to the app?</summary>
-                <p>Yes! We welcome user-submitted jokes through the app. Simply tap the submit button in the app to share your best dad jokes with the community. All submissions are reviewed before being added to ensure they meet our family-friendly standards.</p>
-            </details>
-
-            <details>
-                <summary>What categories of jokes are available?</summary>
-                <p>We have 20+ joke categories including: Animals, Around the House, Clothing, Dad Life, Family, Food, Holidays, Music, Nature, Puns, Science, Seasonal, Sports, Technology, Travel, Wife, Work & Money, and more. Each category is curated with the best dad jokes in that theme.</p>
-            </details>
-
-            <details>
-                <summary>Do I need an internet connection to use the app?</summary>
-                <p>The app works both online and offline! We cache thousands of jokes locally so you can enjoy dad jokes even without an internet connection. Daily featured jokes and AI-generated personalized jokes require internet access.</p>
-            </details>
-
-            <details>
-                <summary>What are AI-generated name jokes?</summary>
-                <p>AI-generated name jokes are personalized jokes about your name created using artificial intelligence. Enter any name and get custom jokes that playfully roast or celebrate that person. It's a unique feature that makes sharing jokes even more fun and personal.</p>
-            </details>
-        </div>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
-
-    <footer class="site-footer">
-      <div class="footer-links">
-        <a href="/app">App</a>
-        <a href="/jokes">Jokes</a>
-        <a href="/roast/">Roast</a>
-        <a href="/daily/">Daily</a>
-        <a href="/collection/">Collections</a>
-        <a href="/compare/">Compare</a>
-        <a href="/support">Support</a>
-        <a href="/privacy">Privacy</a>
       </div>
-    
-      <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios" class="appstore-link">
-          <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
-        </a>
-
-        <span style="cursor: not-allowed;" title="Coming soon to Android">
-          <img class="store-badge disabled" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play - Coming Soon" width="168" height="50">
-        </span>
-      </div>
-    
-      <div class="footer-copy">
-        © <span id="year"></span> Dad Jokes. All rights reserved.
-      </div>
-
     </footer>
-    
+
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      // Footer year
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+      // Mobile nav toggle
+      document.getElementById('nav-toggle').addEventListener('click', function() {
+        var links = document.getElementById('nav-links');
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        links.classList.toggle('open');
+      });
     </script>
-
-    <!-- Structured Data - Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Dad Jokes",
-      "url": "https://dadjokes.vip",
-      "description": "The most jokes out there... by a lot. Made by dads, for dads.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Best Dad Jokes",
-        "legalName": "Kedy Apps",
-        "url": "https://dadjokes.vip",
-        "logo": "https://dadjokes.vip/assets/android-chrome-192x192.png",
-        "description": "The ultimate dad jokes app with 20,000+ jokes across 20+ categories. Daily featured jokes, AI-generated personalized jokes, and more. Made by dads, for dads.",
-        "sameAs": [
-          "https://apps.apple.com/app/id6743726261",
-          "https://play.google.com/store/apps/details?id=com.kedy.dadJokes"
-        ]
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://dadjokes.vip/app?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- Structured Data - BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dadjokes.vip"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "App",
-        "item": "https://dadjokes.vip/app/"
-      }]
-    }
-    </script>
-
-    <!-- Structured Data - SpeakableSpecification for dynamic joke content -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Best Dad Jokes App",
-      "url": "https://dadjokes.vip/app/",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [".joke-text", "h1", ".tagline"]
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Dad Jokes",
-      "applicationCategory": "EntertainmentApplication",
-      "operatingSystem": "iOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "Get your daily dose of dad jokes! Over 19,143 jokes across 20+ categories. Rate, save, and share your favorites. Premium features include AI-generated personalized jokes, custom themes, and an ad-free experience."
-    }
-    </script>
-
-    <!-- FAQ Schema for AI Tools and Rich Results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How many jokes are in the Dad Jokes app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We have 19,139 jokes and counting! Our collection includes 2,396 classic dad jokes and 16,743 AI-generated personalized name jokes across 20+ categories including animals, food, work & money, seasonal, and more."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Is the Dad Jokes app free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! Dad Jokes is completely free to download and use on iOS. You get access to all 19,139+ jokes, daily featured jokes, and the ability to save your favorites. We also offer premium features like AI-generated personalized name jokes, custom color themes, and an ad-free experience."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What are dad jokes?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dad jokes are wholesome, family-friendly jokes known for their puns, wordplay, and groan-worthy humor. They're the kind of jokes dads tell that make everyone roll their eyes but secretly smile. Think clean humor with clever punchlines that anyone can enjoy."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What platforms is the Dad Jokes app available on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dad Jokes is currently available on iOS (iPhone and iPad). You can download it for free from the Apple App Store. An Android version is planned for the future."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can I submit my own dad jokes to the app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! We welcome user-submitted jokes through the app. Simply tap the submit button in the app to share your best dad jokes with the community. All submissions are reviewed before being added to ensure they meet our family-friendly standards."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What categories of jokes are available?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We have 20+ joke categories including: Animals, Around the House, Clothing, Dad Life, Family, Food, Holidays, Music, Nature, Puns, Science, Seasonal, Sports, Technology, Travel, Wife, Work & Money, and more. Each category is curated with the best dad jokes in that theme."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Do I need an internet connection to use the app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The app works both online and offline! We cache thousands of jokes locally so you can enjoy dad jokes even without an internet connection. Daily featured jokes and AI-generated personalized jokes require internet access."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What are AI-generated name jokes?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AI-generated name jokes are personalized jokes about your name created using artificial intelligence. Enter any name and get custom jokes that playfully roast or celebrate that person. It's a unique feature that makes sharing jokes even more fun and personal."
-        }
-      }]
-    }
-    </script>
-
-
-<!-- Firebase Featured Joke Loader -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getFirestore, collection, getDocs, query, where, getCountFromServer } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyBXlF5rNZJk42zLA7A-A7N9QcuqOmECzUk",
-    authDomain: "dad-jokes-76c85.firebaseapp.com",
-    projectId: "dad-jokes-76c85",
-    storageBucket: "dad-jokes-76c85.firebasestorage.app",
-    messagingSenderId: "165634926020",
-    appId: "1:165634926020:web:3f8ad9f397da9c3574f091",
-    measurementId: "G-7DJD06WV2R"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // Load total joke count
-  async function loadJokeCount() {
-    try {
-      const jokesRef = collection(db, "jokes", "all", "jokes");
-      const jokesSnapshot = await getCountFromServer(jokesRef);
-      const jokesCount = jokesSnapshot.data().count;
-
-      // Try to get name jokes count
-      let nameJokesCount = 0;
-      try {
-        const nameJokesRef = collection(db, "name_jokes");
-        const nameJokesSnapshot = await getCountFromServer(nameJokesRef);
-        nameJokesCount = nameJokesSnapshot.data().count;
-      } catch (e) {
-        console.log("Name jokes collection not found or inaccessible");
-      }
-
-      const totalCount = jokesCount + nameJokesCount;
-      const formattedCount = totalCount.toLocaleString();
-
-      // Update all count elements
-      const countElements = ['joke-count', 'mobile-banner-count', 'hero-joke-count'];
-      countElements.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.textContent = formattedCount;
-        }
-      });
-    } catch (error) {
-      console.error("Error loading joke count:", error);
-    }
-  }
-
-  async function loadRandomFeaturedJoke() {
-    try {
-      const jokesRef = collection(db, "jokes", "all", "jokes");
-      const q = query(jokesRef, where("rating", "==", 5));
-      const snapshot = await getDocs(q);
-      const jokes = snapshot.docs.map(doc => doc.data().text);
-
-      if (jokes.length === 0) {
-        console.warn("No jokes found with rating 5.");
-        return;
-      }
-
-      let randomJoke;
-      const lastJoke = localStorage.getItem("lastJoke");
-    
-      do {
-        randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-      } while (randomJoke === lastJoke && jokes.length > 1);
-    
-      localStorage.setItem("lastJoke", randomJoke);
-
-        let jokeViews = parseInt(localStorage.getItem("jokeViews") || "0");
-        jokeViews++;
-        localStorage.setItem("jokeViews", jokeViews);
-        
-        const overlay = document.getElementById("install-overlay");
-        if (jokeViews >= 3 && overlay) {
-          overlay.classList.remove("hidden");
-        }
-
-
-
-      const jokeCard = document.querySelector(".joke-card");
-      if (jokeCard) {
-        const p = jokeCard.querySelector(".joke-text");
-        p.textContent = "";
-        p.className = "joke-text";
-        jokeCard.appendChild(p);
-        
-        let i = 0;
-        const speed = 50; // milliseconds between letters
-        
-        function typeWriter() {
-          if (i < randomJoke.length) {
-            const char = randomJoke.charAt(i);
-            p.textContent += char;
-            i++;
-        
-            const prev2 = randomJoke.charAt(i - 2);
-            const prev3 = randomJoke.charAt(i - 3);
-            const prev4 = randomJoke.charAt(i - 4);
-        
-            // Primary pause after "? " or "... "
-            if (
-              char === ' ' &&
-              !typeWriter.hasPaused &&
-              (
-                prev2 === '?' || // question
-                (prev4 === '.' && prev3 === '.' && prev2 === '.') // ellipsis
-              )
-            ) {
-              typeWriter.hasPaused = true;
-              setTimeout(typeWriter, 2000);
-              return;
-            }
-        
-            // Smarter backup pause: pause before final sentence
-            if (
-              !typeWriter.hasPaused &&
-              i >= 2 &&
-              randomJoke.charAt(i - 1) === '.' &&
-              randomJoke.charAt(i) === ' '
-            ) {
-              const remaining = randomJoke.slice(i + 1);
-              const nextWordMatch = remaining.match(/^[A-Z][^.?!]*[.?!]/); // find next sentence
-              const remainingAfterNextSentence = remaining.slice(nextWordMatch?.[0]?.length || 0);
-            
-              // If there are no more full sentences after this one, pause before the punchline
-              if (!/[.?!]/.test(remainingAfterNextSentence)) {
-                typeWriter.hasPaused = true;
-                setTimeout(typeWriter, 2000);
-                return;
-              }
-            }
-
-
-        
-            setTimeout(typeWriter, speed);
-          } else {
-            p.classList.remove("joke-text");
-            p.classList.add("joke-text", "no-cursor");
-            const shareBtn = document.getElementById("share-joke");
-            if (shareBtn) {
-              shareBtn.style.display = "inline-block";
-              if (navigator.share) {
-                shareBtn.onclick = () => {
-                  navigator.share({
-                    title: "Dad Joke of the Day",
-                    text: randomJoke,
-                    url: "https://dadjokes.vip/app"
-                  }).catch((err) => {
-                    console.error("Share failed:", err);
-                  });
-                };
-              }
-            }
-          }
-        }
-        typeWriter.hasPaused = false; // flag to only pause once
-        
-        typeWriter();
-
-      }
-    } catch (error) {
-      console.error("Error loading joke:", error);
-    }
-  }
-
-  window.addEventListener("DOMContentLoaded", () => {
-    loadRandomFeaturedJoke();
-    loadJokeCount();
-  });
-</script>
-
-<script>
-  document.querySelectorAll(".appstore-link").forEach(el => {
-    el.href = "https://apps.apple.com/app/id6743726261";
-  });
-
-  document.querySelectorAll(".playstore-link").forEach(el => {
-    el.href = "https://play.google.com/store/apps/details?id=com.kedy.dadJokes";
-  });
-</script>
-
-<script>
-  const jokeCardObserver = new MutationObserver(() => {
-    const overlay = document.getElementById("install-overlay");
-    const snarky = document.getElementById("snarky-message");
-
-    if (!overlay || overlay.classList.contains("hidden")) return;
-
-    const isOverlayPresent = document.body.contains(overlay);
-    if (!isOverlayPresent) {
-      snarky.style.display = "block";
-    }
-  });
-
-  const jokeCard = document.querySelector(".joke-card");
-  if (jokeCard) {
-    jokeCardObserver.observe(jokeCard, { childList: true, subtree: true });
-  }
-</script>
-
-<script>
-  const observer = new MutationObserver(() => {
-    const overlay = document.getElementById('install-overlay');
-    const snarky = document.getElementById('snarky-message');
-    const jokeText = document.querySelector('.joke-text');
-    const shareBtn = document.getElementById('share-joke');
-
-    if (!overlay && snarky && jokeText) {
-      snarky.style.display = 'block';
-      jokeText.innerHTML = '';
-      if (shareBtn) shareBtn.style.display = 'none';
-    }
-  });
-
-  observer.observe(document.querySelector('.joke-card'), {
-    childList: true,
-    subtree: true
-  });
-</script>
-
-<script>
-  // Mobile App Banner Management
-  (function() {
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    const banner = document.getElementById('mobile-app-banner');
-    const bannerDismissed = localStorage.getItem('appBannerDismissed');
-
-    if (isMobile && !bannerDismissed) {
-      banner.classList.remove('hidden');
-      document.body.classList.add('banner-active');
-      setTimeout(() => banner.classList.add('show'), 300);
-    }
-  })();
-
-  function closeMobileBanner() {
-    const banner = document.getElementById('mobile-app-banner');
-    banner.classList.remove('show');
-    document.body.classList.remove('banner-active');
-    localStorage.setItem('appBannerDismissed', Date.now() + (7 * 24 * 60 * 60 * 1000));
-    setTimeout(() => banner.classList.add('hidden'), 300);
-  }
-
-  function openAppFromBanner() {
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isAndroid = /Android/.test(navigator.userAgent);
-
-    if (isIOS) {
-      window.location.href = 'dadjokesvip://';
-      setTimeout(() => {
-        window.location.href = 'https://apps.apple.com/app/id6743726261';
-      }, 1500);
-    } else if (isAndroid) {
-      window.location.href = 'dadjokesvip://';
-      setTimeout(() => {
-        window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
-      }, 1500);
-    } else {
-      window.location.href = '/app';
-    }
-  }
-</script>
-
-<!-- Analytics Implementation -->
-<script>
-  // Analytics Configuration
-  const ANALYTICS_CONFIG = {
-    mixpanel: {
-      token: '62127065033cd52e52a7437836f57514',
-      debug: false
-    },
-    ga4: {
-      measurementId: 'G-JRRXTJP94X'
-    }
-  };
-
-  // Initialize Mixpanel
-  (function(c,a){if(!a.__SV){var b,d,h,e;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(a,b){var d=b.split(".");2==d.length&&(a=a[d[0]],b=d[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var f=a;"undefined"!==typeof g?f=a[g]=[]:g="mixpanel";f.people=f.people||[];f.toString=function(a){var b="mixpanel";"mixpanel"!==g&&(b+="."+g);a||(b+=" (stub)");return b};f.people.toString=function(){return f.toString(1)+".people (stub)"};h="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");for(e=0;e<h.length;e++)c(f,h[e]);a._i.push([b,d,g])};a.__SV=1.2;}})(document,window.mixpanel||[]);
-
-  // Initialize Mixpanel with config
-  mixpanel.init(ANALYTICS_CONFIG.mixpanel.token, {
-    debug: ANALYTICS_CONFIG.mixpanel.debug,
-    track_pageview: true,
-    persistence: 'localStorage'
-  });
-
-  // Track page view
-  mixpanel.track('Page View', {
-    page_title: document.title,
-    page_url: window.location.href,
-    referrer: document.referrer,
-    user_agent: navigator.userAgent,
-    timestamp: new Date().toISOString()
-  });
-
-  // App Store Button Tracking Function
-  function trackAppStoreClick(platform, placement) {
-    // Mixpanel tracking
-    mixpanel.track('App Store Button Clicked', {
-      platform: platform,
-      placement: placement,
-      page_url: window.location.href,
-      timestamp: new Date().toISOString()
-    });
-
-    // GA4 direct tracking
-    if (typeof gtag === 'function') {
-      gtag('event', 'app_store_click', {
-        platform: platform,
-        placement: placement,
-        event_category: 'App Install',
-        event_label: platform + '_' + placement,
-        custom_parameter_1: 'app_install_funnel'
-      });
-    }
-
-    // GTM dataLayer push
-    if (typeof window.dataLayer !== 'undefined') {
-      window.dataLayer.push({
-        event: 'app_store_click',
-        platform: platform,
-        placement: placement,
-        event_category: 'App Install'
-      });
-    }
-  }
-
-  // Joke Share Tracking Function
-  function trackJokeShare(jokeText, method) {
-    mixpanel.track('Joke Shared from Web', {
-      joke_length: jokeText ? jokeText.length : 0,
-      share_method: method,
-      page_url: window.location.href,
-      timestamp: new Date().toISOString()
-    });
-
-    if (typeof window.dataLayer !== 'undefined') {
-      window.dataLayer.push({
-        event: 'joke_share',
-        share_method: method,
-        event_category: 'Engagement'
-      });
-    }
-  }
-
-  // Install Overlay Shown Tracking
-  function trackInstallOverlayShown() {
-    mixpanel.track('Install Overlay Shown', {
-      page_url: window.location.href,
-      timestamp: new Date().toISOString()
-    });
-
-    if (typeof window.dataLayer !== 'undefined') {
-      window.dataLayer.push({
-        event: 'install_overlay_shown',
-        event_category: 'App Install Funnel'
-      });
-    }
-  }
-
-  // Scroll Depth Tracking
-  let maxScrollDepth = 0;
-  function trackScrollDepth() {
-    const scrolled = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-    
-    if (scrolled > maxScrollDepth) {
-      maxScrollDepth = scrolled;
-      
-      // Track at 25%, 50%, 75%, 90% milestones
-      if ([25, 50, 75, 90].includes(scrolled)) {
-        mixpanel.track('Scroll Depth', {
-          depth_percentage: scrolled,
-          page_url: window.location.href
-        });
-
-        if (typeof window.dataLayer !== 'undefined') {
-          window.dataLayer.push({
-            event: 'scroll_depth',
-            depth_percentage: scrolled,
-            event_category: 'Engagement'
-          });
-        }
-      }
-    }
-  }
-
-  // Add event listeners when DOM is loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Track app store button clicks
-    document.querySelectorAll('.appstore-link').forEach(function(link, index) {
-      link.addEventListener('click', function() {
-        trackAppStoreClick('ios', 'button_' + (index + 1));
-      });
-    });
-
-    document.querySelectorAll('.playstore-link').forEach(function(link, index) {
-      link.addEventListener('click', function() {
-        trackAppStoreClick('android', 'button_' + (index + 1));
-      });
-    });
-
-    // Track joke sharing
-    const shareBtn = document.getElementById('share-joke');
-    if (shareBtn) {
-      shareBtn.addEventListener('click', function() {
-        const jokeText = document.querySelector('.joke-text')?.textContent || '';
-        trackJokeShare(jokeText, 'native_share');
-      });
-    }
-
-    // Track scroll depth
-    window.addEventListener('scroll', trackScrollDepth);
-
-    // Track install overlay when shown
-    const observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-          const target = mutation.target;
-          if (target.id === 'install-overlay' && !target.classList.contains('hidden')) {
-            trackInstallOverlayShown();
-          }
-        }
-      });
-    });
-
-    const installOverlay = document.getElementById('install-overlay');
-    if (installOverlay) {
-      observer.observe(installOverlay, {
-        attributes: true,
-        attributeFilter: ['class']
-      });
-    }
-
-    // Back to top button visibility
-    var backToTopBtn = document.getElementById('back-to-top');
-    if (backToTopBtn) {
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 600) {
-          backToTopBtn.classList.add('visible');
-        } else {
-          backToTopBtn.classList.remove('visible');
-        }
-      });
-    }
-  });
-
-  // Track time on page
-  let startTime = Date.now();
-  window.addEventListener('beforeunload', function() {
-    const timeSpent = Math.round((Date.now() - startTime) / 1000);
-    mixpanel.track('Page Exit', {
-      time_spent_seconds: timeSpent,
-      page_url: window.location.href
-    });
-  });
-
-  // Set user properties
-  mixpanel.people.set({
-    '$browser': navigator.userAgent,
-    '$current_url': window.location.href,
-    'Page Title': document.title,
-    'Visit Date': new Date().toISOString().split('T')[0]
-  });
-
-</script>
-
-    
 </body>
 </html>

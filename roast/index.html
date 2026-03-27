@@ -29,10 +29,10 @@
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/roast/">
 
-    <!-- Resource hints (must come before font link) -->
+    <!-- Resource hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -141,64 +141,21 @@
     }
     </script>
 
+    <!-- Brand Design System -->
+    <link rel="stylesheet" href="/assets/css/brand.css">
+
+    <!-- Page-specific styles -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #FF6B35 0%, #FFA500 50%, #FFD700 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Breadcrumb */
-        .breadcrumb {
+        /* Hero section layout */
+        .roast-hero {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 0.9em;
+            padding: var(--sp-4xl) 0 var(--sp-2xl);
         }
 
-        .breadcrumb a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .breadcrumb span {
-            color: rgba(255,255,255,0.6);
-            margin: 0 8px;
-        }
-
-        .breadcrumb .current {
-            color: white;
-            font-weight: 600;
-        }
-
-        /* Hero */
-        .hero {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .hero-emoji {
-            font-size: 4em;
-            margin-bottom: 10px;
+        .roast-hero-emoji {
+            font-size: 4rem;
             display: block;
+            margin-bottom: var(--sp-lg);
             animation: flame 1.5s ease-in-out infinite alternate;
         }
 
@@ -207,428 +164,251 @@
             100% { transform: scale(1.1) rotate(3deg); }
         }
 
-        h1 {
-            font-size: 2.4em;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            margin-bottom: 10px;
-            line-height: 1.2;
+        .roast-hero .display-heading {
+            margin-bottom: var(--sp-md);
         }
 
-        .subhead {
-            font-size: 1.2em;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 30px;
+        .roast-subhead {
+            font-size: 1.125rem;
+            margin-bottom: var(--sp-3xl);
         }
 
         /* Input area */
-        .input-area {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            margin-bottom: 15px;
+        .roast-input-area {
+            padding: var(--sp-2xl);
+            margin-bottom: var(--sp-lg);
         }
 
-        .input-group {
+        .roast-input-group {
             display: flex;
-            gap: 12px;
-            margin-bottom: 0;
+            gap: var(--sp-md);
         }
 
-        .name-input {
+        .roast-name-input {
             flex: 1;
-            padding: 16px 20px;
-            font-size: max(16px, 1.2em);
-            border: 3px solid #eee;
-            border-radius: 12px;
+            padding: var(--sp-lg) var(--sp-xl);
+            font-family: var(--font-body);
+            font-size: max(16px, 1.125rem);
+            border: 2px solid var(--brand-border);
+            border-radius: var(--radius-md);
             outline: none;
-            transition: border-color 0.3s;
+            transition: border-color 0.2s ease;
             min-height: 48px;
+            background: var(--brand-surface);
+            color: var(--brand-text);
         }
 
-        .name-input:focus {
-            border-color: #FF6B35;
+        .roast-name-input:focus {
+            border-color: var(--brand-orange);
         }
 
-        .name-input::placeholder {
-            color: #bbb;
+        .roast-name-input::placeholder {
+            color: var(--brand-text-dim);
         }
 
-        .roast-btn {
-            padding: 16px 28px;
-            font-size: 1.1em;
-            font-weight: 700;
-            color: white;
-            background: linear-gradient(135deg, #FF6B35, #e84118);
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            white-space: nowrap;
-            letter-spacing: 0.5px;
-            min-height: 48px;
+        /* Suggestion pills */
+        .roast-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--sp-sm);
+            justify-content: center;
+            margin-bottom: var(--sp-md);
         }
 
-        .roast-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(232,65,24,0.4);
-        }
-
-        .roast-btn:active {
-            transform: translateY(0);
-        }
-
-        .suggestions {
-            text-align: center;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.95em;
-            margin-bottom: 10px;
-        }
-
-        .suggestions strong {
-            color: white;
-        }
-
-        .suggest-link {
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 2px dotted rgba(255,255,255,0.4);
-            cursor: pointer;
-            transition: border-color 0.2s;
-            display: inline-block;
-            padding: 8px 4px;
-            min-height: 44px;
-            line-height: 28px;
-        }
-
-        .suggest-link:hover {
-            border-color: white;
-        }
-
-        .social-proof {
-            text-align: center;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.9em;
+        .roast-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--sp-sm) var(--sp-lg);
+            background: var(--brand-surface);
+            border: 1px solid var(--brand-border);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 0.9375rem;
             font-weight: 600;
-            margin-bottom: 40px;
+            color: var(--brand-orange);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            min-height: 40px;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        /* Results */
-        .results-section {
+        .roast-pill:hover {
+            background: var(--brand-orange);
+            color: #FFFFFF;
+            border-color: var(--brand-orange);
+        }
+
+        .roast-social-proof {
+            text-align: center;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            margin-bottom: var(--sp-3xl);
+        }
+
+        /* Results section */
+        .roast-results {
             display: none;
         }
 
-        .results-section.active {
+        .roast-results.active {
             display: block;
         }
 
-        .results-header {
+        .roast-results-header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: var(--sp-2xl);
         }
 
-        .results-header h2 {
-            font-size: 1.8em;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-
-        .roast-card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        /* Roast card entry animation */
+        .roast-card-anim {
             opacity: 0;
             transform: translateY(20px);
-            animation: cardIn 0.4s ease forwards;
+            animation: roastCardIn 0.4s ease forwards;
         }
 
-        .roast-card:nth-child(1) { animation-delay: 0.1s; }
-        .roast-card:nth-child(2) { animation-delay: 0.25s; }
-        .roast-card:nth-child(3) { animation-delay: 0.4s; }
-        .roast-card:nth-child(4) { animation-delay: 0.55s; }
-        .roast-card:nth-child(5) { animation-delay: 0.7s; }
+        .roast-card-anim:nth-child(1) { animation-delay: 0.1s; }
+        .roast-card-anim:nth-child(2) { animation-delay: 0.25s; }
+        .roast-card-anim:nth-child(3) { animation-delay: 0.4s; }
+        .roast-card-anim:nth-child(4) { animation-delay: 0.55s; }
+        .roast-card-anim:nth-child(5) { animation-delay: 0.7s; }
 
-        @keyframes cardIn {
+        @keyframes roastCardIn {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        .roast-text {
-            font-size: 1.15em;
-            line-height: 1.5;
-            color: #222;
-            margin-bottom: 16px;
+        .roast-card-text {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            color: var(--brand-text);
+            margin-bottom: var(--sp-lg);
         }
 
-        .roast-actions {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+        /* Blurred gated cards */
+        .roast-card-gated {
+            filter: blur(6px);
+            user-select: none;
+            pointer-events: none;
         }
 
-        .action-btn {
-            padding: 12px 20px;
-            font-size: 0.95em;
-            font-weight: 600;
-            border: 2px solid #eee;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-            background: white;
-            color: #555;
-            min-height: 48px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .action-btn:hover {
-            border-color: #FF6B35;
-            color: #FF6B35;
-        }
-
-        .action-btn.copied {
-            border-color: #27ae60;
-            color: #27ae60;
-            background: #f0fff4;
-        }
-
-        .action-btn.share-btn {
-            background: linear-gradient(135deg, #FF6B35, #e84118);
-            color: white;
-            border-color: #FF6B35;
-            flex: 1;
+        .roast-gate-banner {
             text-align: center;
-            justify-content: center;
+            padding: var(--sp-2xl);
+            margin-bottom: var(--sp-lg);
         }
 
-        .action-btn.share-btn:hover {
-            background: linear-gradient(135deg, #e84118, #c73615);
-            border-color: #e84118;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(232,65,24,0.3);
+        .roast-gate-banner p {
+            margin-bottom: var(--sp-lg);
+            font-size: 1.0625rem;
         }
 
         /* Results footer */
-        .results-footer {
+        .roast-results-footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: var(--sp-2xl);
         }
 
-        .share-page-btn {
-            display: block;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto 15px;
-            padding: 16px 32px;
-            background: linear-gradient(135deg, #FF6B35, #e84118);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 4px 15px rgba(232,65,24,0.3);
-            min-height: 48px;
-        }
-
-        .share-page-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(232,65,24,0.4);
-        }
-
-        .see-all-link {
-            display: inline-block;
-            padding: 14px 28px;
-            background: white;
-            color: #FF6B35;
-            font-weight: 700;
-            font-size: 1.05em;
-            border-radius: 12px;
-            text-decoration: none;
-            margin-bottom: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        .see-all-link:hover {
-            transform: translateY(-2px);
-        }
-
-        .reset-btn {
-            display: block;
-            margin: 15px auto 0;
-            padding: 16px 32px;
-            background: white;
-            color: #FF6B35;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-
-        .reset-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
-
-        /* Not found */
-        .not-found {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
+        /* Not found section */
+        .roast-not-found {
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        .not-found h3 {
-            font-size: 1.3em;
-            color: #333;
-            margin-bottom: 12px;
-        }
-
-        .not-found p {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 1.05em;
-        }
-
-        .download-btn {
-            display: inline-block;
-            padding: 14px 32px;
-            background: linear-gradient(135deg, #FF6B35, #e84118);
-            color: white;
-            font-weight: 700;
-            font-size: 1.1em;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
+        .roast-not-found p {
+            margin-bottom: var(--sp-xl);
+            font-size: 1.0625rem;
         }
 
         /* SEO content section */
-        .seo-content {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            margin-top: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .roast-seo {
+            margin-top: var(--sp-3xl);
         }
 
-        .seo-content h2 {
-            font-size: 1.7em;
-            color: #222;
-            margin-bottom: 20px;
-        }
-
-        .seo-content p {
-            color: #444;
-            font-size: 1.05em;
-            margin-bottom: 16px;
+        .roast-seo p {
+            font-size: 1.0625rem;
+            margin-bottom: var(--sp-lg);
             line-height: 1.7;
         }
 
-        .seo-content a {
-            color: #FF6B35;
-            text-decoration: none;
+        .roast-seo a {
+            color: var(--brand-orange);
             font-weight: 600;
         }
 
-        .seo-content a:hover {
+        .roast-seo a:hover {
+            color: var(--brand-orange-hover);
             text-decoration: underline;
         }
 
-        .popular-names {
+        /* Popular names grid */
+        .roast-popular-names {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
+            gap: var(--sp-sm);
             justify-content: center;
+            margin-top: var(--sp-xl);
         }
 
-        .popular-names a {
-            padding: 10px 16px;
-            background: #fff5f0;
-            color: #FF6B35;
-            border-radius: 20px;
+        .roast-popular-names a {
+            padding: var(--sp-sm) var(--sp-lg);
+            background: var(--brand-surface);
+            color: var(--brand-orange);
+            border-radius: var(--radius-full);
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.95em;
-            transition: all 0.2s;
-            border: 1px solid #ffe0d0;
+            font-size: 0.9375rem;
+            transition: all 0.2s ease;
+            border: 1px solid var(--brand-border);
             min-height: 44px;
             display: inline-flex;
             align-items: center;
         }
 
-        .popular-names a:hover {
-            background: #FF6B35;
-            color: white;
+        .roast-popular-names a:hover {
+            background: var(--brand-orange);
+            color: #FFFFFF;
+            border-color: var(--brand-orange);
         }
 
-        /* FAQ section */
-        .faq-section {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            margin-top: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        /* FAQ */
+        .roast-faq-item {
+            border-bottom: 1px solid var(--brand-border);
+            padding: var(--sp-xl) 0;
         }
 
-        .faq-section h2 {
-            font-size: 1.5em;
-            color: #222;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #eee;
-            padding: 18px 0;
-        }
-
-        .faq-item:last-child {
+        .roast-faq-item:last-child {
             border-bottom: none;
         }
 
-        .faq-question {
+        .roast-faq-question {
             font-weight: 700;
-            font-size: 1.05em;
-            color: #222;
+            font-size: 1.0625rem;
+            color: var(--brand-text);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .faq-question::after {
+        .roast-faq-question::after {
             content: '+';
             font-size: 1.4em;
-            color: #FF6B35;
+            color: var(--brand-orange);
             font-weight: 300;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: var(--sp-lg);
         }
 
-        .faq-item.open .faq-question::after {
+        .roast-faq-item.open .roast-faq-question::after {
             transform: rotate(45deg);
         }
 
-        .faq-answer {
-            color: #555;
-            font-size: 1em;
+        .roast-faq-answer {
+            font-size: 1rem;
             line-height: 1.7;
             max-height: 0;
             overflow: hidden;
@@ -636,111 +416,38 @@
             padding-top: 0;
         }
 
-        .faq-item.open .faq-answer {
+        .roast-faq-item.open .roast-faq-answer {
             max-height: 300px;
-            padding-top: 12px;
+            padding-top: var(--sp-md);
         }
 
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px 0;
-            color: rgba(255,255,255,0.7);
-            font-size: 0.9em;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
+        /* Loading spinner */
+        .roast-spinner {
             display: inline-block;
-            padding: 10px 4px;
-            min-height: 44px;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Loading state */
-        .loading-spinner {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 3px solid rgba(255,255,255,0.3);
-            border-top-color: white;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: #FFFFFF;
             border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-right: 8px;
+            animation: roastSpin 0.8s linear infinite;
+            margin-right: var(--sp-sm);
             vertical-align: middle;
         }
 
-        @keyframes spin {
+        @keyframes roastSpin {
             to { transform: rotate(360deg); }
         }
 
         /* Responsive */
         @media (max-width: 600px) {
-            h1 { font-size: 1.8em; }
-
-            .input-group {
+            .roast-input-group {
                 flex-direction: column;
             }
 
-            .roast-btn {
-                width: 100%;
-            }
-
-            .seo-content, .faq-section {
-                padding: 25px 20px;
-            }
-
-            .container {
-                padding: 25px 16px;
+            .roast-input-area {
+                padding: var(--sp-xl);
             }
         }
-        /* Site Navigation */
-        .site-nav {
-            background: rgba(22,33,62,0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding: 0 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .site-nav-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-        }
-        .site-nav-inner::-webkit-scrollbar { display: none; }
-        .site-nav a {
-            color: #999;
-            text-decoration: none;
-            font-size: 0.85em;
-            font-weight: 500;
-            padding: 12px 10px;
-            white-space: nowrap;
-            transition: color 0.2s;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-        }
-        .site-nav a:hover, .site-nav a.active { color: #e94560; }
-        .site-nav .nav-sep { color: #444; font-size: 0.7em; user-select: none; }
-        @media (max-width: 768px) {
-            .site-nav { padding: 0 10px; }
-            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
-        }
-
     </style>
 </head>
 <body>
@@ -748,187 +455,265 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV6S6MZ6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <!-- Site Navigation -->
+    <!-- Navigation -->
     <nav class="site-nav" aria-label="Main navigation">
-        <div class="site-nav-inner">
-            <a href="/app/">Home</a>
-            <span class="nav-sep">|</span>
-            <a href="/jokes/">Dad Jokes</a>
-            <span class="nav-sep">|</span>
-            <a href="/roast/" class="active">Roast Your Friends</a>
-            <span class="nav-sep">|</span>
-            <a href="/daily/">Joke of the Day</a>
-            <span class="nav-sep">|</span>
-            <a href="/collection/">Collections</a>
-            <span class="nav-sep">|</span>
-            <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'header'});}">Get the App</a>
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <span class="nav-logo-emoji" aria-hidden="true">&#128514;</span>
+                Dad Jokes
+            </a>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/jokes/">Dad Jokes</a></li>
+                <li><a href="/roast/" class="active">Roast</a></li>
+                <li><a href="/daily/">Daily</a></li>
+                <li><a href="/collection/">Collections</a></li>
+                <li><a href="https://apps.apple.com/app/id6743726261" class="nav-cta" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'nav'});}">Get the App</a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            <span>›</span>
-            <span class="current">Roast Your Friends</span>
-        </nav>
+    <main class="page-content">
+        <div class="container container--narrow">
 
-        <!-- Hero -->
-        <section class="hero">
-            <span class="hero-emoji" aria-hidden="true">🔥</span>
-            <h1>Roast Your Friends By Name</h1>
-            <p class="subhead">Enter their name. We'll destroy them. You send it.</p>
-        </section>
+            <!-- Hero -->
+            <section class="roast-hero">
+                <span class="roast-hero-emoji" aria-hidden="true">&#128293;</span>
+                <h1 class="display-heading">Roast Your Friends By Name</h1>
+                <p class="roast-subhead text-dim">773 names. 7,880+ savage roasts. Enter a name.</p>
+            </section>
 
-        <!-- Input -->
-        <div class="input-area">
-            <form id="roastForm" class="input-group" autocomplete="off">
-                <input
-                    type="text"
-                    id="nameInput"
-                    class="name-input"
-                    placeholder="Type your friend's name..."
-                    aria-label="Friend's name"
-                    maxlength="30"
-                    required
-                    autofocus
-                    autocapitalize="words"
-                    autocorrect="off"
-                >
-                <button type="submit" class="roast-btn" id="roastBtn">🔥 ROAST THEM</button>
-            </form>
+            <!-- Name Input -->
+            <div class="card roast-input-area">
+                <form id="roastForm" class="roast-input-group" autocomplete="off">
+                    <input
+                        type="text"
+                        id="nameInput"
+                        class="roast-name-input"
+                        placeholder="Type your friend's name..."
+                        aria-label="Friend's name"
+                        maxlength="30"
+                        required
+                        autofocus
+                        autocapitalize="words"
+                        autocorrect="off"
+                    >
+                    <button type="submit" class="btn btn-orange" id="roastBtn">&#128293; ROAST THEM</button>
+                </form>
+            </div>
+
+            <!-- Suggestion Pills -->
+            <div class="roast-suggestions">
+                <a href="#" class="roast-pill" data-name="Jessica">Jessica</a>
+                <a href="#" class="roast-pill" data-name="Michael">Michael</a>
+                <a href="#" class="roast-pill" data-name="Brandon">Brandon</a>
+                <a href="#" class="roast-pill" data-name="Karen">Karen</a>
+                <a href="#" class="roast-pill" data-name="Chad">Chad</a>
+                <a href="#" class="roast-pill" data-name="Ashley">Ashley</a>
+                <a href="#" class="roast-pill" data-name="David">David</a>
+                <a href="#" class="roast-pill" data-name="Sarah">Sarah</a>
+                <a href="#" class="roast-pill" data-name="Chris">Chris</a>
+                <a href="#" class="roast-pill" data-name="Josh">Josh</a>
+            </div>
+
+            <p class="roast-social-proof text-dim text-center">773 names &middot; 7,880+ savage burns &middot; 100% free</p>
+
+            <!-- Results (hidden by default) -->
+            <section class="roast-results" id="resultsSection">
+                <div class="roast-results-header">
+                    <h2 id="resultsTitle"></h2>
+                </div>
+
+                <div id="roastCards"></div>
+
+                <!-- Auth gate banner (shown when gated) -->
+                <div class="card roast-gate-banner" id="gateBanner" style="display:none;">
+                    <p class="text-dim" id="gateBannerText">Sign in to see all roasts</p>
+                    <button class="btn btn-primary" id="gateBannerSignIn">Sign in free to unlock</button>
+                </div>
+
+                <div class="roast-results-footer">
+                    <a href="#" class="btn btn-secondary mb-lg" id="seeAllLink" style="display:none;"></a>
+                    <button class="btn btn-orange btn-block mb-md" id="sharePageBtn">&#128228; Send All Roasts to Your Friend</button>
+                    <button class="btn btn-ghost btn-block" id="resetBtn">&#128293; Roast Someone Else</button>
+                </div>
+            </section>
+
+            <!-- Not Found (hidden by default) -->
+            <section class="roast-results" id="notFoundSection">
+                <div class="card roast-not-found">
+                    <h3 id="notFoundName"></h3>
+                    <p class="text-dim">That name isn't in our collection yet. Try one of these or get the app for AI roasts of <strong>ANY</strong> name!</p>
+                    <button class="btn btn-orange mb-lg" id="resetBtn2">&#128293; Try Another Name</button>
+                    <br>
+                    <a href="https://apps.apple.com/app/id6743726261" class="btn btn-primary" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'not_found_cta'});}">Get the App — Roast ANY Name</a>
+                </div>
+            </section>
+
+            <!-- SEO Content -->
+            <section class="card roast-seo">
+                <h2>The Art of the Perfect Name Roast</h2>
+
+                <p>There's something uniquely hilarious about a roast that uses someone's actual name. It's personal, it's unexpected, and it hits different than a generic burn. We've generated <strong>7,880+ personalized burns</strong> across <strong>773 names</strong> — and counting. The best friend roasts walk the line between savage and silly — they make the whole group laugh, including the person getting roasted.</p>
+
+                <p>Roasting has deep roots in comedy. From the Friars Club celebrity roasts of the 1950s to Comedy Central specials, the format works because it's built on affection. You only roast people you actually like. When you add someone's name into the mix, it transforms a general joke into a personalized experience that feels tailor-made for your friend group.</p>
+
+                <p>Name-based roasts are funnier because they catch people off guard. When someone hears "Hey Jessica..." they expect a compliment — not a perfectly crafted burn. That surprise factor is what makes personalized roasts the most shared content among friend groups. Our AI generates roasts that play on name meanings, pop culture references, and classic roast formats.</p>
+
+                <p>Whether you're looking for <a href="/roast/karen/">roasts for Karen</a>, burns for <a href="/roast/chad/">Chad</a>, or something for <a href="/roast/jessica/">Jessica</a>, we've got thousands of options. Need roasts for an uncommon name? The <a href="https://apps.apple.com/app/id6743726261">Dad Jokes app</a> generates fresh AI roasts for any name on the fly.</p>
+
+                <h3 class="mt-2xl mb-lg">Popular Name Roasts</h3>
+                <div class="roast-popular-names" id="popularNames">
+                    <a href="/roast/jessica/">Jessica</a>
+                    <a href="/roast/michael/">Michael</a>
+                    <a href="/roast/brandon/">Brandon</a>
+                    <a href="/roast/karen/">Karen</a>
+                    <a href="/roast/chad/">Chad</a>
+                    <a href="/roast/ashley/">Ashley</a>
+                    <a href="/roast/david/">David</a>
+                    <a href="/roast/sarah/">Sarah</a>
+                    <a href="/roast/chris/">Chris</a>
+                    <a href="/roast/jennifer/">Jennifer</a>
+                    <a href="/roast/josh/">Josh</a>
+                    <a href="/roast/brittany/">Brittany</a>
+                    <a href="/roast/kevin/">Kevin</a>
+                    <a href="/roast/stephanie/">Stephanie</a>
+                    <a href="/roast/matt/">Matt</a>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="card mt-2xl">
+                <h2 class="text-center mb-xl">Frequently Asked Questions</h2>
+
+                <div class="roast-faq-item">
+                    <div class="roast-faq-question" role="button" tabindex="0" aria-expanded="false">How does the name roast generator work?</div>
+                    <div class="roast-faq-answer text-dim">Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes 7,880+ AI-generated roasts for over 773 names. Each roast is crafted to be funny and shareable.</div>
+                </div>
+
+                <div class="roast-faq-item">
+                    <div class="roast-faq-question" role="button" tabindex="0" aria-expanded="false">Are these roasts mean?</div>
+                    <div class="roast-faq-answer text-dim">They're playful burns, not actual insults. Think of them like a comedy roast — the kind where everyone's laughing, including the person being roasted. They're designed to be shared with friends who have a good sense of humor.</div>
+                </div>
+
+                <div class="roast-faq-item">
+                    <div class="roast-faq-question" role="button" tabindex="0" aria-expanded="false">Can I get roasts for any name?</div>
+                    <div class="roast-faq-answer text-dim">We have roasts for 773+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI.</div>
+                </div>
+
+                <div class="roast-faq-item">
+                    <div class="roast-faq-question" role="button" tabindex="0" aria-expanded="false">How do I share a roast with my friend?</div>
+                    <div class="roast-faq-answer text-dim">Each roast has a Share button that lets you send it directly via text, social media, or any app on your phone. You can also copy the roast text to paste it anywhere. Share the link to their name's roast page so they can see all their roasts.</div>
+                </div>
+            </section>
+
+            <!-- App CTA -->
+            <div class="app-cta mt-3xl">
+                <div class="app-cta-content">
+                    <div class="app-cta-title">Want AI roasts for ANY name?</div>
+                    <p class="app-cta-text">The app generates fresh, personalized roasts on the fly. Plus daily dad jokes, notifications, and more.</p>
+                    <a href="https://apps.apple.com/app/id6743726261" class="app-cta-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'cta'});}">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50">
+                    </a>
+                </div>
+            </div>
         </div>
-        <p class="suggestions">Try: <a href="#" class="suggest-link" data-name="Jessica">Jessica</a>, <a href="#" class="suggest-link" data-name="Michael">Michael</a>, <a href="#" class="suggest-link" data-name="Brandon">Brandon</a>, <a href="#" class="suggest-link" data-name="Karen">Karen</a>, <a href="#" class="suggest-link" data-name="Chad">Chad</a></p>
-        <p class="social-proof">773 names &middot; 7,880+ savage burns &middot; 100% free</p>
+    </main>
 
-        <!-- Results (hidden by default) -->
-        <section class="results-section" id="resultsSection">
-            <div class="results-header">
-                <h2 id="resultsTitle"></h2>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">Dad Jokes VIP</div>
+                    <p class="footer-brand-tagline">Daily laughs, delivered.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Content</h4>
+                        <ul>
+                            <li><a href="/jokes/">Dad Jokes</a></li>
+                            <li><a href="/roast/">Roast</a></li>
+                            <li><a href="/daily/">Joke of the Day</a></li>
+                            <li><a href="/collection/">Collections</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="/app/">Download App</a></li>
+                            <li><a href="/support/">Support</a></li>
+                            <li><a href="/privacy/">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div id="roastCards"></div>
-
-            <div class="results-footer">
-                <a href="#" class="see-all-link" id="seeAllLink"></a>
-                <button class="share-page-btn" id="sharePageBtn">📤 Send All Roasts to Your Friend</button>
-                <button class="reset-btn" id="resetBtn">🔥 Roast Someone Else</button>
+            <div class="footer-bottom">
+                <div class="footer-copyright">&copy; <span id="footer-year"></span> Dad Jokes VIP. All rights reserved.</div>
+                <a href="https://apps.apple.com/app/id6743726261" class="footer-badge" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'footer'});}">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="120" height="40">
+                </a>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- Not Found (hidden by default) -->
-        <section class="results-section" id="notFoundSection">
-            <div class="not-found">
-                <h3 id="notFoundName"></h3>
-                <p>That name isn't in our collection yet. Try one of these or get the app for AI roasts of <strong>ANY</strong> name!</p>
-                <button class="reset-btn" id="resetBtn2" style="margin-bottom: 16px;">🔥 Try Another Name</button>
-                <br>
-                <a href="https://apps.apple.com/app/id6743726261" class="download-btn" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'not_found_cta'});}">Get the App — Roast ANY Name</a>
-            </div>
-        </section>
-
-        <!-- SEO Content -->
-        <section class="seo-content">
-            <h2>The Art of the Perfect Name Roast</h2>
-
-            <p>There's something uniquely hilarious about a roast that uses someone's actual name. It's personal, it's unexpected, and it hits different than a generic burn. We've generated <strong>7,880+ personalized burns</strong> across <strong>773 names</strong> — and counting. The best friend roasts walk the line between savage and silly — they make the whole group laugh, including the person getting roasted.</p>
-
-            <p>Roasting has deep roots in comedy. From the Friars Club celebrity roasts of the 1950s to Comedy Central specials, the format works because it's built on affection. You only roast people you actually like. When you add someone's name into the mix, it transforms a general joke into a personalized experience that feels tailor-made for your friend group.</p>
-
-            <p>Name-based roasts are funnier because they catch people off guard. When someone hears "Hey Jessica..." they expect a compliment — not a perfectly crafted burn. That surprise factor is what makes personalized roasts the most shared content among friend groups. Our AI generates roasts that play on name meanings, pop culture references, and classic roast formats.</p>
-
-            <p>Whether you're looking for <a href="/roast/karen/">roasts for Karen</a>, burns for <a href="/roast/chad/">Chad</a>, or something for <a href="/roast/jessica/">Jessica</a>, we've got thousands of options. Need roasts for an uncommon name? The <a href="https://apps.apple.com/app/id6743726261">Dad Jokes app</a> generates fresh AI roasts for any name on the fly.</p>
-
-            <h3 style="margin-top: 25px; margin-bottom: 15px; color: #222;">Popular Name Roasts</h3>
-            <div class="popular-names" id="popularNames">
-                <a href="/roast/jessica/">Jessica</a>
-                <a href="/roast/michael/">Michael</a>
-                <a href="/roast/brandon/">Brandon</a>
-                <a href="/roast/karen/">Karen</a>
-                <a href="/roast/chad/">Chad</a>
-                <a href="/roast/ashley/">Ashley</a>
-                <a href="/roast/david/">David</a>
-                <a href="/roast/sarah/">Sarah</a>
-                <a href="/roast/chris/">Chris</a>
-                <a href="/roast/jennifer/">Jennifer</a>
-                <a href="/roast/josh/">Josh</a>
-                <a href="/roast/brittany/">Brittany</a>
-                <a href="/roast/kevin/">Kevin</a>
-                <a href="/roast/stephanie/">Stephanie</a>
-                <a href="/roast/matt/">Matt</a>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-
-            <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">How does the name roast generator work?</div>
-                <div class="faq-answer">Enter any name into the generator and we'll instantly show you personalized roasts for that name. Our database includes 7,880+ AI-generated roasts for over 773 names. Each roast is crafted to be funny and shareable.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Are these roasts mean?</div>
-                <div class="faq-answer">They're playful burns, not actual insults. Think of them like a comedy roast — the kind where everyone's laughing, including the person being roasted. They're designed to be shared with friends who have a good sense of humor.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Can I get roasts for any name?</div>
-                <div class="faq-answer">We have roasts for 773+ names on the website. For AI-generated roasts for ANY name — even uncommon ones — download the Dad Jokes app. The app generates fresh, personalized roasts on the fly using AI.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">How do I share a roast with my friend?</div>
-                <div class="faq-answer">Each roast has a Share button that lets you send it directly via text, social media, or any app on your phone. You can also copy the roast text to paste it anywhere. Share the link to their name's roast page so they can see all their roasts.</div>
-            </div>
-        </section>
-
-        <!-- Cross-link: Wholesome humor -->
-        <section style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px; text-align: center; margin-bottom: 30px;">
-            <h2 style="color: #fff; font-size: 1.4em; margin-bottom: 10px;">Want Wholesome Humor Instead?</h2>
-            <p style="color: #999; margin-bottom: 20px;">Not everyone deserves a roast. Sometimes you just need a good groan-worthy dad joke.</p>
-            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-                <a href="/app/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Dad Jokes App</a>
-                <a href="/daily/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Joke of the Day</a>
-                <a href="/collection/" style="background: rgba(255,140,0,0.15); border: 1px solid rgba(255,140,0,0.3); color: #FFA500; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.95em;">Joke Collections</a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p><a href="/">Dad Jokes VIP</a> · <a href="/app/">Download App</a> · <a href="/privacy/">Privacy</a></p>
-        </footer>
-    </div>
+    <!-- Firebase + Auth -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+    <script src="/assets/js/auth.js"></script>
+    <script src="/assets/js/share.js"></script>
 
     <script>
     (function() {
+        'use strict';
+
         // State
-        let roastData = null;
-        let dataLoaded = false;
+        var roastData = null;
+        var dataLoaded = false;
+        var currentDisplayName = '';
 
         // DOM elements
-        const form = document.getElementById('roastForm');
-        const nameInput = document.getElementById('nameInput');
-        const roastBtn = document.getElementById('roastBtn');
-        const resultsSection = document.getElementById('resultsSection');
-        const notFoundSection = document.getElementById('notFoundSection');
-        const resultsTitle = document.getElementById('resultsTitle');
-        const roastCards = document.getElementById('roastCards');
-        const seeAllLink = document.getElementById('seeAllLink');
-        const notFoundName = document.getElementById('notFoundName');
+        var form = document.getElementById('roastForm');
+        var nameInput = document.getElementById('nameInput');
+        var roastBtn = document.getElementById('roastBtn');
+        var resultsSection = document.getElementById('resultsSection');
+        var notFoundSection = document.getElementById('notFoundSection');
+        var resultsTitle = document.getElementById('resultsTitle');
+        var roastCards = document.getElementById('roastCards');
+        var seeAllLink = document.getElementById('seeAllLink');
+        var notFoundName = document.getElementById('notFoundName');
+        var gateBanner = document.getElementById('gateBanner');
+        var gateBannerText = document.getElementById('gateBannerText');
+        var gateBannerSignIn = document.getElementById('gateBannerSignIn');
 
-        // Lazy-load roast data: start fetch on first interaction or after idle
-        let dataLoadPromise = null;
+        // Footer year
+        var footerYear = document.getElementById('footer-year');
+        if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+        // Hamburger nav toggle
+        var hamburger = document.getElementById('nav-hamburger');
+        var navLinks = document.getElementById('nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                var isOpen = navLinks.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
+
+        // Lazy-load roast data
+        var dataLoadPromise = null;
         function ensureDataLoaded() {
             if (!dataLoadPromise) {
                 dataLoadPromise = fetch('/roast/roast-data.json')
-                    .then(r => r.json())
-                    .then(data => {
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
                         roastData = data;
                         dataLoaded = true;
                     })
-                    .catch(err => {
+                    .catch(function(err) {
                         console.error('Failed to load roast data:', err);
                         dataLoadPromise = null;
                     });
@@ -936,19 +721,18 @@
             return dataLoadPromise;
         }
 
-        // Start loading when user focuses input or after 2s idle
+        // Start loading on input focus or after 2s
         nameInput.addEventListener('focus', ensureDataLoaded, { once: true });
         setTimeout(ensureDataLoaded, 2000);
 
-        // Check URL for pre-filled name on load
+        // Check URL for pre-filled name
         ensureDataLoaded().then(checkUrlForName);
 
-        // Check URL for pre-filled name (e.g., /roast/#jessica or ?name=jessica)
         function checkUrlForName() {
-            const hash = window.location.hash.replace('#', '').trim();
-            const params = new URLSearchParams(window.location.search);
-            const nameParam = params.get('name');
-            const name = hash || nameParam;
+            var hash = window.location.hash.replace('#', '').trim();
+            var params = new URLSearchParams(window.location.search);
+            var nameParam = params.get('name');
+            var name = hash || nameParam;
             if (name && dataLoaded) {
                 nameInput.value = name;
                 performRoast(name);
@@ -958,7 +742,7 @@
         // Form submit
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            const name = nameInput.value.trim();
+            var name = nameInput.value.trim();
             if (!name) return;
             performRoast(name);
         });
@@ -973,7 +757,6 @@
             notFoundSection.classList.remove('active');
             nameInput.focus();
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Clear hash
             history.replaceState(null, '', window.location.pathname);
 
             if (typeof gtag === 'function') {
@@ -983,13 +766,13 @@
 
         function performRoast(name) {
             if (!dataLoaded) {
-                roastBtn.innerHTML = '<span class="loading-spinner"></span>Loading...';
-                setTimeout(() => performRoast(name), 500);
+                roastBtn.innerHTML = '<span class="roast-spinner"></span>Loading...';
+                setTimeout(function() { performRoast(name); }, 500);
                 return;
             }
 
-            const normalized = name.toLowerCase().trim();
-            const entry = roastData[normalized];
+            var normalized = name.toLowerCase().trim();
+            var entry = roastData[normalized];
 
             // Update URL hash
             history.replaceState(null, '', '#' + normalized);
@@ -1008,36 +791,58 @@
                 showNotFound(name);
             }
 
-            roastBtn.innerHTML = '🔥 ROAST THEM';
+            roastBtn.innerHTML = '&#128293; ROAST THEM';
         }
 
         function showResults(entry, normalizedName) {
             notFoundSection.classList.remove('active');
 
-            const displayName = entry.displayName || normalizedName;
+            var displayName = entry.displayName || normalizedName;
+            currentDisplayName = displayName;
 
-            resultsTitle.textContent = '🔥 Roasts for ' + displayName;
+            resultsTitle.textContent = 'Roasts for ' + displayName;
 
-            // Pick 3-5 random roasts
-            const shuffled = [...entry.roasts].sort(() => Math.random() - 0.5);
-            const selected = shuffled.slice(0, Math.min(5, shuffled.length));
-
-            roastCards.innerHTML = '';
-            selected.forEach(function(roast) {
-                const card = document.createElement('div');
-                card.className = 'roast-card';
-                card.innerHTML =
-                    '<p class="roast-text">' + escapeHtml(roast) + '</p>' +
-                    '<div class="roast-actions">' +
-                        '<button class="action-btn copy-btn" data-roast="' + escapeAttr(roast) + '">📋 Copy</button>' +
-                        '<button class="action-btn share-btn" data-roast="' + escapeAttr(roast) + '" data-name="' + escapeAttr(displayName) + '">📤 Send to ' + escapeHtml(displayName) + '</button>' +
-                    '</div>';
-                roastCards.appendChild(card);
+            // Check auth gate - show 1 roast free, gate the rest
+            var isSignedIn = DadJokesAuth.isSignedIn();
+            var isGated = DadJokesAuth.gateContent({
+                totalItems: entry.roasts.length,
+                itemLabel: 'roasts about ' + displayName
             });
 
+            // Pick roasts to show
+            var shuffled = entry.roasts.slice().sort(function() { return Math.random() - 0.5; });
+            var showCount = isSignedIn ? Math.min(5, shuffled.length) : 1;
+            var selected = shuffled.slice(0, showCount);
+            var gatedRoasts = isSignedIn ? [] : shuffled.slice(1, Math.min(4, shuffled.length));
+
+            roastCards.innerHTML = '';
+
+            // Render visible roasts
+            selected.forEach(function(roast) {
+                roastCards.appendChild(createRoastCard(roast, displayName, false));
+            });
+
+            // Render blurred/gated roasts
+            gatedRoasts.forEach(function(roast) {
+                roastCards.appendChild(createRoastCard(roast, displayName, true));
+            });
+
+            // Show/hide gate banner
+            if (!isSignedIn && gatedRoasts.length > 0) {
+                gateBannerText.textContent = 'Sign in to see all ' + entry.roasts.length + ' roasts about ' + displayName;
+                gateBanner.style.display = '';
+            } else {
+                gateBanner.style.display = 'none';
+            }
+
             // See all link
-            seeAllLink.textContent = 'See all ' + entry.count + ' roasts for ' + displayName + ' →';
-            seeAllLink.href = '/roast/' + normalizedName + '/';
+            if (isSignedIn) {
+                seeAllLink.textContent = 'See all ' + entry.count + ' roasts for ' + displayName;
+                seeAllLink.href = '/roast/' + normalizedName + '/';
+                seeAllLink.style.display = '';
+            } else {
+                seeAllLink.style.display = 'none';
+            }
 
             resultsSection.classList.add('active');
 
@@ -1045,19 +850,33 @@
             setTimeout(function() {
                 resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
+        }
 
-            // Attach button handlers
-            roastCards.querySelectorAll('.copy-btn').forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    copyRoast(this);
-                });
-            });
+        function createRoastCard(roast, displayName, isGated) {
+            var card = document.createElement('div');
+            card.className = 'card mb-lg roast-card-anim' + (isGated ? ' roast-card-gated' : '');
 
-            roastCards.querySelectorAll('.share-btn').forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    shareRoast(this);
-                });
-            });
+            var shareUrl = 'https://dadjokes.vip/roast/' + displayName.toLowerCase() + '/';
+            var shareText = roast + '\n\nMore ' + displayName + ' roasts: ' + shareUrl;
+
+            card.innerHTML =
+                '<p class="roast-card-text">' + escapeHtml(roast) + '</p>' +
+                '<div class="share-bar">' +
+                    '<button class="share-btn share-btn--copy" data-roast="' + escapeAttr(roast) + '"">' +
+                        '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>' +
+                        ' Copy' +
+                    '</button>' +
+                    '<button class="share-btn share-btn--native" data-title="Roast for ' + escapeAttr(displayName) + '" data-text="' + escapeAttr(shareText) + '" data-url="' + escapeAttr(shareUrl) + '">' +
+                        '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>' +
+                        ' Share' +
+                    '</button>' +
+                    '<button class="share-btn share-btn--twitter" data-text="' + escapeAttr(roast) + '" data-url="' + escapeAttr(shareUrl) + '">' +
+                        '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>' +
+                        ' Tweet' +
+                    '</button>' +
+                '</div>';
+
+            return card;
         }
 
         function showNotFound(name) {
@@ -1070,90 +889,73 @@
             }, 100);
         }
 
-        function copyRoast(btn) {
-            const text = btn.getAttribute('data-roast');
-            navigator.clipboard.writeText(text).then(function() {
-                btn.classList.add('copied');
-                btn.textContent = '✅ Copied!';
-                setTimeout(function() {
-                    btn.classList.remove('copied');
-                    btn.textContent = '📋 Copy';
-                }, 2000);
-            }).catch(function() {
-                // Fallback
-                const ta = document.createElement('textarea');
-                ta.value = text;
-                ta.style.position = 'fixed';
-                ta.style.opacity = '0';
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                btn.classList.add('copied');
-                btn.textContent = '✅ Copied!';
-                setTimeout(function() {
-                    btn.classList.remove('copied');
-                    btn.textContent = '📋 Copy';
-                }, 2000);
-            });
+        // Delegate share button events
+        document.addEventListener('click', function(e) {
+            var btn = e.target.closest('.share-btn');
+            if (!btn) return;
 
-            if (typeof gtag === 'function') {
-                gtag('event', 'roast_shared', {
-                    name: document.getElementById('resultsTitle').textContent.replace('🔥 Roasts for ', ''),
-                    method: 'copy'
-                });
-            }
-        }
+            if (btn.classList.contains('share-btn--copy')) {
+                var roast = btn.getAttribute('data-roast');
+                DadJokesShare.copyText(roast, btn);
 
-        function shareRoast(btn) {
-            var roast = btn.getAttribute('data-roast');
-            var name = btn.getAttribute('data-name');
-            var url = 'https://dadjokes.vip/roast/' + name.toLowerCase() + '/';
-            var shareText = roast + '\n\nMore ' + name + ' roasts at ' + url + '\n\nGet the app: https://apps.apple.com/app/id6743726261';
-
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Roast for ' + name,
-                    text: shareText,
-                    url: url
-                }).catch(function() {});
-            } else {
-                // Fallback: copy share text
-                navigator.clipboard.writeText(shareText).then(function() {
-                    btn.textContent = '✅ Link copied!';
-                    setTimeout(function() {
-                        btn.textContent = '📤 Share';
-                    }, 2000);
-                });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'roast_shared', { name: currentDisplayName, method: 'copy' });
+                }
             }
 
-            if (typeof gtag === 'function') {
-                gtag('event', 'roast_shared', {
-                    name: name,
-                    method: navigator.share ? 'native' : 'copy'
-                });
+            if (btn.classList.contains('share-btn--native')) {
+                DadJokesShare.shareNative(
+                    btn.getAttribute('data-title'),
+                    btn.getAttribute('data-text'),
+                    btn.getAttribute('data-url')
+                );
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'roast_shared', { name: currentDisplayName, method: 'native' });
+                }
             }
-        }
 
-        function escapeHtml(str) {
-            var div = document.createElement('div');
-            div.textContent = str;
-            return div.innerHTML;
-        }
+            if (btn.classList.contains('share-btn--twitter')) {
+                DadJokesShare.shareTwitter(
+                    btn.getAttribute('data-text'),
+                    btn.getAttribute('data-url')
+                );
 
-        function escapeAttr(str) {
-            return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        }
+                if (typeof gtag === 'function') {
+                    gtag('event', 'roast_shared', { name: currentDisplayName, method: 'twitter' });
+                }
+            }
+        });
 
-        // Clickable suggestion names
-        document.querySelectorAll('.suggest-link').forEach(function(link) {
-            link.addEventListener('click', function(e) {
+        // Gate banner sign-in button
+        gateBannerSignIn.addEventListener('click', function() {
+            DadJokesAuth.signIn();
+        });
+
+        // Re-render on auth change (unlock content)
+        window._onDadJokesAuth = function() {
+            if (currentDisplayName && roastData) {
+                var normalized = currentDisplayName.toLowerCase();
+                var entry = roastData[normalized];
+                if (entry) {
+                    showResults(entry, normalized);
+                }
+            }
+        };
+
+        // Clickable suggestion pills
+        document.querySelectorAll('.roast-pill').forEach(function(pill) {
+            pill.addEventListener('click', function(e) {
                 e.preventDefault();
                 var name = this.getAttribute('data-name');
                 nameInput.value = name;
                 ensureDataLoaded().then(function() {
                     performRoast(name);
                 });
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'roast_suggestion_clicked', { name: name });
+                }
             });
         });
 
@@ -1161,40 +963,29 @@
         var sharePageBtn = document.getElementById('sharePageBtn');
         if (sharePageBtn) {
             sharePageBtn.addEventListener('click', function() {
-                var currentName = document.getElementById('resultsTitle').textContent.replace('🔥 Roasts for ', '');
-                var pageUrl = 'https://dadjokes.vip/roast/' + currentName.toLowerCase() + '/';
-                var shareText = 'Check out these roasts for ' + currentName + '! 🔥';
+                var pageUrl = 'https://dadjokes.vip/roast/' + currentDisplayName.toLowerCase() + '/';
+                var shareText = 'Check out these roasts for ' + currentDisplayName + '!';
 
-                if (navigator.share) {
-                    navigator.share({
-                        title: 'Roasts for ' + currentName,
-                        text: shareText,
-                        url: pageUrl
-                    }).catch(function() {});
-                } else {
-                    navigator.clipboard.writeText(shareText + '\n' + pageUrl).then(function() {
-                        sharePageBtn.textContent = '✅ Link Copied!';
-                        setTimeout(function() {
-                            sharePageBtn.textContent = '📤 Send All Roasts to Your Friend';
-                        }, 2000);
-                    });
-                }
+                DadJokesShare.shareNative('Roasts for ' + currentDisplayName, shareText, pageUrl);
 
                 if (typeof gtag === 'function') {
-                    gtag('event', 'roast_page_shared', { name: currentName, method: navigator.share ? 'native' : 'copy' });
+                    gtag('event', 'roast_page_shared', { name: currentDisplayName, method: navigator.share ? 'native' : 'copy' });
                 }
             });
         }
 
+        // Init native share buttons
+        DadJokesShare.initNativeShareButtons();
+
         // FAQ toggle
-        document.querySelectorAll('.faq-question').forEach(function(q) {
+        document.querySelectorAll('.roast-faq-question').forEach(function(q) {
             q.addEventListener('click', function() {
                 var item = this.parentElement;
                 var isOpen = item.classList.contains('open');
-                // Close all
-                document.querySelectorAll('.faq-item').forEach(function(i) {
+                document.querySelectorAll('.roast-faq-item').forEach(function(i) {
                     i.classList.remove('open');
-                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    var fq = i.querySelector('.roast-faq-question');
+                    if (fq) fq.setAttribute('aria-expanded', 'false');
                 });
                 if (!isOpen) {
                     item.classList.add('open');
@@ -1209,6 +1000,17 @@
                 }
             });
         });
+
+        // Utility functions
+        function escapeHtml(str) {
+            var div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function escapeAttr(str) {
+            return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
     })();
     </script>
 </body>
