@@ -100,8 +100,8 @@
         /* ---- PAGE TITLE ---- */
         .page-title {
             text-align: center;
-            font-size: 1.5rem;
-            font-weight: 800;
+            font-size: 1.125rem;
+            font-weight: 700;
             color: var(--text);
             margin-bottom: 4px;
         }
@@ -116,22 +116,28 @@
 
         /* ---- JOKE CARD ---- */
         .joke-card {
-            background: var(--card);
+            background: var(--navy);
             border-radius: var(--radius);
-            box-shadow: var(--card-shadow);
-            padding: 32px 24px;
+            box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15), 0 12px 32px rgba(30, 58, 95, 0.20);
+            padding: 36px 28px 32px;
             text-align: center;
             position: relative;
-            transition: box-shadow var(--transition);
+            overflow: hidden;
         }
 
-        .joke-card:hover { box-shadow: var(--card-shadow-hover); }
+        .joke-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--coral), #FF8E6B, var(--coral));
+        }
 
         .joke-setup {
-            font-size: 1.375rem;
-            font-weight: 700;
-            line-height: 1.45;
-            color: var(--text);
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.4;
+            color: #FFFFFF;
             margin-bottom: 20px;
         }
 
@@ -141,7 +147,7 @@
             align-items: center;
             gap: 6px;
             background: none;
-            color: var(--text-dim);
+            color: rgba(255,255,255,0.5);
             font-family: var(--font);
             font-size: 0.8125rem;
             font-weight: 600;
@@ -152,7 +158,7 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        .reveal-tap:hover { color: var(--text); }
+        .reveal-tap:hover { color: rgba(255,255,255,0.8); }
 
         .reveal-tap svg { width: 14px; height: 14px; }
 
@@ -163,7 +169,7 @@
             font-size: 1.25rem;
             font-weight: 800;
             line-height: 1.4;
-            color: var(--coral);
+            color: #FF9B9B;
             opacity: 0;
             transform: translateY(8px) scale(0.97);
             max-height: 0;
@@ -201,14 +207,14 @@
             align-items: center;
             justify-content: center;
             gap: 6px;
-            background: var(--surface);
-            color: var(--text);
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.8);
             font-family: var(--font);
             font-size: 0.8125rem;
             font-weight: 600;
             padding: 10px 16px;
             border-radius: var(--radius-pill);
-            border: 1px solid var(--border);
+            border: 1px solid rgba(255,255,255,0.12);
             cursor: pointer;
             min-height: 44px;
             transition: all var(--transition);
@@ -216,7 +222,7 @@
         }
 
         .share-btn:active { transform: scale(0.96) translateY(1px); }
-        .share-btn:hover { border-color: var(--navy); color: var(--navy); }
+        .share-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
 
         .share-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 
@@ -227,6 +233,12 @@
         }
 
         .share-btn--primary:hover { box-shadow: 0 4px 12px rgba(30, 58, 95, 0.25); }
+
+        .share-btn--primary {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy);
+        }
 
         /* Copied state */
         .share-btn.copied {
