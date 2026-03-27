@@ -451,7 +451,7 @@ print(joke[<span class="string">"content_text"</span>])
             <h2>Want the Full Experience?</h2>
             <p>The API is great for developers. But for browsing, saving favorites, and getting daily notifications — grab the app.</p>
             <div class="store-buttons-badges">
-                <a href="https://dadjokes.vip/ios" class="appstore-link">
+                <a href="https://dadjokes.vip/ios" class="appstore-link" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'api',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -470,7 +470,7 @@ print(joke[<span class="string">"content_text"</span>])
             <a href="/privacy">Privacy</a>
         </div>
         <div class="footer-stores">
-            <a href="https://dadjokes.vip/ios" class="appstore-link">
+            <a href="https://dadjokes.vip/ios" class="appstore-link" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'api',location:'footer'});}">
                 <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
             </a>
             <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -484,6 +484,11 @@ print(joke[<span class="string">"content_text"</span>])
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Track API docs view
+        if (typeof gtag === 'function') {
+            gtag('event', 'api_docs_viewed', {});
+        }
     </script>
 
     <!-- Structured Data - Article -->

@@ -73,6 +73,18 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://dadjokes.vip/collection/easter-dad-jokes</loc>
+    <lastmod>2026-03-26</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://dadjokes.vip/collection/4th-of-july-dad-jokes</loc>
+    <lastmod>2026-03-26</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://dadjokes.vip/collection/back-to-school-dad-jokes</loc>
     <lastmod>2026-03-26</lastmod>
     <priority>0.8</priority>

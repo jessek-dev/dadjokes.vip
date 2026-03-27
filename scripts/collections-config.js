@@ -104,6 +104,7 @@ export const COLLECTIONS_CONFIG = {
       context: "Christmas dinner, holiday cards, and family gatherings",
       keywords: ["christmas jokes", "holiday dad jokes", "xmas puns", "santa jokes"],
       jokeFilter: {
+        seasonTag: "christmas",
         categories: ["#DadLife", "Words & Puns"],
         keywords: ["christmas", "santa", "snow", "elf", "reindeer", "present", "holiday", "winter", "cold", "tree", "stocking"]
       },
@@ -249,6 +250,7 @@ export const COLLECTIONS_CONFIG = {
       context: "Halloween parties, trick-or-treating, and spooky season",
       keywords: ["halloween jokes", "spooky dad jokes", "pumpkin jokes", "ghost puns"],
       jokeFilter: {
+        seasonTag: "halloween",
         categories: ["Words & Puns", "#DadLife"],
         keywords: ["halloween", "spooky", "pumpkin", "ghost", "candy", "witch", "skeleton", "costume"]
       },
@@ -278,6 +280,7 @@ export const COLLECTIONS_CONFIG = {
       context: "Thanksgiving dinner, family gatherings, and holiday meals",
       keywords: ["thanksgiving jokes", "turkey dad jokes", "holiday dinner jokes", "family gathering humor"],
       jokeFilter: {
+        seasonTag: "thanksgiving",
         categories: ["Food", "#DadLife", "Family"],
         keywords: ["thanksgiving", "turkey", "pilgrim", "grateful", "feast", "family dinner"]
       },
@@ -355,6 +358,66 @@ export const COLLECTIONS_CONFIG = {
         {
           question: "How can I use dad jokes on a Valentine's date?",
           answer: "Drop one over dinner, hide a joke in a gift box, or text a series of love puns throughout the day. It turns Valentine's Day into a fun, playful experience rather than just another holiday."
+        }
+      ]
+    },
+    {
+      slug: "easter-dad-jokes",
+      title: "Easter Dad Jokes",
+      description: "Egg-cellent dad jokes for Easter Sunday — perfect for egg hunts, Easter baskets, and family brunch.",
+      context: "Easter Sunday, egg hunts, and spring celebrations",
+      keywords: ["easter jokes", "easter puns", "egg jokes", "bunny dad jokes"],
+      jokeFilter: {
+        seasonTag: "easter",
+        categories: ["Words & Puns", "Family"],
+        keywords: ["easter", "egg", "bunny", "rabbit", "basket", "spring", "chick", "peep"]
+      },
+      faqs: [
+        {
+          question: "What are the best dad jokes for Easter?",
+          answer: "The best Easter dad jokes play on eggs, bunnies, and spring themes. Egg puns are especially popular because they lend themselves to endless wordplay — egg-cellent, egg-cited, and so on."
+        },
+        {
+          question: "Can I use Easter dad jokes during an egg hunt?",
+          answer: "Absolutely! Hide jokes inside plastic eggs along with candy for a fun twist. Kids love finding surprise jokes, and it adds an extra layer of entertainment to the traditional egg hunt."
+        },
+        {
+          question: "Are Easter dad jokes appropriate for all ages?",
+          answer: "Yes! Easter dad jokes are clean, family-friendly, and perfect for mixed-age gatherings. They work equally well for kids at an egg hunt and adults at Easter brunch."
+        },
+        {
+          question: "How can I share Easter dad jokes with family?",
+          answer: "Write them on Easter cards, read them at brunch, or text one to family members each day during Holy Week. They add a lighthearted touch to the holiday celebrations."
+        }
+      ]
+    },
+    {
+      slug: "4th-of-july-dad-jokes",
+      title: "4th of July Dad Jokes",
+      description: "Patriotic dad jokes for Independence Day — perfect for barbecues, fireworks, and Fourth of July celebrations.",
+      context: "4th of July barbecues, fireworks shows, and patriotic celebrations",
+      keywords: ["4th of july jokes", "independence day jokes", "patriotic dad jokes", "fireworks humor"],
+      jokeFilter: {
+        seasonTag: "fourthofjuly",
+        categories: ["Words & Puns", "#DadLife"],
+        keywords: ["america", "freedom", "firework", "fourth", "july", "patriot", "flag", "independence", "liberty", "grill", "barbecue"]
+      },
+      faqs: [
+        {
+          question: "What are the best dad jokes for the 4th of July?",
+          answer: "The best Fourth of July dad jokes play on patriotic themes — freedom, fireworks, and American traditions. Barbecue and grilling jokes also fit perfectly since cookouts are a holiday staple."
+        },
+        {
+          question: "Can I use these jokes at a 4th of July barbecue?",
+          answer: "A 4th of July barbecue is prime dad joke territory! Tell one while flipping burgers, waiting for fireworks, or gathered around the picnic table. The relaxed atmosphere makes everyone more receptive to puns."
+        },
+        {
+          question: "Are patriotic dad jokes appropriate for all audiences?",
+          answer: "Yes! These jokes are lighthearted and celebratory, perfect for family-friendly gatherings. They focus on fun American traditions rather than politics, making them universally enjoyable."
+        },
+        {
+          question: "How can I use dad jokes during a fireworks show?",
+          answer: "Drop a joke during the quiet moments between firework launches, or text them to friends while watching. A well-timed pun about fireworks or sparklers always gets a good groan."
         }
       ]
     },

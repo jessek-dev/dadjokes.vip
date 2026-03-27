@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JRRXTJP94X');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dad Joke of the Day - {{DATE_FORMATTED}} | Dad Jokes</title>
@@ -693,7 +710,7 @@
             <span class="nav-sep">|</span>
             <a href="/collection/">Collections</a>
             <span class="nav-sep">|</span>
-            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+            <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'daily',location:'header'});}">Get the App</a>
         </div>
     </nav>
 
@@ -781,9 +798,9 @@
         <div class="app-download">
             <h2>Get a New Joke Every Morning</h2>
             <p>Love the joke of the day? Download the app and <span class="notification-highlight">enable daily notifications</span> to wake up to a fresh dad joke every single morning.</p>
-            <a href="https://apps.apple.com/app/id6743726261" class="cta-button">Download Free on iOS</a>
+            <a href="https://apps.apple.com/app/id6743726261" class="cta-button" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'daily',location:'cta'});}">Download Free on iOS</a>
             <div class="store-badges">
-                <a href="https://apps.apple.com/app/id6743726261">
+                <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'daily',location:'cta_badge'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -798,6 +815,13 @@
         function revealFeatured() {
             document.getElementById('featured-punchline').classList.add('revealed');
             document.getElementById('featured-reveal-btn').classList.add('hidden');
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'daily_punchline_revealed', {
+                    joke_id: '{{JOKE_ID}}',
+                    date: '{{DATE_ISO}}'
+                });
+            }
         }
 
         // Reveal previous joke punchline
@@ -821,6 +845,13 @@
                     btn.innerHTML = originalHTML;
                 }, 2000);
             }).catch(() => {});
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'daily_joke_shared', {
+                    joke_id: '{{JOKE_ID}}',
+                    method: 'copy'
+                });
+            }
         }
 
         // Share on Twitter/X
@@ -829,6 +860,13 @@
             const setup = document.querySelector('.featured-setup').textContent;
             const text = encodeURIComponent(setup + '\n\nGet the answer at dadjokes.vip/daily');
             window.open('https://twitter.com/intent/tweet?text=' + text, '_blank', 'width=550,height=420');
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'daily_joke_shared', {
+                    joke_id: '{{JOKE_ID}}',
+                    method: 'twitter'
+                });
+            }
         }
 
         // Mobile App Banner
@@ -872,13 +910,7 @@
         }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Q8LRBVBMRF');
         gtag('event', 'daily_joke_view', {
             'joke_id': '{{JOKE_ID}}',
             'joke_category': '{{JOKE_CATEGORY}}',
@@ -898,7 +930,7 @@
       </div>
 
       <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios">
+        <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'daily',location:'footer'});}">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
 

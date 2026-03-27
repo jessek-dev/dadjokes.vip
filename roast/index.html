@@ -280,11 +280,18 @@
             text-align: center;
             color: rgba(255,255,255,0.8);
             font-size: 0.95em;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
 
         .suggestions strong {
             color: white;
+        }
+
+        .social-proof {
+            text-align: center;
+            color: rgba(255,255,255,0.65);
+            font-size: 0.85em;
+            margin-bottom: 40px;
         }
 
         /* Results */
@@ -345,15 +352,16 @@
         }
 
         .action-btn {
-            padding: 8px 18px;
-            font-size: 0.9em;
+            padding: 10px 20px;
+            font-size: 0.95em;
             font-weight: 600;
             border: 2px solid #eee;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             transition: all 0.2s;
             background: white;
             color: #555;
+            min-height: 44px;
         }
 
         .action-btn:hover {
@@ -368,14 +376,19 @@
         }
 
         .action-btn.share-btn {
-            background: #FF6B35;
+            background: linear-gradient(135deg, #FF6B35, #e84118);
             color: white;
             border-color: #FF6B35;
+            flex: 1;
+            text-align: center;
+            justify-content: center;
         }
 
         .action-btn.share-btn:hover {
-            background: #e84118;
+            background: linear-gradient(135deg, #e84118, #c73615);
             border-color: #e84118;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(232,65,24,0.3);
         }
 
         /* Results footer */
@@ -405,20 +418,21 @@
         .reset-btn {
             display: block;
             margin: 15px auto 0;
-            padding: 12px 24px;
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255,255,255,0.6);
-            border-radius: 10px;
-            font-size: 1em;
-            font-weight: 600;
+            padding: 16px 32px;
+            background: white;
+            color: #FF6B35;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
 
         .reset-btn:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         /* Not found */
@@ -691,7 +705,7 @@
             <span class="nav-sep">|</span>
             <a href="/collection/">Collections</a>
             <span class="nav-sep">|</span>
-            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+            <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'header'});}">Get the App</a>
         </div>
     </nav>
 
@@ -726,6 +740,7 @@
             </form>
         </div>
         <p class="suggestions">Try: <strong>Jessica</strong>, <strong>Michael</strong>, <strong>Brandon</strong>, <strong>Karen</strong>, <strong>Chad</strong>...</p>
+        <p class="social-proof">600+ names available &middot; Thousands of savage burns</p>
 
         <!-- Results (hidden by default) -->
         <section class="results-section" id="resultsSection">
@@ -746,7 +761,7 @@
             <div class="not-found">
                 <h3 id="notFoundName"></h3>
                 <p>We don't have roasts for that name yet — but the app can generate AI roasts for <strong>ANY</strong> name!</p>
-                <a href="https://apps.apple.com/app/id6743726261" class="download-btn">Download Free App</a>
+                <a href="https://apps.apple.com/app/id6743726261" class="download-btn" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast',location:'not_found_cta'});}">Download Free App</a>
             </div>
             <div class="results-footer">
                 <button class="reset-btn" id="resetBtn2">🔁 Try Another Name</button>
@@ -889,6 +904,10 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
             // Clear hash
             history.replaceState(null, '', window.location.pathname);
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'roast_another_clicked', {});
+            }
         }
 
         function performRoast(name) {
@@ -906,10 +925,9 @@
 
             // Track event
             if (typeof gtag === 'function') {
-                gtag('event', 'roast_search', {
-                    event_category: 'roast_tool',
-                    event_label: normalized,
-                    value: entry ? 1 : 0
+                gtag('event', 'roast_name_searched', {
+                    name: normalized,
+                    result_count: entry ? entry.roasts.length : 0
                 });
             }
 
@@ -941,7 +959,7 @@
                     '<p class="roast-text">' + escapeHtml(roast) + '</p>' +
                     '<div class="roast-actions">' +
                         '<button class="action-btn copy-btn" data-roast="' + escapeAttr(roast) + '">📋 Copy</button>' +
-                        '<button class="action-btn share-btn" data-roast="' + escapeAttr(roast) + '" data-name="' + escapeAttr(displayName) + '">📤 Share</button>' +
+                        '<button class="action-btn share-btn" data-roast="' + escapeAttr(roast) + '" data-name="' + escapeAttr(displayName) + '">📤 Send to ' + escapeHtml(displayName) + '</button>' +
                     '</div>';
                 roastCards.appendChild(card);
             });
@@ -1009,7 +1027,10 @@
             });
 
             if (typeof gtag === 'function') {
-                gtag('event', 'roast_copy', { event_category: 'roast_tool' });
+                gtag('event', 'roast_shared', {
+                    name: document.getElementById('resultsTitle').textContent.replace('🔥 Roasts for ', ''),
+                    method: 'copy'
+                });
             }
         }
 
@@ -1036,7 +1057,10 @@
             }
 
             if (typeof gtag === 'function') {
-                gtag('event', 'roast_share', { event_category: 'roast_tool', event_label: name });
+                gtag('event', 'roast_shared', {
+                    name: name,
+                    method: navigator.share ? 'native' : 'copy'
+                });
             }
         }
 

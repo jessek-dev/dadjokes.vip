@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JRRXTJP94X');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Roasts for Francisco — 5 Savage Burns</title>
@@ -700,9 +717,65 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Site Navigation */
+        .site-nav {
+            background: rgba(22,33,62,0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .site-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .site-nav-inner::-webkit-scrollbar { display: none; }
+        .site-nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            padding: 10px 10px;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .site-nav a:hover, .site-nav a.active { color: #e94560; }
+        .site-nav .nav-sep { color: #444; font-size: 0.7em; user-select: none; }
+        @media (max-width: 768px) {
+            .site-nav { padding: 0 10px; }
+            .site-nav a { font-size: 0.8em; padding: 10px 8px; }
+        }
+
     </style>
 </head>
 <body>
+    <!-- Site Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/app/">Home</a>
+            <span class="nav-sep">|</span>
+            <a href="/jokes/">Dad Jokes</a>
+            <span class="nav-sep">|</span>
+            <a href="/roast/" class="active">Roast Your Friends</a>
+            <span class="nav-sep">|</span>
+            <a href="/daily/">Joke of the Day</a>
+            <span class="nav-sep">|</span>
+            <a href="/collection/">Collections</a>
+            <span class="nav-sep">|</span>
+            <a href="https://apps.apple.com/app/id6743726261">Get the App</a>
+        </div>
+    </nav>
+
     <!-- Cross-Browser Mobile App Install Banner -->
     <div id="mobile-app-banner" class="mobile-app-banner hidden">
         <img src="/assets/android-chrome-192x192.png" alt="Dad Jokes" class="banner-icon">
@@ -728,7 +801,7 @@
             <p class="subhead">Because every Francisco deserves to be humbled.</p>
             <div class="collection-meta">
                 <span>5 burns</span>
-                <span>Updated 2026-03-26</span>
+                <span>Updated 2026-03-27</span>
             </div>
         </div>
 
@@ -788,7 +861,7 @@
             <p>The app has AI-powered roasts that use YOUR name. Fresh burns delivered straight to your phone.</p>
             <a href="#" onclick="openApp(); return false;" class="cta-button">Get the App</a>
             <div class="store-badges">
-                <a href="https://apps.apple.com/app/id6743726261">
+                <a href="https://apps.apple.com/app/id6743726261" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast_name',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -811,29 +884,29 @@
         <div class="related-names">
             <h2>More Names to Roast</h2>
             <div class="name-links">
-                                <a href="/roast/hector/" class="name-link">
+                                <a href="/roast/heather/" class="name-link">
                     <span class="name-link-icon">🔥</span>
-                    <span>Roast Hector</span>
+                    <span>Roast Heather</span>
                 </a>
-                <a href="/roast/wesley/" class="name-link">
+                <a href="/roast/austin/" class="name-link">
                     <span class="name-link-icon">💀</span>
-                    <span>Roast Wesley</span>
+                    <span>Roast Austin</span>
                 </a>
-                <a href="/roast/jon/" class="name-link">
+                <a href="/roast/ashley/" class="name-link">
                     <span class="name-link-icon">😈</span>
-                    <span>Roast Jon</span>
+                    <span>Roast Ashley</span>
                 </a>
-                <a href="/roast/frederick/" class="name-link">
+                <a href="/roast/ava/" class="name-link">
                     <span class="name-link-icon">🎯</span>
-                    <span>Roast Frederick</span>
+                    <span>Roast Ava</span>
                 </a>
-                <a href="/roast/colton/" class="name-link">
+                <a href="/roast/ariel/" class="name-link">
                     <span class="name-link-icon">💣</span>
-                    <span>Roast Colton</span>
+                    <span>Roast Ariel</span>
                 </a>
-                <a href="/roast/diana/" class="name-link">
+                <a href="/roast/alexander/" class="name-link">
                     <span class="name-link-icon">⚡</span>
-                    <span>Roast Diana</span>
+                    <span>Roast Alexander</span>
                 </a>
             </div>
         </div>
@@ -862,6 +935,11 @@
             e.preventDefault();
             const name = document.getElementById('name-input').value.trim().toLowerCase();
             if (name) {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'name_directory_search', {
+                        query: name
+                    });
+                }
                 window.location.href = '/roast/' + encodeURIComponent(name) + '/';
             }
         }
@@ -891,6 +969,13 @@
                     btn.innerHTML = original;
                 }, 2000);
             });
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'roast_shared', {
+                    name: 'Francisco',
+                    method: 'copy'
+                });
+            }
         }
 
         // Share roast via native share or fallback to copy
@@ -906,6 +991,13 @@
             } else {
                 navigator.clipboard.writeText(text + '\n\n' + window.location.href).then(() => {
                     alert('Roast copied to clipboard!');
+                });
+            }
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'roast_shared', {
+                    name: 'Francisco',
+                    method: navigator.share ? 'native' : 'copy'
                 });
             }
         }
@@ -951,14 +1043,8 @@
         }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Q8LRBVBMRF');
-        gtag('event', 'roast_page_view', {
+        gtag('event', 'roast_name_page_viewed', {
             'name': 'Francisco',
             'name_lower': 'francisco',
             'roast_count': 5
@@ -977,7 +1063,7 @@
       </div>
 
       <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios">
+        <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'roast_name',location:'footer'});}">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
 

@@ -238,11 +238,59 @@
             background: linear-gradient(135deg, #FFFDE7 0%, #FFF8E1 100%);
             transform: scale(1.03);
             box-shadow: 0 15px 40px rgba(255,215,0,0.3);
+            animation: winnerPop 0.4s ease;
+        }
+
+        @keyframes winnerPop {
+            0% { transform: scale(1); }
+            40% { transform: scale(1.06); }
+            100% { transform: scale(1.03); }
         }
 
         .battle-card.loser {
-            opacity: 0.65;
-            transform: scale(0.97);
+            opacity: 0.55;
+            transform: scale(0.95);
+            transition: all 0.4s ease;
+        }
+
+        /* Share winner button */
+        .share-winner-row {
+            display: none;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .share-winner-row.visible {
+            display: flex;
+        }
+
+        .share-winner-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            border: 2px solid #FFD700;
+            border-radius: 25px;
+            background: white;
+            color: #FF8C00;
+            font-size: 0.95em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-height: 44px;
+        }
+
+        .share-winner-btn:hover {
+            background: #FF8C00;
+            color: white;
+            border-color: #FF8C00;
+        }
+
+        .share-winner-btn.copied {
+            border-color: #4CAF50;
+            color: #4CAF50;
         }
 
         .crown {
@@ -632,7 +680,12 @@
 
             .battle-card {
                 padding: 24px 20px;
-                min-height: 160px;
+                min-height: 140px;
+            }
+
+            .share-winner-btn {
+                flex: 1;
+                justify-content: center;
             }
 
             .stat-item {
@@ -659,7 +712,7 @@
             <div class="banner-title">Dad Jokes</div>
             <div class="banner-subtitle">Rate jokes in the app</div>
         </div>
-        <button class="banner-button" onclick="window.location.href='https://dadjokes.vip/ios'">OPEN</button>
+        <button class="banner-button" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'banner'});}window.location.href='https://dadjokes.vip/ios'">OPEN</button>
         <button class="banner-close" onclick="document.getElementById('mobile-app-banner').classList.add('hidden');document.body.classList.remove('banner-active');">&times;</button>
     </div>
 
@@ -708,6 +761,11 @@
 
         <p class="tap-hint" id="tap-hint">Tap the funnier joke to vote!</p>
 
+        <div class="share-winner-row" id="share-winner-row">
+            <button class="share-winner-btn" id="btn-copy-winner" onclick="copyWinner()">📋 Copy Winner</button>
+            <button class="share-winner-btn" id="btn-share-winner" onclick="shareWinner()" style="display:none;">📤 Share</button>
+        </div>
+
         <button class="btn-primary btn-next" id="btn-next" onclick="nextBattle()">Next Battle!</button>
 
         <div class="leaderboard" id="leaderboard">
@@ -722,7 +780,7 @@
                 Rate jokes to help us pick the best ones. 19,000+ jokes, daily picks, AI roasts, and more. Totally free.
             </p>
             <div class="store-buttons-badges">
-                <a href="https://dadjokes.vip/ios">
+                <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -762,7 +820,7 @@
         </div>
 
         <div class="footer-stores">
-            <a href="https://dadjokes.vip/ios">
+            <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'battle',location:'footer'});}">
                 <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
             </a>
             <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -970,15 +1028,25 @@
                 loserId = getJokeId(jokeRight);
                 winnerCard = document.getElementById('card-left');
                 loserCard = document.getElementById('card-right');
+                winnerJoke = jokeLeft;
             } else {
                 winnerId = getJokeId(jokeRight);
                 loserId = getJokeId(jokeLeft);
                 winnerCard = document.getElementById('card-right');
                 loserCard = document.getElementById('card-left');
+                winnerJoke = jokeRight;
             }
 
             // Save vote
             saveVote(winnerId, loserId);
+
+            // Track battle vote
+            if (typeof gtag === 'function') {
+                gtag('event', 'battle_vote_cast', {
+                    winner_id: winnerId,
+                    loser_id: loserId
+                });
+            }
 
             // Mark cards
             winnerCard.classList.add('voted', 'winner');
@@ -1002,18 +1070,68 @@
                 document.getElementById('result-right').classList.add('visible');
             }, 300);
 
-            // Hide tap hint, show next button
+            // Hide tap hint, show next button and share row
             document.getElementById('tap-hint').classList.add('hidden');
             document.getElementById('btn-next').classList.add('visible');
+            document.getElementById('share-winner-row').classList.add('visible');
+
+            // Show native share if available
+            if (navigator.share) {
+                document.getElementById('btn-share-winner').style.display = '';
+            }
 
             // Update stats and leaderboard
             updateStats();
             updateLeaderboard();
         }
 
+        var winnerJoke = null;
+
+        function copyWinner() {
+            if (!winnerJoke) return;
+            var text = winnerJoke.content_text + '\n\nhttps://dadjokes.vip/battle/';
+            navigator.clipboard.writeText(text).then(function() {
+                var btn = document.getElementById('btn-copy-winner');
+                btn.classList.add('copied');
+                btn.textContent = 'Copied!';
+                setTimeout(function() {
+                    btn.classList.remove('copied');
+                    btn.textContent = '📋 Copy Winner';
+                }, 2000);
+            });
+
+            // Track battle share
+            if (typeof gtag === 'function') {
+                gtag('event', 'battle_joke_shared', {
+                    joke_id: getJokeId(winnerJoke),
+                    method: 'copy'
+                });
+            }
+        }
+
+        function shareWinner() {
+            if (!winnerJoke || !navigator.share) return;
+            navigator.share({
+                title: 'This dad joke won!',
+                text: winnerJoke.content_text,
+                url: 'https://dadjokes.vip/battle/'
+            }).catch(function() {});
+
+            // Track battle share
+            if (typeof gtag === 'function') {
+                gtag('event', 'battle_joke_shared', {
+                    joke_id: getJokeId(winnerJoke),
+                    method: 'native'
+                });
+            }
+        }
+
         function nextBattle() {
             var pair = pickTwo();
             if (!pair) return;
+            // Hide share row for new battle
+            document.getElementById('share-winner-row').classList.remove('visible');
+            winnerJoke = null;
             showBattle(pair);
         }
 

@@ -332,6 +332,38 @@
             color: white;
         }
 
+        .joke-counter {
+            margin-top: 12px;
+            font-size: 0.9em;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .joke-counter strong {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* Punchline drum-roll effect */
+        @keyframes punchlinePop {
+            0% { transform: scale(0.8) translateY(10px); opacity: 0; }
+            60% { transform: scale(1.05) translateY(-2px); opacity: 1; }
+            100% { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        .joke-punchline.pop {
+            animation: punchlinePop 0.5s ease forwards;
+        }
+
+        /* Fun button pulse for "Another One!" */
+        @keyframes nudge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .btn-primary.pulse {
+            animation: nudge 0.3s ease;
+        }
+
         /* CTA Section */
         .cta {
             background: white;
@@ -514,8 +546,18 @@
             }
 
             .share-btn {
-                padding: 8px 14px;
-                font-size: 0.85em;
+                padding: 12px 18px;
+                font-size: 0.95em;
+                min-height: 44px;
+            }
+
+            .share-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .share-btn {
+                justify-content: center;
             }
         }
     </style>
@@ -533,7 +575,7 @@
             <div class="banner-title">Dad Jokes</div>
             <div class="banner-subtitle">Get all the jokes in the app</div>
         </div>
-        <button class="banner-button" onclick="window.location.href='https://dadjokes.vip/ios'">OPEN</button>
+        <button class="banner-button" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'banner'});}window.location.href='https://dadjokes.vip/ios'">OPEN</button>
         <button class="banner-close" onclick="document.getElementById('mobile-app-banner').classList.add('hidden');document.body.classList.remove('banner-active');">&times;</button>
     </div>
 
@@ -556,8 +598,8 @@
         </div>
 
         <div class="button-row">
-            <button class="btn-primary btn-reveal" id="btn-reveal" onclick="revealPunchline()">Reveal Punchline</button>
-            <button class="btn-primary" id="btn-next" onclick="nextJoke()">Another One!</button>
+            <button class="btn-primary btn-reveal" id="btn-reveal" onclick="revealPunchline()">Tap to Reveal Punchline</button>
+            <button class="btn-primary" id="btn-next" onclick="nextJoke()">Another One! 🎲</button>
         </div>
 
         <div class="share-row" id="share-row" style="display:none;">
@@ -569,11 +611,15 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
                 Share
             </button>
-            <a class="share-btn" id="btn-twitter" href="#" target="_blank" rel="noopener noreferrer">
+            <a class="share-btn" id="btn-twitter" href="#" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag==='function'&&currentJoke){gtag('event','random_joke_shared',{joke_id:getJokeId(currentJoke),method:'twitter'});}">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 Post
             </a>
         </div>
+
+        <p class="joke-counter" id="joke-counter" style="display:none;">
+            You've seen <strong><span id="seen-count">0</span></strong> jokes this session
+        </p>
 
         <p class="stats-line" id="stats-line" style="display:none;">
             This is <strong>1 of <span id="joke-count">5,000+</span></strong> dad jokes. Get them all in the app.
@@ -585,7 +631,7 @@
                 19,000+ jokes, daily picks, AI roasts, and custom themes. Totally free.
             </p>
             <div class="store-buttons-badges">
-                <a href="https://dadjokes.vip/ios">
+                <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -625,7 +671,7 @@
         </div>
 
         <div class="footer-stores">
-            <a href="https://dadjokes.vip/ios">
+            <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'random',location:'footer'});}">
                 <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
             </a>
             <span style="cursor: not-allowed;" title="Coming soon to Android">
@@ -657,13 +703,14 @@
         var jokes = [];
         var currentJoke = null;
         var punchlineRevealed = false;
+        var seenCount = parseInt(localStorage.getItem('dadjokes_seen_count') || '0', 10);
 
         // Load jokes
         fetch('/jokes.json')
             .then(function(r) { return r.json(); })
             .then(function(data) {
                 jokes = data.items;
-                document.getElementById('joke-count', jokes.length.toLocaleString());
+                document.getElementById('joke-count').textContent = jokes.length.toLocaleString();
 
                 // Check for hash — load specific joke
                 var hash = window.location.hash.replace('#', '');
@@ -795,13 +842,35 @@
         function revealPunchline() {
             if (punchlineRevealed) return;
             punchlineRevealed = true;
-            document.getElementById('joke-punchline').classList.add('revealed');
+            var punchlineEl = document.getElementById('joke-punchline');
+            punchlineEl.classList.add('revealed', 'pop');
             document.getElementById('btn-reveal').classList.add('hidden');
             document.getElementById('btn-reveal').style.display = 'none';
+            // Remove pop class after animation so it can re-trigger
+            setTimeout(function() { punchlineEl.classList.remove('pop'); }, 500);
+
+            // Track punchline reveal
+            if (typeof gtag === 'function' && currentJoke) {
+                gtag('event', 'random_punchline_revealed', {
+                    joke_id: getJokeId(currentJoke)
+                });
+            }
         }
 
         function nextJoke() {
             if (jokes.length === 0) return;
+
+            // Increment seen counter
+            seenCount++;
+            localStorage.setItem('dadjokes_seen_count', String(seenCount));
+            var counterEl = document.getElementById('joke-counter');
+            counterEl.style.display = 'block';
+            document.getElementById('seen-count').textContent = seenCount;
+
+            // Pulse the button for fun feedback
+            var nextBtn = document.getElementById('btn-next');
+            nextBtn.classList.add('pulse');
+            setTimeout(function() { nextBtn.classList.remove('pulse'); }, 300);
 
             // Flip animation
             var card = document.getElementById('joke-card');
@@ -823,6 +892,13 @@
             // Slight delay so animation starts before content changes
             setTimeout(function() {
                 showJoke(newJoke);
+
+                // Track random joke loaded
+                if (typeof gtag === 'function') {
+                    gtag('event', 'random_joke_loaded', {
+                        joke_id: getJokeId(newJoke)
+                    });
+                }
             }, 200);
         }
 
@@ -851,6 +927,14 @@
                     btn.querySelector('svg').nextSibling.textContent = ' Copy';
                 }, 2000);
             });
+
+            // Track share
+            if (typeof gtag === 'function' && currentJoke) {
+                gtag('event', 'random_joke_shared', {
+                    joke_id: getJokeId(currentJoke),
+                    method: 'copy'
+                });
+            }
         }
 
         function shareJoke() {
@@ -860,6 +944,14 @@
                 text: getJokeText(),
                 url: getShareUrl()
             }).catch(function() {});
+
+            // Track share
+            if (typeof gtag === 'function' && currentJoke) {
+                gtag('event', 'random_joke_shared', {
+                    joke_id: getJokeId(currentJoke),
+                    method: 'native'
+                });
+            }
         }
 
         function updateTwitterLink() {

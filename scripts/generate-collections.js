@@ -5,6 +5,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { COLLECTIONS_CONFIG } from './collections-config.js';
+import { fetchSeasonalIds } from './fetch-seasonal-ids.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isTestMode = process.argv.includes('--test');
@@ -84,15 +85,27 @@ function replacePlaceholders(template, replacements) {
 }
 
 /**
- * Filter jokes for a given collection based on its filter criteria
+ * Filter jokes for a given collection based on its filter criteria.
+ * When seasonTag is set, jokes tagged in the Google Sheet are included
+ * as a union with the keyword/category text-matching results.
  */
-function filterJokesForCollection(allJokes, jokeFilter) {
+function filterJokesForCollection(allJokes, jokeFilter, seasonalIds) {
+  // If the collection has a seasonTag, find jokes by sheet tag (by doc ID)
+  let seasonTaggedIds = null;
+  if (jokeFilter.seasonTag && seasonalIds) {
+    seasonTaggedIds = seasonalIds.get(jokeFilter.seasonTag) || new Set();
+  }
+
   return allJokes.filter(joke => {
+    // Check if this joke is tagged for the season in the sheet
+    const matchesSeasonTag = seasonTaggedIds ? seasonTaggedIds.has(joke.id) : false;
+
     // maxLength filter: total joke text must be under the limit
     if (jokeFilter.maxLength) {
       const fullText = joke.text || ((joke.setup || '') + ' ' + (joke.punchline || ''));
       if (fullText.length > jokeFilter.maxLength) {
-        return false;
+        // Season-tagged jokes bypass maxLength
+        return matchesSeasonTag;
       }
     }
 
@@ -107,17 +120,23 @@ function filterJokesForCollection(allJokes, jokeFilter) {
       matchesKeyword = jokeFilter.keywords.some(kw => jokeText.includes(kw.toLowerCase()));
     }
 
+    // Text-based match (existing logic)
+    let matchesText = false;
+
     // For keyword+category filters, require both
     if (jokeFilter.categories && jokeFilter.keywords) {
-      return matchesCategory && matchesKeyword;
+      matchesText = matchesCategory && matchesKeyword;
     }
-
     // For maxLength-only filters, just use maxLength (already filtered above)
-    if (jokeFilter.maxLength && !jokeFilter.categories && !jokeFilter.keywords) {
-      return true;
+    else if (jokeFilter.maxLength && !jokeFilter.categories && !jokeFilter.keywords) {
+      matchesText = true;
+    }
+    else {
+      matchesText = matchesCategory && matchesKeyword;
     }
 
-    return matchesCategory && matchesKeyword;
+    // Union: include joke if it matches text OR is season-tagged
+    return matchesText || matchesSeasonTag;
   });
 }
 
@@ -340,6 +359,15 @@ async function main() {
   // Fetch jokes
   const allJokes = await fetchJokes();
 
+  // Fetch seasonal IDs from Google Sheet
+  let seasonalIds = new Map();
+  try {
+    seasonalIds = await fetchSeasonalIds();
+  } catch (error) {
+    console.warn(`\nWARNING: Could not fetch seasonal IDs from Google Sheet: ${error.message}`);
+    console.warn('Continuing with keyword-only matching for seasonal collections.\n');
+  }
+
   // Determine which collections to generate
   let collectionsToGenerate = COLLECTIONS_CONFIG.collections;
   if (isTestMode) {
@@ -350,7 +378,7 @@ async function main() {
   // Generate collection pages
   console.log('\nGenerating collection pages...');
   for (const collection of collectionsToGenerate) {
-    const matchedJokes = filterJokesForCollection(allJokes, collection.jokeFilter);
+    const matchedJokes = filterJokesForCollection(allJokes, collection.jokeFilter, seasonalIds);
     await generateCollectionPage(collection, matchedJokes, template);
   }
 
