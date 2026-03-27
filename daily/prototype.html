@@ -630,7 +630,7 @@
             });
         }
 
-        // Native share
+        // Native share with copy fallback
         function shareNative() {
             const setup = document.querySelector('.joke-setup').textContent;
             const punch = document.getElementById('punchline').textContent;
@@ -640,9 +640,13 @@
                     title: 'Dad Joke of the Day',
                     text: setup + '\n' + punch,
                     url: 'https://dadjokes.vip/daily/'
-                });
+                }).catch(() => {});
             } else {
-                copyJoke(document.getElementById('btn-copy'));
+                // Fallback: copy the joke text
+                const text = setup + '\n' + punch + '\n\ndadjokes.vip/daily';
+                navigator.clipboard.writeText(text).then(() => {
+                    showToast('Joke copied to clipboard!');
+                });
             }
         }
 
@@ -654,11 +658,7 @@
             setTimeout(() => t.classList.remove('show'), 2000);
         }
 
-        // Hide share btn on mobile if no Web Share API
-        if (!navigator.share) {
-            const shareBtn = document.getElementById('btn-share');
-            if (shareBtn) shareBtn.style.display = 'none';
-        }
+        // Share button always visible — falls back to copy if Web Share API unavailable
     </script>
 
 </body>
