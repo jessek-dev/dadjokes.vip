@@ -97,15 +97,21 @@
         /* ---- PAGE CONTENT ---- */
         .page { padding: 8px 20px 40px; max-width: 480px; margin: 0 auto; }
 
-        /* ---- DATE LABEL ---- */
-        .date-label {
+        /* ---- PAGE TITLE ---- */
+        .page-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .page-date {
             text-align: center;
             font-size: 0.8125rem;
             font-weight: 600;
             color: var(--text-dim);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
 
         /* ---- JOKE CARD ---- */
@@ -121,59 +127,36 @@
 
         .joke-card:hover { box-shadow: var(--card-shadow-hover); }
 
-        .joke-badge {
-            display: inline-block;
-            background: var(--coral-soft);
-            color: var(--coral);
-            font-size: 0.6875rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 4px 12px;
-            border-radius: var(--radius-pill);
-            margin-bottom: 20px;
-        }
-
         .joke-setup {
             font-size: 1.375rem;
             font-weight: 700;
             line-height: 1.45;
             color: var(--text);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
-        /* ---- REVEAL BUTTON ---- */
-        .reveal-btn {
+        /* ---- REVEAL (understated — tap to see, not a primary CTA) ---- */
+        .reveal-tap {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: var(--navy);
-            color: #fff;
+            gap: 6px;
+            background: none;
+            color: var(--text-dim);
             font-family: var(--font);
-            font-size: 0.9375rem;
-            font-weight: 700;
-            padding: 14px 32px;
-            border-radius: var(--radius-pill);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            padding: 8px 0;
             border: none;
             cursor: pointer;
-            transition: transform var(--transition), box-shadow var(--transition);
-            min-height: 48px;
-            width: 100%;
-            max-width: 280px;
+            transition: color var(--transition);
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .reveal-btn:active {
-            transform: scale(0.96) translateY(2px);
-        }
+        .reveal-tap:hover { color: var(--text); }
 
-        .reveal-btn:hover {
-            box-shadow: 0 4px 16px rgba(30, 58, 95, 0.3);
-        }
+        .reveal-tap svg { width: 14px; height: 14px; }
 
-        .reveal-btn svg { width: 18px; height: 18px; }
-
-        .reveal-btn.hidden { display: none; }
+        .reveal-tap.hidden { display: none; }
 
         /* ---- PUNCHLINE (hidden, then revealed) ---- */
         .joke-punchline {
@@ -251,6 +234,39 @@
             border-color: #48BB78;
             color: #2D7A4F;
         }
+
+        /* ---- IN-CARD CTA (appears after reveal, this is the real primary action) ---- */
+        .card-cta {
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(6px);
+            transition: opacity 0.3s ease 0.35s, transform 0.3s ease 0.35s;
+            pointer-events: none;
+        }
+
+        .card-cta.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .btn-primary-cta {
+            display: block;
+            background: var(--coral);
+            color: #fff;
+            font-family: var(--font);
+            font-size: 0.9375rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: var(--radius-pill);
+            min-height: 48px;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+
+        .btn-primary-cta:active { transform: scale(0.97) translateY(1px); }
+        .btn-primary-cta:hover { box-shadow: 0 4px 16px rgba(255, 107, 107, 0.35); }
 
         /* ---- CATEGORY TAG (below card, not inside) ---- */
         .joke-meta {
@@ -444,24 +460,24 @@
     <!-- Page -->
     <main class="page">
 
-        <!-- Date -->
-        <p class="date-label">March 27, 2026</p>
+        <!-- Title -->
+        <h1 class="page-title">Joke of the Day</h1>
+        <p class="page-date">March 27, 2026</p>
 
         <!-- Today's Joke -->
         <div class="joke-card" id="joke-card">
-            <div class="joke-badge">Joke of the Day</div>
 
             <p class="joke-setup">How do you catch a unique rabbit?</p>
 
             <p class="joke-punchline" id="punchline">Unique up on it.</p>
 
-            <button class="reveal-btn" id="reveal-btn" onclick="reveal()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-                Reveal Punchline
+            <button class="reveal-tap" id="reveal-btn" onclick="reveal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                Tap for the punchline
             </button>
 
             <div class="share-row" id="share-row">
-                <button class="share-btn share-btn--primary" id="btn-share" onclick="shareNative()">
+                <button class="share-btn" id="btn-share" onclick="shareNative()">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
                     Share
                 </button>
@@ -469,6 +485,13 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                     Copy
                 </button>
+            </div>
+
+            <!-- Primary CTA (appears after punchline reveal) -->
+            <div class="card-cta" id="card-cta">
+                <a href="https://apps.apple.com/app/id6743726261" class="btn-primary-cta">
+                    Get 19,000+ more jokes in the app
+                </a>
             </div>
         </div>
 
@@ -566,6 +589,7 @@
             document.getElementById('punchline').classList.add('revealed');
             document.getElementById('reveal-btn').classList.add('hidden');
             document.getElementById('share-row').classList.add('visible');
+            document.getElementById('card-cta').classList.add('visible');
         }
 
         // Reveal previous joke (tap the card)
