@@ -665,6 +665,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
     <script src="/assets/js/auth.js"></script>
     <script src="/assets/js/share.js"></script>
+    <script src="/assets/js/tracking.js"></script>
 
     <script>
     (function() {
@@ -762,6 +763,9 @@
             if (typeof gtag === 'function') {
                 gtag('event', 'roast_another_clicked', {});
             }
+            if (typeof DadJokesTracking !== 'undefined') {
+                DadJokesTracking.track('roast_another_clicked');
+            }
         }
 
         function performRoast(name) {
@@ -780,6 +784,12 @@
             // Track event
             if (typeof gtag === 'function') {
                 gtag('event', 'roast_name_searched', {
+                    name: normalized,
+                    result_count: entry ? entry.roasts.length : 0
+                });
+            }
+            if (typeof DadJokesTracking !== 'undefined') {
+                DadJokesTracking.track('roast_name_searched', {
                     name: normalized,
                     result_count: entry ? entry.roasts.length : 0
                 });
@@ -901,6 +911,9 @@
                 if (typeof gtag === 'function') {
                     gtag('event', 'roast_shared', { name: currentDisplayName, method: 'copy' });
                 }
+                if (typeof DadJokesTracking !== 'undefined') {
+                    DadJokesTracking.track('roast_shared', { name: currentDisplayName, method: 'copy' });
+                }
             }
 
             if (btn.classList.contains('share-btn--native')) {
@@ -913,6 +926,9 @@
                 if (typeof gtag === 'function') {
                     gtag('event', 'roast_shared', { name: currentDisplayName, method: 'native' });
                 }
+                if (typeof DadJokesTracking !== 'undefined') {
+                    DadJokesTracking.track('roast_shared', { name: currentDisplayName, method: 'native' });
+                }
             }
 
             if (btn.classList.contains('share-btn--twitter')) {
@@ -923,6 +939,9 @@
 
                 if (typeof gtag === 'function') {
                     gtag('event', 'roast_shared', { name: currentDisplayName, method: 'twitter' });
+                }
+                if (typeof DadJokesTracking !== 'undefined') {
+                    DadJokesTracking.track('roast_shared', { name: currentDisplayName, method: 'twitter' });
                 }
             }
         });

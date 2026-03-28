@@ -604,13 +604,31 @@
     <!-- Toast -->
     <div class="toast" id="toast"></div>
 
+    <!-- Mixpanel Tracking -->
+    <script src="/assets/js/tracking.js"></script>
+
     <script>
+        // Track daily joke page view
+        if (typeof DadJokesTracking !== 'undefined') {
+            DadJokesTracking.track('daily_joke_viewed', {
+                date: '2026-03-27',
+                joke_id: 'unique-rabbit'
+            });
+        }
+
         // Reveal featured punchline
         function reveal() {
             document.getElementById('punchline').classList.add('revealed');
             document.getElementById('reveal-btn').classList.add('hidden');
             document.getElementById('share-row').classList.add('visible');
             document.getElementById('card-cta').classList.add('visible');
+
+            if (typeof DadJokesTracking !== 'undefined') {
+                DadJokesTracking.track('joke_punchline_revealed', {
+                    joke_id: 'unique-rabbit',
+                    page_type: 'daily'
+                });
+            }
         }
 
         // Reveal previous joke (tap the card)
@@ -620,6 +638,20 @@
             if (pl.classList.contains('revealed')) return;
             pl.classList.add('revealed');
             if (hint) hint.classList.add('hidden');
+
+            // Track previous joke reveal
+            if (typeof DadJokesTracking !== 'undefined') {
+                var prevCards = document.querySelectorAll('.prev-card');
+                var daysAgo = 1;
+                for (var i = 0; i < prevCards.length; i++) {
+                    if (prevCards[i] === card) { daysAgo = i + 1; break; }
+                }
+                var jokeId = card.querySelector('.prev-setup') ? card.querySelector('.prev-setup').textContent.substring(0, 40) : '';
+                DadJokesTracking.track('previous_joke_revealed', {
+                    joke_id: jokeId,
+                    days_ago: daysAgo
+                });
+            }
         }
 
         // Copy joke
@@ -636,6 +668,14 @@
                     btn.classList.remove('copied');
                     btn.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy';
                 }, 2000);
+
+                if (typeof DadJokesTracking !== 'undefined') {
+                    DadJokesTracking.track('joke_shared', {
+                        joke_id: 'unique-rabbit',
+                        method: 'copy',
+                        page_type: 'daily'
+                    });
+                }
             });
         }
 
@@ -657,6 +697,14 @@
                     showToast('Joke copied to clipboard!');
                 });
             }
+
+            if (typeof DadJokesTracking !== 'undefined') {
+                DadJokesTracking.track('joke_shared', {
+                    joke_id: 'unique-rabbit',
+                    method: navigator.share ? 'native' : 'copy',
+                    page_type: 'daily'
+                });
+            }
         }
 
         // Toast
@@ -666,6 +714,21 @@
             t.classList.add('show');
             setTimeout(() => t.classList.remove('show'), 2000);
         }
+
+        // Track app store clicks
+        document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var source = 'daily_bottom';
+                if (link.closest('.joke-card') || link.closest('.card-cta')) {
+                    source = 'daily_card';
+                } else if (link.id === 'header-app-link') {
+                    source = 'daily_header';
+                }
+                if (typeof DadJokesTracking !== 'undefined') {
+                    DadJokesTracking.track('app_store_clicked', { source: source });
+                }
+            });
+        });
 
         // Hide "Get the App" in header on Safari (Smart App Banner handles it)
         var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);

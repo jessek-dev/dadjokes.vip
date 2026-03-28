@@ -658,6 +658,7 @@
     <!-- ===== Auth + Share Scripts ===== -->
     <script src="/assets/js/auth.js"></script>
     <script src="/assets/js/share.js"></script>
+    <script src="/assets/js/tracking.js"></script>
 
     <script>
       /* ---- Nav toggle ---- */
@@ -862,6 +863,9 @@
         if (typeof gtag === 'function') {
           gtag('event', 'battle_vote_cast', { winner_id: winnerId, loser_id: loserId });
         }
+        if (typeof DadJokesTracking !== 'undefined') {
+          DadJokesTracking.track('battle_vote_cast', { winner_id: winnerId, loser_id: loserId });
+        }
 
         winnerCard.classList.add('voted', 'winner');
         loserCard.classList.add('voted', 'loser');
@@ -913,6 +917,9 @@
           if (typeof gtag === 'function') {
             gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'copy' });
           }
+          if (typeof DadJokesTracking !== 'undefined') {
+            DadJokesTracking.track('joke_shared', { joke_id: getJokeId(winnerJoke), method: 'copy', page_type: 'battle' });
+          }
         });
 
         document.getElementById('btn-tweet-winner').addEventListener('click', function () {
@@ -920,12 +927,18 @@
           if (typeof gtag === 'function') {
             gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'twitter' });
           }
+          if (typeof DadJokesTracking !== 'undefined') {
+            DadJokesTracking.track('joke_shared', { joke_id: getJokeId(winnerJoke), method: 'twitter', page_type: 'battle' });
+          }
         });
 
         document.getElementById('btn-share-winner').addEventListener('click', function () {
           DadJokesShare.shareNative('This dad joke won!', jokeText, shareUrl);
           if (typeof gtag === 'function') {
             gtag('event', 'battle_joke_shared', { joke_id: getJokeId(winnerJoke), method: 'native' });
+          }
+          if (typeof DadJokesTracking !== 'undefined') {
+            DadJokesTracking.track('joke_shared', { joke_id: getJokeId(winnerJoke), method: 'native', page_type: 'battle' });
           }
         });
 

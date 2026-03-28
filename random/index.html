@@ -373,6 +373,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
     <script src="/assets/js/auth.js"></script>
     <script src="/assets/js/share.js"></script>
+    <script src="/assets/js/tracking.js"></script>
 
     <script>
       // Footer year
@@ -511,6 +512,11 @@
         // Update hash for deep linking
         var jokeId = getJokeId(joke);
         history.replaceState(null, '', '#' + jokeId);
+
+        // Track random joke viewed
+        if (typeof DadJokesTracking !== 'undefined') {
+          DadJokesTracking.track('random_joke_viewed', { joke_id: jokeId });
+        }
       }
 
       function revealPunchline() {
@@ -524,6 +530,13 @@
 
         if (typeof gtag === 'function' && currentJoke) {
           gtag('event', 'random_punchline_revealed', { joke_id: getJokeId(currentJoke) });
+        }
+
+        if (typeof DadJokesTracking !== 'undefined' && currentJoke) {
+          DadJokesTracking.track('joke_punchline_revealed', {
+            joke_id: getJokeId(currentJoke),
+            page_type: 'random'
+          });
         }
       }
 
@@ -594,6 +607,9 @@
         if (typeof gtag === 'function' && currentJoke) {
           gtag('event', 'random_joke_shared', { joke_id: getJokeId(currentJoke), method: 'copy' });
         }
+        if (typeof DadJokesTracking !== 'undefined' && currentJoke) {
+          DadJokesTracking.track('joke_shared', { joke_id: getJokeId(currentJoke), method: 'copy', page_type: 'random' });
+        }
       }
 
       function shareJoke() {
@@ -602,6 +618,9 @@
         if (typeof gtag === 'function' && currentJoke) {
           gtag('event', 'random_joke_shared', { joke_id: getJokeId(currentJoke), method: 'native' });
         }
+        if (typeof DadJokesTracking !== 'undefined' && currentJoke) {
+          DadJokesTracking.track('joke_shared', { joke_id: getJokeId(currentJoke), method: 'native', page_type: 'random' });
+        }
       }
 
       function shareTwitter() {
@@ -609,6 +628,9 @@
 
         if (typeof gtag === 'function' && currentJoke) {
           gtag('event', 'random_joke_shared', { joke_id: getJokeId(currentJoke), method: 'twitter' });
+        }
+        if (typeof DadJokesTracking !== 'undefined' && currentJoke) {
+          DadJokesTracking.track('joke_shared', { joke_id: getJokeId(currentJoke), method: 'twitter', page_type: 'random' });
         }
       }
 

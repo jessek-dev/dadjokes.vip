@@ -182,8 +182,22 @@
     // Prevent background scrolling
     document.body.style.overflow = 'hidden';
 
+    // Track gate shown
+    if (typeof DadJokesTracking !== 'undefined') {
+      DadJokesTracking.track('web_gate_shown', {
+        view_count: viewCount,
+        total_items: totalItems
+      });
+    }
+
     // Bind events
-    document.getElementById('google-signin-btn').addEventListener('click', handleGoogleSignIn);
+    document.getElementById('google-signin-btn').addEventListener('click', function () {
+      // Track sign-in attempt
+      if (typeof DadJokesTracking !== 'undefined') {
+        DadJokesTracking.track('web_gate_signin_attempted');
+      }
+      handleGoogleSignIn();
+    });
 
     document.getElementById('auth-gate-dismiss').addEventListener('click', function () {
       dismissGate();
@@ -218,6 +232,11 @@
     var gate = document.getElementById('auth-gate');
     if (!gate) return;
 
+    // Track gate dismissed
+    if (typeof DadJokesTracking !== 'undefined') {
+      DadJokesTracking.track('web_gate_dismissed');
+    }
+
     // Replace the card content with an app CTA
     var card = gate.querySelector('.auth-gate-card');
     if (card) {
@@ -230,11 +249,18 @@
         '<p class="auth-gate-subtitle">' +
           'Unlimited jokes, daily notifications, and personalized roasts — all free.' +
         '</p>' +
-        '<a href="https://apps.apple.com/app/id6743726261" target="_blank" rel="noopener" class="btn btn-cta btn-block">' +
+        '<a href="https://apps.apple.com/app/id6743726261" target="_blank" rel="noopener" class="btn btn-cta btn-block" id="auth-gate-app-link">' +
           'Download Free' +
         '</a>' +
         '<br>' +
         '<button class="btn btn-ghost btn-block" id="auth-gate-close-final" style="min-height:40px;font-size:0.875rem;">No thanks</button>';
+
+      // Track app redirect from gate
+      document.getElementById('auth-gate-app-link').addEventListener('click', function () {
+        if (typeof DadJokesTracking !== 'undefined') {
+          DadJokesTracking.track('web_gate_app_redirect');
+        }
+      });
 
       // Bind close on the final dismiss
       document.getElementById('auth-gate-dismiss-final').addEventListener('click', function () {
@@ -273,6 +299,13 @@
       .catch(function (error) {
         console.warn('[DadJokesAuth] Sign-in error:', error.code, error.message);
 
+        // Track sign-in failure
+        if (typeof DadJokesTracking !== 'undefined') {
+          DadJokesTracking.track('web_gate_signin_failed', {
+            error: error.code || error.message
+          });
+        }
+
         // If popup was blocked, fall back to redirect
         if (error.code === 'auth/popup-blocked') {
           auth.signInWithRedirect(provider);
@@ -301,6 +334,22 @@
         method: 'Google',
         user_uid: user.uid,
         is_new_user: additionalUserInfo ? additionalUserInfo.isNewUser : false
+      });
+    }
+
+    // Track sign-in success in Mixpanel
+    if (typeof DadJokesTracking !== 'undefined') {
+      var isNew = additionalUserInfo ? additionalUserInfo.isNewUser : false;
+      DadJokesTracking.identify(user.uid);
+      DadJokesTracking.track('web_gate_signin_success', {
+        method: 'Google',
+        is_new_user: isNew
+      });
+      DadJokesTracking.setUserProperties({
+        '$email': user.email,
+        '$name': user.displayName,
+        'Sign Up Method': 'Google',
+        'Is New User': isNew
       });
     }
 
