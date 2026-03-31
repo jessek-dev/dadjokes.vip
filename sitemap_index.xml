@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
+    <loc>https://dadjokes.vip/sitemap.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/sitemap_categories.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://dadjokes.vip/generated_sitemaps/sitemap_regular_jokes.xml</loc>
     <lastmod>2026-03-31</lastmod>
   </sitemap>
@@ -10,6 +18,18 @@
   </sitemap>
   <sitemap>
     <loc>https://dadjokes.vip/generated_sitemaps/sitemap_name_jokes_2.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_ai_jokes.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_collections.xml</loc>
+    <lastmod>2026-03-31</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://dadjokes.vip/generated_sitemaps/sitemap_roasts.xml</loc>
     <lastmod>2026-03-31</lastmod>
   </sitemap>
 </sitemapindex>
