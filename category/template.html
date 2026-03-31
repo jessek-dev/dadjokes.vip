@@ -20,8 +20,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{CATEGORY}} Jokes - Dad Jokes</title>
-    <meta name="description" content="{{CATEGORY_DESCRIPTION}} Browse our collection of the best {{CATEGORY_LOWER}} dad jokes.">
+    <title>100+ Funny {{CATEGORY}} Dad Jokes That Will Make You Laugh (2026)</title>
+    <meta name="description" content="{{CATEGORY_DESCRIPTION}} Browse our collection of 100+ hilarious {{CATEGORY_LOWER}} dad jokes with setups and punchlines. Updated daily!">
     <link rel="canonical" href="https://dadjokes.vip/jokes/{{CATEGORY_SLUG}}/">
 
     <!-- Favicon -->
@@ -39,7 +39,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="{{CATEGORY}} Jokes - Dad Jokes">
+    <meta property="og:title" content="100+ Funny {{CATEGORY}} Dad Jokes (2026)">
     <meta property="og:description" content="{{CATEGORY_DESCRIPTION}}">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/category/{{CATEGORY_SLUG}}">
@@ -47,7 +47,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{CATEGORY}} Jokes - Dad Jokes">
+    <meta name="twitter:title" content="100+ Funny {{CATEGORY}} Dad Jokes (2026)">
     <meta name="twitter:description" content="{{CATEGORY_DESCRIPTION}}">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
 
@@ -56,9 +56,9 @@
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "{{CATEGORY}} Jokes",
+      "name": "100+ Funny {{CATEGORY}} Dad Jokes",
       "description": "{{CATEGORY_DESCRIPTION}}",
-      "url": "https://dadjokes.vip/category/{{CATEGORY_SLUG}}",
+      "url": "https://dadjokes.vip/jokes/{{CATEGORY_SLUG}}/",
       "isPartOf": {
         "@type": "WebSite",
         "name": "Dad Jokes",
@@ -106,6 +106,11 @@
       "numberOfItems": {{JOKE_COUNT}},
       "itemListElement": {{JOKE_ITEM_LIST_JSON}}
     }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {{FAQ_SCHEMA_JSON}}
     </script>
 
     <style>
@@ -404,6 +409,148 @@
             }
         }
 
+        /* Intro text */
+        .intro-text {
+            color: #555;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* Static joke cards with reveal */
+        .static-joke-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .joke-setup {
+            font-size: 1.15em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .joke-punchline {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #FF8C00;
+            font-weight: 600;
+            display: none;
+            margin-top: 8px;
+        }
+
+        .joke-punchline.revealed {
+            display: block;
+        }
+
+        .reveal-btn {
+            background: #FFF3E0;
+            color: #FF8C00;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .reveal-btn:hover {
+            background: #FFE0B2;
+        }
+
+        .reveal-btn.hidden {
+            display: none;
+        }
+
+        .joke-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #FF8C00;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+
+        .joke-link:hover {
+            text-decoration: underline;
+        }
+
+        /* CTA card */
+        .cta-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .cta-card h2 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .cta-card p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .collection-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #FF8C00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .collection-link:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ section */
+        .faq-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .faq-section h2 {
+            color: #FF8C00;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-item h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
         /* Footer Styles */
         .site-footer {
             width: 100%;
@@ -465,17 +612,29 @@
         </nav>
 
         <div class="header-card">
-            <h1>{{CATEGORY_EMOJI}} {{CATEGORY}} Jokes</h1>
+            <h1>{{CATEGORY_EMOJI}} 100+ Funny {{CATEGORY}} Dad Jokes</h1>
             <p>{{CATEGORY_DESCRIPTION}}</p>
+            <p class="intro-text">{{CATEGORY_INTRO}}</p>
             <div class="header-stats">
+                <span>{{JOKE_COUNT}} jokes</span>
                 <span>Updated daily</span>
             </div>
-            <a href="#" onclick="openApp(); return false;" class="cta-button">Get More in the App</a>
         </div>
 
         <div class="joke-grid" id="joke-grid">
-            <!-- Jokes will be inserted here via template replacement -->
-            {{JOKE_LIST}}
+            {{STATIC_JOKES_HTML}}
+        </div>
+
+        <div class="cta-card">
+            <h2>Want More {{CATEGORY}} Dad Jokes?</h2>
+            <p>We have {{JOKE_COUNT}}+ {{CATEGORY_LOWER}} jokes in the app, plus {{TOTAL_CATEGORIES}} other categories. Get a new joke every day!</p>
+            <a href="#" onclick="openApp(); return false;" class="cta-button">Get the Free App</a>
+            {{COLLECTION_LINK}}
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            {{FAQ_HTML}}
         </div>
 
         <div class="related-categories">
@@ -584,6 +743,14 @@
             } else {
                 window.location.href = '/app';
             }
+        }
+    </script>
+
+    <script>
+        function revealPunchline(btn) {
+            const card = btn.closest('.static-joke-card');
+            card.querySelector('.joke-punchline').classList.add('revealed');
+            btn.classList.add('hidden');
         }
     </script>
 

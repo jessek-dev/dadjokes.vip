@@ -323,53 +323,152 @@ async function generateJokePage(joke, template, allJokes) {
 }
 
 /**
+ * Escape HTML entities in joke text
+ */
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+/**
+ * Split a joke into setup and punchline
+ */
+function splitJoke(joke) {
+  if (joke.setup && joke.setup.trim()) {
+    return { setup: joke.setup, punchline: joke.punchline || '' };
+  }
+
+  const text = joke.text || '';
+
+  // Try splitting on question mark
+  if (text.includes('?')) {
+    const qIdx = text.indexOf('?');
+    return {
+      setup: text.substring(0, qIdx + 1),
+      punchline: text.substring(qIdx + 1).trim()
+    };
+  }
+
+  // Try splitting on common delimiters
+  for (const delim of ['. ', '... ', '— ', '- ']) {
+    const idx = text.indexOf(delim);
+    if (idx > 10 && idx < text.length - 10) {
+      return {
+        setup: text.substring(0, idx + (delim.startsWith('.') ? 1 : 0)),
+        punchline: text.substring(idx + delim.length).trim()
+      };
+    }
+  }
+
+  // Fallback: first 60% is setup, rest is punchline
+  const mid = Math.floor(text.length * 0.6);
+  const spaceIdx = text.indexOf(' ', mid);
+  if (spaceIdx > 0) {
+    return {
+      setup: text.substring(0, spaceIdx) + '...',
+      punchline: text.substring(spaceIdx + 1)
+    };
+  }
+
+  return { setup: text, punchline: '' };
+}
+
+/**
+ * Generate static joke HTML cards for category pages
+ */
+function generateStaticJokesHtml(categoryJokes, category) {
+  return categoryJokes.map((joke, index) => {
+    const { setup, punchline } = splitJoke(joke);
+    const jokeUrl = jokeUrlMap[joke.id] || `/joke/${joke.id}`;
+    const escapedSetup = escapeHtml(setup);
+    const escapedPunchline = escapeHtml(punchline);
+
+    if (punchline) {
+      return `
+            <div class="static-joke-card">
+                <div class="joke-setup">${escapedSetup}</div>
+                <button class="reveal-btn" onclick="revealPunchline(this)">Reveal Punchline</button>
+                <div class="joke-punchline">${escapedPunchline}</div>
+                <a href="${jokeUrl}" class="joke-link">Read full joke &rarr;</a>
+            </div>`;
+    } else {
+      return `
+            <div class="static-joke-card">
+                <div class="joke-setup">${escapedSetup}</div>
+                <a href="${jokeUrl}" class="joke-link">Read full joke &rarr;</a>
+            </div>`;
+    }
+  }).join('\n');
+}
+
+/**
+ * Generate FAQ HTML for a category
+ */
+function generateFaqHtml(category, jokeCount) {
+  const categoryLower = category.toLowerCase();
+  const faqs = [
+    {
+      q: `How many ${categoryLower} dad jokes do you have?`,
+      a: `We currently have ${jokeCount}+ ${categoryLower} dad jokes in our collection, and we add new ones regularly. Download the app to access the complete library!`
+    },
+    {
+      q: `Are these ${categoryLower} jokes appropriate for kids?`,
+      a: category === 'NSFW' || category === 'Yo Mama'
+        ? `These jokes are intended for mature audiences. Check out our Family or Animals categories for kid-friendly options.`
+        : `Yes! Our ${categoryLower} dad jokes are family-friendly and safe to share with kids of all ages. Dad jokes are all about clean, groan-worthy humor.`
+    },
+    {
+      q: `Can I share these ${categoryLower} dad jokes?`,
+      a: `Absolutely! Feel free to share these jokes with friends, family, and on social media. You can also save your favorites in our free app.`
+    },
+    {
+      q: `Where can I find more dad jokes?`,
+      a: `Download the Dad Jokes app for access to our entire collection of 20,000+ jokes across ${Object.keys(CONFIG.CATEGORY_DESCRIPTIONS).length}+ categories, with new jokes added every day.`
+    }
+  ];
+
+  const html = faqs.map(faq => `
+            <div class="faq-item">
+                <h3>${escapeHtml(faq.q)}</h3>
+                <p>${escapeHtml(faq.a)}</p>
+            </div>`).join('\n');
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
+  return { html, schema };
+}
+
+/**
  * Generate category page
  */
-async function generateCategoryPage(category, jokes, template) {
+async function generateCategoryPage(category, jokes, template, totalCategories) {
   const categorySlug = slugify(category);
-  const categoryJokes = jokes.filter(j => j.category === category).slice(0, 5); // Top 5 (gating strategy)
+  const allCategoryJokes = jokes.filter(j => j.category === category);
+  const totalCategoryJokeCount = allCategoryJokes.length;
+  const staticJokes = allCategoryJokes.slice(0, 30); // 30 jokes for static content
   const categoryDescription = CONFIG.CATEGORY_DESCRIPTIONS[category] ||
     `Funny ${category.toLowerCase()} jokes that will make you laugh!`;
   const categoryEmoji = CONFIG.CATEGORY_EMOJIS[category] || '😄';
+  const categoryIntro = CONFIG.CATEGORY_INTROS?.[category] ||
+    `Looking for the best ${category.toLowerCase()} dad jokes? You've come to the right place. We've collected over ${totalCategoryJokeCount} hand-picked ${category.toLowerCase()} jokes that are perfect for sharing with friends, family, or anyone who appreciates a good groan. Tap "Reveal Punchline" on each joke below to see the answer!`;
 
-  // Generate joke list HTML (show only setup, not full joke)
-  const jokeListHtml = categoryJokes.map(joke => {
-    // For setup/punchline jokes, show only setup. For one-liners, show beginning only
-    let displayText;
-    if (joke.setup && joke.setup.trim()) {
-      displayText = joke.setup;
-    } else {
-      // For one-liners, try to find a natural break point
-      const text = joke.text;
-
-      // Try to cut at first question mark + space (common setup pattern)
-      const questionMarkIndex = text.indexOf('? ');
-      if (questionMarkIndex > 0 && questionMarkIndex < 120) {
-        displayText = text.substring(0, questionMarkIndex + 1) + '..';
-      }
-      // Otherwise, cut at 60 characters to avoid showing full punchline
-      else if (text.length > 60) {
-        displayText = text.substring(0, 60) + '...';
-      }
-      // If joke is very short (<=60 chars), show first 40 chars to create intrigue
-      else if (text.length > 40) {
-        displayText = text.substring(0, 40) + '...';
-      }
-      // Very short jokes - show first 30 chars
-      else {
-        displayText = text.substring(0, Math.min(30, text.length)) + '...';
-      }
-    }
-
-    // Get SEO-friendly URL from jokeUrlMap (generated during joke page generation)
-    const jokeUrl = jokeUrlMap[joke.id] || `/joke/${joke.id}`; // Fallback to old format if not found
-
-    return `
-            <a href="${jokeUrl}" class="joke-card">
-                <div class="category-badge">${category}</div>
-                <div class="joke-text">${displayText}</div>
-            </a>`;
-  }).join('\n');
+  // Generate static joke cards HTML
+  const staticJokesHtml = generateStaticJokesHtml(staticJokes, category);
 
   // Generate related categories (5 random other categories)
   const allCategories = Object.keys(CONFIG.CATEGORY_DESCRIPTIONS);
@@ -389,8 +488,8 @@ async function generateCategoryPage(category, jokes, template) {
                 </a>`;
   }).join('\n');
 
-  // Generate ItemList JSON for structured data
-  const jokeItemListJson = JSON.stringify(categoryJokes.map((joke, index) => {
+  // Generate ItemList JSON for structured data (include all 30 static jokes)
+  const jokeItemListJson = JSON.stringify(staticJokes.map((joke, index) => {
     const jokeUrl = jokeUrlMap[joke.id] || `/joke/${joke.id}`;
     const setupText = joke.setup || joke.text.split('?')[0] + (joke.text.includes('?') ? '?' : '');
     return {
@@ -401,15 +500,31 @@ async function generateCategoryPage(category, jokes, template) {
     };
   }), null, 6);
 
+  // Generate FAQ
+  const faq = generateFaqHtml(category, totalCategoryJokeCount);
+  const faqSchemaJson = JSON.stringify(faq.schema, null, 6);
+
+  // Check for matching collection page
+  const collectionMap = CONFIG.CATEGORY_COLLECTION_MAP || {};
+  const collectionSlug = collectionMap[category] || null;
+  const collectionLinkHtml = collectionSlug
+    ? `<a href="/collection/${collectionSlug}/" class="collection-link">Browse our curated ${category.toLowerCase()} collection &rarr;</a>`
+    : '';
+
   const replacements = {
     CATEGORY: category,
     CATEGORY_SLUG: categorySlug,
     CATEGORY_EMOJI: categoryEmoji,
     CATEGORY_DESCRIPTION: categoryDescription,
+    CATEGORY_INTRO: categoryIntro,
     CATEGORY_LOWER: category.toLowerCase(),
-    JOKE_COUNT: categoryJokes.length,
-    JOKE_LIST: jokeListHtml,
+    JOKE_COUNT: totalCategoryJokeCount,
+    TOTAL_CATEGORIES: totalCategories,
+    STATIC_JOKES_HTML: staticJokesHtml,
     JOKE_ITEM_LIST_JSON: jokeItemListJson,
+    FAQ_HTML: faq.html,
+    FAQ_SCHEMA_JSON: faqSchemaJson,
+    COLLECTION_LINK: collectionLinkHtml,
     RELATED_CATEGORIES: relatedCategoriesHtml
   };
 
@@ -529,7 +644,7 @@ async function main() {
   stats.totalCategories = categories.length;
 
   for (const category of categories) {
-    await generateCategoryPage(category, jokes, categoryTemplate);
+    await generateCategoryPage(category, jokes, categoryTemplate, categories.length);
   }
   console.log(`  ✅ Generated ${categories.length} category pages`);
 
