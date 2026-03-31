@@ -10,9 +10,13 @@
     "update-count": "node update-joke-count.js",
     "generate-feed": "node generate-json-feed.js",
     "import:failed": "node import-failed-jokes.js",
-    "update-daily": "node update-daily-joke.js"
+    "update-daily": "node update-daily-joke.js",
+    "social-post": "node social-post.js"
   },
   "dependencies": {
-    "firebase-admin": "^12.0.0"
+    "firebase-admin": "^12.0.0",
+    "twitter-api-v2": "^1.17.0",
+    "snoowrap": "^1.23.0",
+    "@atproto/api": "^0.13.0"
   }
 }

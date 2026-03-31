@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAF7F2">
+    <title>Add Dad Jokes to Your Website — Free Embed Widget</title>
+    <meta name="description" content="Add a free daily dad joke widget to your website. Auto-updates daily. Lightweight, no tracking, works everywhere. Just copy and paste.">
+    <meta name="apple-itunes-app" content="app-id=6743726261">
+    <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --surface: #FAF7F2;
+            --card: #FFFFFF;
+            --navy: #1E3A5F;
+            --coral: #FF6B6B;
+            --text: #1A1A2E;
+            --text-dim: #8E8E9A;
+            --border: #ECEAE6;
+            --font: 'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;
+        }
+        html { -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font); background: var(--surface); color: var(--text); min-height: 100vh; }
+
+        .page { max-width: 640px; margin: 0 auto; padding: 40px 20px 60px; }
+
+        h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 8px; }
+        .subtitle { font-size: 1rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 32px; }
+
+        h2 { font-size: 1.125rem; font-weight: 700; margin: 32px 0 12px; }
+
+        p { line-height: 1.6; color: var(--text-dim); margin-bottom: 16px; }
+
+        .code-block {
+            background: var(--navy);
+            color: #E2E8F0;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'SF Mono', Consolas, monospace;
+            font-size: 0.8125rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-family: var(--font);
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .copy-btn:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+        .preview-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        .preview-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .feature {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .feature-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .feature-desc {
+            font-size: 0.8125rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .dark-preview {
+            background: #0F1A2E;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 24px 0;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+        .footer a { color: var(--coral); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <h1>Add Dad Jokes to Your Website</h1>
+        <p class="subtitle">A free, lightweight widget that shows a new dad joke every day. Auto-updates at midnight. No tracking, no ads, no dependencies.</p>
+
+        <h2>Copy & Paste</h2>
+        <div class="code-block" id="code-block">
+            <button class="copy-btn" onclick="copyCode()">Copy</button>
+&lt;div id="dadjoke-widget"&gt;&lt;/div&gt;
+&lt;script src="https://dadjokes.vip/embed/embed.js"&gt;&lt;/script&gt;
+        </div>
+
+        <p>That's it. Paste it anywhere in your HTML — sidebar, footer, blog post.</p>
+
+        <h2>Live Preview</h2>
+        <p class="preview-label">Light theme (default)</p>
+        <div class="preview-box">
+            <div id="dadjoke-widget"></div>
+        </div>
+
+        <p class="preview-label">Dark theme</p>
+        <div class="dark-preview">
+            <div id="dadjoke-widget-dark" data-theme="dark"></div>
+        </div>
+
+        <h2>Dark Theme</h2>
+        <div class="code-block">
+&lt;div id="dadjoke-widget" data-theme="dark"&gt;&lt;/div&gt;
+&lt;script src="https://dadjokes.vip/embed/embed.js"&gt;&lt;/script&gt;
+        </div>
+
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-title">Auto-updates daily</div>
+                <div class="feature-desc">New joke every midnight UTC</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">Lightweight</div>
+                <div class="feature-desc">~3KB, no dependencies</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">No tracking</div>
+                <div class="feature-desc">Zero cookies, zero analytics</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">Style-isolated</div>
+                <div class="feature-desc">Shadow DOM, won't affect your CSS</div>
+            </div>
+        </div>
+
+        <h2>API</h2>
+        <p>Want raw data instead? The daily joke is available as JSON:</p>
+        <div class="code-block">
+GET https://dadjokes.vip/embed/daily.json
+
+{
+  "date": "2026-03-31",
+  "setup": "Why did the scarecrow win an award?",
+  "punchline": "He was outstanding in his field.",
+  "category": "Work & Money",
+  "url": "https://dadjokes.vip/daily/"
+}
+        </div>
+
+        <p>Full joke database available at <a href="/api/" style="color:var(--coral);">/api/</a>.</p>
+    </main>
+
+    <footer class="footer">
+        <a href="/daily/">Daily Joke</a> · <a href="/random/">Random</a> · <a href="/roast/">Roast</a> · <a href="/app/">Get the App</a>
+        <p style="margin-top:8px;">&copy; 2026 Dad Jokes</p>
+    </footer>
+
+    <!-- Load the actual embed widget for the preview -->
+    <script src="/embed/embed.js"></script>
+    <script>
+        // Load dark theme preview too (the embed.js only targets #dadjoke-widget)
+        // We'll manually init a second instance
+        setTimeout(function() {
+            var darkContainer = document.getElementById('dadjoke-widget-dark');
+            if (darkContainer) {
+                darkContainer.id = 'dadjoke-widget';
+                darkContainer.setAttribute('data-theme', 'dark');
+                var s = document.createElement('script');
+                s.src = '/embed/embed.js';
+                document.body.appendChild(s);
+            }
+        }, 500);
+
+        function copyCode() {
+            var code = '<div id="dadjoke-widget"></div>\n<script src="https://dadjokes.vip/embed/embed.js"><\/script>';
+            navigator.clipboard.writeText(code).then(function() {
+                var btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Copied!';
+                setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

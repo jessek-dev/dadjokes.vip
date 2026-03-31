@@ -271,6 +271,18 @@ async function main() {
     // Update sitemap
     updateSitemap(todayStr);
 
+    // Write embed JSON for the widget
+    const embedPath = join(__dirname, '../embed/daily.json');
+    const embedData = {
+      date: todayStr,
+      setup: todayJoke.setup,
+      punchline: todayJoke.punchline,
+      category: todayJoke.category,
+      url: 'https://dadjokes.vip/daily/'
+    };
+    writeFileSync(embedPath, JSON.stringify(embedData, null, 2));
+    console.log('Wrote embed/daily.json');
+
     console.log('\nDaily joke update completed successfully!');
     process.exit(0);
   } catch (error) {

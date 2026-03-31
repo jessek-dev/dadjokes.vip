@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add daily/index.html sitemap.xml
+          git add daily/index.html sitemap.xml embed/daily.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
