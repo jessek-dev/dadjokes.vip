@@ -1,0 +1,51 @@
+name: Update Daily Joke
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Setup Firebase credentials
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          mkdir -p ../quotes_app
+          echo "$FIREBASE_SERVICE_ACCOUNT" > ../quotes_app/firebase-service-account.json
+
+      - name: Update daily joke
+        run: |
+          cd scripts
+          npm run update-daily
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add daily/index.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update dad joke of the day for $(date -u +%Y-%m-%d)"
+            git push
+          fi
