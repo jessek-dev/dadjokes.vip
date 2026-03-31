@@ -236,15 +236,16 @@ function updateRssFeed(jokes, todayStr) {
     const date = new Date(dateStr + 'T12:00:00Z');
     const pubDate = date.toUTCString();
 
-    // Title is the setup, description has setup + punchline
-    // IFTTT can use {{EntryTitle}} for the tweet text
+    // Title = setup (used as Reddit post title + tweet text)
+    // Description = punchline only (used as Reddit post body)
+    // IFTTT: {{EntryTitle}} = setup, {{EntryContent}} = punchline
     const title = escapeHtml(joke.setup);
     const punchline = escapeHtml(joke.punchline);
 
     items += `
     <item>
       <title>${title}</title>
-      <description>${title} ${punchline}</description>
+      <description>${punchline}</description>
       <link>https://dadjokes.vip/daily/#${dateStr}</link>
       <guid isPermaLink="false">dadjokes-${dateStr}</guid>
       <pubDate>${pubDate}</pubDate>
