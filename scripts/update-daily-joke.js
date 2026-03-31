@@ -222,6 +222,59 @@ function updateSitemap(todayStr) {
 }
 
 /**
+ * Update RSS feed with recent jokes.
+ * IFTTT and other services can watch this feed to auto-post to Twitter/social.
+ */
+function updateRssFeed(jokes, todayStr) {
+  const feedPath = join(__dirname, '../feed.xml');
+  const days = 10;
+
+  let items = '';
+  for (let i = 0; i < days; i++) {
+    const dateStr = getDateString(-i);
+    const joke = pickJokeForDate(jokes, dateStr);
+    const date = new Date(dateStr + 'T12:00:00Z');
+    const pubDate = date.toUTCString();
+
+    // Title is the setup, description has setup + punchline
+    // IFTTT can use {{EntryTitle}} for the tweet text
+    const title = escapeHtml(joke.setup);
+    const punchline = escapeHtml(joke.punchline);
+
+    items += `
+    <item>
+      <title>${title}</title>
+      <description>${title} ${punchline}</description>
+      <link>https://dadjokes.vip/daily/#${dateStr}</link>
+      <guid isPermaLink="false">dadjokes-${dateStr}</guid>
+      <pubDate>${pubDate}</pubDate>
+    </item>`;
+  }
+
+  const buildDate = new Date().toUTCString();
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dad Joke of the Day</title>
+    <link>https://dadjokes.vip/daily/</link>
+    <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
+    <language>en-us</language>
+    <lastBuildDate>${buildDate}</lastBuildDate>
+    <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
+      <title>Dad Joke of the Day</title>
+      <link>https://dadjokes.vip/daily/</link>
+    </image>
+${items}
+  </channel>
+</rss>`;
+
+  writeFileSync(feedPath, feed);
+  console.log('Wrote feed.xml');
+}
+
+/**
  * Main execution
  */
 async function main() {
@@ -282,6 +335,9 @@ async function main() {
     };
     writeFileSync(embedPath, JSON.stringify(embedData, null, 2));
     console.log('Wrote embed/daily.json');
+
+    // Update RSS feed with last 10 days of jokes
+    updateRssFeed(jokes, todayStr);
 
     console.log('\nDaily joke update completed successfully!');
     process.exit(0);
