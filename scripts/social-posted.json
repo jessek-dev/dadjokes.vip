@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "jokeId": "MJ001769",
+    "date": "2026-03-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Yo mama is so ugly that... well..",
+    "punchline": "look at you!"
+  }
+]
