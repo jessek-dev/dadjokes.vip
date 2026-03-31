@@ -82,10 +82,17 @@ function getDateString() {
 }
 
 // ---- Joke Selection ----
-async function selectJoke() {
+// Each platform gets a different joke. The platform name is used as part of
+// the hash seed, and we track per-platform history to avoid repeats.
+async function selectJokeForPlatform(platform) {
   const dateStr = getDateString();
   const posted = getPostedJokes();
-  const postedIds = new Set(posted.map(p => p.jokeId));
+  // Only exclude jokes already posted to THIS platform
+  const postedIds = new Set(
+    posted
+      .filter(p => p.platforms && p.platforms.includes(platform))
+      .map(p => p.jokeId)
+  );
 
   // Fetch high-rated jokes
   const snapshot = await db.collection('jokes').doc('all').collection('jokes')
@@ -124,15 +131,21 @@ async function selectJoke() {
   jokes = jokes.filter(j => !postedIds.has(j.id));
 
   if (jokes.length === 0) {
-    console.log('All jokes have been posted! Resetting history.');
-    writeFileSync(POSTED_FILE, '[]');
-    return selectJoke(); // Recurse with fresh history
+    console.log(`All jokes posted to ${platform}! Resetting ${platform} history.`);
+    // Reset only this platform's history
+    const allPosted = getPostedJokes();
+    const cleaned = allPosted.map(p => ({
+      ...p,
+      platforms: (p.platforms || []).filter(pl => pl !== platform)
+    }));
+    writeFileSync(POSTED_FILE, JSON.stringify(cleaned, null, 2));
+    return selectJokeForPlatform(platform);
   }
 
-  // Sort for deterministic order, then pick based on date hash
-  // Use "social-" prefix to get different joke than daily page
+  // Sort for deterministic order, then pick based on date + platform hash
+  // Each platform gets a different joke because the seed includes the platform name
   jokes.sort((a, b) => a.id.localeCompare(b.id));
-  const hash = hashString('social-post-' + dateStr);
+  const hash = hashString('social-' + platform + '-' + dateStr);
   const index = hash % jokes.length;
 
   return jokes[index];
@@ -245,30 +258,33 @@ async function main() {
   console.log('=== Dad Jokes Social Poster ===\n');
   console.log(`Date: ${getDateString()}`);
 
-  const joke = await selectJoke();
-  console.log(`\nSelected joke (${joke.id}):`);
-  console.log(`  Setup: ${joke.setup}`);
-  console.log(`  Punchline: ${joke.punchline}\n`);
+  // Fetch jokes once, then select per-platform
+  const platformConfigs = [
+    { name: 'twitter', postFn: postToTwitter },
+    { name: 'reddit', postFn: postToReddit },
+    { name: 'bluesky', postFn: postToBluesky },
+  ];
 
-  const results = {
-    twitter: await postToTwitter(joke),
-    reddit: await postToReddit(joke),
-    bluesky: await postToBluesky(joke),
-  };
+  for (const { name, postFn } of platformConfigs) {
+    const joke = await selectJokeForPlatform(name);
+    console.log(`\n[${name}] Selected joke (${joke.id}):`);
+    console.log(`  Setup: ${joke.setup}`);
+    console.log(`  Punchline: ${joke.punchline}`);
 
-  const platforms = Object.entries(results)
-    .filter(([, success]) => success)
-    .map(([name]) => name);
+    const success = await postFn(joke);
 
-  savePostedJoke({
-    jokeId: joke.id,
-    date: getDateString(),
-    platforms,
-    setup: joke.setup,
-    punchline: joke.punchline,
-  });
+    if (success) {
+      savePostedJoke({
+        jokeId: joke.id,
+        date: getDateString(),
+        platforms: [name],
+        setup: joke.setup,
+        punchline: joke.punchline,
+      });
+    }
+  }
 
-  console.log(`\nDone. Posted to: ${platforms.length > 0 ? platforms.join(', ') : 'none (all skipped/failed)'}`);
+  console.log('\nDone.');
   process.exit(0);
 }
 
