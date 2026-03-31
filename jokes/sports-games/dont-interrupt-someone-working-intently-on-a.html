@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KV6S6MZ6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRRXTJP94X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JRRXTJP94X');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO: Title optimized for click-through -->
-    <title>Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords. - Dad Jokes</title>
+    <title>Don't interrupt someone working intently on a puzzle. - Dad Jokes</title>
 
     <!-- SEO: Description with first 150 chars -->
-    <meta name="description" content="Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.  Read this 3-star rated Sports & Games dad joke and thousands more funny dad jokes in our free app.">
+    <meta name="description" content="Don't interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords. Read this 3-star rated Sports & Games dad joke and thousands more funny dad jokes in our free app.">
 
     <!-- SEO: Keywords -->
     <meta name="keywords" content="dad jokes, Sports & Games jokes, funny jokes, clean jokes, crossword puzzle, humor">
@@ -21,7 +38,7 @@
     <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16" type="image/png">
 
     <!-- Native iOS Smart Banner -->
-    <meta name="apple-itunes-app" content="app-id=6743726261">
+    <meta name="apple-itunes-app" content="app-id=6743726261, app-argument=https://dadjokes.vip/joke/MJ000300">
 
     <!-- Android Intent for App Indexing -->
     <meta name="google-play-app" content="app-id=com.kedy.dadJokes">
@@ -31,8 +48,8 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <!-- Open Graph for Facebook/LinkedIn -->
-    <meta property="og:title" content="Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.">
-    <meta property="og:description" content="Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords. ">
+    <meta property="og:title" content="Don't interrupt someone working intently on a puzzle.">
+    <meta property="og:description" content="Don't interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.">
     <meta property="og:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
     <meta property="og:url" content="https://dadjokes.vip/jokes/sports-games/dont-interrupt-someone-working-intently-on-a">
     <meta property="og:type" content="article">
@@ -40,33 +57,38 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.">
-    <meta name="twitter:description" content="Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords. ">
+    <meta name="twitter:title" content="Don't interrupt someone working intently on a puzzle.">
+    <meta name="twitter:description" content="Don't interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.">
     <meta name="twitter:image" content="https://dadjokes.vip/assets/og-image-optimized.jpg">
 
     <!-- Performance: Preconnect -->
     <link rel="preconnect" href="https://www.gstatic.com">
 
-    <!-- Schema.org Structured Data for Rich Results -->
+    <!-- Schema.org Structured Data - CreativeWork for Joke -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.",
-      "articleBody": "Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords. ",
+      "@type": "CreativeWork",
+      "headline": "Don't interrupt someone working intently on a puzzle.",
+      "text": "Don't interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.",
       "genre": "humor",
-      "keywords": "dad jokes, Sports & Games jokes, funny jokes",
+      "about": {
+        "@type": "Thing",
+        "name": "Sports & Games Dad Jokes"
+      },
+      "keywords": "dad jokes, Sports & Games jokes, funny jokes, crossword puzzle, humor",
       "inLanguage": "en-US",
       "datePublished": "2024-01-01T00:00:00Z",
       "dateModified": "2025-11-07T00:00:00Z",
       "author": {
         "@type": "Organization",
-        "name": "Dad Jokes",
+        "name": "Best Dad Jokes",
         "url": "https://dadjokes.vip"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Dad Jokes",
+        "name": "Best Dad Jokes",
+        "legalName": "Kedy Apps",
         "url": "https://dadjokes.vip",
         "logo": {
           "@type": "ImageObject",
@@ -81,6 +103,10 @@
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://dadjokes.vip/jokes/sports-games/dont-interrupt-someone-working-intently-on-a"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".joke-setup", ".joke-punchline"]
       }
     }
     </script>
@@ -108,7 +134,7 @@
       }, {
         "@type": "ListItem",
         "position": 4,
-        "name": "Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords."
+        "name": "Don't interrupt someone working intently on a puzzle."
       }]
     }
     </script>
@@ -474,25 +500,8 @@
             display: none;
         }
 
-        .banner-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-        }
-
         .banner-content {
             flex: 1;
-        }
-
-        .banner-title {
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-
-        .banner-subtitle {
-            font-size: 0.9em;
-            opacity: 0.9;
         }
 
         .banner-cta {
@@ -566,8 +575,8 @@
         }
 
         .paywall-btn.secondary {
-            background: #f0f0f0;
-            color: #666;
+            background: #f5f5f5;
+            color: #333;
         }
 
         /* CTA Section */
@@ -675,12 +684,12 @@
         <!-- Breadcrumbs for SEO & Navigation -->
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="/app">Home</a>
-            <span>›</span>
+            <span>></span>
             <a href="/jokes">Categories</a>
-            <span>›</span>
+            <span>></span>
             <a href="/jokes/sports-games">Sports & Games</a>
-            <span>›</span>
-            <span>Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.</span>
+            <span>></span>
+            <span>Don't interrupt someone working intently on a puzzle.</span>
         </nav>
 
         <!-- App Banner (shown to users before paywall) -->
@@ -702,8 +711,8 @@
             </div>
 
             <div class="joke-content">
-                <div class="joke-setup">Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.</div>
-                <div class="joke-punchline"></div>
+                <div class="joke-setup">Don't interrupt someone working intently on a puzzle.</div>
+                <div class="joke-punchline">Chances are, you’ll hear some crosswords.</div>
             </div>
 
             <!-- Rating Section -->
@@ -754,20 +763,20 @@
             <h2>Here are some more Sports & Games jokes</h2>
             <p style="color: #666; margin-bottom: 20px; text-align: center;">Athletic humor and competition jokes covering football, baseball, basketball, golf, and all your favorite sports and games.</p>
             <div class="related-jokes">
-                <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Have you ever tried archery blindfolded?..</div>
+                <a href="/jokes/sports-games/i-asked-my-date-to-go-to-the-gym-the-other-day" class="related-joke-card">
+                    <div class="related-joke-text">I asked my date to go to the gym the other day. They never showed up.</div>
+                </a>
+                <a href="/jokes/sports-games/bad-at-golf" class="related-joke-card">
+                    <div class="related-joke-text">Bad at golf?</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Why did the golfer bring two pairs of pants?</div>
-                </a>
-                <a href="/jokes/sports-games/why-couldnt-the-lifeguard-save-the-hippie" class="related-joke-card">
-                    <div class="related-joke-text">Why couldn't the lifeguard save the hippie?..</div>
+                    <div class="related-joke-text">How do you get a good price on a sled?</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">Which superhero hits the most home runs?..</div>
+                    <div class="related-joke-text">Why can't pigs play soccer?</div>
                 </a>
                 <a href="" class="related-joke-card">
-                    <div class="related-joke-text">What does a sprinter eat before a race?</div>
+                    <div class="related-joke-text">Why is a baseball stadium always cold?..</div>
                 </a>
             </div>
         </section>
@@ -776,9 +785,9 @@
         <section class="related-section">
             <h2>Explore More Categories</h2>
             <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-                <a href="/jokes/movies" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Movies Jokes →</a>
-                <a href="/jokes/music-arts" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Music & Arts Jokes →</a>
-                <a href="/jokes/transportation" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Transportation Jokes →</a>
+                <a href="/jokes/movies" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Movies Jokes</a>
+                <a href="/jokes/music-arts" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Music & Arts Jokes</a>
+                <a href="/jokes/transportation" style="background: #FFF3E0; color: #FF8C00; padding: 12px 24px; border-radius: 20px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Transportation Jokes</a>
             </div>
         </section>
 
@@ -787,7 +796,7 @@
             <h2>Want More Jokes?</h2>
             <p>Download our app and get access to <span id="cta-count-1">19,143</span> dad jokes, daily featured jokes, and save your favorites!</p>
             <div class="store-badges">
-                <a href="https://dadjokes.vip/ios">
+                <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'joke',location:'cta'});}">
                     <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
                 </a>
                 <a href="https://dadjokes.vip/android">
@@ -800,7 +809,7 @@
     <!-- Paywall Overlay (shown after 5 views) -->
     <div id="paywall-overlay" class="paywall-overlay">
         <div class="paywall-content">
-            <h2>🎉 You've Read 5 Jokes!</h2>
+            <h2>You've Read 5 Jokes!</h2>
             <p>Want to keep laughing? Download our free app to access <span id="cta-count-2">19,143</span> dad jokes, save your favorites, and get daily featured jokes!</p>
             <div class="paywall-buttons">
                 <a href="dadjokes://joke/MJ000300" class="paywall-btn primary">Open App</a>
@@ -828,8 +837,8 @@
     <!-- Access Control Script (Client-Side Only - Googlebot doesn't execute) -->
     <script>
         const jokeId = 'MJ000300';
-        const jokeSetup = 'Don’t interrupt someone working intently on a puzzle. Chances are, you’ll hear some crosswords.';
-        const jokePunchline = '';
+        const jokeSetup = 'Don't interrupt someone working intently on a puzzle.';
+        const jokePunchline = 'Chances are, you’ll hear some crosswords.';
 
         // Mobile App Banner Management (Cross-Browser)
         (function() {
@@ -882,18 +891,12 @@
             const isAndroid = /Android/.test(navigator.userAgent);
 
             if (isIOS) {
-                // Use correct URL scheme for Dad Jokes app
                 window.location.href = `dadjokesvip://joke/${jokeId}`;
-
-                // If app doesn't open after 1.5 seconds, redirect to App Store
                 setTimeout(() => {
                     window.location.href = 'https://apps.apple.com/app/id6743726261';
                 }, 1500);
             } else if (isAndroid) {
-                // Use correct URL scheme for Dad Jokes app
                 window.location.href = `dadjokesvip://joke/${jokeId}`;
-
-                // If app doesn't open after 1.5 seconds, redirect to Play Store
                 setTimeout(() => {
                     window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
                 }, 1500);
@@ -1015,18 +1018,12 @@
             const isAndroid = /Android/.test(navigator.userAgent);
 
             if (isIOS) {
-                // Use correct URL scheme for Dad Jokes app
                 window.location.href = `dadjokesvip://joke/${jokeId}`;
-
-                // If app doesn't open after 1.5 seconds, redirect to App Store
                 setTimeout(() => {
                     window.location.href = 'https://apps.apple.com/app/id6743726261';
                 }, 1500);
             } else if (isAndroid) {
-                // Use correct URL scheme for Dad Jokes app
                 window.location.href = `dadjokesvip://joke/${jokeId}`;
-
-                // If app doesn't open after 1.5 seconds, redirect to Play Store
                 setTimeout(() => {
                     window.location.href = 'https://play.google.com/store/apps/details?id=com.kedy.dadJokes';
                 }, 1500);
@@ -1074,7 +1071,7 @@
             const feedbackTexts = {
                 1: "Thanks for the feedback!",
                 2: "Glad you enjoyed it!",
-                3: "We knew you'd love it! 😄"
+                3: "We knew you'd love it!"
             };
 
             const originalText = event.currentTarget.querySelector('.rating-label').textContent;
@@ -1144,16 +1141,8 @@
         }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8LRBVBMRF"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-Q8LRBVBMRF');
-
-        // Track page view
+        // Track joke page view
         gtag('event', 'joke_view', {
             'joke_id': 'MJ000300',
             'category': 'Sports & Games'
@@ -1170,7 +1159,7 @@
       </div>
 
       <div class="footer-stores">
-        <a href="https://dadjokes.vip/ios">
+        <a href="https://dadjokes.vip/ios" onclick="if(typeof gtag==='function'){gtag('event','app_store_clicked',{source_page:'joke',location:'footer'});}">
           <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         </a>
 
@@ -1180,7 +1169,7 @@
       </div>
 
       <div class="footer-copy">
-        © <span id="footer-year"></span> Dad Jokes. All rights reserved.
+        &copy; <span id="footer-year"></span> Dad Jokes. All rights reserved.
       </div>
     </footer>
 
