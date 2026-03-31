@@ -7,5 +7,14 @@
     ],
     "setup": "Yo mama is so ugly that... well..",
     "punchline": "look at you!"
+  },
+  {
+    "jokeId": "MJ000261",
+    "date": "2026-03-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I never wanted to believe that my Dad was stealing from his job as a road worker.",
+    "punchline": "But when I got home, all the signs were there."
   }
 ]
