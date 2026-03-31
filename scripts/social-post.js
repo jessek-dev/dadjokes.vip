@@ -111,6 +111,10 @@ async function selectJokeForPlatform(platform) {
     };
   });
 
+  // Exclude inappropriate categories
+  const excludedCategories = ['Yo Mama', 'NSFW', 'Insults'];
+  jokes = jokes.filter(j => !excludedCategories.includes(j.category));
+
   // Filter to jokes with clear setup/punchline
   jokes = jokes.filter(j => {
     if (j.setup && j.punchline) return true;
@@ -152,9 +156,11 @@ async function selectJokeForPlatform(platform) {
 }
 
 // ---- Platform: Twitter/X ----
+// NOTE: Free Twitter API tier (v2) does not support posting.
+// Requires Basic plan ($100/month). Disabled by default.
 async function postToTwitter(joke) {
   if (process.env.TWITTER_ENABLED !== 'true') {
-    console.log('Twitter: SKIPPED (not enabled)');
+    console.log('Twitter: SKIPPED (not enabled — free tier cannot post)');
     return false;
   }
 
