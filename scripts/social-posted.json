@@ -25,5 +25,14 @@
     ],
     "setup": "A guy told me there was a shark attack today. The shark took out his whole left side…",
     "punchline": "I couldn't believe it when he told me he was all right!"
+  },
+  {
+    "jokeId": "MJ000494",
+    "date": "2026-04-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I thought about going on an all-almond diet.",
+    "punchline": "But that's just nuts."
   }
 ]
