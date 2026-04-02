@@ -34,5 +34,14 @@
     ],
     "setup": "I thought about going on an all-almond diet.",
     "punchline": "But that's just nuts."
+  },
+  {
+    "jokeId": "MJ001171",
+    "date": "2026-04-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I sympathize with batteries.",
+    "punchline": "I'm not included in anything either!"
   }
 ]
