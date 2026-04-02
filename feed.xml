@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 02:46:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 02:30:54 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What kind of music do planets listen to?</title>
+      <description>What kind of music do planets listen to?
+
+Nep-tunes.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-02</link>
+      <guid isPermaLink="false">dadjokes-2026-04-02</guid>
+      <pubDate>Thu, 02 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What do Alexander the Great and Winnie the Pooh have in common?</title>
       <description>What do Alexander the Great and Winnie the Pooh have in common?
@@ -93,15 +102,6 @@ Because they don&#039;t want to attach-meant to them.</description>
       <link>https://dadjokes.vip/daily/#2026-03-24</link>
       <guid isPermaLink="false">dadjokes-2026-03-24</guid>
       <pubDate>Tue, 24 Mar 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do you call a Buddhist who sells false teeth?</title>
-      <description>What do you call a Buddhist who sells false teeth?
-
-A Dental Lama.</description>
-      <link>https://dadjokes.vip/daily/#2026-03-23</link>
-      <guid isPermaLink="false">dadjokes-2026-03-23</guid>
-      <pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
