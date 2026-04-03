@@ -43,5 +43,14 @@
     ],
     "setup": "I sympathize with batteries.",
     "punchline": "I'm not included in anything either!"
+  },
+  {
+    "jokeId": "MJ000630",
+    "date": "2026-04-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the 0 say to the 8?",
+    "punchline": "Nice belt."
   }
 ]
