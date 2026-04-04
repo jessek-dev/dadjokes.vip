@@ -52,5 +52,14 @@
     ],
     "setup": "What did the 0 say to the 8?",
     "punchline": "Nice belt."
+  },
+  {
+    "jokeId": "MJ000435",
+    "date": "2026-04-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What is worse then finding a worm in your Apple?",
+    "punchline": "Finding half a worm in your Apple."
   }
 ]
