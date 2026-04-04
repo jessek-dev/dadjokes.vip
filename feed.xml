@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 02:32:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 02:24:19 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Mahatma Gandhi, as you know, walked barefoot most of the time, which produced an impressive set of calluses on his feet. He also ate very little, which made him rather frail and with his odd diet, he suffered from bad breath.</title>
+      <description>Mahatma Gandhi, as you know, walked barefoot most of the time, which produced an impressive set of calluses on his feet. He also ate very little, which made him rather frail and with his odd diet, he suffered from bad breath.
+
+This made him a super calloused fragile mystic hexed by halitosis.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-04</link>
+      <guid isPermaLink="false">dadjokes-2026-04-04</guid>
+      <pubDate>Sat, 04 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why was the broom late for the meeting?</title>
       <description>Why was the broom late for the meeting?
@@ -93,15 +102,6 @@ He kneaded the dough!</description>
       <link>https://dadjokes.vip/daily/#2026-03-26</link>
       <guid isPermaLink="false">dadjokes-2026-03-26</guid>
       <pubDate>Thu, 26 Mar 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why did the monk bring a ladder to meditation?</title>
-      <description>Why did the monk bring a ladder to meditation?
-
-He was working on higher consciousness.</description>
-      <link>https://dadjokes.vip/daily/#2026-03-25</link>
-      <guid isPermaLink="false">dadjokes-2026-03-25</guid>
-      <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
