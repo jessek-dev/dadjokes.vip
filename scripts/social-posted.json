@@ -23,7 +23,7 @@
     "platforms": [
       "bluesky"
     ],
-    "setup": "A guy told me there was a shark attack today. The shark took out his whole left side…",
+    "setup": "A guy told me there was a shark attack today. The shark took out his whole left side\u2026",
     "punchline": "I couldn't believe it when he told me he was all right!"
   },
   {
@@ -61,5 +61,14 @@
     ],
     "setup": "What is worse then finding a worm in your Apple?",
     "punchline": "Finding half a worm in your Apple."
+  },
+  {
+    "jokeId": "daily-2026-04-03",
+    "date": "2026-04-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the broom late for the meeting?",
+    "punchline": "He overswept."
   }
 ]

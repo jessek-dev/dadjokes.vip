@@ -156,20 +156,20 @@ async function selectJokeForPlatform(platform) {
 }
 
 // ---- Platform: Twitter/X ----
-// Twitter is handled by dlvr.it (RSS feed → tweet). This function is kept
-// as a fallback if direct API posting becomes viable in the future.
+// Twitter is handled externally by dlvr.it watching the RSS feed.
+// We still select and log a joke so tracking is complete.
 async function postToTwitter(joke) {
-  // Twitter posting is handled externally by dlvr.it watching the RSS feed.
-  // The official free API tier returns 402 and third-party APIs are unreliable.
-  console.log('Twitter: SKIPPED (handled by dlvr.it via RSS feed)');
-  return false;
+  console.log('Twitter: LOGGED (posted externally by dlvr.it via RSS feed)');
+  return true; // Return true so the joke gets tracked
 }
 
 // ---- Platform: Reddit ----
+// When API is not enabled, we still select and log the joke as "pending"
+// so it can be posted manually via Readder or auto-posted once API is approved.
 async function postToReddit(joke) {
   if (process.env.REDDIT_ENABLED !== 'true') {
-    console.log('Reddit: SKIPPED (not enabled)');
-    return false;
+    console.log('Reddit: LOGGED as pending (post manually via Readder or enable API)');
+    return true; // Return true so the joke gets tracked as the day's reddit joke
   }
 
   try {
