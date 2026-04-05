@@ -23,7 +23,7 @@
     "platforms": [
       "bluesky"
     ],
-    "setup": "A guy told me there was a shark attack today. The shark took out his whole left side\u2026",
+    "setup": "A guy told me there was a shark attack today. The shark took out his whole left side…",
     "punchline": "I couldn't believe it when he told me he was all right!"
   },
   {
@@ -70,5 +70,32 @@
     ],
     "setup": "Why was the broom late for the meeting?",
     "punchline": "He overswept."
+  },
+  {
+    "jokeId": "MJ001227",
+    "date": "2026-04-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I wonder what you get if you cross a rhinoceros and an elephant?",
+    "punchline": "Ell if I know!"
+  },
+  {
+    "jokeId": "MJ001288",
+    "date": "2026-04-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I once pulled a muscle mining for gold.",
+    "punchline": "It was a minor injury!"
+  },
+  {
+    "jokeId": "MJ000391",
+    "date": "2026-04-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a fashionable lawn statue with an excellent sense of rhythm?",
+    "punchline": "A metro-gnome"
   }
 ]
