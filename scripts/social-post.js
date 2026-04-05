@@ -156,68 +156,12 @@ async function selectJokeForPlatform(platform) {
 }
 
 // ---- Platform: Twitter/X ----
-// Supports two methods:
-// 1. Official API (requires Basic plan $100/month): TWITTER_API_KEY etc.
-// 2. TwitterAPI.io (third-party, ~$0.15/1000 tweets): TWITTER_APIIO_KEY
+// Twitter is handled by dlvr.it (RSS feed → tweet). This function is kept
+// as a fallback if direct API posting becomes viable in the future.
 async function postToTwitter(joke) {
-  if (process.env.TWITTER_ENABLED !== 'true') {
-    console.log('Twitter: SKIPPED (not enabled)');
-    return false;
-  }
-
-  let text = `${joke.setup}\n\n${joke.punchline}`;
-  if (text.length + HASHTAGS.length + 2 <= 280) {
-    text += `\n\n${HASHTAGS}`;
-  }
-  if (text.length > 280) {
-    text = `${joke.setup}\n\n${joke.punchline}`;
-    if (text.length > 280) text = text.substring(0, 277) + '...';
-  }
-
-  // Method 1: TwitterAPI.io (third-party, cheap/free)
-  if (process.env.TWITTER_APIIO_KEY) {
-    try {
-      const resp = await fetch('https://api.twitterapi.io/twitter/tweet', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-API-Key': process.env.TWITTER_APIIO_KEY,
-        },
-        body: JSON.stringify({ text }),
-      });
-      const data = await resp.json();
-      if (resp.ok) {
-        console.log(`Twitter: POSTED via TwitterAPI.io (id: ${data.id || 'ok'})`);
-        return true;
-      }
-      console.error(`Twitter: FAILED via TwitterAPI.io — ${data.error || resp.status}`);
-      return false;
-    } catch (error) {
-      console.error(`Twitter: FAILED via TwitterAPI.io — ${error.message}`);
-      return false;
-    }
-  }
-
-  // Method 2: Official Twitter API (requires Basic plan)
-  if (process.env.TWITTER_API_KEY) {
-    try {
-      const { TwitterApi } = await import('twitter-api-v2');
-      const client = new TwitterApi({
-        appKey: process.env.TWITTER_API_KEY,
-        appSecret: process.env.TWITTER_API_SECRET,
-        accessToken: process.env.TWITTER_ACCESS_TOKEN,
-        accessSecret: process.env.TWITTER_ACCESS_SECRET,
-      });
-      const result = await client.v2.tweet(text);
-      console.log(`Twitter: POSTED via official API (id: ${result.data.id})`);
-      return true;
-    } catch (error) {
-      console.error(`Twitter: FAILED via official API — ${error.message}`);
-      return false;
-    }
-  }
-
-  console.log('Twitter: FAILED — no API key configured (need TWITTER_APIIO_KEY or TWITTER_API_KEY)');
+  // Twitter posting is handled externally by dlvr.it watching the RSS feed.
+  // The official free API tier returns 402 and third-party APIs are unreliable.
+  console.log('Twitter: SKIPPED (handled by dlvr.it via RSS feed)');
   return false;
 }
 
