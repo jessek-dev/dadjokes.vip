@@ -97,5 +97,32 @@
     ],
     "setup": "What do you call a fashionable lawn statue with an excellent sense of rhythm?",
     "punchline": "A metro-gnome"
+  },
+  {
+    "jokeId": "MJ000091",
+    "date": "2026-04-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I just read a book about Stockholm syndrome.",
+    "punchline": "It was pretty bad at first, but by the end I liked it."
+  },
+  {
+    "jokeId": "MJ000247",
+    "date": "2026-04-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you get if you cross a turkey with a ghost?",
+    "punchline": "A poultry-geist!"
+  },
+  {
+    "jokeId": "MJ000172",
+    "date": "2026-04-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call an old snowman?",
+    "punchline": "Water."
   }
 ]
