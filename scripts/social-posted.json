@@ -124,5 +124,32 @@
     ],
     "setup": "What do you call an old snowman?",
     "punchline": "Water."
+  },
+  {
+    "jokeId": "MJ000677",
+    "date": "2026-04-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the Buffalo say to his little boy when he dropped him off at school?",
+    "punchline": "Bison."
+  },
+  {
+    "jokeId": "MJ000418",
+    "date": "2026-04-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I used to hate facial hair,",
+    "punchline": "but then it grew on me."
+  },
+  {
+    "jokeId": "MJ000621",
+    "date": "2026-04-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the shy pebble wish for?",
+    "punchline": "That she was a little boulder."
   }
 ]
