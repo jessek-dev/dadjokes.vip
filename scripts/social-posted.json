@@ -151,5 +151,32 @@
     ],
     "setup": "What did the shy pebble wish for?",
     "punchline": "That she was a little boulder."
+  },
+  {
+    "jokeId": "MJ001237",
+    "date": "2026-04-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I hired a handyman and gave him a to-do list. When I got home, only items 1, 3, and 5 got done.",
+    "punchline": "Turns out he only does odd jobs!"
+  },
+  {
+    "jokeId": "MJ001242",
+    "date": "2026-04-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What pronouns does chocolate use?",
+    "punchline": "Her/she!"
+  },
+  {
+    "jokeId": "MJ000411",
+    "date": "2026-04-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I was at the library and asked if they have any books on \"paranoia.\"",
+    "punchline": "The librarian replied, \"yes, they are right behind you\""
   }
 ]
