@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 02:35:21 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 02:35:54 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What is a woodpecker’s favorite kind of joke?</title>
+      <description>What is a woodpecker’s favorite kind of joke?
+
+A knock-knock.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-08</link>
+      <guid isPermaLink="false">dadjokes-2026-04-08</guid>
+      <pubDate>Wed, 08 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How many skunks does it take to smell up a neighborhood?</title>
       <description>How many skunks does it take to smell up a neighborhood?
@@ -93,15 +102,6 @@ Pocket change.</description>
       <link>https://dadjokes.vip/daily/#2026-03-30</link>
       <guid isPermaLink="false">dadjokes-2026-03-30</guid>
       <pubDate>Mon, 30 Mar 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>When is fishing not a good way to relax?</title>
-      <description>When is fishing not a good way to relax?
-
-When you’re the worm.</description>
-      <link>https://dadjokes.vip/daily/#2026-03-29</link>
-      <guid isPermaLink="false">dadjokes-2026-03-29</guid>
-      <pubDate>Sun, 29 Mar 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
