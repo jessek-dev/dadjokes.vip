@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 02:35:54 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 02:31:17 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why did the turtle go to the therapist?</title>
+      <description>Why did the turtle go to the therapist?
+
+He wanted to come out of his shell.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-09</link>
+      <guid isPermaLink="false">dadjokes-2026-04-09</guid>
+      <pubDate>Thu, 09 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What is a woodpecker’s favorite kind of joke?</title>
       <description>What is a woodpecker’s favorite kind of joke?
@@ -93,15 +102,6 @@ Pocket change.</description>
       <link>https://dadjokes.vip/daily/#2026-03-31</link>
       <guid isPermaLink="false">dadjokes-2026-03-31</guid>
       <pubDate>Tue, 31 Mar 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What did the mother buffalo say to her boy as he was leaving?</title>
-      <description>What did the mother buffalo say to her boy as he was leaving?
-
-“Bison.”</description>
-      <link>https://dadjokes.vip/daily/#2026-03-30</link>
-      <guid isPermaLink="false">dadjokes-2026-03-30</guid>
-      <pubDate>Mon, 30 Mar 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
