@@ -205,5 +205,32 @@
     ],
     "setup": "What is the leading cause of dry skin?",
     "punchline": "Towels"
+  },
+  {
+    "jokeId": "MJ000645",
+    "date": "2026-04-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why was the broom late for the meeting?",
+    "punchline": "He overswept."
+  },
+  {
+    "jokeId": "MJ000589",
+    "date": "2026-04-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I asked the surgeon if I could administer my own anesthetic, they said:",
+    "punchline": "go ahead, knock yourself out."
+  },
+  {
+    "jokeId": "MJ000767",
+    "date": "2026-04-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What happens when you don't obey the KGB? …",
+    "punchline": "You get Putin jail."
   }
 ]
