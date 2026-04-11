@@ -232,5 +232,32 @@
     ],
     "setup": "What happens when you don't obey the KGB? …",
     "punchline": "You get Putin jail."
+  },
+  {
+    "jokeId": "MJ001139",
+    "date": "2026-04-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I always keep a picture of my wife and kids in my wallet.",
+    "punchline": "That way, it reminds me why I have no money in it!"
+  },
+  {
+    "jokeId": "MJ000128",
+    "date": "2026-04-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you hear that the police have a warrant out on a midget psychic ripping people off?",
+    "punchline": "It reads \"Small medium at large.\""
+  },
+  {
+    "jokeId": "MJ000634",
+    "date": "2026-04-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Cosmetic surgery used to be such a taboo subject.",
+    "punchline": "Now you can talk about Botox and nobody raises an eyebrow."
   }
 ]
