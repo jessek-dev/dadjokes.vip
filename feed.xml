@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2026 02:42:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 02:27:26 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What bird is always out of breath?</title>
+      <description>What bird is always out of breath?
+
+A puffin.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-11</link>
+      <guid isPermaLink="false">dadjokes-2026-04-11</guid>
+      <pubDate>Sat, 11 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What does an educated owl say?</title>
       <description>What does an educated owl say?
@@ -93,15 +102,6 @@ A cat lights on its feet, and a match lights on its head.</description>
       <link>https://dadjokes.vip/daily/#2026-04-02</link>
       <guid isPermaLink="false">dadjokes-2026-04-02</guid>
       <pubDate>Thu, 02 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What has more letters than the alphabet?</title>
-      <description>What has more letters than the alphabet?
-
-The post office!</description>
-      <link>https://dadjokes.vip/daily/#2026-04-01</link>
-      <guid isPermaLink="false">dadjokes-2026-04-01</guid>
-      <pubDate>Wed, 01 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
