@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 02:27:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 02:46:18 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Teacher: Where are elephants found?</title>
+      <description>Teacher: Where are elephants found?
+
+Student: They’re so big, I didn’t think they could get lost!</description>
+      <link>https://dadjokes.vip/daily/#2026-04-12</link>
+      <guid isPermaLink="false">dadjokes-2026-04-12</guid>
+      <pubDate>Sun, 12 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What bird is always out of breath?</title>
       <description>What bird is always out of breath?
@@ -93,15 +102,6 @@ So they can hunt knights.</description>
       <link>https://dadjokes.vip/daily/#2026-04-03</link>
       <guid isPermaLink="false">dadjokes-2026-04-03</guid>
       <pubDate>Fri, 03 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What is the difference between a cat and a match?</title>
-      <description>What is the difference between a cat and a match?
-
-A cat lights on its feet, and a match lights on its head.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-02</link>
-      <guid isPermaLink="false">dadjokes-2026-04-02</guid>
-      <pubDate>Thu, 02 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
