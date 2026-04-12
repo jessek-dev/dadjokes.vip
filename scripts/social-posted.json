@@ -259,5 +259,32 @@
     ],
     "setup": "Cosmetic surgery used to be such a taboo subject.",
     "punchline": "Now you can talk about Botox and nobody raises an eyebrow."
+  },
+  {
+    "jokeId": "MJ000823",
+    "date": "2026-04-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My husband and I were happy for 20 years.",
+    "punchline": "And then we met."
+  },
+  {
+    "jokeId": "MJ001095",
+    "date": "2026-04-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Yesterday I called my landlord and said \"I've got a leak in my sink.\" …",
+    "punchline": "He said \"Go ahead, I'm not judging!\""
+  },
+  {
+    "jokeId": "MJ000194",
+    "date": "2026-04-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did Dracula lie in the wrong coffin?",
+    "punchline": "He made a grave mistake."
   }
 ]
