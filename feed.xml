@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 02:46:18 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 02:50:59 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Have you heard the story about the peacock that crossed the road?</title>
+      <description>Have you heard the story about the peacock that crossed the road?
+
+It really is a colorful tail….</description>
+      <link>https://dadjokes.vip/daily/#2026-04-13</link>
+      <guid isPermaLink="false">dadjokes-2026-04-13</guid>
+      <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Teacher: Where are elephants found?</title>
       <description>Teacher: Where are elephants found?
@@ -93,15 +102,6 @@ Because you can’t pull its leg.</description>
       <link>https://dadjokes.vip/daily/#2026-04-04</link>
       <guid isPermaLink="false">dadjokes-2026-04-04</guid>
       <pubDate>Sat, 04 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why do dragons sleep during the day?</title>
-      <description>Why do dragons sleep during the day?
-
-So they can hunt knights.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-03</link>
-      <guid isPermaLink="false">dadjokes-2026-04-03</guid>
-      <pubDate>Fri, 03 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
