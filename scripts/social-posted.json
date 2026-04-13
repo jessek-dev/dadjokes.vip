@@ -286,5 +286,32 @@
     ],
     "setup": "Why did Dracula lie in the wrong coffin?",
     "punchline": "He made a grave mistake."
+  },
+  {
+    "jokeId": "MJ000056",
+    "date": "2026-04-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Which is the fastest growing city in the world?",
+    "punchline": "Dublin'"
+  },
+  {
+    "jokeId": "MJ001065",
+    "date": "2026-04-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you get when you cross a polar bear with a seal?",
+    "punchline": "A polar bear!"
+  },
+  {
+    "jokeId": "MJ000358",
+    "date": "2026-04-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My dog used to chase people on a bike a lot.",
+    "punchline": "It got so bad I had to take his bike away."
   }
 ]
