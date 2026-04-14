@@ -313,5 +313,32 @@
     ],
     "setup": "My dog used to chase people on a bike a lot.",
     "punchline": "It got so bad I had to take his bike away."
+  },
+  {
+    "jokeId": "MJ000017",
+    "date": "2026-04-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I'll tell you what often gets over looked..",
+    "punchline": "garden fences."
+  },
+  {
+    "jokeId": "MJ000363",
+    "date": "2026-04-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Is the pool safe for diving?",
+    "punchline": "It deep ends."
+  },
+  {
+    "jokeId": "MJ001192",
+    "date": "2026-04-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I told my wife I'm building a model of Mount Everest.",
+    "punchline": "She said \"Is it to scale?\" I said \"No, it's to look at!\""
   }
 ]
