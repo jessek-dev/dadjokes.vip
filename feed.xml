@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 02:50:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 02:43:36 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>How does a leopard change its spots?</title>
+      <description>How does a leopard change its spots?
+
+When it’s tired of one spot, it just moves to another.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-14</link>
+      <guid isPermaLink="false">dadjokes-2026-04-14</guid>
+      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Have you heard the story about the peacock that crossed the road?</title>
       <description>Have you heard the story about the peacock that crossed the road?
@@ -93,15 +102,6 @@ Because with them, a little goes a long way.</description>
       <link>https://dadjokes.vip/daily/#2026-04-05</link>
       <guid isPermaLink="false">dadjokes-2026-04-05</guid>
       <pubDate>Sun, 05 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why is a snake so smart?</title>
-      <description>Why is a snake so smart?
-
-Because you can’t pull its leg.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-04</link>
-      <guid isPermaLink="false">dadjokes-2026-04-04</guid>
-      <pubDate>Sat, 04 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
