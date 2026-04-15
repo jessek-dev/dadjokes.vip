@@ -340,5 +340,32 @@
     ],
     "setup": "I told my wife I'm building a model of Mount Everest.",
     "punchline": "She said \"Is it to scale?\" I said \"No, it's to look at!\""
+  },
+  {
+    "jokeId": "MJ000500",
+    "date": "2026-04-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "A man is washing the car with his son. The son asks...",
+    "punchline": "\"Dad, can’t you just use a sponge?\""
+  },
+  {
+    "jokeId": "MJ001012",
+    "date": "2026-04-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I was on a diabetes awareness site. It asked me if I accept cookies.",
+    "punchline": "Is that a trick question?"
+  },
+  {
+    "jokeId": "MJ000662",
+    "date": "2026-04-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's the worst thing about ancient history class?",
+    "punchline": "The teachers tend to Babylon."
   }
 ]
