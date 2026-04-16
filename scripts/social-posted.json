@@ -367,5 +367,32 @@
     ],
     "setup": "What's the worst thing about ancient history class?",
     "punchline": "The teachers tend to Babylon."
+  },
+  {
+    "jokeId": "MJ000665",
+    "date": "2026-04-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Do you want a brief explanation of what an acorn is?",
+    "punchline": "In a nutshell, it's an oak tree."
+  },
+  {
+    "jokeId": "MJ000213",
+    "date": "2026-04-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you hear about the kidnapping at school?",
+    "punchline": "It's ok, he woke up."
+  },
+  {
+    "jokeId": "MJ000431",
+    "date": "2026-04-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Pie is $2.50 in Jamaica and $3.00 in The Bahamas.",
+    "punchline": "These are the pie-rates of the Caribbean."
   }
 ]
