@@ -394,5 +394,32 @@
     ],
     "setup": "Pie is $2.50 in Jamaica and $3.00 in The Bahamas.",
     "punchline": "These are the pie-rates of the Caribbean."
+  },
+  {
+    "jokeId": "MJ000377",
+    "date": "2026-04-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Yesterday a clown held a door open for me.",
+    "punchline": "I thought it was a nice jester."
+  },
+  {
+    "jokeId": "MJ000116",
+    "date": "2026-04-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Me: If humans lose the ability to hear high frequency volumes as they get older, can my 4 week old son hear a dog whistle? Doctor: No, humans can never hear that high of a frequency no matter what age they are. Me: Trick question...",
+    "punchline": "dogs can't whistle."
+  },
+  {
+    "jokeId": "MJ000255",
+    "date": "2026-04-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How many kids with ADD does it take to change a lightbulb?",
+    "punchline": "Let's go ride bikes!"
   }
 ]
