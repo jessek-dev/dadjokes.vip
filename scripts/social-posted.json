@@ -421,5 +421,32 @@
     ],
     "setup": "How many kids with ADD does it take to change a lightbulb?",
     "punchline": "Let's go ride bikes!"
+  },
+  {
+    "jokeId": "MJ001130",
+    "date": "2026-04-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Will glass coffins be a success?",
+    "punchline": "Remains to be seen!"
+  },
+  {
+    "jokeId": "MJ001015",
+    "date": "2026-04-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I'm reading a horror book in Braille..",
+    "punchline": "Something bad's going to happen, I can feel it!"
+  },
+  {
+    "jokeId": "MJ000027",
+    "date": "2026-04-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I’m only familiar with 25 letters in the English language.",
+    "punchline": "I don’t know why."
   }
 ]
