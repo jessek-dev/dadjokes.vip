@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 02:43:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 02:34:21 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What did one horse say to the other horse?</title>
+      <description>What did one horse say to the other horse?
+
+“Your pace is familiar, but I don’t remember your mane.”</description>
+      <link>https://dadjokes.vip/daily/#2026-04-18</link>
+      <guid isPermaLink="false">dadjokes-2026-04-18</guid>
+      <pubDate>Sat, 18 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What animal makes it hard to carry on a conversation?</title>
       <description>What animal makes it hard to carry on a conversation?
@@ -93,15 +102,6 @@ He wanted to come out of his shell.</description>
       <link>https://dadjokes.vip/daily/#2026-04-09</link>
       <guid isPermaLink="false">dadjokes-2026-04-09</guid>
       <pubDate>Thu, 09 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What is a woodpecker’s favorite kind of joke?</title>
-      <description>What is a woodpecker’s favorite kind of joke?
-
-A knock-knock.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-08</link>
-      <guid isPermaLink="false">dadjokes-2026-04-08</guid>
-      <pubDate>Wed, 08 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
