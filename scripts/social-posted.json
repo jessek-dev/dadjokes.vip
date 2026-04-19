@@ -448,5 +448,32 @@
     ],
     "setup": "I’m only familiar with 25 letters in the English language.",
     "punchline": "I don’t know why."
+  },
+  {
+    "jokeId": "MJ000067",
+    "date": "2026-04-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "When people are sad, I sometimes let them colour in my tattoos.",
+    "punchline": "Sometimes all they need is a shoulder to crayon."
+  },
+  {
+    "jokeId": "MJ000414",
+    "date": "2026-04-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What happens when you anger a brain surgeon?",
+    "punchline": "They will give you a piece of your mind."
+  },
+  {
+    "jokeId": "MJ000568",
+    "date": "2026-04-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Someone asked me to name two structures that hold water.",
+    "punchline": "I said \"Well dam\""
   }
 ]
