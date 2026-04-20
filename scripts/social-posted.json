@@ -475,5 +475,32 @@
     ],
     "setup": "Someone asked me to name two structures that hold water.",
     "punchline": "I said \"Well dam\""
+  },
+  {
+    "jokeId": "MJ000202",
+    "date": "2026-04-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a monkey in a mine field?",
+    "punchline": "A babooooom!"
+  },
+  {
+    "jokeId": "MJ000417",
+    "date": "2026-04-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I used to work in a shoe recycling shop.",
+    "punchline": "It was sole destroying."
+  },
+  {
+    "jokeId": "MJ001200",
+    "date": "2026-04-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife told me to take out the spider instead of killing it. So I did!",
+    "punchline": "We had a few drinks - pretty nice guy, and he's a web developer!"
   }
 ]
