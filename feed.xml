@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 02:50:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 02:52:05 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What did one math book say to the other?</title>
+      <description>What did one math book say to the other?
+
+“Man, I got a lot of problems!”</description>
+      <link>https://dadjokes.vip/daily/#2026-04-20</link>
+      <guid isPermaLink="false">dadjokes-2026-04-20</guid>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What was the snail doing on the highway?</title>
       <description>What was the snail doing on the highway?
@@ -93,15 +102,6 @@ A puffin.</description>
       <link>https://dadjokes.vip/daily/#2026-04-11</link>
       <guid isPermaLink="false">dadjokes-2026-04-11</guid>
       <pubDate>Sat, 11 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What does an educated owl say?</title>
-      <description>What does an educated owl say?
-
-“Whom.”</description>
-      <link>https://dadjokes.vip/daily/#2026-04-10</link>
-      <guid isPermaLink="false">dadjokes-2026-04-10</guid>
-      <pubDate>Fri, 10 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
