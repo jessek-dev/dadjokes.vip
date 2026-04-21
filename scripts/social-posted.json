@@ -502,5 +502,32 @@
     ],
     "setup": "My wife told me to take out the spider instead of killing it. So I did!",
     "punchline": "We had a few drinks - pretty nice guy, and he's a web developer!"
+  },
+  {
+    "jokeId": "MJ000238",
+    "date": "2026-04-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's blue and not very heavy?",
+    "punchline": "Light blue."
+  },
+  {
+    "jokeId": "MJ000261",
+    "date": "2026-04-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I never wanted to believe that my Dad was stealing from his job as a road worker.",
+    "punchline": "But when I got home, all the signs were there."
+  },
+  {
+    "jokeId": "MJ001098",
+    "date": "2026-04-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Last night I accidentally handed my wife a glue stick instead of chapstick..",
+    "punchline": "She still isn't talking to me!"
   }
 ]
