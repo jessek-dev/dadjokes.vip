@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 02:52:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 02:44:59 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?</title>
+      <description>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?
+
+Charlie: Well, it’s just you, me, and the principal.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-21</link>
+      <guid isPermaLink="false">dadjokes-2026-04-21</guid>
+      <pubDate>Tue, 21 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What did one math book say to the other?</title>
       <description>What did one math book say to the other?
@@ -93,15 +102,6 @@ Student: They’re so big, I didn’t think they could get lost!</description>
       <link>https://dadjokes.vip/daily/#2026-04-12</link>
       <guid isPermaLink="false">dadjokes-2026-04-12</guid>
       <pubDate>Sun, 12 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What bird is always out of breath?</title>
-      <description>What bird is always out of breath?
-
-A puffin.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-11</link>
-      <guid isPermaLink="false">dadjokes-2026-04-11</guid>
-      <pubDate>Sat, 11 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
