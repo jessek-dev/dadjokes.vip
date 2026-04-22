@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 02:44:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 02:42:49 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why did the amoeba flunk the math test?</title>
+      <description>Why did the amoeba flunk the math test?
+
+Because it multiplied by dividing.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-22</link>
+      <guid isPermaLink="false">dadjokes-2026-04-22</guid>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?</title>
       <description>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?
@@ -93,15 +102,6 @@ It really is a colorful tail….</description>
       <link>https://dadjokes.vip/daily/#2026-04-13</link>
       <guid isPermaLink="false">dadjokes-2026-04-13</guid>
       <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Teacher: Where are elephants found?</title>
-      <description>Teacher: Where are elephants found?
-
-Student: They’re so big, I didn’t think they could get lost!</description>
-      <link>https://dadjokes.vip/daily/#2026-04-12</link>
-      <guid isPermaLink="false">dadjokes-2026-04-12</guid>
-      <pubDate>Sun, 12 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
