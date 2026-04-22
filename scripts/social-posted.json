@@ -529,5 +529,32 @@
     ],
     "setup": "Last night I accidentally handed my wife a glue stick instead of chapstick..",
     "punchline": "She still isn't talking to me!"
+  },
+  {
+    "jokeId": "MJ000358",
+    "date": "2026-04-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My dog used to chase people on a bike a lot.",
+    "punchline": "It got so bad I had to take his bike away."
+  },
+  {
+    "jokeId": "MJ000294",
+    "date": "2026-04-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the sea say to the sand?",
+    "punchline": "\"We have to stop meeting like this.\""
+  },
+  {
+    "jokeId": "MJ000357",
+    "date": "2026-04-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Astronomers got tired watching the moon go around the earth for 24 hours.",
+    "punchline": "They decided to call it a day."
   }
 ]
