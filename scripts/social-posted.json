@@ -556,5 +556,32 @@
     ],
     "setup": "Astronomers got tired watching the moon go around the earth for 24 hours.",
     "punchline": "They decided to call it a day."
+  },
+  {
+    "jokeId": "MJ000788",
+    "date": "2026-04-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My grandfather says I'm too reliant on technology.",
+    "punchline": "I called him a hypocrite and unplugged his life support."
+  },
+  {
+    "jokeId": "MJ001213",
+    "date": "2026-04-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why'd the Mexican take anti-anxiety pills?",
+    "punchline": "For Hispanic attacks!"
+  },
+  {
+    "jokeId": "MJ000504",
+    "date": "2026-04-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Hostess: Do you have a preference of where you sit?",
+    "punchline": "Dad: Down."
   }
 ]
