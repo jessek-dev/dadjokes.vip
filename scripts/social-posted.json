@@ -583,5 +583,32 @@
     ],
     "setup": "Hostess: Do you have a preference of where you sit?",
     "punchline": "Dad: Down."
+  },
+  {
+    "jokeId": "MJ000329",
+    "date": "2026-04-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the hat say to the scarf?",
+    "punchline": "You can hang around. I'll just go on ahead."
+  },
+  {
+    "jokeId": "MJ000513",
+    "date": "2026-04-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I made a playlist for hiking. It has music from Peanuts, The Cranberries, and Eminem.",
+    "punchline": "I call it my Trail Mix."
+  },
+  {
+    "jokeId": "MJ000182",
+    "date": "2026-04-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a careful wolf?",
+    "punchline": "Aware wolf."
   }
 ]
