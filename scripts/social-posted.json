@@ -610,5 +610,32 @@
     ],
     "setup": "What do you call a careful wolf?",
     "punchline": "Aware wolf."
+  },
+  {
+    "jokeId": "MJ000484",
+    "date": "2026-04-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why was the big cat disqualified from the race?",
+    "punchline": "Because it was a cheetah."
+  },
+  {
+    "jokeId": "MJ000623",
+    "date": "2026-04-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Wife told me to take the spider out instead of killing it...",
+    "punchline": "We had some drinks, cool guy, wants to be a web developer."
+  },
+  {
+    "jokeId": "MJ000488",
+    "date": "2026-04-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What kind of award did the dentist receive?",
+    "punchline": "A little plaque."
   }
 ]
