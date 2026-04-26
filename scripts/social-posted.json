@@ -637,5 +637,32 @@
     ],
     "setup": "What kind of award did the dentist receive?",
     "punchline": "A little plaque."
+  },
+  {
+    "jokeId": "MJ000373",
+    "date": "2026-04-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How does a dyslexic poet write?",
+    "punchline": "Inverse."
+  },
+  {
+    "jokeId": "MJ000645",
+    "date": "2026-04-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the broom late for the meeting?",
+    "punchline": "He overswept."
+  },
+  {
+    "jokeId": "MJ000345",
+    "date": "2026-04-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you know crocodiles could grow up to 15 feet?",
+    "punchline": "But most just have 4."
   }
 ]
