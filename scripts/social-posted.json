@@ -664,5 +664,32 @@
     ],
     "setup": "Did you know crocodiles could grow up to 15 feet?",
     "punchline": "But most just have 4."
+  },
+  {
+    "jokeId": "MJ000136",
+    "date": "2026-04-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife said I was immature.",
+    "punchline": "So I told her to get out of my fort."
+  },
+  {
+    "jokeId": "MJ000053",
+    "date": "2026-04-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I don't trust stairs.",
+    "punchline": "They're always up to something."
+  },
+  {
+    "jokeId": "MJ001100",
+    "date": "2026-04-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My boss asked me why I get sick only on work days..",
+    "punchline": "I said, \"I don't know, it must be my weak-end immune system.\""
   }
 ]
