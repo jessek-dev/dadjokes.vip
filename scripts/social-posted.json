@@ -691,5 +691,32 @@
     ],
     "setup": "My boss asked me why I get sick only on work days..",
     "punchline": "I said, \"I don't know, it must be my weak-end immune system.\""
+  },
+  {
+    "jokeId": "MJ000049",
+    "date": "2026-04-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Sometimes I tuck my knees into my chest and lean forward.",
+    "punchline": "That’s just how I roll."
+  },
+  {
+    "jokeId": "MJ000427",
+    "date": "2026-04-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What does a clock do when it's hungry?",
+    "punchline": "It goes back four seconds!"
+  },
+  {
+    "jokeId": "MJ001233",
+    "date": "2026-04-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I'm American and I'm sick of people telling us that America is the stupidest country in the world.",
+    "punchline": "Personally, I think Europe is the stupidest country in the world!"
   }
 ]
