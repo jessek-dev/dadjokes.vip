@@ -718,5 +718,32 @@
     ],
     "setup": "I'm American and I'm sick of people telling us that America is the stupidest country in the world.",
     "punchline": "Personally, I think Europe is the stupidest country in the world!"
+  },
+  {
+    "jokeId": "MJ000261",
+    "date": "2026-04-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I never wanted to believe that my Dad was stealing from his job as a road worker.",
+    "punchline": "But when I got home, all the signs were there."
+  },
+  {
+    "jokeId": "MJ000297",
+    "date": "2026-04-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "\"Doctor, I’ve broken my arm in several places.\"",
+    "punchline": "Doctor: \"Well don't go to those places.\""
+  },
+  {
+    "jokeId": "MJ000875",
+    "date": "2026-04-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife left me because I'm too insecure and paranoid.…",
+    "punchline": "Oh wait, never mind. She was just getting the mail."
   }
 ]
