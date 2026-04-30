@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 03:22:54 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 03:23:49 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Where were the kings and queens of England crowned?</title>
+      <description>Where were the kings and queens of England crowned?
+
+On their heads.</description>
+      <link>https://dadjokes.vip/daily/#2026-04-30</link>
+      <guid isPermaLink="false">dadjokes-2026-04-30</guid>
+      <pubDate>Thu, 30 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What do videos do on their days off?</title>
       <description>What do videos do on their days off?
@@ -93,15 +102,6 @@ Charlie: Well, it’s just you, me, and the principal.</description>
       <link>https://dadjokes.vip/daily/#2026-04-21</link>
       <guid isPermaLink="false">dadjokes-2026-04-21</guid>
       <pubDate>Tue, 21 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What did one math book say to the other?</title>
-      <description>What did one math book say to the other?
-
-“Man, I got a lot of problems!”</description>
-      <link>https://dadjokes.vip/daily/#2026-04-20</link>
-      <guid isPermaLink="false">dadjokes-2026-04-20</guid>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
