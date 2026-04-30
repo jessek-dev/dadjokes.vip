@@ -745,5 +745,32 @@
     ],
     "setup": "My wife left me because I'm too insecure and paranoid.…",
     "punchline": "Oh wait, never mind. She was just getting the mail."
+  },
+  {
+    "jokeId": "MJ000170",
+    "date": "2026-04-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Can a kangaroo jump higher than the Empire State Building?",
+    "punchline": "Of course. The Empire State Building can't jump."
+  },
+  {
+    "jokeId": "MJ000130",
+    "date": "2026-04-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Just read a few facts about frogs.",
+    "punchline": "They were ribbiting."
+  },
+  {
+    "jokeId": "MJ000326",
+    "date": "2026-04-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Where do sheep go to get their hair cut?",
+    "punchline": "The baa-baa shop."
   }
 ]
