@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Apr 2026 03:23:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 03:34:11 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Farmer: Quite a storm we had last night. Neighbor: Yep, it sure was. Farmer: Did it damage your barn any?</title>
+      <description>Farmer: Quite a storm we had last night. Neighbor: Yep, it sure was. Farmer: Did it damage your barn any?
+
+Neighbor: I dunno. I haven’t found it yet.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-01</link>
+      <guid isPermaLink="false">dadjokes-2026-05-01</guid>
+      <pubDate>Fri, 01 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Where were the kings and queens of England crowned?</title>
       <description>Where were the kings and queens of England crowned?
@@ -93,15 +102,6 @@ Because it multiplied by dividing.</description>
       <link>https://dadjokes.vip/daily/#2026-04-22</link>
       <guid isPermaLink="false">dadjokes-2026-04-22</guid>
       <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?</title>
-      <description>Charlie: Hey, Mom, tomorrow there’s a small PTA meeting. Mom: What do you mean by “small”?
-
-Charlie: Well, it’s just you, me, and the principal.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-21</link>
-      <guid isPermaLink="false">dadjokes-2026-04-21</guid>
-      <pubDate>Tue, 21 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
