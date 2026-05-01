@@ -772,5 +772,32 @@
     ],
     "setup": "Where do sheep go to get their hair cut?",
     "punchline": "The baa-baa shop."
+  },
+  {
+    "jokeId": "MJ000858",
+    "date": "2026-05-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle? …",
+    "punchline": "Attire."
+  },
+  {
+    "jokeId": "MJ001212",
+    "date": "2026-05-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Remember that joke I told you about the chiropractor? No?",
+    "punchline": "Really, it was about a week back!"
+  },
+  {
+    "jokeId": "MJ000007",
+    "date": "2026-05-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I knew I shouldn't steal a mixer from work...",
+    "punchline": "but it was a whisk I was willing to take.\""
   }
 ]
