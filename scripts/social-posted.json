@@ -799,5 +799,32 @@
     ],
     "setup": "I knew I shouldn't steal a mixer from work...",
     "punchline": "but it was a whisk I was willing to take.\""
+  },
+  {
+    "jokeId": "MJ001301",
+    "date": "2026-05-02",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's the difference between a bad joke and a dad joke?",
+    "punchline": "The first letter!"
+  },
+  {
+    "jokeId": "MJ000243",
+    "date": "2026-05-02",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A quick shoutout to all of the sidewalks out there...",
+    "punchline": "Thanks for keeping me off the streets."
+  },
+  {
+    "jokeId": "MJ001028",
+    "date": "2026-05-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My mother said \"One man's trash is another man's treasure.\" ..",
+    "punchline": "Turns out I'm adopted."
   }
 ]
