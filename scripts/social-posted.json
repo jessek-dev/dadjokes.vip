@@ -826,5 +826,32 @@
     ],
     "setup": "My mother said \"One man's trash is another man's treasure.\" ..",
     "punchline": "Turns out I'm adopted."
+  },
+  {
+    "jokeId": "MJ000868",
+    "date": "2026-05-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My little daughter came to me all excited, saying \"Daddy! Daddy! Guess how old I'll be in June!\" \"Oh I don't know princess, why don't you tell me?\" I said.",
+    "punchline": "She gave me a huge smile and held up four fingers. It's now three hours later, police have joined in and she still won't say where she got them."
+  },
+  {
+    "jokeId": "MJ000500",
+    "date": "2026-05-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A man is washing the car with his son. The son asks...",
+    "punchline": "\"Dad, can’t you just use a sponge?\""
+  },
+  {
+    "jokeId": "MJ000707",
+    "date": "2026-05-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why shouldn't you visit an expensive wig shop? …",
+    "punchline": "It's too high a price \"toupee.\""
   }
 ]
