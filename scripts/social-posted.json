@@ -853,5 +853,32 @@
     ],
     "setup": "Why shouldn't you visit an expensive wig shop? …",
     "punchline": "It's too high a price \"toupee.\""
+  },
+  {
+    "jokeId": "MJ000204",
+    "date": "2026-05-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I cut my finger cutting cheese.",
+    "punchline": "I know it may be a cheesy story but I feel grate now."
+  },
+  {
+    "jokeId": "MJ000211",
+    "date": "2026-05-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Just watched a documentary about beavers...",
+    "punchline": "It was the best damn program I’ve ever seen."
+  },
+  {
+    "jokeId": "MJ000957",
+    "date": "2026-05-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Dads are like boomerangs…",
+    "punchline": "I hope."
   }
 ]
