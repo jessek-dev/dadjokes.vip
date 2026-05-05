@@ -880,5 +880,32 @@
     ],
     "setup": "Dads are like boomerangs…",
     "punchline": "I hope."
+  },
+  {
+    "jokeId": "MJ001212",
+    "date": "2026-05-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Remember that joke I told you about the chiropractor? No?",
+    "punchline": "Really, it was about a week back!"
+  },
+  {
+    "jokeId": "MJ000156",
+    "date": "2026-05-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a bee that lives in America?",
+    "punchline": "A USB."
+  },
+  {
+    "jokeId": "MJ000154",
+    "date": "2026-05-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "It was raining cats and dogs the other day.",
+    "punchline": "I almost stepped in a poodle."
   }
 ]
