@@ -907,5 +907,32 @@
     ],
     "setup": "It was raining cats and dogs the other day.",
     "punchline": "I almost stepped in a poodle."
+  },
+  {
+    "jokeId": "MJ000080",
+    "date": "2026-05-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why do cows not have toes?",
+    "punchline": "They lactose!"
+  },
+  {
+    "jokeId": "MJ000025",
+    "date": "2026-05-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why does a Moon-rock taste better than an Earth-rock?",
+    "punchline": "Because it's a little meteor."
+  },
+  {
+    "jokeId": "MJ000163",
+    "date": "2026-05-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I couldn't figure out how the seat belt worked.",
+    "punchline": "Then it just clicked."
   }
 ]
