@@ -934,5 +934,32 @@
     ],
     "setup": "I couldn't figure out how the seat belt worked.",
     "punchline": "Then it just clicked."
+  },
+  {
+    "jokeId": "MJ000172",
+    "date": "2026-05-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call an old snowman?",
+    "punchline": "Water."
+  },
+  {
+    "jokeId": "MJ000467",
+    "date": "2026-05-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I accidentally drank a bottle of invisible ink.",
+    "punchline": "Now I’m in hospital, waiting to be seen."
+  },
+  {
+    "jokeId": "MJ001298",
+    "date": "2026-05-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife asked me to stop singing Wonderwall to her?",
+    "punchline": "I said maybe..."
   }
 ]
