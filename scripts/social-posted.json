@@ -961,5 +961,32 @@
     ],
     "setup": "My wife asked me to stop singing Wonderwall to her?",
     "punchline": "I said maybe..."
+  },
+  {
+    "jokeId": "MJ000619",
+    "date": "2026-05-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "A man tried to sell me a coffin today.",
+    "punchline": "I told him that's the last thing I need."
+  },
+  {
+    "jokeId": "MJ000290",
+    "date": "2026-05-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the scarf say to the hat?",
+    "punchline": "You go on ahead, I am going to hang around a bit longer."
+  },
+  {
+    "jokeId": "MJ000685",
+    "date": "2026-05-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What is red and smells like blue paint?",
+    "punchline": "Red paint!"
   }
 ]
