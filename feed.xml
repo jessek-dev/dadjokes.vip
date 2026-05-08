@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2026 03:22:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 03:20:15 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>When is the first tennis match mentioned in the Bible?</title>
+      <description>When is the first tennis match mentioned in the Bible?
+
+When Joseph served in Pharaoh’s court.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-08</link>
+      <guid isPermaLink="false">dadjokes-2026-05-08</guid>
+      <pubDate>Fri, 08 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Who was the greatest female financier in the Bible?</title>
       <description>Who was the greatest female financier in the Bible?
@@ -93,15 +102,6 @@ They unwind.</description>
       <link>https://dadjokes.vip/daily/#2026-04-29</link>
       <guid isPermaLink="false">dadjokes-2026-04-29</guid>
       <pubDate>Wed, 29 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How did you pass the entrance exam for candy-making school?</title>
-      <description>How did you pass the entrance exam for candy-making school?
-
-It was simple. I fudged it.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-28</link>
-      <guid isPermaLink="false">dadjokes-2026-04-28</guid>
-      <pubDate>Tue, 28 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
