@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 03:20:15 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 02:56:39 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Was Noah the first one out of the ark?</title>
+      <description>Was Noah the first one out of the ark?
+
+No; he came forth out of the ark.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-09</link>
+      <guid isPermaLink="false">dadjokes-2026-05-09</guid>
+      <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>When is the first tennis match mentioned in the Bible?</title>
       <description>When is the first tennis match mentioned in the Bible?
@@ -93,15 +102,6 @@ On their heads.</description>
       <link>https://dadjokes.vip/daily/#2026-04-30</link>
       <guid isPermaLink="false">dadjokes-2026-04-30</guid>
       <pubDate>Thu, 30 Apr 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do videos do on their days off?</title>
-      <description>What do videos do on their days off?
-
-They unwind.</description>
-      <link>https://dadjokes.vip/daily/#2026-04-29</link>
-      <guid isPermaLink="false">dadjokes-2026-04-29</guid>
-      <pubDate>Wed, 29 Apr 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
