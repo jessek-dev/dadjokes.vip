@@ -988,5 +988,32 @@
     ],
     "setup": "What is red and smells like blue paint?",
     "punchline": "Red paint!"
+  },
+  {
+    "jokeId": "MJ000990",
+    "date": "2026-05-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How much did your chimney cost? …",
+    "punchline": "Nothing, it was on the house."
+  },
+  {
+    "jokeId": "MJ000282",
+    "date": "2026-05-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "So a duck walks into a pharmacy and says \"Give me some chap-stick...\"",
+    "punchline": "and put it on my bill\""
+  },
+  {
+    "jokeId": "MJ000470",
+    "date": "2026-05-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Americans can't switch from pounds to kilograms overnight.",
+    "punchline": "That would cause mass confusion."
   }
 ]
