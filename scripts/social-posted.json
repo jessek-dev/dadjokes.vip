@@ -1015,5 +1015,32 @@
     ],
     "setup": "Americans can't switch from pounds to kilograms overnight.",
     "punchline": "That would cause mass confusion."
+  },
+  {
+    "jokeId": "MJ000132",
+    "date": "2026-05-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a fish with no eyes?",
+    "punchline": "A fsh."
+  },
+  {
+    "jokeId": "MJ000151",
+    "date": "2026-05-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What is the best way to carve?",
+    "punchline": "Whittle by whittle."
+  },
+  {
+    "jokeId": "MJ001139",
+    "date": "2026-05-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I always keep a picture of my wife and kids in my wallet.",
+    "punchline": "That way, it reminds me why I have no money in it!"
   }
 ]
