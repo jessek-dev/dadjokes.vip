@@ -1042,5 +1042,32 @@
     ],
     "setup": "I always keep a picture of my wife and kids in my wallet.",
     "punchline": "That way, it reminds me why I have no money in it!"
+  },
+  {
+    "jokeId": "MJ000130",
+    "date": "2026-05-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Just read a few facts about frogs.",
+    "punchline": "They were ribbiting."
+  },
+  {
+    "jokeId": "MJ001298",
+    "date": "2026-05-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife asked me to stop singing Wonderwall to her?",
+    "punchline": "I said maybe..."
+  },
+  {
+    "jokeId": "MJ001088",
+    "date": "2026-05-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My son asked me what it was like to be married, so I told him to leave me alone.",
+    "punchline": "And when he did, I asked, \"Why are you ignoring me?\""
   }
 ]
