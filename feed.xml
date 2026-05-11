@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 03:28:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 03:40:09 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What’s more useful after it’s broken?</title>
+      <description>What’s more useful after it’s broken?
+
+An egg.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-11</link>
+      <guid isPermaLink="false">dadjokes-2026-05-11</guid>
+      <pubDate>Mon, 11 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How many items can you put into an empty grocery bag?</title>
       <description>How many items can you put into an empty grocery bag?
@@ -93,15 +102,6 @@ Because they need the dough.</description>
       <link>https://dadjokes.vip/daily/#2026-05-02</link>
       <guid isPermaLink="false">dadjokes-2026-05-02</guid>
       <pubDate>Sat, 02 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Farmer: Quite a storm we had last night. Neighbor: Yep, it sure was. Farmer: Did it damage your barn any?</title>
-      <description>Farmer: Quite a storm we had last night. Neighbor: Yep, it sure was. Farmer: Did it damage your barn any?
-
-Neighbor: I dunno. I haven’t found it yet.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-01</link>
-      <guid isPermaLink="false">dadjokes-2026-05-01</guid>
-      <pubDate>Fri, 01 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
