@@ -1069,5 +1069,32 @@
     ],
     "setup": "My son asked me what it was like to be married, so I told him to leave me alone.",
     "punchline": "And when he did, I asked, \"Why are you ignoring me?\""
+  },
+  {
+    "jokeId": "MJ000302",
+    "date": "2026-05-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the Zen Buddist say to the hotdog vendor?",
+    "punchline": "Make me one with everything."
+  },
+  {
+    "jokeId": "MJ000380",
+    "date": "2026-05-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's a penguin's favorite relative?",
+    "punchline": "Aunt Arctica."
+  },
+  {
+    "jokeId": "MJ000982",
+    "date": "2026-05-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the Romanian stop reading? …",
+    "punchline": "They wanted to give the Bucharest."
   }
 ]
