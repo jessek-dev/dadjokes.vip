@@ -1096,5 +1096,32 @@
     ],
     "setup": "Why did the Romanian stop reading? …",
     "punchline": "They wanted to give the Bucharest."
+  },
+  {
+    "jokeId": "MJ000127",
+    "date": "2026-05-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Two muffins were sitting in an oven, and the first looks over to the second, and says, \"man, it’s really hot in here.\"",
+    "punchline": "The second looks over at the first with a surprised look, and answers, \"WHOA, a talking muffin!\""
+  },
+  {
+    "jokeId": "MJ000385",
+    "date": "2026-05-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why can’t you hear a pterodactyl go to the bathroom?",
+    "punchline": "The p is silent."
+  },
+  {
+    "jokeId": "MJ001297",
+    "date": "2026-05-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Does every sentence need to include a vegetable?",
+    "punchline": "Not neces-celery!"
   }
 ]
