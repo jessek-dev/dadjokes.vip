@@ -1123,5 +1123,32 @@
     ],
     "setup": "Does every sentence need to include a vegetable?",
     "punchline": "Not neces-celery!"
+  },
+  {
+    "jokeId": "MJ000182",
+    "date": "2026-05-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a careful wolf?",
+    "punchline": "Aware wolf."
+  },
+  {
+    "jokeId": "MJ001170",
+    "date": "2026-05-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Tomorrow my son and I are getting new glasses.",
+    "punchline": "After that, we'll see!"
+  },
+  {
+    "jokeId": "MJ000990",
+    "date": "2026-05-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How much did your chimney cost? …",
+    "punchline": "Nothing, it was on the house."
   }
 ]
