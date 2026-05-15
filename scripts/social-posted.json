@@ -1150,5 +1150,32 @@
     ],
     "setup": "How much did your chimney cost? …",
     "punchline": "Nothing, it was on the house."
+  },
+  {
+    "jokeId": "MJ000051",
+    "date": "2026-05-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Conjunctivitis.com –",
+    "punchline": "now that’s a site for sore eyes."
+  },
+  {
+    "jokeId": "MJ001054",
+    "date": "2026-05-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife got pissed at me because I accidentally overcooked the ribeye last night..",
+    "punchline": "I told her we all make missed steaks."
+  },
+  {
+    "jokeId": "MJ000467",
+    "date": "2026-05-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I accidentally drank a bottle of invisible ink.",
+    "punchline": "Now I’m in hospital, waiting to be seen."
   }
 ]
