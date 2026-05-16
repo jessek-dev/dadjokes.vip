@@ -1177,5 +1177,32 @@
     ],
     "setup": "I accidentally drank a bottle of invisible ink.",
     "punchline": "Now I’m in hospital, waiting to be seen."
+  },
+  {
+    "jokeId": "MJ000278",
+    "date": "2026-05-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How many bones are in the human hand?",
+    "punchline": "A handful of them."
+  },
+  {
+    "jokeId": "MJ000101",
+    "date": "2026-05-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the dog say to the two trees?",
+    "punchline": "Bark bark."
+  },
+  {
+    "jokeId": "MJ000574",
+    "date": "2026-05-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you hear that David lost his ID in Prague?",
+    "punchline": "Now we just have to call him Dav."
   }
 ]
