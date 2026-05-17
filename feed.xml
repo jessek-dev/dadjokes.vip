@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 03:22:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 03:36:17 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What kind of beans won’t grow in a garden?</title>
+      <description>What kind of beans won’t grow in a garden?
+
+Jelly beans.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-17</link>
+      <guid isPermaLink="false">dadjokes-2026-05-17</guid>
+      <pubDate>Sun, 17 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why did the other vegetables like the corn?</title>
       <description>Why did the other vegetables like the corn?
@@ -93,15 +102,6 @@ When Joseph served in Pharaoh’s court.</description>
       <link>https://dadjokes.vip/daily/#2026-05-08</link>
       <guid isPermaLink="false">dadjokes-2026-05-08</guid>
       <pubDate>Fri, 08 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Who was the greatest female financier in the Bible?</title>
-      <description>Who was the greatest female financier in the Bible?
-
-Pharaoh’s daughter; she went down to the bank of the Nile and drew out a little prophet.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-07</link>
-      <guid isPermaLink="false">dadjokes-2026-05-07</guid>
-      <pubDate>Thu, 07 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
