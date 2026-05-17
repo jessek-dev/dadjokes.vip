@@ -1204,5 +1204,32 @@
     ],
     "setup": "Did you hear that David lost his ID in Prague?",
     "punchline": "Now we just have to call him Dav."
+  },
+  {
+    "jokeId": "MJ000488",
+    "date": "2026-05-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What kind of award did the dentist receive?",
+    "punchline": "A little plaque."
+  },
+  {
+    "jokeId": "MJ001210",
+    "date": "2026-05-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I was in bed and said \"Hey Siri, why am I so bad with women?\" She said",
+    "punchline": "\"This is Alexa!\""
+  },
+  {
+    "jokeId": "MJ000296",
+    "date": "2026-05-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A panda walks into a bar and says to the bartender \"I’ll have a Scotch and …",
+    "punchline": "Coke thank you.\" \"Sure thing\" the bartender replies and asks \"but what’s with the big pause?\" The panda holds up his hands and says \"I was born with them\""
   }
 ]
