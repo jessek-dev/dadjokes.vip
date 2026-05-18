@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2026 03:36:17 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 03:51:10 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Would Little Miss Muffet share her curds?</title>
+      <description>Would Little Miss Muffet share her curds?
+
+No whey.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-18</link>
+      <guid isPermaLink="false">dadjokes-2026-05-18</guid>
+      <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What kind of beans won’t grow in a garden?</title>
       <description>What kind of beans won’t grow in a garden?
@@ -93,15 +102,6 @@ No; he came forth out of the ark.</description>
       <link>https://dadjokes.vip/daily/#2026-05-09</link>
       <guid isPermaLink="false">dadjokes-2026-05-09</guid>
       <pubDate>Sat, 09 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>When is the first tennis match mentioned in the Bible?</title>
-      <description>When is the first tennis match mentioned in the Bible?
-
-When Joseph served in Pharaoh’s court.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-08</link>
-      <guid isPermaLink="false">dadjokes-2026-05-08</guid>
-      <pubDate>Fri, 08 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
