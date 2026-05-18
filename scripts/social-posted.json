@@ -1231,5 +1231,32 @@
     ],
     "setup": "A panda walks into a bar and says to the bartender \"I’ll have a Scotch and …",
     "punchline": "Coke thank you.\" \"Sure thing\" the bartender replies and asks \"but what’s with the big pause?\" The panda holds up his hands and says \"I was born with them\""
+  },
+  {
+    "jokeId": "MJ000363",
+    "date": "2026-05-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Is the pool safe for diving?",
+    "punchline": "It deep ends."
+  },
+  {
+    "jokeId": "MJ000127",
+    "date": "2026-05-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Two muffins were sitting in an oven, and the first looks over to the second, and says, \"man, it’s really hot in here.\"",
+    "punchline": "The second looks over at the first with a surprised look, and answers, \"WHOA, a talking muffin!\""
+  },
+  {
+    "jokeId": "MJ000173",
+    "date": "2026-05-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I tried to milk a cow today, but was unsuccessful.",
+    "punchline": "Udder failure."
   }
 ]
