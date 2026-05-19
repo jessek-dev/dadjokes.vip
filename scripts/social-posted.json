@@ -1258,5 +1258,32 @@
     ],
     "setup": "I tried to milk a cow today, but was unsuccessful.",
     "punchline": "Udder failure."
+  },
+  {
+    "jokeId": "MJ000510",
+    "date": "2026-05-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I saw my husband trip and fall while carrying a laundry basket full of ironed clothes.",
+    "punchline": "I watched it all unfold."
+  },
+  {
+    "jokeId": "MJ001301",
+    "date": "2026-05-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's the difference between a bad joke and a dad joke?",
+    "punchline": "The first letter!"
+  },
+  {
+    "jokeId": "MJ000788",
+    "date": "2026-05-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My grandfather says I'm too reliant on technology.",
+    "punchline": "I called him a hypocrite and unplugged his life support."
   }
 ]
