@@ -1285,5 +1285,32 @@
     ],
     "setup": "My grandfather says I'm too reliant on technology.",
     "punchline": "I called him a hypocrite and unplugged his life support."
+  },
+  {
+    "jokeId": "MJ000982",
+    "date": "2026-05-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did the Romanian stop reading? …",
+    "punchline": "They wanted to give the Bucharest."
+  },
+  {
+    "jokeId": "MJ000339",
+    "date": "2026-05-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Me and my mates are in a band called Duvet.",
+    "punchline": "We're a cover band."
+  },
+  {
+    "jokeId": "MJ000156",
+    "date": "2026-05-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a bee that lives in America?",
+    "punchline": "A USB."
   }
 ]
