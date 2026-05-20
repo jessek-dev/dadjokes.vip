@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 03:41:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 03:42:37 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Ian: My neighbors were screaming and yelling at three o&#039;clock this morning! Mark: Did they wake you?</title>
+      <description>Ian: My neighbors were screaming and yelling at three o&#039;clock this morning! Mark: Did they wake you?
+
+Ian: Nah... I was already up, playing my bagpipes.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-20</link>
+      <guid isPermaLink="false">dadjokes-2026-05-20</guid>
+      <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>When do knights arrive for sporting events?</title>
       <description>When do knights arrive for sporting events?
@@ -93,15 +102,6 @@ An egg.</description>
       <link>https://dadjokes.vip/daily/#2026-05-11</link>
       <guid isPermaLink="false">dadjokes-2026-05-11</guid>
       <pubDate>Mon, 11 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How many items can you put into an empty grocery bag?</title>
-      <description>How many items can you put into an empty grocery bag?
-
-One. After that, the bag isn’t empty anymore.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-10</link>
-      <guid isPermaLink="false">dadjokes-2026-05-10</guid>
-      <pubDate>Sun, 10 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
