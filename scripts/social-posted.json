@@ -1312,5 +1312,32 @@
     ],
     "setup": "What do you call a bee that lives in America?",
     "punchline": "A USB."
+  },
+  {
+    "jokeId": "MJ000621",
+    "date": "2026-05-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the shy pebble wish for?",
+    "punchline": "That she was a little boulder."
+  },
+  {
+    "jokeId": "MJ000618",
+    "date": "2026-05-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "When do doctors get angry?",
+    "punchline": "When they run out of patients."
+  },
+  {
+    "jokeId": "MJ000107",
+    "date": "2026-05-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why should you never trust a pig with a secret?",
+    "punchline": "Because it's bound to squeal."
   }
 ]
