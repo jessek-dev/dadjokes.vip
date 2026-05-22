@@ -1339,5 +1339,32 @@
     ],
     "setup": "Why should you never trust a pig with a secret?",
     "punchline": "Because it's bound to squeal."
+  },
+  {
+    "jokeId": "MJ001223",
+    "date": "2026-05-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I was getting in an Uber the other day and the driver said \"I love my job, I'm my own boss, nobody tells me what to do!\" Then I said",
+    "punchline": "\"Turn left here.\""
+  },
+  {
+    "jokeId": "MJ001088",
+    "date": "2026-05-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My son asked me what it was like to be married, so I told him to leave me alone.",
+    "punchline": "And when he did, I asked, \"Why are you ignoring me?\""
+  },
+  {
+    "jokeId": "MJ000075",
+    "date": "2026-05-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why are oranges the smartest fruit?",
+    "punchline": "Because they are made to concentrate."
   }
 ]
