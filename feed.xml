@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2026 03:50:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 03:25:58 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What goes up but never comes down?</title>
+      <description>What goes up but never comes down?
+
+Your age.</description>
+      <link>https://dadjokes.vip/daily/#2026-05-23</link>
+      <guid isPermaLink="false">dadjokes-2026-05-23</guid>
+      <pubDate>Sat, 23 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What can you hold without touching it?</title>
       <description>What can you hold without touching it?
@@ -93,15 +102,6 @@ Customer: Well, I just pushed aside a bean and there it was!</description>
       <link>https://dadjokes.vip/daily/#2026-05-14</link>
       <guid isPermaLink="false">dadjokes-2026-05-14</guid>
       <pubDate>Thu, 14 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why couldn’t the coffee bean go out to play?</title>
-      <description>Why couldn’t the coffee bean go out to play?
-
-He was grounded.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-13</link>
-      <guid isPermaLink="false">dadjokes-2026-05-13</guid>
-      <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
