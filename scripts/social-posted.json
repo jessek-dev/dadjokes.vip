@@ -1366,5 +1366,32 @@
     ],
     "setup": "Why are oranges the smartest fruit?",
     "punchline": "Because they are made to concentrate."
+  },
+  {
+    "jokeId": "MJ000461",
+    "date": "2026-05-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "This is my step ladder.",
+    "punchline": "I never knew my real ladder."
+  },
+  {
+    "jokeId": "MJ000205",
+    "date": "2026-05-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How do you steal a coat?",
+    "punchline": "You jacket."
+  },
+  {
+    "jokeId": "MJ000593",
+    "date": "2026-05-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the judge say to the dentist?",
+    "punchline": "Do you swear to pull the tooth, the whole tooth and nothing but the tooth?"
   }
 ]
