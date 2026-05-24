@@ -1393,5 +1393,32 @@
     ],
     "setup": "What did the judge say to the dentist?",
     "punchline": "Do you swear to pull the tooth, the whole tooth and nothing but the tooth?"
+  },
+  {
+    "jokeId": "MJ000053",
+    "date": "2026-05-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I don't trust stairs.",
+    "punchline": "They're always up to something."
+  },
+  {
+    "jokeId": "MJ000076",
+    "date": "2026-05-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A girl once asked me what my heart desired...",
+    "punchline": "apparently blood, oxygen and neural messages were all wrong answers"
+  },
+  {
+    "jokeId": "MJ000105",
+    "date": "2026-05-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a boy who stopped digging holes?",
+    "punchline": "Douglas."
   }
 ]
