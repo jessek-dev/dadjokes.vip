@@ -1420,5 +1420,32 @@
     ],
     "setup": "What do you call a boy who stopped digging holes?",
     "punchline": "Douglas."
+  },
+  {
+    "jokeId": "MJ000517",
+    "date": "2026-05-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "When does a joke become a dad joke?",
+    "punchline": "When it becomes apparent."
+  },
+  {
+    "jokeId": "MJ000842",
+    "date": "2026-05-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did the ghost go inside the bar? …",
+    "punchline": "For the boos."
+  },
+  {
+    "jokeId": "MJ000363",
+    "date": "2026-05-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Is the pool safe for diving?",
+    "punchline": "It deep ends."
   }
 ]
