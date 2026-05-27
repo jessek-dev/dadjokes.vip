@@ -1474,5 +1474,32 @@
     ],
     "setup": "Earlier today on the beach I got hit by a wave of cake.",
     "punchline": "It was a tiramisu-nami!"
+  },
+  {
+    "jokeId": "MJ000512",
+    "date": "2026-05-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did the house go to the doctor?",
+    "punchline": "It was having window panes."
+  },
+  {
+    "jokeId": "MJ000326",
+    "date": "2026-05-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Where do sheep go to get their hair cut?",
+    "punchline": "The baa-baa shop."
+  },
+  {
+    "jokeId": "MJ000247",
+    "date": "2026-05-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you get if you cross a turkey with a ghost?",
+    "punchline": "A poultry-geist!"
   }
 ]
