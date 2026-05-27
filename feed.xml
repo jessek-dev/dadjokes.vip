@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 03:41:46 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 03:58:29 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What did the bald man say when he received a comb for his birthday?</title>
+      <description>What did the bald man say when he received a comb for his birthday?
+
+“Thank you very much. I’ll never part with it.”</description>
+      <link>https://dadjokes.vip/daily/#2026-05-27</link>
+      <guid isPermaLink="false">dadjokes-2026-05-27</guid>
+      <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What is the only thing you break when you say its name?</title>
       <description>What is the only thing you break when you say its name?
@@ -93,15 +102,6 @@ No whey.</description>
       <link>https://dadjokes.vip/daily/#2026-05-18</link>
       <guid isPermaLink="false">dadjokes-2026-05-18</guid>
       <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What kind of beans won’t grow in a garden?</title>
-      <description>What kind of beans won’t grow in a garden?
-
-Jelly beans.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-17</link>
-      <guid isPermaLink="false">dadjokes-2026-05-17</guid>
-      <pubDate>Sun, 17 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
