@@ -1501,5 +1501,32 @@
     ],
     "setup": "What do you get if you cross a turkey with a ghost?",
     "punchline": "A poultry-geist!"
+  },
+  {
+    "jokeId": "MJ001151",
+    "date": "2026-05-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Yesterday I couldn't figure out if someone was waving at me or the person behind me.",
+    "punchline": "In other news, I lost my lifeguard job."
+  },
+  {
+    "jokeId": "MJ000077",
+    "date": "2026-05-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why is it always hot in the corner of a room?",
+    "punchline": "Because a corner is 90 degrees."
+  },
+  {
+    "jokeId": "MJ000239",
+    "date": "2026-05-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Guy told me today he did not know what cloning is.",
+    "punchline": "I told him, \"that makes 2 of us.\""
   }
 ]
