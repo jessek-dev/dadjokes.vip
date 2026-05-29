@@ -1528,5 +1528,32 @@
     ],
     "setup": "Guy told me today he did not know what cloning is.",
     "punchline": "I told him, \"that makes 2 of us.\""
+  },
+  {
+    "jokeId": "MJ000925",
+    "date": "2026-05-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Which part of the hospital has the least privacy?…",
+    "punchline": "The ICU."
+  },
+  {
+    "jokeId": "MJ000092",
+    "date": "2026-05-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why do trees seem suspicious on sunny days?",
+    "punchline": "Dunno, they're just a bit shady."
+  },
+  {
+    "jokeId": "MJ000513",
+    "date": "2026-05-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I made a playlist for hiking. It has music from Peanuts, The Cranberries, and Eminem.",
+    "punchline": "I call it my Trail Mix."
   }
 ]
