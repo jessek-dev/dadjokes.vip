@@ -1555,5 +1555,32 @@
     ],
     "setup": "I made a playlist for hiking. It has music from Peanuts, The Cranberries, and Eminem.",
     "punchline": "I call it my Trail Mix."
+  },
+  {
+    "jokeId": "MJ000105",
+    "date": "2026-05-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a boy who stopped digging holes?",
+    "punchline": "Douglas."
+  },
+  {
+    "jokeId": "MJ001021",
+    "date": "2026-05-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call the sexuality where you're attracted to men and women, but they're not attracted to you. ..",
+    "punchline": "Bi-yourself!"
+  },
+  {
+    "jokeId": "MJ001120",
+    "date": "2026-05-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Someone told me the other day I had a BO in my nose.",
+    "punchline": "I said it's not!"
   }
 ]
