@@ -1582,5 +1582,32 @@
     ],
     "setup": "Someone told me the other day I had a BO in my nose.",
     "punchline": "I said it's not!"
+  },
+  {
+    "jokeId": "MJ001316",
+    "date": "2026-05-31",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I started investing in stocks - beef, chicken, and vegetable?",
+    "punchline": "Hope one day I'll be a bouillonaire!"
+  },
+  {
+    "jokeId": "MJ000851",
+    "date": "2026-05-31",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a cheap circumcision? …",
+    "punchline": "A rip off."
+  },
+  {
+    "jokeId": "MJ001033",
+    "date": "2026-05-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I can't believe someone came into my house last night and stole all my fruit..",
+    "punchline": "I'm peachless!"
   }
 ]
