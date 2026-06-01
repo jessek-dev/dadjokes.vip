@@ -1609,5 +1609,32 @@
     ],
     "setup": "I can't believe someone came into my house last night and stole all my fruit..",
     "punchline": "I'm peachless!"
+  },
+  {
+    "jokeId": "MJ000055",
+    "date": "2026-06-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why was the robot angry?",
+    "punchline": "Because someone kept pressing his buttons!"
+  },
+  {
+    "jokeId": "MJ000797",
+    "date": "2026-06-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call crystal clear urine? …",
+    "punchline": "1080p."
+  },
+  {
+    "jokeId": "MJ000052",
+    "date": "2026-06-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How many South Americans does it take to change a lightbulb?",
+    "punchline": "A Brazilian"
   }
 ]
