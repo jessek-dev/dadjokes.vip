@@ -1636,5 +1636,32 @@
     ],
     "setup": "How many South Americans does it take to change a lightbulb?",
     "punchline": "A Brazilian"
+  },
+  {
+    "jokeId": "MJ000615",
+    "date": "2026-06-02",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Parallel lines have so much in common.",
+    "punchline": "It’s a shame they’ll never meet."
+  },
+  {
+    "jokeId": "MJ000194",
+    "date": "2026-06-02",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did Dracula lie in the wrong coffin?",
+    "punchline": "He made a grave mistake."
+  },
+  {
+    "jokeId": "MJ000337",
+    "date": "2026-06-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did Yoda say when he saw himself in 4K?",
+    "punchline": "\"HDMI\""
   }
 ]
