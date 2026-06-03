@@ -1663,5 +1663,32 @@
     ],
     "setup": "What did Yoda say when he saw himself in 4K?",
     "punchline": "\"HDMI\""
+  },
+  {
+    "jokeId": "MJ001173",
+    "date": "2026-06-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My kids refused to eat leftover tacos for dinner so my wife said to throw them out. I did!",
+    "punchline": "Now I have no idea what to do with the tacos."
+  },
+  {
+    "jokeId": "MJ001035",
+    "date": "2026-06-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A sweater I purchased was picking up static electricity, so I decided to return it..",
+    "punchline": "They gave me another one free of charge!"
+  },
+  {
+    "jokeId": "MJ001030",
+    "date": "2026-06-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the non-binary prospector head to the West?",
+    "punchline": "Cause there was gold in them/their hills!"
   }
 ]
