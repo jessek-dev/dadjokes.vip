@@ -1690,5 +1690,32 @@
     ],
     "setup": "Why did the non-binary prospector head to the West?",
     "punchline": "Cause there was gold in them/their hills!"
+  },
+  {
+    "jokeId": "MJ000077",
+    "date": "2026-06-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why is it always hot in the corner of a room?",
+    "punchline": "Because a corner is 90 degrees."
+  },
+  {
+    "jokeId": "MJ000041",
+    "date": "2026-06-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Hear about the new restaurant called Karma?",
+    "punchline": "There’s no menu: You get what you deserve."
+  },
+  {
+    "jokeId": "MJ000179",
+    "date": "2026-06-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why are graveyards so noisy?",
+    "punchline": "Because of all the coffin."
   }
 ]
