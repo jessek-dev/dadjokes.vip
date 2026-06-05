@@ -1717,5 +1717,32 @@
     ],
     "setup": "Why are graveyards so noisy?",
     "punchline": "Because of all the coffin."
+  },
+  {
+    "jokeId": "MJ000414",
+    "date": "2026-06-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What happens when you anger a brain surgeon?",
+    "punchline": "They will give you a piece of your mind."
+  },
+  {
+    "jokeId": "MJ000875",
+    "date": "2026-06-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife left me because I'm too insecure and paranoid.…",
+    "punchline": "Oh wait, never mind. She was just getting the mail."
+  },
+  {
+    "jokeId": "MJ000615",
+    "date": "2026-06-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Parallel lines have so much in common.",
+    "punchline": "It’s a shame they’ll never meet."
   }
 ]
