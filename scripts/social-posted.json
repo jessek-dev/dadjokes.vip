@@ -1744,5 +1744,32 @@
     ],
     "setup": "Parallel lines have so much in common.",
     "punchline": "It’s a shame they’ll never meet."
+  },
+  {
+    "jokeId": "MJ000070",
+    "date": "2026-06-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you get when you cross a pig and a pineapple?",
+    "punchline": "A porky pine"
+  },
+  {
+    "jokeId": "MJ000609",
+    "date": "2026-06-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a duck that gets all A's?",
+    "punchline": "A wise quacker."
+  },
+  {
+    "jokeId": "MJ001095",
+    "date": "2026-06-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Yesterday I called my landlord and said \"I've got a leak in my sink.\" …",
+    "punchline": "He said \"Go ahead, I'm not judging!\""
   }
 ]
