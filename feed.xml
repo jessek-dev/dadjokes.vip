@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2026 03:38:14 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 04:05:28 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>How did the police know the photographer was guilty?</title>
+      <description>How did the police know the photographer was guilty?
+
+They found his prints all over the scene of the crime.</description>
+      <link>https://dadjokes.vip/daily/#2026-06-07</link>
+      <guid isPermaLink="false">dadjokes-2026-06-07</guid>
+      <pubDate>Sun, 07 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What did the police officer say when he caught the woman who had stolen the office equipment?</title>
       <description>What did the police officer say when he caught the woman who had stolen the office equipment?
@@ -93,15 +102,6 @@ A hole.</description>
       <link>https://dadjokes.vip/daily/#2026-05-29</link>
       <guid isPermaLink="false">dadjokes-2026-05-29</guid>
       <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What did Snow White say when her photos didn’t come back from the photo store?</title>
-      <description>What did Snow White say when her photos didn’t come back from the photo store?
-
-“Some day my prints will come!”</description>
-      <link>https://dadjokes.vip/daily/#2026-05-28</link>
-      <guid isPermaLink="false">dadjokes-2026-05-28</guid>
-      <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
