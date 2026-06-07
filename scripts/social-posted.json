@@ -1771,5 +1771,32 @@
     ],
     "setup": "Yesterday I called my landlord and said \"I've got a leak in my sink.\" …",
     "punchline": "He said \"Go ahead, I'm not judging!\""
+  },
+  {
+    "jokeId": "MJ000364",
+    "date": "2026-06-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife told me to rub the herbs on the meat for better flavor.",
+    "punchline": "That's sage advice."
+  },
+  {
+    "jokeId": "MJ000476",
+    "date": "2026-06-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you know the first French fries weren't actually cooked in France?",
+    "punchline": "They were cooked in Greece."
+  },
+  {
+    "jokeId": "MJ001146",
+    "date": "2026-06-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Told my wife her underwear was way too tight and too revealing.",
+    "punchline": "She said \"Then wear your own!\""
   }
 ]
