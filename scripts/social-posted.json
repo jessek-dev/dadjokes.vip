@@ -1825,5 +1825,32 @@
     ],
     "setup": "Why was the mushroom always invited to parties? …",
     "punchline": "Cause he's a fungi."
+  },
+  {
+    "jokeId": "MJ000007",
+    "date": "2026-06-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I knew I shouldn't steal a mixer from work...",
+    "punchline": "but it was a whisk I was willing to take.\""
+  },
+  {
+    "jokeId": "MJ001173",
+    "date": "2026-06-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My kids refused to eat leftover tacos for dinner so my wife said to throw them out. I did!",
+    "punchline": "Now I have no idea what to do with the tacos."
+  },
+  {
+    "jokeId": "MJ000392",
+    "date": "2026-06-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Someone broke into my house last night and stole my limbo trophy.",
+    "punchline": "How low can you go?"
   }
 ]
