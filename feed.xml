@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 04:09:43 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 03:38:59 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Patient: Help me, Doc. I can’t remember anything for more than a few minutes. It’s driving me crazy! Doctor: How long has this been going on?</title>
+      <description>Patient: Help me, Doc. I can’t remember anything for more than a few minutes. It’s driving me crazy! Doctor: How long has this been going on?
+
+Patient: How long has what been going on?</description>
+      <link>https://dadjokes.vip/daily/#2026-06-09</link>
+      <guid isPermaLink="false">dadjokes-2026-06-09</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Fran: The doctor told me to drink carrot juice after a hot bath. June: Do you like the carrot juice?</title>
       <description>Fran: The doctor told me to drink carrot juice after a hot bath. June: Do you like the carrot juice?
@@ -93,15 +102,6 @@ Mom: Yes. How did you know? Son: The garage door is missing.</description>
       <link>https://dadjokes.vip/daily/#2026-05-31</link>
       <guid isPermaLink="false">dadjokes-2026-05-31</guid>
       <pubDate>Sun, 31 May 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Passenger: Are you sure this train stops at San Francisco?</title>
-      <description>Passenger: Are you sure this train stops at San Francisco?
-
-Conductor: If it doesn’t, you’ll hear an awful splash.</description>
-      <link>https://dadjokes.vip/daily/#2026-05-30</link>
-      <guid isPermaLink="false">dadjokes-2026-05-30</guid>
-      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
