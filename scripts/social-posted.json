@@ -1852,5 +1852,32 @@
     ],
     "setup": "Someone broke into my house last night and stole my limbo trophy.",
     "punchline": "How low can you go?"
+  },
+  {
+    "jokeId": "MJ000154",
+    "date": "2026-06-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "It was raining cats and dogs the other day.",
+    "punchline": "I almost stepped in a poodle."
+  },
+  {
+    "jokeId": "MJ000168",
+    "date": "2026-06-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I had a pair of racing snails.",
+    "punchline": "I removed their shells to make them more aerodynamic, but they became sluggish."
+  },
+  {
+    "jokeId": "MJ000128",
+    "date": "2026-06-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you hear that the police have a warrant out on a midget psychic ripping people off?",
+    "punchline": "It reads \"Small medium at large.\""
   }
 ]
