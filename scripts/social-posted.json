@@ -1879,5 +1879,32 @@
     ],
     "setup": "Did you hear that the police have a warrant out on a midget psychic ripping people off?",
     "punchline": "It reads \"Small medium at large.\""
+  },
+  {
+    "jokeId": "MJ000339",
+    "date": "2026-06-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Me and my mates are in a band called Duvet.",
+    "punchline": "We're a cover band."
+  },
+  {
+    "jokeId": "MJ000411",
+    "date": "2026-06-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I was at the library and asked if they have any books on \"paranoia.\"",
+    "punchline": "The librarian replied, \"yes, they are right behind you\""
+  },
+  {
+    "jokeId": "MJ001170",
+    "date": "2026-06-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Tomorrow my son and I are getting new glasses.",
+    "punchline": "After that, we'll see!"
   }
 ]
