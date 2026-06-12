@@ -1906,5 +1906,32 @@
     ],
     "setup": "Tomorrow my son and I are getting new glasses.",
     "punchline": "After that, we'll see!"
+  },
+  {
+    "jokeId": "MJ000024",
+    "date": "2026-06-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a female snake?",
+    "punchline": "misssssssss"
+  },
+  {
+    "jokeId": "MJ000534",
+    "date": "2026-06-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I used to work for a soft drink can crusher.",
+    "punchline": "It was soda pressing."
+  },
+  {
+    "jokeId": "MJ000933",
+    "date": "2026-06-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a deaf gynecologist? …",
+    "punchline": "A lip reader."
   }
 ]
