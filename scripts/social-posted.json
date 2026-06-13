@@ -1933,5 +1933,32 @@
     ],
     "setup": "What do you call a deaf gynecologist? …",
     "punchline": "A lip reader."
+  },
+  {
+    "jokeId": "MJ001025",
+    "date": "2026-06-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I went to my childhood house today. I asked the residents if I could come inside. They slammed the door in my face..",
+    "punchline": "My parents are the worst!"
+  },
+  {
+    "jokeId": "MJ000707",
+    "date": "2026-06-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why shouldn't you visit an expensive wig shop? …",
+    "punchline": "It's too high a price \"toupee.\""
+  },
+  {
+    "jokeId": "MJ000015",
+    "date": "2026-06-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you hear the joke about the wandering nun?",
+    "punchline": "She was a roman catholic."
   }
 ]
