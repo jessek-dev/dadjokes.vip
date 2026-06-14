@@ -1960,5 +1960,32 @@
     ],
     "setup": "Did you hear the joke about the wandering nun?",
     "punchline": "She was a roman catholic."
+  },
+  {
+    "jokeId": "MJ000092",
+    "date": "2026-06-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why do trees seem suspicious on sunny days?",
+    "punchline": "Dunno, they're just a bit shady."
+  },
+  {
+    "jokeId": "MJ001323",
+    "date": "2026-06-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife said \"If you win the lottery would you still love me?\"",
+    "punchline": "I said \"Of course I would. I'd miss you, but I'd still love you!\""
+  },
+  {
+    "jokeId": "MJ001136",
+    "date": "2026-06-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Mom has forbidden me from making any more breakfast puns. She says if I do, I'm toast!",
+    "punchline": "Dad keeps egging me on - he's such a ham!"
   }
 ]
