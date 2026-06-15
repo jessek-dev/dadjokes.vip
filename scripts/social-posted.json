@@ -1987,5 +1987,32 @@
     ],
     "setup": "Mom has forbidden me from making any more breakfast puns. She says if I do, I'm toast!",
     "punchline": "Dad keeps egging me on - he's such a ham!"
+  },
+  {
+    "jokeId": "MJ000778",
+    "date": "2026-06-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife is really mad at the fact that I have no sense of direction.",
+    "punchline": "So I packed up my stuff and right."
+  },
+  {
+    "jokeId": "MJ000938",
+    "date": "2026-06-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I hate Russian matryoshka dolls…",
+    "punchline": "They're so full of themselves."
+  },
+  {
+    "jokeId": "MJ000564",
+    "date": "2026-06-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How do you get two whales in a car?",
+    "punchline": "Start in England and drive West."
   }
 ]
