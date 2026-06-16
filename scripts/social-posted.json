@@ -2014,5 +2014,32 @@
     ],
     "setup": "How do you get two whales in a car?",
     "punchline": "Start in England and drive West."
+  },
+  {
+    "jokeId": "MJ000058",
+    "date": "2026-06-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a snake who builds houses?",
+    "punchline": "A boa constructor!"
+  },
+  {
+    "jokeId": "MJ000204",
+    "date": "2026-06-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I cut my finger cutting cheese.",
+    "punchline": "I know it may be a cheesy story but I feel grate now."
+  },
+  {
+    "jokeId": "MJ000414",
+    "date": "2026-06-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What happens when you anger a brain surgeon?",
+    "punchline": "They will give you a piece of your mind."
   }
 ]
