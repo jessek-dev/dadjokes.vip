@@ -2041,5 +2041,32 @@
     ],
     "setup": "What happens when you anger a brain surgeon?",
     "punchline": "They will give you a piece of your mind."
+  },
+  {
+    "jokeId": "MJ000019",
+    "date": "2026-06-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why do birds fly south for the winter?",
+    "punchline": "Because it's too far to walk."
+  },
+  {
+    "jokeId": "MJ001120",
+    "date": "2026-06-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Someone told me the other day I had a BO in my nose.",
+    "punchline": "I said it's not!"
+  },
+  {
+    "jokeId": "MJ001138",
+    "date": "2026-06-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My friends and I put a band together. We called it 999 Megabytes.",
+    "punchline": "Still haven't gotten a gig though!"
   }
 ]
