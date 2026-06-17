@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jun 2026 04:21:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 04:16:09 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What is the best day of the week to play a double-header?</title>
+      <description>What is the best day of the week to play a double-header?
+
+Tuesday.</description>
+      <link>https://dadjokes.vip/daily/#2026-06-17</link>
+      <guid isPermaLink="false">dadjokes-2026-06-17</guid>
+      <pubDate>Wed, 17 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What’s the biggest diamond in the world?</title>
       <description>What’s the biggest diamond in the world?
@@ -93,15 +102,6 @@ Fran: I don’t know yet. I’m still drinking the hot bath.</description>
       <link>https://dadjokes.vip/daily/#2026-06-08</link>
       <guid isPermaLink="false">dadjokes-2026-06-08</guid>
       <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How did the police know the photographer was guilty?</title>
-      <description>How did the police know the photographer was guilty?
-
-They found his prints all over the scene of the crime.</description>
-      <link>https://dadjokes.vip/daily/#2026-06-07</link>
-      <guid isPermaLink="false">dadjokes-2026-06-07</guid>
-      <pubDate>Sun, 07 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
