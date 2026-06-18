@@ -2068,5 +2068,32 @@
     ],
     "setup": "My friends and I put a band together. We called it 999 Megabytes.",
     "punchline": "Still haven't gotten a gig though!"
+  },
+  {
+    "jokeId": "MJ000241",
+    "date": "2026-06-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Where did you learn to make ice cream?",
+    "punchline": "Sunday school."
+  },
+  {
+    "jokeId": "MJ001251",
+    "date": "2026-06-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I told my wife to stop drawing her eyebrows so high.",
+    "punchline": "She looks surprised!"
+  },
+  {
+    "jokeId": "MJ000112",
+    "date": "2026-06-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What’s Forest Gump’s Facebook password?",
+    "punchline": "1forest1"
   }
 ]
