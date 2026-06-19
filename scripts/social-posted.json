@@ -2095,5 +2095,32 @@
     ],
     "setup": "What’s Forest Gump’s Facebook password?",
     "punchline": "1forest1"
+  },
+  {
+    "jokeId": "MJ000586",
+    "date": "2026-06-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Have you heard about the film \"Constipation\"?",
+    "punchline": "You probably haven't because it's not out yet."
+  },
+  {
+    "jokeId": "MJ000037",
+    "date": "2026-06-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "When will the little snake arrive?",
+    "punchline": "I don't know but he won't be long..."
+  },
+  {
+    "jokeId": "MJ001061",
+    "date": "2026-06-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I dreamt last night that my spirit rose from a toilet bowl..",
+    "punchline": "It was an out-of-potty experience!"
   }
 ]
