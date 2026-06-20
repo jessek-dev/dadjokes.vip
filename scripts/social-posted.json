@@ -2122,5 +2122,32 @@
     ],
     "setup": "I dreamt last night that my spirit rose from a toilet bowl..",
     "punchline": "It was an out-of-potty experience!"
+  },
+  {
+    "jokeId": "MJ001138",
+    "date": "2026-06-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My friends and I put a band together. We called it 999 Megabytes.",
+    "punchline": "Still haven't gotten a gig though!"
+  },
+  {
+    "jokeId": "MJ000574",
+    "date": "2026-06-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you hear that David lost his ID in Prague?",
+    "punchline": "Now we just have to call him Dav."
+  },
+  {
+    "jokeId": "MJ000361",
+    "date": "2026-06-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I been watching a channel on TV that is strictly just about origami —",
+    "punchline": "Of course it is paper-view."
   }
 ]
