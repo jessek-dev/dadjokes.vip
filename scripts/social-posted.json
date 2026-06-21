@@ -2149,5 +2149,32 @@
     ],
     "setup": "I been watching a channel on TV that is strictly just about origami —",
     "punchline": "Of course it is paper-view."
+  },
+  {
+    "jokeId": "MJ001172",
+    "date": "2026-06-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Yesterday I was racking up to play pool with my son. He said \"Dad, you want a break?\" I said \"Why?",
+    "punchline": "We just started!\""
+  },
+  {
+    "jokeId": "MJ000263",
+    "date": "2026-06-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Who is the coolest Doctor in the hospital?",
+    "punchline": "The hip Doctor!"
+  },
+  {
+    "jokeId": "MJ000151",
+    "date": "2026-06-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What is the best way to carve?",
+    "punchline": "Whittle by whittle."
   }
 ]
