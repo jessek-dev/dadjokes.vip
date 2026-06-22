@@ -2176,5 +2176,32 @@
     ],
     "setup": "What is the best way to carve?",
     "punchline": "Whittle by whittle."
+  },
+  {
+    "jokeId": "MJ000747",
+    "date": "2026-06-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I had a granny that we couldn't decide whether to bury or cremate…",
+    "punchline": "In the end we decided to just let her live."
+  },
+  {
+    "jokeId": "MJ001057",
+    "date": "2026-06-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife still thinks I'm sexy..",
+    "punchline": "Every time I walk by her, she says \"What an ass!\""
+  },
+  {
+    "jokeId": "MJ001301",
+    "date": "2026-06-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's the difference between a bad joke and a dad joke?",
+    "punchline": "The first letter!"
   }
 ]
