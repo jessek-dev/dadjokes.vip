@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 04:21:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 04:23:42 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why do sharks swim in saltwater?</title>
+      <description>Why do sharks swim in saltwater?
+
+Because pepper water makes them sneeze!</description>
+      <link>https://dadjokes.vip/daily/#2026-06-22</link>
+      <guid isPermaLink="false">dadjokes-2026-06-22</guid>
+      <pubDate>Mon, 22 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What do you get when you cross a snowman and a vampire?</title>
       <description>What do you get when you cross a snowman and a vampire?
@@ -93,15 +102,6 @@ A rash of good luck.</description>
       <link>https://dadjokes.vip/daily/#2026-06-13</link>
       <guid isPermaLink="false">dadjokes-2026-06-13</guid>
       <pubDate>Sat, 13 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What’s the difference between Neptune and Earth?</title>
-      <description>What’s the difference between Neptune and Earth?
-
-There’s a world of difference!</description>
-      <link>https://dadjokes.vip/daily/#2026-06-12</link>
-      <guid isPermaLink="false">dadjokes-2026-06-12</guid>
-      <pubDate>Fri, 12 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
