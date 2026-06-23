@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jun 2026 04:23:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 03:40:58 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>How do you make a lemon drop?</title>
+      <description>How do you make a lemon drop?
+
+Just let go of it!</description>
+      <link>https://dadjokes.vip/daily/#2026-06-23</link>
+      <guid isPermaLink="false">dadjokes-2026-06-23</guid>
+      <pubDate>Tue, 23 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why do sharks swim in saltwater?</title>
       <description>Why do sharks swim in saltwater?
@@ -93,15 +102,6 @@ Freeze it.</description>
       <link>https://dadjokes.vip/daily/#2026-06-14</link>
       <guid isPermaLink="false">dadjokes-2026-06-14</guid>
       <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do you get when you mix poison ivy with a four-leaf clover?</title>
-      <description>What do you get when you mix poison ivy with a four-leaf clover?
-
-A rash of good luck.</description>
-      <link>https://dadjokes.vip/daily/#2026-06-13</link>
-      <guid isPermaLink="false">dadjokes-2026-06-13</guid>
-      <pubDate>Sat, 13 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
