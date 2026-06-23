@@ -2203,5 +2203,32 @@
     ],
     "setup": "What's the difference between a bad joke and a dad joke?",
     "punchline": "The first letter!"
+  },
+  {
+    "jokeId": "MJ000162",
+    "date": "2026-06-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What concert costs only 45 cents?",
+    "punchline": "50 cent featuring Nickelback."
+  },
+  {
+    "jokeId": "MJ001131",
+    "date": "2026-06-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife asked, \"Why don't you treat me like you first treated me when we first started dating?\" So I took her to dinner and a movie..",
+    "punchline": "and then dropped her off at her parents'!"
+  },
+  {
+    "jokeId": "MJ000177",
+    "date": "2026-06-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Child: Dad, make me a sandwich.",
+    "punchline": "Dad: Poof! You're a sandwich."
   }
 ]
