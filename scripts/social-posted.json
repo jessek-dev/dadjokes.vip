@@ -2230,5 +2230,32 @@
     ],
     "setup": "Child: Dad, make me a sandwich.",
     "punchline": "Dad: Poof! You're a sandwich."
+  },
+  {
+    "jokeId": "MJ000464",
+    "date": "2026-06-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "It's been months since I bought the book \"how to scam people online.\"",
+    "punchline": "It still hasn't turned up."
+  },
+  {
+    "jokeId": "MJ000177",
+    "date": "2026-06-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Child: Dad, make me a sandwich.",
+    "punchline": "Dad: Poof! You're a sandwich."
+  },
+  {
+    "jokeId": "MJ000858",
+    "date": "2026-06-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle? …",
+    "punchline": "Attire."
   }
 ]
