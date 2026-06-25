@@ -2257,5 +2257,32 @@
     ],
     "setup": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle? …",
     "punchline": "Attire."
+  },
+  {
+    "jokeId": "MJ000845",
+    "date": "2026-06-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a deer with no eyes? …",
+    "punchline": "No eye deer."
+  },
+  {
+    "jokeId": "MJ001028",
+    "date": "2026-06-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My mother said \"One man's trash is another man's treasure.\" ..",
+    "punchline": "Turns out I'm adopted."
+  },
+  {
+    "jokeId": "MJ000084",
+    "date": "2026-06-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "When is a door not a door?",
+    "punchline": "When it's ajar."
   }
 ]
