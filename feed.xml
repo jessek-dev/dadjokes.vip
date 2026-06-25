@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2026 03:42:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 03:41:56 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why did the teddy bear not want any dessert?</title>
+      <description>Why did the teddy bear not want any dessert?
+
+Because he was stuffed!</description>
+      <link>https://dadjokes.vip/daily/#2026-06-25</link>
+      <guid isPermaLink="false">dadjokes-2026-06-25</guid>
+      <pubDate>Thu, 25 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What does an evil hen lay?</title>
       <description>What does an evil hen lay?
@@ -93,15 +102,6 @@ A baseball diamond.</description>
       <link>https://dadjokes.vip/daily/#2026-06-16</link>
       <guid isPermaLink="false">dadjokes-2026-06-16</guid>
       <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What doesn’t get any wetter no matter how hard it rains?</title>
-      <description>What doesn’t get any wetter no matter how hard it rains?
-
-The ocean.</description>
-      <link>https://dadjokes.vip/daily/#2026-06-15</link>
-      <guid isPermaLink="false">dadjokes-2026-06-15</guid>
-      <pubDate>Mon, 15 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
