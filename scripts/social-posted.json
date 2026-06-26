@@ -2284,5 +2284,32 @@
     ],
     "setup": "When is a door not a door?",
     "punchline": "When it's ajar."
+  },
+  {
+    "jokeId": "MJ001297",
+    "date": "2026-06-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Does every sentence need to include a vegetable?",
+    "punchline": "Not neces-celery!"
+  },
+  {
+    "jokeId": "MJ000478",
+    "date": "2026-06-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Where did Captain Hook get his hook?",
+    "punchline": "From a second hand store."
+  },
+  {
+    "jokeId": "MJ000211",
+    "date": "2026-06-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Just watched a documentary about beavers...",
+    "punchline": "It was the best damn program I’ve ever seen."
   }
 ]
