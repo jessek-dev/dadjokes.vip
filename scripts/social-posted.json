@@ -2311,5 +2311,32 @@
     ],
     "setup": "Just watched a documentary about beavers...",
     "punchline": "It was the best damn program I’ve ever seen."
+  },
+  {
+    "jokeId": "MJ000513",
+    "date": "2026-06-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I made a playlist for hiking. It has music from Peanuts, The Cranberries, and Eminem.",
+    "punchline": "I call it my Trail Mix."
+  },
+  {
+    "jokeId": "MJ000357",
+    "date": "2026-06-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Astronomers got tired watching the moon go around the earth for 24 hours.",
+    "punchline": "They decided to call it a day."
+  },
+  {
+    "jokeId": "MJ001214",
+    "date": "2026-06-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My grandfather always told me to fight fire with fire.",
+    "punchline": "Great guy, but terrible fireman!"
   }
 ]
