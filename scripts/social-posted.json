@@ -2338,5 +2338,32 @@
     ],
     "setup": "My grandfather always told me to fight fire with fire.",
     "punchline": "Great guy, but terrible fireman!"
+  },
+  {
+    "jokeId": "MJ000761",
+    "date": "2026-06-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I stayed up all night wondering where the sun went…",
+    "punchline": "Then it dawned on me."
+  },
+  {
+    "jokeId": "MJ000440",
+    "date": "2026-06-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My friend keeps telling me \"Cheer up. You aren't stuck in a deep hole in the ground, filled with water.\"",
+    "punchline": "I know he means well."
+  },
+  {
+    "jokeId": "MJ001288",
+    "date": "2026-06-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I once pulled a muscle mining for gold.",
+    "punchline": "It was a minor injury!"
   }
 ]
