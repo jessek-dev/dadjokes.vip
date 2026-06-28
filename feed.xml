@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2026 03:35:19 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 03:58:10 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What is the worst thing about being an octopus?</title>
+      <description>What is the worst thing about being an octopus?
+
+Washing your hands!</description>
+      <link>https://dadjokes.vip/daily/#2026-06-28</link>
+      <guid isPermaLink="false">dadjokes-2026-06-28</guid>
+      <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What button is impossible to unbutton?</title>
       <description>What button is impossible to unbutton?
@@ -93,15 +102,6 @@ To get the quarter back.</description>
       <link>https://dadjokes.vip/daily/#2026-06-19</link>
       <guid isPermaLink="false">dadjokes-2026-06-19</guid>
       <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Harry: What would you get if you crossed a baseball player with a Boy Scout?</title>
-      <description>Harry: What would you get if you crossed a baseball player with a Boy Scout?
-
-Tom: I don’t know, but I bet he sure could pitch a tent.</description>
-      <link>https://dadjokes.vip/daily/#2026-06-18</link>
-      <guid isPermaLink="false">dadjokes-2026-06-18</guid>
-      <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
