@@ -2365,5 +2365,32 @@
     ],
     "setup": "I once pulled a muscle mining for gold.",
     "punchline": "It was a minor injury!"
+  },
+  {
+    "jokeId": "MJ000927",
+    "date": "2026-06-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do Japanese cannibals eat? …",
+    "punchline": "Raw men."
+  },
+  {
+    "jokeId": "MJ001320",
+    "date": "2026-06-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife accused me of stealing her thesaurus.",
+    "punchline": "Not only was I shocked, I was appalled, aghast and dismayed!"
+  },
+  {
+    "jokeId": "MJ000294",
+    "date": "2026-06-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the sea say to the sand?",
+    "punchline": "\"We have to stop meeting like this.\""
   }
 ]
