@@ -2392,5 +2392,32 @@
     ],
     "setup": "What did the sea say to the sand?",
     "punchline": "\"We have to stop meeting like this.\""
+  },
+  {
+    "jokeId": "MJ000177",
+    "date": "2026-06-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Child: Dad, make me a sandwich.",
+    "punchline": "Dad: Poof! You're a sandwich."
+  },
+  {
+    "jokeId": "MJ000044",
+    "date": "2026-06-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Man, I really love my furniture...",
+    "punchline": "me and my recliner go way back."
+  },
+  {
+    "jokeId": "MJ000091",
+    "date": "2026-06-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I just read a book about Stockholm syndrome.",
+    "punchline": "It was pretty bad at first, but by the end I liked it."
   }
 ]
