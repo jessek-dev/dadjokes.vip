@@ -2419,5 +2419,32 @@
     ],
     "setup": "I just read a book about Stockholm syndrome.",
     "punchline": "It was pretty bad at first, but by the end I liked it."
+  },
+  {
+    "jokeId": "MJ000427",
+    "date": "2026-07-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What does a clock do when it's hungry?",
+    "punchline": "It goes back four seconds!"
+  },
+  {
+    "jokeId": "MJ000078",
+    "date": "2026-07-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the beaver say to the tree?",
+    "punchline": "It's been nice gnawing you."
+  },
+  {
+    "jokeId": "MJ000376",
+    "date": "2026-07-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the A go to the bathroom and come out as an E?",
+    "punchline": "Because he had a vowel movement."
   }
 ]
