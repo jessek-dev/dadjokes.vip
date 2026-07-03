@@ -2473,5 +2473,32 @@
     ],
     "setup": "I had a granny that we couldn't decide whether to bury or cremate…",
     "punchline": "In the end we decided to just let her live."
+  },
+  {
+    "jokeId": "MJ001015",
+    "date": "2026-07-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I'm reading a horror book in Braille..",
+    "punchline": "Something bad's going to happen, I can feel it!"
+  },
+  {
+    "jokeId": "MJ000966",
+    "date": "2026-07-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife and I have reached the difficult decision that we do not want children.",
+    "punchline": "If anybody does, please just send me your contact details and we can drop them off tomorrow."
+  },
+  {
+    "jokeId": "MJ000609",
+    "date": "2026-07-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a duck that gets all A's?",
+    "punchline": "A wise quacker."
   }
 ]
