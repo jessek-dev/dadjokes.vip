@@ -2500,5 +2500,32 @@
     ],
     "setup": "What do you call a duck that gets all A's?",
     "punchline": "A wise quacker."
+  },
+  {
+    "jokeId": "MJ000451",
+    "date": "2026-07-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I’ve deleted the phone numbers of all the Germans I know from my mobile phone.",
+    "punchline": "Now it’s Hans free."
+  },
+  {
+    "jokeId": "MJ001316",
+    "date": "2026-07-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I started investing in stocks - beef, chicken, and vegetable?",
+    "punchline": "Hope one day I'll be a bouillonaire!"
+  },
+  {
+    "jokeId": "MJ000399",
+    "date": "2026-07-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Every machine in the coin factory broke down all of a sudden without explanation.",
+    "punchline": "It just doesn’t make any cents."
   }
 ]
