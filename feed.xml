@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 03:17:44 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 03:33:05 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What&#039;s the best kind of sandwich for the beach?</title>
+      <description>What&#039;s the best kind of sandwich for the beach?
+
+Peanut butter and jellyfish.</description>
+      <link>https://dadjokes.vip/daily/#2026-07-05</link>
+      <guid isPermaLink="false">dadjokes-2026-07-05</guid>
+      <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What does a mermaid use to call her friends?</title>
       <description>What does a mermaid use to call her friends?
@@ -93,15 +102,6 @@ It will always squeal!</description>
       <link>https://dadjokes.vip/daily/#2026-06-26</link>
       <guid isPermaLink="false">dadjokes-2026-06-26</guid>
       <pubDate>Fri, 26 Jun 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why did the teddy bear not want any dessert?</title>
-      <description>Why did the teddy bear not want any dessert?
-
-Because he was stuffed!</description>
-      <link>https://dadjokes.vip/daily/#2026-06-25</link>
-      <guid isPermaLink="false">dadjokes-2026-06-25</guid>
-      <pubDate>Thu, 25 Jun 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
