@@ -2527,5 +2527,32 @@
     ],
     "setup": "Every machine in the coin factory broke down all of a sudden without explanation.",
     "punchline": "It just doesn’t make any cents."
+  },
+  {
+    "jokeId": "MJ000592",
+    "date": "2026-07-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the doctor say to the gingerbread man who broke his leg?",
+    "punchline": "Try icing it."
+  },
+  {
+    "jokeId": "MJ000278",
+    "date": "2026-07-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How many bones are in the human hand?",
+    "punchline": "A handful of them."
+  },
+  {
+    "jokeId": "MJ000417",
+    "date": "2026-07-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I used to work in a shoe recycling shop.",
+    "punchline": "It was sole destroying."
   }
 ]
