@@ -2554,5 +2554,32 @@
     ],
     "setup": "I used to work in a shoe recycling shop.",
     "punchline": "It was sole destroying."
+  },
+  {
+    "jokeId": "MJ001120",
+    "date": "2026-07-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Someone told me the other day I had a BO in my nose.",
+    "punchline": "I said it's not!"
+  },
+  {
+    "jokeId": "MJ000484",
+    "date": "2026-07-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the big cat disqualified from the race?",
+    "punchline": "Because it was a cheetah."
+  },
+  {
+    "jokeId": "MJ000017",
+    "date": "2026-07-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I'll tell you what often gets over looked..",
+    "punchline": "garden fences."
   }
 ]
