@@ -2608,5 +2608,32 @@
     ],
     "setup": "When does a joke become a dad joke?",
     "punchline": "When it becomes apparent."
+  },
+  {
+    "jokeId": "MJ000608",
+    "date": "2026-07-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a boomerang that won't come back?",
+    "punchline": "A stick."
+  },
+  {
+    "jokeId": "MJ000011",
+    "date": "2026-07-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "\"Why do seagulls fly over the ocean?\"",
+    "punchline": "Because if they flew over the bay, we'd call them bagels."
+  },
+  {
+    "jokeId": "MJ000534",
+    "date": "2026-07-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I used to work for a soft drink can crusher.",
+    "punchline": "It was soda pressing."
   }
 ]
