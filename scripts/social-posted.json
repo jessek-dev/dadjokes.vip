@@ -2635,5 +2635,32 @@
     ],
     "setup": "I used to work for a soft drink can crusher.",
     "punchline": "It was soda pressing."
+  },
+  {
+    "jokeId": "MJ000048",
+    "date": "2026-07-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did one wall say to the other wall?",
+    "punchline": "I'll meet you at the corner!"
+  },
+  {
+    "jokeId": "MJ000245",
+    "date": "2026-07-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's the difference between roast beef and pea soup?",
+    "punchline": "Anyone can roast beef, but nobody can pee soup."
+  },
+  {
+    "jokeId": "MJ000608",
+    "date": "2026-07-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a boomerang that won't come back?",
+    "punchline": "A stick."
   }
 ]
