@@ -2689,5 +2689,32 @@
     ],
     "setup": "How do you know if there’s an elephant under your bed?",
     "punchline": "Your head hits the ceiling!"
+  },
+  {
+    "jokeId": "MJ001236",
+    "date": "2026-07-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "The storm blew off 25% of my roof last night.",
+    "punchline": "Oof!"
+  },
+  {
+    "jokeId": "MJ000512",
+    "date": "2026-07-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did the house go to the doctor?",
+    "punchline": "It was having window panes."
+  },
+  {
+    "jokeId": "MJ000560",
+    "date": "2026-07-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How does the moon cut his hair?",
+    "punchline": "Eclipse it."
   }
 ]
