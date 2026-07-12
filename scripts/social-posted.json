@@ -2716,5 +2716,32 @@
     ],
     "setup": "How does the moon cut his hair?",
     "punchline": "Eclipse it."
+  },
+  {
+    "jokeId": "MJ000909",
+    "date": "2026-07-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's the difference between an in-law and an outlaw? …",
+    "punchline": "An outlaw is wanted."
+  },
+  {
+    "jokeId": "MJ000096",
+    "date": "2026-07-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What kind of music do mummy's like?",
+    "punchline": "Rap"
+  },
+  {
+    "jokeId": "MJ001172",
+    "date": "2026-07-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Yesterday I was racking up to play pool with my son. He said \"Dad, you want a break?\" I said \"Why?",
+    "punchline": "We just started!\""
   }
 ]
