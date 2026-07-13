@@ -2743,5 +2743,32 @@
     ],
     "setup": "Yesterday I was racking up to play pool with my son. He said \"Dad, you want a break?\" I said \"Why?",
     "punchline": "We just started!\""
+  },
+  {
+    "jokeId": "MJ000589",
+    "date": "2026-07-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I asked the surgeon if I could administer my own anesthetic, they said:",
+    "punchline": "go ahead, knock yourself out."
+  },
+  {
+    "jokeId": "MJ000697",
+    "date": "2026-07-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why are giraffes so slow to apologize?",
+    "punchline": "Because it takes them a long time to swallow their pride."
+  },
+  {
+    "jokeId": "MJ000170",
+    "date": "2026-07-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Can a kangaroo jump higher than the Empire State Building?",
+    "punchline": "Of course. The Empire State Building can't jump."
   }
 ]
