@@ -2770,5 +2770,32 @@
     ],
     "setup": "Can a kangaroo jump higher than the Empire State Building?",
     "punchline": "Of course. The Empire State Building can't jump."
+  },
+  {
+    "jokeId": "MJ000008",
+    "date": "2026-07-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Dermatologists are always in a hurry.",
+    "punchline": "They spend all day making rash decisions."
+  },
+  {
+    "jokeId": "MJ000619",
+    "date": "2026-07-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A man tried to sell me a coffin today.",
+    "punchline": "I told him that's the last thing I need."
+  },
+  {
+    "jokeId": "MJ000619",
+    "date": "2026-07-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A man tried to sell me a coffin today.",
+    "punchline": "I told him that's the last thing I need."
   }
 ]
