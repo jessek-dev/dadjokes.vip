@@ -2824,5 +2824,32 @@
     ],
     "setup": "Why do birds fly south for the winter?",
     "punchline": "Because it's too far to walk."
+  },
+  {
+    "jokeId": "MJ001021",
+    "date": "2026-07-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call the sexuality where you're attracted to men and women, but they're not attracted to you. ..",
+    "punchline": "Bi-yourself!"
+  },
+  {
+    "jokeId": "MJ000621",
+    "date": "2026-07-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the shy pebble wish for?",
+    "punchline": "That she was a little boulder."
+  },
+  {
+    "jokeId": "MJ000565",
+    "date": "2026-07-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call an Argentinian with a rubber toe?",
+    "punchline": "Roberto"
   }
 ]
