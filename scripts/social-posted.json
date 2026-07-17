@@ -2851,5 +2851,32 @@
     ],
     "setup": "What do you call an Argentinian with a rubber toe?",
     "punchline": "Roberto"
+  },
+  {
+    "jokeId": "MJ000431",
+    "date": "2026-07-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Pie is $2.50 in Jamaica and $3.00 in The Bahamas.",
+    "punchline": "These are the pie-rates of the Caribbean."
+  },
+  {
+    "jokeId": "MJ000358",
+    "date": "2026-07-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My dog used to chase people on a bike a lot.",
+    "punchline": "It got so bad I had to take his bike away."
+  },
+  {
+    "jokeId": "MJ000425",
+    "date": "2026-07-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I decided to sell my Hoover...",
+    "punchline": "well it was just collecting dust."
   }
 ]
