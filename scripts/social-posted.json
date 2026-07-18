@@ -2878,5 +2878,32 @@
     ],
     "setup": "I decided to sell my Hoover...",
     "punchline": "well it was just collecting dust."
+  },
+  {
+    "jokeId": "MJ000479",
+    "date": "2026-07-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Two silk worms had a race.",
+    "punchline": "They ended up in a tie."
+  },
+  {
+    "jokeId": "MJ001236",
+    "date": "2026-07-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "The storm blew off 25% of my roof last night.",
+    "punchline": "Oof!"
+  },
+  {
+    "jokeId": "MJ000034",
+    "date": "2026-07-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I was fired from the keyboard factory yesterday.",
+    "punchline": "I wasn't putting in enough shifts."
   }
 ]
