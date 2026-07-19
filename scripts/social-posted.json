@@ -2905,5 +2905,32 @@
     ],
     "setup": "I was fired from the keyboard factory yesterday.",
     "punchline": "I wasn't putting in enough shifts."
+  },
+  {
+    "jokeId": "MJ001098",
+    "date": "2026-07-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Last night I accidentally handed my wife a glue stick instead of chapstick..",
+    "punchline": "She still isn't talking to me!"
+  },
+  {
+    "jokeId": "MJ000517",
+    "date": "2026-07-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "When does a joke become a dad joke?",
+    "punchline": "When it becomes apparent."
+  },
+  {
+    "jokeId": "MJ000643",
+    "date": "2026-07-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What kind of music do planets listen to?",
+    "punchline": "Nep-tunes."
   }
 ]
