@@ -2932,5 +2932,32 @@
     ],
     "setup": "What kind of music do planets listen to?",
     "punchline": "Nep-tunes."
+  },
+  {
+    "jokeId": "MJ000534",
+    "date": "2026-07-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I used to work for a soft drink can crusher.",
+    "punchline": "It was soda pressing."
+  },
+  {
+    "jokeId": "MJ000202",
+    "date": "2026-07-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a monkey in a mine field?",
+    "punchline": "A babooooom!"
+  },
+  {
+    "jokeId": "MJ001054",
+    "date": "2026-07-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife got pissed at me because I accidentally overcooked the ribeye last night..",
+    "punchline": "I told her we all make missed steaks."
   }
 ]
