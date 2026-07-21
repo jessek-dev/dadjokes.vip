@@ -2959,5 +2959,32 @@
     ],
     "setup": "My wife got pissed at me because I accidentally overcooked the ribeye last night..",
     "punchline": "I told her we all make missed steaks."
+  },
+  {
+    "jokeId": "MJ000609",
+    "date": "2026-07-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a duck that gets all A's?",
+    "punchline": "A wise quacker."
+  },
+  {
+    "jokeId": "MJ001022",
+    "date": "2026-07-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "So I pulled this guy over and I said \"How high are you?\" and he said",
+    "punchline": "\"No sir, it's 'Hi, how are you?'\""
+  },
+  {
+    "jokeId": "MJ001318",
+    "date": "2026-07-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My kids bought me an alarm clock that swears at you instead of beeping.",
+    "punchline": "That was a rude awakening!"
   }
 ]
