@@ -2986,5 +2986,32 @@
     ],
     "setup": "My kids bought me an alarm clock that swears at you instead of beeping.",
     "punchline": "That was a rude awakening!"
+  },
+  {
+    "jokeId": "MJ000337",
+    "date": "2026-07-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did Yoda say when he saw himself in 4K?",
+    "punchline": "\"HDMI\""
+  },
+  {
+    "jokeId": "MJ000494",
+    "date": "2026-07-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I thought about going on an all-almond diet.",
+    "punchline": "But that's just nuts."
+  },
+  {
+    "jokeId": "MJ001167",
+    "date": "2026-07-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife has been putting glue over my rifle collection.",
+    "punchline": "She's denying it, but I'm sticking to my guns!"
   }
 ]
