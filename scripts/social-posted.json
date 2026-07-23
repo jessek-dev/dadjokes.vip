@@ -3013,5 +3013,32 @@
     ],
     "setup": "My wife has been putting glue over my rifle collection.",
     "punchline": "She's denying it, but I'm sticking to my guns!"
+  },
+  {
+    "jokeId": "MJ000128",
+    "date": "2026-07-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you hear that the police have a warrant out on a midget psychic ripping people off?",
+    "punchline": "It reads \"Small medium at large.\""
+  },
+  {
+    "jokeId": "MJ000105",
+    "date": "2026-07-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a boy who stopped digging holes?",
+    "punchline": "Douglas."
+  },
+  {
+    "jokeId": "MJ000238",
+    "date": "2026-07-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's blue and not very heavy?",
+    "punchline": "Light blue."
   }
 ]
