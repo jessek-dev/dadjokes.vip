@@ -3040,5 +3040,32 @@
     ],
     "setup": "What's blue and not very heavy?",
     "punchline": "Light blue."
+  },
+  {
+    "jokeId": "MJ000440",
+    "date": "2026-07-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My friend keeps telling me \"Cheer up. You aren't stuck in a deep hole in the ground, filled with water.\"",
+    "punchline": "I know he means well."
+  },
+  {
+    "jokeId": "MJ000510",
+    "date": "2026-07-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I saw my husband trip and fall while carrying a laundry basket full of ironed clothes.",
+    "punchline": "I watched it all unfold."
+  },
+  {
+    "jokeId": "MJ000076",
+    "date": "2026-07-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A girl once asked me what my heart desired...",
+    "punchline": "apparently blood, oxygen and neural messages were all wrong answers"
   }
 ]
