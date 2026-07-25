@@ -3067,5 +3067,32 @@
     ],
     "setup": "A girl once asked me what my heart desired...",
     "punchline": "apparently blood, oxygen and neural messages were all wrong answers"
+  },
+  {
+    "jokeId": "MJ001318",
+    "date": "2026-07-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My kids bought me an alarm clock that swears at you instead of beeping.",
+    "punchline": "That was a rude awakening!"
+  },
+  {
+    "jokeId": "MJ000595",
+    "date": "2026-07-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "You can't trust a ladder.",
+    "punchline": "It will always let you down"
+  },
+  {
+    "jokeId": "MJ000287",
+    "date": "2026-07-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Which side of the chicken has more feathers?",
+    "punchline": "The outside."
   }
 ]
