@@ -3094,5 +3094,32 @@
     ],
     "setup": "Which side of the chicken has more feathers?",
     "punchline": "The outside."
+  },
+  {
+    "jokeId": "MJ000263",
+    "date": "2026-07-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Who is the coolest Doctor in the hospital?",
+    "punchline": "The hip Doctor!"
+  },
+  {
+    "jokeId": "MJ000431",
+    "date": "2026-07-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Pie is $2.50 in Jamaica and $3.00 in The Bahamas.",
+    "punchline": "These are the pie-rates of the Caribbean."
+  },
+  {
+    "jokeId": "MJ000030",
+    "date": "2026-07-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why is Peter Pan always flying?",
+    "punchline": "Because he Neverlands."
   }
 ]
