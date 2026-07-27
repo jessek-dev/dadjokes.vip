@@ -3121,5 +3121,32 @@
     ],
     "setup": "Why is Peter Pan always flying?",
     "punchline": "Because he Neverlands."
+  },
+  {
+    "jokeId": "MJ000270",
+    "date": "2026-07-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why was the shirt happy to hang around the tank top?",
+    "punchline": "Because it was armless"
+  },
+  {
+    "jokeId": "MJ000390",
+    "date": "2026-07-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's the worst part about being a cross-eyed teacher?",
+    "punchline": "They can't control their pupils."
+  },
+  {
+    "jokeId": "MJ000364",
+    "date": "2026-07-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife told me to rub the herbs on the meat for better flavor.",
+    "punchline": "That's sage advice."
   }
 ]
