@@ -3148,5 +3148,32 @@
     ],
     "setup": "My wife told me to rub the herbs on the meat for better flavor.",
     "punchline": "That's sage advice."
+  },
+  {
+    "jokeId": "MJ001242",
+    "date": "2026-07-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What pronouns does chocolate use?",
+    "punchline": "Her/she!"
+  },
+  {
+    "jokeId": "MJ001167",
+    "date": "2026-07-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife has been putting glue over my rifle collection.",
+    "punchline": "She's denying it, but I'm sticking to my guns!"
+  },
+  {
+    "jokeId": "MJ001021",
+    "date": "2026-07-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call the sexuality where you're attracted to men and women, but they're not attracted to you. ..",
+    "punchline": "Bi-yourself!"
   }
 ]
