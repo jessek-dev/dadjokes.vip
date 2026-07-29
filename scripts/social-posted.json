@@ -3175,5 +3175,32 @@
     ],
     "setup": "What do you call the sexuality where you're attracted to men and women, but they're not attracted to you. ..",
     "punchline": "Bi-yourself!"
+  },
+  {
+    "jokeId": "MJ000296",
+    "date": "2026-07-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "A panda walks into a bar and says to the bartender \"I’ll have a Scotch and …",
+    "punchline": "Coke thank you.\" \"Sure thing\" the bartender replies and asks \"but what’s with the big pause?\" The panda holds up his hands and says \"I was born with them\""
+  },
+  {
+    "jokeId": "MJ000435",
+    "date": "2026-07-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What is worse then finding a worm in your Apple?",
+    "punchline": "Finding half a worm in your Apple."
+  },
+  {
+    "jokeId": "MJ000645",
+    "date": "2026-07-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why was the broom late for the meeting?",
+    "punchline": "He overswept."
   }
 ]
