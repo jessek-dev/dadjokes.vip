@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 02:36:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 02:43:31 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why did Mickey Mouse go to space?</title>
+      <description>Why did Mickey Mouse go to space?
+
+To find Pluto.</description>
+      <link>https://dadjokes.vip/daily/#2026-07-29</link>
+      <guid isPermaLink="false">dadjokes-2026-07-29</guid>
+      <pubDate>Wed, 29 Jul 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What do you call a robot that always takes the longest route?</title>
       <description>What do you call a robot that always takes the longest route?
@@ -93,15 +102,6 @@ A luna-tick</description>
       <link>https://dadjokes.vip/daily/#2026-07-20</link>
       <guid isPermaLink="false">dadjokes-2026-07-20</guid>
       <pubDate>Mon, 20 Jul 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What did the father tomato say to the baby tomato while out for a walk?</title>
-      <description>What did the father tomato say to the baby tomato while out for a walk?
-
-Ketchup!</description>
-      <link>https://dadjokes.vip/daily/#2026-07-19</link>
-      <guid isPermaLink="false">dadjokes-2026-07-19</guid>
-      <pubDate>Sun, 19 Jul 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
