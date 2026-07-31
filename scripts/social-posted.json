@@ -3229,5 +3229,32 @@
     ],
     "setup": "I asked the surgeon if I could administer my own anesthetic, they said:",
     "punchline": "go ahead, knock yourself out."
+  },
+  {
+    "jokeId": "MJ000399",
+    "date": "2026-07-31",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Every machine in the coin factory broke down all of a sudden without explanation.",
+    "punchline": "It just doesn’t make any cents."
+  },
+  {
+    "jokeId": "MJ000008",
+    "date": "2026-07-31",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Dermatologists are always in a hurry.",
+    "punchline": "They spend all day making rash decisions."
+  },
+  {
+    "jokeId": "MJ000101",
+    "date": "2026-07-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the dog say to the two trees?",
+    "punchline": "Bark bark."
   }
 ]
