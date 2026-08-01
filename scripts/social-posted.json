@@ -3256,5 +3256,32 @@
     ],
     "setup": "What did the dog say to the two trees?",
     "punchline": "Bark bark."
+  },
+  {
+    "jokeId": "MJ000011",
+    "date": "2026-08-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "\"Why do seagulls fly over the ocean?\"",
+    "punchline": "Because if they flew over the bay, we'd call them bagels."
+  },
+  {
+    "jokeId": "MJ000030",
+    "date": "2026-08-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why is Peter Pan always flying?",
+    "punchline": "Because he Neverlands."
+  },
+  {
+    "jokeId": "MJ001320",
+    "date": "2026-08-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife accused me of stealing her thesaurus.",
+    "punchline": "Not only was I shocked, I was appalled, aghast and dismayed!"
   }
 ]
