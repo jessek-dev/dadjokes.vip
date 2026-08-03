@@ -3310,5 +3310,32 @@
     ],
     "setup": "A man is washing the car with his son. The son asks...",
     "punchline": "\"Dad, can’t you just use a sponge?\""
+  },
+  {
+    "jokeId": "MJ000027",
+    "date": "2026-08-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I’m only familiar with 25 letters in the English language.",
+    "punchline": "I don’t know why."
+  },
+  {
+    "jokeId": "MJ000368",
+    "date": "2026-08-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I went to the zoo yesterday and saw a baguette in a cage.",
+    "punchline": "It was bread in captivity."
+  },
+  {
+    "jokeId": "MJ000885",
+    "date": "2026-08-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "When I was a kid, I made a really big sandcastle with my grandma.…",
+    "punchline": "Unfortunately, that didn't impress anyone at the cremation…"
   }
 ]
