@@ -3337,5 +3337,32 @@
     ],
     "setup": "When I was a kid, I made a really big sandcastle with my grandma.…",
     "punchline": "Unfortunately, that didn't impress anyone at the cremation…"
+  },
+  {
+    "jokeId": "MJ000379",
+    "date": "2026-08-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Bought a new jacket suit the other day and it burst into flames.",
+    "punchline": "Well, it was a blazer"
+  },
+  {
+    "jokeId": "MJ000747",
+    "date": "2026-08-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I had a granny that we couldn't decide whether to bury or cremate…",
+    "punchline": "In the end we decided to just let her live."
+  },
+  {
+    "jokeId": "MJ000938",
+    "date": "2026-08-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I hate Russian matryoshka dolls…",
+    "punchline": "They're so full of themselves."
   }
 ]
