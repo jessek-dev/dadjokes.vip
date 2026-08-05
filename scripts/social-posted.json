@@ -3364,5 +3364,32 @@
     ],
     "setup": "I hate Russian matryoshka dolls…",
     "punchline": "They're so full of themselves."
+  },
+  {
+    "jokeId": "MJ000084",
+    "date": "2026-08-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "When is a door not a door?",
+    "punchline": "When it's ajar."
+  },
+  {
+    "jokeId": "MJ000048",
+    "date": "2026-08-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did one wall say to the other wall?",
+    "punchline": "I'll meet you at the corner!"
+  },
+  {
+    "jokeId": "MJ000011",
+    "date": "2026-08-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "\"Why do seagulls fly over the ocean?\"",
+    "punchline": "Because if they flew over the bay, we'd call them bagels."
   }
 ]
