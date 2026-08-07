@@ -3391,5 +3391,32 @@
     ],
     "setup": "\"Why do seagulls fly over the ocean?\"",
     "punchline": "Because if they flew over the bay, we'd call them bagels."
+  },
+  {
+    "jokeId": "MJ000391",
+    "date": "2026-08-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a fashionable lawn statue with an excellent sense of rhythm?",
+    "punchline": "A metro-gnome"
+  },
+  {
+    "jokeId": "MJ000675",
+    "date": "2026-08-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I started a new business making yachts in my attic this year...",
+    "punchline": "the sails are going through the roof"
+  },
+  {
+    "jokeId": "MJ000016",
+    "date": "2026-08-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What creature is smarter than a talking parrot?",
+    "punchline": "A spelling bee."
   }
 ]
