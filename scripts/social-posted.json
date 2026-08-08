@@ -3418,5 +3418,32 @@
     ],
     "setup": "What creature is smarter than a talking parrot?",
     "punchline": "A spelling bee."
+  },
+  {
+    "jokeId": "MJ001023",
+    "date": "2026-08-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "A cop pulled me over and said \"Papers!\" I said \"Scissors!\" and I won. So I drove off.",
+    "punchline": "He must have wanted a rematch or something because he was following me for like 45 minutes."
+  },
+  {
+    "jokeId": "MJ000778",
+    "date": "2026-08-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife is really mad at the fact that I have no sense of direction.",
+    "punchline": "So I packed up my stuff and right."
+  },
+  {
+    "jokeId": "MJ000390",
+    "date": "2026-08-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's the worst part about being a cross-eyed teacher?",
+    "punchline": "They can't control their pupils."
   }
 ]
