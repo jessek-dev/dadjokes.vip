@@ -3445,5 +3445,32 @@
     ],
     "setup": "What's the worst part about being a cross-eyed teacher?",
     "punchline": "They can't control their pupils."
+  },
+  {
+    "jokeId": "MJ000957",
+    "date": "2026-08-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Dads are like boomerangs…",
+    "punchline": "I hope."
+  },
+  {
+    "jokeId": "MJ000648",
+    "date": "2026-08-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Mahatma Gandhi, as you know, walked barefoot most of the time, which produced an impressive set of calluses on his feet. He also ate very little, which made him rather frail and with his odd diet, he suffered from bad breath.",
+    "punchline": "This made him a super calloused fragile mystic hexed by halitosis."
+  },
+  {
+    "jokeId": "MJ000132",
+    "date": "2026-08-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a fish with no eyes?",
+    "punchline": "A fsh."
   }
 ]
