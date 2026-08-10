@@ -3472,5 +3472,32 @@
     ],
     "setup": "What do you call a fish with no eyes?",
     "punchline": "A fsh."
+  },
+  {
+    "jokeId": "MJ000214",
+    "date": "2026-08-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I asked my date to go to the gym the other day. They never showed up.",
+    "punchline": "That's when I knew we wouldn't work out."
+  },
+  {
+    "jokeId": "MJ000051",
+    "date": "2026-08-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Conjunctivitis.com –",
+    "punchline": "now that’s a site for sore eyes."
+  },
+  {
+    "jokeId": "MJ000297",
+    "date": "2026-08-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "\"Doctor, I’ve broken my arm in several places.\"",
+    "punchline": "Doctor: \"Well don't go to those places.\""
   }
 ]
