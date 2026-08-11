@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 01:52:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 01:48:43 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What do you call a lazy statue?</title>
+      <description>What do you call a lazy statue?
+
+An idle idol.</description>
+      <link>https://dadjokes.vip/daily/#2026-08-11</link>
+      <guid isPermaLink="false">dadjokes-2026-08-11</guid>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What do you call a scary bear?</title>
       <description>What do you call a scary bear?
@@ -93,15 +102,6 @@ Black-eyed peas!</description>
       <link>https://dadjokes.vip/daily/#2026-08-02</link>
       <guid isPermaLink="false">dadjokes-2026-08-02</guid>
       <pubDate>Sun, 02 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why aren&#039;t grapes ever lonely?</title>
-      <description>Why aren&#039;t grapes ever lonely?
-
-Because they come in bunches!</description>
-      <link>https://dadjokes.vip/daily/#2026-08-01</link>
-      <guid isPermaLink="false">dadjokes-2026-08-01</guid>
-      <pubDate>Sat, 01 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
