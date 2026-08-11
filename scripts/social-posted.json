@@ -3499,5 +3499,32 @@
     ],
     "setup": "\"Doctor, I’ve broken my arm in several places.\"",
     "punchline": "Doctor: \"Well don't go to those places.\""
+  },
+  {
+    "jokeId": "MJ000025",
+    "date": "2026-08-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why does a Moon-rock taste better than an Earth-rock?",
+    "punchline": "Because it's a little meteor."
+  },
+  {
+    "jokeId": "MJ000106",
+    "date": "2026-08-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the mountain climber name his son?",
+    "punchline": "Cliff."
+  },
+  {
+    "jokeId": "MJ001151",
+    "date": "2026-08-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Yesterday I couldn't figure out if someone was waving at me or the person behind me.",
+    "punchline": "In other news, I lost my lifeguard job."
   }
 ]
