@@ -3526,5 +3526,32 @@
     ],
     "setup": "Yesterday I couldn't figure out if someone was waving at me or the person behind me.",
     "punchline": "In other news, I lost my lifeguard job."
+  },
+  {
+    "jokeId": "MJ000294",
+    "date": "2026-08-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the sea say to the sand?",
+    "punchline": "\"We have to stop meeting like this.\""
+  },
+  {
+    "jokeId": "MJ001201",
+    "date": "2026-08-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife's been so rude to me since I got a wheelchair.",
+    "punchline": "She's been pushing me around and talking behind my back!"
+  },
+  {
+    "jokeId": "MJ000164",
+    "date": "2026-08-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the green grape say to the purple grape?",
+    "punchline": "BREATH!!"
   }
 ]
