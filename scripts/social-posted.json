@@ -3553,5 +3553,32 @@
     ],
     "setup": "What did the green grape say to the purple grape?",
     "punchline": "BREATH!!"
+  },
+  {
+    "jokeId": "MJ000425",
+    "date": "2026-08-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I decided to sell my Hoover...",
+    "punchline": "well it was just collecting dust."
+  },
+  {
+    "jokeId": "MJ000990",
+    "date": "2026-08-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How much did your chimney cost? …",
+    "punchline": "Nothing, it was on the house."
+  },
+  {
+    "jokeId": "MJ001251",
+    "date": "2026-08-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I told my wife to stop drawing her eyebrows so high.",
+    "punchline": "She looks surprised!"
   }
 ]
