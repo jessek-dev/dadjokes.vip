@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 02:00:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 02:03:15 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What do you call a young coal digger?</title>
+      <description>What do you call a young coal digger?
+
+A minor miner.</description>
+      <link>https://dadjokes.vip/daily/#2026-08-13</link>
+      <guid isPermaLink="false">dadjokes-2026-08-13</guid>
+      <pubDate>Thu, 13 Aug 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How did the moose begin the letter to his cousin?</title>
       <description>How did the moose begin the letter to his cousin?
@@ -93,15 +102,6 @@ A plum-ber!</description>
       <link>https://dadjokes.vip/daily/#2026-08-04</link>
       <guid isPermaLink="false">dadjokes-2026-08-04</guid>
       <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why were the strawberries so upset?</title>
-      <description>Why were the strawberries so upset?
-
-Because they were in a jam!</description>
-      <link>https://dadjokes.vip/daily/#2026-08-03</link>
-      <guid isPermaLink="false">dadjokes-2026-08-03</guid>
-      <pubDate>Mon, 03 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
