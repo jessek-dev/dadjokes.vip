@@ -3580,5 +3580,32 @@
     ],
     "setup": "I told my wife to stop drawing her eyebrows so high.",
     "punchline": "She looks surprised!"
+  },
+  {
+    "jokeId": "MJ000030",
+    "date": "2026-08-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why is Peter Pan always flying?",
+    "punchline": "Because he Neverlands."
+  },
+  {
+    "jokeId": "MJ000255",
+    "date": "2026-08-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How many kids with ADD does it take to change a lightbulb?",
+    "punchline": "Let's go ride bikes!"
+  },
+  {
+    "jokeId": "MJ001012",
+    "date": "2026-08-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I was on a diabetes awareness site. It asked me if I accept cookies.",
+    "punchline": "Is that a trick question?"
   }
 ]
