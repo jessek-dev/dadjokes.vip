@@ -3607,5 +3607,32 @@
     ],
     "setup": "I was on a diabetes awareness site. It asked me if I accept cookies.",
     "punchline": "Is that a trick question?"
+  },
+  {
+    "jokeId": "MJ000875",
+    "date": "2026-08-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife left me because I'm too insecure and paranoid.…",
+    "punchline": "Oh wait, never mind. She was just getting the mail."
+  },
+  {
+    "jokeId": "MJ000419",
+    "date": "2026-08-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "R.I.P. boiled water.",
+    "punchline": "You will be mist."
+  },
+  {
+    "jokeId": "MJ000581",
+    "date": "2026-08-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My boss told me that he was going to fire the person with the worst posture.",
+    "punchline": "I have a hunch, it might be me."
   }
 ]
