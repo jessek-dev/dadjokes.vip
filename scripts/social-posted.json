@@ -3634,5 +3634,32 @@
     ],
     "setup": "My boss told me that he was going to fire the person with the worst posture.",
     "punchline": "I have a hunch, it might be me."
+  },
+  {
+    "jokeId": "MJ000467",
+    "date": "2026-08-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I accidentally drank a bottle of invisible ink.",
+    "punchline": "Now I’m in hospital, waiting to be seen."
+  },
+  {
+    "jokeId": "MJ000270",
+    "date": "2026-08-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the shirt happy to hang around the tank top?",
+    "punchline": "Because it was armless"
+  },
+  {
+    "jokeId": "MJ000440",
+    "date": "2026-08-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My friend keeps telling me \"Cheer up. You aren't stuck in a deep hole in the ground, filled with water.\"",
+    "punchline": "I know he means well."
   }
 ]
