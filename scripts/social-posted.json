@@ -3661,5 +3661,32 @@
     ],
     "setup": "My friend keeps telling me \"Cheer up. You aren't stuck in a deep hole in the ground, filled with water.\"",
     "punchline": "I know he means well."
+  },
+  {
+    "jokeId": "MJ000494",
+    "date": "2026-08-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I thought about going on an all-almond diet.",
+    "punchline": "But that's just nuts."
+  },
+  {
+    "jokeId": "MJ000341",
+    "date": "2026-08-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Nurse: Doctor, there's a patient that says he's invisible?",
+    "punchline": "Doctor: Well, tell him I can't see him right now!"
+  },
+  {
+    "jokeId": "MJ001065",
+    "date": "2026-08-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you get when you cross a polar bear with a seal?",
+    "punchline": "A polar bear!"
   }
 ]
