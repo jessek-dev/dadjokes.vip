@@ -3688,5 +3688,32 @@
     ],
     "setup": "What do you get when you cross a polar bear with a seal?",
     "punchline": "A polar bear!"
+  },
+  {
+    "jokeId": "MJ000156",
+    "date": "2026-08-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a bee that lives in America?",
+    "punchline": "A USB."
+  },
+  {
+    "jokeId": "MJ000162",
+    "date": "2026-08-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What concert costs only 45 cents?",
+    "punchline": "50 cent featuring Nickelback."
+  },
+  {
+    "jokeId": "MJ000057",
+    "date": "2026-08-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A police officer caught two kids playing with a firework and a car battery.",
+    "punchline": "He charged one and let the other one off."
   }
 ]
