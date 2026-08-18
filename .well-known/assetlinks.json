@@ -4,7 +4,8 @@
     "namespace": "android_app",
     "package_name": "com.kedy.dadJokes",
     "sha256_cert_fingerprints": [
-      "REPLACE_WITH_YOUR_RELEASE_SHA256_FINGERPRINT",
+      "5F:DA:C8:31:5F:20:F3:6F:66:0B:BD:1E:25:F2:B9:BC:50:F6:41:E4:67:8D:29:7A:3C:35:AE:27:12:8B:1C:C2",
+      "FD:09:B3:0F:A7:AC:33:A2:67:48:AE:73:FF:F3:26:B8:62:8D:A2:7F:9C:C3:06:D4:5A:4F:EE:6D:2F:3A:AB:3A",
       "8D:75:1E:54:89:11:78:6D:48:40:1A:F4:72:51:2B:91:EA:72:8B:4B:79:0D:25:62:EE:50:10:47:0D:CD:28:13"
     ]
   }
