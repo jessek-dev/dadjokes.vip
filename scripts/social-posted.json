@@ -3715,5 +3715,32 @@
     ],
     "setup": "A police officer caught two kids playing with a firework and a car battery.",
     "punchline": "He charged one and let the other one off."
+  },
+  {
+    "jokeId": "MJ000076",
+    "date": "2026-08-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "A girl once asked me what my heart desired...",
+    "punchline": "apparently blood, oxygen and neural messages were all wrong answers"
+  },
+  {
+    "jokeId": "MJ001199",
+    "date": "2026-08-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Earlier today on the beach I got hit by a wave of cake.",
+    "punchline": "It was a tiramisu-nami!"
+  },
+  {
+    "jokeId": "MJ000014",
+    "date": "2026-08-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the tomato blush?",
+    "punchline": "Because it saw the salad dressing."
   }
 ]
