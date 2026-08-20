@@ -3742,5 +3742,32 @@
     ],
     "setup": "Why did the tomato blush?",
     "punchline": "Because it saw the salad dressing."
+  },
+  {
+    "jokeId": "MJ000219",
+    "date": "2026-08-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "You can't run through a camp site.",
+    "punchline": "You can only ran, because it's past tents."
+  },
+  {
+    "jokeId": "MJ000615",
+    "date": "2026-08-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Parallel lines have so much in common.",
+    "punchline": "It’s a shame they’ll never meet."
+  },
+  {
+    "jokeId": "MJ000761",
+    "date": "2026-08-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I stayed up all night wondering where the sun went…",
+    "punchline": "Then it dawned on me."
   }
 ]
