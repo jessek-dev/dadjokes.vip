@@ -3769,5 +3769,32 @@
     ],
     "setup": "I stayed up all night wondering where the sun went…",
     "punchline": "Then it dawned on me."
+  },
+  {
+    "jokeId": "MJ000423",
+    "date": "2026-08-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did the feline fail the lie detector test?",
+    "punchline": "Because he be lion."
+  },
+  {
+    "jokeId": "MJ000055",
+    "date": "2026-08-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the robot angry?",
+    "punchline": "Because someone kept pressing his buttons!"
+  },
+  {
+    "jokeId": "MJ000025",
+    "date": "2026-08-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why does a Moon-rock taste better than an Earth-rock?",
+    "punchline": "Because it's a little meteor."
   }
 ]
