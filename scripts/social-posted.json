@@ -3796,5 +3796,32 @@
     ],
     "setup": "Why does a Moon-rock taste better than an Earth-rock?",
     "punchline": "Because it's a little meteor."
+  },
+  {
+    "jokeId": "MJ000205",
+    "date": "2026-08-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How do you steal a coat?",
+    "punchline": "You jacket."
+  },
+  {
+    "jokeId": "MJ000069",
+    "date": "2026-08-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I got a reversible jacket for Christmas.",
+    "punchline": "I can't wait to see how it turns out."
+  },
+  {
+    "jokeId": "MJ000520",
+    "date": "2026-08-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why do crabs never give to charity?",
+    "punchline": "Because they’re shellfish."
   }
 ]
