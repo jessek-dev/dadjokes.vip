@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Aug 2026 01:15:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 01:22:27 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>I got robbed today and called the police</title>
+      <description>I got robbed today and called the police
+
+The cop asked if I had a descripion of the assailant. I said &quot;yes, it&#039;s pump number 5.&quot;</description>
+      <link>https://dadjokes.vip/daily/#2026-08-23</link>
+      <guid isPermaLink="false">dadjokes-2026-08-23</guid>
+      <pubDate>Sun, 23 Aug 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>A Higgs boson walked into a Catholic church and said...</title>
       <description>A Higgs boson walked into a Catholic church and said...
@@ -93,15 +102,6 @@ Night-night, Knight!</description>
       <link>https://dadjokes.vip/daily/#2026-08-14</link>
       <guid isPermaLink="false">dadjokes-2026-08-14</guid>
       <pubDate>Fri, 14 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do you call a young coal digger?</title>
-      <description>What do you call a young coal digger?
-
-A minor miner.</description>
-      <link>https://dadjokes.vip/daily/#2026-08-13</link>
-      <guid isPermaLink="false">dadjokes-2026-08-13</guid>
-      <pubDate>Thu, 13 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
