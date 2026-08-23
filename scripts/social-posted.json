@@ -3823,5 +3823,32 @@
     ],
     "setup": "Why do crabs never give to charity?",
     "punchline": "Because they’re shellfish."
+  },
+  {
+    "jokeId": "MJ000107",
+    "date": "2026-08-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why should you never trust a pig with a secret?",
+    "punchline": "Because it's bound to squeal."
+  },
+  {
+    "jokeId": "MJ001223",
+    "date": "2026-08-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I was getting in an Uber the other day and the driver said \"I love my job, I'm my own boss, nobody tells me what to do!\" Then I said",
+    "punchline": "\"Turn left here.\""
+  },
+  {
+    "jokeId": "MJ000043",
+    "date": "2026-08-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "It was so cold yesterday my computer froze.",
+    "punchline": "My own fault though, I left too many windows open."
   }
 ]
