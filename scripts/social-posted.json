@@ -3850,5 +3850,32 @@
     ],
     "setup": "It was so cold yesterday my computer froze.",
     "punchline": "My own fault though, I left too many windows open."
+  },
+  {
+    "jokeId": "MJ000052",
+    "date": "2026-08-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How many South Americans does it take to change a lightbulb?",
+    "punchline": "A Brazilian"
+  },
+  {
+    "jokeId": "MJ000056",
+    "date": "2026-08-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Which is the fastest growing city in the world?",
+    "punchline": "Dublin'"
+  },
+  {
+    "jokeId": "MJ000224",
+    "date": "2026-08-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Have you heard about the owl sanctuary job opening?",
+    "punchline": "It’s all night shifts but they’re all a hoot over there."
   }
 ]
