@@ -3877,5 +3877,32 @@
     ],
     "setup": "Have you heard about the owl sanctuary job opening?",
     "punchline": "It’s all night shifts but they’re all a hoot over there."
+  },
+  {
+    "jokeId": "MJ000140",
+    "date": "2026-08-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "In my career as a lumberjack I cut down exactly 52,487 trees.",
+    "punchline": "I know because I kept a log."
+  },
+  {
+    "jokeId": "MJ000392",
+    "date": "2026-08-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Someone broke into my house last night and stole my limbo trophy.",
+    "punchline": "How low can you go?"
+  },
+  {
+    "jokeId": "MJ000478",
+    "date": "2026-08-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Where did Captain Hook get his hook?",
+    "punchline": "From a second hand store."
   }
 ]
