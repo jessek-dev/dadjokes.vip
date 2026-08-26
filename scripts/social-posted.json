@@ -3904,5 +3904,32 @@
     ],
     "setup": "Where did Captain Hook get his hook?",
     "punchline": "From a second hand store."
+  },
+  {
+    "jokeId": "MJ001100",
+    "date": "2026-08-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My boss asked me why I get sick only on work days..",
+    "punchline": "I said, \"I don't know, it must be my weak-end immune system.\""
+  },
+  {
+    "jokeId": "MJ000154",
+    "date": "2026-08-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "It was raining cats and dogs the other day.",
+    "punchline": "I almost stepped in a poodle."
+  },
+  {
+    "jokeId": "MJ000188",
+    "date": "2026-08-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "As I suspected, someone has been adding soil to my garden.",
+    "punchline": "The plot thickens."
   }
 ]
