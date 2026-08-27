@@ -3931,5 +3931,32 @@
     ],
     "setup": "As I suspected, someone has been adding soil to my garden.",
     "punchline": "The plot thickens."
+  },
+  {
+    "jokeId": "MJ001095",
+    "date": "2026-08-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Yesterday I called my landlord and said \"I've got a leak in my sink.\" …",
+    "punchline": "He said \"Go ahead, I'm not judging!\""
+  },
+  {
+    "jokeId": "MJ000024",
+    "date": "2026-08-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a female snake?",
+    "punchline": "misssssssss"
+  },
+  {
+    "jokeId": "MJ000067",
+    "date": "2026-08-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "When people are sad, I sometimes let them colour in my tattoos.",
+    "punchline": "Sometimes all they need is a shoulder to crayon."
   }
 ]
