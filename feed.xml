@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 01:20:55 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 08:00:25 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>If New York is the city that never sleeps, what is the city that never wakes up?</title>
+      <description>If New York is the city that never sleeps, what is the city that never wakes up?
+
+Ta-coma</description>
+      <link>https://dadjokes.vip/daily/#2026-08-27</link>
+      <guid isPermaLink="false">dadjokes-2026-08-27</guid>
+      <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>I dated this stunning girl once. She was a communist, originally from from China, but I met her while working in Switzerland. We lived in Denmark first then moved to Turkey and went on holiday in Canada. Then she cheated on me. I was devastated, but I really should have known better</title>
       <description>I dated this stunning girl once. She was a communist, originally from from China, but I met her while working in Switzerland. We lived in Denmark first then moved to Turkey and went on holiday in Canada. Then she cheated on me. I was devastated, but I really should have known better
@@ -93,15 +102,6 @@ A foul fowl.</description>
       <link>https://dadjokes.vip/daily/#2026-08-18</link>
       <guid isPermaLink="false">dadjokes-2026-08-18</guid>
       <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What is a quick look at a mountaintop?</title>
-      <description>What is a quick look at a mountaintop?
-
-A peak peek.</description>
-      <link>https://dadjokes.vip/daily/#2026-08-17</link>
-      <guid isPermaLink="false">dadjokes-2026-08-17</guid>
-      <pubDate>Mon, 17 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
