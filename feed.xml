@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2026 08:00:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 10:03:19 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Someone born in &#039;33 was 45 in &#039;78.</title>
+      <description>Someone born in &#039;33 was 45 in &#039;78.
+
+That&#039;s got to be a record.</description>
+      <link>https://dadjokes.vip/daily/#2026-08-28</link>
+      <guid isPermaLink="false">dadjokes-2026-08-28</guid>
+      <pubDate>Fri, 28 Aug 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>If New York is the city that never sleeps, what is the city that never wakes up?</title>
       <description>If New York is the city that never sleeps, what is the city that never wakes up?
@@ -93,15 +102,6 @@ A vile vial.</description>
       <link>https://dadjokes.vip/daily/#2026-08-19</link>
       <guid isPermaLink="false">dadjokes-2026-08-19</guid>
       <pubDate>Wed, 19 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What is a stinky chicken?</title>
-      <description>What is a stinky chicken?
-
-A foul fowl.</description>
-      <link>https://dadjokes.vip/daily/#2026-08-18</link>
-      <guid isPermaLink="false">dadjokes-2026-08-18</guid>
-      <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
