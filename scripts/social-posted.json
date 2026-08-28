@@ -3958,5 +3958,32 @@
     ],
     "setup": "When people are sad, I sometimes let them colour in my tattoos.",
     "punchline": "Sometimes all they need is a shoulder to crayon."
+  },
+  {
+    "jokeId": "MJ000163",
+    "date": "2026-08-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I couldn't figure out how the seat belt worked.",
+    "punchline": "Then it just clicked."
+  },
+  {
+    "jokeId": "MJ001171",
+    "date": "2026-08-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I sympathize with batteries.",
+    "punchline": "I'm not included in anything either!"
+  },
+  {
+    "jokeId": "MJ000092",
+    "date": "2026-08-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why do trees seem suspicious on sunny days?",
+    "punchline": "Dunno, they're just a bit shady."
   }
 ]
