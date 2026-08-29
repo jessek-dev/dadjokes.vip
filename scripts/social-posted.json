@@ -3985,5 +3985,32 @@
     ],
     "setup": "Why do trees seem suspicious on sunny days?",
     "punchline": "Dunno, they're just a bit shady."
+  },
+  {
+    "jokeId": "MJ000179",
+    "date": "2026-08-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why are graveyards so noisy?",
+    "punchline": "Because of all the coffin."
+  },
+  {
+    "jokeId": "MJ000136",
+    "date": "2026-08-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife said I was immature.",
+    "punchline": "So I told her to get out of my fort."
+  },
+  {
+    "jokeId": "MJ000840",
+    "date": "2026-08-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call 4 Mexicans in quicksand? …",
+    "punchline": "Quatro Sinko."
   }
 ]
