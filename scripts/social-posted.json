@@ -4012,5 +4012,32 @@
     ],
     "setup": "What do you call 4 Mexicans in quicksand? …",
     "punchline": "Quatro Sinko."
+  },
+  {
+    "jokeId": "MJ000851",
+    "date": "2026-08-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a cheap circumcision? …",
+    "punchline": "A rip off."
+  },
+  {
+    "jokeId": "MJ000468",
+    "date": "2026-08-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why does Waldo only wear stripes?",
+    "punchline": "Because he doesn't want to be spotted."
+  },
+  {
+    "jokeId": "MJ000456",
+    "date": "2026-08-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "The word queue is ironic.",
+    "punchline": "It's just q with a bunch of silent letters waiting in line."
   }
 ]
