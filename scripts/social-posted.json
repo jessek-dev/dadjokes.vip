@@ -4039,5 +4039,32 @@
     ],
     "setup": "The word queue is ironic.",
     "punchline": "It's just q with a bunch of silent letters waiting in line."
+  },
+  {
+    "jokeId": "MJ000380",
+    "date": "2026-08-31",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's a penguin's favorite relative?",
+    "punchline": "Aunt Arctica."
+  },
+  {
+    "jokeId": "MJ000219",
+    "date": "2026-08-31",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "You can't run through a camp site.",
+    "punchline": "You can only ran, because it's past tents."
+  },
+  {
+    "jokeId": "MJ000204",
+    "date": "2026-08-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I cut my finger cutting cheese.",
+    "punchline": "I know it may be a cheesy story but I feel grate now."
   }
 ]
