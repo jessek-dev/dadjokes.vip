@@ -4066,5 +4066,32 @@
     ],
     "setup": "I cut my finger cutting cheese.",
     "punchline": "I know it may be a cheesy story but I feel grate now."
+  },
+  {
+    "jokeId": "MJ000410",
+    "date": "2026-09-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why does Han Solo like gum?",
+    "punchline": "It's chewy!"
+  },
+  {
+    "jokeId": "MJ000373",
+    "date": "2026-09-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How does a dyslexic poet write?",
+    "punchline": "Inverse."
+  },
+  {
+    "jokeId": "MJ000077",
+    "date": "2026-09-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why is it always hot in the corner of a room?",
+    "punchline": "Because a corner is 90 degrees."
   }
 ]
