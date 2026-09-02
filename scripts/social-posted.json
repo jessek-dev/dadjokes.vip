@@ -4093,5 +4093,32 @@
     ],
     "setup": "Why is it always hot in the corner of a room?",
     "punchline": "Because a corner is 90 degrees."
+  },
+  {
+    "jokeId": "MJ000456",
+    "date": "2026-09-02",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "The word queue is ironic.",
+    "punchline": "It's just q with a bunch of silent letters waiting in line."
+  },
+  {
+    "jokeId": "MJ001138",
+    "date": "2026-09-02",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My friends and I put a band together. We called it 999 Megabytes.",
+    "punchline": "Still haven't gotten a gig though!"
+  },
+  {
+    "jokeId": "MJ000556",
+    "date": "2026-09-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Someone asked me, what's the ninth letter of the alphabet?",
+    "punchline": "It was a complete guess, but I was right."
   }
 ]
