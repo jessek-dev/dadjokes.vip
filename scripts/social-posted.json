@@ -4120,5 +4120,32 @@
     ],
     "setup": "Someone asked me, what's the ninth letter of the alphabet?",
     "punchline": "It was a complete guess, but I was right."
+  },
+  {
+    "jokeId": "MJ001251",
+    "date": "2026-09-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I told my wife to stop drawing her eyebrows so high.",
+    "punchline": "She looks surprised!"
+  },
+  {
+    "jokeId": "MJ001194",
+    "date": "2026-09-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I asked this old man \"After 95 years, you still call your wife darling, honey, love - what's the secret?\" He said",
+    "punchline": "\"I forgot her name 10 years ago and I'm afraid to ask her!\""
+  },
+  {
+    "jokeId": "MJ001236",
+    "date": "2026-09-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "The storm blew off 25% of my roof last night.",
+    "punchline": "Oof!"
   }
 ]
