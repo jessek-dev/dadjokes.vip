@@ -4147,5 +4147,32 @@
     ],
     "setup": "The storm blew off 25% of my roof last night.",
     "punchline": "Oof!"
+  },
+  {
+    "jokeId": "MJ000341",
+    "date": "2026-09-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Nurse: Doctor, there's a patient that says he's invisible?",
+    "punchline": "Doctor: Well, tell him I can't see him right now!"
+  },
+  {
+    "jokeId": "MJ000479",
+    "date": "2026-09-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Two silk worms had a race.",
+    "punchline": "They ended up in a tie."
+  },
+  {
+    "jokeId": "MJ000510",
+    "date": "2026-09-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I saw my husband trip and fall while carrying a laundry basket full of ironed clothes.",
+    "punchline": "I watched it all unfold."
   }
 ]
