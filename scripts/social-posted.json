@@ -4174,5 +4174,32 @@
     ],
     "setup": "I saw my husband trip and fall while carrying a laundry basket full of ironed clothes.",
     "punchline": "I watched it all unfold."
+  },
+  {
+    "jokeId": "MJ000392",
+    "date": "2026-09-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Someone broke into my house last night and stole my limbo trophy.",
+    "punchline": "How low can you go?"
+  },
+  {
+    "jokeId": "MJ000049",
+    "date": "2026-09-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Sometimes I tuck my knees into my chest and lean forward.",
+    "punchline": "That’s just how I roll."
+  },
+  {
+    "jokeId": "MJ000096",
+    "date": "2026-09-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What kind of music do mummy's like?",
+    "punchline": "Rap"
   }
 ]
