@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2026 03:23:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 03:23:42 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Today I saw two rabbits racing down the road..</title>
+      <description>Today I saw two rabbits racing down the road..
+
+They were the fast and the furriest.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-06</link>
+      <guid isPermaLink="false">dadjokes-2026-09-06</guid>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>&quot;Sir, your tests show that your DNA is backwards.&quot;</title>
       <description>&quot;Sir, your tests show that your DNA is backwards.&quot;
@@ -93,15 +102,6 @@ That&#039;s got to be a record.</description>
       <link>https://dadjokes.vip/daily/#2026-08-28</link>
       <guid isPermaLink="false">dadjokes-2026-08-28</guid>
       <pubDate>Fri, 28 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>If New York is the city that never sleeps, what is the city that never wakes up?</title>
-      <description>If New York is the city that never sleeps, what is the city that never wakes up?
-
-Ta-coma</description>
-      <link>https://dadjokes.vip/daily/#2026-08-27</link>
-      <guid isPermaLink="false">dadjokes-2026-08-27</guid>
-      <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
