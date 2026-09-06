@@ -4201,5 +4201,32 @@
     ],
     "setup": "What kind of music do mummy's like?",
     "punchline": "Rap"
+  },
+  {
+    "jokeId": "MJ000470",
+    "date": "2026-09-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Americans can't switch from pounds to kilograms overnight.",
+    "punchline": "That would cause mass confusion."
+  },
+  {
+    "jokeId": "MJ000701",
+    "date": "2026-09-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a guy lying on your doorstep?",
+    "punchline": "Matt."
+  },
+  {
+    "jokeId": "MJ001052",
+    "date": "2026-09-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I have two unwritten rules: 1. [blank] 2.",
+    "punchline": "[blank]"
   }
 ]
