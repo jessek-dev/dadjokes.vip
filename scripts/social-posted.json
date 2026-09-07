@@ -4228,5 +4228,32 @@
     ],
     "setup": "I have two unwritten rules: 1. [blank] 2.",
     "punchline": "[blank]"
+  },
+  {
+    "jokeId": "MJ000106",
+    "date": "2026-09-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the mountain climber name his son?",
+    "punchline": "Cliff."
+  },
+  {
+    "jokeId": "MJ000870",
+    "date": "2026-09-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why was the mushroom always invited to parties? …",
+    "punchline": "Cause he's a fungi."
+  },
+  {
+    "jokeId": "MJ000044",
+    "date": "2026-09-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Man, I really love my furniture...",
+    "punchline": "me and my recliner go way back."
   }
 ]
