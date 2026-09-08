@@ -4255,5 +4255,32 @@
     ],
     "setup": "Man, I really love my furniture...",
     "punchline": "me and my recliner go way back."
+  },
+  {
+    "jokeId": "MJ000574",
+    "date": "2026-09-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you hear that David lost his ID in Prague?",
+    "punchline": "Now we just have to call him Dav."
+  },
+  {
+    "jokeId": "MJ000342",
+    "date": "2026-09-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What was a more important invention than the first telephone?",
+    "punchline": "The second one."
+  },
+  {
+    "jokeId": "MJ000966",
+    "date": "2026-09-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife and I have reached the difficult decision that we do not want children.",
+    "punchline": "If anybody does, please just send me your contact details and we can drop them off tomorrow."
   }
 ]
