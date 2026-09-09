@@ -4282,5 +4282,32 @@
     ],
     "setup": "My wife and I have reached the difficult decision that we do not want children.",
     "punchline": "If anybody does, please just send me your contact details and we can drop them off tomorrow."
+  },
+  {
+    "jokeId": "MJ000164",
+    "date": "2026-09-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the green grape say to the purple grape?",
+    "punchline": "BREATH!!"
+  },
+  {
+    "jokeId": "MJ000084",
+    "date": "2026-09-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "When is a door not a door?",
+    "punchline": "When it's ajar."
+  },
+  {
+    "jokeId": "MJ000302",
+    "date": "2026-09-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did the Zen Buddist say to the hotdog vendor?",
+    "punchline": "Make me one with everything."
   }
 ]
