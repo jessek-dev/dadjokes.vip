@@ -4309,5 +4309,32 @@
     ],
     "setup": "What did the Zen Buddist say to the hotdog vendor?",
     "punchline": "Make me one with everything."
+  },
+  {
+    "jokeId": "MJ000245",
+    "date": "2026-09-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What's the difference between roast beef and pea soup?",
+    "punchline": "Anyone can roast beef, but nobody can pee soup."
+  },
+  {
+    "jokeId": "MJ000107",
+    "date": "2026-09-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why should you never trust a pig with a secret?",
+    "punchline": "Because it's bound to squeal."
+  },
+  {
+    "jokeId": "MJ000925",
+    "date": "2026-09-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Which part of the hospital has the least privacy?…",
+    "punchline": "The ICU."
   }
 ]
