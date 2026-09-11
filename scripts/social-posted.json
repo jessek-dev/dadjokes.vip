@@ -4336,5 +4336,32 @@
     ],
     "setup": "Which part of the hospital has the least privacy?…",
     "punchline": "The ICU."
+  },
+  {
+    "jokeId": "MJ001288",
+    "date": "2026-09-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I once pulled a muscle mining for gold.",
+    "punchline": "It was a minor injury!"
+  },
+  {
+    "jokeId": "MJ000470",
+    "date": "2026-09-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Americans can't switch from pounds to kilograms overnight.",
+    "punchline": "That would cause mass confusion."
+  },
+  {
+    "jokeId": "MJ001244",
+    "date": "2026-09-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife is leaving me because I'm balding.",
+    "punchline": "It's fine, it's hair loss!"
   }
 ]
