@@ -4363,5 +4363,32 @@
     ],
     "setup": "My wife is leaving me because I'm balding.",
     "punchline": "It's fine, it's hair loss!"
+  },
+  {
+    "jokeId": "MJ000418",
+    "date": "2026-09-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I used to hate facial hair,",
+    "punchline": "but then it grew on me."
+  },
+  {
+    "jokeId": "MJ000364",
+    "date": "2026-09-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife told me to rub the herbs on the meat for better flavor.",
+    "punchline": "That's sage advice."
+  },
+  {
+    "jokeId": "MJ001173",
+    "date": "2026-09-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My kids refused to eat leftover tacos for dinner so my wife said to throw them out. I did!",
+    "punchline": "Now I have no idea what to do with the tacos."
   }
 ]
