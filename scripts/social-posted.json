@@ -4390,5 +4390,32 @@
     ],
     "setup": "My kids refused to eat leftover tacos for dinner so my wife said to throw them out. I did!",
     "punchline": "Now I have no idea what to do with the tacos."
+  },
+  {
+    "jokeId": "MJ000168",
+    "date": "2026-09-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I had a pair of racing snails.",
+    "punchline": "I removed their shells to make them more aerodynamic, but they became sluggish."
+  },
+  {
+    "jokeId": "MJ001151",
+    "date": "2026-09-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Yesterday I couldn't figure out if someone was waving at me or the person behind me.",
+    "punchline": "In other news, I lost my lifeguard job."
+  },
+  {
+    "jokeId": "MJ001023",
+    "date": "2026-09-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A cop pulled me over and said \"Papers!\" I said \"Scissors!\" and I won. So I drove off.",
+    "punchline": "He must have wanted a rematch or something because he was following me for like 45 minutes."
   }
 ]
