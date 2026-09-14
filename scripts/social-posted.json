@@ -4417,5 +4417,32 @@
     ],
     "setup": "A cop pulled me over and said \"Papers!\" I said \"Scissors!\" and I won. So I drove off.",
     "punchline": "He must have wanted a rematch or something because he was following me for like 45 minutes."
+  },
+  {
+    "jokeId": "MJ000255",
+    "date": "2026-09-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How many kids with ADD does it take to change a lightbulb?",
+    "punchline": "Let's go ride bikes!"
+  },
+  {
+    "jokeId": "MJ001052",
+    "date": "2026-09-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I have two unwritten rules: 1. [blank] 2.",
+    "punchline": "[blank]"
+  },
+  {
+    "jokeId": "MJ000423",
+    "date": "2026-09-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the feline fail the lie detector test?",
+    "punchline": "Because he be lion."
   }
 ]
