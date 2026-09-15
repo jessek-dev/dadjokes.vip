@@ -4444,5 +4444,32 @@
     ],
     "setup": "Why did the feline fail the lie detector test?",
     "punchline": "Because he be lion."
+  },
+  {
+    "jokeId": "MJ000290",
+    "date": "2026-09-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the scarf say to the hat?",
+    "punchline": "You go on ahead, I am going to hang around a bit longer."
+  },
+  {
+    "jokeId": "MJ000556",
+    "date": "2026-09-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Someone asked me, what's the ninth letter of the alphabet?",
+    "punchline": "It was a complete guess, but I was right."
+  },
+  {
+    "jokeId": "MJ000270",
+    "date": "2026-09-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why was the shirt happy to hang around the tank top?",
+    "punchline": "Because it was armless"
   }
 ]
