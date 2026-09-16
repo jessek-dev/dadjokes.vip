@@ -4471,5 +4471,32 @@
     ],
     "setup": "Why was the shirt happy to hang around the tank top?",
     "punchline": "Because it was armless"
+  },
+  {
+    "jokeId": "MJ000417",
+    "date": "2026-09-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I used to work in a shoe recycling shop.",
+    "punchline": "It was sole destroying."
+  },
+  {
+    "jokeId": "MJ000086",
+    "date": "2026-09-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did Mozart kill all his chickens?",
+    "punchline": "Because when he asked them who the best composer was, they'd all say \"Bach bach bach!\""
+  },
+  {
+    "jokeId": "MJ000136",
+    "date": "2026-09-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife said I was immature.",
+    "punchline": "So I told her to get out of my fort."
   }
 ]
