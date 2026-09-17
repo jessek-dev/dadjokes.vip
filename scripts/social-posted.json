@@ -4498,5 +4498,32 @@
     ],
     "setup": "My wife said I was immature.",
     "punchline": "So I told her to get out of my fort."
+  },
+  {
+    "jokeId": "MJ000476",
+    "date": "2026-09-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you know the first French fries weren't actually cooked in France?",
+    "punchline": "They were cooked in Greece."
+  },
+  {
+    "jokeId": "MJ000662",
+    "date": "2026-09-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's the worst thing about ancient history class?",
+    "punchline": "The teachers tend to Babylon."
+  },
+  {
+    "jokeId": "MJ000484",
+    "date": "2026-09-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why was the big cat disqualified from the race?",
+    "punchline": "Because it was a cheetah."
   }
 ]
