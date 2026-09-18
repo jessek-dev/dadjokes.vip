@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2026 03:51:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 03:38:32 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>In honor of St Patrick’s Day</title>
+      <description>In honor of St Patrick’s Day
+
+What do you call an Irishman sitting on the porch? Paddy O’Furniture.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-18</link>
+      <guid isPermaLink="false">dadjokes-2026-09-18</guid>
+      <pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>When my grandfather turned 65 he started walking 5 miles a day..</title>
       <description>When my grandfather turned 65 he started walking 5 miles a day..
@@ -93,15 +102,6 @@ Feefiphobia</description>
       <link>https://dadjokes.vip/daily/#2026-09-09</link>
       <guid isPermaLink="false">dadjokes-2026-09-09</guid>
       <pubDate>Wed, 09 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>&quot;Is this gluten free?&quot;</title>
-      <description>&quot;Is this gluten free?&quot;
-
-&quot;No, it costs money, sir.&quot;</description>
-      <link>https://dadjokes.vip/daily/#2026-09-08</link>
-      <guid isPermaLink="false">dadjokes-2026-09-08</guid>
-      <pubDate>Tue, 08 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
