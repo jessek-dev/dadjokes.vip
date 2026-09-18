@@ -4525,5 +4525,32 @@
     ],
     "setup": "Why was the big cat disqualified from the race?",
     "punchline": "Because it was a cheetah."
+  },
+  {
+    "jokeId": "MJ001055",
+    "date": "2026-09-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "When your wife says she'll be home in five minutes, she will be.",
+    "punchline": "You don't have to remind her every 15 minutes!"
+  },
+  {
+    "jokeId": "MJ000586",
+    "date": "2026-09-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Have you heard about the film \"Constipation\"?",
+    "punchline": "You probably haven't because it's not out yet."
+  },
+  {
+    "jokeId": "MJ000476",
+    "date": "2026-09-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you know the first French fries weren't actually cooked in France?",
+    "punchline": "They were cooked in Greece."
   }
 ]
