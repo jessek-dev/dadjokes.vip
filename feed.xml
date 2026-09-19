@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2026 03:38:32 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 03:35:31 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>My wife just left me.</title>
+      <description>My wife just left me.
+
+She says my life revolves around football and she&#039;s sick of it. I&#039;m quite upset. We were together for 7 seasons.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-19</link>
+      <guid isPermaLink="false">dadjokes-2026-09-19</guid>
+      <pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>In honor of St Patrick’s Day</title>
       <description>In honor of St Patrick’s Day
@@ -93,15 +102,6 @@ Feefiphobia</description>
       <link>https://dadjokes.vip/daily/#2026-09-10</link>
       <guid isPermaLink="false">dadjokes-2026-09-10</guid>
       <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>&quot;What&#039;s up, dad?&quot;</title>
-      <description>&quot;What&#039;s up, dad?&quot;
-
-&quot;It&#039;s a movie about an old man and balloons, son&quot;.</description>
-      <link>https://dadjokes.vip/daily/#2026-09-09</link>
-      <guid isPermaLink="false">dadjokes-2026-09-09</guid>
-      <pubDate>Wed, 09 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
