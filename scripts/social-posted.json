@@ -4552,5 +4552,32 @@
     ],
     "setup": "Did you know the first French fries weren't actually cooked in France?",
     "punchline": "They were cooked in Greece."
+  },
+  {
+    "jokeId": "MJ000478",
+    "date": "2026-09-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Where did Captain Hook get his hook?",
+    "punchline": "From a second hand store."
+  },
+  {
+    "jokeId": "MJ000425",
+    "date": "2026-09-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I decided to sell my Hoover...",
+    "punchline": "well it was just collecting dust."
+  },
+  {
+    "jokeId": "MJ001194",
+    "date": "2026-09-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I asked this old man \"After 95 years, you still call your wife darling, honey, love - what's the secret?\" He said",
+    "punchline": "\"I forgot her name 10 years ago and I'm afraid to ask her!\""
   }
 ]
