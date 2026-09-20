@@ -4579,5 +4579,32 @@
     ],
     "setup": "I asked this old man \"After 95 years, you still call your wife darling, honey, love - what's the secret?\" He said",
     "punchline": "\"I forgot her name 10 years ago and I'm afraid to ask her!\""
+  },
+  {
+    "jokeId": "MJ000355",
+    "date": "2026-09-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why can't a bicycle stand on its own?",
+    "punchline": "It's two-tired."
+  },
+  {
+    "jokeId": "MJ000391",
+    "date": "2026-09-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a fashionable lawn statue with an excellent sense of rhythm?",
+    "punchline": "A metro-gnome"
+  },
+  {
+    "jokeId": "MJ000069",
+    "date": "2026-09-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I got a reversible jacket for Christmas.",
+    "punchline": "I can't wait to see how it turns out."
   }
 ]
