@@ -4606,5 +4606,32 @@
     ],
     "setup": "I got a reversible jacket for Christmas.",
     "punchline": "I can't wait to see how it turns out."
+  },
+  {
+    "jokeId": "MJ000623",
+    "date": "2026-09-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Wife told me to take the spider out instead of killing it...",
+    "punchline": "We had some drinks, cool guy, wants to be a web developer."
+  },
+  {
+    "jokeId": "MJ001233",
+    "date": "2026-09-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I'm American and I'm sick of people telling us that America is the stupidest country in the world.",
+    "punchline": "Personally, I think Europe is the stupidest country in the world!"
+  },
+  {
+    "jokeId": "MJ000003",
+    "date": "2026-09-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you hear about the guy whose whole left side was cut off?",
+    "punchline": "He's all right now."
   }
 ]
