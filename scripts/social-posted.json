@@ -4633,5 +4633,32 @@
     ],
     "setup": "Did you hear about the guy whose whole left side was cut off?",
     "punchline": "He's all right now."
+  },
+  {
+    "jokeId": "MJ000342",
+    "date": "2026-09-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What was a more important invention than the first telephone?",
+    "punchline": "The second one."
+  },
+  {
+    "jokeId": "MJ001200",
+    "date": "2026-09-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife told me to take out the spider instead of killing it. So I did!",
+    "punchline": "We had a few drinks - pretty nice guy, and he's a web developer!"
+  },
+  {
+    "jokeId": "MJ000410",
+    "date": "2026-09-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why does Han Solo like gum?",
+    "punchline": "It's chewy!"
   }
 ]
