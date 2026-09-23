@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2026 03:45:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 03:44:17 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Light travels faster than sound.</title>
+      <description>Light travels faster than sound.
+
+That&#039;s why some people appear bright until you hear them speak.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-23</link>
+      <guid isPermaLink="false">dadjokes-2026-09-23</guid>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What starts with the letter &#039;F&#039; and ends in &#039;uck&#039;?</title>
       <description>What starts with the letter &#039;F&#039; and ends in &#039;uck&#039;?
@@ -93,15 +102,6 @@ He just wanted a light snack.</description>
       <link>https://dadjokes.vip/daily/#2026-09-14</link>
       <guid isPermaLink="false">dadjokes-2026-09-14</guid>
       <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>My fathers advice: &quot;if you got up there on your own you can get down on your own&quot;.</title>
-      <description>My fathers advice: &quot;if you got up there on your own you can get down on your own&quot;.
-
-Great father. Awful air traffic controller.</description>
-      <link>https://dadjokes.vip/daily/#2026-09-13</link>
-      <guid isPermaLink="false">dadjokes-2026-09-13</guid>
-      <pubDate>Sun, 13 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
