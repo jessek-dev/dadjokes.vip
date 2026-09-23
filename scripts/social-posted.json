@@ -4660,5 +4660,32 @@
     ],
     "setup": "Why does Han Solo like gum?",
     "punchline": "It's chewy!"
+  },
+  {
+    "jokeId": "MJ000648",
+    "date": "2026-09-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Mahatma Gandhi, as you know, walked barefoot most of the time, which produced an impressive set of calluses on his feet. He also ate very little, which made him rather frail and with his odd diet, he suffered from bad breath.",
+    "punchline": "This made him a super calloused fragile mystic hexed by halitosis."
+  },
+  {
+    "jokeId": "MJ000344",
+    "date": "2026-09-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you do when your bunny gets wet?",
+    "punchline": "You get your hare dryer."
+  },
+  {
+    "jokeId": "MJ000056",
+    "date": "2026-09-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Which is the fastest growing city in the world?",
+    "punchline": "Dublin'"
   }
 ]
