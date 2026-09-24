@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2026 03:44:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 03:35:50 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>When is a door not a door?</title>
+      <description>When is a door not a door?
+
+When it is ajar.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-24</link>
+      <guid isPermaLink="false">dadjokes-2026-09-24</guid>
+      <pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Light travels faster than sound.</title>
       <description>Light travels faster than sound.
@@ -93,15 +102,6 @@ Prime-mates.</description>
       <link>https://dadjokes.vip/daily/#2026-09-15</link>
       <guid isPermaLink="false">dadjokes-2026-09-15</guid>
       <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Did you hear about the guy who swallowed a lamp?</title>
-      <description>Did you hear about the guy who swallowed a lamp?
-
-He just wanted a light snack.</description>
-      <link>https://dadjokes.vip/daily/#2026-09-14</link>
-      <guid isPermaLink="false">dadjokes-2026-09-14</guid>
-      <pubDate>Mon, 14 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
