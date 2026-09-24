@@ -4687,5 +4687,32 @@
     ],
     "setup": "Which is the fastest growing city in the world?",
     "punchline": "Dublin'"
+  },
+  {
+    "jokeId": "MJ001210",
+    "date": "2026-09-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I was in bed and said \"Hey Siri, why am I so bad with women?\" She said",
+    "punchline": "\"This is Alexa!\""
+  },
+  {
+    "jokeId": "MJ000139",
+    "date": "2026-09-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I considered building the patio by myself.",
+    "punchline": "But I didn't have the stones."
+  },
+  {
+    "jokeId": "MJ000061",
+    "date": "2026-09-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the sentence fail the driving test?",
+    "punchline": "It never came to a full stop."
   }
 ]
