@@ -4714,5 +4714,32 @@
     ],
     "setup": "Why did the sentence fail the driving test?",
     "punchline": "It never came to a full stop."
+  },
+  {
+    "jokeId": "MJ001131",
+    "date": "2026-09-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife asked, \"Why don't you treat me like you first treated me when we first started dating?\" So I took her to dinner and a movie..",
+    "punchline": "and then dropped her off at her parents'!"
+  },
+  {
+    "jokeId": "MJ000353",
+    "date": "2026-09-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a fat psychic?",
+    "punchline": "A four-chin teller."
+  },
+  {
+    "jokeId": "MJ000675",
+    "date": "2026-09-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I started a new business making yachts in my attic this year...",
+    "punchline": "the sails are going through the roof"
   }
 ]
