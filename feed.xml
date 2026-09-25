@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2026 03:35:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 03:52:27 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why didn&#039;t Noah fish when he was on the Ark?</title>
+      <description>Why didn&#039;t Noah fish when he was on the Ark?
+
+Because he only had two worms.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-25</link>
+      <guid isPermaLink="false">dadjokes-2026-09-25</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>When is a door not a door?</title>
       <description>When is a door not a door?
@@ -93,15 +102,6 @@ How could anyone stoop so low?</description>
       <link>https://dadjokes.vip/daily/#2026-09-16</link>
       <guid isPermaLink="false">dadjokes-2026-09-16</guid>
       <pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do you call two monkeys sharing an Amazon account?</title>
-      <description>What do you call two monkeys sharing an Amazon account?
-
-Prime-mates.</description>
-      <link>https://dadjokes.vip/daily/#2026-09-15</link>
-      <guid isPermaLink="false">dadjokes-2026-09-15</guid>
-      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
