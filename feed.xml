@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2026 03:52:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 03:57:45 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>How are slutty cows shipped into the US?</title>
+      <description>How are slutty cows shipped into the US?
+
+Through the Strait of Whore Moos.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-26</link>
+      <guid isPermaLink="false">dadjokes-2026-09-26</guid>
+      <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why didn&#039;t Noah fish when he was on the Ark?</title>
       <description>Why didn&#039;t Noah fish when he was on the Ark?
@@ -93,15 +102,6 @@ He&#039;s 90 now and we have no idea where he is.</description>
       <link>https://dadjokes.vip/daily/#2026-09-17</link>
       <guid isPermaLink="false">dadjokes-2026-09-17</guid>
       <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>I was reading in the paper today about this dwarf that got pick-pocketed.</title>
-      <description>I was reading in the paper today about this dwarf that got pick-pocketed.
-
-How could anyone stoop so low?</description>
-      <link>https://dadjokes.vip/daily/#2026-09-16</link>
-      <guid isPermaLink="false">dadjokes-2026-09-16</guid>
-      <pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
