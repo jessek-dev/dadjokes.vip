@@ -4741,5 +4741,32 @@
     ],
     "setup": "I started a new business making yachts in my attic this year...",
     "punchline": "the sails are going through the roof"
+  },
+  {
+    "jokeId": "MJ000839",
+    "date": "2026-09-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a caveman's fart? …",
+    "punchline": "A blast from the past."
+  },
+  {
+    "jokeId": "MJ001146",
+    "date": "2026-09-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Told my wife her underwear was way too tight and too revealing.",
+    "punchline": "She said \"Then wear your own!\""
+  },
+  {
+    "jokeId": "MJ000665",
+    "date": "2026-09-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Do you want a brief explanation of what an acorn is?",
+    "punchline": "In a nutshell, it's an oak tree."
   }
 ]
