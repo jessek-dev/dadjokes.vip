@@ -4768,5 +4768,32 @@
     ],
     "setup": "Do you want a brief explanation of what an acorn is?",
     "punchline": "In a nutshell, it's an oak tree."
+  },
+  {
+    "jokeId": "MJ000560",
+    "date": "2026-09-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How does the moon cut his hair?",
+    "punchline": "Eclipse it."
+  },
+  {
+    "jokeId": "MJ001192",
+    "date": "2026-09-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I told my wife I'm building a model of Mount Everest.",
+    "punchline": "She said \"Is it to scale?\" I said \"No, it's to look at!\""
+  },
+  {
+    "jokeId": "MJ001210",
+    "date": "2026-09-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I was in bed and said \"Hey Siri, why am I so bad with women?\" She said",
+    "punchline": "\"This is Alexa!\""
   }
 ]
