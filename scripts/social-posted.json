@@ -4795,5 +4795,32 @@
     ],
     "setup": "I was in bed and said \"Hey Siri, why am I so bad with women?\" She said",
     "punchline": "\"This is Alexa!\""
+  },
+  {
+    "jokeId": "MJ000474",
+    "date": "2026-09-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What is the leading cause of dry skin?",
+    "punchline": "Towels"
+  },
+  {
+    "jokeId": "MJ000710",
+    "date": "2026-09-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My mother said, \"You won't amount to anything because you always procrastinate.\" …",
+    "punchline": "I said, \"Oh yeah… Just you wait.\""
+  },
+  {
+    "jokeId": "MJ000116",
+    "date": "2026-09-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Me: If humans lose the ability to hear high frequency volumes as they get older, can my 4 week old son hear a dog whistle? Doctor: No, humans can never hear that high of a frequency no matter what age they are. Me: Trick question...",
+    "punchline": "dogs can't whistle."
   }
 ]
