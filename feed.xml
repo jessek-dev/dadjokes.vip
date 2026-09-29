@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 04:10:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 04:42:40 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Y&#039;all heard about the reverse exorcism the other day?</title>
+      <description>Y&#039;all heard about the reverse exorcism the other day?
+
+The devil was trying to pull the priest out of a little boy.</description>
+      <link>https://dadjokes.vip/daily/#2026-09-29</link>
+      <guid isPermaLink="false">dadjokes-2026-09-29</guid>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>A woman visits her husband in prison. Before leaving, she says to a correction officer: &quot;You shouldn&#039;t make my husband work so hard he&#039;s exhausted!&quot; The officer laughs: &quot;Work? Ma&#039;am, he only eats, sleeps, and stays in his cell.&quot;</title>
       <description>A woman visits her husband in prison. Before leaving, she says to a correction officer: &quot;You shouldn&#039;t make my husband work so hard he&#039;s exhausted!&quot; The officer laughs: &quot;Work? Ma&#039;am, he only eats, sleeps, and stays in his cell.&quot;
@@ -93,15 +102,6 @@ Now nobody even raises an eyebrow.</description>
       <link>https://dadjokes.vip/daily/#2026-09-20</link>
       <guid isPermaLink="false">dadjokes-2026-09-20</guid>
       <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>My wife just left me.</title>
-      <description>My wife just left me.
-
-She says my life revolves around football and she&#039;s sick of it. I&#039;m quite upset. We were together for 7 seasons.</description>
-      <link>https://dadjokes.vip/daily/#2026-09-19</link>
-      <guid isPermaLink="false">dadjokes-2026-09-19</guid>
-      <pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
