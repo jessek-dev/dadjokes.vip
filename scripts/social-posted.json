@@ -4849,5 +4849,32 @@
     ],
     "setup": "Conjunctivitis.com –",
     "punchline": "now that’s a site for sore eyes."
+  },
+  {
+    "jokeId": "MJ000041",
+    "date": "2026-09-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Hear about the new restaurant called Karma?",
+    "punchline": "There’s no menu: You get what you deserve."
+  },
+  {
+    "jokeId": "MJ001039",
+    "date": "2026-09-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A guy told me there was a shark attack today. The shark took out his whole left side…",
+    "punchline": "I couldn't believe it when he told me he was all right!"
+  },
+  {
+    "jokeId": "MJ000380",
+    "date": "2026-09-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's a penguin's favorite relative?",
+    "punchline": "Aunt Arctica."
   }
 ]
