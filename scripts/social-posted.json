@@ -4876,5 +4876,32 @@
     ],
     "setup": "What's a penguin's favorite relative?",
     "punchline": "Aunt Arctica."
+  },
+  {
+    "jokeId": "MJ000326",
+    "date": "2026-10-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Where do sheep go to get their hair cut?",
+    "punchline": "The baa-baa shop."
+  },
+  {
+    "jokeId": "MJ000170",
+    "date": "2026-10-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Can a kangaroo jump higher than the Empire State Building?",
+    "punchline": "Of course. The Empire State Building can't jump."
+  },
+  {
+    "jokeId": "MJ000008",
+    "date": "2026-10-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Dermatologists are always in a hurry.",
+    "punchline": "They spend all day making rash decisions."
   }
 ]
