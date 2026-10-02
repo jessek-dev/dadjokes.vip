@@ -4903,5 +4903,32 @@
     ],
     "setup": "Dermatologists are always in a hurry.",
     "punchline": "They spend all day making rash decisions."
+  },
+  {
+    "jokeId": "MJ000226",
+    "date": "2026-10-02",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why can't you use \"Beef stew\" as a password?",
+    "punchline": "Because it's not stroganoff."
+  },
+  {
+    "jokeId": "MJ000112",
+    "date": "2026-10-02",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What’s Forest Gump’s Facebook password?",
+    "punchline": "1forest1"
+  },
+  {
+    "jokeId": "MJ001252",
+    "date": "2026-10-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife says she has 14 reasons why she could leave me, including my obsession with tennis.",
+    "punchline": "I said \"That's 15-love!\""
   }
 ]
