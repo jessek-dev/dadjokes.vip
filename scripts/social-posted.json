@@ -4930,5 +4930,32 @@
     ],
     "setup": "My wife says she has 14 reasons why she could leave me, including my obsession with tennis.",
     "punchline": "I said \"That's 15-love!\""
+  },
+  {
+    "jokeId": "MJ000564",
+    "date": "2026-10-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How do you get two whales in a car?",
+    "punchline": "Start in England and drive West."
+  },
+  {
+    "jokeId": "MJ001106",
+    "date": "2026-10-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I warned my children about using their whistle inside the house and I gave them one last chance.",
+    "punchline": "Unfortunately, they blew it!"
+  },
+  {
+    "jokeId": "MJ000379",
+    "date": "2026-10-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Bought a new jacket suit the other day and it burst into flames.",
+    "punchline": "Well, it was a blazer"
   }
 ]
