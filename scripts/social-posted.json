@@ -4984,5 +4984,32 @@
     ],
     "setup": "Why did the house go to the doctor?",
     "punchline": "It was having window panes."
+  },
+  {
+    "jokeId": "MJ000697",
+    "date": "2026-10-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why are giraffes so slow to apologize?",
+    "punchline": "Because it takes them a long time to swallow their pride."
+  },
+  {
+    "jokeId": "MJ000182",
+    "date": "2026-10-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a careful wolf?",
+    "punchline": "Aware wolf."
+  },
+  {
+    "jokeId": "MJ000595",
+    "date": "2026-10-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "You can't trust a ladder.",
+    "punchline": "It will always let you down"
   }
 ]
