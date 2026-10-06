@@ -5011,5 +5011,32 @@
     ],
     "setup": "You can't trust a ladder.",
     "punchline": "It will always let you down"
+  },
+  {
+    "jokeId": "MJ001233",
+    "date": "2026-10-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I'm American and I'm sick of people telling us that America is the stupidest country in the world.",
+    "punchline": "Personally, I think Europe is the stupidest country in the world!"
+  },
+  {
+    "jokeId": "MJ000677",
+    "date": "2026-10-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the Buffalo say to his little boy when he dropped him off at school?",
+    "punchline": "Bison."
+  },
+  {
+    "jokeId": "MJ000127",
+    "date": "2026-10-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Two muffins were sitting in an oven, and the first looks over to the second, and says, \"man, it’s really hot in here.\"",
+    "punchline": "The second looks over at the first with a surprised look, and answers, \"WHOA, a talking muffin!\""
   }
 ]
