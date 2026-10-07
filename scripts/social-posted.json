@@ -5038,5 +5038,32 @@
     ],
     "setup": "Two muffins were sitting in an oven, and the first looks over to the second, and says, \"man, it’s really hot in here.\"",
     "punchline": "The second looks over at the first with a surprised look, and answers, \"WHOA, a talking muffin!\""
+  },
+  {
+    "jokeId": "MJ000797",
+    "date": "2026-10-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call crystal clear urine? …",
+    "punchline": "1080p."
+  },
+  {
+    "jokeId": "MJ000196",
+    "date": "2026-10-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a dog that can do magic tricks?",
+    "punchline": "a labracadabrador"
+  },
+  {
+    "jokeId": "MJ000148",
+    "date": "2026-10-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Don't trust atoms.",
+    "punchline": "They make up everything."
   }
 ]
