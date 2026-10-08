@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2026 04:47:55 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 04:58:03 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Harry: What would you get if you crossed a baseball player with a Boy Scout?</title>
+      <description>Harry: What would you get if you crossed a baseball player with a Boy Scout?
+
+Tom: I don’t know, but I bet he sure could pitch a tent.</description>
+      <link>https://dadjokes.vip/daily/#2026-10-08</link>
+      <guid isPermaLink="false">dadjokes-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What is the best day of the week to play a double-header?</title>
       <description>What is the best day of the week to play a double-header?
@@ -93,15 +102,6 @@ The devil was trying to pull the priest out of a little boy.</description>
       <link>https://dadjokes.vip/daily/#2026-09-29</link>
       <guid isPermaLink="false">dadjokes-2026-09-29</guid>
       <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>A woman visits her husband in prison. Before leaving, she says to a correction officer: &quot;You shouldn&#039;t make my husband work so hard he&#039;s exhausted!&quot; The officer laughs: &quot;Work? Ma&#039;am, he only eats, sleeps, and stays in his cell.&quot;</title>
-      <description>A woman visits her husband in prison. Before leaving, she says to a correction officer: &quot;You shouldn&#039;t make my husband work so hard he&#039;s exhausted!&quot; The officer laughs: &quot;Work? Ma&#039;am, he only eats, sleeps, and stays in his cell.&quot;
-
-The wife replies: &quot;That&#039;s strange. He told me he&#039;s been digging a tunnel for months!&quot;</description>
-      <link>https://dadjokes.vip/daily/#2026-09-28</link>
-      <guid isPermaLink="false">dadjokes-2026-09-28</guid>
-      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
