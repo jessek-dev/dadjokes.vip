@@ -5065,5 +5065,32 @@
     ],
     "setup": "Don't trust atoms.",
     "punchline": "They make up everything."
+  },
+  {
+    "jokeId": "MJ000194",
+    "date": "2026-10-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did Dracula lie in the wrong coffin?",
+    "punchline": "He made a grave mistake."
+  },
+  {
+    "jokeId": "MJ000823",
+    "date": "2026-10-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My husband and I were happy for 20 years.",
+    "punchline": "And then we met."
+  },
+  {
+    "jokeId": "MJ000037",
+    "date": "2026-10-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "When will the little snake arrive?",
+    "punchline": "I don't know but he won't be long..."
   }
 ]
