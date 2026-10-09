@@ -5092,5 +5092,32 @@
     ],
     "setup": "When will the little snake arrive?",
     "punchline": "I don't know but he won't be long..."
+  },
+  {
+    "jokeId": "MJ001030",
+    "date": "2026-10-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did the non-binary prospector head to the West?",
+    "punchline": "Cause there was gold in them/their hills!"
+  },
+  {
+    "jokeId": "MJ000027",
+    "date": "2026-10-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I’m only familiar with 25 letters in the English language.",
+    "punchline": "I don’t know why."
+  },
+  {
+    "jokeId": "MJ000433",
+    "date": "2026-10-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you hear about the Mexican train killer?",
+    "punchline": "He had loco motives"
   }
 ]
