@@ -5119,5 +5119,32 @@
     ],
     "setup": "Did you hear about the Mexican train killer?",
     "punchline": "He had loco motives"
+  },
+  {
+    "jokeId": "MJ001113",
+    "date": "2026-10-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "For my wife's Christmas present, I took her to an orchard. We stared at trees for like a half an hour.",
+    "punchline": "Not the Apple watch she was expecting!"
+  },
+  {
+    "jokeId": "MJ000423",
+    "date": "2026-10-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did the feline fail the lie detector test?",
+    "punchline": "Because he be lion."
+  },
+  {
+    "jokeId": "MJ000140",
+    "date": "2026-10-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "In my career as a lumberjack I cut down exactly 52,487 trees.",
+    "punchline": "I know because I kept a log."
   }
 ]
