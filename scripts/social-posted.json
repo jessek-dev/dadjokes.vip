@@ -5146,5 +5146,32 @@
     ],
     "setup": "In my career as a lumberjack I cut down exactly 52,487 trees.",
     "punchline": "I know because I kept a log."
+  },
+  {
+    "jokeId": "MJ000150",
+    "date": "2026-10-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Where do bees go to the bathroom?",
+    "punchline": "The BP station."
+  },
+  {
+    "jokeId": "MJ000163",
+    "date": "2026-10-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I couldn't figure out how the seat belt worked.",
+    "punchline": "Then it just clicked."
+  },
+  {
+    "jokeId": "MJ000648",
+    "date": "2026-10-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Mahatma Gandhi, as you know, walked barefoot most of the time, which produced an impressive set of calluses on his feet. He also ate very little, which made him rather frail and with his odd diet, he suffered from bad breath.",
+    "punchline": "This made him a super calloused fragile mystic hexed by halitosis."
   }
 ]
