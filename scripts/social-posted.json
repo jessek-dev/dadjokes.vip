@@ -5227,5 +5227,32 @@
     ],
     "setup": "Last night my wife asked me, \"Is it just me or is the cat getting fat?\"",
     "punchline": "Apparently \"It's just you\" wasn't the right answer."
+  },
+  {
+    "jokeId": "MJ001088",
+    "date": "2026-10-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My son asked me what it was like to be married, so I told him to leave me alone.",
+    "punchline": "And when he did, I asked, \"Why are you ignoring me?\""
+  },
+  {
+    "jokeId": "MJ001324",
+    "date": "2026-10-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My therapist said I have a phobia of getting married. He asked \"Do you know what your symptoms are?\"",
+    "punchline": "I said \"I can't say I do!\""
+  },
+  {
+    "jokeId": "MJ000206",
+    "date": "2026-10-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why don't you find hippopotamuses hiding in trees?",
+    "punchline": "They're really good at it."
   }
 ]
