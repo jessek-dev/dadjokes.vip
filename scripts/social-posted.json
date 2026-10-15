@@ -5254,5 +5254,32 @@
     ],
     "setup": "Why don't you find hippopotamuses hiding in trees?",
     "punchline": "They're really good at it."
+  },
+  {
+    "jokeId": "MJ000767",
+    "date": "2026-10-15",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What happens when you don't obey the KGB? …",
+    "punchline": "You get Putin jail."
+  },
+  {
+    "jokeId": "MJ001030",
+    "date": "2026-10-15",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did the non-binary prospector head to the West?",
+    "punchline": "Cause there was gold in them/their hills!"
+  },
+  {
+    "jokeId": "MJ000263",
+    "date": "2026-10-15",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Who is the coolest Doctor in the hospital?",
+    "punchline": "The hip Doctor!"
   }
 ]
