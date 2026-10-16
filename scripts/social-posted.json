@@ -5281,5 +5281,32 @@
     ],
     "setup": "Who is the coolest Doctor in the hospital?",
     "punchline": "The hip Doctor!"
+  },
+  {
+    "jokeId": "MJ000369",
+    "date": "2026-10-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How does a penguin build it’s house?",
+    "punchline": "Igloos it together."
+  },
+  {
+    "jokeId": "MJ001033",
+    "date": "2026-10-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I can't believe someone came into my house last night and stole all my fruit..",
+    "punchline": "I'm peachless!"
+  },
+  {
+    "jokeId": "MJ000241",
+    "date": "2026-10-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Where did you learn to make ice cream?",
+    "punchline": "Sunday school."
   }
 ]
