@@ -5308,5 +5308,32 @@
     ],
     "setup": "Where did you learn to make ice cream?",
     "punchline": "Sunday school."
+  },
+  {
+    "jokeId": "MJ000151",
+    "date": "2026-10-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What is the best way to carve?",
+    "punchline": "Whittle by whittle."
+  },
+  {
+    "jokeId": "MJ001100",
+    "date": "2026-10-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My boss asked me why I get sick only on work days..",
+    "punchline": "I said, \"I don't know, it must be my weak-end immune system.\""
+  },
+  {
+    "jokeId": "MJ000663",
+    "date": "2026-10-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My new thesaurus is terrible.",
+    "punchline": "In fact, it's so bad, I'd say it's terrible."
   }
 ]
