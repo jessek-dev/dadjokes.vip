@@ -5335,5 +5335,32 @@
     ],
     "setup": "My new thesaurus is terrible.",
     "punchline": "In fact, it's so bad, I'd say it's terrible."
+  },
+  {
+    "jokeId": "MJ000345",
+    "date": "2026-10-18",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you know crocodiles could grow up to 15 feet?",
+    "punchline": "But most just have 4."
+  },
+  {
+    "jokeId": "MJ000464",
+    "date": "2026-10-18",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "It's been months since I bought the book \"how to scam people online.\"",
+    "punchline": "It still hasn't turned up."
+  },
+  {
+    "jokeId": "MJ001323",
+    "date": "2026-10-18",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife said \"If you win the lottery would you still love me?\"",
+    "punchline": "I said \"Of course I would. I'd miss you, but I'd still love you!\""
   }
 ]
