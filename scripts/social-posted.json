@@ -5362,5 +5362,32 @@
     ],
     "setup": "My wife said \"If you win the lottery would you still love me?\"",
     "punchline": "I said \"Of course I would. I'd miss you, but I'd still love you!\""
+  },
+  {
+    "jokeId": "MJ000344",
+    "date": "2026-10-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you do when your bunny gets wet?",
+    "punchline": "You get your hare dryer."
+  },
+  {
+    "jokeId": "MJ001240",
+    "date": "2026-10-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife asked \"Why do you keep pushing all my buttons?\"",
+    "punchline": "I said \"It's impossible to find the mute button!\""
+  },
+  {
+    "jokeId": "MJ000479",
+    "date": "2026-10-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Two silk worms had a race.",
+    "punchline": "They ended up in a tie."
   }
 ]
