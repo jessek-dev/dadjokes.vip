@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 03:39:08 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 03:49:54 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What kind of flower has never been put in a vase?</title>
+      <description>What kind of flower has never been put in a vase?
+
+A cauliflower!</description>
+      <link>https://dadjokes.vip/daily/#2026-10-20</link>
+      <guid isPermaLink="false">dadjokes-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What did bacon say to tomato?</title>
       <description>What did bacon say to tomato?
@@ -93,15 +102,6 @@ Frost bite!</description>
       <link>https://dadjokes.vip/daily/#2026-10-11</link>
       <guid isPermaLink="false">dadjokes-2026-10-11</guid>
       <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How do all the oceans say hello to each other?</title>
-      <description>How do all the oceans say hello to each other?
-
-They wave!</description>
-      <link>https://dadjokes.vip/daily/#2026-10-10</link>
-      <guid isPermaLink="false">dadjokes-2026-10-10</guid>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
