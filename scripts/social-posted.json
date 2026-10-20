@@ -5389,5 +5389,32 @@
     ],
     "setup": "Two silk worms had a race.",
     "punchline": "They ended up in a tie."
+  },
+  {
+    "jokeId": "MJ000282",
+    "date": "2026-10-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "So a duck walks into a pharmacy and says \"Give me some chap-stick...\"",
+    "punchline": "and put it on my bill\""
+  },
+  {
+    "jokeId": "MJ000451",
+    "date": "2026-10-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I’ve deleted the phone numbers of all the Germans I know from my mobile phone.",
+    "punchline": "Now it’s Hans free."
+  },
+  {
+    "jokeId": "MJ000060",
+    "date": "2026-10-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I went to a Foo Fighters Concert once...",
+    "punchline": "It was Everlong..."
   }
 ]
