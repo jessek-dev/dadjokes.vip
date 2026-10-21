@@ -5416,5 +5416,32 @@
     ],
     "setup": "I went to a Foo Fighters Concert once...",
     "punchline": "It was Everlong..."
+  },
+  {
+    "jokeId": "MJ000196",
+    "date": "2026-10-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a dog that can do magic tricks?",
+    "punchline": "a labracadabrador"
+  },
+  {
+    "jokeId": "MJ000858",
+    "date": "2026-10-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle? …",
+    "punchline": "Attire."
+  },
+  {
+    "jokeId": "MJ000355",
+    "date": "2026-10-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why can't a bicycle stand on its own?",
+    "punchline": "It's two-tired."
   }
 ]
