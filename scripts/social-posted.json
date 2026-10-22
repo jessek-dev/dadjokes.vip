@@ -5443,5 +5443,32 @@
     ],
     "setup": "Why can't a bicycle stand on its own?",
     "punchline": "It's two-tired."
+  },
+  {
+    "jokeId": "MJ000353",
+    "date": "2026-10-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a fat psychic?",
+    "punchline": "A four-chin teller."
+  },
+  {
+    "jokeId": "MJ000132",
+    "date": "2026-10-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a fish with no eyes?",
+    "punchline": "A fsh."
+  },
+  {
+    "jokeId": "MJ000881",
+    "date": "2026-10-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Thank you student loans for getting me through college.…",
+    "punchline": "I don't think I'll ever be able to repay you."
   }
 ]
