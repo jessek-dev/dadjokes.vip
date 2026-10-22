@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 03:40:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 03:40:09 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why aren&#039;t grapes ever lonely?</title>
+      <description>Why aren&#039;t grapes ever lonely?
+
+Because they come in bunches!</description>
+      <link>https://dadjokes.vip/daily/#2026-10-22</link>
+      <guid isPermaLink="false">dadjokes-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How did the farmer fix his jeans?</title>
       <description>How did the farmer fix his jeans?
@@ -93,15 +102,6 @@ Just let go of it!</description>
       <link>https://dadjokes.vip/daily/#2026-10-13</link>
       <guid isPermaLink="false">dadjokes-2026-10-13</guid>
       <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why do sharks swim in saltwater?</title>
-      <description>Why do sharks swim in saltwater?
-
-Because pepper water makes them sneeze!</description>
-      <link>https://dadjokes.vip/daily/#2026-10-12</link>
-      <guid isPermaLink="false">dadjokes-2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
