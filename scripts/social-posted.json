@@ -5470,5 +5470,32 @@
     ],
     "setup": "Thank you student loans for getting me through college.…",
     "punchline": "I don't think I'll ever be able to repay you."
+  },
+  {
+    "jokeId": "MJ000386",
+    "date": "2026-10-23",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How do you know if there’s an elephant under your bed?",
+    "punchline": "Your head hits the ceiling!"
+  },
+  {
+    "jokeId": "MJ001244",
+    "date": "2026-10-23",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My wife is leaving me because I'm balding.",
+    "punchline": "It's fine, it's hair loss!"
+  },
+  {
+    "jokeId": "MJ001316",
+    "date": "2026-10-23",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I started investing in stocks - beef, chicken, and vegetable?",
+    "punchline": "Hope one day I'll be a bouillonaire!"
   }
 ]
