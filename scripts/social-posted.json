@@ -5497,5 +5497,32 @@
     ],
     "setup": "I started investing in stocks - beef, chicken, and vegetable?",
     "punchline": "Hope one day I'll be a bouillonaire!"
+  },
+  {
+    "jokeId": "MJ000014",
+    "date": "2026-10-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why did the tomato blush?",
+    "punchline": "Because it saw the salad dressing."
+  },
+  {
+    "jokeId": "MJ000845",
+    "date": "2026-10-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you call a deer with no eyes? …",
+    "punchline": "No eye deer."
+  },
+  {
+    "jokeId": "MJ000202",
+    "date": "2026-10-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a monkey in a mine field?",
+    "punchline": "A babooooom!"
   }
 ]
