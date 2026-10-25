@@ -5524,5 +5524,32 @@
     ],
     "setup": "What do you call a monkey in a mine field?",
     "punchline": "A babooooom!"
+  },
+  {
+    "jokeId": "MJ001244",
+    "date": "2026-10-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife is leaving me because I'm balding.",
+    "punchline": "It's fine, it's hair loss!"
+  },
+  {
+    "jokeId": "MJ001055",
+    "date": "2026-10-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "When your wife says she'll be home in five minutes, she will be.",
+    "punchline": "You don't have to remind her every 15 minutes!"
+  },
+  {
+    "jokeId": "MJ000842",
+    "date": "2026-10-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did the ghost go inside the bar? …",
+    "punchline": "For the boos."
   }
 ]
