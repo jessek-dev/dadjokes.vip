@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 03:39:01 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 03:36:40 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>What type of fruit can fix your sink?</title>
+      <description>What type of fruit can fix your sink?
+
+A plum-ber!</description>
+      <link>https://dadjokes.vip/daily/#2026-10-25</link>
+      <guid isPermaLink="false">dadjokes-2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why were the strawberries so upset?</title>
       <description>Why were the strawberries so upset?
@@ -93,15 +102,6 @@ It will always squeal!</description>
       <link>https://dadjokes.vip/daily/#2026-10-16</link>
       <guid isPermaLink="false">dadjokes-2026-10-16</guid>
       <pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Why did the teddy bear not want any dessert?</title>
-      <description>Why did the teddy bear not want any dessert?
-
-Because he was stuffed!</description>
-      <link>https://dadjokes.vip/daily/#2026-10-15</link>
-      <guid isPermaLink="false">dadjokes-2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
