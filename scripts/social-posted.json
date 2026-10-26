@@ -5551,5 +5551,32 @@
     ],
     "setup": "Why did the ghost go inside the bar? …",
     "punchline": "For the boos."
+  },
+  {
+    "jokeId": "MJ000015",
+    "date": "2026-10-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you hear the joke about the wandering nun?",
+    "punchline": "She was a roman catholic."
+  },
+  {
+    "jokeId": "MJ000927",
+    "date": "2026-10-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do Japanese cannibals eat? …",
+    "punchline": "Raw men."
+  },
+  {
+    "jokeId": "MJ000068",
+    "date": "2026-10-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Last night me and my girlfriend watched three DVDs back to back.",
+    "punchline": "Luckily I was the one facing the TV."
   }
 ]
