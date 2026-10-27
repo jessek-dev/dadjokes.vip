@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 03:39:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 04:03:38 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>Why couldn&#039;t the sesame leave the casino?</title>
+      <description>Why couldn&#039;t the sesame leave the casino?
+
+Because he was on a roll!</description>
+      <link>https://dadjokes.vip/daily/#2026-10-27</link>
+      <guid isPermaLink="false">dadjokes-2026-10-27</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Why do bananas wear suntan lotions?</title>
       <description>Why do bananas wear suntan lotions?
@@ -93,15 +102,6 @@ Washing your hands!</description>
       <link>https://dadjokes.vip/daily/#2026-10-18</link>
       <guid isPermaLink="false">dadjokes-2026-10-18</guid>
       <pubDate>Sun, 18 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What button is impossible to unbutton?</title>
-      <description>What button is impossible to unbutton?
-
-A belly button!</description>
-      <link>https://dadjokes.vip/daily/#2026-10-17</link>
-      <guid isPermaLink="false">dadjokes-2026-10-17</guid>
-      <pubDate>Sat, 17 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
