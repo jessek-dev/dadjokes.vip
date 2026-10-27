@@ -5578,5 +5578,32 @@
     ],
     "setup": "Last night me and my girlfriend watched three DVDs back to back.",
     "punchline": "Luckily I was the one facing the TV."
+  },
+  {
+    "jokeId": "MJ000595",
+    "date": "2026-10-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "You can't trust a ladder.",
+    "punchline": "It will always let you down"
+  },
+  {
+    "jokeId": "MJ000068",
+    "date": "2026-10-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Last night me and my girlfriend watched three DVDs back to back.",
+    "punchline": "Luckily I was the one facing the TV."
+  },
+  {
+    "jokeId": "MJ001025",
+    "date": "2026-10-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I went to my childhood house today. I asked the residents if I could come inside. They slammed the door in my face..",
+    "punchline": "My parents are the worst!"
   }
 ]
