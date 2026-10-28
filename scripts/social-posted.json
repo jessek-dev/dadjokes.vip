@@ -5605,5 +5605,32 @@
     ],
     "setup": "I went to my childhood house today. I asked the residents if I could come inside. They slammed the door in my face..",
     "punchline": "My parents are the worst!"
+  },
+  {
+    "jokeId": "MJ000148",
+    "date": "2026-10-28",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Don't trust atoms.",
+    "punchline": "They make up everything."
+  },
+  {
+    "jokeId": "MJ001214",
+    "date": "2026-10-28",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My grandfather always told me to fight fire with fire.",
+    "punchline": "Great guy, but terrible fireman!"
+  },
+  {
+    "jokeId": "MJ001212",
+    "date": "2026-10-28",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Remember that joke I told you about the chiropractor? No?",
+    "punchline": "Really, it was about a week back!"
   }
 ]
