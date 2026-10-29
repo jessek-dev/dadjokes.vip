@@ -5632,5 +5632,32 @@
     ],
     "setup": "Remember that joke I told you about the chiropractor? No?",
     "punchline": "Really, it was about a week back!"
+  },
+  {
+    "jokeId": "MJ000870",
+    "date": "2026-10-29",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why was the mushroom always invited to parties? …",
+    "punchline": "Cause he's a fungi."
+  },
+  {
+    "jokeId": "MJ001023",
+    "date": "2026-10-29",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A cop pulled me over and said \"Papers!\" I said \"Scissors!\" and I won. So I drove off.",
+    "punchline": "He must have wanted a rematch or something because he was following me for like 45 minutes."
+  },
+  {
+    "jokeId": "MJ000851",
+    "date": "2026-10-29",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call a cheap circumcision? …",
+    "punchline": "A rip off."
   }
 ]
