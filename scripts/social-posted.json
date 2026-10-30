@@ -5659,5 +5659,32 @@
     ],
     "setup": "What do you call a cheap circumcision? …",
     "punchline": "A rip off."
+  },
+  {
+    "jokeId": "MJ000556",
+    "date": "2026-10-30",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Someone asked me, what's the ninth letter of the alphabet?",
+    "punchline": "It was a complete guess, but I was right."
+  },
+  {
+    "jokeId": "MJ000070",
+    "date": "2026-10-30",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What do you get when you cross a pig and a pineapple?",
+    "punchline": "A porky pine"
+  },
+  {
+    "jokeId": "MJ001227",
+    "date": "2026-10-30",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I wonder what you get if you cross a rhinoceros and an elephant?",
+    "punchline": "Ell if I know!"
   }
 ]
