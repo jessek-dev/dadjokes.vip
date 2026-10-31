@@ -5686,5 +5686,32 @@
     ],
     "setup": "I wonder what you get if you cross a rhinoceros and an elephant?",
     "punchline": "Ell if I know!"
+  },
+  {
+    "jokeId": "MJ001171",
+    "date": "2026-10-31",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I sympathize with batteries.",
+    "punchline": "I'm not included in anything either!"
+  },
+  {
+    "jokeId": "MJ000019",
+    "date": "2026-10-31",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why do birds fly south for the winter?",
+    "punchline": "Because it's too far to walk."
+  },
+  {
+    "jokeId": "MJ000139",
+    "date": "2026-10-31",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I considered building the patio by myself.",
+    "punchline": "But I didn't have the stones."
   }
 ]
