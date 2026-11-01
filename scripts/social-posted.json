@@ -5713,5 +5713,32 @@
     ],
     "setup": "I considered building the patio by myself.",
     "punchline": "But I didn't have the stones."
+  },
+  {
+    "jokeId": "MJ000016",
+    "date": "2026-11-01",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What creature is smarter than a talking parrot?",
+    "punchline": "A spelling bee."
+  },
+  {
+    "jokeId": "MJ000581",
+    "date": "2026-11-01",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My boss told me that he was going to fire the person with the worst posture.",
+    "punchline": "I have a hunch, it might be me."
+  },
+  {
+    "jokeId": "MJ000041",
+    "date": "2026-11-01",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Hear about the new restaurant called Karma?",
+    "punchline": "There’s no menu: You get what you deserve."
   }
 ]
