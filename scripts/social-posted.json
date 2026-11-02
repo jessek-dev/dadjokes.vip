@@ -5740,5 +5740,32 @@
     ],
     "setup": "Hear about the new restaurant called Karma?",
     "punchline": "There’s no menu: You get what you deserve."
+  },
+  {
+    "jokeId": "MJ000306",
+    "date": "2026-11-02",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "How was the snow globe feeling after the storm?",
+    "punchline": "A little shaken."
+  },
+  {
+    "jokeId": "MJ000982",
+    "date": "2026-11-02",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why did the Romanian stop reading? …",
+    "punchline": "They wanted to give the Bucharest."
+  },
+  {
+    "jokeId": "MJ000797",
+    "date": "2026-11-02",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do you call crystal clear urine? …",
+    "punchline": "1080p."
   }
 ]
