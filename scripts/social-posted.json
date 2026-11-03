@@ -5767,5 +5767,32 @@
     ],
     "setup": "What do you call crystal clear urine? …",
     "punchline": "1080p."
+  },
+  {
+    "jokeId": "MJ000871",
+    "date": "2026-11-03",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What is the difference between the Constitutions of the USA and the USSR?",
+    "punchline": "Don't both of them guarantee freedom of speech?… Yes, but the Constitution of the USA also guarantees freedom after the speech."
+  },
+  {
+    "jokeId": "MJ000504",
+    "date": "2026-11-03",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Hostess: Do you have a preference of where you sit?",
+    "punchline": "Dad: Down."
+  },
+  {
+    "jokeId": "MJ001114",
+    "date": "2026-11-03",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I was so angry yesterday that I threw my keyboard against the wall and parts went everywhere.",
+    "punchline": "That's when the shift hit the fan!"
   }
 ]
