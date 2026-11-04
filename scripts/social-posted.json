@@ -5794,5 +5794,32 @@
     ],
     "setup": "I was so angry yesterday that I threw my keyboard against the wall and parts went everywhere.",
     "punchline": "That's when the shift hit the fan!"
+  },
+  {
+    "jokeId": "MJ000881",
+    "date": "2026-11-04",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Thank you student loans for getting me through college.…",
+    "punchline": "I don't think I'll ever be able to repay you."
+  },
+  {
+    "jokeId": "MJ000057",
+    "date": "2026-11-04",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "A police officer caught two kids playing with a firework and a car battery.",
+    "punchline": "He charged one and let the other one off."
+  },
+  {
+    "jokeId": "MJ000927",
+    "date": "2026-11-04",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What do Japanese cannibals eat? …",
+    "punchline": "Raw men."
   }
 ]
