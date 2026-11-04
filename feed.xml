@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 05:41:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 05:12:19 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>The customer said &#039;Do you serve crabs here?&#039;</title>
+      <description>The customer said &#039;Do you serve crabs here?&#039;
+
+Yes Sir,&#039; said the waiter &#039;we serve just about anybody!&#039;</description>
+      <link>https://dadjokes.vip/daily/#2026-11-04</link>
+      <guid isPermaLink="false">dadjokes-2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What did the hungry computer eat?</title>
       <description>What did the hungry computer eat?
@@ -93,15 +102,6 @@ Because they are prone to peeling!</description>
       <link>https://dadjokes.vip/daily/#2026-10-26</link>
       <guid isPermaLink="false">dadjokes-2026-10-26</guid>
       <pubDate>Mon, 26 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What type of fruit can fix your sink?</title>
-      <description>What type of fruit can fix your sink?
-
-A plum-ber!</description>
-      <link>https://dadjokes.vip/daily/#2026-10-25</link>
-      <guid isPermaLink="false">dadjokes-2026-10-25</guid>
-      <pubDate>Sun, 25 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
