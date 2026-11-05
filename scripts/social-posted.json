@@ -5821,5 +5821,32 @@
     ],
     "setup": "What do Japanese cannibals eat? …",
     "punchline": "Raw men."
+  },
+  {
+    "jokeId": "MJ000593",
+    "date": "2026-11-05",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the judge say to the dentist?",
+    "punchline": "Do you swear to pull the tooth, the whole tooth and nothing but the tooth?"
+  },
+  {
+    "jokeId": "MJ001102",
+    "date": "2026-11-05",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My grief counselor died today..",
+    "punchline": "He was so good, I don't even care!"
+  },
+  {
+    "jokeId": "MJ000468",
+    "date": "2026-11-05",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why does Waldo only wear stripes?",
+    "punchline": "Because he doesn't want to be spotted."
   }
 ]
