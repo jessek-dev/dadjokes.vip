@@ -5848,5 +5848,32 @@
     ],
     "setup": "Why does Waldo only wear stripes?",
     "punchline": "Because he doesn't want to be spotted."
+  },
+  {
+    "jokeId": "MJ000116",
+    "date": "2026-11-06",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Me: If humans lose the ability to hear high frequency volumes as they get older, can my 4 week old son hear a dog whistle? Doctor: No, humans can never hear that high of a frequency no matter what age they are. Me: Trick question...",
+    "punchline": "dogs can't whistle."
+  },
+  {
+    "jokeId": "MJ000226",
+    "date": "2026-11-06",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why can't you use \"Beef stew\" as a password?",
+    "punchline": "Because it's not stroganoff."
+  },
+  {
+    "jokeId": "MJ000049",
+    "date": "2026-11-06",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Sometimes I tuck my knees into my chest and lean forward.",
+    "punchline": "That’s just how I roll."
   }
 ]
