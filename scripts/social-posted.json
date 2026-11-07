@@ -5875,5 +5875,32 @@
     ],
     "setup": "Sometimes I tuck my knees into my chest and lean forward.",
     "punchline": "That’s just how I roll."
+  },
+  {
+    "jokeId": "MJ001106",
+    "date": "2026-11-07",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I warned my children about using their whistle inside the house and I gave them one last chance.",
+    "punchline": "Unfortunately, they blew it!"
+  },
+  {
+    "jokeId": "MJ000564",
+    "date": "2026-11-07",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "How do you get two whales in a car?",
+    "punchline": "Start in England and drive West."
+  },
+  {
+    "jokeId": "MJ001035",
+    "date": "2026-11-07",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "A sweater I purchased was picking up static electricity, so I decided to return it..",
+    "punchline": "They gave me another one free of charge!"
   }
 ]
