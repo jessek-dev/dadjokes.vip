@@ -5902,5 +5902,32 @@
     ],
     "setup": "A sweater I purchased was picking up static electricity, so I decided to return it..",
     "punchline": "They gave me another one free of charge!"
+  },
+  {
+    "jokeId": "MJ001298",
+    "date": "2026-11-08",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife asked me to stop singing Wonderwall to her?",
+    "punchline": "I said maybe..."
+  },
+  {
+    "jokeId": "MJ000925",
+    "date": "2026-11-08",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Which part of the hospital has the least privacy?…",
+    "punchline": "The ICU."
+  },
+  {
+    "jokeId": "MJ001102",
+    "date": "2026-11-08",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My grief counselor died today..",
+    "punchline": "He was so good, I don't even care!"
   }
 ]
