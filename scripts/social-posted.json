@@ -5929,5 +5929,32 @@
     ],
     "setup": "My grief counselor died today..",
     "punchline": "He was so good, I don't even care!"
+  },
+  {
+    "jokeId": "MJ000078",
+    "date": "2026-11-09",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What did the beaver say to the tree?",
+    "punchline": "It's been nice gnawing you."
+  },
+  {
+    "jokeId": "MJ001136",
+    "date": "2026-11-09",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Mom has forbidden me from making any more breakfast puns. She says if I do, I'm toast!",
+    "punchline": "Dad keeps egging me on - he's such a ham!"
+  },
+  {
+    "jokeId": "MJ000048",
+    "date": "2026-11-09",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What did one wall say to the other wall?",
+    "punchline": "I'll meet you at the corner!"
   }
 ]
