@@ -5956,5 +5956,32 @@
     ],
     "setup": "What did one wall say to the other wall?",
     "punchline": "I'll meet you at the corner!"
+  },
+  {
+    "jokeId": "MJ000587",
+    "date": "2026-11-10",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you know Albert Einstein was a real person?",
+    "punchline": "All this time, I thought he was just a theoretical physicist!"
+  },
+  {
+    "jokeId": "MJ000592",
+    "date": "2026-11-10",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the doctor say to the gingerbread man who broke his leg?",
+    "punchline": "Try icing it."
+  },
+  {
+    "jokeId": "MJ001057",
+    "date": "2026-11-10",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife still thinks I'm sexy..",
+    "punchline": "Every time I walk by her, she says \"What an ass!\""
   }
 ]
