@@ -5,7 +5,7 @@
     <link>https://dadjokes.vip/daily/</link>
     <description>A fresh dad joke every day. Get the app at dadjokes.vip</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 05:01:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 06:19:34 GMT</lastBuildDate>
     <atom:link href="https://dadjokes.vip/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://dadjokes.vip/assets/android-chrome-192x192.png</url>
@@ -13,6 +13,15 @@
       <link>https://dadjokes.vip/daily/</link>
     </image>
 
+    <item>
+      <title>what do you call a tick on the moon?</title>
+      <description>what do you call a tick on the moon?
+
+A luna-tick</description>
+      <link>https://dadjokes.vip/daily/#2026-11-10</link>
+      <guid isPermaLink="false">dadjokes-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What did the father tomato say to the baby tomato while out for a walk?</title>
       <description>What did the father tomato say to the baby tomato while out for a walk?
@@ -93,15 +102,6 @@ No sir, it will be round!</description>
       <link>https://dadjokes.vip/daily/#2026-11-01</link>
       <guid isPermaLink="false">dadjokes-2026-11-01</guid>
       <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What do you call a scary bear?</title>
-      <description>What do you call a scary bear?
-
-A grisly grizzly.</description>
-      <link>https://dadjokes.vip/daily/#2026-10-31</link>
-      <guid isPermaLink="false">dadjokes-2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
