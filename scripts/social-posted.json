@@ -5983,5 +5983,32 @@
     ],
     "setup": "My wife still thinks I'm sexy..",
     "punchline": "Every time I walk by her, she says \"What an ass!\""
+  },
+  {
+    "jokeId": "MJ000096",
+    "date": "2026-11-11",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What kind of music do mummy's like?",
+    "punchline": "Rap"
+  },
+  {
+    "jokeId": "MJ001318",
+    "date": "2026-11-11",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "My kids bought me an alarm clock that swears at you instead of beeping.",
+    "punchline": "That was a rude awakening!"
+  },
+  {
+    "jokeId": "MJ001055",
+    "date": "2026-11-11",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "When your wife says she'll be home in five minutes, she will be.",
+    "punchline": "You don't have to remind her every 15 minutes!"
   }
 ]
