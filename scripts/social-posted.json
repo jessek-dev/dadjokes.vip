@@ -6010,5 +6010,32 @@
     ],
     "setup": "When your wife says she'll be home in five minutes, she will be.",
     "punchline": "You don't have to remind her every 15 minutes!"
+  },
+  {
+    "jokeId": "MJ000287",
+    "date": "2026-11-12",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Which side of the chicken has more feathers?",
+    "punchline": "The outside."
+  },
+  {
+    "jokeId": "MJ001014",
+    "date": "2026-11-12",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Last night my wife asked me, \"Is it just me or is the cat getting fat?\"",
+    "punchline": "Apparently \"It's just you\" wasn't the right answer."
+  },
+  {
+    "jokeId": "MJ001242",
+    "date": "2026-11-12",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What pronouns does chocolate use?",
+    "punchline": "Her/she!"
   }
 ]
