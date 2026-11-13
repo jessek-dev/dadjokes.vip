@@ -6037,5 +6037,32 @@
     ],
     "setup": "What pronouns does chocolate use?",
     "punchline": "Her/she!"
+  },
+  {
+    "jokeId": "MJ001012",
+    "date": "2026-11-13",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I was on a diabetes awareness site. It asked me if I accept cookies.",
+    "punchline": "Is that a trick question?"
+  },
+  {
+    "jokeId": "MJ000034",
+    "date": "2026-11-13",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I was fired from the keyboard factory yesterday.",
+    "punchline": "I wasn't putting in enough shifts."
+  },
+  {
+    "jokeId": "MJ000150",
+    "date": "2026-11-13",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Where do bees go to the bathroom?",
+    "punchline": "The BP station."
   }
 ]
