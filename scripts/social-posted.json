@@ -6064,5 +6064,32 @@
     ],
     "setup": "Where do bees go to the bathroom?",
     "punchline": "The BP station."
+  },
+  {
+    "jokeId": "MJ000433",
+    "date": "2026-11-14",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Did you hear about the Mexican train killer?",
+    "punchline": "He had loco motives"
+  },
+  {
+    "jokeId": "MJ000224",
+    "date": "2026-11-14",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Have you heard about the owl sanctuary job opening?",
+    "punchline": "It’s all night shifts but they’re all a hoot over there."
+  },
+  {
+    "jokeId": "MJ000168",
+    "date": "2026-11-14",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "I had a pair of racing snails.",
+    "punchline": "I removed their shells to make them more aerodynamic, but they became sluggish."
   }
 ]
