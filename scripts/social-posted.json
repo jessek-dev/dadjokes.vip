@@ -6118,5 +6118,32 @@
     ],
     "setup": "R.I.P. boiled water.",
     "punchline": "You will be mist."
+  },
+  {
+    "jokeId": "MJ000247",
+    "date": "2026-11-16",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you get if you cross a turkey with a ghost?",
+    "punchline": "A poultry-geist!"
+  },
+  {
+    "jokeId": "MJ000345",
+    "date": "2026-11-16",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you know crocodiles could grow up to 15 feet?",
+    "punchline": "But most just have 4."
+  },
+  {
+    "jokeId": "MJ000278",
+    "date": "2026-11-16",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How many bones are in the human hand?",
+    "punchline": "A handful of them."
   }
 ]
