@@ -6145,5 +6145,32 @@
     ],
     "setup": "How many bones are in the human hand?",
     "punchline": "A handful of them."
+  },
+  {
+    "jokeId": "MJ000565",
+    "date": "2026-11-17",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call an Argentinian with a rubber toe?",
+    "punchline": "Roberto"
+  },
+  {
+    "jokeId": "MJ000080",
+    "date": "2026-11-17",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why do cows not have toes?",
+    "punchline": "They lactose!"
+  },
+  {
+    "jokeId": "MJ001304",
+    "date": "2026-11-17",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My wife told me to put ketchup on the shopping list.",
+    "punchline": "Now I can't read anything!"
   }
 ]
