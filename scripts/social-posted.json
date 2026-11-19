@@ -6199,5 +6199,32 @@
     ],
     "setup": "What did the doctor say to the gingerbread man who broke his leg?",
     "punchline": "Try icing it."
+  },
+  {
+    "jokeId": "MJ000044",
+    "date": "2026-11-19",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Man, I really love my furniture...",
+    "punchline": "me and my recliner go way back."
+  },
+  {
+    "jokeId": "MJ000665",
+    "date": "2026-11-19",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Do you want a brief explanation of what an acorn is?",
+    "punchline": "In a nutshell, it's an oak tree."
+  },
+  {
+    "jokeId": "MJ000909",
+    "date": "2026-11-19",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What's the difference between an in-law and an outlaw? …",
+    "punchline": "An outlaw is wanted."
   }
 ]
