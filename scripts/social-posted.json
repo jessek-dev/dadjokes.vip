@@ -6226,5 +6226,32 @@
     ],
     "setup": "What's the difference between an in-law and an outlaw? …",
     "punchline": "An outlaw is wanted."
+  },
+  {
+    "jokeId": "MJ000675",
+    "date": "2026-11-20",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I started a new business making yachts in my attic this year...",
+    "punchline": "the sails are going through the roof"
+  },
+  {
+    "jokeId": "MJ000179",
+    "date": "2026-11-20",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Why are graveyards so noisy?",
+    "punchline": "Because of all the coffin."
+  },
+  {
+    "jokeId": "MJ000205",
+    "date": "2026-11-20",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "How do you steal a coat?",
+    "punchline": "You jacket."
   }
 ]
