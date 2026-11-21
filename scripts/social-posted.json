@@ -6253,5 +6253,32 @@
     ],
     "setup": "How do you steal a coat?",
     "punchline": "You jacket."
+  },
+  {
+    "jokeId": "MJ001065",
+    "date": "2026-11-21",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you get when you cross a polar bear with a seal?",
+    "punchline": "A polar bear!"
+  },
+  {
+    "jokeId": "MJ001061",
+    "date": "2026-11-21",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I dreamt last night that my spirit rose from a toilet bowl..",
+    "punchline": "It was an out-of-potty experience!"
+  },
+  {
+    "jokeId": "MJ000587",
+    "date": "2026-11-21",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Did you know Albert Einstein was a real person?",
+    "punchline": "All this time, I thought he was just a theoretical physicist!"
   }
 ]
