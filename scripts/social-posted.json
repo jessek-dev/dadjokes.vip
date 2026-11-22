@@ -6280,5 +6280,32 @@
     ],
     "setup": "Did you know Albert Einstein was a real person?",
     "punchline": "All this time, I thought he was just a theoretical physicist!"
+  },
+  {
+    "jokeId": "MJ000239",
+    "date": "2026-11-22",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Guy told me today he did not know what cloning is.",
+    "punchline": "I told him, \"that makes 2 of us.\""
+  },
+  {
+    "jokeId": "MJ001098",
+    "date": "2026-11-22",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Last night I accidentally handed my wife a glue stick instead of chapstick..",
+    "punchline": "She still isn't talking to me!"
+  },
+  {
+    "jokeId": "MJ000339",
+    "date": "2026-11-22",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Me and my mates are in a band called Duvet.",
+    "punchline": "We're a cover band."
   }
 ]
