@@ -6334,5 +6334,32 @@
     ],
     "setup": "Why can’t you hear a pterodactyl go to the bathroom?",
     "punchline": "The p is silent."
+  },
+  {
+    "jokeId": "MJ001054",
+    "date": "2026-11-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "My wife got pissed at me because I accidentally overcooked the ribeye last night..",
+    "punchline": "I told her we all make missed steaks."
+  },
+  {
+    "jokeId": "MJ001172",
+    "date": "2026-11-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Yesterday I was racking up to play pool with my son. He said \"Dad, you want a break?\" I said \"Why?",
+    "punchline": "We just started!\""
+  },
+  {
+    "jokeId": "MJ001113",
+    "date": "2026-11-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "For my wife's Christmas present, I took her to an orchard. We stared at trees for like a half an hour.",
+    "punchline": "Not the Apple watch she was expecting!"
   }
 ]
