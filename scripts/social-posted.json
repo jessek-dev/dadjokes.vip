@@ -6307,5 +6307,32 @@
     ],
     "setup": "Me and my mates are in a band called Duvet.",
     "punchline": "We're a cover band."
+  },
+  {
+    "jokeId": "MJ000933",
+    "date": "2026-11-24",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "What do you call a deaf gynecologist? …",
+    "punchline": "A lip reader."
+  },
+  {
+    "jokeId": "MJ000456",
+    "date": "2026-11-24",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "The word queue is ironic.",
+    "punchline": "It's just q with a bunch of silent letters waiting in line."
+  },
+  {
+    "jokeId": "MJ000385",
+    "date": "2026-11-24",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why can’t you hear a pterodactyl go to the bathroom?",
+    "punchline": "The p is silent."
   }
 ]
