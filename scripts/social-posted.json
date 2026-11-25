@@ -6361,5 +6361,32 @@
     ],
     "setup": "For my wife's Christmas present, I took her to an orchard. We stared at trees for like a half an hour.",
     "punchline": "Not the Apple watch she was expecting!"
+  },
+  {
+    "jokeId": "MJ000520",
+    "date": "2026-11-25",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "Why do crabs never give to charity?",
+    "punchline": "Because they’re shellfish."
+  },
+  {
+    "jokeId": "MJ000015",
+    "date": "2026-11-25",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "Did you hear the joke about the wandering nun?",
+    "punchline": "She was a roman catholic."
+  },
+  {
+    "jokeId": "MJ000086",
+    "date": "2026-11-25",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "Why did Mozart kill all his chickens?",
+    "punchline": "Because when he asked them who the best composer was, they'd all say \"Bach bach bach!\""
   }
 ]
