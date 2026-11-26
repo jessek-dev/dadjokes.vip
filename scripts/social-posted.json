@@ -6388,5 +6388,32 @@
     ],
     "setup": "Why did Mozart kill all his chickens?",
     "punchline": "Because when he asked them who the best composer was, they'd all say \"Bach bach bach!\""
+  },
+  {
+    "jokeId": "MJ000069",
+    "date": "2026-11-26",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I got a reversible jacket for Christmas.",
+    "punchline": "I can't wait to see how it turns out."
+  },
+  {
+    "jokeId": "MJ000302",
+    "date": "2026-11-26",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "What did the Zen Buddist say to the hotdog vendor?",
+    "punchline": "Make me one with everything."
+  },
+  {
+    "jokeId": "MJ000710",
+    "date": "2026-11-26",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "My mother said, \"You won't amount to anything because you always procrastinate.\" …",
+    "punchline": "I said, \"Oh yeah… Just you wait.\""
   }
 ]
