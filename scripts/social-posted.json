@@ -6415,5 +6415,32 @@
     ],
     "setup": "My mother said, \"You won't amount to anything because you always procrastinate.\" …",
     "punchline": "I said, \"Oh yeah… Just you wait.\""
+  },
+  {
+    "jokeId": "MJ000034",
+    "date": "2026-11-27",
+    "platforms": [
+      "twitter"
+    ],
+    "setup": "I was fired from the keyboard factory yesterday.",
+    "punchline": "I wasn't putting in enough shifts."
+  },
+  {
+    "jokeId": "MJ000091",
+    "date": "2026-11-27",
+    "platforms": [
+      "reddit"
+    ],
+    "setup": "I just read a book about Stockholm syndrome.",
+    "punchline": "It was pretty bad at first, but by the end I liked it."
+  },
+  {
+    "jokeId": "MJ000162",
+    "date": "2026-11-27",
+    "platforms": [
+      "bluesky"
+    ],
+    "setup": "What concert costs only 45 cents?",
+    "punchline": "50 cent featuring Nickelback."
   }
 ]
